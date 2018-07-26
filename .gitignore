@@ -1,0 +1,12 @@
+uploads/
+*.tar.gz
+*.tar
+*.7z
+*.html
+mysqli_error_trace.inc
+data/cache/
+data/tplcache/
+!houtai/
+!include/
+!templets/
+!data/

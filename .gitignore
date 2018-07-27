@@ -11,3 +11,4 @@ data/tplcache/
 !include/
 !templets/
 !data/
+.idea/

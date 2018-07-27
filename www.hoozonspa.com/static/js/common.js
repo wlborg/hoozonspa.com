@@ -333,7 +333,7 @@ function initSlider() {
     }
     tabs($('.shops .g-left').find('li'), $('.shops .block'));
 
-    //Environmental Science 
+    //Environmental Science
     //
     // tabs($('.environmental .g-left').find('li'), $('.environmental .item'));
 
@@ -426,7 +426,7 @@ function initSlider() {
     }
     tabs($('.environmentaldisplay ul').find('li'), $('.environmentaldisplay .block'));
 
-    // developmenthistory  
+    // developmenthistory
     var widthLen = window.fontreset * 34.2;
     var currLen = 0;
     var stop = false;
@@ -495,7 +495,7 @@ function lightNav() {
                 // $(this).addClass("active").siblings().removeClass("active");
                 $(this).addClass("active").siblings().removeClass("active");
                 $('.header').addClass('fixed');
-                
+
             }
         } else if (lastpath1) {
             if (href.indexOf(lastpath1) >= 0) {
@@ -547,7 +547,7 @@ function fixnav() {
 }
  // topbanner
 function topbanner(argument) {
-    
+
     var slide1 = new XZSlide({
         cover: $(".top-banner .slider-wraper"),
         container: $(".top-banner .slider-container"),
@@ -563,4 +563,13 @@ $(function() {
     lightNav();
     fixnav();
     setTimeout(initSlider, 2000);
+    // tag列表页导航栏不需要高亮显示prompt()
+    var obj = null;
+    var As = document.getElementById('nav').getElementsByTagName('a');
+    for (i = 0; i < As.length; i++) {
+        if (window.location.href.indexOf(As[i].href) >= 0) {
+            obj = As[i];
+        }
+    }
+    obj.className = 'active';
 });

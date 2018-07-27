@@ -571,5 +571,5 @@ $(function() {
             obj = As[i];
         }
     }
-    obj.className = 'active';
+    obj.parentNode.className = 'active';
 });

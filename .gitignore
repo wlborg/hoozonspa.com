@@ -3,6 +3,7 @@ uploads/
 *.tar
 *.7z
 *.html
+data/session_*/
 mysqli_error_trace.inc
 data/cache/
 data/tplcache/

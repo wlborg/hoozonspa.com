@@ -24,7 +24,7 @@ if($dopost=="upload")
     $uptime = time();
     $adminid = $cuserLogin->getUserID();
     $width = $height = '';
-    
+
     for($i=0; $i<=40; $i++)
     {
         if(isset(${"upfile".$i}) && is_uploaded_file(${"upfile".$i}))
@@ -67,6 +67,9 @@ if($dopost=="upload")
                 MkdirAll($cfg_basedir.$savePath,777);
                 CloseFtp();
             }
+            // $fullfilename = $cfg_basedir.$filename;
+            //  漏洞修复
+            if (preg_match('#\.(php|pl|cgi|asp|aspx|jsp|php5|php4|php3|shtm|shtml)[^a-zA-Z0-9]+$#i', trim($filename))) { ShowMsg("你指定的文件名被系统禁止！",'javascript:;'); exit(); }
             $fullfilename = $cfg_basedir.$filename;
             if($mediatype==1)
             {

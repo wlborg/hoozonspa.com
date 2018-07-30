@@ -41,16 +41,31 @@ foreach($_FILES as $_key=>$_value)
     {
         ${$_key.'_size'} = @filesize($$_key);
     }
-    
+    //上传漏洞补丁
+    $imtypes = array("image/pjpeg", "image/jpeg", "image/gif", "image/png", "image/xpng", "image/wbmp", "image/bmp");
+    if(in_array(strtolower(trim(${$_key.'_type'})), $imtypes))
+       {
+        $image_dd = @getimagesize($$_key);
+    if($image_dd == false){ continue; }
+    if (!is_array($image_dd))
+          {
+             exit('Upload filetype not allow !');
+        }
+    }
+     //上传漏洞补丁
+
     $imtypes = array
     (
-        "image/pjpeg", "image/jpeg", "image/gif", "image/png", 
+        "image/pjpeg", "image/jpeg", "image/gif", "image/png",
         "image/xpng", "image/wbmp", "image/bmp"
     );
 
     if(in_array(strtolower(trim(${$_key.'_type'})), $imtypes))
     {
         $image_dd = @getimagesize($$_key);
+         //上传漏洞补丁
+        f($image_dd == false){ continue; }
+         //上传漏洞补丁
         if (!is_array($image_dd))
         {
             exit('Upload filetype not allow !');

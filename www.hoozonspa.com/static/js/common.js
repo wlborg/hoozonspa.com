@@ -572,4 +572,16 @@ $(function() {
         }
     }
     obj.parentNode.className = 'active';
+    // 视频暂停和开始播放
+
+
+var video=document.getElementById('video');
+    video.onclick=function(){
+        if(this.paused){
+        this.play();
+        }else{
+
+        this.pause();
+        }
+    }
 });

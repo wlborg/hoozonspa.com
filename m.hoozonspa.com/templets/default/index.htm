@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {dede:include filename="_meta.htm"/}
+    <meta name="author" content="前端：陈晓珍" />
+    <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+    <meta name="description" content="{dede:global.cfg_description/}" />
+    <meta name="google-site-verification" content="Odmo8X4zeUG1WPcCrCAueZz-dyBPFBs4Zqlb9FBT5z4" />
+    <!-- 移动端设置 唯一URL-->
+    <link rel="canonical" href="https://www.hoozonspa.com/">
+    <title>{dede:global.cfg_webname/}</title>
+    {dede:include filename="_link.htm"/}
+</head>
+
+<body>
+    <div class="wrapper">
+        {dede:include filename="_header.htm"/}
+        <!-- 首页轮播广告 -->
+        {dede:myad name='sj_banner'/}
+        <!-- /首页轮播广告 -->
+        <!-- nav -->
+        <div class="g-container nav">
+            <a class="grids-item active-item" href="index.html">
+                <div class="grids-icon">
+                    <i class="icon_nav1"><span class="sr-only">美容SPA</span></i>
+                </div>
+                <div class="grids-txt">美容SPA</div>
+            </a>
+            <a class="grids-item active-item" href="index.html">
+                <div class="grids-icon">
+                    <i class="icon_nav2"><span class="sr-only">光电美肤</span></i>
+                </div>
+                <div class="grids-txt">光电美肤</div>
+            </a>
+            <a class="grids-item active-item" href="index.html">
+                <div class="grids-icon">
+                    <i class="icon_nav3"><span class="sr-only">艺术纹绣</span></i>
+                </div>
+                <div class="grids-txt">艺术纹绣</div>
+            </a>
+            <a class="grids-item active-item" href="index.html">
+                <div class="grids-icon">
+                    <i class="icon_nav4"><span class="sr-only">美妆护肤</span></i>
+                </div>
+                <div class="grids-txt">美妆护肤</div>
+            </a>
+        </div>
+        <!-- hotproject -->
+        <div class="g-container hotproject">
+            <div class="title">
+                <h2><span class="sr-only">热门项目</span></h2>
+            </div>
+            <div class="content">
+                <div class='project-block'>
+                    <div class="slider-wraper">
+                        <ul class="slider-container">
+                            <li class="slider-item">
+                                <div class="row">
+                                    {dede:arclist typeid='9' flag='c' row='3' titlelen="120" limit='0,3' addfields='title2' channelid='21' }
+                                    <div class="item">
+                                        <div class="front">
+                                            <a href="[field:arcurl/]" title="[field:title/] ">
+                                                <p>[field:title2/]</p>
+                                                <h3>[field:title/]</h3>
+                                                <div class="line"></div>
+                                            </a>
+                                        </div>
+                                        <div class="back">
+                                            <img src="[field:picname/]">
+                                        </div>
+                                    </div>
+                                    {/dede:arclist}
+                                </div>
+                                <div class="row">
+                                    {dede:arclist typeid='9' flag='c' row='3' titlelen="120" limit='3,3' addfields='title2' channelid='21' }
+                                    <div class="item">
+                                        <div class="front">
+                                            <a href="[field:arcurl/]" title="[field:title/] ">
+                                                <p>[field:title2/]</p>
+                                                <h3>[field:title/]</h3>
+                                                <div class="line"></div>
+                                            </a>
+                                        </div>
+                                        <div class="back">
+                                            <img src="[field:picname/]">
+                                        </div>
+                                    </div>
+                                    {/dede:arclist}
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="consult-wraper">
+                <a href="" class="consult">查看更多</a>
+            </div>
+        </div>
+        <!-- brand -->
+        <div class="g-container brand">
+            <div class="title">
+                <h2><span class="sr-only">品牌中心</span></h2>
+            </div>
+            <div class="content">
+                <div class="video-wraper">
+                    <video>
+                    </video>
+                </div>
+            </div>
+            <div class="consult-wraper">
+                <a href="" class="consult">查看更多</a>
+            </div>
+        </div>
+        <!-- classic case -->
+        <div class="g-container classiccase">
+            <div class="title">
+                <h2><span class="sr-only">经典案例</span></h2>
+            </div>
+            <div class="content">
+                <div class="row">
+                    {dede:arclist typeid='10' row='3' flag='c' orderby='id' orderway='desc' infolen='30' addfields='pic_before,pic_after1,project1' channelid='18' limit='0,1' }
+                    <div class="item active">
+                        <div class="front">
+                            <img src="[field:pic_before/]">
+                            <p>项目： [field:project1/]
+                            </p>
+                        </div>
+                        <div class="back">
+                            <img src="[field:pic_after1/]">
+                        </div>
+                    </div>
+                    {/dede:arclist} {dede:arclist typeid='10' row='3' flag='c' orderby='id' orderway='desc' infolen='30' addfields='pic_before,pic_after1,project1' channelid='18' limit='1,2' }
+                    <div class="item ">
+                        <div class="front">
+                            <img src="[field:pic_before/]">
+                            <p>项目： [field:project1/]
+                            </p>
+                        </div>
+                        <div class="back">
+                            <img src="[field:pic_after1/]">
+                        </div>
+                    </div>
+                    {/dede:arclist}
+                </div>
+                <div class="row">
+                    {dede:arclist typeid='10' row='3' flag='c' orderby='id' orderway='desc' infolen='30' addfields='pic_before,pic_after1,project1' channelid='18' limit='3,3' }
+                    <div class="item ">
+                        <div class="front">
+                            <img src="[field:pic_before/]">
+                            <p>项目： [field:project1/]
+                            </p>
+                        </div>
+                        <div class="back">
+                            <img src="[field:pic_after1/]">
+                        </div>
+                    </div>
+                    {/dede:arclist}
+                </div>
+            </div>
+            <div class="consult-wraper"><a href="" class="consult">查看更多</a></div>
+        </div>
+        <!--equipmenttechnology-->
+        <div class="g-container equipmenttechnology">
+            <div class="title">
+                <h2><span class="sr-only">技术设备</span></h2>
+            </div>
+            <div class="content">
+                {dede:arclist typeid='7' row='3' flag='c' orderby='id' orderway='desc' infolen='30' addfields='des,pic5' channelid='19' limit='0,1' }
+                <div class="item active">
+                    <div class="front">
+                        <h3>[field:title/]</h3>
+                        <div class="line"></div>
+                        <p> [field:des/]
+                        </p>
+                    </div>
+                    <div class="back">
+                        <img src="[field:pic5/]" alt="">
+                    </div>
+                </div>
+                {/dede:arclist} {dede:arclist typeid='7' row='3' flag='c' orderby='id' orderway='desc' infolen='30' addfields='des,pic5' channelid='19' limit='1,2' }
+                <div class="item">
+                    <div class="front">
+                        <h3>[field:title/]</h3>
+                        <div class="line"></div>
+                        <p> [field:des/]
+                        </p>
+                    </div>
+                    <div class="back">
+                        <img src="[field:pic5/]" alt="">
+                    </div>
+                </div>
+                {/dede:arclist}
+            </div>
+            <div class="consult-wraper"><a href="" class="consult">查看更多</a></div>
+        </div>
+        <!-- environmentdisplay -->
+        <div class="g-container environmentdisplay">
+            <div class="title">
+                <h2><span class="sr-only">环境展示</span></h2>
+            </div>
+            <div class="content">
+                <div class="slider-wraper">
+                    <ul class="slider-container">
+                        {dede:arclist typeid='6' row='4' flag='c' orderby='id' orderway='desc' infolen='30' addfields='s_pic1' channelid='17' }
+                        <li class="slider-item"><a href="[field:arcurl /]" title="[field:title/]"><img src="[field:s_pic1/]" alt=""></a></li>
+                        {/dede:arclist}
+                    </ul>
+                </div>
+                <a href="javascript:void(0)" class="btn prev"></a>
+                <a href="javascript:void(0)" class="btn next"></a>
+            </div>
+            <div class="consult-wraper"><a href="" class="consult">查看更多</a></div>
+        </div>
+        <!--presscenter  -->
+        <div class="g-container presscenter">
+            <div class="title">
+                <h2><span class="sr-only">新闻中心</span></h2>
+            </div>
+            <div class="content">
+                {dede:arclist typeid='4' row='4' orderby='id' orderway='desc' infolen='30' }
+                <div class="box">
+                    <a href="[field:arcurl /]" title="[field:title/]"><img src="[field:picname /]" alt="[field:title/]"></a>
+                    <h3><a href="[field:arcurl /]" title="[field:title/]">[field:title/]</a></h3>
+                    <p><a href="[field:arcurl /]" title="[field:title/]">[field:description/]</a>
+                    </p>
+                </div>
+                {/dede:arclist}
+            </div>
+            <div class="consult-wraper"><a href="" class="consult">查看更多</a></div>
+        </div>
+        <!-- question -->
+        {dede:include filename="_question.htm"/} {dede:include filename="_sj_copyright.htm"/} {dede:include filename="_footer.htm"/}
+    </div>
+    {dede:include filename="_script.htm"/}
+</body>
+
+</html>

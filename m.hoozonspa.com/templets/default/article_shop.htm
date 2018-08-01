@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {dede:include filename="_meta.htm"/}
+    <title>{dede:field.title/}_{dede:field.typename/}_{dede:global.cfg_webname/}</title>
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="{dede:field.pubdate function=" MyDate( 'Y-m-d',@me) "/}T{dede:field.pubdate function="MyDate( 'H:i:s',@me) "/}+08:00" />
+    <meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <link rel="canonical" href="https://www.hoozonspa.com{dede:field.arcurl/}"> {dede:include filename="_link.htm"/}
+</head>
+
+<body>
+    <div class="wrapper">
+        {dede:include filename="_header.htm"/}
+         <!-- 首页轮播广告 -->
+         {dede:myad name='sj_banner'/}
+        <!-- /首页轮播广告 -->
+                <!-- shop detail -->
+                <div class="g-container shopdetail">
+                    <div class="title">
+                        <p>{dede:field.title2/}</p>
+                        <h2>{dede:field.title/} </h2>
+                    </div>
+                    <div class="content">
+                        <div class="box">
+                            <div class="back">
+                                <img src="{dede:field.s_pic1/}" alt="">
+                            </div>
+                            <div class="front">
+                                <p>{dede:field.address/} 
+                                </p>
+                                <p>
+                                   {dede:field.tel/} </p>
+                            </div>
+                        </div>
+                        <div class="imgbox">
+                            <img src="{dede:field.s_pic2/}">
+                            <p>温馨的典雅室内环境</p>
+                        </div>
+                        <div class="imgbox">
+                            <img src="{dede:field.s_pic3/}">
+                            <p>温馨的典雅室内环境</p>
+                        </div>
+                        <div class="imgbox">s
+                            <img src="{dede:field.s_pic4/}">
+                            <p>温馨的典雅室内环境</p>
+                        </div>
+                        <div class="imgbox">
+                            <img src="{dede:field.s_pic5/}">
+                            <p>温馨的典雅室内环境</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- the way -->
+                {dede:include filename="_theway.htm"/} 
+                {dede:include filename="_sj_copyright.htm"/} 
+                {dede:include filename="_footer.htm"/}
+    </div>
+    {dede:include filename="_script.htm"/}
+</body>
+
+</html>

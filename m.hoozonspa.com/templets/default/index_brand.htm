@@ -63,7 +63,7 @@
                                     </a>
                                 </div>
                                 <div class="back">
-                                    <img src="{dede:global.cfg_pchost/}[field:picname/]" alt="[field:title/]">
+                                    <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
                                 </div>
                             </div>
                             {/dede:arclist}
@@ -185,7 +185,7 @@
                         <div class="slider-wraper">
                             <ul class="slider-container">
                                 {dede:arclist typeid='3' row='4' orderby='id' orderway='desc' infolen='30' }
-                                <li class="slider-item"> <a href="[field:arcurl /]" title="[field:title/]"><img src="{dede:global.cfg_pchost/}[field:picname /]" alt="[field:title/]"></a></li>
+                                <li class="slider-item"> <a href="[field:arcurl /]" title="[field:title/]"><img src="[field:picname function='replaceurl(@me) /]" alt="[field:title/]"></a></li>
                                 {/dede:arclist}
                             </ul>
                             <a href="javascript:void(0)" class="btn prev">&nbsp;</a>

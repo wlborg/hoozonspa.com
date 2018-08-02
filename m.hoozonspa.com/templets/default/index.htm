@@ -67,7 +67,7 @@
                                             </a>
                                         </div>
                                         <div class="back">
-                                            <img src="[field:picname/]">
+                                            <img src="{dede:global.cfg_pchost/}[field:picname/]" alt="[field:title/]">
                                         </div>
                                     </div>
                                     {/dede:arclist}
@@ -83,7 +83,7 @@
                                             </a>
                                         </div>
                                         <div class="back">
-                                            <img src="[field:picname/]">
+                                            <img src="{dede:global.cfg_pchost/}[field:picname/]" alt="[field:title/]">
                                         </div>
                                     </div>
                                     {/dede:arclist}
@@ -122,23 +122,23 @@
                     {dede:arclist typeid='10' row='3' flag='c' orderby='id' orderway='desc' infolen='30' addfields='pic_before,pic_after1,project1' channelid='18' limit='0,1' }
                     <div class="item active">
                         <div class="front">
-                            <img src="[field:pic_before/]">
+                            <img src="{dede:global.cfg_pchost/}[field:pic_before/]" alt="[field:title/]">
                             <p>项目： [field:project1/]
                             </p>
                         </div>
                         <div class="back">
-                            <img src="[field:pic_after1/]">
+                            <img src="{dede:global.cfg_pchost/}[field:pic_after1/]" alt="[field:title/]">
                         </div>
                     </div>
                     {/dede:arclist} {dede:arclist typeid='10' row='3' flag='c' orderby='id' orderway='desc' infolen='30' addfields='pic_before,pic_after1,project1' channelid='18' limit='1,2' }
                     <div class="item ">
                         <div class="front">
-                            <img src="[field:pic_before/]">
+                            <img src="{dede:global.cfg_pchost/}[field:pic_before/]" alt="[field:title/]">
                             <p>项目： [field:project1/]
                             </p>
                         </div>
                         <div class="back">
-                            <img src="[field:pic_after1/]">
+                            <img src="{dede:global.cfg_pchost/}[field:pic_after1/]" alt="[field:title/]">
                         </div>
                     </div>
                     {/dede:arclist}
@@ -147,12 +147,12 @@
                     {dede:arclist typeid='10' row='3' flag='c' orderby='id' orderway='desc' infolen='30' addfields='pic_before,pic_after1,project1' channelid='18' limit='3,3' }
                     <div class="item ">
                         <div class="front">
-                            <img src="[field:pic_before/]">
+                            <img src="{dede:global.cfg_pchost/}[field:pic_before/]" alt="[field:title/]">
                             <p>项目： [field:project1/]
                             </p>
                         </div>
                         <div class="back">
-                            <img src="[field:pic_after1/]">
+                            <img src="{dede:global.cfg_pchost/}[field:pic_after1/]" alt="[field:title/]">
                         </div>
                     </div>
                     {/dede:arclist}
@@ -175,7 +175,7 @@
                         </p>
                     </div>
                     <div class="back">
-                        <img src="[field:pic5/]" alt="">
+                        <img src="{dede:global.cfg_pchost/}[field:pic5/]" alt="[field:title/]">
                     </div>
                 </div>
                 {/dede:arclist} {dede:arclist typeid='7' row='3' flag='c' orderby='id' orderway='desc' infolen='30' addfields='des,pic5' channelid='19' limit='1,2' }
@@ -187,7 +187,7 @@
                         </p>
                     </div>
                     <div class="back">
-                        <img src="[field:pic5/]" alt="">
+                        <img src="{dede:global.cfg_pchost/}[field:pic5/]" alt="[field:title/]">
                     </div>
                 </div>
                 {/dede:arclist}
@@ -203,7 +203,7 @@
                 <div class="slider-wraper">
                     <ul class="slider-container">
                         {dede:arclist typeid='6' row='4' flag='c' orderby='id' orderway='desc' infolen='30' addfields='s_pic1' channelid='17' }
-                        <li class="slider-item"><a href="[field:arcurl /]" title="[field:title/]"><img src="[field:s_pic1/]" alt=""></a></li>
+                        <li class="slider-item"><a href="[field:arcurl /]" title="[field:title/]"><img src="{dede:global.cfg_pchost/}[field:s_pic1/]" alt="[field:title/]"></a></li>
                         {/dede:arclist}
                     </ul>
                 </div>
@@ -220,7 +220,7 @@
             <div class="content">
                 {dede:arclist typeid='4' row='4' orderby='id' orderway='desc' infolen='30' }
                 <div class="box">
-                    <a href="[field:arcurl /]" title="[field:title/]"><img src="[field:picname /]" alt="[field:title/]"></a>
+                    <a href="[field:arcurl /]" title="[field:title/]"><img src="{dede:global.cfg_pchost/}[field:picname /]" alt="[field:title/]"></a>
                     <h3><a href="[field:arcurl /]" title="[field:title/]">[field:title/]</a></h3>
                     <p><a href="[field:arcurl /]" title="[field:title/]">[field:description/]</a>
                     </p>

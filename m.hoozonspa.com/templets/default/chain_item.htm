@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {dede:include filename="_meta.htm"/}
+    <meta name="author" content="前端：陈晓珍" />
+    <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+    <meta name="description" content="{dede:global.cfg_description/}" />
+    <!-- 移动端设置 唯一URL-->
+    <link rel="canonical" href="https://www.hoozonspa.com/">
+    <title>{dede:global.cfg_webname/}</title>
+    {dede:include filename="_link.htm"/}
+</head>
+
+<body>
+    <div class="wrapper chain-wrapper">
+        <div id="chain-full" class="show">
+            <div class="">
+                <div class="chain-info">
+                    <h2><span class="sr-only">CHAIN BRAND 连锁品牌 深耕细作</span></h2>
+                    <img src="images/bgt_chain.png" alt="前往 红妆双美 连锁店">
+                </div>
+                <div class="chain-box">
+                    {dede:channelartlist typeid="6"}
+                    <h3 class="city">{dede:field name='typename'/}</h3>
+                    <ul class="">
+                        {dede:arclist titlelen='42' row='15' addfields='address,tel' channelid='17'}
+                        <li>
+                            <h4 class="name active">[field:title/]</h4>
+                            <div class="des">
+                                <p class="tel">电话：[field:tel/]</p>
+                                <p class="address">地址：[field:address/]</p>
+                            </div>
+                        </li>
+                        {/dede:arclist}
+                    </ul>
+                    {/dede:channelartlist}
+                </div>
+            </div>
+            <a class="chain-close" href="javascript:history.go(-1);"><span class="sr-only">关闭</span></a>
+        </div>
+    </div>
+    <!-- footer -->
+    {dede:include filename="_footer.htm"/}
+    <!-- /footer -->
+    {dede:include filename="_script.htm"/}
+</body>
+
+</html>

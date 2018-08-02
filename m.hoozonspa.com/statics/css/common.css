@@ -1,0 +1,335 @@
+/** 
+* demo V1.0.0 
+* By 小珍
+* http://www.baidu.com/
+ */
+@charset "utf-8";
+/* ***reset*** */
+a,
+body {
+  color: #000;
+}
+body,
+dd,
+dl,
+dt,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+input,
+label,
+li,
+p,
+textarea,
+ul {
+  margin: 0;
+  padding: 0;
+}
+form {
+  display: inline;
+}
+img {
+  border: 0;
+}
+td {
+  word-break: break-all;
+}
+dd,
+dl,
+dt,
+li,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* a:hover {
+    color:black;
+} */
+body {
+  background: #fff;
+  font-family: "微软雅黑", sans-serif, Verdana, Arial;
+}
+.f-fr {
+  float: right;
+}
+.f-fl {
+  float: left;
+}
+.f-cb:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  content: ".";
+}
+.f-cb {
+  zoom: 1;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+/* 各属性的混入 */
+/* 动画帧的usage    #test>.keyframes(test)*/
+.img-respon {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* .block-element-h-center */
+/* .block-text-h-center */
+/* .block-element-v-center */
+/* .block-element-v-center */
+/* .line-element-v-center */
+/* 定位居中 */
+/* .location-center */
+/* .location-h-center */
+/* .location-v-center */
+/*header*/
+.wrapper {
+  width: 15.99829352rem;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 2.09044369rem;
+  padding-bottom: 2.34641638rem;
+}
+.g-container {
+  width: 15.99829352rem;
+  margin: 0 auto;
+}
+#header {
+  /*position: absolute;
+    top:0;
+    left: 0;*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: rgba(92, 55, 58, 0.9);
+  z-index: 3;
+}
+#header .heading {
+  background-color: #5c373a;
+  position: relative;
+  height: 2.09044369rem;
+}
+#header .heading .btn {
+  position: absolute;
+  top: 0;
+  left: 0.42662116rem;
+  width: 1.02389078rem;
+  height: 2.09044369rem;
+  background: url('../images/icon_menu.png') center center no-repeat;
+  background-size: 0.85324232rem 0.85324232rem;
+}
+#header .heading .btn:hover {
+  cursor: pointer;
+}
+#header .heading .logo {
+  width: 4.47952218rem;
+  height: 1.36518771rem;
+  margin: 0 auto;
+  padding-top: 0.34129693rem;
+}
+#header .heading .logo img {
+  width: 4.47952218rem;
+  height: 1.36518771rem;
+  display: block;
+}
+#header .menu {
+  display: none;
+}
+#header .menu ul {
+  /*margin-top: 80rem/@fb;*/
+}
+#header .menu ul li {
+  font-size: 0.85324232rem;
+  height: 2.55972696rem;
+  color: #fff;
+  text-align: center;
+}
+#header .menu ul li a {
+  display: block;
+  color: #fff;
+}
+#header.open {
+  /*position: fixed;
+    left: 0;
+    right: 0;
+    margin:0 auto;*/
+  height: 100%;
+}
+#header.open .heading .btn {
+  background: url('../images/icon_close.png') center center no-repeat;
+  background-size: 0.85324232rem 0.85324232rem;
+}
+#header.open .menu {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 10.23890785rem;
+  width: 15.99829352rem;
+  margin: auto;
+}
+.top-banner {
+  position: relative;
+  height: 21.75767918rem;
+  width: 100%;
+}
+.top-banner .slider-wraper {
+  position: absolute;
+  height: 21.75767918rem;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+.top-banner .slider-container {
+  width: 163.8225256rem;
+}
+.top-banner .slider-container li {
+  float: left;
+  width: 15.99829352rem;
+  height: 21.75767918rem;
+}
+.top-banner .slider-container li img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.top-banner .slider-item {
+  position: relative;
+}
+.top-banner .slider-indicator {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1.49317406rem;
+  z-index: 2;
+  padding: 0;
+  margin: 0 auto;
+  width: 10.66552901rem;
+  text-align: center;
+  line-height: .12em;
+  font-size: 0;
+}
+.top-banner .slider-indicator li {
+  display: inline-block;
+  margin: 0 0.38395904rem;
+  width: 0.2559727rem;
+  height: 0.2559727rem;
+  border-radius: 100%;
+  background: #fff;
+}
+.top-banner .slider-indicator li.active,
+.top-banner .slider-indicator li:hover {
+  cursor: pointer;
+  background: #9855ae;
+}
+.chain-info {
+  height: 4.90614334rem;
+  background: url('../images/bg_chain.jpg') center center no-repeat;
+  background-size: cover;
+}
+.chain-info h2 {
+  /*width:300rem/@fb;*/
+  /*height: 150rem/@fb;*/
+  /*background: url('@{imgp}bgt_chain.png') center center no-repeat;*/
+}
+.chain-info a {
+  display: block;
+  padding-top: 0.85324232rem;
+  margin: 0 auto;
+  width: 6.39931741rem;
+}
+.chain-info img {
+  width: 6.39931741rem;
+  height: 3.1996587rem;
+}
+.copyright-info {
+  height: 1.36518771rem;
+  background: #5c373a;
+  padding-top: 0.38395904rem;
+}
+.copyright-info p {
+  font-size: 0.34129693rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.51194539rem;
+  letter-spacing: 0.01706485rem;
+  color: #ffffff;
+  text-align: center;
+  height: 0.51194539rem;
+}
+#footer {
+  width: 15.99829352rem;
+  height: 2.34641638rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 4;
+  background: #fff;
+}
+#footer .grids-item {
+  width: 20%;
+  float: left;
+}
+#footer .grids-item .grids-icon {
+  width: 1.02389078rem;
+  height: 1.02389078rem;
+  margin: 0.31996587rem auto 0;
+}
+#footer .grids-item .grids-icon i {
+  display: block;
+  width: 1.02389078rem;
+  height: 1.02389078rem;
+}
+#footer .grids-item .grids-icon .icon-home {
+  background: url('../images/icon_home.png') center center no-repeat;
+  background-size: 1.02389078rem 1.02389078rem;
+}
+#footer .grids-item .grids-icon .icon-brand {
+  background: url('../images/icon_brand.png') center center no-repeat;
+  background-size: 1.02389078rem 1.02389078rem;
+}
+#footer .grids-item .grids-icon .icon-project {
+  background: url('../images/icon_project.png') center center no-repeat;
+  background-size: 1.02389078rem 1.02389078rem;
+}
+#footer .grids-item .grids-icon .icon-hj {
+  background: url('../images/icon_envrioment.png') center center no-repeat;
+  background-size: 1.02389078rem 1.02389078rem;
+}
+#footer .grids-item .grids-icon .icon-consult {
+  background: url('../images/icon_cunsoult.png') center center no-repeat;
+  background-size: 1.02389078rem 1.02389078rem;
+}
+#footer .grids-item .grids-txt {
+  padding-top: 0.2559727rem;
+  font-size: 0.46928328rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.17064846rem;
+  letter-spacing: 1.1px;
+  color: #898989;
+  text-align: center;
+}

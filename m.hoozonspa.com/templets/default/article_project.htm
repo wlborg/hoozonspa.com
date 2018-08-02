@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {dede:include filename="_meta.htm"/}
+    <title>{dede:field.title/}_{dede:field.typename/}_{dede:global.cfg_webname/}</title>
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="{dede:field.pubdate function=" MyDate( 'Y-m-d',@me) "/}T{dede:field.pubdate function="MyDate( 'H:i:s',@me) "/}+08:00" />
+    <meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <link rel="canonical" href="https://www.hoozonspa.com{dede:field.arcurl/}"> {dede:include filename="_link.htm"/}
+</head>
+
+<body>
+    <div class="wrapper">
+         {dede:include filename="_header.htm"/}
+         <!-- 首页轮播广告 -->
+         {dede:myad name='sj_banner'/}
+        <!-- /首页轮播广告 -->
+                <!-- projectdetail -->
+                <div class="g-container projectdetail">
+                    <div class="title">
+                        <p>{dede:field.title2/} </p>
+                        <h2>{dede:field.title/} </h2>
+                    </div>
+                    <div class="content">
+                        <img src="/statics/img/img21.jpg" alt="">
+                    </div>
+                </div>
+                <!--Principle effect -->
+                <div class="g-container principle">
+                    <div class="title">
+                        <h2><span class="sr-only">原理功效</span></h2>
+                    </div>
+                    <div class="content">
+                        <div class="back">
+                            <img src="{dede:field.pic1/}" alt="">
+                        </div>
+                        <div class="front">
+                            <p> {dede:field.effect/} 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--Adapt to the crowd -->
+                <div class="g-container adapt">
+                    <div class="title">
+                        <h2><span class="sr-only">适应人群</span></h2>
+                    </div>
+                    <div class="content">
+                        <div class="back">
+                            <img src="/statics/img/img23.jpg" alt="">
+                        </div>
+                        <div class="front">
+                            <p> {dede:field.adapt/}  </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- process -->
+                <div class="g-container process">
+                    <div class="title">
+                        <h2><span class="sr-only">护理流程</span></h2>
+                    </div>
+                    <div class="content">
+                        <div class="step">
+                            <h3>step . 1 </h3>
+                            <p><span>{dede:field.step1/}</span></p>
+                            <h3>step . 2 </h3>
+                            <p><span>{dede:field.step2/}</span></p>
+                            <h3>step . 3 </h3>
+                            <p><span>{dede:field.step3/}</span></p>
+                            <h3>step . 4 </h3>
+                            <p><span>{dede:field.step4/}</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- time -->
+                <div class="g-container time">
+                    <div class="title">
+                        <h2><span class="sr-only">护理时长</span></h2>
+                    </div>
+                    <div class="content">
+                        <div class="back">
+                            <img src="/statics/img/img24.jpg" alt="">
+                        </div>
+                        <div class="front">
+                            <img src="images/icon_time.png">
+                            <p>{dede:field.time/}分钟 </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- home project -->
+                {dede:include filename="_home_project.htm"/}
+                <!-- the way -->
+                {dede:include filename="_theway.htm"/} 
+                {dede:include filename="_sj_copyright.htm"/} 
+                {dede:include filename="_footer.htm"/}
+    </div>
+    {dede:include filename="_script.htm"/}
+</body>
+
+</html>

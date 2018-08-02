@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {dede:include filename="_meta.htm"/}
+    <meta name="author" content="前端：陈晓珍" />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="{dede:field.pubdate function=" MyDate( 'Y-m-d',@me) "/}T{dede:field.pubdate function="MyDate( 'H:i:s',@me) "/}+08:00" />
+    <meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <title>{dede:field.title/}_{dede:field.typename/}_{dede:global.cfg_webname/}</title>
+    <link rel="canonical" href="https://www.hoozonspa.com{dede:field.arcurl/}">
+    {dede:include filename="_link.htm"/}
+</head>
+
+<body>
+    <div class="wrapper">
+       {dede:include filename="_header.htm"/}
+        <!-- 首页轮播广告 -->
+        {dede:myad name='sj_banner'/}
+        <!-- /首页轮播广告 -->
+                <div class="g-container newdetail">
+                    <div class="g-doc">
+                        <div class="heading">
+                            <h1>{dede:field.title/}</h1>
+                            <p> 时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)" /}  点击量：{dede:field.click /} </p>
+                        </div>
+                        <div class="content">
+                        {dede:field.body /}
+                        </div>
+                        <div class="box">
+                           <a class="prev"> {dede:prenext get='pre'/}</a>
+    
+                            <ul>
+                                <li><span class="icon icon_weibo2"></span></li>
+                                <li><span class="icon icon_teng2"></span></li>
+                                <li><span class="icon icon_weixin2"></span></li>
+                                <li><span class="icon icon_qq2"></span></li>
+                            </ul>
+                            <a class="next">{dede:prenext get='next'/}</a>
+                        </div>
+                    </div>
+                </div>
+          {dede:include filename="_news_project.htm"/}
+          {dede:include filename="_sj_copyright.htm"/}
+         {dede:include filename="_footer.htm"/}
+    </div>
+    {dede:include filename="_script.htm"/}
+</body>
+
+</html>

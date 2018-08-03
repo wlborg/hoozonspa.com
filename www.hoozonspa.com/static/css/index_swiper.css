@@ -1,0 +1,121 @@
+
+.swiper-container {
+    width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display:         flex;
+    /* width:3.3em!important;*/
+    height: 3.3em;
+
+    text-align: center;
+
+    background: #fff;
+
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+}
+.slider-wraper .swiper-slide .front {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*visibility: hidden;*/
+
+    display: none;
+    margin: auto;
+
+    background-color: rgba(92, 55, 58, .8);
+}
+.swiper-containerMy .swiper-slide {
+    position: relative;
+
+    float: left;
+    /*width: 3.3em!important;*/
+    height: 3.3em;
+    /*margin-left: .4em;*/
+}
+.slider-wraper .swiper-slide .back img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.swiper-containerMy .front p {
+    margin-top: .5em;
+
+    font-size: .18em;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+
+    text-align: center;
+    letter-spacing: 0;
+
+    color: #efefef;
+}
+.swiper-containerMy .front p a {
+    color: #efefef;
+}
+.swiper-containerMy .front h3 {
+    margin-top: 1em;
+
+    font-size: .25em;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1;
+
+    text-align: center;
+    letter-spacing: 0;
+
+    color: #fff;
+}
+.swiper-containerMy  .back {
+    width: 100%;
+    height: 100%;
+}
+.swiper-containerMy .front img {
+    display: block;
+    width: 1.47em;
+    height: 1.47em;
+    margin: .3em auto 0;
+
+    border-radius: 100%;
+}
+.classicCase .g-right {
+    float: left!important;
+}
+.classicCase .g-right .slider-wraper {
+    width: 10.6em;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 .15em;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fff!important;
+}
+.swiper-pagination {
+    top: 7.7em;
+    left: 43%;
+}
+.swiper-pagination-bullet {
+    width: .12em;
+    height: .12em;
+
+    outline: mediumaquamarine;
+}

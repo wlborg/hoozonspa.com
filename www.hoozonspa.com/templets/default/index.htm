@@ -15,6 +15,8 @@
 <!--<script type="text/javascript" src="js/fontreset.js"></script>-->
 <link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/common.css">
 <link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/site.css">
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/index_swiper.css">
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/swiper.min.css">
 </head>
 <body>
 <!-- header -->
@@ -61,7 +63,7 @@
             <li><span>美妆护肤</span></li>
         </ul>
         <div class="line"></div>
-        <a href="project.html#beautyspa" class="more">查看更多</a>
+        <a href="/project?beautyspa" class="more">查看更多</a>
          <!-- <p class="bigtxt">project</p> -->
          <p class="bigtxt"><img src="{dede:global.cfg_imgpath/}/bigtxt_project.png"></p>
 
@@ -299,7 +301,6 @@
 <div class="g-container classicCase">
     <div class="g-left">
     <div class="wraper">
-
         <h2><span class="sr-only">经典案例</span></h2>
         <p>始终以顾客的舒适度与体验度为考量<br> 想顾客所想，随顾客所愿  <br>实现女性多重美丽需求一步到位
         </p>
@@ -307,406 +308,36 @@
         <a class="more" href="/case">查看更多</a>
     </div>
     </div>
-    <div class="g-right">
-        <div class="slider-wraper">
-            <ul class="slider-container">
-                <li class="slider-item">
-                    <div class="row">
-                        <div class="item">
+     <div class="g-right cases">
+       <!-- Swiper -->
+    <div class="cases-container">
+        <div class="swiper-container swiper-container1 slider-wraper swiper-containerMy">
+          <div class="swiper-wrapper">
+             <!-- 循环开始 -->
+               {dede:arclist typeid='10' row='24' flag='c' orderby='id' orderway='desc' infolen='30' addfields='pic_before,pic_after1,project1' channelid='18'}
+              <div class="swiper-slide">
                             <div class="front">
-                                <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                <h3>徐丹 </h3>
+                                 <img src="[field:pic_before function='replaceurl(@me)/]" alt="[field:title/]">
+                                 <h3>[field:title/]</h3>
                                 <p>项目：
-                                    <a href="">水光注射</a>、
-                                    <a href="">面部护理</a>
+                                    <a href="javascript:;">[field:project1/]</a>、
+                                    <a href="javascript:;">[field:project2/]</a>
                                 </p>
-                                <p>塑美技师：陈晓月
+                                <p>塑美技师：[field:doctor/]
                                 </p>
                             </div>
                             <div class="back">
-                                <img src="//pc.hoozonspa.com/static/img/img7.jpg">
+                                <img src="[field:pic_after1 function='replaceurl(@me)/]" alt="[field:title/]">
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="front">
-                                <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                <h3>徐丹 </h3>
-                                <p>项目：
-                                    <a href="">水光注射</a>、
-                                    <a href="">面部护理</a>
-                                </p>
-                                <p>塑美技师：陈晓月
-                                </p>
-                            </div>
-                            <div class="back">
-                                <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="front">
-                                <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                <h3>徐丹 </h3>
-                                <p>项目：
-                                    <a href="">水光注射</a>、
-                                    <a href="">面部护理</a>
-                                </p>
-                                <p>塑美技师：陈晓月
-                                </p>
-                            </div>
-                            <div class="back">
-                                <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="item">
-                            <div class="front">
-                                <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                <h3>徐丹 </h3>
-                                <p>项目：
-                                    <a href="">水光注射</a>、
-                                    <a href="">面部护理</a>
-                                </p>
-                                <p>塑美技师：陈晓月
-                                </p>
-                            </div>
-                            <div class="back">
-                                <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="front">
-                                <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                <h3>徐丹 </h3>
-                                <p>项目：
-                                    <a href="">水光注射</a>、
-                                    <a href="">面部护理</a>
-                                </p>
-                                <p>塑美技师：陈晓月
-                                </p>
-                            </div>
-                            <div class="back">
-                                <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="front">
-                                <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                <h3>徐丹 </h3>
-                                <p>项目：
-                                    <a href="">水光注射</a>、
-                                    <a href="">面部护理</a>
-                                </p>
-                                <p>塑美技师：陈晓月
-                                </p>
-                            </div>
-                            <div class="back">
-                                <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                 <li class="slider-item">
-                    <div class="row">
-                        <div class="item">
-                            <div class="front">
-                                <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                <h3>徐丹 </h3>
-                                <p>项目：
-                                    <a href="">水光注射</a>、
-                                    <a href="">面部护理</a>
-                                </p>
-                                <p>塑美技师：陈晓月
-                                </p>
-                            </div>
-                            <div class="back">
-                                <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="front">
-                                <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                <h3>徐丹 </h3>
-                                <p>项目：
-                                    <a href="">水光注射</a>、
-                                    <a href="">面部护理</a>
-                                </p>
-                                <p>塑美技师：陈晓月
-                                </p>
-                            </div>
-                            <div class="back">
-                                <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="front">
-                                <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                <h3>徐丹 </h3>
-                                <p>项目：
-                                    <a href="">水光注射</a>、
-                                    <a href="">面部护理</a>
-                                </p>
-                                <p>塑美技师：陈晓月
-                                </p>
-                            </div>
-                            <div class="back">
-                                <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="item">
-                            <div class="front">
-                                <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                <h3>徐丹 </h3>
-                                <p>项目：
-                                    <a href="">水光注射</a>、
-                                    <a href="">面部护理</a>
-                                </p>
-                                <p>塑美技师：陈晓月
-                                </p>
-                            </div>
-                            <div class="back">
-                                <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="front">
-                                <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                <h3>徐丹 </h3>
-                                <p>项目：
-                                    <a href="">水光注射</a>、
-                                    <a href="">面部护理</a>
-                                </p>
-                                <p>塑美技师：陈晓月
-                                </p>
-                            </div>
-                            <div class="back">
-                                <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="front">
-                                <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                <h3>徐丹 </h3>
-                                <p>项目：
-                                    <a href="">水光注射</a>、
-                                    <a href="">面部护理</a>
-                                </p>
-                                <p>塑美技师：陈晓月
-                                </p>
-                            </div>
-                            <div class="back">
-                                <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                 </li>
-                 <li class="slider-item">
-                    <div class="row">
-                        <div class="item">
-                            <div class="front">
-                                <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                <h3>徐丹 </h3>
-                                <p>项目：
-                                    <a href="">水光注射</a>、
-                                    <a href="">面部护理</a>
-                                </p>
-                                <p>塑美技师：陈晓月
-                                </p>
-                            </div>
-                            <div class="back">
-                                <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="front">
-                                <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                <h3>徐丹 </h3>
-                                <p>项目：
-                                    <a href="">水光注射</a>、
-                                    <a href="">面部护理</a>
-                                </p>
-                                <p>塑美技师：陈晓月
-                                </p>
-                            </div>
-                            <div class="back">
-                                <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="front">
-                                <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                <h3>徐丹 </h3>
-                                <p>项目：
-                                    <a href="">水光注射</a>、
-                                    <a href="">面部护理</a>
-                                </p>
-                                <p>塑美技师：陈晓月
-                                </p>
-                            </div>
-                            <div class="back">
-                                <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="item">
-                            <div class="front">
-                                <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                <h3>徐丹 </h3>
-                                <p>项目：
-                                    <a href="">水光注射</a>、
-                                    <a href="">面部护理</a>
-                                </p>
-                                <p>塑美技师：陈晓月
-                                </p>
-                            </div>
-                            <div class="back">
-                                <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="front">
-                                <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                <h3>徐丹 </h3>
-                                <p>项目：
-                                    <a href="">水光注射</a>、
-                                    <a href="">面部护理</a>
-                                </p>
-                                <p>塑美技师：陈晓月
-                                </p>
-                            </div>
-                            <div class="back">
-                                <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="front">
-                                <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                <h3>徐丹 </h3>
-                                <p>项目：
-                                    <a href="">水光注射</a>、
-                                    <a href="">面部护理</a>
-                                </p>
-                                <p>塑美技师：陈晓月
-                                </p>
-                            </div>
-                            <div class="back">
-                                <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                 </li>
-                 <li class="slider-item">
-                    <div class="row">
-                        <div class="item">
-                            <div class="front">
-                                <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                <h3>徐丹 </h3>
-                                <p>项目：
-                                    <a href="">水光注射</a>、
-                                    <a href="">面部护理</a>
-                                </p>
-                                <p>塑美技师：陈晓月
-                                </p>
-                            </div>
-                            <div class="back">
-                                <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="front">
-                                <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                <h3>徐丹 </h3>
-                                <p>项目：
-                                    <a href="">水光注射</a>、
-                                    <a href="">面部护理</a>
-                                </p>
-                                <p>塑美技师：陈晓月
-                                </p>
-                            </div>
-                            <div class="back">
-                                <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="front">
-                                <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                <h3>徐丹 </h3>
-                                <p>项目：
-                                    <a href="">水光注射</a>、
-                                    <a href="">面部护理</a>
-                                </p>
-                                <p>塑美技师：陈晓月
-                                </p>
-                            </div>
-                            <div class="back">
-                                <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="item">
-                            <div class="front">
-                                <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                <h3>徐丹 </h3>
-                                <p>项目：
-                                    <a href="">水光注射</a>、
-                                    <a href="">面部护理</a>
-                                </p>
-                                <p>塑美技师：陈晓月
-                                </p>
-                            </div>
-                            <div class="back">
-                                <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="front">
-                                <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                <h3>徐丹 </h3>
-                                <p>项目：
-                                    <a href="">水光注射</a>、
-                                    <a href="">面部护理</a>
-                                </p>
-                                <p>塑美技师：陈晓月
-                                </p>
-                            </div>
-                            <div class="back">
-                                <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="front">
-                                <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                <h3>徐丹 </h3>
-                                <p>项目：
-                                    <a href="">水光注射</a>、
-                                    <a href="">面部护理</a>
-                                </p>
-                                <p>塑美技师：陈晓月
-                                </p>
-                            </div>
-                            <div class="back">
-                                <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <ol class="slider-indicator">
-            <li class="active">&nbsp;</li>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
-        </ol>
+              </div>
+            {/dede:arclist}
+         <!--循环结束-->
+      </div>
+        <div class="swiper-pagination"></div>
+    </div>
     </div>
 </div>
-    <div class="fullscreen">
+  <div class="fullscreen">
                     <div class="g-container casesImgs">
                         <div class="wraper">
                             <div class="block block1">
@@ -880,7 +511,7 @@
                         <div class="close">
                         </div>
                     </div>
-                </div>
+    </div>
 <!-- equipment technology -->
 <div class="g-container equipmenttechnology">
     <div class="g-left">
@@ -931,6 +562,626 @@
         </div>
     </div>
 </div>
+<div class="fullscreen full1">
+                    <div class="g-container casesImgs">
+                      <div class="wraper">
+                      <div class="swiper-container caseSix_container">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide slider-container">
+                                        <li>
+                                            <div class="g-left">
+                                                <div class="front">
+                                                    <img src="img/img29.jpg" alt="">
+                                                </div>
+                                                <div class="back">
+                                                    <img src="img/img28.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="g-right">
+                                                <h2><span class="sr-only">尊贵典雅院内环境</span></h2>
+                                                <p>始终以顾客的舒适度与体验度为考量six_1
+                                                    <br> 想顾客所想，随顾客所愿
+                                                    <br> 实现女性多重美丽需求一步到位
+                                                    <br> 效果看得见
+                                                    <br> 为您的美丽与健康保驾护航
+                                                </p>
+                                                <div class="row">
+                                                    <div class="item"><span>面部护理 <br></span>
+                                                    </div>
+                                                    <div class="item"><span>水双针</span>
+                                                        <br>
+                                                    </div>
+                                                    <div class="item"><span>服务技师<br>
+                                         陈小月</span></div>
+                                                </div>
+                                                <a class="consult"></a>
+                                            </div>
+                                          </li>
+                                      </div>
+                                      <div class="swiper-slide slider-container">
+                                           <li>
+                                            <div class="g-left">
+                                                <div class="front">
+                                                    <img src="img/img29.jpg" alt="">
+                                                </div>
+                                                <div class="back">
+                                                    <img src="img/img28.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="g-right">
+                                                <h2><span class="sr-only">尊贵典雅院内环境</span></h2>
+                                                <p>始终以顾客的舒适度与体验度为考量
+                                                    <br> 想顾客所想，随顾客所愿
+                                                    <br> 实现女性多重美丽需求一步到位
+                                                    <br> 效果看得见
+                                                    <br> 为您的美丽与健康保驾护航
+                                                </p>
+                                                <div class="row">
+                                                    <div class="item"><span>面部护理 <br></span>
+                                                    </div>
+                                                    <div class="item"><span>水双针</span>
+                                                        <br>
+                                                    </div>
+                                                    <div class="item"><span>服务技师<br>
+                                         陈小月</span></div>
+                                                </div>
+                                                <a class="consult"></a>
+                                            </div>
+                                          </li>
+                                     </div>
+                                      <div class="swiper-slide slider-container">
+                                        Slide 3
+                                      </div>
+                                      <div class="swiper-slide slider-container">Slide 4</div>
+                                      <div class="swiper-slide slider-container">Slide 5</div>
+                                      <div class="swiper-slide slider-container">Slide 6</div>
+                                      <div class="swiper-slide slider-container">Slide 7</div>
+                                      <div class="swiper-slide slider-container">Slide 8</div>
+                                      <div class="swiper-slide slider-container">Slide 9</div>
+                                      <div class="swiper-slide slider-container">Slide 10</div>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination"></div>
+                                    <!-- Add Arrows -->
+                                 <!--    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div> -->
+                            </div>
+                        </div>
+                        <div class="close">
+                        </div>
+                    </div>
+</div>
+<!-- full 2 -->
+<div class="fullscreen full2">
+                    <div class="g-container casesImgs">
+                        <div class="wraper">
+                            <div class="block block1">
+                                <div class="slider-wraper">
+                                    <ul class="slider-container">
+                                        <li class="slider-item">
+                                            <div class="g-left">
+                                                <div class="front">
+                                                    <img src="img/img29.jpg" alt="">
+                                                </div>
+                                                <div class="back">
+                                                    <img src="img/img28.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="g-right">
+                                                <h2><span class="sr-only">尊贵典雅院内环境2</span></h2>
+                                                <p>始终以顾客的舒适度与体验度为考量
+                                                    <br> 想顾客所想，随顾客所愿
+                                                    <br> 实现女性多重美丽需求一步到位
+                                                    <br> 效果看得见
+                                                    <br> 为您的美丽与健康保驾护航
+                                                </p>
+                                                <div class="row">
+                                                    <div class="item"><span>面部护理 <br></span>
+                                                    </div>
+                                                    <div class="item"><span>水双针</span>
+                                                        <br>
+                                                    </div>
+                                                    <div class="item"><span>服务技师<br>
+                                         陈小月</span></div>
+                                                </div>
+                                                <a class="consult"></a>
+                                            </div>
+                                        </li>
+                                         <li class="slider-item">
+                                            <div class="g-left">
+                                                <div class="front">
+                                                    <img src="img29.jpg" alt="">
+                                                </div>
+                                                <div class="back">
+                                                    <img src="img28.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="g-right">
+                                                <h2><span class="sr-only">尊贵典雅院内环境</span></h2>
+                                                <p>始终以顾客的舒适度与体验度为考量
+                                                    <br> 想顾客所想，随顾客所愿
+                                                    <br> 实现女性多重美丽需求一步到位
+                                                    <br> 效果看得见
+                                                    <br> 为您的美丽与健康保驾护航
+                                                </p>
+                                                <div class="row">
+                                                    <div class="item"><span>面部护理 <br></span>
+                                                    </div>
+                                                    <div class="item"><span>水双针</span>
+                                                        <br>
+                                                    </div>
+                                                    <div class="item"><span>服务技师<br>
+                                         陈小月</span></div>
+                                                </div>
+                                                <a class="consult"></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ol class="slider-indicator">
+                                        <li class="active"></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="block block2">
+                                <div class="slider-wraper">
+                                    <ul class="slider-container">
+                                        <li class="slider-item">
+                                            <div class="g-left">
+                                                <div class="front">
+                                                    <img src="img/img29.jpg" alt="">
+                                                </div>
+                                                <div class="back">
+                                                    <img src="img/img28.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="g-right">
+                                                <h2><span class="sr-only">尊贵典雅院内环境</span></h2>
+                                                <p>始终以顾客的舒适度与体验度为考量
+                                                    <br> 想顾客所想，随顾客所愿
+                                                    <br> 实现女性多重美丽需求一步到位
+                                                    <br> 效果看得见
+                                                    <br> 为您的美丽与健康保驾护航
+                                                </p>
+                                                <div class="row">
+                                                    <div class="item"><span>面部护理 <br></span>
+                                                    </div>
+                                                    <div class="item"><span>水双针</span>
+                                                        <br>
+                                                    </div>
+                                                    <div class="item"><span>服务技师<br>
+                                         陈小月</span></div>
+                                                </div>
+                                                <a class="consult"></a>
+                                            </div>
+                                        </li>
+                                        <li class="slider-item">
+                                            <div class="g-left">
+                                                <div class="front">
+                                                    <img src="img/img29.jpg" alt="">
+                                                </div>
+                                                <div class="back">
+                                                    <img src="img/img28.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="g-right">
+                                                <h2><span class="sr-only">尊贵典雅院内环境</span></h2>
+                                                <p>始终以顾客的舒适度与体验度为考量
+                                                    <br> 想顾客所想，随顾客所愿
+                                                    <br> 实现女性多重美丽需求一步到位
+                                                    <br> 效果看得见
+                                                    <br> 为您的美丽与健康保驾护航
+                                                </p>
+                                                <div class="row">
+                                                    <div class="item"><span>面部护理 <br></span>
+                                                    </div>
+                                                    <div class="item"><span>水双针</span>
+                                                        <br>
+                                                    </div>
+                                                    <div class="item"><span>服务技师<br>
+                                         陈小月</span></div>
+                                                </div>
+                                                <a class="consult"></a>
+                                            </div>
+                                        </li>
+                                        <li class="slider-item">
+                                            <div class="g-left">
+                                                <div class="front">
+                                                    <img src="img/img29.jpg" alt="">
+                                                </div>
+                                                <div class="back">
+                                                    <img src="img/img28.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="g-right">
+                                                <h2><span class="sr-only">尊贵典雅院内环境</span></h2>
+                                                <p>始终以顾客的舒适度与体验度为考量
+                                                    <br> 想顾客所想，随顾客所愿
+                                                    <br> 实现女性多重美丽需求一步到位
+                                                    <br> 效果看得见
+                                                    <br> 为您的美丽与健康保驾护航
+                                                </p>
+                                                <div class="row">
+                                                    <div class="item"><span>面部护理 <br></span>
+                                                    </div>
+                                                    <div class="item"><span>水双针</span>
+                                                        <br>
+                                                    </div>
+                                                    <div class="item"><span>服务技师<br>
+                                         陈小月</span></div>
+                                                </div>
+                                                <a class="consult"></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ol class="slider-indicator">
+                                        <li class="active"></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="close">
+                        </div>
+                    </div>
+</div>
+<!-- full2结束 -->
+<!-- full 3 -->
+<div class="fullscreen full3">
+                    <div class="g-container casesImgs">
+                        <div class="wraper">
+                            <div class="block block1">
+                                <div class="slider-wraper">
+                                    <ul class="slider-container">
+                                        <li class="slider-item">
+                                            <div class="g-left">
+                                                <div class="front">
+                                                    <img src="img/img29.jpg" alt="">
+                                                </div>
+                                                <div class="back">
+                                                    <img src="img/img28.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="g-right">
+                                                <h2><span class="sr-only">尊贵典雅院内环境3</span></h2>
+                                                <p>始终以顾客的舒适度与体验度为考量
+                                                    <br> 想顾客所想，随顾客所愿
+                                                    <br> 实现女性多重美丽需求一步到位
+                                                    <br> 效果看得见
+                                                    <br> 为您的美丽与健康保驾护航
+                                                </p>
+                                                <div class="row">
+                                                    <div class="item"><span>面部护理 <br></span>
+                                                    </div>
+                                                    <div class="item"><span>水双针</span>
+                                                        <br>
+                                                    </div>
+                                                    <div class="item"><span>服务技师<br>
+                                         陈小月</span></div>
+                                                </div>
+                                                <a class="consult"></a>
+                                            </div>
+                                        </li>
+                                         <li class="slider-item">
+                                            <div class="g-left">
+                                                <div class="front">
+                                                    <img src="img29.jpg" alt="">
+                                                </div>
+                                                <div class="back">
+                                                    <img src="img28.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="g-right">
+                                                <h2><span class="sr-only">尊贵典雅院内环境</span></h2>
+                                                <p>始终以顾客的舒适度与体验度为考量
+                                                    <br> 想顾客所想，随顾客所愿
+                                                    <br> 实现女性多重美丽需求一步到位
+                                                    <br> 效果看得见
+                                                    <br> 为您的美丽与健康保驾护航
+                                                </p>
+                                                <div class="row">
+                                                    <div class="item"><span>面部护理 <br></span>
+                                                    </div>
+                                                    <div class="item"><span>水双针</span>
+                                                        <br>
+                                                    </div>
+                                                    <div class="item"><span>服务技师<br>
+                                         陈小月</span></div>
+                                                </div>
+                                                <a class="consult"></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ol class="slider-indicator">
+                                        <li class="active"></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="block block2">
+                                <div class="slider-wraper">
+                                    <ul class="slider-container">
+                                        <li class="slider-item">
+                                            <div class="g-left">
+                                                <div class="front">
+                                                    <img src="img/img29.jpg" alt="">
+                                                </div>
+                                                <div class="back">
+                                                    <img src="img/img28.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="g-right">
+                                                <h2><span class="sr-only">尊贵典雅院内环境</span></h2>
+                                                <p>始终以顾客的舒适度与体验度为考量
+                                                    <br> 想顾客所想，随顾客所愿
+                                                    <br> 实现女性多重美丽需求一步到位
+                                                    <br> 效果看得见
+                                                    <br> 为您的美丽与健康保驾护航
+                                                </p>
+                                                <div class="row">
+                                                    <div class="item"><span>面部护理 <br></span>
+                                                    </div>
+                                                    <div class="item"><span>水双针</span>
+                                                        <br>
+                                                    </div>
+                                                    <div class="item"><span>服务技师<br>
+                                         陈小月</span></div>
+                                                </div>
+                                                <a class="consult"></a>
+                                            </div>
+                                        </li>
+                                        <li class="slider-item">
+                                            <div class="g-left">
+                                                <div class="front">
+                                                    <img src="img/img29.jpg" alt="">
+                                                </div>
+                                                <div class="back">
+                                                    <img src="img/img28.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="g-right">
+                                                <h2><span class="sr-only">尊贵典雅院内环境</span></h2>
+                                                <p>始终以顾客的舒适度与体验度为考量
+                                                    <br> 想顾客所想，随顾客所愿
+                                                    <br> 实现女性多重美丽需求一步到位
+                                                    <br> 效果看得见
+                                                    <br> 为您的美丽与健康保驾护航
+                                                </p>
+                                                <div class="row">
+                                                    <div class="item"><span>面部护理 <br></span>
+                                                    </div>
+                                                    <div class="item"><span>水双针</span>
+                                                        <br>
+                                                    </div>
+                                                    <div class="item"><span>服务技师<br>
+                                         陈小月</span></div>
+                                                </div>
+                                                <a class="consult"></a>
+                                            </div>
+                                        </li>
+                                        <li class="slider-item">
+                                            <div class="g-left">
+                                                <div class="front">
+                                                    <img src="img/img29.jpg" alt="">
+                                                </div>
+                                                <div class="back">
+                                                    <img src="img/img28.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="g-right">
+                                                <h2><span class="sr-only">尊贵典雅院内环境</span></h2>
+                                                <p>始终以顾客的舒适度与体验度为考量
+                                                    <br> 想顾客所想，随顾客所愿
+                                                    <br> 实现女性多重美丽需求一步到位
+                                                    <br> 效果看得见
+                                                    <br> 为您的美丽与健康保驾护航
+                                                </p>
+                                                <div class="row">
+                                                    <div class="item"><span>面部护理 <br></span>
+                                                    </div>
+                                                    <div class="item"><span>水双针</span>
+                                                        <br>
+                                                    </div>
+                                                    <div class="item"><span>服务技师<br>
+                                         陈小月</span></div>
+                                                </div>
+                                                <a class="consult"></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ol class="slider-indicator">
+                                        <li class="active"></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="close">
+                        </div>
+                    </div>
+</div>
+<!-- full3结束 -->
+<!-- full 4 -->
+<div class="fullscreen full4">
+                    <div class="g-container casesImgs">
+                        <div class="wraper">
+                            <div class="block block1">
+                                <div class="slider-wraper">
+                                    <ul class="slider-container">
+                                        <li class="slider-item">
+                                            <div class="g-left">
+                                                <div class="front">
+                                                    <img src="img/img29.jpg" alt="">
+                                                </div>
+                                                <div class="back">
+                                                    <img src="img/img28.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="g-right">
+                                                <h2><span class="sr-only">尊贵典雅院内环境4</span></h2>
+                                                <p>始终以顾客的舒适度与体验度为考量
+                                                    <br> 想顾客所想，随顾客所愿
+                                                    <br> 实现女性多重美丽需求一步到位
+                                                    <br> 效果看得见
+                                                    <br> 为您的美丽与健康保驾护航
+                                                </p>
+                                                <div class="row">
+                                                    <div class="item"><span>面部护理 <br></span>
+                                                    </div>
+                                                    <div class="item"><span>水双针</span>
+                                                        <br>
+                                                    </div>
+                                                    <div class="item"><span>服务技师<br>
+                                         陈小月</span></div>
+                                                </div>
+                                                <a class="consult"></a>
+                                            </div>
+                                        </li>
+                                         <li class="slider-item">
+                                            <div class="g-left">
+                                                <div class="front">
+                                                    <img src="img29.jpg" alt="">
+                                                </div>
+                                                <div class="back">
+                                                    <img src="img28.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="g-right">
+                                                <h2><span class="sr-only">尊贵典雅院内环境</span></h2>
+                                                <p>始终以顾客的舒适度与体验度为考量
+                                                    <br> 想顾客所想，随顾客所愿
+                                                    <br> 实现女性多重美丽需求一步到位
+                                                    <br> 效果看得见
+                                                    <br> 为您的美丽与健康保驾护航
+                                                </p>
+                                                <div class="row">
+                                                    <div class="item"><span>面部护理 <br></span>
+                                                    </div>
+                                                    <div class="item"><span>水双针</span>
+                                                        <br>
+                                                    </div>
+                                                    <div class="item"><span>服务技师<br>
+                                         陈小月</span></div>
+                                                </div>
+                                                <a class="consult"></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ol class="slider-indicator">
+                                        <li class="active"></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="block block2">
+                                <div class="slider-wraper">
+                                    <ul class="slider-container">
+                                        <li class="slider-item">
+                                            <div class="g-left">
+                                                <div class="front">
+                                                    <img src="img/img29.jpg" alt="">
+                                                </div>
+                                                <div class="back">
+                                                    <img src="img/img28.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="g-right">
+                                                <h2><span class="sr-only">尊贵典雅院内环境</span></h2>
+                                                <p>始终以顾客的舒适度与体验度为考量
+                                                    <br> 想顾客所想，随顾客所愿
+                                                    <br> 实现女性多重美丽需求一步到位
+                                                    <br> 效果看得见
+                                                    <br> 为您的美丽与健康保驾护航
+                                                </p>
+                                                <div class="row">
+                                                    <div class="item"><span>面部护理 <br></span>
+                                                    </div>
+                                                    <div class="item"><span>水双针</span>
+                                                        <br>
+                                                    </div>
+                                                    <div class="item"><span>服务技师<br>
+                                         陈小月</span></div>
+                                                </div>
+                                                <a class="consult"></a>
+                                            </div>
+                                        </li>
+                                        <li class="slider-item">
+                                            <div class="g-left">
+                                                <div class="front">
+                                                    <img src="img/img29.jpg" alt="">
+                                                </div>
+                                                <div class="back">
+                                                    <img src="img/img28.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="g-right">
+                                                <h2><span class="sr-only">尊贵典雅院内环境</span></h2>
+                                                <p>始终以顾客的舒适度与体验度为考量
+                                                    <br> 想顾客所想，随顾客所愿
+                                                    <br> 实现女性多重美丽需求一步到位
+                                                    <br> 效果看得见
+                                                    <br> 为您的美丽与健康保驾护航
+                                                </p>
+                                                <div class="row">
+                                                    <div class="item"><span>面部护理 <br></span>
+                                                    </div>
+                                                    <div class="item"><span>水双针</span>
+                                                        <br>
+                                                    </div>
+                                                    <div class="item"><span>服务技师<br>
+                                         陈小月</span></div>
+                                                </div>
+                                                <a class="consult"></a>
+                                            </div>
+                                        </li>
+                                        <li class="slider-item">
+                                            <div class="g-left">
+                                                <div class="front">
+                                                    <img src="img/img29.jpg" alt="">
+                                                </div>
+                                                <div class="back">
+                                                    <img src="img/img28.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="g-right">
+                                                <h2><span class="sr-only">尊贵典雅院内环境</span></h2>
+                                                <p>始终以顾客的舒适度与体验度为考量
+                                                    <br> 想顾客所想，随顾客所愿
+                                                    <br> 实现女性多重美丽需求一步到位
+                                                    <br> 效果看得见
+                                                    <br> 为您的美丽与健康保驾护航
+                                                </p>
+                                                <div class="row">
+                                                    <div class="item"><span>面部护理 <br></span>
+                                                    </div>
+                                                    <div class="item"><span>水双针</span>
+                                                        <br>
+                                                    </div>
+                                                    <div class="item"><span>服务技师<br>
+                                         陈小月</span></div>
+                                                </div>
+                                                <a class="consult"></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ol class="slider-indicator">
+                                        <li class="active"></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="close">
+                        </div>
+                    </div>
+</div>
+<!-- full4结束 -->
 <!-- environment display     -->
 <div class="g-container environmentdisplay">
     <div class="g-left">
@@ -1203,5 +1454,6 @@
 </div>
 <!-- footer -->
     {dede:include filename="footer.htm"/}
+    <script type="text/javascript" src="{dede:global.cfg_jspath/}/swiper.min.js"></script>
 </body>
 </html>

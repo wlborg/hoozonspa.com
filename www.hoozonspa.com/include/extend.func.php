@@ -19,30 +19,9 @@ function litimgurls($imgid=0)
     //返回结果
     return $lit_imglist;
 }
-/**
-*  首页案例获取最新案例
-*  获取全站最新案例前3条
-*/
-function getAllDateCase3()
-{
-global $dsql;
-$relateproject="";
-$relatetypeid = 0;
-$dsql->SetQuery( "SELECT  * FROM #@__archives AS a where a.typeid in(26,27,28,29,30,31,32,33,34,35,36) and a.arcrank=0 order by id desc limit 3");
-$dsql->Execute();
-$ns = $dsql->GetTotalRow();
-while($row=$dsql->GetArray())
-{
-$id = $row["id"];
-$title = cn_substr($row["title"],80,0);
-$urlarray = GetOneArchive($id);
-$url = $urlarray['arcurl'];
 
-$litpic =$row["litpic"];
-$relateproject.='<li class="expert"><a href="'.$url.'" target="_blank" rel="nofollow"><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan">'.$title.'</span></a></li>';
-}
-if($ns>0){
-$relateproject=$relateproject;
-}
-return $relateproject;
+function replaceurl($newurl)
+{
+$newurl='//pc.hoozonspa.com/'.$newurl;
+return $newurl;
 }

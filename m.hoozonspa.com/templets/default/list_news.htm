@@ -20,7 +20,7 @@
             <div class="content">
                 {dede:list pagesize='4' orderby="id" orderway="desc"}
                  <div class="newitem">
-                    <a href="[field:arcurl/]" title="[field:title/]"><img src="[field:picname/]" alt="[field:title/]"></a>
+                    <a href="[field:arcurl/]" title="[field:title/]"><img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]"></a>
                     <h2><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></h2>
                     <p>发布时间：<span>[field:pubdate function="GetDateTimeMK(@me)"/]</span></p>
                 </div>

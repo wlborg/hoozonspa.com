@@ -10,7 +10,10 @@ var video=document.getElementById('video');
         }
     }
 
-    var swiper = new Swiper('.swiper-container', {
+
+      $(function(){
+        //案例显示 24条数据
+       var swiper = new Swiper('.swiper-container', {
       slidesPerView: 3,
       slidesPerColumn: 2,
        slidesPerGroup : 3,
@@ -20,9 +23,7 @@ var video=document.getElementById('video');
         el: '.swiper-pagination',
         clickable: true,
       },
-    });
-    swiper.slideTo(1);
-      $(function(){
+      });
         $(".swiper-slide").hover(function() {
              $(this).find(".front").fadeIn();
         }, function() {

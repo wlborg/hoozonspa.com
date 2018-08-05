@@ -2,15 +2,23 @@
 <html>
 
 <head>
-    <title>首页</title>
-    <% include _meta.html%>
-        <% include _link.html%>
+    {dede:include filename="_meta.htm"/}
+    <meta name="author" content="前端：陈晓珍" />
+    <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+    <meta name="description" content="{dede:global.cfg_description/}" />
+    <meta name="google-site-verification" content="Odmo8X4zeUG1WPcCrCAueZz-dyBPFBs4Zqlb9FBT5z4" />
+    <!-- 移动端设置 唯一URL-->
+    <link rel="canonical" href="https://www.hoozonspa.com/brand/">
+    <title>{dede:global.cfg_webname/}</title>
+    {dede:include filename="_link.htm"/}
 </head>
 
 <body>
     <div class="wrapper">
-        <% include _header.html%>
-            <% include _banner.html%>
+        {dede:include filename="_header.htm"/}
+        <!-- 首页轮播广告 -->
+        {dede:myad name='sj_banner_brand'/}
+        <!-- /首页轮播广告 -->
                 <!--zhangyanhong  -->
                 <div class="g-container zhangyanhong">
                     <div class="title">

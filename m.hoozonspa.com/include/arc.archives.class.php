@@ -824,12 +824,14 @@ class Archives
                 $preRow['namerule'],$preRow['typedir'],$preRow['money'],$preRow['filename'],$preRow['moresite'],$preRow['siteurl'],$preRow['sitepath']);
                 }
                 
-                $this->PreNext['pre'] = "上一篇：<a href='$mlink'>{$preRow['title']}</a> ";
+                // $this->PreNext['pre'] = "上一篇：<a href='$mlink'>{$preRow['title']}</a> ";
+                $this->PreNext['pre'] = "<a href='$mlink'>上一篇</a> ";
                 $this->PreNext['preimg'] = "<a href='$mlink'><img src=\"{$preRow['litpic']}\" alt=\"{$preRow['title']}\"/></a> ";
             }
             else
             {
-                $this->PreNext['pre'] = "上一篇：没有了 ";
+                // $this->PreNext['pre'] = "上一篇：没有了 ";
+                $this->PreNext['pre'] = "没有了 ";
                 $this->PreNext['preimg'] ="<img src=\"/templets/default/images/nophoto.jpg\" alt=\"对不起，没有上一图集了！\"/>";
             }
             if(is_array($nextRow))
@@ -842,12 +844,14 @@ class Archives
                     $nextRow['namerule'],$nextRow['typedir'],$nextRow['money'],$nextRow['filename'],$nextRow['moresite'],$nextRow['siteurl'],$nextRow['sitepath']);
                 }
     
-                $this->PreNext['next'] = "下一篇：<a href='$mlink'>{$nextRow['title']}</a> ";
+                // $this->PreNext['next'] = "下一篇：<a href='$mlink'>{$nextRow['title']}</a> ";
+                $this->PreNext['next'] = "<a href='$mlink'>下一篇</a> ";
                 $this->PreNext['nextimg'] = "<a href='$mlink'><img src=\"{$nextRow['litpic']}\" alt=\"{$nextRow['title']}\"/></a> ";
             }
             else
             {
-                $this->PreNext['next'] = "下一篇：没有了 ";
+                // $this->PreNext['next'] = "下一篇：没有了 ";
+                $this->PreNext['next'] = "没有了 ";
                 $this->PreNext['nextimg'] ="<a href='javascript:void(0)' alt=\"\"><img src=\"/templets/default/images/nophoto.jpg\" alt=\"对不起，没有下一图集了！\"/></a>";
             }
         }

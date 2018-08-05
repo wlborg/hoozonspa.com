@@ -218,9 +218,9 @@
                 <h2><span class="sr-only">新闻中心</span></h2>
             </div>
             <div class="content">
-                {dede:arclist typeid='4' row='4' orderby='id' orderway='desc' infolen='30' }
+                {dede:arclist typeid='4' row='4' orderby='id' orderway='desc' infolen='30' addfields='pic3' channelid='22'}
                 <div class="box">
-                    <a href="[field:arcurl /]" title="[field:title/]"><img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]"></a>
+                    <a href="[field:arcurl /]" title="[field:title/]"><img src="[field:pic3 function='replaceurl(@me)/]" alt="[field:title/]"></a>
                     <h3><a href="[field:arcurl /]" title="[field:title/]">[field:title/]</a></h3>
                     <p><a href="[field:arcurl /]" title="[field:title/]">[field:description/]</a>
                     </p>

@@ -1772,7 +1772,7 @@ body {
   padding: 0.42662116rem 0.63993174rem 0;
   height: 100%;
 }
-.newdetail .content p {
+.newdetail .content p ,.newdetail .content div{
   margin-top: 0.34129693rem;
   font-size: 0.55460751rem;
   font-weight: normal;

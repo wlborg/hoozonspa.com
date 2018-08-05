@@ -1690,6 +1690,10 @@ body {
   text-overflow: ellipsis;
   word-wrap: break-word;
 }
+.newslist .content .newitem h2 a{
+  color: #885e5a;
+  
+}
 .newslist .content .newitem p {
   padding-left: 0.21331058rem;
   margin-top: 0.29863481rem;

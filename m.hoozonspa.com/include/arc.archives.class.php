@@ -831,7 +831,7 @@ class Archives
             else
             {
                 // $this->PreNext['pre'] = "上一篇：没有了 ";
-                $this->PreNext['pre'] = "没有了 ";
+                $this->PreNext['pre'] = "<a >没有了</a> ";
                 $this->PreNext['preimg'] ="<img src=\"/templets/default/images/nophoto.jpg\" alt=\"对不起，没有上一图集了！\"/>";
             }
             if(is_array($nextRow))
@@ -851,7 +851,7 @@ class Archives
             else
             {
                 // $this->PreNext['next'] = "下一篇：没有了 ";
-                $this->PreNext['next'] = "没有了 ";
+                $this->PreNext['next'] = "<a >没有了</a> ";
                 $this->PreNext['nextimg'] ="<a href='javascript:void(0)' alt=\"\"><img src=\"/templets/default/images/nophoto.jpg\" alt=\"对不起，没有下一图集了！\"/></a>";
             }
         }

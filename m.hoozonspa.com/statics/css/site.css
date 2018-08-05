@@ -1815,8 +1815,14 @@ body {
   position: absolute;
   display: block;
   line-height: 1.0665529rem;
-  padding: 0 0.85324232rem;
+  /*padding: 0 0.85324232rem;*/
   border: solid 1px #885e5a;
+  color: #885e5a;
+}
+.newdetail .box .prev a,
+.newdetail .box .next a{
+ 
+  padding: 0 0.85324232rem;
   color: #885e5a;
 }
 .newdetail .box .prev {

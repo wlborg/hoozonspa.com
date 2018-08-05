@@ -16,102 +16,102 @@
         <!-- 首页轮播广告 -->
         {dede:myad name='sj_banner'/}
         <!-- /首页轮播广告 -->
-                <div class="g-container caselist">
-                    <div class="title">
-                        <h2><span class="sr-only">经典案例</span></h2>
-                    </div>
-                    <div class="casenav">
-                        <div class="wraper">
-                            {dede:channelartlist typeid='26'}
-                            <ul class="active">
-                              
-                                <li><a href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a></li>
-                                </ul>
-                            {/dede:channelartlist}
-                            {dede:channelartlist typeid='27'}
-                             <ul class="active">
-                                    <a href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a>
-                                </ul>
-                            {/dede:channelartlist}
-                            {dede:channelartlist typeid='28'}
-                             <ul class="active">
-                                    <a href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a>
-                                </ul>
-                            {/dede:channelartlist}
-                            {dede:channelartlist typeid='29'}
-                             <ul class="active">
-                                    <a href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a>
-                                </ul>
-                            {/dede:channelartlist}
-                            {dede:channelartlist typeid='30'}
-                             <ul class="active">
-                                   <a href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a>
-                                </ul>
-                            {/dede:channelartlist}
-                            {dede:channelartlist typeid='31'}
-                             <ul class="active">
-                                    <a href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a>
-                                </ul>
-                            {/dede:channelartlist}
-                            {dede:channelartlist typeid='32'}
-                             <ul class="active">
-                                   <a href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a>
-                                </ul>
-                            {/dede:channelartlist}
-                            {dede:channelartlist typeid='33'}
-                             <ul class="active">
-                                   <a href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a>
-                                </ul>
-                            {/dede:channelartlist}
-                            {dede:channelartlist typeid='34'}
-                             <ul class="active">
-                                    <a href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a>
-                                </ul>
-                            {/dede:channelartlist}
-                            {dede:channelartlist typeid='35'}
-                             <ul class="active">
-                                   <a href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a>
-                                </ul>
-                            {/dede:channelartlist}
-                            {dede:channelartlist typeid='36'}
-                             <ul class="active">
-                                   <a href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a>
-                                </ul>
-                            {/dede:channelartlist}
-                        </div>
-                        <a class="btn">&nbsp;</a>
-                        </div>
-                        <div class="content">
-                            {dede:list pagesize='4' orderby="id" orderway="desc"}
-                            <div class="caseitem">
-                                <div class="g-left">
-                                    <div class="back">
-                                        <a href="[field:arcurl/]" title="[field:title/]"><img src="[field:pic_after3 function='replaceurl(@me)/]" alt="[field:title/]"></a>
-                                    </div>
-                                    <div class="front">
-                                        <a href="[field:arcurl/]" title="[field:title/]"><img src="[field:pic_before function='replaceurl(@me)/]" alt="[field:title/]"></a>
-                                    </div>
-                                </div>
-                                <div class="g-right">
-                                    <h3><span class="sr-only">真实可见案例对比</span></h3>
-                                    <p>项目：[field:project1/]、[field:project2/]
-                                    </p>
-                                    <p>服务技师：[field:doctor/]</p>
-                                    <a href="" class="consult"><span class="sr-only">立即咨询</span></a>
-                                </div>
-                            </div>
-                            {/dede:list}
-                            <div class="pagination">
-                                <ul>
-                                    {dede:pagelist listitem='pre,next,pageno,index,end' listsize='1'/}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- question -->
-                    {dede:include filename="_question.htm"/} {dede:include filename="_sj_copyright.htm"/} {dede:include filename="_footer.htm"/}
+        <div class="g-container caselist">
+            <div class="title">
+                <h2><span class="sr-only">经典案例</span></h2>
+            </div>
+            <div class="casenav">
+                <div class="wraper">
+                    <ul class="active">
+                        {dede:channelartlist typeid='26'}
+                        <li><a href='{dede:field name=' typeurl '/}'>{dede:field name='typename'/}</a></li>
+                        {/dede:channelartlist}
+                    </ul>
+                    <ul class="">
+                        {dede:channelartlist typeid='27'}
+                        <li><a href='{dede:field name=' typeurl '/}'>{dede:field name='typename'/}</a></li>
+                        {/dede:channelartlist}
+                    </ul>
+                    <ul class="">
+                        {dede:channelartlist typeid='28'}
+                        <li><a href='{dede:field name=' typeurl '/}'>{dede:field name='typename'/}</a></li>
+                        {/dede:channelartlist}
+                    </ul>
+                    <ul class="">
+                        {dede:channelartlist typeid='29'}
+                        <li><a href='{dede:field name=' typeurl '/}'>{dede:field name='typename'/}</a></li>
+                        {/dede:channelartlist}
+                    </ul>
+                    <ul class="">
+                        {dede:channelartlist typeid='30'}
+                        <li><a href='{dede:field name=' typeurl '/}'>{dede:field name='typename'/}</a></li>
+                        {/dede:channelartlist}
+                    </ul>
+                    <ul class="">
+                        {dede:channelartlist typeid='31'}
+                        <li><a href='{dede:field name=' typeurl '/}'>{dede:field name='typename'/}</a></li>
+                        {/dede:channelartlist}
+                    </ul>
+                    <ul class="">
+                        {dede:channelartlist typeid='32'}
+                        <li><a href='{dede:field name=' typeurl '/}'>{dede:field name='typename'/}</a></li>
+                        {/dede:channelartlist}
+                    </ul>
+                    <ul class="">
+                        {dede:channelartlist typeid='33'}
+                        <li><a href='{dede:field name=' typeurl '/}'>{dede:field name='typename'/}</a></li>
+                        {/dede:channelartlist}
+                    </ul>
+                    <ul class="">
+                        {dede:channelartlist typeid='34'}
+                        <li><a href='{dede:field name=' typeurl '/}'>{dede:field name='typename'/}</a></li>
+                        {/dede:channelartlist}
+                    </ul>
+                    <ul class="">
+                        {dede:channelartlist typeid='35'}
+                        <li><a href='{dede:field name=' typeurl '/}'>{dede:field name='typename'/}</a></li>
+                        {/dede:channelartlist}
+                    </ul>
+                    <ul class="">
+                        {dede:channelartlist typeid='36'}
+                        <li><a href='{dede:field name=' typeurl '/}'>{dede:field name='typename'/}</a></li>
+                        {/dede:channelartlist}
+                    </ul>
+                   
                 </div>
-                {dede:include filename="_script.htm"/}
+                <a class="btn">&nbsp;</a>
+            </div>
+            <div class="content">
+                {dede:list pagesize='4' orderby="id" orderway="desc"}
+                <div class="caseitem">
+                    <div class="g-left">
+                        <div class="back">
+                            <a href="[field:arcurl/]" title="[field:title/]"><img src="[field:pic_after3 function='replaceurl(@me)/]" alt="[field:title/]"></a>
+                        </div>
+                        <div class="front">
+                            <a href="[field:arcurl/]" title="[field:title/]"><img src="[field:pic_before function='replaceurl(@me)/]" alt="[field:title/]"></a>
+                        </div>
+                    </div>
+                    <div class="g-right">
+                        <h3><span class="sr-only">真实可见案例对比</span></h3>
+                        <p>项目：[field:project1/]、[field:project2/]
+                        </p>
+                        <p>服务技师：[field:doctor/]</p>
+                        <a href="" class="consult"><span class="sr-only">立即咨询</span></a>
+                    </div>
+                </div>
+                {/dede:list}
+                <div class="pagination">
+                    <ul>
+                        {dede:pagelist listitem='pre,next,pageno,index,end' listsize='1'/}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- question -->
+        {dede:include filename="_question.htm"/} {dede:include filename="_sj_copyright.htm"/} {dede:include filename="_footer.htm"/}
+    </div>
+    {dede:include filename="_script.htm"/}
 </body>
 
 </html>

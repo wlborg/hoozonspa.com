@@ -2079,10 +2079,10 @@ body {
   border-radius: 0.42662116rem;
   border: solid 1px #c1aaa4;
   line-height: 1.19453925rem;
-  padding: 0 0.34129693rem;
   margin-right: 0.21331058rem;
 }
-.caselist .casenav ul li span {
+.caselist .casenav ul li a {
+  padding: 0 0.34129693rem;
   display: block;
   font-size: 0.55460751rem;
   font-weight: normal;

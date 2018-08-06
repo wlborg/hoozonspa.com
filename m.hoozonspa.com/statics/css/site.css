@@ -1690,6 +1690,10 @@ body {
   text-overflow: ellipsis;
   word-wrap: break-word;
 }
+.newslist .content .newitem h2 a{
+  color: #885e5a;
+  
+}
 .newslist .content .newitem p {
   padding-left: 0.21331058rem;
   margin-top: 0.29863481rem;
@@ -1772,7 +1776,7 @@ body {
   padding: 0.42662116rem 0.63993174rem 0;
   height: 100%;
 }
-.newdetail .content p {
+.newdetail .content p ,.newdetail .content div{
   margin-top: 0.34129693rem;
   font-size: 0.55460751rem;
   font-weight: normal;
@@ -1811,8 +1815,14 @@ body {
   position: absolute;
   display: block;
   line-height: 1.0665529rem;
-  padding: 0 0.85324232rem;
+  /*padding: 0 0.85324232rem;*/
   border: solid 1px #885e5a;
+  color: #885e5a;
+}
+.newdetail .box .prev a,
+.newdetail .box .next a{
+ 
+  padding: 0 0.85324232rem;
   color: #885e5a;
 }
 .newdetail .box .prev {
@@ -2069,10 +2079,10 @@ body {
   border-radius: 0.42662116rem;
   border: solid 1px #c1aaa4;
   line-height: 1.19453925rem;
-  padding: 0 0.34129693rem;
   margin-right: 0.21331058rem;
 }
-.caselist .casenav ul li span {
+.caselist .casenav ul li a {
+  padding: 0 0.34129693rem;
   display: block;
   font-size: 0.55460751rem;
   font-weight: normal;

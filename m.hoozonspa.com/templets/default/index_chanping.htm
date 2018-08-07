@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {dede:include filename="_meta.htm"/}
+    <meta name="author" content="前端：陈晓珍" />
+    <meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
+    <link rel="canonical" href="https://www.hoozonspa.com{dede:type typeid=8 row=1}[field:typelink /]{/dede:type}"> {dede:include filename="_link.htm"/}
+</head>
+
+<body>
+    <div class="wrapper">
+        {dede:include filename="_header.htm"/}
+        <!-- 首页轮播广告 -->
+        {dede:myad name='sj_banner'/}
+        <!-- /首页轮播广告 -->
+        <div class="g-container chanpinglist">
+            <div class="title">
+                <p>Nursing products</p>
+                <h2> {dede:field name='typename'/}</h2>
+            </div>
+            <div class="content">
+                <div class="item">
+                    <a href="/chanping/product1/"><img src="/statics/img/img27.jpg"></a>
+                    <p>媞芙瑞纯美肌精保湿系列</p>
+                </div>
+                <div class="item">
+                    <a href="/chanping/project2/"><img src="/statics/img/img27.jpg"></a>
+                    <p>媞芙瑞纯美肌精保湿系列</p>
+                </div>
+                <div class="row">
+                    {dede:arclist typeid='116' row='3' orderby='weight' orderway='desc' titlelen="120" infolen='30' addfields='pic3' channelid='20' limit='0,3'}
+                    <div class="item">
+                        <a href="[field:arcurl /]" title="[field:title/]"><img src="[field:pic3 function='replaceurl(@me)/]"></a>
+                        <p>[field:title/]</p>
+                    </div>
+                    {/dede:arclist}
+                </div>
+                <div class="row">
+                     {dede:arclist typeid='116' row='3' orderby='weight' orderway='desc' titlelen="120" infolen='30' addfields='pic3' channelid='20' limit='3,3'}
+                    <div class="item">
+                        <a href="[field:arcurl /]" title="[field:title/]"><img src="[field:pic3 function='replaceurl(@me)/]"></a>
+                        <p>[field:title/]</p>
+                    </div>
+                    {/dede:arclist}
+                </div>
+                <div class="row">
+                     {dede:arclist typeid='116' row='3' orderby='weight' orderway='desc' titlelen="120" infolen='30' addfields='pic3' channelid='20' limit='6,3'}
+                    <div class="item">
+                        <a href="[field:arcurl /]" title="[field:title/]"><img src="[field:pic3 function='replaceurl(@me)/]"></a>
+                        <p>[field:title/]</p>
+                    </div>
+                    {/dede:arclist}
+                </div>
+            </div>
+        </div>
+        {dede:include filename="_sj_copyright.htm"/} {dede:include filename="_footer.htm"/}
+    </div>
+    {dede:include filename="_script.htm"/}
+</body>
+
+</html>

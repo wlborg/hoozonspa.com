@@ -150,7 +150,6 @@ XZSlide.prototype.orient = function() {
         self.timer = setInterval($.proxy(self.prev, self), self.interval);
     });
 }
-
 function debounce(fn, delay) {
     var timer = null;
     return function() {
@@ -163,7 +162,6 @@ function debounce(fn, delay) {
             }, delay)
     }
 }
-
 function ScrollToDo() {
     this.targets = [];
     this.scrollH = 0;
@@ -182,7 +180,6 @@ ScrollToDo.prototype.add = function(classname, fn) {
         offset = el.offset().top;
         height = el.height();
     }
-
     var target = { 'offset': offset, "height": height, "fn": fn, "state": 0 };
     // console.log(height);
     this.targets.push(target);
@@ -193,7 +190,6 @@ ScrollToDo.prototype.init = function() {
     this.scrollH = $(document).scrollTop();
     $(window).scroll(function() { debounce(self.do(self), 200) });
 }
-
 ScrollToDo.prototype.do = function(self) {
     var scrollH = self.scrollH = $(document).scrollTop();
     var targets = self.targets;
@@ -212,7 +208,6 @@ ScrollToDo.prototype.do = function(self) {
         });
     }
 }
-
 function tabs(tabIndex, tab) {
     tabIndex.click(function(e) {
         var index = $(this).index();
@@ -228,9 +223,7 @@ function tabs(tabIndex, tab) {
 
     });
 }
-
 function initSlider() {
-
     // Hot project
     var sliders1 = $(".hotproject .project-block");
     var sliders1arr = [];
@@ -479,7 +472,6 @@ function initSlider() {
     tabs($('#embroidery').find('li'), $('#embroidery ul'));
 
 }
-
 function lightNav() {
     var url = window.location.href;
     var paths = url.split("/");
@@ -558,12 +550,19 @@ function topbanner(argument) {
         indicator: $(".top-banner .slider-indicator")
     });
 }
-$(function() {
-    topbanner();
-    lightNav();
-    fixnav();
-    setTimeout(initSlider, 2000);
-    // tag列表页导航栏不需要高亮显示prompt()
+function startStopVideo(id){
+    // 视频暂停和开始播放
+    var video=document.getElementById(id);
+    video.onclick=function() {
+        if (this.paused) {
+            this.play();
+        } else {
+            this.pause();
+        }
+    }
+}
+// tag列表页导航栏不需要高亮显示prompt()
+function nav(){
     var obj = null;
     var As = document.getElementById('nav').getElementsByTagName('a');
     for (i = 0; i < As.length; i++) {
@@ -572,16 +571,12 @@ $(function() {
         }
     }
     obj.parentNode.className = 'active';
-    // 视频暂停和开始播放
-
-
-var video=document.getElementById('video');
-    video.onclick=function(){
-        if(this.paused){
-        this.play();
-        }else{
-
-        this.pause();
-        }
-    }
+}
+$(function() {
+    topbanner();
+    lightNav();
+    fixnav();
+    setTimeout(initSlider, 2000);
+    startStopVideo("video");
+    nav();
 });

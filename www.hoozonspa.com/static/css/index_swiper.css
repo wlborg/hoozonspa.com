@@ -119,3 +119,49 @@
 
     outline: mediumaquamarine;
 }
+.cases-container .swiper-pagination {
+    top: 6.7em;
+    left: 43%;
+}
+.cases-container .classicCase .g-right .slider-wraper {
+    width: 10.6em;
+}
+.cases-container .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 .15em;
+}
+.cases-container .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fff!important;
+}
+.cases-container .swiper-pagination {
+    top: 6.7em;
+    left: 43%;
+}
+.cases-container .swiper-pagination-bullet {
+    width: .12em;
+    height: .12em;
+
+    outline: mediumaquamarine;
+}
+.cases-container {
+    position: relative;
+}
+.cases-container {
+    position: relative;
+}
+.casesImgs .slider-container .g-right .caseSix_des {
+    width: 25em;
+    margin-top: 2.78em;
+    margin-left: 2.3em;
+
+    font-size: .18em;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 2em;
+
+    text-align: justify;
+    letter-spacing: 0;
+
+    color: #dfd9e6;
+}

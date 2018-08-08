@@ -56,6 +56,22 @@
         function autoStop(obj){
            obj.autoplay.stop();
         }
-     });
+        // 案例点击显示的轮播图
+        var swiper_caseSix= new Swiper('.caseSix_container', {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.caseSix_container .swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
     })
 

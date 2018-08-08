@@ -149,3 +149,19 @@
 .cases-container {
     position: relative;
 }
+.casesImgs .slider-container .g-right .caseSix_des {
+    width: 25em;
+    margin-top: 2.78em;
+    margin-left: 2.3em;
+
+    font-size: .18em;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 2em;
+
+    text-align: justify;
+    letter-spacing: 0;
+
+    color: #dfd9e6;
+}

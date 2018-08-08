@@ -579,7 +579,6 @@ function nav(){
     }
     obj.parentNode.className = 'active';
 }
-}
 $(function() {
     topbanner();
     lightNav();

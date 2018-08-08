@@ -19,35 +19,37 @@
         });
         // 首页案例部分点击
         $('.swiper-wrapper .swiper-slide').click(function() {
-           autoStop(swiperMy);
-           var index_Sw=parseInt($(this).index());
-           if(index_Sw>=0&&index_Sw<=5){
-                  $('.fullscreen').removeClass('show');
-                  $('.fullscreen').eq(0).addClass('show');
-                 slideTo(index_Sw);
-           }else  if(index_Sw>=6&&index_Sw<=11){
-                 $('.fullscreen').removeClass('show');
-                 console.log($('.fullscreen').eq(1).html());
+            autoStop(swiperMy);
+            var index_Sw = parseInt($(this).index());
+            if (index_Sw >= 0 && index_Sw <= 5) {
+                $('.fullscreen').removeClass('show');
+                $('.fullscreen').eq(0).addClass('show');
+                slideTo(index_Sw);
+            } else if (index_Sw >= 6 && index_Sw <= 11) {
+                $('.fullscreen').removeClass('show');
+                console.log($('.fullscreen').eq(1).html());
                 $('.fullscreen').eq(1).addClass('show');
-                 slideTo(index_Sw);
-           }else  if(index_Sw>=12&&index_Sw<=17){
-                 $('.fullscreen').removeClass('show');
-                 $('.fullscreen').eq(2).addClass('show');
-                  slideTo(index_Sw);
-           }else if(index_Sw>=18&&index_Sw<=23){
-                 $('.fullscreen').removeClass('show');
-                 $('.fullscreen').eq(3).addClass('show');
-                 slideTo(index_Sw);
-           }
-           function slideTo(index_Sw){
-            swiper_caseSix.slideTo(index_Sw);
-           }
-        $('.header').removeClass('fixed');
+                slideTo(index_Sw);
+            } else if (index_Sw >= 12 && index_Sw <= 17) {
+                $('.fullscreen').removeClass('show');
+                $('.fullscreen').eq(2).addClass('show');
+                slideTo(index_Sw);
+            } else if (index_Sw >= 18 && index_Sw <= 23) {
+                $('.fullscreen').removeClass('show');
+                $('.fullscreen').eq(3).addClass('show');
+                slideTo(index_Sw);
+            }
+            function slideTo(index_Sw) {
+                swiper_caseSix.slideTo(index_Sw);
+            }
+
+            $('.header').removeClass('fixed');
+        });
         $('.fullscreen .close').click(function() {
             autoStart(swiperMy);
             $('.fullscreen').removeClass('show');
             $('.header ').addClass('fixed');
-        })
+        });
         // 开始循环
         function autoStart(obj){
            obj.autoplay.start();
@@ -74,4 +76,3 @@
           },
         });
     })
-

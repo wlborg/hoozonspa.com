@@ -558,12 +558,18 @@ function topbanner(argument) {
         indicator: $(".top-banner .slider-indicator")
     });
 }
-$(function() {
-    topbanner();
-    lightNav();
-    fixnav();
-    setTimeout(initSlider, 2000);
-    // tag列表页导航栏不需要高亮显示prompt()
+function startStopVideo(id){
+    // 视频暂停和开始播放
+    var video=document.getElementById(id);
+    video.onclick=function(){
+        if(this.paused){
+        this.play();
+        }else{
+        this.pause();
+    }
+}
+// tag列表页导航栏不需要高亮显示prompt()
+function nav(){
     var obj = null;
     var As = document.getElementById('nav').getElementsByTagName('a');
     for (i = 0; i < As.length; i++) {
@@ -572,16 +578,13 @@ $(function() {
         }
     }
     obj.parentNode.className = 'active';
-    // 视频暂停和开始播放
-
-
-var video=document.getElementById('video');
-    video.onclick=function(){
-        if(this.paused){
-        this.play();
-        }else{
-
-        this.pause();
-        }
-    }
+}
+}
+$(function() {
+    topbanner();
+    lightNav();
+    fixnav();
+    setTimeout(initSlider, 2000);
+    startStopVideo("video");
+    nav();
 });

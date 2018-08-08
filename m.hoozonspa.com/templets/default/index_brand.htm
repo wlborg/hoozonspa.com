@@ -2,15 +2,23 @@
 <html>
 
 <head>
-    <title>首页</title>
-    <% include _meta.html%>
-        <% include _link.html%>
+    {dede:include filename="_meta.htm"/}
+    <meta name="author" content="前端：陈晓珍" />
+    <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+    <meta name="description" content="{dede:global.cfg_description/}" />
+    <meta name="google-site-verification" content="Odmo8X4zeUG1WPcCrCAueZz-dyBPFBs4Zqlb9FBT5z4" />
+    <!-- 移动端设置 唯一URL-->
+    <link rel="canonical" href="https://www.hoozonspa.com/brand/">
+    <title>{dede:global.cfg_webname/}</title>
+    {dede:include filename="_link.htm"/}
 </head>
 
 <body>
     <div class="wrapper">
-        <% include _header.html%>
-            <% include _banner.html%>
+        {dede:include filename="_header.htm"/}
+        <!-- 首页轮播广告 -->
+        {dede:myad name='sj_banner_brand'/}
+        <!-- /首页轮播广告 -->
                 <!--zhangyanhong  -->
                 <div class="g-container zhangyanhong">
                     <div class="title">
@@ -54,7 +62,7 @@
                     </div>
                     <div class="content">
                         <div class="row">
-                            {dede:arclist typeid='9' flag='c' row='3' titlelen="120" limit='0,3' addfields='title2' channelid='21' }
+                            {dede:arclist typeid='9' flag='c' row='3' titlelen="120" limit='0,2' addfields='title2' channelid='21' }
                             <div class="item">
                                 <div class="front">
                                     <a href="[field:arcurl/]" title="[field:title/] ">
@@ -70,7 +78,7 @@
                             
                         </div>
                     </div>
-                    <div class="consult-wraper"><a href="" class="consult">查看更多</a></div>
+                    <div class="consult-wraper"><a href="/project/" class="consult">查看更多</a></div>
                 </div>
                 <div class="g-container cultureconcert">
                     <div class="title">
@@ -184,7 +192,7 @@
                     <div class="content">
                         <div class="slider-wraper">
                             <ul class="slider-container">
-                                {dede:arclist typeid='3' row='4' orderby='id' orderway='desc' infolen='30' }
+                                {dede:arclist typeid='3' row='4' orderby='id' orderway='desc' titlelen="120" infolen='60' }
                                 <li class="slider-item"> <a href="[field:arcurl /]" title="[field:title/]"><img src="[field:picname function='replaceurl(@me) /]" alt="[field:title/]"></a></li>
                                 {/dede:arclist}
                             </ul>
@@ -192,7 +200,7 @@
                             <a href="javascript:void(0)" class="btn next">&nbsp;</a>
                         </div>
                         <ul class="news">
-                            {dede:arclist typeid='3' row='4' orderby='id' orderway='desc' infolen='30' }
+                            {dede:arclist typeid='3' row='4' orderby='id' orderway='desc' titlelen="120"  infolen='60' }
                             <li> <a href="[field:arcurl /]" title="[field:title/]">[field:title/]</a></li>
                             {/dede:arclist}
                         </ul>

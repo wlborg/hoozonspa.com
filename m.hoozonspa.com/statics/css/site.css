@@ -1775,6 +1775,15 @@ body {
 .newdetail .content {
   padding: 0.42662116rem 0.63993174rem 0;
   height: 100%;
+    font-size: 0.55460751rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.02389078rem;
+  letter-spacing: 0px;
+  color: #885e5a;
+  text-indent: 2em;
+  text-align: justify;
 }
 .newdetail .content p ,.newdetail .content div{
   margin-top: 0.34129693rem;

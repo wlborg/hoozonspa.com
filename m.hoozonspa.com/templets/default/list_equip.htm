@@ -38,10 +38,10 @@
         </div>
         <div class="g-container equipment">
             <div class="content">
-                {dede:list pagesize='10' orderby="id" orderway="desc"}
+                {dede:list pagesize='10' orderby="id" orderway="desc" addfields='pic4' channelid='19'}
                 <div class="equipmentitem">
                     <div class="g-left">
-                        <img src="[field:title function='replaceurl(@me)/]" alt="[field:title/]">
+                        <a href="[field:arcurl/]" title="[field:title/]"><img src="[field:pic4 function='replaceurl(@me)/]" alt="[field:title/]"></a>
                     </div>
                     <div class="g-right">
                         <h3>[field:title/]</h3>
@@ -54,7 +54,7 @@
             </div>
         </div>
         <!-- the way -->
-        dede:include filename="_theway.htm"/} {dede:include filename="_sj_copyright.htm"/} {dede:include filename="_footer.htm"/}
+        {dede:include filename="_theway.htm"/} {dede:include filename="_sj_copyright.htm"/} {dede:include filename="_footer.htm"/}
     </div>
     {dede:include filename="_script.htm"/}
 </body>

@@ -550,7 +550,7 @@
         </p>
         <div class="line">
         </div>
-        <a class="more" href="shop_list.html">查看更多</a>
+        <a class="more" href="/shop">查看更多</a>
         <!-- <p class="bigtxt">Bedroom</p> -->
         <p class="bigtxt"><img src="{dede:global.cfg_imgpath/}/bigtxt_bedroom.png"></p>
     </div>
@@ -558,9 +558,9 @@
     <div class="g-right">
         <div class="slider-wraper">
             <ul>
-                <li class="slider-item"><img src="//pc.hoozonspa.com/static/img/img9.jpg" alt=""></li>
-                <li class="slider-item"><img src="//pc.hoozonspa.com/static/img/img9.jpg" alt=""></li>
-                <li class="slider-item"><img src="//pc.hoozonspa.com/static/img/img9.jpg" alt=""></li>
+                 {dede:arclist typeid='6' row='3' flag='c' orderby='id' orderway='desc' infolen='30' addfields='b_pic1' channelid='17' }
+                <li class="slider-item"><img src="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]"></li>
+                 {/dede:arclist}
             </ul>
         </div>
         <a href="javascript:void(0)" class="btn prev"></a>

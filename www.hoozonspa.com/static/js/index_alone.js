@@ -115,19 +115,18 @@
                $(obj).removeClass('show');
                hiddBody();
             }
-            function hiddBody(){
+        });
+          function hiddBody(){
               $("body").css("overflow-y","hidden")
             }
              function showBody(){
               $("body").css("overflow-y","visible")
             }
-        });
         $('.fullscreen .close').click(function() {
-             showBody();
+            showBody();
             autoStart(swiperMy);
             $('.fullscreen').removeClass('show');
             $('.header').addClass('fixed');
-
         });
         // 开始循环
         function autoStart(obj){

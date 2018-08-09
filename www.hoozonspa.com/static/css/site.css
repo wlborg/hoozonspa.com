@@ -4536,9 +4536,9 @@ body {
     height: 100%;
 }
 .fullscreen .swiper-pagination {
-    width: 16px;
-    height: 16px;
+    width: 16px!important;
+    height: 16px!important;
 }
 .fullscreen .swiper-pagination-bullet-active {
-    background: #4e1f66;
+    background: #4e1f66!important;
 }

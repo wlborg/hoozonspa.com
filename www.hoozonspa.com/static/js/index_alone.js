@@ -123,10 +123,11 @@
             }
         });
         $('.fullscreen .close').click(function() {
+             showBody();
             autoStart(swiperMy);
             $('.fullscreen').removeClass('show');
-            $('.header ').addClass('fixed');
-            showBody();
+            $('.header').addClass('fixed');
+
         });
         // 开始循环
         function autoStart(obj){

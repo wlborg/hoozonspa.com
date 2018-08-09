@@ -410,7 +410,7 @@ function caseListNavHightlight() {
             $(this).addClass("active");
 
             $('.casenav ul.active').removeClass('active');
-            $(this).parent().addClass('acitve');
+            $(this).parent().addClass('active');
         }
     });
 }

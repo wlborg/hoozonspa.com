@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>会所首页</title>
+<title>{dede:global.cfg_webname/}</title>
 <meta charset="UTF-8">
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <meta name="renderer" content="webkit"/>
@@ -520,45 +520,25 @@
         <p>从专业的角度建设卓越的服务<br> 红妆美业持续不断投放资源及引入崭新美容仪器，<br> 达致更专业更全面发展，务求有效帮助客人解决 <br>各种求美问题，成就美丽蜕变。
         </p>
         <div class="line"></div>
-        <a class="more" href="article_shebei.html">查看更多</a>
+        <a class="more" href="/equip">查看更多</a>
         <!-- <p class="bigtxt">equipment</p> -->
         <p class="bigtxt"><img src="{dede:global.cfg_imgpath/}/bigtxt_equipment.png"></p>
     </div>
     </div>
     <div class="g-right">
+   {dede:arclist typeid='7' row='3' flag='c' orderby='id' orderway='desc' infolen='30' addfields='des,pic1' channelid='19'}
         <div class="item">
             <div class="front">
-                <h3>冰点脱毛仪</h3>
+                <h3>[field:title/]</h3>
                 <div class="line"></div>
-                <p>功能介绍功能介绍功能介绍 功能介绍功能介绍
+                <p>[field:des/]
                 </p>
             </div>
             <div class="back">
-                <img src="{dede:global.cfg_imgpath/}/bg_shebei1.jpg" alt="">
+                 <img src="[field:pic1 function='replaceurl(@me)/]" alt="[field:title/]">
             </div>
         </div>
-        <div class="item">
-            <div class="front">
-                <h3>冰点脱毛仪</h3>
-                <div class="line"></div>
-                <p>功能介绍功能介绍功能介绍 功能介绍功能介绍
-                </p>
-            </div>
-            <div class="back">
-                <img src="{dede:global.cfg_imgpath/}/bg_shebei2.jpg" alt="">
-            </div>
-        </div>
-        <div class="item">
-            <div class="front">
-                <h3>冰点脱毛仪</h3>
-                <div class="line"></div>
-                <p>功能介绍功能介绍功能介绍 功能介绍功能介绍
-                </p>
-            </div>
-            <div class="back">
-                <img src="{dede:global.cfg_imgpath/}/bg_shebei3.jpg" alt="">
-            </div>
-        </div>
+ {/dede:arclist}
     </div>
 </div>
 <!-- environment display     -->
@@ -570,7 +550,7 @@
         </p>
         <div class="line">
         </div>
-        <a class="more" href="shop_list.html">查看更多</a>
+        <a class="more" href="/shop">查看更多</a>
         <!-- <p class="bigtxt">Bedroom</p> -->
         <p class="bigtxt"><img src="{dede:global.cfg_imgpath/}/bigtxt_bedroom.png"></p>
     </div>
@@ -578,9 +558,9 @@
     <div class="g-right">
         <div class="slider-wraper">
             <ul>
-                <li class="slider-item"><img src="//pc.hoozonspa.com/static/img/img9.jpg" alt=""></li>
-                <li class="slider-item"><img src="//pc.hoozonspa.com/static/img/img9.jpg" alt=""></li>
-                <li class="slider-item"><img src="//pc.hoozonspa.com/static/img/img9.jpg" alt=""></li>
+                 {dede:arclist typeid='6' row='3' flag='c' orderby='id' orderway='desc' infolen='30' addfields='b_pic1' channelid='17' }
+                <li class="slider-item"><img src="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]"></li>
+                 {/dede:arclist}
             </ul>
         </div>
         <a href="javascript:void(0)" class="btn prev"></a>

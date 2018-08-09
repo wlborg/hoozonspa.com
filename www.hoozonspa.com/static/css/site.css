@@ -3750,6 +3750,8 @@ body {
     vertical-align: middle;
 }
 .casesImgs .slider-container .g-right .consult {
+    z-index: 20;
+
     display: block;
     width: 2.58em;
     height: .92em;

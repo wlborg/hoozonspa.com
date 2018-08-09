@@ -574,18 +574,19 @@
 
         <h2><span class="sr-only">新闻中心</span></h2>
         <div class="box">
-            <h3><a href="article.html">红瑞3.8女神盛宴时尚演绎！</a></h3>
-            <p><a href="">云想衣裳花想容，春风拂槛露华浓 2018年3月17日 云裳之悦·花容竞放暨红瑞3.8女神盛宴， 在海口君华海逸酒店浪漫演绎，共同欢聚......<span>【详情】</span></a>
+  {dede:arclist typeid='4' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='pic3' channelid='22'}
+            <h3><a href="[field:arcurl /]" title="[field:title/]">[field:title/]</a></h3>
+            <p><a href="[field:arcurl /]" title="[field:title/]">{dede:field name='description' function='html2text(@me)'/}......<span>【详情】</span></a>
             </p>
-            <a class="more" href="news_list.html">查看更多</a>
+              {/dede:arclist}
+            <a class="more" href="/news">查看更多</a>
         </div>
         <ul>
+             {dede:arclist typeid='4' row='3' orderby='id' orderway='desc' titlelen="120" infolen='30'  channelid='22' limit='1,3'}
             <li>
-                <h3><a href="">红妆纹绣巡展第三站 “时尚蜕变大片”！<span>【详情】</span></a></h3></li>
-            <li>
-                <h3><a href="">红妆瘦身塑形30天 | 全城招募体验官#<span>【详情】</span></a></h3></li>
-            <li>
-                <h3><a href="">红妆瘦身塑形30天 | 全城招募体验官#<span>【详情】</span></a></h3></li>
+                <h3><a href="[field:arcurl /]" title="[field:title/]">[field:title/]<span>【详情】</span></a></h3>
+            </li>
+             {/dede:arclist}
         </ul>
             <p class="bigtxt"><img src="{dede:global.cfg_imgpath/}/bigtxt_news.png"></p>
     </div>
@@ -593,10 +594,10 @@
     <div class="g-right">
         <div class="slider-wraper">
             <ul class="slider-container">
-                <li class="1"><a href=""><img src="//pc.hoozonspa.com/static/img/img10.jpg" alt=""></a></li>
-                <li class="1"><a href=""><img src="//pc.hoozonspa.com/static/img/img10.jpg" alt=""></a></li>
-                <li ><a href=""><img src="//pc.hoozonspa.com/static/img/img10.jpg" alt=""></a></li>
-                <li><a href=""><img src="//pc.hoozonspa.com/static/img/img10.jpg" alt=""></a></li>
+            {dede:arclist typeid='4' row='4' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='pic1' channelid='22' }
+                <li><a href="[field:arcurl /]" title="[field:title/]"><img src="[field:pic1 function='replaceurl(@me)/]" alt="[field:title/]"></a>
+                </li>
+          {/dede:arclist}
             </ul>
             <ol class="slider-indicator">
             <li class="active">&nbsp;</li>

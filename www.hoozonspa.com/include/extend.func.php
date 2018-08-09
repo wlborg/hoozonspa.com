@@ -22,6 +22,6 @@ function litimgurls($imgid=0)
 
 function replaceurl($newurl)
 {
-$newurl='//pc.hoozonspa.com/'.$newurl;
+$newurl='//pc.hoozonspa.com'.$newurl;
 return $newurl;
 }

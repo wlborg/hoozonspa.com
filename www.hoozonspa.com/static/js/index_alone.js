@@ -12,6 +12,74 @@
             clickable: true,
           },
        });
+         // 案例点击显示的轮播图1
+        var swiper_caseSix1= new Swiper('.caseSix_container1', {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+         // 案例点击显示的轮播图2
+        var swiper_caseSix2= new Swiper('.caseSix_container2', {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+         // 案例点击显示的轮播图3
+        var swiper_caseSix3= new Swiper('.caseSix_container3', {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+             delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+          // 案例点击显示的轮播图4
+        var swiper_caseSix4= new Swiper('.caseSix_container4', {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
         $(".swiper-slide").hover(function() {
              $(this).find(".front").fadeIn();
         }, function() {
@@ -19,36 +87,46 @@
         });
         // 首页案例部分点击
         $('.swiper-wrapper .swiper-slide').click(function() {
+            // 案例轮播停止
             autoStop(swiperMy);
             var index_Sw = parseInt($(this).index());
             if (index_Sw >= 0 && index_Sw <= 5) {
-                $('.fullscreen').removeClass('show');
+                fullReShow('fullscreen');
                 $('.fullscreen').eq(0).addClass('show');
-                slideTo(index_Sw);
+                slideToFrom(swiper_caseSix1,index_Sw);
             } else if (index_Sw >= 6 && index_Sw <= 11) {
-                $('.fullscreen').removeClass('show');
-                console.log($('.fullscreen').eq(1).html());
+                fullReShow('fullscreen');
                 $('.fullscreen').eq(1).addClass('show');
-                slideTo(index_Sw);
+                slideToFrom(swiper_caseSix2,index_Sw);
             } else if (index_Sw >= 12 && index_Sw <= 17) {
-                $('.fullscreen').removeClass('show');
+                fullReShow('fullscreen');
                 $('.fullscreen').eq(2).addClass('show');
-                slideTo(index_Sw);
+                slideToFrom(swiper_caseSix3,index_Sw);
             } else if (index_Sw >= 18 && index_Sw <= 23) {
-                $('.fullscreen').removeClass('show');
+                fullReShow('fullscreen');
                 $('.fullscreen').eq(3).addClass('show');
-                slideTo(index_Sw);
+                slideToFrom(swiper_caseSix4,index_Sw);
             }
-            function slideTo(index_Sw) {
-                swiper_caseSix.slideTo(index_Sw);
-            }
-
             $('.header').removeClass('fixed');
+            function slideToFrom(caseSix,index_Sw) {
+                caseSix.slideTo(index_Sw);
+            }
+            function fullReShow(obj){
+               $(obj).removeClass('show');
+               hiddBody();
+            }
         });
+          function hiddBody(){
+              $("body").css("overflow-y","hidden")
+            }
+             function showBody(){
+              $("body").css("overflow-y","visible")
+            }
         $('.fullscreen .close').click(function() {
+            showBody();
             autoStart(swiperMy);
             $('.fullscreen').removeClass('show');
-            $('.header ').addClass('fixed');
+            $('.header').addClass('fixed');
         });
         // 开始循环
         function autoStart(obj){
@@ -58,21 +136,5 @@
         function autoStop(obj){
            obj.autoplay.stop();
         }
-        // 案例点击显示的轮播图
-        var swiper_caseSix= new Swiper('.caseSix_container', {
-          spaceBetween: 30,
-          centeredSlides: true,
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: '.caseSix_container .swiper-pagination',
-            clickable: true,
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-        });
+
     })

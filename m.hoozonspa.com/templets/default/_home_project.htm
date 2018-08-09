@@ -4,13 +4,11 @@
         <h2><span class="sr-only">家居产品推荐</span></h2>
     </div>
     <div class="content">
+        {dede:arclist typeid='117' orderyb='rand' row='2' titlelen="120" }
         <div class="item">
-            <img src="/statics/img/img25.jpg">
-            <p>什么什么精油</p>
+            <a href="[field:arcurl/]" title="[field:title/] "><img src="[field:picname function='replaceurl(@me)/]"></a>
+            <p>[field:title/]</p>
         </div>
-        <div class="item">
-            <img src="/statics/img/img25.jpg">
-            <p>什么什么精油</p>
-        </div>
+        {/dede:arclist}
     </div>
 </div>

@@ -1,23 +1,18 @@
 <div class="g-container  newsproject">
     <h2>发现您感兴趣的项目</h2>
     <div class="row">
+        {dede:arclist typeid='9'  orderyb='rand' row='2' titlelen="120" limit='0,2' addfields='title2' channelid='21' }
         <div class="item">
             <div class="front">
-                <p>Embroidery</p>
-                <h3>冰点脱毛</h3>
+                <a href="[field:arcurl/]" title="[field:title/] ">
+                    <p>[field:title2/]</p>
+                    <h3>[field:title/]</h3>
+                </a>
             </div>
             <div class="back">
-                <img src="/statics/img/img11.jpg">
+                <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
             </div>
         </div>
-        <div class="item">
-            <div class="front">
-                <p>Embroidery</p>
-                <h3>冰点脱毛</h3>
-            </div>
-            <div class="back">
-                <img src="/statics/img/img11.jpg">
-            </div>
-        </div>
+        {/dede:arclist}
     </div>
 </div>

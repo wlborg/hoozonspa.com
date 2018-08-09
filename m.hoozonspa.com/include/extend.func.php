@@ -22,6 +22,12 @@ function litimgurls($imgid=0)
 
 function replaceurl($newurl)
 {
-$newurl='https://pc.hoozonspa.com/'.$newurl;
+    if($newurl==''){
+
+       $newurl='https://pc.hoozonspa.com/'.'/images/defaultpic.gif';
+    }else{
+        
+       $newurl='https://pc.hoozonspa.com/'.$newurl;
+    }
 return $newurl;
 }

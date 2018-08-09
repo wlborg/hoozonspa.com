@@ -2101,6 +2101,11 @@ body {
   letter-spacing: 0px;
   color: #855951;
 }
+.caselist .casenav ul li.active a {
+ background: #6e3c32;
+ color:#fff;
+}
+
 .caselist .casenav ul li.active,
 .caselist .casenav ul li:hvoer {
   background: #885e5a;

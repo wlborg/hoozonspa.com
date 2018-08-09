@@ -21,7 +21,7 @@
             disableOnInteraction: false,
           },
           pagination: {
-            el: '.caseSix_container .swiper-pagination',
+            el: '.swiper-pagination',
             clickable: true,
           },
           navigation: {
@@ -38,7 +38,7 @@
             disableOnInteraction: false,
           },
           pagination: {
-            el: '.caseSix_container .swiper-pagination',
+            el: '.swiper-pagination',
             clickable: true,
           },
           navigation: {
@@ -46,7 +46,7 @@
             prevEl: '.swiper-button-prev',
           },
         });
-         // 案例点击显示的轮播图2
+         // 案例点击显示的轮播图3
         var swiper_caseSix3= new Swiper('.caseSix_container3', {
           spaceBetween: 30,
           centeredSlides: true,
@@ -55,7 +55,7 @@
             disableOnInteraction: false,
           },
           pagination: {
-            el: '.caseSix_container .swiper-pagination',
+            el: '.swiper-pagination',
             clickable: true,
           },
           navigation: {
@@ -63,7 +63,7 @@
             prevEl: '.swiper-button-prev',
           },
         });
-          // 案例点击显示的轮播图2
+          // 案例点击显示的轮播图4
         var swiper_caseSix4= new Swiper('.caseSix_container4', {
           spaceBetween: 30,
           centeredSlides: true,
@@ -72,7 +72,7 @@
             disableOnInteraction: false,
           },
           pagination: {
-            el: '.caseSix_container .swiper-pagination',
+            el: '.swiper-pagination',
             clickable: true,
           },
           navigation: {
@@ -113,12 +113,20 @@
             }
             function fullReShow(obj){
                $(obj).removeClass('show');
+               hiddBody();
+            }
+            function hiddBody(){
+              $("body").css("overflow-y","hidden")
+            }
+             function showBody(){
+              $("body").css("overflow-y","visible")
             }
         });
         $('.fullscreen .close').click(function() {
             autoStart(swiperMy);
             $('.fullscreen').removeClass('show');
             $('.header ').addClass('fixed');
+            showBody();
         });
         // 开始循环
         function autoStart(obj){

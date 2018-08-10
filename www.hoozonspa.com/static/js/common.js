@@ -549,17 +549,7 @@ function topbanner(argument) {
         indicator: $(".top-banner .slider-indicator")
     });
 }
-function startStopVideo(id){
-    // 视频暂停和开始播放
-    var video=document.getElementById(id);
-    video.addEventListener("click",function(){
-         if (this.paused) {
-            this.play();
-        } else {
-            this.pause();
-        }
-    })
-}
+
 // tag列表页导航栏不需要高亮显示prompt()
 function nav(){
     var obj = null;
@@ -576,6 +566,5 @@ $(function() {
     lightNav();
     fixnav();
     setTimeout(initSlider, 2000);
-    startStopVideo("video");
     nav();
 });

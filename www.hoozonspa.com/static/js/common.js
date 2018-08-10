@@ -558,7 +558,7 @@ function startStopVideo(id){
         } else {
             this.pause();
         }
-    }
+    })
 }
 // tag列表页导航栏不需要高亮显示prompt()
 function nav(){

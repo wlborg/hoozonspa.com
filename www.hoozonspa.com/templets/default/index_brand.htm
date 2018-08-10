@@ -2,21 +2,7 @@
 <html>
 
 <head>
-    <title>品牌 </title>
-<meta charset="UTF-8">
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-<meta name="renderer" content="webkit"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-<meta name=applicable-device content="pc">
-<meta http-equiv="Cache-Control" content="no-transform"/>
-<meta http-equiv="Cache-Control" content="no-siteapp"/>
-<meta name="baidu-site-verification" content="99J7V1k1Vz" />
-<meta name="google-site-verification" content="Odmo8X4zeUG1WPcCrCAueZz-dyBPFBs4Zqlb9FBT5z4" />
-<meta http-equiv="Access-Control-Allow-Origin" content="*" />
-<script type="text/javascript" src="js/fontreset.js"></script>
-<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
-<link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/common.css">
-<link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/site.css">
+{dede:include filename="_link.htm"/}
 </head>
 
 <body>
@@ -81,7 +67,7 @@
               {dede:arclist typeid='9' flag='c' row='3' titlelen="120" limit='0,3' addfields='title2' channelid='21'}
          <div class="item">
                 <div class="front">
-                <a href="">
+                <a href="[field:arcurl /]" title="[field:title/]">
                     <div class="box">
                         <p>Look at more</p>
                         <p class="more" >了解详情</p>
@@ -93,7 +79,7 @@
                     <p>[field:title2/]</p>
                     <h3>[field:title/]</h3>
                 </div>
-                <img src="/static/img/img_project.jpg">
+                <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
          </div>
          {/dede:arclist}
          <div class="item">
@@ -104,7 +90,6 @@
                         <p class="more" >查看更多</p>
                     </div>
                 </a>
-
                 </div>
                <div class="back">
                     <p>Look at more</p>
@@ -217,7 +202,7 @@
             <a href="javascript:void(0)" class="btn next"></a>
         </div>
     </div>
-<!-- footer -->
+    <!-- footer -->
     {dede:include filename="footer.htm"/}
 </body>
 </html>

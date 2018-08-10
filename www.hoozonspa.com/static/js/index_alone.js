@@ -89,7 +89,7 @@
         $('.swiper-wrapper .swiper-slide').click(function() {
             // 案例轮播停止
             autoStop(swiperMy);
-            var index_Sw = parseInt($(this).index());
+            var index_Sw = parseInt($(this).index()%7);
             if (index_Sw >= 0 && index_Sw <= 5) {
                 fullReShow('fullscreen');
                 $('.fullscreen').eq(0).addClass('show');

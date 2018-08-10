@@ -399,13 +399,30 @@ function brandhistory() {
 
     marqueeTargetFun();
 }
+function caseListNavHightlight() {
+    if (!$('.casenav')) return;
+    var href = window.location.href;
+
+    $('.casenav').find("li").each(function() {
+        var targetHref = $(this).find("a").attr("href");
+        if (href.indexOf(targetHref) >= 0) {
+
+            $(this).addClass("active");
+
+            $('.casenav ul.active').removeClass('active');
+            $(this).parent().addClass('active');
+        }
+    });
+}
 $(function() {
     topbanner();
 
     brandhistory();
-
+    
     setTimeout(initSlider, 2000);
+    caseListNavHightlight();
 });
+
 
 
 

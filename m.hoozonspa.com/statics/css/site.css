@@ -2089,6 +2089,7 @@ body {
   border: solid 1px #c1aaa4;
   line-height: 1.19453925rem;
   margin-right: 0.21331058rem;
+  overflow: hidden;
 }
 .caselist .casenav ul li a {
   padding: 0 0.34129693rem;
@@ -2101,6 +2102,11 @@ body {
   letter-spacing: 0px;
   color: #855951;
 }
+.caselist .casenav ul li.active a {
+background: #c1aaa4;
+    color: #fdfdfd;
+}
+
 .caselist .casenav ul li.active,
 .caselist .casenav ul li:hvoer {
   background: #885e5a;

@@ -78,25 +78,27 @@
         <div class="wraper">
         <h2><span class="sr-only"></span></h2>
         <div class="row">
+              {dede:arclist typeid='9' flag='c' row='3' titlelen="120" limit='0,3' addfields='title2' channelid='21'}
          <div class="item">
                 <div class="front">
                 <a href="">
                     <div class="box">
                         <p>Look at more</p>
-                        <p class="more" >查看更多</p>
+                        <p class="more" >了解详情</p>
                     </div>
                 </a>
 
                 </div>
                <div class="back">
-                    <p>Laser hair removal</p>
-                    <h3>冰点脱毛</h3>
+                    <p>[field:title2/]</p>
+                    <h3>[field:title/]</h3>
                 </div>
-                <img src="//pc.hoozonspa.com/static/img/img_project.jpg">
-            </div>
-             <div class="item">
+                <img src="/static/img/img_project.jpg">
+         </div>
+         {/dede:arclist}
+         <div class="item">
                 <div class="front">
-                <a href="">
+                <a href="/project">
                     <div class="box">
                         <p>Look at more</p>
                         <p class="more" >查看更多</p>
@@ -105,43 +107,11 @@
 
                 </div>
                <div class="back">
-                    <p>Laser hair removal</p>
-                    <h3>冰点脱毛</h3>
+                    <p>Look at more</p>
+                    <h3>查看更多</h3>
                 </div>
-                <img src="//pc.hoozonspa.com/static/img/img_project.jpg">
-            </div>
-             <div class="item">
-                <div class="front">
-                <a href="">
-                    <div class="box">
-                        <p>Look at more</p>
-                        <p class="more" >查看更多</p>
-                    </div>
-                </a>
-
-                </div>
-               <div class="back">
-                    <p>Laser hair removal</p>
-                    <h3>冰点脱毛</h3>
-                </div>
-                <img src="//pc.hoozonspa.com/static/img/img_project.jpg">
-            </div>
-             <div class="item">
-                <div class="front">
-                <a href="">
-                    <div class="box">
-                        <p>Look at more</p>
-                        <p class="more" >查看更多</p>
-                    </div>
-                </a>
-
-                </div>
-               <div class="back">
-                    <p>Laser hair removal</p>
-                    <h3>冰点脱毛</h3>
-                </div>
-                <img src="//pc.hoozonspa.com/static/img/img_project.jpg">
-            </div>
+                <img src="/static/img/img_project.jpg">
+        </div>
         </div>
         </div>
     </div>
@@ -228,10 +198,9 @@
         <div class="wraper">
             <h2><span class="sr-only">公益活动</span></h2>
             <ul>
-                <li><a href="">筑美筑爱 | 2017文明城·粉红爱大型公益系列活动完美收官！</a></li>
-                <li><a href="">传播大爱，共创文明！延续大爱，继往开来！</a></li>
-                <li><a href="">2017文明城·粉红爱三度起航，</a></li>
-                <li><a href="">开启椰城文明新局面，树立椰城文明新风尚！</a></li>
+                {dede:arclist typeid='3' row='4' orderby='id' orderway='desc' titlelen="120"  infolen='60' }
+                <li><a href="[field:arcurl /]" title="[field:title/]">[field:title/]</a></li>
+                {/dede:arclist}
             </ul>
             <p class="bigtxt"><img src="{dede:global.cfg_imgpath/}/bigtxt_leader.png"></p>
         </div>
@@ -239,10 +208,9 @@
         <div class="g-right">
             <div class="slider-wraper">
                 <ul class="slider-container">
-                    <li class="slider-item"><a href=""><img src="//pc.hoozonspa.com/static/img/img16.jpg" alt=""></a></li>
-                    <li class="slider-item"><a href=""><img src="//pc.hoozonspa.com/static/img/img16.jpg" alt=""></a></li>
-                    <li class="slider-item"><a href=""><img src="//pc.hoozonspa.com/static/img/img16.jpg" alt=""></a></li>
-                    <li class="slider-item"><a href=""><img src="//pc.hoozonspa.com/static/img/img16.jpg" alt=""></a></li>
+                     {dede:arclist typeid='3' row='4' orderby='id' orderway='desc' titlelen="120" infolen='60' }
+                    <li class="slider-item"><a href="[field:arcurl /]" title="[field:title/]"><img src="[field:picname function='replaceurl(@me) /]" alt="[field:title/]"></a></li>
+                   {/dede:arclist}
                 </ul>
             </div>
             <a href="javascript:void(0)" class="btn prev"></a>

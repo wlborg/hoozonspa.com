@@ -97,14 +97,17 @@
             } else if (index_Sw >= 6 && index_Sw <= 11) {
                 fullReShow('fullscreen');
                 $('.fullscreen').eq(1).addClass('show');
+                index_Sw=index_Sw%7;
                 slideToFrom(swiper_caseSix2,index_Sw);
             } else if (index_Sw >= 12 && index_Sw <= 17) {
                 fullReShow('fullscreen');
                 $('.fullscreen').eq(2).addClass('show');
+                 index_Sw=index_Sw%7;
                 slideToFrom(swiper_caseSix3,index_Sw);
             } else if (index_Sw >= 18 && index_Sw <= 23) {
                 fullReShow('fullscreen');
                 $('.fullscreen').eq(3).addClass('show');
+                 index_Sw=index_Sw%7;
                 slideToFrom(swiper_caseSix4,index_Sw);
             }
             $('.header').removeClass('fixed');
@@ -116,7 +119,8 @@
                hiddBody();
             }
         });
-          function hiddBody(){
+
+            function hiddBody(){
               $("body").css("overflow-y","hidden")
             }
              function showBody(){

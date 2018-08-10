@@ -2,18 +2,7 @@
 <html>
 <head>
 <title>{dede:global.cfg_webname/}</title>
-<meta charset="UTF-8">
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-<meta name="renderer" content="webkit"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-<meta name=applicable-device content="pc">
-<meta http-equiv="Cache-Control" content="no-transform"/>
-<meta http-equiv="Cache-Control" content="no-siteapp"/>
-<meta name="baidu-site-verification" content="99J7V1k1Vz" />
-<meta name="google-site-verification" content="Odmo8X4zeUG1WPcCrCAueZz-dyBPFBs4Zqlb9FBT5z4" />
-<meta http-equiv="Access-Control-Allow-Origin" content="*" />
-<link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/common.css">
-<link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/site.css">
+{dede:include filename="_link.htm"/}
 <link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/index_swiper.css">
 <link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/swiper.min.css">
 </head>
@@ -618,21 +607,23 @@
             <div class="line"></div>
             <p class="p2">咨询热线</p>
             <p class="tel">400-018-2622</p>
-            <a class="consult">咨询客服</a>
+            <a class="consult" href="https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110">咨询客服</a>
         </div>
         <div class="g-right">
             <h2><span class="sr-only">美丽问答</span></h2>
             <div class="box">
-                <img src="//pc.hoozonspa.com/static/img/img13.jpg" alt="">
-                <h3><a href="article.html">水光注射的全方位普及</a></h3>
-                <p><a href="article.html">随着年龄的增长，生活节奏的加快，现代 都市女性皮肤正在遭受着严峻的考验...<span>【详情】</span></a>
+                 {dede:arclist typeid='5' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' limit='0,1' }
+                <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
+                <h3><a href="[field:arcurl /]" title="[field:title/]">[field:title/]</a></h3>
+                <p><a href="[field:arcurl /]" title="[field:title/]">[field:description/]...<span>【详情】</span></a>
                 </p>
+                {/dede:arclist}
             </div>
             <ul>
-                <li><a href="article.html">冰点脱毛一般多少钱?  冰点脱毛99元/次包干..........................<span>详情</span></a></li>
-                <li><a href="article.html">冰点脱毛一般多少钱?  冰点脱毛99元/次包干..........................<span>详情</span></a></li>
-                <li><a href="article.html">冰点脱毛一般多少钱?  冰点脱毛99元/次包干..........................<span>详情</span></a></li>
-                <li><a href="article.html">冰点脱毛一般多少钱?  冰点脱毛99元/次包干..........................<span>详情</span></a></li>
+                {dede:arclist typeid='5' row='4' orderby='id' orderway='desc' infolen='36' limit='1,4' }
+                <li><a href="[field:arcurl /]" title="[field:title/]">[field:title/]..........................<span>详情</span></a>
+                </li>
+                {/dede:arclist}
             </ul>
         </div>
     </div>

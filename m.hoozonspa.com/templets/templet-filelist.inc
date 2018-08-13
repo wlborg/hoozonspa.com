@@ -48,3 +48,5 @@ list_chanping2.htm,产品2列表模板
 list_equip.htm,设备列表模板
 list_news.htm,新闻列表模板
 list_project.htm,项目列表模板
+
+chain_item.htm,连锁店电话和地址页

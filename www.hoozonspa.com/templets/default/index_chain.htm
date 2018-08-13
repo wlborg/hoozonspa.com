@@ -1,24 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>环境</title>
-   <meta charset="UTF-8">
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-<meta name="renderer" content="webkit"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-<meta name=applicable-device content="pc">
-<meta http-equiv="Cache-Control" content="no-transform"/>
-<meta http-equiv="Cache-Control" content="no-siteapp"/>
-<meta name="baidu-site-verification" content="99J7V1k1Vz" />
-<meta name="google-site-verification" content="Odmo8X4zeUG1WPcCrCAueZz-dyBPFBs4Zqlb9FBT5z4" />
-<meta http-equiv="Access-Control-Allow-Origin" content="*" />
-<script type="text/javascript" src="js/fontreset.js"></script>
-
-<link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/common.css">
-<link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/site.css">
+ <title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
+ {dede:include filename="_link.htm"/}
 </head>
-
 <body>
 <!-- header -->
     {dede:include filename="nav.htm"/}
@@ -47,141 +32,437 @@
                     <!-- <p class="bigtxt">Bedroom</p> -->
                 </div>
                 <div class="g-right">
+                    <!-- 海口 -->
                     <div class="block">
                         <div class="slider-wraper">
                             <ul class="slider-container">
+                                {dede:arclist typeid='11' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic1' channelid='17' limit='0,1'}
                                 <li class="slider-item">
                                     <div class="front">
-                                        <h3>海口海府1分院</h3>
+                                        <h3>[field:title/]</h3>
                                         <div class="line"></div>
-                                        <p>地址：海口市海府路4号海口宾馆附楼1~3层</p>
-                                        <p>美丽热线：66291890/65226822</p>
+                                        <p>地址： [field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
                                     </div>
                                     <div class="back">
-                                        <img src="//pc.hoozonspa.com/static/img/img21.jpg"></div>
+                                        <img src="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
                                 </li>
+                                {/dede:arclist}
+                                {dede:arclist typeid='11' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic2' channelid='17' limit='1,1'}
                                 <li class="slider-item">
                                     <div class="front">
-                                        <h3>海口海府1分院</h3>
+                                        <h3>[field:title/]</h3>
                                         <div class="line"></div>
-                                        <p>地址：海口市海府路4号海口宾馆附楼1~3层</p>
-                                        <p>美丽热线：66291890/65226822</p>
+                                        <p>地址： [field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
                                     </div>
                                     <div class="back">
-                                        <img src="//pc.hoozonspa.com/static/img/img21.jpg"></div>
+                                        <img src="[field:b_pic2 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
                                 </li>
+                                {/dede:arclist}
+                                {dede:arclist typeid='11' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic3' channelid='17' limit='2,1'}
+                                <li class="slider-item">
+                                    <div class="front">
+                                        <h3>[field:title/]</h3>
+                                        <div class="line"></div>
+                                        <p>地址： [field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
+                                    </div>
+                                    <div class="back">
+                                        <img src="[field:b_pic3 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
+                                </li>
+                                {/dede:arclist}
+                                {dede:arclist typeid='11' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic4' channelid='17' limit='3,1'}
+                                <li class="slider-item">
+                                    <div class="front">
+                                        <h3>[field:title/]</h3>
+                                        <div class="line"></div>
+                                        <p>地址： [field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
+                                    </div>
+                                    <div class="back">
+                                        <img src="[field:b_pic4 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
+                                </li>
+                                {/dede:arclist}
+                                {dede:arclist typeid='11' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic5' channelid='17' limit='4,1'}
+                                <li class="slider-item">
+                                    <div class="front">
+                                        <h3>[field:title/]</h3>
+                                        <div class="line"></div>
+                                        <p>地址： [field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
+                                    </div>
+                                    <div class="back">
+                                        <img src="[field:b_pic5 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
+                                </li>
+                                {/dede:arclist}
+                                {dede:arclist typeid='11' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic6' channelid='17' limit='5,1'}
+                                <li class="slider-item">
+                                    <div class="front">
+                                        <h3>[field:title/]</h3>
+                                        <div class="line"></div>
+                                        <p>地址： [field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
+                                    </div>
+                                    <div class="back">
+                                        <img src="[field:b_pic6 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
+                                </li>
+                                {/dede:arclist}
                             </ul>
                         </div>
                         <a href="javascript:void(0)" class="btn prev"></a>
                         <a href="javascript:void(0)" class="btn next"></a>
                     </div>
+                    <!-- 三亚 -->
                     <div class="block">
                         <div class="slider-wraper">
                             <ul class="slider-container">
+                                 {dede:arclist typeid='12' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic1' channelid='17' limit='0,1'}
                                 <li class="slider-item">
                                     <div class="front">
-                                        <h3>海口海府2分院</h3>
+                                        <h3>[field:title/]</h3>
                                         <div class="line"></div>
-                                        <p>地址：海口市海府路4号海口宾馆附楼1~3层</p>
-                                        <p>美丽热线：66291890/65226822</p>
+                                        <p>地址：[field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
                                     </div>
                                     <div class="back">
-                                        <img src="//pc.hoozonspa.com/static/img/img21.jpg"></div>
+                                        <img src="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
                                 </li>
+                                {/dede:arclist}
+                                {dede:arclist typeid='12' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic2' channelid='17' limit='1,1'}
                                 <li class="slider-item">
                                     <div class="front">
-                                        <h3>海口海府2分院</h3>
+                                        <h3>[field:title/]</h3>
                                         <div class="line"></div>
-                                        <p>地址：海口市海府路4号海口宾馆附楼1~3层</p>
-                                        <p>美丽热线：66291890/65226822</p>
+                                        <p>地址：[field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
                                     </div>
                                     <div class="back">
-                                        <img src="//pc.hoozonspa.com/static/img/img21.jpg"></div>
+                                        <img src="[field:b_pic2 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
                                 </li>
+                                {/dede:arclist}
+                                {dede:arclist typeid='12' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic3' channelid='17' limit='2,1'}
+                                <li class="slider-item">
+                                    <div class="front">
+                                        <h3>[field:title/]</h3>
+                                        <div class="line"></div>
+                                        <p>地址：[field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
+                                    </div>
+                                    <div class="back">
+                                        <img src="[field:b_pic3 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
+                                </li>
+                                {/dede:arclist}
+                                {dede:arclist typeid='12' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic4' channelid='17' limit='3,1'}
+                                <li class="slider-item">
+                                    <div class="front">
+                                        <h3>[field:title/]</h3>
+                                        <div class="line"></div>
+                                        <p>地址：[field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
+                                    </div>
+                                    <div class="back">
+                                        <img src="[field:b_pic4 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
+                                </li>
+                                {/dede:arclist}
+                                {dede:arclist typeid='12' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic5' channelid='17' limit='4,1'}
+                                <li class="slider-item">
+                                    <div class="front">
+                                        <h3>[field:title/]</h3>
+                                        <div class="line"></div>
+                                        <p>地址：[field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
+                                    </div>
+                                    <div class="back">
+                                        <img src="[field:b_pic5 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
+                                </li>
+                                {/dede:arclist}
+                                {dede:arclist typeid='12' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic6' channelid='17' limit='5,1'}
+                                <li class="slider-item">
+                                    <div class="front">
+                                        <h3>[field:title/]</h3>
+                                        <div class="line"></div>
+                                        <p>地址：[field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
+                                    </div>
+                                    <div class="back">
+                                        <img src="[field:b_pic6 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
+                                </li>
+                                {/dede:arclist}
                             </ul>
                         </div>
                         <a href="javascript:void(0)" class="btn prev"></a>
                         <a href="javascript:void(0)" class="btn next"></a>
                     </div>
+                    <!-- 琼海 -->
                     <div class="block">
                         <div class="slider-wraper">
                             <ul class="slider-container">
+                                {dede:arclist typeid='14' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic1' channelid='17' limit='0,1'}
                                 <li class="slider-item">
                                     <div class="front">
-                                        <h3>海口海府3分院</h3>
+                                        <h3>[field:title/]</h3>
                                         <div class="line"></div>
-                                        <p>地址：海口市海府路4号海口宾馆附楼1~3层</p>
-                                        <p>美丽热线：66291890/65226822</p>
+                                        <p>地址：[field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
                                     </div>
                                     <div class="back">
-                                        <img src="//pc.hoozonspa.com/static/img/img21.jpg"></div>
+                                        <img src="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
                                 </li>
+                                {/dede:arclist}
+                                {dede:arclist typeid='14' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic2' channelid='17' limit='1,1'}
                                 <li class="slider-item">
                                     <div class="front">
-                                        <h3>海口海府3分院</h3>
+                                        <h3>[field:title/]</h3>
                                         <div class="line"></div>
-                                        <p>地址：海口市海府路4号海口宾馆附楼1~3层</p>
-                                        <p>美丽热线：66291890/65226822</p>
+                                        <p>地址：[field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
                                     </div>
                                     <div class="back">
-                                        <img src="//pc.hoozonspa.com/static/img/img21.jpg"></div>
+                                        <img src="[field:b_pic2 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
                                 </li>
+                                {/dede:arclist}
+                                {dede:arclist typeid='14' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic3' channelid='17' limit='2,1'}
+                                <li class="slider-item">
+                                    <div class="front">
+                                        <h3>[field:title/]</h3>
+                                        <div class="line"></div>
+                                        <p>地址：[field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
+                                    </div>
+                                    <div class="back">
+                                        <img src="[field:b_pic3 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
+                                </li>
+                                {/dede:arclist}
+                                {dede:arclist typeid='14' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic4' channelid='17' limit='3,1'}
+                                <li class="slider-item">
+                                    <div class="front">
+                                        <h3>[field:title/]</h3>
+                                        <div class="line"></div>
+                                        <p>地址：[field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
+                                    </div>
+                                    <div class="back">
+                                        <img src="[field:b_pic4 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
+                                </li>
+                                {/dede:arclist}
+                                {dede:arclist typeid='14' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic5' channelid='17' limit='4,1'}
+                                <li class="slider-item">
+                                    <div class="front">
+                                        <h3>[field:title/]</h3>
+                                        <div class="line"></div>
+                                        <p>地址：[field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
+                                    </div>
+                                    <div class="back">
+                                        <img src="[field:b_pic5 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
+                                </li>
+                                {/dede:arclist}
+                                {dede:arclist typeid='14' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic6' channelid='17' limit='5,1'}
+                                <li class="slider-item">
+                                    <div class="front">
+                                        <h3>[field:title/]</h3>
+                                        <div class="line"></div>
+                                        <p>地址：[field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
+                                    </div>
+                                    <div class="back">
+                                        <img src="[field:b_pic6 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
+                                </li>
+                                {/dede:arclist}
                             </ul>
                         </div>
                         <a href="javascript:void(0)" class="btn prev"></a>
                         <a href="javascript:void(0)" class="btn next"></a>
                     </div>
+                    <!-- 儋州 -->
                     <div class="block">
                         <div class="slider-wraper">
                             <ul class="slider-container">
+                                {dede:arclist typeid='13' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic1' channelid='17' limit='0,1'}
                                 <li class="slider-item">
                                     <div class="front">
-                                        <h3>海口海府4分院</h3>
+                                        <h3>[field:title/]</h3>
                                         <div class="line"></div>
-                                        <p>地址：海口市海府路4号海口宾馆附楼1~3层</p>
-                                        <p>美丽热线：66291890/65226822</p>
+                                        <p>地址：[field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
                                     </div>
                                     <div class="back">
-                                        <img src="//pc.hoozonspa.com/static/img/img21.jpg"></div>
+                                        <img src="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
                                 </li>
+                                {/dede:arclist}
+                                {dede:arclist typeid='13' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic2' channelid='17' limit='1,1'}
                                 <li class="slider-item">
                                     <div class="front">
-                                        <h3>海口海府4分院</h3>
+                                        <h3>[field:title/]</h3>
                                         <div class="line"></div>
-                                        <p>地址：海口市海府路4号海口宾馆附楼1~3层</p>
-                                        <p>美丽热线：66291890/65226822</p>
+                                        <p>地址：[field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
                                     </div>
                                     <div class="back">
-                                        <img src="//pc.hoozonspa.com/static/img/img21.jpg"></div>
+                                        <img src="[field:b_pic2 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
                                 </li>
+                                {/dede:arclist}
+                                {dede:arclist typeid='13' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic3' channelid='17' limit='2,1'}
+                                <li class="slider-item">
+                                    <div class="front">
+                                        <h3>[field:title/]</h3>
+                                        <div class="line"></div>
+                                        <p>地址：[field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
+                                    </div>
+                                    <div class="back">
+                                        <img src="[field:b_pic3 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
+                                </li>
+                                {/dede:arclist}
+                                {dede:arclist typeid='13' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic4' channelid='17' limit='3,1'}
+                                <li class="slider-item">
+                                    <div class="front">
+                                        <h3>[field:title/]</h3>
+                                        <div class="line"></div>
+                                        <p>地址：[field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
+                                    </div>
+                                    <div class="back">
+                                        <img src="[field:b_pic4 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
+                                </li>
+                                {/dede:arclist}
+                                {dede:arclist typeid='13' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic5' channelid='17' limit='4,1'}
+                                <li class="slider-item">
+                                    <div class="front">
+                                        <h3>[field:title/]</h3>
+                                        <div class="line"></div>
+                                        <p>地址：[field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
+                                    </div>
+                                    <div class="back">
+                                        <img src="[field:b_pic5 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
+                                </li>
+                                {/dede:arclist}
+                                {dede:arclist typeid='13' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic6' channelid='17' limit='5,1'}
+                                <li class="slider-item">
+                                    <div class="front">
+                                        <h3>[field:title/]</h3>
+                                        <div class="line"></div>
+                                        <p>地址：[field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
+                                    </div>
+                                    <div class="back">
+                                        <img src="[field:b_pic6 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
+                                </li>
+                                {/dede:arclist}
                             </ul>
                         </div>
                         <a href="javascript:void(0)" class="btn prev"></a>
                         <a href="javascript:void(0)" class="btn next"></a>
                     </div>
+                    <!-- 陵水 -->
                     <div class="block">
                         <div class="slider-wraper">
                             <ul class="slider-container">
+                                  {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic1' channelid='17' limit='0,1'}
                                 <li class="slider-item">
                                     <div class="front">
-                                        <h3>海口海府5分院</h3>
+                                        <h3>[field:title/]</h3>
                                         <div class="line"></div>
-                                        <p>地址：海口市海府路4号海口宾馆附楼1~3层</p>
-                                        <p>美丽热线：66291890/65226822</p>
+                                        <p>地址：[field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
                                     </div>
                                     <div class="back">
                                         <img src="//pc.hoozonspa.com/static/img/img21.jpg"></div>
                                 </li>
+                                {/dede:arclist}
+
+                                  {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic2' channelid='17' limit='1,1'}
                                 <li class="slider-item">
                                     <div class="front">
-                                        <h3>海口海府5分院</h3>
+                                        <h3>[field:title/]</h3>
                                         <div class="line"></div>
-                                        <p>地址：海口市海府路4号海口宾馆附楼1~3层</p>
-                                        <p>美丽热线：66291890/65226822</p>
+                                        <p>地址：[field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
                                     </div>
                                     <div class="back">
-                                        <img src="//pc.hoozonspa.com/static/img/img21.jpg"></div>
+                                         <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
                                 </li>
+                                {/dede:arclist}
+
+                                  {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic3' channelid='17' limit='2,1'}
+                                <li class="slider-item">
+                                    <div class="front">
+                                        <h3>[field:title/]</h3>
+                                        <div class="line"></div>
+                                        <p>地址：[field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
+                                    </div>
+                                    <div class="back">
+                                          <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
+                                </li>
+                                {/dede:arclist}
+                                {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic4' channelid='17' limit='3,1'}
+                                <li class="slider-item">
+                                    <div class="front">
+                                        <h3>[field:title/]</h3>
+                                        <div class="line"></div>
+                                        <p>地址：[field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
+                                    </div>
+                                    <div class="back">
+                                          <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
+                                </li>
+                                {/dede:arclist}
+                                  {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic5' channelid='17' limit='4,1'}
+                                <li class="slider-item">
+                                    <div class="front">
+                                        <h3>[field:title/]</h3>
+                                        <div class="line"></div>
+                                        <p>地址：[field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
+                                    </div>
+                                    <div class="back">
+                                          <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
+                                </li>
+                                {/dede:arclist}
+                                {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic5' channelid='17' limit='5,1'}
+                                <li class="slider-item">
+                                    <div class="front">
+                                        <h3>[field:title/]</h3>
+                                        <div class="line"></div>
+                                        <p>地址：[field:address/]</p>
+                                        <p>美丽热线：[field:tel/]</p>
+                                    </div>
+                                    <div class="back">
+                                          <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
+                                </li>
+                                {/dede:arclist}
                             </ul>
                         </div>
                         <a href="javascript:void(0)" class="btn prev"></a>
@@ -208,42 +489,44 @@
                                     <li data-id="8"><span>海五9分院</span></li>
                                 </ul>
                                 <ul>
-                                    <li><span>世贸10分院</span></li>
-                                    <li><span>龙昆南13分院</span></li>
-                                    <li><span>红街15分院</span></li>
-                                    <li><span>万花坊18分院</span></li>
-                                    <li><span>安信19分院</span></li>
-                                    <li><span>塞维阳光20分院</span></li>
+                                    <li data-id="9"><span>世贸10分院</span></li>
+                                    <li data-id="10"><span>龙昆南13分院</span></li>
+                                    <li data-id="11"><span>红街15分院</span></li>
+                                    <li data-id="12"><span>万花坊18分院</span></li>
+                                    <li data-id="13"><span>安信19分院</span></li>
+                                    <li data-id="14"><span>塞维阳光20分院</span></li>
                                 </ul>
                             </div>
                             <div>
                                 <h3>三亚</h3>
                                 <ul>
-                                    <li><span>临春河16分院</span></li>
-                                    <li><span>新风街17分院</span></li>
-                                    <li><span>香榭23分院</span></li>
+                                    <li data-id="15"><span>临春河16分院</span></li>
+                                    <li data-id="16"><span>新风街17分院</span></li>
+                                    <li data-id="17"><span>香榭23分院</span></li>
                                 </ul>
                             </div>
                             <div>
                                 <h3>儋州</h3>
                                 <ul>
-                                    <li><span>那大12分院</span></li>
-                                    <li><span>那大12分院</span></li>
+                                    <li data-id="18"><span>那大12分院</span></li>
+                                    <li data-id="19"><span>那大12分院</span></li>
                                 </ul>
                                 <h3>琼海</h3>
                                 <ul>
-                                    <li><span>金海路11分院</span></li>
+                                    <li data-id="20"><span>金海路11分院</span></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <!-- <p class="bigtxt">SKIN care</p> -->
-                    <p class="bigtxt"><img src="{dede:global.cfg_imgpath/}//bigtxt_skincare.png"></p>
+                    <p class="bigtxt"><img src="{dede:global.cfg_imgpath/}/bigtxt_skincare.png"></p>
                 </div>
                 <div class="g-right">
                     <div class="item item1">
                         <div class="row">
+                            {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic4' channelid='17' limit='3,1'}
                             <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            {/dede:arclist}
                             <img src="//pc.hoozonspa.com/static/img/img18.jpg">
                             <img src="//pc.hoozonspa.com/static/img/img18.jpg">
                         </div>
@@ -316,6 +599,162 @@
                     <div class="item item7">
                         <div class="row">
                             <img src="//pc.hoozonspa.com/static/img/img24.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        </div>
+                        <div class="row">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        </div>
+                    </div>
+                    <div class="item item8">
+                    <div class="row">
+                        <img src="//pc.hoozonspa.com/static/img/img26.jpg">
+                        <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                    </div>
+                    <div class="row">
+                        <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                    </div>
+                    </div>
+                    <div class="item item8">
+                        <div class="row">
+                            <img src="//pc.hoozonspa.com/static/img/img26.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        </div>
+                        <div class="row">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        </div>
+                    </div>
+                    <div class="item item8">
+                        <div class="row">
+                            <img src="//pc.hoozonspa.com/static/img/img26.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        </div>
+                        <div class="row">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        </div>
+                    </div>
+                    <div class="item item8">
+                        <div class="row">
+                            <img src="//pc.hoozonspa.com/static/img/img26.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        </div>
+                        <div class="row">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        </div>
+                    </div>
+                    <div class="item item8">
+                        <div class="row">
+                            <img src="//pc.hoozonspa.com/static/img/img26.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        </div>
+                        <div class="row">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        </div>
+                    </div>
+                    <div class="item item8">
+                        <div class="row">
+                            <img src="//pc.hoozonspa.com/static/img/img26.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        </div>
+                        <div class="row">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        </div>
+                    </div>
+                    <div class="item item8">
+                        <div class="row">
+                            <img src="//pc.hoozonspa.com/static/img/img26.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        </div>
+                        <div class="row">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        </div>
+                    </div>
+                    <div class="item item8">
+                        <div class="row">
+                            <img src="//pc.hoozonspa.com/static/img/img26.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        </div>
+                        <div class="row">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        </div>
+                    </div>
+                    <div class="item item8">
+                        <div class="row">
+                            <img src="//pc.hoozonspa.com/static/img/img26.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        </div>
+                        <div class="row">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        </div>
+                    </div>
+                    <div class="item item8">
+                        <div class="row">
+                            <img src="//pc.hoozonspa.com/static/img/img26.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        </div>
+                        <div class="row">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        </div>
+                    </div>
+                    <div class="item item8">
+                        <div class="row">
+                            <img src="//pc.hoozonspa.com/static/img/img26.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        </div>
+                        <div class="row">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        </div>
+                    </div>
+                    <div class="item item8">
+                        <div class="row">
+                            <img src="//pc.hoozonspa.com/static/img/img26.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        </div>
+                        <div class="row">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                            <img src="//pc.hoozonspa.com/static/img/img18.jpg">
+                        </div>
+                    </div>
+                    <div class="item item8">
+                        <div class="row">
+                            <img src="//pc.hoozonspa.com/static/img/img26.jpg">
                             <img src="//pc.hoozonspa.com/static/img/img18.jpg">
                             <img src="//pc.hoozonspa.com/static/img/img18.jpg">
                         </div>

@@ -329,7 +329,7 @@ function initSlider() {
     //Environmental Science
     //
     // tabs($('.environmental .g-left').find('li'), $('.environmental .item'));
-
+     // 环境分院点击
     $('.environmental .g-left li').click(function(e) {
         $('.environmental .g-left li.active').removeClass('active');
         var index = $(this).data('id');
@@ -539,7 +539,6 @@ function fixnav() {
 }
  // topbanner
 function topbanner(argument) {
-
     var slide1 = new XZSlide({
         cover: $(".top-banner .slider-wraper"),
         container: $(".top-banner .slider-container"),
@@ -550,17 +549,7 @@ function topbanner(argument) {
         indicator: $(".top-banner .slider-indicator")
     });
 }
-function startStopVideo(id){
-    // 视频暂停和开始播放
-    var video=document.getElementById(id);
-    video.onclick=function() {
-        if (this.paused) {
-            this.play();
-        } else {
-            this.pause();
-        }
-    }
-}
+
 // tag列表页导航栏不需要高亮显示prompt()
 function nav(){
     var obj = null;
@@ -577,6 +566,5 @@ $(function() {
     lightNav();
     fixnav();
     setTimeout(initSlider, 2000);
-    startStopVideo("video");
     nav();
 });

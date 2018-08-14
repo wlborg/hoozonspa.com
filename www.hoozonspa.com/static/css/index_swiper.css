@@ -165,3 +165,181 @@
 
     color: #dfd9e6;
 }
+.fullscreen .swiper-pagination {
+    left: 30%;
+
+    width: 3em;
+    margin: auto;
+    margin-left: -1.5em;
+}
+/*项目轮播图需要*/
+.swiper-container_pro {
+    width: 14em;
+    height: 9.4em;
+}
+.hotproject .g-right .project-block .swiper-slide .item {
+    position: relative;
+
+    float: left;
+    /*width: 33.33%;*/
+    height: 4.7em;
+    overflow: hidden;
+}
+.hotproject .g-right .project-block .swiper-slide .item .front {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    visibility: hidden;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+
+    background-color: rgba(92, 55, 58, .6);
+}
+.hotproject .g-right .project-block .swiper-slide .item .front p {
+    margin-top: 5em;
+
+    font-size: 1.4em;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1;
+
+    text-align: center;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+
+    opacity: .8;
+    color: #fff;
+}
+.hotproject .g-right .project-block .swiper-slide .item .front h3 {
+    margin-top: .6em;
+
+    font-size: 1.6em;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1;
+
+    text-align: center;
+    letter-spacing: 0;
+
+    color: #fff;
+}
+.hotproject .g-right .project-block .swiper-slide .item .front .line {
+    width: .34em;
+    height: 1px;
+    margin: .26em auto 0;
+
+    opacity: .5;
+    background: #fff;
+}
+.hotproject .g-right .project-block .swiper-slide .item .back {
+    width: 100%;
+    height: 4.7em;
+}
+.hotproject .g-right .project-block .swiper-slide .item .back img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.hotproject .g-right .project-block .swiper-slide .item:hover {
+    cursor: pointer;
+}
+.hotproject .g-right .project-block .swiper-slide .item:hover .front {
+    visibility: visible;
+}
+.hotproject .g-right .project-block .btn {
+    position: absolute;
+
+    display: block;
+    width: .62em;
+    height: 1.12em;
+    margin: auto;
+}
+.hotproject .g-right .project-block .prev {
+    top: 0;
+    bottom: 0;
+    left: -1px;
+
+    background: url("../images/bg_prev.png") left center no-repeat;
+    background-size: 100%;
+}
+.hotproject .g-right .project-block .next {
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    background: url("../images/bg_next.png") right center no-repeat;
+    background-size: 100%;
+}
+.hotproject .g-right .project-block.active {
+    z-index: 2;
+}
+.hotproject .g-right .project-block  .swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display:         flex;
+    height: 4.7em;
+
+    font-size: 18px;
+
+    text-align: center;
+
+    background: #fff;
+
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+}
+/* 首页项目部分 */
+.hotproject .g-right .project-block .swiper-slide {
+    height: 50%!important;
+}
+.hotproject .g-right .project-block .swiper-slide .item {
+    height: 100%!important;
+}
+.hotproject .g-right .project-block .swiper-slide .item .back {
+    height: 100%!important;
+}
+.project-pagination .swiper-pagination-bullet {
+    display: block;
+    width: auto;
+    height: auto;
+
+    text-align: center;
+
+    opacity: 1;
+    border-radius: 1em;
+    background: none;
+}
+.project-pagination .swiper-pagination-bullet-active {
+    text-align: center;
+
+    opacity: 1;
+    color: #fff;
+    background: #dfad9d!important;
+}
+.hotproject .g-left ul li {
+    text-align: center;
+
+    outline: medium;
+}
+.hotproject .g-right .project-block .swiper-slide .item .front .line {
+    width: 1.52em;
+    height: 1px;
+    margin: .96em auto 0;
+
+    opacity: .5;
+    background: #fff;
+}

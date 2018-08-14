@@ -1,25 +1,8 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>项目页
-    </title>
-    <meta charset="UTF-8">
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-<meta name="renderer" content="webkit"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-<meta name=applicable-device content="pc">
-<meta http-equiv="Cache-Control" content="no-transform"/>
-<meta http-equiv="Cache-Control" content="no-siteapp"/>
-<meta name="baidu-site-verification" content="99J7V1k1Vz" />
-<meta name="google-site-verification" content="Odmo8X4zeUG1WPcCrCAueZz-dyBPFBs4Zqlb9FBT5z4" />
-<meta http-equiv="Access-Control-Allow-Origin" content="*" />
-<script type="text/javascript" src="js/fontreset.js"></script>
-
-<link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/common.css">
-<link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/site.css">
+   {dede:include filename="_link.htm"/}
 </head>
-
 <body>
 <!-- header -->
         {dede:include filename="nav.htm"/}
@@ -38,19 +21,21 @@
                                 <div class="row">
                                     <ul class="special">
                                         <li>
+                                            {dede:arclist typeid='15' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' limit='0,1'  channelid="21"}
                                             <span>敏感</span>
                                             <div class="block">
                                                 <div class="front">
-                                                    <h4>红妆暖SPA</h4>
-                                                    <p>适合任何人群，特别是亚健康状态者。 现代女性工作、生活压力过大，因此常常 伴随着肩颈僵硬、失眠、多梦、疲劳等、 通过芳香精油和专业手法达到气血通畅、 放松肩颈、改善睡眠，安神养气等功效。
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]
                                                     </p>
                                                     <div class="line"></div>
-                                                    <a class="more" href="article_project.html">查看更多</a>
+                                                    <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
                                                 </div>
                                                 <div class="back">
                                                     <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
                                                 </div>
                                             </div>
+                                             {/dede:arclist}
                                         </li>
                                         <li>
                                             <span>补水</span>

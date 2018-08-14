@@ -343,3 +343,6 @@
     opacity: .5;
     background: #fff;
 }
+.brandcenter .g-left p {
+    width: 20em;
+}

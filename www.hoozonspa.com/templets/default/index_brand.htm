@@ -64,7 +64,7 @@
         <div class="wraper">
         <h2><span class="sr-only"></span></h2>
         <div class="row">
-              {dede:arclist typeid='9' flag='c' row='3' titlelen="120" limit='0,3' addfields='title2' channelid='21'}
+              {dede:arclist typeid='9' flag='c' row='3' titlelen="120" limit='0,3' addfields='title2,b_band' channelid='21'}
          <div class="item">
                 <div class="front">
                 <a href="[field:arcurl /]" title="[field:title/]">
@@ -79,7 +79,7 @@
                     <p>[field:title2/]</p>
                     <h3>[field:title/]</h3>
                 </div>
-                <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
+                <img src="[field:b_band function='replaceurl(@me)/]" alt="[field:title/]">
          </div>
          {/dede:arclist}
          <div class="item">

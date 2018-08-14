@@ -1127,14 +1127,20 @@ body {
   height: 3.75426621rem;
   margin-bottom: 0.38395904rem;
 }
-.award .slider-wraper ul .row img {
-  margin-left: 0.17064846rem;
+.award .slider-wraper ul .row a{
+  display: block;
+   margin-left: 0.17064846rem;
   display: block;
   float: left;
   width: 4.99146758rem;
   height: 3.75426621rem;
 }
-.award .slider-wraper ul .row img:first-child {
+.award .slider-wraper ul .row img {
+  display: block;
+  width:100%;
+  height: 100%;
+}
+.award .slider-wraper ul .row a:first-child {
   margin-left: 0;
 }
 .award .slider-wraper:hover {

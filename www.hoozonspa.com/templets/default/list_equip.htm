@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html>
-
 <head>
- <title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
- <meta name="author" content="前端：陈庭奋" />
-<meta charset="UTF-8">
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-<meta name="renderer" content="webkit"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-<meta name=applicable-device content="pc">
-<meta http-equiv="Cache-Control" content="no-transform"/>
-<meta http-equiv="Cache-Control" content="no-siteapp"/>
-<meta name="baidu-site-verification" content="99J7V1k1Vz" />
-<meta name="google-site-verification" content="Odmo8X4zeUG1WPcCrCAueZz-dyBPFBs4Zqlb9FBT5z4" />
-<meta http-equiv="Access-Control-Allow-Origin" content="*" />
  {dede:include filename="_link.htm"/}
 </head>
 <body>
@@ -27,7 +14,7 @@
             <div class="g-container shebei">
                 <div class="g-left">
                     <div class="wraper">
-                        <img src="img/img21.jpg">
+                        <img src="//pc.hoozonspa.com/static/img/img21.jpg">
                     </div>
                 </div>
                 <div class="g-right">
@@ -42,7 +29,7 @@
                         <div class="item"><span>星级服务<br> 环境</span>
                         </div>
                     </div>
-                    <a class="consult"><span class="sr-only">立即咨询</span></a>
+                    <a class="consult" href="https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110"><span class="sr-only">立即咨询</span></a>
                 </div>
             </div>
             <!-- Environmental display -->
@@ -66,6 +53,16 @@
                     <div class="block">
                         <div class="slider-wraper">
                             <ul class="slider-container">
+                                 {dede:list aid="112" pagesize='10' orderby="id" orderway="desc" addfields='pic1,pic2' channelid='19'}
+                                <li class="slider-item">
+                                    <div class="front">
+                                        <h3>[field:title/</h3>
+                                        <p>[field:des/]
+                                        </p>
+                                    </div>
+                                    <div class="back">
+                                        <img src="img/img30.jpg"></div>
+                                </li>
                                 <li class="slider-item">
                                     <div class="front">
                                         <h3>冰点脱毛仪</h3>
@@ -75,7 +72,26 @@
                                     <div class="back">
                                         <img src="img/img30.jpg"></div>
                                 </li>
-                                 <li class="slider-item">
+                                 {/dede:list}
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0)" class="btn prev"></a>
+                        <a href="javascript:void(0)" class="btn next"></a>
+                    </div>
+                    <div class="block">
+                        <div class="slider-wraper">
+                           <ul class="slider-container">
+                                 {dede:list aid="114" pagesize='10' orderby="id" orderway="desc" addfields='pic1,pic2' channelid='19'}
+                                <li class="slider-item">
+                                    <div class="front">
+                                        <h3>[field:title/</h3>
+                                        <p>[field:des/]
+                                        </p>
+                                    </div>
+                                    <div class="back">
+                                        <img src="img/img30.jpg"></div>
+                                </li>
+                                <li class="slider-item">
                                     <div class="front">
                                         <h3>冰点脱毛仪</h3>
                                         <p>功能介绍功能介绍功能介绍 功能介绍功能介绍
@@ -84,6 +100,7 @@
                                     <div class="back">
                                         <img src="img/img30.jpg"></div>
                                 </li>
+                                 {/dede:list}
                             </ul>
                         </div>
                         <a href="javascript:void(0)" class="btn prev"></a>
@@ -91,7 +108,17 @@
                     </div>
                      <div class="block">
                         <div class="slider-wraper">
-                            <ul class="slider-container">
+                           <ul class="slider-container">
+                                 {dede:list aid="113" pagesize='10' orderby="id" orderway="desc" addfields='pic1,pic2' channelid='19'}
+                                <li class="slider-item">
+                                    <div class="front">
+                                        <h3>[field:title/</h3>
+                                        <p>[field:des/]
+                                        </p>
+                                    </div>
+                                    <div class="back">
+                                        <img src="img/img30.jpg"></div>
+                                </li>
                                 <li class="slider-item">
                                     <div class="front">
                                         <h3>冰点脱毛仪</h3>
@@ -99,17 +126,9 @@
                                         </p>
                                     </div>
                                     <div class="back">
-                                        <img src="img/img27.jpg"></div>
+                                        <img src="img/img30.jpg"></div>
                                 </li>
-                                 <li class="slider-item">
-                                    <div class="front">
-                                        <h3>冰点脱毛仪</h3>
-                                        <p>功能介绍功能介绍功能介绍 功能介绍功能介绍
-                                        </p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="img/img27.jpg"></div>
-                                </li>
+                                 {/dede:list}
                             </ul>
                         </div>
                         <a href="javascript:void(0)" class="btn prev"></a>

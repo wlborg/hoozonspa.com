@@ -328,7 +328,7 @@
 
     opacity: 1;
     color: #fff;
-    background: #dfad9d;
+    background: #dfad9d!important;
 }
 .hotproject .g-left ul li {
     text-align: center;

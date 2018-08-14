@@ -102,7 +102,7 @@
             $(this).find(".front").fadeOut();
         });
         // 首页案例部分点击
-        $('.swiper-wrapper .swiper-slide').click(function() {
+        $('.cases-container .swiper-wrapper .swiper-slide').click(function() {
             // 案例轮播停止
             autoStop(swiperMy);
             var index_Sw = parseInt($(this).index());

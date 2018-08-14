@@ -165,3 +165,51 @@
 
     color: #dfd9e6;
 }
+.fullscreen .swiper-pagination {
+    left: 30%;
+
+    width: 3em;
+    margin: auto;
+    margin-left: -1.5em;
+}
+/* 首页项目部分 */
+.hotproject .g-right .project-block .swiper-slide {
+    height: 50%!important;
+}
+.hotproject .g-right .project-block .swiper-slide .item {
+    height: 100%!important;
+}
+.hotproject .g-right .project-block .swiper-slide .item .back {
+    height: 100%!important;
+}
+.project-pagination .swiper-pagination-bullet {
+    display: block;
+    width: auto;
+    height: auto;
+
+    text-align: center;
+
+    opacity: 1;
+    border-radius: 1em;
+    background: none;
+}
+.project-pagination .swiper-pagination-bullet-active {
+    text-align: center;
+
+    opacity: 1;
+    color: #fff;
+    background: #dfad9d;
+}
+.hotproject .g-left ul li {
+    text-align: center;
+
+    outline: medium;
+}
+.hotproject .g-right .project-block .swiper-slide .item .front .line {
+    width: 1.52em;
+    height: 1px;
+    margin: .96em auto 0;
+
+    opacity: .5;
+    background: #fff;
+}

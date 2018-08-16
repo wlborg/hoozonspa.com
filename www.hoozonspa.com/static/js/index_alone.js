@@ -16,8 +16,8 @@
             }
             },
              navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+             nextEl: '.next',
+             prevEl: '.prev',
         },
          });
         //案例显示 24条数据

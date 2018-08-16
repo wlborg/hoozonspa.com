@@ -346,3 +346,35 @@
 .brandcenter .g-left p {
     width: 20em;
 }
+.hotproject .g-right .prev {
+    top: 0;
+    bottom: 0;
+    left: -1px;
+
+    background: url(../images/bg_prev.png) left center no-repeat;
+    background-size: 100%;
+}
+.hotproject .g-right  .btn {
+    position: absolute;
+
+    display: block;
+    width: .62em;
+    height: 1.12em;
+    margin: auto;
+}
+.hotproject .g-right  .next {
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    background: url(../images/bg_next.png) right center no-repeat;
+    background-size: 100%;
+}
+.hotproject .g-right  .btn {
+    position: absolute;
+
+    display: block;
+    width: .62em;
+    height: 1.12em;
+    margin: auto;
+}

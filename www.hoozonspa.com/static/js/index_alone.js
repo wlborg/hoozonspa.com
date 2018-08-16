@@ -15,6 +15,10 @@
                return '<li class="'+className+'">'+ content[index] + '</li>';
             }
             },
+             navigation: {
+             nextEl: '.next',
+             prevEl: '.prev',
+        },
          });
         //案例显示 24条数据
        var swiperMy = new Swiper('.swiper-containerMy', {

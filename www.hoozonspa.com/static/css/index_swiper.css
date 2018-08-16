@@ -362,6 +362,8 @@
     width: .62em;
     height: 1.12em;
     margin: auto;
+
+    outline: medium;
 }
 .hotproject .g-right  .next {
     top: 0;

@@ -4,13 +4,12 @@
 <head>
 </head>
 <body>
-    getFileContent("test.htm");
-<!-- {dede:global name='type' runphp='yes'}
-if(@me=='0'){
-   @me=getFileContent("test.htm");
-} else if(@me=='1'){
- @me=getFileContent("test1.htm");
+  if({dede:field.type/}==0){
+   {dede:include filename="test.htm"/}
+}else if({dede:field.type/}==1){
+  {dede:include filename="test1.htm"/}
+}else{
+ {dede:include filename="test.htm"/}
 }
-{/dede:global name='字段名'/} -->
 </body>
 </html>

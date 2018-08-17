@@ -1,17 +1,31 @@
-console.log({dede:field.title2/}+"====");
+
 <!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+{dede:global name='type' runphp='yes'}
+if(@me=='0'){
+   @me=getFileContent("test.htm");
+} else if(@me=='1'){
+ @me=getFileContent("test1.htm");
+}
+{/dede:global name='字段名'/}
+</body>
+</html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 {dede:include filename="_link.htm"/}
 </head>
 <body>
-<!-- header -->
- {dede:include filename="nav.htm"/}
-<!-- banner -->
+header
+{dede:include filename="nav.htm"/}
+banner
 <div class="g-container top-banner">
        {dede:myad name='topbanner_pc'/}
 </div>
-<!-- brand   -->
+brand
 <div class="g-container projectdes">
     <div class="g-left">
         <div class="wraper">
@@ -34,7 +48,7 @@ console.log({dede:field.title2/}+"====");
 
     </div>
 </div>
-    <!-- PRINCIPLE  EFFECT -->
+    PRINCIPLE  EFFECT
     <div class="g-container   effect">
         <div class="g-left">
         <div class="wraper">
@@ -46,7 +60,7 @@ console.log({dede:field.title2/}+"====");
              <div class="line">
             </div>
             <a class="more" href="https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110">了解咨询</a>
-            <!-- <p class="bigtxt">project</p> -->
+            <p class="bigtxt">project</p>
             <p class="bigtxt"><img src='{dede:global.cfg_imgpath/}/bigtxt_project.png'></p>
         </div>
         </div>
@@ -54,7 +68,7 @@ console.log({dede:field.title2/}+"====");
               <img src="{dede:field.b_effimap function='replaceurl(@me)/}" alt="原理功效">
         </div>
     </div>
-        <!-- ADAPT  TO  THE  CROWD -->
+        ADAPT  TO  THE  CROWD
     <div class="g-container adapt">
         <div class="g-left">
         <div class="wraper">
@@ -73,7 +87,7 @@ console.log({dede:field.title2/}+"====");
              <img src="{dede:field.b_crowd function='replaceurl(@me)/}" alt="项目配图">
         </div>
     </div>
-        <!-- nursing  PROCESS -->
+        nursing  PROCESS
     <div class="g-container process">
         <div class="g-left">
         <div class="wraper">
@@ -96,14 +110,14 @@ console.log({dede:field.title2/}+"====");
          <p><span>{dede:field.step7/}</span></p>
           </div>
         </div>
-        <!-- <p class="bigtxt">NURSING</p> -->
+        <p class="bigtxt">NURSING</p>
         <p class="bigtxt"><img src='{dede:global.cfg_imgpath/}/bigtxt_nursing.png'></p>
         </div>
         <div class="g-right">
               <img src="{dede:field.b_flow function='replaceurl(@me)/}" alt="项目配图">
         </div>
     </div>
-  <!-- question and answer -->
+  question and answer
 <div class="g-container question">
     <div class="g-doc">
         <div class="g-left">
@@ -133,8 +147,9 @@ console.log({dede:field.title2/}+"====");
         </div>
     </div>
 </div>
-<!-- footer -->
+footer
     {dede:include filename="footer.htm"/}
 </body>
 
 </html>
+ -->

@@ -8,7 +8,7 @@
     <meta property="article:published_time" content="{dede:field.pubdate function=" MyDate( 'Y-m-d',@me) "/}T{dede:field.pubdate function="MyDate( 'H:i:s',@me) "/}+08:00" />
     <meta name="keywords" content="{dede:field name='keywords'/}" />
     <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
-    <link rel="canonical" href="https://www.hoozonspa.com{dede:field.arcurl/}"> {dede:include filename="_link.htm"/}
+    <!-- <link rel="canonical" href="https://www.hoozonspa.com{dede:field.arcurl/}"> --> {dede:include filename="_link.htm"/}
 </head>
 
 <body>
@@ -29,7 +29,7 @@
                                 <img src="{dede:field.s_pic1 function='replaceurl(@me)/}" alt="环境配图">
                             </div>
                             <div class="front">
-                                <p>{dede:field.address/} 
+                                <p>{dede:field.address/}
                                 </p>
                                 <p>
                                    {dede:field.tel/} </p>
@@ -54,8 +54,8 @@
                     </div>
                 </div>
                 <!-- the way -->
-                {dede:include filename="_theway.htm"/} 
-                {dede:include filename="_sj_copyright.htm"/} 
+                {dede:include filename="_theway.htm"/}
+                {dede:include filename="_sj_copyright.htm"/}
                 {dede:include filename="_footer.htm"/}
     </div>
     {dede:include filename="_script.htm"/}

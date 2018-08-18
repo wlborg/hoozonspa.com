@@ -1,25 +1,8 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>项目页
-    </title>
-    <meta charset="UTF-8">
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-<meta name="renderer" content="webkit"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-<meta name=applicable-device content="pc">
-<meta http-equiv="Cache-Control" content="no-transform"/>
-<meta http-equiv="Cache-Control" content="no-siteapp"/>
-<meta name="baidu-site-verification" content="99J7V1k1Vz" />
-<meta name="google-site-verification" content="Odmo8X4zeUG1WPcCrCAueZz-dyBPFBs4Zqlb9FBT5z4" />
-<meta http-equiv="Access-Control-Allow-Origin" content="*" />
-<script type="text/javascript" src="js/fontreset.js"></script>
-
-<link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/common.css">
-<link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/site.css">
+   {dede:include filename="_link.htm"/}
 </head>
-
 <body>
 <!-- header -->
         {dede:include filename="nav.htm"/}
@@ -33,126 +16,134 @@
                     <div class="wraper">
                         <h2><span class="sr-only"></span></h2>
                         <div class="row">
-                            <div class="item">
+                             <div class="item">
                                 <h3>面部护理</h3>
                                 <div class="row">
                                     <ul class="special">
                                         <li>
                                             <span>敏感</span>
+                                                {dede:arclist typeid='120' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
                                             <div class="block">
                                                 <div class="front">
-                                                    <h4>红妆暖SPA</h4>
-                                                    <p>适合任何人群，特别是亚健康状态者。 现代女性工作、生活压力过大，因此常常 伴随着肩颈僵硬、失眠、多梦、疲劳等、 通过芳香精油和专业手法达到气血通畅、 放松肩颈、改善睡眠，安神养气等功效。
-                                                    </p>
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                    <a class="more" href="article_project.html">查看更多</a>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
                                                 </div>
                                             </div>
+                                            {/dede:arclist}
                                         </li>
                                         <li>
                                             <span>补水</span>
+                                             {dede:arclist typeid='121' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
                                             <div class="block">
                                                 <div class="front">
-                                                    <h4>补水</h4>
-                                                    <p>适合任何人群，特别是亚健康状态者。 现代女性工作、生活压力过大，因此常常 伴随着肩颈僵硬、失眠、多梦、疲劳等、 通过芳香精油和专业手法达到气血通畅、 放松肩颈、改善睡眠，安神养气等功效。
-                                                    </p>
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                    <a class="more" href="article_project.html">查看更多</a>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
                                                 </div>
                                             </div>
+                                            {/dede:arclist}
                                         </li>
                                         <li>
                                             <span>祛黄</span>
+                                              {dede:arclist typeid='122' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
                                             <div class="block">
                                                 <div class="front">
-                                                    <h4>祛黄</h4>
-                                                    <p>适合任何人群，特别是亚健康状态者。 现代女性工作、生活压力过大，因此常常 伴随着肩颈僵硬、失眠、多梦、疲劳等、 通过芳香精油和专业手法达到气血通畅、 放松肩颈、改善睡眠，安神养气等功效。
-                                                    </p>
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                    <a class="more" href="article_project.html">查看更多</a>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
                                                 </div>
                                             </div>
+                                            {/dede:arclist}
                                         </li>
                                         <li><span>美白</span>
+                                              {dede:arclist typeid='123' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
                                             <div class="block">
                                                 <div class="front">
-                                                    <h4>美白</h4>
-                                                    <p>适合任何人群，特别是亚健康状态者。 现代女性工作、生活压力过大，因此常常 伴随着肩颈僵硬、失眠、多梦、疲劳等、 通过芳香精油和专业手法达到气血通畅、 放松肩颈、改善睡眠，安神养气等功效。
-                                                    </p>
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                    <a class="more" href="article_project.html">查看更多</a>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
                                                 </div>
                                             </div>
+                                            {/dede:arclist}
                                         </li>
                                         <li><span>护肤</span>
+                                              {dede:arclist typeid='126' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
                                             <div class="block">
                                                 <div class="front">
-                                                    <h4>护肤</h4>
-                                                    <p>适合任何人群，特别是亚健康状态者。 现代女性工作、生活压力过大，因此常常 伴随着肩颈僵硬、失眠、多梦、疲劳等、 通过芳香精油和专业手法达到气血通畅、 放松肩颈、改善睡眠，安神养气等功效。
-                                                    </p>
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                    <a class="more" href="article_project.html">查看更多</a>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
                                                 </div>
                                             </div>
+                                            {/dede:arclist}
                                         </li>
                                         <li><span>黑眼圈</span>
+                                            {dede:arclist typeid='127' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
                                             <div class="block">
                                                 <div class="front">
-                                                    <h4>黑眼圈</h4>
-                                                    <p>适合任何人群，特别是亚健康状态者。 现代女性工作、生活压力过大，因此常常 伴随着肩颈僵硬、失眠、多梦、疲劳等、 通过芳香精油和专业手法达到气血通畅、 放松肩颈、改善睡眠，安神养气等功效。
-                                                    </p>
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                    <a class="more" href="article_project.html">查看更多</a>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
                                                 </div>
                                             </div>
+                                            {/dede:arclist}
                                         </li>
                                         <li><span>收毛孔</span>
+                                             {dede:arclist typeid='125' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
                                             <div class="block">
                                                 <div class="front">
-                                                    <h4>收毛孔</h4>
-                                                    <p>适合任何人群，特别是亚健康状态者。 现代女性工作、生活压力过大，因此常常 伴随着肩颈僵硬、失眠、多梦、疲劳等、 通过芳香精油和专业手法达到气血通畅、 放松肩颈、改善睡眠，安神养气等功效。
-                                                    </p>
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                    <a class="more" href="article_project.html">查看更多</a>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
                                                 </div>
                                             </div>
+                                            {/dede:arclist}
                                         </li>
                                     </ul>
                                     <ul>
                                         <li><span>祛黑头</span>
+                                             {dede:arclist typeid='182' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
                                             <div class="block">
                                                 <div class="front">
-                                                    <h4>祛黑头</h4>
-                                                    <p>适合任何人群，特别是亚健康状态者。 现代女性工作、生活压力过大，因此常常 伴随着肩颈僵硬、失眠、多梦、疲劳等、 通过芳香精油和专业手法达到气血通畅、 放松肩颈、改善睡眠，安神养气等功效。
-                                                    </p>
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                    <a class="more" href="article_project.html">查看更多</a>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
                                                 </div>
                                             </div>
+                                            {/dede:arclist}
                                         </li>
                                         <li><span>祛痘印</span>
                                             <div class="block">
@@ -164,7 +155,7 @@
                                                     <a class="more" href="article_project.html">查看更多</a>
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
+                                                    <img src="img/bg_spa.jpg">
                                                 </div>
                                             </div>
                                         </li>
@@ -178,23 +169,24 @@
                                                     <a class="more" href="article_project.html">查看更多</a>
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
+                                                    <img src="img/bg_spa.jpg">
                                                 </div>
                                             </div>
                                         </li>
                                         <li><span>小V脸</span>
+                                            {dede:arclist typeid='185' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
                                             <div class="block">
                                                 <div class="front">
-                                                    <h4>小V脸</h4>
-                                                    <p>适合任何人群，特别是亚健康状态者。 现代女性工作、生活压力过大，因此常常 伴随着肩颈僵硬、失眠、多梦、疲劳等、 通过芳香精油和专业手法达到气血通畅、 放松肩颈、改善睡眠，安神养气等功效。
-                                                    </p>
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                    <a class="more" href="article_project.html">查看更多</a>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
                                                 </div>
                                             </div>
+                                            {/dede:arclist}
                                         </li>
                                         <li><span>面部紧致</span>
                                             <div class="block">
@@ -206,7 +198,7 @@
                                                     <a class="more" href="article_project.html">查看更多</a>
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
+                                                    <img src="img/bg_spa.jpg">
                                                 </div>
                                             </div>
                                         </li>
@@ -220,7 +212,7 @@
                                                     <a class="more" href="article_project.html">查看更多</a>
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
+                                                    <img src="img/bg_spa.jpg">
                                                 </div>
                                             </div>
                                         </li>
@@ -234,116 +226,129 @@
                                                     <a class="more" href="article_project.html">查看更多</a>
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
+                                                    <img src="img/bg_spa.jpg">
                                                 </div>
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="item">
+                              <div class="item">
                                 <h3>身体养护</h3>
                                 <div class="row">
                                     <ul>
                                         <li><span>暖SPA</span>
                                             <div class="block">
+ {dede:arclist typeid='128' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
                                                 <div class="front">
-                                                    <h4>暖SPA</h4>
-                                                    <p>适合任何人群，特别是亚健康状态者。 现代女性工作、生活压力过大，因此常常 伴随着肩颈僵硬、失眠、多梦、疲劳等、 通过芳香精油和专业手法达到气血通畅、 放松肩颈、改善睡眠，安神养气等功效。
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]
                                                     </p>
                                                     <div class="line"></div>
-                                                    <a class="more" href="article_project.html">查看更多</a>
+                                                    <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
+                                                  <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
                                                 </div>
+ {/dede:arclist}
                                             </div>
                                         </li>
                                         <li><span>排湿寒</span>
-                                            <div class="block">
+                                             <div class="block">
+ {dede:arclist typeid='129' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
                                                 <div class="front">
-                                                    <h4>排湿寒</h4>
-                                                    <p>适合任何人群，特别是亚健康状态者。 现代女性工作、生活压力过大，因此常常 伴随着肩颈僵硬、失眠、多梦、疲劳等、 通过芳香精油和专业手法达到气血通畅、 放松肩颈、改善睡眠，安神养气等功效。
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]
                                                     </p>
                                                     <div class="line"></div>
-                                                    <a class="more" href="article_project.html">查看更多</a>
+                                                    <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
+                                                  <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
                                                 </div>
+ {/dede:arclist}
                                             </div>
                                         </li>
                                         <li><span>肩颈疏通</span>
-                                            <div class="block">
+                                                                                        <div class="block">
+ {dede:arclist typeid='130' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
                                                 <div class="front">
-                                                    <h4>肩颈疏通</h4>
-                                                    <p>适合任何人群，特别是亚健康状态者。 现代女性工作、生活压力过大，因此常常 伴随着肩颈僵硬、失眠、多梦、疲劳等、 通过芳香精油和专业手法达到气血通畅、 放松肩颈、改善睡眠，安神养气等功效。
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]
                                                     </p>
                                                     <div class="line"></div>
-                                                    <a class="more" href="article_project.html">查看更多</a>
+                                                    <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
+                                                  <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
                                                 </div>
+ {/dede:arclist}
                                             </div>
                                         </li>
                                         <li><span>巨邦美胸</span>
-                                            <div class="block">
+                                                                                       <div class="block">
+ {dede:arclist typeid='131' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
                                                 <div class="front">
-                                                    <h4>巨邦美胸</h4>
-                                                    <p>适合任何人群，特别是亚健康状态者。 现代女性工作、生活压力过大，因此常常 伴随着肩颈僵硬、失眠、多梦、疲劳等、 通过芳香精油和专业手法达到气血通畅、 放松肩颈、改善睡眠，安神养气等功效。
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]
                                                     </p>
                                                     <div class="line"></div>
-                                                    <a class="more" href="article_project.html">查看更多</a>
+                                                    <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
+                                                  <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
                                                 </div>
+ {/dede:arclist}
                                             </div>
                                         </li>
                                         <li><span>十二经络疏通</span>
-                                            <div class="block">
+                                                                                        <div class="block">
+ {dede:arclist typeid='132' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
                                                 <div class="front">
-                                                    <h4>十二经络疏通</h4>
-                                                    <p>适合任何人群，特别是亚健康状态者。 现代女性工作、生活压力过大，因此常常 伴随着肩颈僵硬、失眠、多梦、疲劳等、 通过芳香精油和专业手法达到气血通畅、 放松肩颈、改善睡眠，安神养气等功效。
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]
                                                     </p>
                                                     <div class="line"></div>
-                                                    <a class="more" href="article_project.html">查看更多</a>
+                                                    <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
+                                                  <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
                                                 </div>
+ {/dede:arclist}
                                             </div>
                                         </li>
                                         <li><span>五行温灸能量养生</span>
-                                            <div class="block">
+                                                                                        <div class="block">
+ {dede:arclist typeid='128' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
                                                 <div class="front">
-                                                    <h4>五行温灸能量养生</h4>
-                                                    <p>适合任何人群，特别是亚健康状态者。 现代女性工作、生活压力过大，因此常常 伴随着肩颈僵硬、失眠、多梦、疲劳等、 通过芳香精油和专业手法达到气血通畅、 放松肩颈、改善睡眠，安神养气等功效。
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]
                                                     </p>
                                                     <div class="line"></div>
-                                                    <a class="more" href="article_project.html">查看更多</a>
+                                                    <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
+                                                  <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
                                                 </div>
+ {/dede:arclist}
                                             </div>
                                         </li>
                                     </ul>
                                     <ul>
                                         <li><span>菲洛一叶</span>
+                                              {dede:arclist typeid='187' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
                                             <div class="block">
                                                 <div class="front">
-                                                    <h4>菲洛一叶</h4>
-                                                    <p>适合任何人群，特别是亚健康状态者。 现代女性工作、生活压力过大，因此常常 伴随着肩颈僵硬、失眠、多梦、疲劳等、 通过芳香精油和专业手法达到气血通畅、 放松肩颈、改善睡眠，安神养气等功效。
-                                                    </p>
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                    <a class="more" href="article_project.html">查看更多</a>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
                                                 </div>
                                             </div>
+                                            {/dede:arclist}
                                         </li>
                                     </ul>
                                 </div>
@@ -365,103 +370,96 @@
                             <div class="item">
                                 <h3>激光脱毛</h3>
                                 <ul>
-                                    <li><span>激光脱毛</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>激光脱毛</h4>
-                                                <p>适合男士或者女性唇毛旺盛的人群 红妆脱毛根据“选择性光热效应”原理， 用调节到特定波长的光束穿过表皮， 直接照射毛囊，通过产生的热效应 使毛发脱落。
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
-                                            </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/img14.jpg">
-                                            </div>
-                                        </div>
-                                    </li>
+
                                     <li><span>唇部脱毛</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>唇部脱毛</h4>
-                                                <p>适合男士或者女性唇毛旺盛的人群 红妆脱毛根据“选择性光热效应”原理， 用调节到特定波长的光束穿过表皮， 直接照射毛囊，通过产生的热效应 使毛发脱落。
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                        {dede:arclist typeid='133' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/img14.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>脸部脱毛</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>脸部脱毛</h4>
-                                                <p>适合男士或者女性唇毛旺盛的人群 红妆脱毛根据“选择性光热效应”原理， 用调节到特定波长的光束穿过表皮， 直接照射毛囊，通过产生的热效应 使毛发脱落。
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                        {dede:arclist typeid='134' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/img14.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>腋下脱毛</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>腋下脱毛</h4>
-                                                <p>适合男士或者女性唇毛旺盛的人群 红妆脱毛根据“选择性光热效应”原理， 用调节到特定波长的光束穿过表皮， 直接照射毛囊，通过产生的热效应 使毛发脱落。
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                        {dede:arclist typeid='135' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/img14.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>手臂脱毛</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>手臂脱毛</h4>
-                                                <p>适合男士或者女性唇毛旺盛的人群 红妆脱毛根据“选择性光热效应”原理， 用调节到特定波长的光束穿过表皮， 直接照射毛囊，通过产生的热效应 使毛发脱落。
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                         {dede:arclist typeid='136' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/img14.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>腿部脱毛</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>腿部脱毛</h4>
-                                                <p>适合男士或者女性唇毛旺盛的人群 红妆脱毛根据“选择性光热效应”原理， 用调节到特定波长的光束穿过表皮， 直接照射毛囊，通过产生的热效应 使毛发脱落。
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                        {dede:arclist typeid='137' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/img14.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>比基尼脱毛</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>比基尼脱毛</h4>
-                                                <p>适合男士或者女性唇毛旺盛的人群 红妆脱毛根据“选择性光热效应”原理， 用调节到特定波长的光束穿过表皮， 直接照射毛囊，通过产生的热效应 使毛发脱落。
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                         {dede:arclist typeid='138' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/img14.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                 </ul>
                             </div>
@@ -469,88 +467,94 @@
                                 <h3>激光祛痘</h3>
                                 <ul>
                                     <li><span>痘印</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>痘印</h4>
-                                                <p>适合男士或者女性唇毛旺盛的人群 红妆脱毛根据“选择性光热效应”原理， 用调节到特定波长的光束穿过表皮， 直接照射毛囊，通过产生的热效应 使毛发脱落。
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                         {dede:arclist typeid='139' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/img14.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>痘坑</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>痘坑</h4>
-                                                <p>适合男士或者女性唇毛旺盛的人群 红妆脱毛根据“选择性光热效应”原理， 用调节到特定波长的光束穿过表皮， 直接照射毛囊，通过产生的热效应 使毛发脱落。
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                         {dede:arclist typeid='140' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/img14.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>痘疤</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>痘疤</h4>
-                                                <p>适合男士或者女性唇毛旺盛的人群 红妆脱毛根据“选择性光热效应”原理， 用调节到特定波长的光束穿过表皮， 直接照射毛囊，通过产生的热效应 使毛发脱落。
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                         {dede:arclist typeid='141' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/img14.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>印子</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>印子</h4>
-                                                <p>适合男士或者女性唇毛旺盛的人群 红妆脱毛根据“选择性光热效应”原理， 用调节到特定波长的光束穿过表皮， 直接照射毛囊，通过产生的热效应 使毛发脱落。
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                         {dede:arclist typeid='145' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/img14.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>粉刺</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>粉刺</h4>
-                                                <p>适合男士或者女性唇毛旺盛的人群 红妆脱毛根据“选择性光热效应”原理， 用调节到特定波长的光束穿过表皮， 直接照射毛囊，通过产生的热效应 使毛发脱落。
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                         {dede:arclist typeid='142' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/img14.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>痤疮</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>痤疮</h4>
-                                                <p>适合男士或者女性唇毛旺盛的人群 红妆脱毛根据“选择性光热效应”原理， 用调节到特定波长的光束穿过表皮， 直接照射毛囊，通过产生的热效应 使毛发脱落。
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                         {dede:arclist typeid='144' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/img14.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                 </ul>
                             </div>
@@ -558,74 +562,79 @@
                                 <h3>激光美肤</h3>
                                 <ul>
                                     <li><span>美白嫩肤</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>美白嫩肤</h4>
-                                                <p>适合男士或者女性唇毛旺盛的人群 红妆脱毛根据“选择性光热效应”原理， 用调节到特定波长的光束穿过表皮， 直接照射毛囊，通过产生的热效应 使毛发脱落。
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                         {dede:arclist typeid='148' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/img14.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>水氧嫩肤</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>水氧嫩肤</h4>
-                                                <p>适合男士或者女性唇毛旺盛的人群 红妆脱毛根据“选择性光热效应”原理， 用调节到特定波长的光束穿过表皮， 直接照射毛囊，通过产生的热效应 使毛发脱落。
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                        {dede:arclist typeid='187' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/img14.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>韩国小气泡</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>韩国小气泡</h4>
-                                                <p>适合男士或者女性唇毛旺盛的人群 红妆脱毛根据“选择性光热效应”原理， 用调节到特定波长的光束穿过表皮， 直接照射毛囊，通过产生的热效应 使毛发脱落。
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                         {dede:arclist typeid='150' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/img14.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>毛孔缩小</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>毛孔缩小</h4>
-                                                <p>适合男士或者女性唇毛旺盛的人群 红妆脱毛根据“选择性光热效应”原理， 用调节到特定波长的光束穿过表皮， 直接照射毛囊，通过产生的热效应 使毛发脱落。
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                         {dede:arclist typeid='147' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/img14.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>祛除黑头</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>祛除黑头</h4>
-                                                <p>适合男士或者女性唇毛旺盛的人群 红妆脱毛根据“选择性光热效应”原理， 用调节到特定波长的光束穿过表皮， 直接照射毛囊，通过产生的热效应 使毛发脱落。
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                        {dede:arclist typeid='146' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/img14.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                 </ul>
                             </div>
@@ -633,46 +642,49 @@
                                 <h3>科技瘦身</h3>
                                 <ul>
                                     <li><span>魔力瘦</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>魔力瘦</h4>
-                                                <p>适合男士或者女性唇毛旺盛的人群 红妆脱毛根据“选择性光热效应”原理， 用调节到特定波长的光束穿过表皮， 直接照射毛囊，通过产生的热效应 使毛发脱落。
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                         {dede:arclist typeid='151' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/img14.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>无创溶脂</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>无创溶脂</h4>
-                                                <p>适合男士或者女性唇毛旺盛的人群 红妆脱毛根据“选择性光热效应”原理， 用调节到特定波长的光束穿过表皮， 直接照射毛囊，通过产生的热效应 使毛发脱落。
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                        {dede:arclist typeid='152' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/img14.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>林蛙轻体瘦身</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>林蛙轻体瘦身</h4>
-                                                <p>适合男士或者女性唇毛旺盛的人群 红妆脱毛根据“选择性光热效应”原理， 用调节到特定波长的光束穿过表皮， 直接照射毛囊，通过产生的热效应 使毛发脱落。
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                        {dede:arclist typeid='153' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/img14.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                 </ul>
                             </div>
@@ -692,88 +704,94 @@
                                 <h3>纹绣（眉）</h3>
                                 <ul>
                                     <li><span>雾眉</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>雾眉</h4>
-                                                <p>适合眉毛稀疏、散乱、眉形不佳的人群 由纹绣师通过个性化设计，独特的纹绣手法， 自然地色泽，在严格的卫生环境下操作， 不留任何痕迹达到美化眉毛的效果
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                        {dede:arclist typeid='154' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>粉眉</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>粉眉</h4>
-                                                <p>适合眉毛稀疏、散乱、眉形不佳的人群 由纹绣师通过个性化设计，独特的纹绣手法， 自然地色泽，在严格的卫生环境下操作， 不留任何痕迹达到美化眉毛的效果
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                        {dede:arclist typeid='155' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>水墨雾眉</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>水墨雾眉</h4>
-                                                <p>适合眉毛稀疏、散乱、眉形不佳的人群 由纹绣师通过个性化设计，独特的纹绣手法， 自然地色泽，在严格的卫生环境下操作， 不留任何痕迹达到美化眉毛的效果
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                         {dede:arclist typeid='158' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>粉雾眉</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>粉雾眉</h4>
-                                                <p>适合眉毛稀疏、散乱、眉形不佳的人群 由纹绣师通过个性化设计，独特的纹绣手法， 自然地色泽，在严格的卫生环境下操作， 不留任何痕迹达到美化眉毛的效果
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                        {dede:arclist typeid='156' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>丝雾眉</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>丝雾眉</h4>
-                                                <p>适合眉毛稀疏、散乱、眉形不佳的人群 由纹绣师通过个性化设计，独特的纹绣手法， 自然地色泽，在严格的卫生环境下操作， 不留任何痕迹达到美化眉毛的效果
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                         {dede:arclist typeid='159' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>一字眉</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>一字眉</h4>
-                                                <p>适合眉毛稀疏、散乱、眉形不佳的人群 由纹绣师通过个性化设计，独特的纹绣手法， 自然地色泽，在严格的卫生环境下操作， 不留任何痕迹达到美化眉毛的效果
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                        {dede:arclist typeid='157' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>五度空间仿真眉</span></li>
                                 </ul>
@@ -782,74 +800,79 @@
                                 <h3>纹绣（眼）</h3>
                                 <ul>
                                     <li><span>纤细上眼线</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>纤细上眼线</h4>
-                                                <p>适合眉毛稀疏、散乱、眉形不佳的人群 由纹绣师通过个性化设计，独特的纹绣手法， 自然地色泽，在严格的卫生环境下操作， 不留任何痕迹达到美化眉毛的效果
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                       {dede:arclist typeid='161' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>半永久美瞳线</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>半永久美瞳线</h4>
-                                                <p>适合眉毛稀疏、散乱、眉形不佳的人群 由纹绣师通过个性化设计，独特的纹绣手法， 自然地色泽，在严格的卫生环境下操作， 不留任何痕迹达到美化眉毛的效果
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                        {dede:arclist typeid='163' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>秋水美瞳线</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>秋水美瞳线</h4>
-                                                <p>适合眉毛稀疏、散乱、眉形不佳的人群 由纹绣师通过个性化设计，独特的纹绣手法， 自然地色泽，在严格的卫生环境下操作， 不留任何痕迹达到美化眉毛的效果
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                        {dede:arclist typeid='164' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>持久美瞳线</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>持久美瞳线</h4>
-                                                <p>适合眉毛稀疏、散乱、眉形不佳的人群 由纹绣师通过个性化设计，独特的纹绣手法， 自然地色泽，在严格的卫生环境下操作， 不留任何痕迹达到美化眉毛的效果
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                         {dede:arclist typeid='162' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>立体定妆美瞳线</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>立体定妆美瞳线</h4>
-                                                <p>适合眉毛稀疏、散乱、眉形不佳的人群 由纹绣师通过个性化设计，独特的纹绣手法， 自然地色泽，在严格的卫生环境下操作， 不留任何痕迹达到美化眉毛的效果
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                        {dede:arclist typeid='165' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>一字眉</span>
                                         <div class="block">
@@ -866,18 +889,19 @@
                                         </div>
                                     </li>
                                     <li><span>无创孕睫术</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>无创孕睫术</h4>
-                                                <p>适合眉毛稀疏、散乱、眉形不佳的人群 由纹绣师通过个性化设计，独特的纹绣手法， 自然地色泽，在严格的卫生环境下操作， 不留任何痕迹达到美化眉毛的效果
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                        {dede:arclist typeid='166' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                 </ul>
                             </div>
@@ -885,102 +909,110 @@
                                 <h3>纹绣（唇）</h3>
                                 <ul>
                                     <li><span>水晶唇</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>水晶唇</h4>
-                                                <p>适合眉毛稀疏、散乱、眉形不佳的人群 由纹绣师通过个性化设计，独特的纹绣手法， 自然地色泽，在严格的卫生环境下操作， 不留任何痕迹达到美化眉毛的效果
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                        {dede:arclist typeid='167' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>咬妆唇</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>咬妆唇</h4>
-                                                <p>适合眉毛稀疏、散乱、眉形不佳的人群 由纹绣师通过个性化设计，独特的纹绣手法， 自然地色泽，在严格的卫生环境下操作， 不留任何痕迹达到美化眉毛的效果
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                        {dede:arclist typeid='173' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>樱花唇</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>樱花唇</h4>
-                                                <p>适合眉毛稀疏、散乱、眉形不佳的人群 由纹绣师通过个性化设计，独特的纹绣手法， 自然地色泽，在严格的卫生环境下操作， 不留任何痕迹达到美化眉毛的效果
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                                                                   <div class="block">
+ {dede:arclist typeid='188' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]
+                                                    </p>
+                                                    <div class="line"></div>
+                                                    <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                  <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
+ {/dede:arclist}
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
-                                            </div>
-                                        </div>
                                     </li>
                                     <li><span>果冻唇</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>果冻唇</h4>
-                                                <p>适合眉毛稀疏、散乱、眉形不佳的人群 由纹绣师通过个性化设计，独特的纹绣手法， 自然地色泽，在严格的卫生环境下操作， 不留任何痕迹达到美化眉毛的效果
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                       {dede:arclist typeid='170' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>手工baby唇</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>手工baby唇</h4>
-                                                <p>适合眉毛稀疏、散乱、眉形不佳的人群 由纹绣师通过个性化设计，独特的纹绣手法， 自然地色泽，在严格的卫生环境下操作， 不留任何痕迹达到美化眉毛的效果
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                        {dede:arclist typeid='171' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>工笔水晶唇</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>工笔水晶唇</h4>
-                                                <p>适合眉毛稀疏、散乱、眉形不佳的人群 由纹绣师通过个性化设计，独特的纹绣手法， 自然地色泽，在严格的卫生环境下操作， 不留任何痕迹达到美化眉毛的效果
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                        {dede:arclist typeid='169' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>立体定妆唇</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>立体定妆唇</h4>
-                                                <p>适合眉毛稀疏、散乱、眉形不佳的人群 由纹绣师通过个性化设计，独特的纹绣手法， 自然地色泽，在严格的卫生环境下操作， 不留任何痕迹达到美化眉毛的效果
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                       {dede:arclist typeid='168' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                 </ul>
                             </div>
@@ -988,46 +1020,49 @@
                                 <h3>纹绣（洗）</h3>
                                 <ul>
                                     <li><span>激光洗眉</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>激光洗眉</h4>
-                                                <p>适合眉毛稀疏、散乱、眉形不佳的人群 由纹绣师通过个性化设计，独特的纹绣手法， 自然地色泽，在严格的卫生环境下操作， 不留任何痕迹达到美化眉毛的效果
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                          {dede:arclist typeid='174' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>激光洗唇线</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>激光洗唇线</h4>
-                                                <p>适合眉毛稀疏、散乱、眉形不佳的人群 由纹绣师通过个性化设计，独特的纹绣手法， 自然地色泽，在严格的卫生环境下操作， 不留任何痕迹达到美化眉毛的效果
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                          {dede:arclist typeid='175' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>激光洗黑唇</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>激光洗黑唇</h4>
-                                                <p>适合眉毛稀疏、散乱、眉形不佳的人群 由纹绣师通过个性化设计，独特的纹绣手法， 自然地色泽，在严格的卫生环境下操作， 不留任何痕迹达到美化眉毛的效果
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                         {dede:arclist typeid='176' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                 </ul>
                             </div>

@@ -1,5 +1,25 @@
 
       $(function(){
+      // 项目轮播图需要
+       var content=['纹眉、眼、唇','光电美肤','美容SPA','科技瘦身','美妆护肤'];
+       var swiperMy = new Swiper('.swiper-container_pro', {
+             slidesPerView: 3,
+             slidesPerColumn: 2,
+             slidesPerGroup : 3,
+             spaceBetween:0,
+             autoplay:2500,
+             pagination: {
+              el: '.project-pagination',
+              clickable: true,
+              renderBullet: function (index, className) {
+               return '<li class="'+className+'">'+ content[index] + '</li>';
+            }
+            },
+             navigation: {
+             nextEl: '.next',
+             prevEl: '.prev',
+        },
+         });
         //案例显示 24条数据
        var swiperMy = new Swiper('.swiper-containerMy', {
            slidesPerView: 3,
@@ -86,7 +106,7 @@
             $(this).find(".front").fadeOut();
         });
         // 首页案例部分点击
-        $('.swiper-wrapper .swiper-slide').click(function() {
+        $('.cases-container .swiper-wrapper .swiper-slide').click(function() {
             // 案例轮播停止
             autoStop(swiperMy);
             var index_Sw = parseInt($(this).index());

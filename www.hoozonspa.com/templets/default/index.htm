@@ -43,12 +43,7 @@
     <div class="g-left">
     <div class="wraper">
         <h2><span class="sr-only">热门项目</span></h2>
-        <ul>
-            <li class="active"><span>纹眉、眼、唇</span></li>
-            <li><span>光电美肤</span></li>
-            <li><span>美容SPA</span></li>
-            <li><span>科技瘦身</span></li>
-            <li><span>美妆护肤</span></li>
+        <ul class="project-pagination">
         </ul>
         <div class="line"></div>
         <a href="/project?beautyspa" class="more">查看更多</a>
@@ -57,218 +52,78 @@
 
     </div>
     </div>
-    <div class="g-right">
+    <div class="g-right ">
         <div class='project-block'>
-            <div class="slider-wraper">
-                <ul class="slider-container">
-                    <li class="slider-item">
-                        <div class="row">
+            <div class="swiper-container swiper-container_pro">
+                <div class="swiper-wrapper">
+                     {dede:arclist typeid='32' row='6' flag='c' orderby='id' orderway='desc' infolen='30' addfields='title2' channelid='21'}
+                    <div class="swiper-slide slider-item">
+                          <a href="[field:arcurl/]">
                             <div class="item">
                                 <div class="front">
-                                    <p>Embroidery</p>
-                                    <h3>红妆纹绣</h3>
+                                    <p>[field:title2/]</p>
+                                    <h3>[field:title/]</h3>
                                     <div class="line"></div>
                                 </div>
                                 <div class="back">
-                                    <img src="//pc.hoozonspa.com/static/img/img1.jpg">
+                                     <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
                                 </div>
                             </div>
+                          </a>
+                     </div>
+                    {/dede:arclist}
+                     {dede:arclist typeid='27' row='6' flag='c' orderby='id' orderway='desc' infolen='30' addfields='title2' channelid='21'}
+                    <div class="swiper-slide slider-item">
+                         <a href="[field:arcurl/]">
                             <div class="item">
                                 <div class="front">
-                                    <p>Embroidery</p>
-                                    <h3>红妆纹绣</h3>
+                                    <p>[field:title2/]</p>
+                                    <h3>[field:title/]</h3>
                                     <div class="line"></div>
                                 </div>
                                 <div class="back">
-                                    <img src="//pc.hoozonspa.com/static/img/img2.jpg">
+                                    <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
                                 </div>
                             </div>
+                         </a>
+                     </div>
+                    {/dede:arclist}
+                      {dede:arclist typeid='16' row='6' flag='c' orderby='id' orderway='desc' infolen='30' addfields='title2' channelid='21'}
+                   <div class="swiper-slide slider-item">
+                    <a href="[field:arcurl/]">
                             <div class="item">
                                 <div class="front">
-                                    <p>Embroidery</p>
-                                    <h3>红妆纹绣</h3>
+                                    <p>[field:title2/]</p>
+                                    <h3>[field:title/]</h3>
                                     <div class="line"></div>
                                 </div>
                                 <div class="back">
-                                    <img src="//pc.hoozonspa.com/static/img/img3.jpg">
+                                    <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
+                    </a>
+                    </div>
+                    {/dede:arclist}
+                     {dede:arclist typeid='25' row='6' flag='c' orderby='id' orderway='desc' infolen='30' addfields='title2' channelid='21'}
+                   <div class="swiper-slide slider-item">
+                     <a href="[field:arcurl/]">
                             <div class="item">
                                 <div class="front">
-                                    <p>Embroidery</p>
-                                    <h3>红妆纹绣</h3>
+                                    <p>[field:title2/]</p>
+                                    <h3>[field:title/]</h3>
                                     <div class="line"></div>
                                 </div>
                                 <div class="back">
-                                    <img src="//pc.hoozonspa.com/static/img/img4.jpg">
+                                    <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="front">
-                                    <p>Embroidery</p>
-                                    <h3>红妆纹绣</h3>
-                                    <div class="line"></div>
-                                </div>
-                                <div class="back">
-                                    <img src="//pc.hoozonspa.com/static/img/img5.jpg">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="front">
-                                    <p>Embroidery</p>
-                                    <h3>红妆纹绣</h3>
-                                    <div class="line"></div>
-                                </div>
-                                <div class="back">
-                                    <img src="//pc.hoozonspa.com/static/img/img6.jpg">
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                     <li class="slider-item">
-                        <div class="row">
-                            <div class="item">
-                                <div class="front">
-                                    <p>Embroidery</p>
-                                    <h3>红妆纹绣</h3>
-                                    <div class="line"></div>
-                                </div>
-                                <div class="back">
-                                    <img src="//pc.hoozonspa.com/static/img/img1.jpg">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="front">
-                                    <p>Embroidery</p>
-                                    <h3>红妆纹绣</h3>
-                                    <div class="line"></div>
-                                </div>
-                                <div class="back">
-                                    <img src="//pc.hoozonspa.com/static/img/img2.jpg">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="front">
-                                    <p>Embroidery</p>
-                                    <h3>红妆纹绣</h3>
-                                    <div class="line"></div>
-                                </div>
-                                <div class="back">
-                                    <img src="//pc.hoozonspa.com/static/img/img3.jpg">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="item">
-                                <div class="front">
-                                    <p>Embroidery</p>
-                                    <h3>红妆纹绣</h3>
-                                    <div class="line"></div>
-                                </div>
-                                <div class="back">
-                                    <img src="//pc.hoozonspa.com/static/img/img4.jpg">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="front">
-                                    <p>Embroidery</p>
-                                    <h3>红妆纹绣</h3>
-                                    <div class="line"></div>
-                                </div>
-                                <div class="back">
-                                    <img src="//pc.hoozonspa.com/static/img/img5.jpg">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="front">
-                                    <p>Embroidery</p>
-                                    <h3>红妆纹绣</h3>
-                                    <div class="line"></div>
-                                </div>
-                                <div class="back">
-                                    <img src="//pc.hoozonspa.com/static/img/img6.jpg">
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+                    </a>
+                    </div>
+                    {/dede:arclist}
+                </div>
+                </div>
             </div>
-            <a href="javascript:void(0);" class="btn prev"></a>
-            <a href="javascript:void(0);" class="btn next"></a>
-        </div>
-         <div class='project-block'>
-            <div class="slider-wraper">
-                <ul class="slider-container">
-                    <li class="slider-item">
-                        <div class="row">
-                            <div class="item">
-                                <div class="front">
-                                    <p>Embroidery</p>
-                                    <h3>红妆纹绣</h3>
-                                    <div class="line"></div>
-                                </div>
-                                <div class="back">
-                                    <img src="//pc.hoozonspa.com/static/img/img31.jpg">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="front">
-                                    <p>Embroidery</p>
-                                    <h3>红妆纹绣</h3>
-                                    <div class="line"></div>
-                                </div>
-                                <div class="back">
-                                    <img src="//pc.hoozonspa.com/static/img/img32.jpg">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="front">
-                                    <p>Embroidery</p>
-                                    <h3>红妆纹绣</h3>
-                                    <div class="line"></div>
-                                </div>
-                                <div class="back">
-                                    <img src="//pc.hoozonspa.com/static/img/img31.jpg">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="item">
-                                <div class="front">
-                                    <p>Embroidery</p>
-                                    <h3>红妆纹绣</h3>
-                                    <div class="line"></div>
-                                </div>
-                                <div class="back">
-                                    <img src="//pc.hoozonspa.com/static/img/img31.jpg">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="front">
-                                    <p>Embroidery</p>
-                                    <h3>红妆纹绣</h3>
-                                    <div class="line"></div>
-                                </div>
-                                <div class="back">
-                                    <img src="//pc.hoozonspa.com/static/img/img32.jpg">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="front">
-                                    <p>Embroidery</p>
-                                    <h3>红妆纹绣</h3>
-                                    <div class="line"></div>
-                                </div>
-                                <div class="back">
-                                    <img src="//pc.hoozonspa.com/static/img/img31.jpg">
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+             <!-- <div class="swiper-pagination project-pagination"></div> -->
             <a href="javascript:void(0);" class="btn prev"></a>
             <a href="javascript:void(0);" class="btn next"></a>
         </div>
@@ -516,6 +371,7 @@
     </div>
     <div class="g-right">
    {dede:arclist typeid='7' row='3' flag='c' orderby='id' orderway='desc' infolen='30' addfields='des,pic1' channelid='19'}
+<a href="[field:arcurl /]" title="[field:title/]">
         <div class="item">
             <div class="front">
                 <h3>[field:title/]</h3>
@@ -527,6 +383,7 @@
                  <img src="[field:pic1 function='replaceurl(@me)/]" alt="[field:title/]">
             </div>
         </div>
+ </a>
  {/dede:arclist}
     </div>
 </div>

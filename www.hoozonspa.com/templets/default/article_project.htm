@@ -139,8 +139,7 @@
             </div>
         </div>
     </div>
-    <!-- footer -->
-        {dede:include filename="footer.htm"/}
+        <!-- {dede:include filename="footer.htm"/} -->
     </body>
 
     </html>
@@ -148,7 +147,8 @@
 <script type="text/javascript" src="{dede:global.cfg_jspath/}/jquery-2.1.4.min.js"></script>
 <script>
     $(function(){
-            $("body").append({dede:include filename="footer.htm"/});
+            $("body").load("footer.htm");
+            // $("body").append({dede:include filename=footer.htm/});
     })
 </script>
 </body>

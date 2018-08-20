@@ -388,3 +388,6 @@
     position: relative;
     z-index: 100;
 }
+.projectdes .g-left p {
+    width: 18em;
+}

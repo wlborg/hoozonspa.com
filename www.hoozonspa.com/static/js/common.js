@@ -564,7 +564,8 @@ function nav(){
 // 处理流程内容为空,移除对应流程
 function setpNull(obj){
  var len=$(obj).length;
-     for(var i=0;i<len;i++){
+  if(len>4){
+    for(var i=0;i<len;i++){
         var liOb=$(obj).eq(i);
         var pVal=liOb.find("p").text();
         if(pVal==""){
@@ -572,6 +573,7 @@ function setpNull(obj){
               $(obj).eq(liIndex).remove();
         }
     }
+  }
 }
 $(function() {
     topbanner();

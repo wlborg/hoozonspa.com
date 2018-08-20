@@ -571,13 +571,18 @@ function setpNull(obj){
         if(pVal==""){
               var liIndex=liOb.index();
               $(obj).eq(liIndex).remove();
+              setp4(obj,4);
         }
     }
- }else if(len<=4){
-    $(obj).css("display","block");
-    $(obj).eq(1).css("float","inherit");
-    $(".process .g-left .step ul").css("width","100%")
  }
+ function setp4(obj,num){
+     var len=$(obj).length;
+     if(len<=num){
+        $(obj).css("display","block");
+        $(obj).eq(1).css("float","inherit");
+        $(".process .g-left .step ul").css("width","100%");
+    }
+}
 }
 $(function() {
     topbanner();

@@ -4543,3 +4543,15 @@ body {
 .fullscreen .swiper-pagination-bullet-active {
     background: #4e1f66!important;
 }
+.projectdes .g-left p {
+    width: 18em;
+}
+.process .g-left .step ul {
+    margin-right: 9%;
+}
+.process .g-left .step li {
+    display: inline-block;
+}
+.process .g-left .step li:nth-child(2n) {
+    float: right;
+}

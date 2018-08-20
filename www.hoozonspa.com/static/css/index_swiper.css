@@ -381,3 +381,10 @@
     height: 1.12em;
     margin: auto;
 }
+.adapt .g-left p {
+    width: 26em;
+}
+.effect .g-left .more {
+    position: relative;
+    z-index: 100;
+}

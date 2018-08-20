@@ -152,6 +152,10 @@
 </div>
 <!-- footer -->
     {dede:include filename="footer.htm"/}
+{dede:global name='type' runphp='yes'}
+if(@me=='1'){
+   me=getFileContent("test1.htm");
+}
+{/dede:global name='type'/}
 </body>
-
 </html>

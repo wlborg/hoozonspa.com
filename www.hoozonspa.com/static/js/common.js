@@ -561,10 +561,29 @@ function nav(){
     }
     obj.parentNode.className = 'active';
 }
+// 处理流程内容为空,移除对应流程
+function setpNull(obj){
+ var len=$(obj).length;
+ if(len>4){
+  for(var i=0;i<len;i++){
+        var liOb=$(obj).eq(i);
+        var pVal=liOb.find("p").text();
+        if(pVal==""){
+              var liIndex=liOb.index();
+              $(obj).eq(liIndex).remove();
+        }
+    }
+ }else if(len<=4){
+    $(obj).css("display","block");
+    $(obj).eq(1).css("float","inherit");
+    $(".process .g-left .step ul").css("width","100%")
+ }
+}
 $(function() {
     topbanner();
     lightNav();
     fixnav();
     setTimeout(initSlider, 2000);
     nav();
+    setpNull(".process ul li");
 });

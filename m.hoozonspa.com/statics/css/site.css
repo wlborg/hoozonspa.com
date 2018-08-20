@@ -2471,9 +2471,9 @@ background: #c1aaa4;
   text-align: justify;
 }
 .process {
-  height: 16.55290102rem;
-  background: url('../images/bg_process.jpg') center center no-repeat;
-  background-size: cover;
+  min-height: 16.55290102rem;
+  background: url('../images/bg_process.jpg') center bottom no-repeat #8d635d;
+  background-size: 16rem;
 }
 .process .title {
   padding-top: 1.0665529rem;
@@ -2489,6 +2489,10 @@ background: #c1aaa4;
 .process .content {
   width: 6.39931741rem;
   text-align: right;
+}
+.process .content .step{
+  padding-left:1rem;
+  padding-bottom:1.5rem;
 }
 .process .content .step h3 {
   margin-top: 0.51194539rem;

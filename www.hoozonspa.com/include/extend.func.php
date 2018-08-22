@@ -30,12 +30,12 @@ return $newurl;
 *  获取纹眉、眼、唇最新6条
 *
 */
-function getLinetHeBrows4()
+function getLinetHeBrows4($typeid)
 {
 global $dsql,$title2;
 $relateproject="";
 $relatetypeid = 0;
-$dsql->SetQuery( "SELECT  * FROM #@__archives AS a where a.typeid in(154,155,156,157,158,159,160,161,162,163,164,165,166,264,172,173,167,168,170,171,188,240,241,242,243,244,245,246,234,235,236,237,238,239,227,228,229,230,231,232,233) and a.arcrank=0 order by id desc limit 6");
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a,#@__addonproject AS b,#@__addonztproject AS  c where a.typeid=b.typeid or a.typeid=c.typeid in(154,155,156,157,158,159,160,161,162,163,164,165,166,264,172,173,167,168,170,171,188,240,241,242,243,244,245,246,234,235,236,237,238,239,227,228,229,230,231,232,233) and a.arcrank=0 order by id desc limit 6");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())

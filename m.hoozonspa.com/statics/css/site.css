@@ -2479,6 +2479,7 @@ background: #c1aaa4;
 .process .bgimg{
   display: block;
   width:100%;
+  height: 13.23rem;
   position:absolute;
   left: 0;
   bottom: 0;
@@ -2488,6 +2489,8 @@ background: #c1aaa4;
   padding-top: 1.0665529rem;
   margin-bottom: 0.63993174rem;
   margin-left: 0.63993174rem;
+    position: relative;
+  z-index: 1;
 }
 .process .title h2 {
   width: 6.48464164rem;

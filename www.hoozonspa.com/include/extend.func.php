@@ -26,7 +26,7 @@ $newurl='//pc.hoozonspa.com'.$newurl;
 return $newurl;
 }
 /**
-*  首页项目模块
+*  首页热门项目模块
 *  获取纹眉、眼、唇最新6条
 *
 */
@@ -35,7 +35,7 @@ function getLinetHeBrows4()
 global $dsql;
 $relateproject="";
 $relatetypeid = 0;
-$dsql->SetQuery( "SELECT  * FROM #@__archives AS a where a.typeid in(154,155,156,157,158,159,160,161,162,163,164,165,166,264) and a.arcrank=0 order by id desc limit 4");
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a where a.typeid in(154,155,156,157,158,159,160,161,162,163,164,165,166,264,172,173,167,168,170,171,188,240,241,242,243,244,245,246,234,235,236,237,238,239,227,228,229,230,231,232,233) and a.arcrank=0 order by id desc limit 6");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -44,9 +44,11 @@ $id = $row["id"];
 $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
-
+$title2 = replaceurl($row["title2"]);
+$title = replaceurl($row["title"]);
 $litpic =$row["litpic"];
-$relateproject.='<li class="expert"><a href="'.$url.'" target="_blank" rel="nofollow"><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$title.'</span></a></li>';
+ $relateproject.='<div class="swiper-slide slider-item"><a href="'.$url.'"><div class="item"><div class="front"><p>'.$title2.'</p><h3>'.$title2.'</h3><div class="line"></div></div><div class="back"><img src="'.$litpic.'" alt="'.$title.'"></div></div></a></div>';
+
 }
 if($ns>0){
 $relateproject=$relateproject;

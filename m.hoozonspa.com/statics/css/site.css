@@ -2473,7 +2473,16 @@ background: #c1aaa4;
 .process {
   min-height: 16.55290102rem;
   background: url('../images/bg_process.jpg') center bottom no-repeat #8d635d;
-  background-size: 16rem;
+  background-size: cover;
+  position: relative;
+}
+.process .bgimg{
+  display: block;
+  width:100%;
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
 }
 .process .title {
   padding-top: 1.0665529rem;
@@ -2489,6 +2498,8 @@ background: #c1aaa4;
 .process .content {
   width: 6.39931741rem;
   text-align: right;
+  position: relative;
+  z-index: 1;
 }
 .process .content .step{
   padding-left:1rem;

@@ -1,5 +1,5 @@
 
-?php
+<?php
 /**
  * @version        $Id: common.inc.php 3 17:44 2010-11-23 tianya $
  * @package        DedeCMS.Libraries

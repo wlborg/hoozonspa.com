@@ -1,4 +1,5 @@
-<?php
+
+?php
 /**
  * @version        $Id: common.inc.php 3 17:44 2010-11-23 tianya $
  * @package        DedeCMS.Libraries
@@ -201,7 +202,7 @@ $cfg_templets_skin = empty($cfg_df_style)? $cfg_mainsite.$cfg_templets_dir."/def
 $cfg_cmsurl = $cfg_mainsite.$cfg_cmspath;
 
 //插件目录，这个目录是用于存放计数器、投票、评论等程序的必要动态程序
-$cfg_plus_dir = $cfg_cmspath.'/plus';
+$cfg_plus_dir = $cfg_cmspath.'/plugin';
 $cfg_phpurl = $cfg_mainsite.$cfg_plus_dir;
 
 $cfg_mobile_dir = $cfg_cmspath.'/m';

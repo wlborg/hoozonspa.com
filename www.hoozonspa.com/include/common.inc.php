@@ -1,4 +1,3 @@
-
 <?php
 /**
  * @version        $Id: common.inc.php 3 17:44 2010-11-23 tianya $
@@ -105,15 +104,15 @@ if (!defined('DEDEREQUEST'))
 
     //var_dump($_REQUEST);exit;
     CheckRequest($_REQUEST);
-	CheckRequest($_COOKIE);
+    CheckRequest($_COOKIE);
 
     foreach(Array('_GET','_POST','_COOKIE') as $_request)
     {
         foreach($$_request as $_k => $_v)
-		{
-			if($_k == 'nvarname') ${$_k} = $_v;
-			else ${$_k} = _RunMagicQuotes($_v);
-		}
+        {
+            if($_k == 'nvarname') ${$_k} = $_v;
+            else ${$_k} = _RunMagicQuotes($_v);
+        }
     }
 }
 

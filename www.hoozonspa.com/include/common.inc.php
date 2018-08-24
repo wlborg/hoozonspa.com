@@ -104,15 +104,15 @@ if (!defined('DEDEREQUEST'))
 
     //var_dump($_REQUEST);exit;
     CheckRequest($_REQUEST);
-	CheckRequest($_COOKIE);
+    CheckRequest($_COOKIE);
 
     foreach(Array('_GET','_POST','_COOKIE') as $_request)
     {
         foreach($$_request as $_k => $_v)
-		{
-			if($_k == 'nvarname') ${$_k} = $_v;
-			else ${$_k} = _RunMagicQuotes($_v);
-		}
+        {
+            if($_k == 'nvarname') ${$_k} = $_v;
+            else ${$_k} = _RunMagicQuotes($_v);
+        }
     }
 }
 
@@ -201,7 +201,7 @@ $cfg_templets_skin = empty($cfg_df_style)? $cfg_mainsite.$cfg_templets_dir."/def
 $cfg_cmsurl = $cfg_mainsite.$cfg_cmspath;
 
 //插件目录，这个目录是用于存放计数器、投票、评论等程序的必要动态程序
-$cfg_plus_dir = $cfg_cmspath.'/plus';
+$cfg_plus_dir = $cfg_cmspath.'/plugin';
 $cfg_phpurl = $cfg_mainsite.$cfg_plus_dir;
 
 $cfg_mobile_dir = $cfg_cmspath.'/m';

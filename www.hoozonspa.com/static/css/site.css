@@ -4556,3 +4556,6 @@ body {
 .process .g-left .step li:nth-child(2n) {
     float: right;
 }
+.beautyspa .g-left .block .front a:hover {
+    color: #885e5a;
+}

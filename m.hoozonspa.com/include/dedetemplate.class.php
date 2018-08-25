@@ -1517,7 +1517,7 @@ function private_rt($str)
     } else {
         $arr = explode('.', $str);
     }
-    
+
     $rs = '$GLOBALS[\'';
     if($arr[0] == 'cfg')
     {

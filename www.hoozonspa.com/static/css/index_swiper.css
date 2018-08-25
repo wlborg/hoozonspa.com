@@ -388,3 +388,10 @@
     position: relative;
     z-index: 100;
 }
+.environmentdisplay .g-right .prev,
+.environmentdisplay .g-right .next {
+    outline: medium;
+}
+.environmentdisplay {
+    background-size: unset!important;
+}

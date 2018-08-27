@@ -396,8 +396,8 @@
     background-size: unset!important;
 }
 .fullscreen {
-    left: 50%!important;
+    left: 50%;
 
-    width: 3em!important;
-    margin-left: -1.5em!important;
+    width: 3em;
+    margin-left: -1.5em;
 }

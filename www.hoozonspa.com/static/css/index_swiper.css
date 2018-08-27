@@ -395,12 +395,12 @@
 .environmentdisplay {
     background-size: unset!important;
 }
-.fullscreen {
+/* .fullscreen {
     left: 50%;
 
     width: 3em;
     margin-left: -1.5em;
-}
+} */
 .hotproject .g-right .project-block .swiper-slide a {
     height: 100%;
 }

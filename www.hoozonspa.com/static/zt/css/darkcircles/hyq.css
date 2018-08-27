@@ -106,40 +106,40 @@ img {
 
     color: #f9e7d3;
 }
-.header .title-top {
+.tit_header .title-top {
     font-size: 44px;
 }
 
-.header .title-top span i {
+.tit_header .title-top span i {
     position: relative;
 
     display: inline-block;
     width: 17px;
     height: 16px;
 }
-.header .title-top span i.icon-left {
+.tit_header .title-top span i.icon-left {
     top: -27px;
     left: 9px;
 
     background: url("//pc.hoozonspa.com/static/zt/img/darkcircles/part1-icon-1.png") no-repeat;
 }
-.header .title-top span i.icon-right {
+.tit_header .title-top span i.icon-right {
     top: 14px;
     left: -6px;
 
     background: url("//pc.hoozonspa.com/static/zt/img/darkcircles/part1-icon-2.png") no-repeat;
 }
-.header .title-mid {
+.tit_header .title-mid {
     font-size: 51px;
 }
-.header .title-bot {
+.tit_header .title-bot {
     margin-top: 23px;
 
     font-size: 12px;
 
     color: #b6887b;
 }
-.header .line {
+.tit_header .line {
     position: relative;
     left: 510px;
 
@@ -150,7 +150,7 @@ img {
     border-bottom: 2px solid rgba(228, 171, 154, .3);
     /*padding-bottom: 30px;*/
 }
-.header .line-chl {
+.tit_header .line-chl {
     /*border-bottom: 4px solid #fff;*/
     position: absolute;
     top: 19px;

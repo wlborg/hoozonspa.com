@@ -1,5 +1,5 @@
-/** 
-* demo V1.0.0 
+/**
+* demo V1.0.0
 * By 小珍
 * http://www.baidu.com/
  */
@@ -7,7 +7,7 @@
 /* ***reset*** */
 a,
 body {
-  color: #000;
+    color: #000;
 }
 body,
 dd,
@@ -27,68 +27,72 @@ li,
 p,
 textarea,
 ul {
-  margin: 0;
-  padding: 0;
+    padding: 0;
+    margin: 0;
 }
 form {
-  display: inline;
+    display: inline;
 }
 img {
-  border: 0;
+    border: 0;
 }
 td {
-  word-break: break-all;
+    word-break: break-all;
 }
 dd,
 dl,
 dt,
 li,
 ul {
-  list-style: none;
+    list-style: none;
 }
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 /* a:hover {
     color:black;
 } */
 body {
-  background: #fff;
-  font-family: "微软雅黑", sans-serif, Verdana, Arial;
+    font-family: "微软雅黑", sans-serif, Verdana, Arial;
+
+    background: #fff;
 }
 .f-fr {
-  float: right;
+    float: right;
 }
 .f-fl {
-  float: left;
+    float: left;
 }
 .f-cb:after {
-  display: block;
-  visibility: hidden;
-  height: 0;
-  overflow: hidden;
-  clear: both;
-  content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+
+    content: ".";
 }
 .f-cb {
-  zoom: 1;
+    zoom: 1;
 }
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+
+    border: 0;
 }
 /* 各属性的混入 */
 /* 动画帧的usage    #test>.keyframes(test)*/
 .img-respon {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 /* .block-element-h-center */
 /* .block-text-h-center */
@@ -101,310 +105,360 @@ body {
 /* .location-v-center */
 /*header*/
 .g-container {
-  max-width: 1920px;
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 .g-container:after {
-  display: block;
-  visibility: hidden;
-  height: 0;
-  overflow: hidden;
-  clear: both;
-  content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+
+    content: ".";
 }
 .header {
-  position: relative;
-  z-index: 4;
-  margin-bottom: -120px;
-  width: 100%;
-  -webkit-transform: all .5s linear;
-          transform: all .5s linear;
+    position: relative;
+    z-index: 4;
+
+    width: 100%;
+    margin-bottom: -120px;
+
+    -webkit-transform: all .5s linear;
+            transform: all .5s linear;
 }
 .header .g-doc {
-  max-width: 1400px;
-  width: 100%;
-  margin: 0 auto;
-  height: 90px;
-  box-sizing: border-box;
+    width: 100%;
+    height: 90px;
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 .header .logo {
-  margin-top: 10px;
-  float: left;
-  width: 224px;
-  height: 70px;
+    float: left;
+    width: 224px;
+    height: 70px;
+    margin-top: 10px;
 }
 .header .logo img {
-  width: 100%;
-  display: block;
+    display: block;
+    width: 100%;
 }
 .header .nav {
-  float: right;
-  padding: 27px 0;
+    float: right;
+    padding: 27px 0;
 }
 .header .nav li {
-  float: left;
-  margin-right: 6px;
-  width: 120px;
-  height: 36px;
-  text-align: center;
-  border-radius: 18px;
+    float: left;
+    width: 120px;
+    height: 36px;
+    margin-right: 6px;
+
+    text-align: center;
+
+    border-radius: 18px;
 }
 .header .nav li a {
-  display: block;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 36px;
-  letter-spacing: 0px;
-  color: #ffffff;
+    display: block;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 36px;
+
+    letter-spacing: 0;
+
+    color: #fff;
 }
 .header .nav li.active,
 .header .nav li:hover {
-  background-color: #9855ae;
+    background-color: #9855ae;
 }
 .header.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  /*display: none;*/
-  background-color: rgba(92, 55, 58, 0.4);
-  transition: all .5s ease;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    margin: auto;
+
+    transition: all .5s ease;
+    /*display: none;*/
+
+    background-color: rgba(92, 55, 58, .4);
 }
 .top-banner {
-  position: relative;
-  height: 810px;
-  width: 100%;
+    position: relative;
+
+    width: 100%;
+    height: 810px;
 }
 .top-banner .slider-wraper {
-  position: absolute;
-  height: 810px;
-  left: 50%;
-  width: 1920px;
-  margin-left: -960px;
-  overflow: hidden;
-  z-index: 1;
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+
+    width: 1920px;
+    height: 810px;
+    margin-left: -960px;
+    overflow: hidden;
 }
 .top-banner .slider-container {
-  width: 7680px;
+    width: 7680px;
 }
 .top-banner .slider-container li {
-  float: left;
-  width: 1920px;
-  /*margin-right: -4px;*/
+    float: left;
+    width: 1920px;
+    /*margin-right: -4px;*/
 }
 .top-banner .slider-container li img {
-  width: 101%;
+    width: 101%;
     /*margin-left: -2px;*/
 }
 .top-banner .slider-item {
-  position: relative;
+    position: relative;
 }
 .top-banner .slider-item .textimg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  /*display: none;*/
-  opacity: 0;
-  transition: all .5s .5s ease;
-  /*transform:  scale(.5,.5) ;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    transition: all .5s .5s ease;
+    /*display: none;*/
+
+    opacity: 0;
+    /*transform:  scale(.5,.5) ;*/
 }
 /*鼠标划过的时候才有样式*/
 .top-banner .slider-item.active .textimg,
 .top-banner .slider-item:hover .textimg {
-  opacity: 1;
-  /*display: block;*/
-  /*transition: scale(1,1);*/
+    opacity: 1;
+    /*display: block;*/
+    /*transition: scale(1,1);*/
 }
 .top-banner .slider-indicator {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 70px;
-  z-index: 2;
-  padding: 0;
-  margin: 0 auto;
-  width: 500px;
-  text-align: center;
-  line-height: .12em;
-  font-size: 0;
+    position: absolute;
+    right: 0;
+    bottom: 70px;
+    left: 0;
+    z-index: 2;
+
+    width: 500px;
+    padding: 0;
+    margin: 0 auto;
+
+    font-size: 0;
+    line-height: .12em;
+
+    text-align: center;
 }
 .top-banner .slider-indicator li {
-  display: inline-block;
-  margin: 0 15px;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  background: #fff;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 15px;
+
+    border-radius: 100%;
+    background: #fff;
 }
 .top-banner .slider-indicator li.active,
 .top-banner .slider-indicator li:hover {
-  cursor: pointer;
-  background: #9855ae;
+    cursor: pointer;
+
+    background: #9855ae;
 }
 .footer {
-  height: 504px;
-  background: url('../images/bg_footer.jpg') center center no-repeat;
+    height: 504px;
+
+    background: url("../images/bg_footer.jpg") center center no-repeat;
 }
 .footer .g-doc {
-  width: 1200px;
-  margin: 0 auto;
+    width: 1200px;
+    margin: 0 auto;
 }
 .footer .g-doc .row1 {
-  padding-top: 140px;
-  padding-bottom: 30px;
-  height: 20px;
-  border-bottom: solid 1px rgba(255, 255, 255, 0.6);
+    height: 20px;
+    padding-top: 140px;
+    padding-bottom: 30px;
+
+    border-bottom: solid 1px rgba(255, 255, 255, .6);
 }
 .footer .g-doc .row1 .time {
-  width: 50%;
-  float: left;
-  font-size: 15px;
-  font-weight: normal;
-  letter-spacing: 0.5px;
-  color: #f6f6f6;
+    float: left;
+    width: 50%;
+
+    font-size: 15px;
+    font-weight: normal;
+
+    letter-spacing: .5px;
+
+    color: #f6f6f6;
 }
 .footer .g-doc .row1 .time span {
-  font-size: 18px;
-  letter-spacing: 0.6px;
-  color: #ffffff;
+    font-size: 18px;
+
+    letter-spacing: .6px;
+
+    color: #fff;
 }
 .footer .g-doc .row1 .tel {
-  width: 50%;
-  float: right;
-  font-size: 15px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 15pxpx;
-  letter-spacing: 0px;
-  color: #ffffff;
-  text-align: right;
+    float: right;
+    width: 50%;
+
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 15pxpx;
+
+    text-align: right;
+    letter-spacing: 0;
+
+    color: #fff;
 }
 .footer .g-doc .row1 .tel span {
-  padding-left: 30px;
-  font-size: 20px;
+    padding-left: 30px;
+
+    font-size: 20px;
 }
 .footer .g-doc .row1 .tel .icon {
-  padding-left: 20px;
+    padding-left: 20px;
 }
 .footer .g-doc .row2 {
-  padding-top: 50px;
-  height: 240px;
+    height: 240px;
+    padding-top: 50px;
 }
 .footer .g-doc .row2 div {
-  float: left;
+    float: left;
 }
 .footer .g-doc .row2 .block1 {
-  width: 480px;
+    width: 480px;
 }
 .footer .g-doc .row2 .block1 p {
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 30px;
-  letter-spacing: 0px;
-  color: #ffffff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 30px;
+
+    letter-spacing: 0;
+
+    color: #fff;
+}
+.footer .g-doc .row2 .block1 p span {
+    color: #fff;
 }
 .footer .g-doc .row2 .block1 .zixun {
-  line-height: 30px;
-  margin-top: 60px;
+    margin-top: 60px;
+
+    line-height: 30px;
 }
 .footer .g-doc .row2 .block1 .zixun span {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 30px;
-  padding-right: 30px;
+    display: inline-block;
+    padding-right: 30px;
+
+    line-height: 30px;
+
+    vertical-align: middle;
 }
 .footer .g-doc .row2 .block1 .zixun .icon {
-  padding-right: 10px;
+    padding-right: 10px;
 }
 .footer .g-doc .row2 .block2 {
-  width: 450px;
+    width: 450px;
 }
 .footer .g-doc .row2 .block2 p {
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 30px;
-  letter-spacing: 0px;
-  color: #ffffff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 30px;
+
+    letter-spacing: 0;
+
+    color: #fff;
 }
 .footer .g-doc .row2 .block3 {
-  width: 270px;
+    width: 270px;
 }
 .footer .g-doc .row2 .block3 img {
-  float: left;
-  margin-right: 10px;
+    float: left;
+    margin-right: 10px;
 }
 .footer .g-doc .row2 .block3 p {
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 26px;
-  letter-spacing: 0px;
-  color: #ffffff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 26px;
+
+    letter-spacing: 0;
+
+    color: #fff;
 }
 .footer .icon {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 0;
-  width: 28px;
-  height: 28px;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+
+    vertical-align: middle;
 }
 .footer .icon-phone {
-  background: url('../images/icon_phone.png') center center no-repeat;
+    background: url("../images/icon_phone.png") center center no-repeat;
 }
 .footer .icon-qq {
-  background: url('../images/icon_qq.png') center center no-repeat;
+    background: url("../images/icon_qq.png") center center no-repeat;
 }
 .footer .icon-weibo {
-  background: url('../images/icon_weibo.png') center center no-repeat;
+    background: url("../images/icon_weibo.png") center center no-repeat;
 }
 .footer .icon-weixin {
-  background: url('../images/icon_weixin.png') center center no-repeat;
+    background: url("../images/icon_weixin.png") center center no-repeat;
 }
 .footer2 {
-  height: 100px;
-  background: #5c373a;
+    height: 100px;
+
+    background: #5c373a;
 }
 .footer2 .g-doc {
-  width: 1200px;
-  margin: 0 auto;
-  height: 100px;
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
 }
 .footer2 .g-doc img {
-  float: left;
-  display: block;
-  width: 224px;
-  height: 70px;
-  margin-top: 15px;
+    display: block;
+    float: left;
+    width: 224px;
+    height: 70px;
+    margin-top: 15px;
 }
 .footer2 .g-doc p {
-  float: right;
-  width: 900px;
-  height: 100px;
-  line-height: 100px;
-  color: #ffffff;
-  text-align: right;
-  font-size: 16px;
+    float: right;
+    width: 900px;
+    height: 100px;
+
+    font-size: 16px;
+    line-height: 100px;
+
+    text-align: right;
+
+    color: #fff;
 }
 .footer2 .g-doc p span {
-  padding: 0 16px;
+    padding: 0 16px;
 }
 .footer2 .g-doc p a {
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 18px;
-  letter-spacing: 0px;
-  color: #ffffff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 18px;
+
+    letter-spacing: 0;
+
+    color: #fff;
 }

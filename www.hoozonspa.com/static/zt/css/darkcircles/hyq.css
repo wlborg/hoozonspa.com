@@ -1,3 +1,62 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+
+    color: #555;
+    background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+a:hover {
+    display: block;
+
+    text-decoration: none;
+}
+
+img {
+    display: block;
+
+    border: none;
+}
 .w {
     width: 1400px;
     margin: 0 auto;
@@ -18,8 +77,9 @@
     width: 100%;
 }
 .part1 .content-top {
-    height: 1196px;
     position: relative;
+
+    height: 1196px;
 }
 .part1-bg-wrap {
     position: absolute;
@@ -27,69 +87,80 @@
     left: 0;
     z-index: -1;
 }
-.part1-bg-wrap .bg-1, .part1-bg-wrap .bg-2, .part1-bg-wrap .bg-3, .part1-bg-wrap .bg-4 {
-    height: 299px;
+.part1-bg-wrap .bg-1,
+.part1-bg-wrap .bg-2,
+.part1-bg-wrap .bg-3,
+.part1-bg-wrap .bg-4 {
     width: 100%;
+    height: 299px;
 }
 .part1-bg-wrap img {
     width: 100%;
     height: 100%;
 }
-.header {
+.tit_header {
     width: 100%;
-    text-align: center;
-    color: #f9e7d3;
     padding-top: 117px;
+
+    text-align: center;
+
+    color: #f9e7d3;
 }
-.header .title-top {
+.tit_header .title-top {
     font-size: 44px;
 }
-.header .title-top span {
 
-}
-.header .title-top span i {
+.tit_header .title-top span i {
+    position: relative;
+
     display: inline-block;
     width: 17px;
     height: 16px;
-    position: relative;
 }
-.header .title-top span i.icon-left {
-    background: url('../images/part1-icon-1.png') no-repeat;
+.tit_header .title-top span i.icon-left {
     top: -27px;
     left: 9px;
+
+    background: url("//pc.hoozonspa.com/static/zt/img/darkcircles/part1-icon-1.png") no-repeat;
 }
-.header .title-top span i.icon-right {
-    background: url("../images/part1-icon-2.png") no-repeat;
+.tit_header .title-top span i.icon-right {
     top: 14px;
     left: -6px;
+
+    background: url("//pc.hoozonspa.com/static/zt/img/darkcircles/part1-icon-2.png") no-repeat;
 }
-.header .title-mid {
+.tit_header .title-mid {
     font-size: 51px;
 }
-.header .title-bot {
-    font-size: 12px;
-    color: #b6887b;
+.tit_header .title-bot {
     margin-top: 23px;
+
+    font-size: 12px;
+
+    color: #b6887b;
 }
-.header .line {
+.tit_header .line {
     position: relative;
-    width: 380px;
     left: 510px;
+
+    width: 380px;
     padding-top: 20px;
     /*border-bottom: 2px solid #fff;*/
-    border-bottom: 2px solid rgba(228, 171, 154, 0.3);
-    /*padding-bottom: 30px;*/
 
+    border-bottom: 2px solid rgba(228, 171, 154, .3);
+    /*padding-bottom: 30px;*/
 }
-.header .line-chl {
-    width: 30px;
-     border-bottom: 3px solid rgba(224, 173, 154, 0.3);
+.tit_header .line-chl {
     /*border-bottom: 4px solid #fff;*/
     position: absolute;
     top: 19px;
     left: 50%;
-    margin-left: -15px;
     z-index: 2;
+
+    width: 30px;
+    margin-left: -15px;
+
+    border-bottom: 3px solid rgba(224, 173, 154, .3);
 }
 .part1 .content-top .pic-wrap {
     width: 1350px;
@@ -98,6 +169,7 @@
 }
 .part1 .content-top .pic-wrap .pic-item {
     position: relative;
+
     float: left;
     width: 450px;
     height: 362px;
@@ -113,20 +185,26 @@
     position: absolute;
     bottom: 0;
     left: 0;
+
     width: 100%;
     height: 78px;
-    line-height: 78px;
-    text-align: center;
+
     font-size: 33px;
+    line-height: 78px;
+
+    text-align: center;
+
     color: #f9e7d3;
-    background-color: rgba(134, 93, 89, 0.75);
+    background-color: rgba(134, 93, 89, .75);
 }
 .part1 .content-top .pic-wrap .pic-item .title span {
-    display: inline-block;
-    width: 21px;
-    border-bottom: 2px solid #e0cab9;;
     position: relative;
     top: -10px;
+
+    display: inline-block;
+    width: 21px;
+
+    border-bottom: 2px solid #e0cab9;;
 }
 .part1 .content-top .pic-wrap .pic-item .title span:first-child {
     left: -16px;
@@ -138,29 +216,34 @@
     position: absolute;
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100%;
 }
 .part1 .mask .btn-wrap {
     width: 295px;
     height: 162px;
+    padding-top: 100px;
     margin: 0 auto;
     margin-top: 50px;
-    padding-top: 100px;
 }
 .part1 .mask .btn-wrap a {
     display: block;
     width: 167px;
     height: 61px;
     padding-left: 20px;
-    line-height: 61px;
-    text-align: center;
-    font-size: 38px;
-    color: #f9e7d3;
     margin: 0 auto;
+
+    font-size: 38px;
+    line-height: 61px;
+
+    text-align: center;
+
+    color: #f9e7d3;
 }
 .part1 .content-bottom {
     position: relative;
+
     height: 1221px;
 }
 .part1 .content-bottom .bg-wrap {
@@ -186,20 +269,21 @@
     position: relative;
 }
 /*.part1 .left-content, .part1-per-pic {*/
-    /*float: left;*/
+/*float: left;*/
 /*}*/
 .part1 .left-content {
     position: absolute;
-    right: 89px;
     top: 0;
+    right: 89px;
 }
 .part1-per-pic {
     height: 1224px;
 }
 .part1-per-pic .pic-left {
     position: absolute;
-    left: -252px;
     top: 0;
+    left: -252px;
+
     width: 960px;
 }
 .part1-per-pic .pic-left img {
@@ -207,8 +291,9 @@
     height: 100%;
 }
 .left-content .con-top {
-    color: #523632;
     margin-top: 130px;
+
+    color: #523632;
 }
 .left-content .con-top .top {
     font-size: 44px;
@@ -217,57 +302,67 @@
     display: inline-block;
     width: 205px;
     height: 59px;
-    background: url('../images/part1-icon.png') no-repeat;
-    background-size: 100%;
+
     line-height: 59px;
+
     text-align: center;
+
+    background: url("//pc.hoozonspa.com/static/zt/img/darkcircles/part1-icon.png") no-repeat;
+    background-size: 100%;
 }
 .left-content .con-top .top .txt-bot {
     font-size: 52px;
 }
 .left-content .con-top .mid {
-    font-size: 12px;
-    color: rgba(82, 54, 50, 0.61);
+    width: 180px;
     margin-top: 14px;
     margin-bottom: 10px;
-    width: 180px;
+
+    font-size: 12px;
     line-height: 21px;
+
+    color: rgba(82, 54, 50, .61);
 }
 .left-content .con-top .line {
     width: 109px;
-    border: 1px solid rgba(82, 54, 50, 0.3);
+
+    border: 1px solid rgba(82, 54, 50, .3);
 }
 .part1 .con-mid {
     margin-top: 50px;
 }
 .part1 .con-mid .item {
     position: relative;
+
     width: 556px;
     height: 208px;
-    background-color: rgba(161, 183, 171, 0.2);
-    border: solid 1px rgba(136, 97, 90, 0.2);
     margin-bottom: 16px;
+
+    border: solid 1px rgba(136, 97, 90, .2);
+    background-color: rgba(161, 183, 171, .2);
 }
 .part1 .con-mid .item:nth-child(2) {
-    background-color: rgba(140, 101, 94, 0.35);
+    background-color: rgba(140, 101, 94, .35);
 }
 .part1 .con-mid .item:nth-child(3) {
-    background-color: rgba(141, 127, 122, 0.33);
+    background-color: rgba(141, 127, 122, .33);
 }
 .con-mid .item .inner-frame {
     width: 463px;
     height: 141px;
-    border: solid 1px rgba(136, 97, 90, 0.2);
-    margin: 0 auto;
-    margin-top: 13px;
-    padding-left: 37px;
     padding-top: 40px;
     padding-right: 23px;
+    padding-left: 37px;
+    margin: 0 auto;
+    margin-top: 13px;
+
     color: #88615a;
+    border: solid 1px rgba(136, 97, 90, .2);
 }
 .item .inner-frame .title {
-    font-size: 34px;
     margin-bottom: 13px;
+
+    font-size: 34px;
 }
 .item .inner-frame .txt {
     font-size: 22px;
@@ -275,62 +370,78 @@
 }
 .con-mid .item .bot-line {
     position: absolute;
-    width: 214px;
-    border-bottom: 4px solid #cfd3c8;
     bottom: 0;
     left: 50%;
+
+    width: 214px;
     margin-left: -107px;
+
+    border-bottom: 4px solid #cfd3c8;
 }
 .con-mid .item .circle {
     position: absolute;
     top: 50%;
     left: 0;
+    z-index: 100;
+
     width: 50px;
     height: 50px;
     margin-top: -25px;
     margin-left: -25px;
-    background: #f8f5f2;
+
     border-radius: 50px;
-    z-index: 100;
+    background: #f8f5f2;
 }
 .item .circle .icon {
-    background: url('../images/ml-icon.png') no-repeat;
+    background: url("//pc.hoozonspa.com/static/zt/img/darkcircles/ml-icon.png") no-repeat;
 }
 .item .circle .icon-1 {
-    background: url('../images/ml-icon-2.png') no-repeat;
+    background: url("//pc.hoozonspa.com/static/zt/img/darkcircles/ml-icon-2.png") no-repeat;
 }
 .item .circle .icon-2 {
-    background: url('../images/ml-icon-3.png') no-repeat;
+    background: url("//pc.hoozonspa.com/static/zt/img/darkcircles/ml-icon-3.png") no-repeat;
 }
-.item .circle .icon, .item .circle .icon-1, .item .circle .icon-2 {
+.item .circle .icon,
+.item .circle .icon-1,
+.item .circle .icon-2 {
     position: absolute;
     top: 8px;
     left: 7px;
+
     display: block;
     width: 34px;
     height: 34px;
+
     background-size: 100%;
 }
-.part1 .left-content .btn, .part2 .po .btn {
+.part1 .left-content .btn,
+.part2 .po .btn {
     position: absolute;
     bottom: -90px;
     left: 0;
+
     width: 311px;
     height: 64px;
+
     line-height: 64px;
+
     background-color: #886059;
-    box-shadow: 0px 2px 5px 0px
-    rgba(178, 168, 158, 0.75);
+    box-shadow: 0 2px 5px 0
+    rgba(178, 168, 158, .75);
 }
-.left-content .btn a, .part2 .po .btn a, .part3 .left-content .btn a {
+.left-content .btn a,
+.part2 .po .btn a,
+.part3 .left-content .btn a {
     display: block;
     width: 100%;
     height: 100%;
-    color: #f9e7d3;
-    font-size: 36px;
-    background: url("../images/btn-wrap.png") no-repeat 234px 16px;
-    background-size: 36px;
     padding-left: 43px;
+
+    font-size: 36px;
+
+    color: #f9e7d3;
+    background: url("//pc.hoozonspa.com/static/zt/img/darkcircles/btn-wrap.png") no-repeat 234px 16px;
+    background-size: 36px;
 }
 /*part1结束*/
 
@@ -342,13 +453,13 @@
     color: #f2e0ce;
 }
 .header-1 .line {
-    border-bottom: 2px solid rgba(242, 224, 206, 0.3);;
+    border-bottom: 2px solid rgba(242, 224, 206, .3);;
 }
 .header-1 .line-chl {
-    background-color: rgba(242, 224, 206, 0.3);
+    background-color: rgba(242, 224, 206, .3);
 }
 .header-1 .title-bot {
-    color: rgba(157, 125, 115, 0.61);
+    color: rgba(157, 125, 115, .61);
 }
 .part2 .content-top {
     position: relative;
@@ -357,52 +468,62 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 1273px;
-    width: 100%;
-    overflow: hidden;
     z-index: -4;
+
+    width: 100%;
+    height: 1273px;
+    overflow: hidden;
 }
 .part2 .content-top .bg-wrap .mask {
     position: absolute;
     top: 0;
     left: 0;
-    width:100%;
+
+    width: 100%;
     height: 100%;
-    background-color: rgba(115, 78, 72, 0.91);
+
+    background-color: rgba(115, 78, 72, .91);
 }
 .part2 .middle .title {
     width: 1183px;
     margin: 0 auto;
-    font-size: 24px;
-    color: #f2e0ce;
-    text-align: center;
-    line-height: 39px;
     margin-bottom: 45px;
+
+    font-size: 24px;
+    line-height: 39px;
+
+    text-align: center;
     letter-spacing: 1px;
+
+    color: #f2e0ce;
 }
 .part2  .middle .con-wrap {
     margin: 0 auto;
 }
 .part2 .middle .con-left {
     width: 523px;
-    background: url('../images/part2-pic-1.jpg') no-repeat;
+
+    background: url("//pc.hoozonspa.com/static/zt/img/darkcircles/part2-pic-1.jpg") no-repeat;
     background-size: 100%;
 }
 .part2 .middle {
     margin-top: 70px;
 }
-.part2 .middle .con-left, .part2 .con-wrap .con-right {
+.part2 .middle .con-left,
+.part2 .con-wrap .con-right {
     float: left;
     height: 659px;
 }
 .part2 .con-wrap .con-right {
-    width: 877px;
     position: relative;
+
+    width: 877px;
 }
 .part2 .modifier {
     position: absolute;
     right: -35px;
     bottom: -41px;
+
     width: 140px;
     height: 104px;
 }
@@ -421,36 +542,44 @@
     width: 100%;
 }
 .part2 .con-left-wrap .txt {
-    color: #845d56;
-    font-size: 24px;
     width: 347px;
     height: 132px;
-    text-align: justify;
     margin-top: 30px;
+
+    font-size: 24px;
+
+    text-align: justify;
+
+    color: #845d56;
 }
 .part2 .bot-btn {
     width: 245px;
     height: 59px;
-    background:url('../images/btn-bg.png') no-repeat;
-    box-shadow: 2px 2px 5px 0px
-    rgba(0, 0, 0, 0.2);
     margin-top: 70px;
+
+    background: url("//pc.hoozonspa.com/static/zt/img/darkcircles/btn-bg.png") no-repeat;
+    box-shadow: 2px 2px 5px 0
+    rgba(0, 0, 0, .2);
 }
 .part2 .bot-btn a {
     display: block;
-    line-height: 59px;
-    font-size: 33px;
-    color: #f2e0ce;
-    background: url("../images/btn-wrap-1.png") no-repeat 174px 15px;
-    background-size: 33px;
-    text-align: left;
     padding-left: 31px;
+
+    font-size: 33px;
+    line-height: 59px;
+
+    text-align: left;
+
+    color: #f2e0ce;
+    background: url("//pc.hoozonspa.com/static/zt/img/darkcircles/btn-wrap-1.png") no-repeat 174px 15px;
+    background-size: 33px;
 }
 .part2 .content-middle {
     position: relative;
+
     height: 1131px;
-    overflow: hidden;
     margin-top: 125px;
+    overflow: hidden;
 }
 .part2 .content-middle .bg-wrap {
     position: absolute;
@@ -462,7 +591,8 @@
     width: 100%;
     height: 100%;
 }
-.part2 .content-middle .bg-wrap .bg-1, .part2 .content-middle .bg-wrap .bg-2 {
+.part2 .content-middle .bg-wrap .bg-1,
+.part2 .content-middle .bg-wrap .bg-2 {
     height: 400px;
 }
 .part2 .content-middle .bg-wrap .bg-3 {
@@ -470,12 +600,13 @@
 }
 .part2 .content-middle .pic-con {
     width: 100%;
-    background-color: #7d5850;
     margin-top: 170px;
+
+    background-color: #7d5850;
 }
 .content-middle .pic-con ul {
-    padding-left: 36px;
     padding-top: 45px;
+    padding-left: 36px;
 }
 .content-middle .pic-con .item {
     float: left;
@@ -483,8 +614,8 @@
     margin-bottom: 14px;
 }
 .content-middle .pic-con .item:nth-child(3n-1) {
-    margin-left: 20px;
     margin-right: 16px;
+    margin-left: 20px;
 }
 .pic-con .item div {
     position: relative;
@@ -494,18 +625,22 @@
 }
 .pic-con .item .step-wrap {
     position: absolute;
-    left: 75px;
     bottom: 14px;
+    left: 75px;
+
     width: 284px;
     height: 59px;
-    background-color: #845d56;
-    border-radius: 14px;
-    color: #faf7f1;
+
     font-size: 32px;
     line-height: 59px;
+
+    color: #faf7f1;
+    border-radius: 14px;
+    background-color: #845d56;
 }
 .content-middle .pic-con .bottom {
     position: relative;
+
     height: 146px;
     overflow: hidden;
 }
@@ -513,6 +648,7 @@
     position: absolute;
     top: 32px;
     left: -75px;
+
     width: 822px;
     height: 132px;
 }
@@ -527,70 +663,83 @@
 }
 .part2 .content-bottom {
     position: relative;
+
     height: 1232px;
 }
 .po {
     position: relative;
 }
-.part2 .content-bottom .bg-wrap .left{
+.part2 .content-bottom .bg-wrap .left {
     position: absolute;
-    left: -260px;
     top: 0;
+    left: -260px;
     z-index: -100;
 }
 .part2 .content-bottom .bg-wrap .right {
     position: absolute;
-    right: -260px;
     top: 0;
+    right: -260px;
     z-index: -100;
 }
 .content-bottom .bg-wrap .left-main {
     position: absolute;
     left: 118px;
-    text-align: left;
-    margin-top: 124px;
     z-index: 100;
+
+    margin-top: 124px;
+
+    text-align: left;
 }
 .bg-wrap .left-main .title-top {
     font-size: 51px;
+
     color: #523632;
 }
 .bg-wrap .left-main .title-top h2 {
     font-size: 44px;
-    color: #523632;
+
     letter-spacing: 2px;
+
+    color: #523632;
 }
 .left-main .title-top h2 span {
-    display: inline-block;
     position: relative;
+
+    display: inline-block;
     margin-left: 8px;
 }
 .title-top h2 span i {
     position: absolute;
+
     display: inline-block;
     width: 10px;
     height: 13px;
 }
 .title-top h2 span i:first-child {
-    background: url("../images/part2-icon-1.png") no-repeat;
-    background-size: 100%;
     top: 2px;
+
+    background: url("//pc.hoozonspa.com/static/zt/img/darkcircles/part2-icon-1.png") no-repeat;
+    background-size: 100%;
 }
 .title-top h2 span i:nth-child(2) {
-    background: url("../images/part2-icon-2.png") no-repeat;
-    background-size: 100%;
     top: 45px;
+
+    background: url("//pc.hoozonspa.com/static/zt/img/darkcircles/part2-icon-2.png") no-repeat;
+    background-size: 100%;
 }
 .bg-wrap .left-main .title-middle {
-    font-size: 12px;
-    color: rgba(82, 54, 50, 0.61);
     margin-top: 10px;
     margin-bottom: 16px;
+
+    font-size: 12px;
+
+    color: rgba(82, 54, 50, .61);
 }
 .bg-wrap .left-main .line {
     width: 114px;
     height: 1px;
-    background-color: rgba(82, 54, 50, 0.3);
+
+    background-color: rgba(82, 54, 50, .3);
 }
 .left-main .effect-wrap {
     margin-top: 60px;
@@ -608,30 +757,37 @@
     padding-left: 56px;
 }
 .effect-wrap .item-top {
-    width: 303px;
-    border-bottom: 2px solid #f2e0ce;
     position: relative;
     left: 10px;
+
+    width: 303px;
     padding-left: 46px;
+
     color: #8a635c;
+    border-bottom: 2px solid #f2e0ce;
 }
 .effect-wrap .item-top span:first-child {
     position: absolute;
-    width: 44px;
-    height: 41px;
-    background-color: #f2e0ce;
-    border-radius: 12px;
-    display: inline-block;
-    line-height: 41px;
-    font-size: 34px;
-    text-align: center;
-    font-style: italic;
-    margin-right: 14px;
     top: 5px;
     left: -12px;
+
+    display: inline-block;
+    width: 44px;
+    height: 41px;
+    margin-right: 14px;
+
+    font-size: 34px;
+    font-style: italic;
+    line-height: 41px;
+
+    text-align: center;
+
+    border-radius: 12px;
+    background-color: #f2e0ce;
 }
 .effect-wrap .item-top span:nth-child(2) {
     font-size: 34px;
+
     letter-spacing: 1px;
 }
 .effect-wrap .item-top span:nth-child(3) {
@@ -639,62 +795,73 @@
     font-weight: bold;
 }
 .effect-wrap .item .txt {
-    font-size: 24px;
-    color: #8a635c;
-    letter-spacing: 1px;
-    margin-left: 21px;
     margin-top: 20px;
+    margin-left: 21px;
+
+    font-size: 24px;
+
+    letter-spacing: 1px;
+
+    color: #8a635c;
 }
 .effect-wrap .item-3 .txt {
     width: 453px;
 }
 .part2 .po .btn {
-    width: 267px;
     top: 1100px;
     left: 112px;
     z-index: 100;
+
+    width: 267px;
 }
 .part2 .po .btn a {
-    text-align: left;
-    background-position: 193px 16px;
     padding-left: 39px;
+
+    text-align: left;
+
+    background-position: 193px 16px;
 }
 .modifier-1 {
-    width: 297px;
-    height: 766px;
     position: absolute;
     top: 565px;
     left: -15px;
+
+    width: 297px;
+    height: 766px;
 }
 /*part2结束*/
 
 /*part3开始*/
 .part3 {
-    text-align: center;
-    background-color: #f4efed;
     position: relative;
+
+    text-align: center;
+
+    background-color: #f4efed;
 }
 .header-2 .title-top {
-    color: #523632;
     font-size: 52px;
+
+    color: #523632;
 }
 .header-2 .title-bot {
     font-size: 12px;
-    color: rgba(82, 54, 50, 0.61);
+
+    color: rgba(82, 54, 50, .61);
 }
 .header-2 .line {
-    border-bottom: 2px solid rgba(82, 54, 50, 0.3);
+    border-bottom: 2px solid rgba(82, 54, 50, .3);
 }
 .header-2 .line-chl {
-    background-color: rgba(82, 54, 50, 0.3);
+    background-color: rgba(82, 54, 50, .3);
 }
 .part3 .content-middle {
-    margin-top: 100px;
     position: relative;
+
+    margin-top: 100px;
 }
 .part3 .content-middle .bg-wrap {
     width: 100%;
-
 }
 .part3 .content-middle .bg-wrap img {
     width: 100%;
@@ -707,8 +874,8 @@
 .part3 .left-content .title-pic {
     width: 3rem;
     height: 1.2rem;
-    margin-left: -.21rem;
     margin-bottom: .6rem;
+    margin-left: -.21rem;
 }
 .part3 .left-content .title-pic img {
     width: 100%;
@@ -717,35 +884,46 @@
 .part3 .left-content .txt {
     width: 4.47rem;
     height: 1.41rem;
+
     font-size: .23rem;
-    color: #f2e0ce;
-    text-align: left;
     line-height: .39rem;
+
+    text-align: left;
+
+    color: #f2e0ce;
 }
 .part3 .left-content .btn {
-    width: 2.67rem;
     position: absolute;
-    z-index: 100;
-    left: 0;
-    background-color: #886059;
-    height: .64rem;
-    line-height: .64rem;
     /* left: 1rem; */
     top: 3.6rem;
+    left: 0;
+    z-index: 100;
+
+    width: 2.67rem;
+    height: .64rem;
+
+    line-height: .64rem;
+
+    background-color: #886059;
 }
 .part3 .left-content .btn a {
-    text-align: left;
-    background-position: 1.93rem .16rem;
     padding-left: .37rem;
+
     font-size: .36rem;
-    background: url("../images/btn-wrap.png") no-repeat 1.94rem .16rem;
+
+    text-align: left;
+
+    background: url("//pc.hoozonspa.com/static/zt/img/darkcircles/btn-wrap.png") no-repeat 1.94rem .16rem;
+    background-position: 1.93rem .16rem;
     background-size: .36rem;
 }
 .part3 .content-middle-1 {
     position: relative;
     top: .4rem;
 }
-.part3 .bg-wrap .bg-1, .part3 .bg-wrap .bg-2, .part3 .bg-wrap .bg-3{
+.part3 .bg-wrap .bg-1,
+.part3 .bg-wrap .bg-2,
+.part3 .bg-wrap .bg-3 {
     width: 100%;
 }
 .part3 .bg-wrap img {
@@ -766,48 +944,58 @@
 }
 .part3 .content-middle-1 .txt {
     width: 4.02rem;
+
     font-size: .23rem;
-    letter-spacing: .01rem;
-    color: #f2e0ce;
-    text-align: left;
     line-height: .39rem;
+
+    text-align: left;
+    letter-spacing: .01rem;
+
+    color: #f2e0ce;
 }
 .part3 .content-middle-1 .btn {
     width: 2.45rem;
     height: .59rem;
-    background-color: #8c655e;
-    box-shadow: 0.02rem .02rem .05rem 0px 
-        rgba(0, 0, 0, 0.2);
-    border: solid 1px rgba(242, 224, 206, 0.4);
-    line-height: .59rem;
     margin-top: .8rem;
+
+    line-height: .59rem;
+
+    border: solid 1px rgba(242, 224, 206, .4);
+    background-color: #8c655e;
+    box-shadow: .02rem .02rem .05rem 0
+    rgba(0, 0, 0, .2);
 }
 .content-middle-1 .btn a {
     display: block;
-    font-size: .33rem;
-    letter-spacing: 1px;
-    background: url("../images/btn-wrap-1.png") no-repeat 1.77rem;
-    background-size: .33rem;
-    text-align: left;
-    color: #f2e0ce;
     padding-left: .3rem;
+
+    font-size: .33rem;
+
+    text-align: left;
+    letter-spacing: 1px;
+
+    color: #f2e0ce;
+    background: url("//pc.hoozonspa.com/static/zt/img/darkcircles/btn-wrap-1.png") no-repeat 1.77rem;
+    background-size: .33rem;
 }
 .part3 .content-bottom {
     position: relative;
+
     margin-top: .6rem;
 }
-.part3 .content-bottom .left, .part3 .content-bottom .right {
+.part3 .content-bottom .left,
+.part3 .content-bottom .right {
     float: left;
     height: 7.38rem;
 }
 .part3 .content-bottom .left {
     width: 41.1%;
+
     background: red;
 }
-.part3 .content-bottom .left .pic-wrap {
 
-}
-.part3 .content-bottom .left .pic-wrap, .part3 .content-bottom .right .pic-item {
+.part3 .content-bottom .left .pic-wrap,
+.part3 .content-bottom .right .pic-item {
     width: 100%;
     height: 100%;
 }
@@ -817,6 +1005,7 @@
 }
 .part3 .content-bottom .right {
     width: 58.9%;
+
     background: black;
 }
 .part3 .content-bottom .right img {
@@ -825,8 +1014,8 @@
 }
 .part3 .content-bottom .left-con {
     position: absolute;
-    left: 2.42rem;
     top: 1.3rem;
+    left: 2.42rem;
 }
 .part3 .content-bottom .left-con .title {
     width: 3.61rem;
@@ -836,9 +1025,11 @@
 }
 .part3 .left-con .con-txt {
     font-size: .28rem;
+
     letter-spacing: 1px;
+
     color: #f2e0ce;
-} 
+}
 .part3 .left-con ul {
     width: 3.5rem;
 }
@@ -852,30 +1043,37 @@
 .part3 .left-con .con-txt span {
     position: relative;
     top: -.07rem;
+
     display: inline-block;
     width: 6px;
     height: 6px;
-    background-color: #f2e0ce;
+
     border-radius: 6px;
+    background-color: #f2e0ce;
 }
 .part3 .left-con .btn {
     width: 2.67rem;
     height: .64rem;
-    background-color: #886059;
-    box-shadow: .02rem .02rem .05rem 0px 
-        rgba(0, 0, 0, 0.2);
-    line-height: .64rem;
     margin-top: .7rem;
+
+    line-height: .64rem;
+
+    background-color: #886059;
+    box-shadow: .02rem .02rem .05rem 0
+    rgba(0, 0, 0, .2);
 }
 .part3 .left-con .btn a {
     display: block;
-    color: #f9e7d3;
+    padding-left: .35rem;
+
     font-size: .36rem;
-    letter-spacing: 1px;
+
     text-align: left;
-    background: url("../images/btn-wrap.png") no-repeat 1.95rem;
+    letter-spacing: 1px;
+
+    color: #f9e7d3;
+    background: url("//pc.hoozonspa.com/static/zt/img/darkcircles/btn-wrap.png") no-repeat 1.95rem;
     background-size: .36rem;
-    padding-left: 0.35rem;
 }
 /*part3结束*/
 
@@ -883,40 +1081,46 @@
 .swiper-container {
     height: 100%;
 }
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
     width: 1.36rem;
     height: 1.36rem;
-    background-color: rgba(136, 94, 88, 0.87);
+
     border-radius: 1.36rem;
+    background-color: rgba(136, 94, 88, .87);
     background-image: none;
 }
 .swiper-button-prev {
     left: -.65rem;
-    /*background: url('../images/left-btn.jpg') no-repeat;*/
+    /*background: url('//pc.hoozonspa.com/static/zt/img/darkcircles/left-btn.jpg') no-repeat;*/
 }
 .swiper-button-prev span {
+    position: absolute;
+    top: .28rem;
+    right: .32rem;
+
     display: block;
     width: .3rem;
     height: .7rem;
-    background-image: url('../images/left-btn.png');
-    background-position: 0px .07rem;
+
+    background-image: url("//pc.hoozonspa.com/static/zt/img/darkcircles/left-btn.png");
     background-repeat: no-repeat;
-    position: absolute;
-    right: .32rem;
-    top: .28rem;
+    background-position: 0 .07rem;
     background-size: 100%;
 }
 .swiper-button-next {
     right: -.67rem;
 }
 .swiper-button-next span {
+    position: absolute;
+    top: .28rem;
+    left: .26rem;
+
     display: block;
     width: .3rem;
     height: .7rem;
-    background-image: url('../images/right-btn.png');
-    position: absolute;
-    left: .26rem;
-    top: .28rem;
+
+    background-image: url("//pc.hoozonspa.com/static/zt/img/darkcircles/right-btn.png");
     background-position: 0 .07rem;
     background-size: 100%;
 }

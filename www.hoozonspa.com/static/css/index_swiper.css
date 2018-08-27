@@ -401,3 +401,6 @@
     width: 3em;
     margin-left: -1.5em;
 }
+.hotproject .g-right .project-block .swiper-slide a {
+    height: 100%;
+}

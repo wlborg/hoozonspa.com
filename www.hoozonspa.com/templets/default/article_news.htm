@@ -105,7 +105,7 @@
                 <div class="g-doc">
                     <div class="heading">
                         <h1>{dede:field.title/}</h1>
-                        <p>来源 : 红妆医学美容 时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)" /}   点击量：{dede:field.click /} </p>
+                        <p>来源 : 红妆医学美容 时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)" /}&nbsp;   点击量：{dede:field.click /} </p>
                     </div>
                     <div class="content">
                        <!--  <p class="contentCon">{dede:field.body /}
@@ -132,7 +132,8 @@
             <div class="g-container  newsproject">
                 <h2>发现您感兴趣的项目</h2>
                 <div class="row">
-                     {dede:arclist typeid='9'  orderyb='rand' row='3' titlelen="120" limit='0,3' addfields='title2' channelid='21' }
+                     {dede:arclist typeid='9'  orderyb='rand' row='3' titlelen="120" limit='0,3' addfields='title2' channelid='21'}
+                      <a href="[field:arcurl/]">
                     <div class="item">
                         <div class="front">
                              <p>[field:title2/]</p>
@@ -143,6 +144,7 @@
                           <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
                         </div>
                     </div>
+                     </a>
                   {/dede:arclist}
                 </div>
             </div>

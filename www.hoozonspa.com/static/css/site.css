@@ -4573,8 +4573,16 @@ body {
     float: right;
 }
 .beautyspa .g-left .block .front a:hover {
-    color: #9855ae;
-    border: solid 1px #9855ae;
+    color: #fff;
+    background: #9855ae;
+}
+.optoelectronic .g-left .block .front a:hover {
+    color: #fff;
+    background: #9855ae;
+}
+.embroidery .g-left .block .front a:hover {
+    color: #fff;
+    background: #9855ae;
 }
 .zixun span:hover {
     cursor: pointer;

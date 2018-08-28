@@ -2808,6 +2808,9 @@ body {
     right: 0;
     /*float: right;*/
 }
+.article .box .next:hover {
+    cursor: pointer;
+}
 .article .box ul {
     width: 600px;
     margin: 0 auto;

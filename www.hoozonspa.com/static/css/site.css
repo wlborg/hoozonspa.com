@@ -483,6 +483,12 @@ body {
 .presscenter .g-left ul li a:hover {
     color: #9855ae;
 }
+.question .g-left ul li a:hover {
+    color: #9855ae;
+}
+.question .g-right ul li a:hover {
+    color: #9855ae;
+}
 .presscenter .g-left ul li a span {
     float: right;
 }
@@ -2124,6 +2130,8 @@ body {
     left: 0;
 
     margin: auto;
+
+    background-color: rgba(92, 55, 58, .6);
 }
 .optoelectronic .g-left .block .front h4 {
     margin-top: 5em;
@@ -4569,5 +4577,8 @@ body {
     border: solid 1px #9855ae;
 }
 .zixun span:hover {
+    cursor: pointer;
+}
+.newsproject .item:hover {
     cursor: pointer;
 }

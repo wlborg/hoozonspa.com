@@ -223,6 +223,22 @@ function tabs(tabIndex, tab) {
 
     });
 }
+// 鼠标经过切换
+function tabsHov(tabIndex, tab) {
+    tabIndex.hover(function(e) {
+        var index = $(this).index();
+        if (tab && tab.find('li')) {
+            tab.find('li').removeClass('active');
+        }
+        $(this).addClass('active').siblings().removeClass('active');
+        if (tab) {
+
+            tab.eq(index).addClass('active').siblings().removeClass('active');
+
+        }
+
+    });
+}
 function initSlider() {
     // Hot project
     var sliders1 = $(".hotproject .project-block");
@@ -467,10 +483,13 @@ function initSlider() {
         }
     }
     projectPageCustom();
-    tabs($('#beautyspa').find('li'), $('#beautyspa ul'));
-    tabs($('#optoelectronic').find('li'), $('#optoelectronic ul'));
-    tabs($('#embroidery').find('li'), $('#embroidery ul'));
-
+    // 面部护理
+    tabsHov($('#beautyspa').find('li'), $('#beautyspa ul'));
+    // tabs($('#beautyspa').find('li'), $('#beautyspa ul'));
+    tabsHov($('#optoelectronic').find('li'), $('#optoelectronic ul'));
+    // tabs($('#optoelectronic').find('li'), $('#optoelectronic ul'));
+    tabsHov($('#embroidery').find('li'), $('#embroidery ul'));
+    // tabs($('#embroidery').find('li'), $('#embroidery ul'));
 }
 function lightNav() {
     var url = window.location.href;

@@ -3,12 +3,87 @@
 <head>
 {dede:include filename="_link.htm"/}
 <style>
-.content p {
+.contentCon p {
     margin: 1em 0;
+
     line-height: 30px;
+
     text-align: left;
     text-indent: 2em;
-    /*color: #727272;*/
+
+    color: #727272;
+}
+/*.contentCon h3,*/
+/*.contentCon h4,*/
+/*.contentCon h5,*/
+/*.contentCon h6 {*/
+/*text-align: center;*/
+/*}*/
+.contentCon p img {
+    display: block;
+    width: 100%;
+    margin: 1em auto;
+
+    text-align: center;
+
+    border-radius: 4px;
+}
+.contentCon div {
+    margin: 1em 0;
+
+    line-height: 30px;
+
+    text-align: left;
+    text-indent: 2em;
+
+    color: #727272;
+}
+.contentCon div img {
+    display: block;
+    width: 100%;
+    margin: 1em auto;
+
+    text-align: center;
+
+    border-radius: 4px;
+}
+.contentCon br {
+    display: none;
+}
+.contentCon ol li {
+    margin: .5em 0 .5em 1em;
+
+    list-style: decimal;
+}
+.contentCon ul li {
+    margin: .5em 0 .5em 1em;
+
+    list-style: decimal;
+}
+.contentCon p em {
+    display: block;
+    margin: -1em auto -.7em;
+
+    font-size: 14px;
+
+    text-align: center;
+
+    color: #999;
+}
+.contentCon div em {
+    display: block;
+    margin: -1em auto -.7em;
+
+    font-size: 14px;
+
+    text-align: center;
+
+    color: #999;
+}
+.contentCon a {
+    text-decoration: underline;
+
+    color: blue;
 }
 </style>
 </head>
@@ -27,7 +102,7 @@
                         <p>来源 : 红妆医学美容 时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)" /}   点击量：{dede:field.click /} </p>
                     </div>
                     <div class="content">
-                        <p>{dede:field.body /}
+                        <p class="contentCon">{dede:field.body /}
                         </p>
                         <h2></h2>
                         <p></p>

@@ -2794,6 +2794,10 @@ body {
     color: #885e5a;
     border: solid 1px #885e5a;
 }
+.article .box .prev a,
+.article .box .next a {
+    color: #885e5a;
+}
 .article .box .prev {
     top: 90px;
     left: 0;

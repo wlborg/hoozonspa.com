@@ -14,13 +14,13 @@
     <!-- news -->
     <div class="g-container newslist">
         <div class="g-doc">
-                {dede:list pagesize='4' orderby="id" orderway="desc"}
+                {dede:list pagesize='4' orderby="id" orderway="desc" typeid='4' addfields='pic2' channelid='22'}
             <div class="item">
                 <div class="date">
                     <p class="day">[field:pubdate function='strftime("%d",@me)'/]</p>
                     <p class="year">[field:pubdate function='strftime("%Y",@me)'/]/[field:pubdate function='strftime("%m",@me)'/]</p>
                 </div>
-                <div class="thum"> <a href="[field:arcurl/]"><img src="[field:picname function='replaceurl(@me)/]" alt="[field:fulltitle/]" ></a></div>
+                <div class="thum"> <a href="[field:arcurl/]"> <img src="[field:pic2 function='replaceurl(@me)/]" alt="[field:title/]"></a></div>
                 <div class="content">
                     <h3><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></h3>
                     <p class="source">来源 : 红妆美容会所 点击量：({dede:field.click /}) </p>

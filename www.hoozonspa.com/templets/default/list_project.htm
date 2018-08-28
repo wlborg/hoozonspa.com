@@ -879,18 +879,19 @@
                                             {/dede:arclist}
                                     </li>
                                     <li><span>一字眉</span>
-                                        <div class="block">
-                                            <div class="front">
-                                                <h4>一字眉</h4>
-                                                <p>适合眉毛稀疏、散乱、眉形不佳的人群 由纹绣师通过个性化设计，独特的纹绣手法， 自然地色泽，在严格的卫生环境下操作， 不留任何痕迹达到美化眉毛的效果
-                                                </p>
-                                                <div class="line"></div>
-                                                <a class="more">查看更多</a>
+                                        {dede:arclist typeid='157' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
                                             </div>
-                                            <div class="back">
-                                                <img src="//pc.hoozonspa.com/static/img/bg_spa.jpg">
-                                            </div>
-                                        </div>
+                                            {/dede:arclist}
                                     </li>
                                     <li><span>无创孕睫术</span>
                                         {dede:arclist typeid='166' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}

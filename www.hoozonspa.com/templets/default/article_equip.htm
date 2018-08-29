@@ -60,7 +60,7 @@
                      <div class="block">
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
-                                 {dede:arclist typeid='7' row='5' flag='c' orderby='id' orderway='desc' infolen='30' channelid='19'}
+                                 {dede:arclist typeid='7' row='5' flag='c' orderby='id' orderway='desc' infolen='30' channelid='19' addfields='pic2'}
                                 <div class="swiper-slide">
                                     <div class="front">
                                         <h3>[field:title/]</h3>
@@ -68,7 +68,8 @@
                                         </p>
                                     </div>
                                     <div class="back">
-                                        <img src="img/img27.jpg"></div>
+                                         <img src="[field:pic2 function='replaceurl(@me)/]" alt="[field:title/]">
+                                    </div>
                                 </div>
                                  {/dede:arclist}
                             </div>

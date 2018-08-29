@@ -4601,7 +4601,7 @@ body {
     width: 11em;
     height: 9.4em;
 }
-.environmentaldisplay .swiper-wrapper ul {
+.environmentaldisplay .swiper-wrapper {
     height: 9.4em;
 }
 .environmentaldisplay .g-right .swiper-slide {

@@ -4008,6 +4008,7 @@ body {
     opacity: 1;
     color: #fff;
     border-radius: 22px;
+    outline: medium;
     background: none!important;
 }
 .environmentaldisplay .g-left li span {

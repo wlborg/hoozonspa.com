@@ -419,21 +419,21 @@ function initSlider() {
     });
 
     // Environmental display
-    var sliders5 = $(".environmentaldisplay .block");
-    var sliders5arr = [];
-    for (var i5 = 0, len5 = sliders5.length; i5 < len5; i5++) {
-        sliders5arr[i5] = new XZSlide({
-            cover: sliders5.eq(i5).find(".slider-wraper"),
-            container: sliders5.eq(i5).find(".slider-container"),
-            speed: 300,
-            auto: true,
-            resp: true,
-            itemselector: '.slider-item',
-            nextBtn: sliders5.eq(i5).find(".next"),
-            prevBtn: sliders5.eq(i5).find(".prev")
-        });
-    }
-    tabs($('.environmentaldisplay ul').find('li'), $('.environmentaldisplay .block'));
+    // var sliders5 = $(".environmentaldisplay .block");
+    // var sliders5arr = [];
+    // for (var i5 = 0, len5 = sliders5.length; i5 < len5; i5++) {
+    //     sliders5arr[i5] = new XZSlide({
+    //         cover: sliders5.eq(i5).find(".slider-wraper"),
+    //         container: sliders5.eq(i5).find(".slider-container"),
+    //         speed: 300,
+    //         auto: true,
+    //         resp: true,
+    //         itemselector: '.slider-item',
+    //         nextBtn: sliders5.eq(i5).find(".next"),
+    //         prevBtn: sliders5.eq(i5).find(".prev")
+    //     });
+    // }
+    // tabs($('.environmentaldisplay ul').find('li'), $('.environmentaldisplay .block'));
 
     // developmenthistory
     var widthLen = window.fontreset * 34.2;

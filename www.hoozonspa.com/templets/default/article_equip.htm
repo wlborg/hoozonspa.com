@@ -23,7 +23,6 @@
 技术设备</span></h2>
                     <p>
                          {dede:field.description/}
-                   <!--  海南红妆美业，致力于为客户创造一个有别于传统美业的高端美容会所环境， 按照国家卫生标准豪华设计，精致兼具优雅，并设有VIP房及多套温馨典雅的房间，让每一位求美人士体验高标准的星级环境，轻松舒适享美。 -->
                 </p>
                     <div class="row">
                         <div class="item"><span>专业引导 <br>服务</span>
@@ -42,11 +41,7 @@
                     <div class="wraper">
                         <h2><span class="sr-only">设备展示</span></h2>
                         <ul>
-                            <!-- <li><span></span></li> -->
-                            <!--  <li><span>水光注射仪</span></li>
-                            <li><span>无创水光仪</span></li>
-                            <li><span>毛孔收缩仪</span></li>
-                            <li><span>无创点阵飞梭系统</span></li> -->
+
                         </ul>
                            <ol style="display: none">
                                  {dede:arclist typeid='7' row='5' flag='c' orderby='id' orderway='desc' infolen='30' channelid='19'}
@@ -65,8 +60,7 @@
                                 <div class="swiper-slide">
                                     <div class="front">
                                         <h3>[field:title/]</h3>
-                                        <p>[field:des/]
-                                        </p>
+                                        <p>[field:des/]</p>
                                     </div>
                                     <div class="back">
                                          <img src="[field:pic2 function='replaceurl(@me)/]" alt="[field:title/]">
@@ -95,6 +89,13 @@
     {dede:include filename="footer.htm"/}
 </body>
 <script type="text/javascript">
-    new WOW().init();
+ var wow = new WOW({
+    boxClass: 'wow',
+    animateClass: 'animated',
+    offset: 0,
+    mobile: true,
+    live: true
+});
+wow.init();
 </script>
 </html>

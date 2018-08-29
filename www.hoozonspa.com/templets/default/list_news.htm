@@ -14,98 +14,39 @@
     <!-- news -->
     <div class="g-container newslist">
         <div class="g-doc">
+                {dede:list pagesize='4' orderby="id" orderway="desc" typeid='4' addfields='pic2' channelid='22'}
             <div class="item">
                 <div class="date">
-                    <p class="day">04</p>
-                    <p class="year">2018/06</p>
+                    <p class="day">[field:pubdate function='strftime("%d",@me)'/]</p>
+                    <p class="year">[field:pubdate function='strftime("%Y",@me)'/]/[field:pubdate function='strftime("%m",@me)'/]</p>
                 </div>
-                <div class="thum"><a href="article.html"><img src="img/img19.jpg"></a></div>
+                <div class="thum"> <a href="[field:arcurl/]"> <img src="[field:pic2 function='replaceurl(@me)/]" alt="[field:title/]"></a></div>
                 <div class="content">
-                    <h3><a href="article.html">萌趣520，亲子寻宝创意跑万绿园欢乐开跑啦！</a></h3>
-                    <p class="source">来源 : 红妆美容会所 点击量：1440 </p>
-                    <p class="details"><a href="article.html">5月带着节日的问候体贴而至，生活的剧本又翻开新的一页。2018年5月20日上午，由红妆美业携手望海 国际广场联合主办，悦妈荟科技产后恢复、美素佳儿、Qtools 倾情赞助的满城尽是小蛮腰·亲子寻宝创意 跑在绿意盎然的万绿园火热盛启......<span>【阅读全文】</span></a>
+                    <h3><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></h3>
+                    <p class="source">来源 : 红妆美容会所 点击量：[field:click/]</p>
+                    <p class="details">
+                        <a href="[field:arcurl/]">[field:description function='cn_substr(@me,200)'/]......<span>【阅读全文】</span></a>
                     </p>
                 </div>
             </div>
-            <div class="item">
-                <div class="date">
-                    <p class="day">04</p>
-                    <p class="year">2018/06</p>
-                </div>
-                <div class="thum"><a href="article.html"><img src="img/img19.jpg"></a></div>
-                <div class="content">
-                    <h3><a href="article.html">萌趣520，亲子寻宝创意跑万绿园欢乐开跑啦！</a></h3>
-                    <p class="source">来源 : 红妆美容会所 点击量：1440 </p>
-                    <p class="details"><a href="article.html">5月带着节日的问候体贴而至，生活的剧本又翻开新的一页。2018年5月20日上午，由红妆美业携手望海 国际广场联合主办，悦妈荟科技产后恢复、美素佳儿、Qtools 倾情赞助的满城尽是小蛮腰·亲子寻宝创意 跑在绿意盎然的万绿园火热盛启......<span>【阅读全文】</span></a>
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="date">
-                    <p class="day">04</p>
-                    <p class="year">2018/06</p>
-                </div>
-                <div class="thum"><a href="article.html"><img src="img/img19.jpg"></a></div>
-                <div class="content">
-                    <h3><a href="article.html">萌趣520，亲子寻宝创意跑万绿园欢乐开跑啦！</a></h3>
-                    <p class="source">来源 : 红妆美容会所 点击量：1440 </p>
-                    <p class="details"><a href="article.html">5月带着节日的问候体贴而至，生活的剧本又翻开新的一页。2018年5月20日上午，由红妆美业携手望海 国际广场联合主办，悦妈荟科技产后恢复、美素佳儿、Qtools 倾情赞助的满城尽是小蛮腰·亲子寻宝创意 跑在绿意盎然的万绿园火热盛启......<span>【阅读全文】</span></a>
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="date">
-                    <p class="day">04</p>
-                    <p class="year">2018/06</p>
-                </div>
-                <div class="thum"><a href="article.html"><img src="img/img19.jpg"></a></div>
-                <div class="content">
-                    <h3><a href="article.html">萌趣520，亲子寻宝创意跑万绿园欢乐开跑啦！</a></h3>
-                    <p class="source">来源 : 红妆美容会所 点击量：1440 </p>
-                    <p class="details"><a href="article.html">5月带着节日的问候体贴而至，生活的剧本又翻开新的一页。2018年5月20日上午，由红妆美业携手望海 国际广场联合主办，悦妈荟科技产后恢复、美素佳儿、Qtools 倾情赞助的满城尽是小蛮腰·亲子寻宝创意 跑在绿意盎然的万绿园火热盛启......<span>【阅读全文】</span></a>
-                    </p>
-                </div>
-            </div>
+ {/dede:list}
+
+
             <div class="pageindex">
                 <ul>
-                    <li class="active">1</li>
+                    {dede:pagelist listitem='pre,next,pageno,index,end' listsize='1'/}
+                  <!--   <li class="active">1</li>
                     <li>2</li>
                     <li>3</li>
-                    <li>4</li>
+                    <li>4</li> -->
                 </ul>
             </div>
         </div>
     </div>
-            <!-- question and answer -->
-<div class="g-container question">
-    <div class="g-doc">
-        <div class="g-left">
-            <img src="img/img11.jpg">
-            <p class="p1">红妆美业咨询平台</p>
-            <div class="line"></div>
-            <p class="p2">咨询热线</p>
-            <p class="tel">400-018-2622</p>
-            <a class="consult">咨询客服</a>
-        </div>
-        <div class="g-right">
-            <h2><span class="sr-only">美丽问答</span></h2>
-            <div class="box">
-                <img src="img/img13.jpg" alt="">
-                <h3><a href="article.html">水光注射的全方位普及</a></h3>
-                <p><a href="article.html">随着年龄的增长，生活节奏的加快，现代 都市女性皮肤正在遭受着严峻的考验...<span>【详情】</span></a>
-                </p>
-            </div>
-            <ul>
-                <li><a href="article.html">冰点脱毛一般多少钱?  冰点脱毛99元/次包干..........................<span>详情</span></a></li>
-                <li><a href="article.html">冰点脱毛一般多少钱?  冰点脱毛99元/次包干..........................<span>详情</span></a></li>
-                <li><a href="article.html">冰点脱毛一般多少钱?  冰点脱毛99元/次包干..........................<span>详情</span></a></li>
-                <li><a href="article.html">冰点脱毛一般多少钱?  冰点脱毛99元/次包干..........................<span>详情</span></a></li>
-            </ul>
-        </div>
-    </div>
-</div>
+<!-- question and answer -->
+{dede:include filename="_question.htm"/}
   <!-- footer -->
-        {dede:include filename="footer.htm"/}
+{dede:include filename="footer.htm"/}
 </body>
 
 </html>

@@ -2,6 +2,7 @@
 <html>
 <head>
   {dede:include filename="_link.htm"/}
+  <link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/swiper.min.css">
 </head>
 <body>
 <!-- header -->
@@ -14,13 +15,15 @@
             <div class="g-container shebei">
                 <div class="g-left">
                     <div class="wraper">
-                        <img src="img/img21.jpg">
+                        <img src="{dede:field.pic3 function='replaceurl(@me)/}">
                     </div>
                 </div>
                 <div class="g-right">
                     <h2><span class="sr-only">专业齐全
 技术设备</span></h2>
-                    <p>海南红妆美业，致力于为客户创造一个有别于传统美业的高端美容会所环境， 按照国家卫生标准豪华设计，精致兼具优雅，并设有VIP房及多套温馨典雅的房间，让每一位求美人士体验高标准的星级环境，轻松舒适享美。</p>
+                    <p>
+                         {dede:field.description/}
+                </p>
                     <div class="row">
                         <div class="item"><span>专业引导 <br>服务</span>
                         </div>
@@ -29,7 +32,7 @@
                         <div class="item"><span>星级服务<br> 环境</span>
                         </div>
                     </div>
-                    <a class="consult"><span class="sr-only">立即咨询</span></a>
+                    <a class="consult wow" data-wow-iteration="3" data-wow-offset="100"><span class="sr-only">立即咨询</span></a>
                 </div>
             </div>
             <!-- Environmental display -->
@@ -38,69 +41,36 @@
                     <div class="wraper">
                         <h2><span class="sr-only">设备展示</span></h2>
                         <ul>
-                            <li><span>冰点脱毛仪</span></li>
-                            <li><span>水光注射仪</span></li>
-                            <li><span>无创水光仪</span></li>
-                            <li><span>毛孔收缩仪</span></li>
-                            <li><span>无创点阵飞梭系统</span></li>
-                        </ul>
 
+                        </ul>
+                           <ol style="display: none">
+                                 {dede:arclist typeid='7' row='5' flag='c' orderby='id' orderway='desc' infolen='30' channelid='19'}
+                             <li>[field:title/]</li>
+                                 {/dede:arclist}
+                            </ol>
                     </div>
                      <!-- <p class="bigtxt">Bedroom</p> -->
-                     <p class="bigtxt"><img src="./images/bigtxt_bedroom.png"></p>
+                     <p class="bigtxt"><img src="{dede:global.cfg_imgpath/}/bigtxt_bedroom.png"></p>
                 </div>
                 <div class="g-right">
-                    <div class="block">
-                        <div class="slider-wraper">
-                            <ul class="slider-container">
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>冰点脱毛仪</h3>
-                                        <p>功能介绍功能介绍功能介绍 功能介绍功能介绍
-                                        </p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="img/img30.jpg"></div>
-                                </li>
-                                 <li class="slider-item">
-                                    <div class="front">
-                                        <h3>冰点脱毛仪</h3>
-                                        <p>功能介绍功能介绍功能介绍 功能介绍功能介绍
-                                        </p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="img/img30.jpg"></div>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="javascript:void(0)" class="btn prev"></a>
-                        <a href="javascript:void(0)" class="btn next"></a>
-                    </div>
                      <div class="block">
-                        <div class="slider-wraper">
-                            <ul class="slider-container">
-                                <li class="slider-item">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                 {dede:arclist typeid='7' row='5' flag='c' orderby='id' orderway='desc' infolen='30' channelid='19' addfields='pic2,des'}
+                                <div class="swiper-slide">
                                     <div class="front">
-                                        <h3>冰点脱毛仪</h3>
-                                        <p>功能介绍功能介绍功能介绍 功能介绍功能介绍
-                                        </p>
+                                        <h3>[field:title/]</h3>
+                                        <p>[field:des/]</p>
                                     </div>
                                     <div class="back">
-                                        <img src="img/img27.jpg"></div>
-                                </li>
-                                 <li class="slider-item">
-                                    <div class="front">
-                                        <h3>冰点脱毛仪</h3>
-                                        <p>功能介绍功能介绍功能介绍 功能介绍功能介绍
-                                        </p>
+                                         <img src="[field:pic2 function='replaceurl(@me)/]" alt="[field:title/]">
                                     </div>
-                                    <div class="back">
-                                        <img src="img/img27.jpg"></div>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="javascript:void(0)" class="btn prev"></a>
-                        <a href="javascript:void(0)" class="btn next"></a>
+                                </div>
+                                 {/dede:arclist}
+                            </div>
+                            <a href="javascript:void(0)" class="btn prev"></a>
+                            <a href="javascript:void(0)" class="btn next"></a>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -118,5 +88,14 @@
     <!-- footer -->
     {dede:include filename="footer.htm"/}
 </body>
-
+<script type="text/javascript">
+ var wow = new WOW({
+    boxClass: 'wow',
+    animateClass: 'animated',
+    offset: 0,
+    mobile: true,
+    live: true
+});
+wow.init();
+</script>
 </html>

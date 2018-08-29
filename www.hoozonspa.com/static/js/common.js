@@ -611,7 +611,6 @@ function equipShow(){
       for(i=0;i<environmentLen;i++){
            content.push(environmentLi.eq(i).text());
       }
-      console.log(content);
       var swiper = new Swiper('.environmentaldisplay .swiper-container', {
       slidesPerView: 1,
       spaceBetween: 30,
@@ -621,12 +620,12 @@ function equipShow(){
         clickable: true,
         renderBullet: function (index, className) {
              return '<li class="'+className+'"><span>'+ content[index] + '</span></li>';
-        },
+        }
+      },
       navigation: {
         nextEl: '.environmentaldisplay .swiper-container .next',
         prevEl: '.environmentaldisplay .swiper-container .prev',
       }
-    }
    });
 }
 $(function() {

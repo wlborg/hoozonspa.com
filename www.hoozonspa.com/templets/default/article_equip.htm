@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  {dede:include filename="_link.htm"/}
+  {dede:include filename="_link.htm"/}2
 </head>
 <body>
 <!-- header -->
@@ -14,13 +14,16 @@
             <div class="g-container shebei">
                 <div class="g-left">
                     <div class="wraper">
-                        <img src="img/img21.jpg">
+                        <img src="{dede:field.pic3 function='replaceurl(@me)/}">
                     </div>
                 </div>
                 <div class="g-right">
                     <h2><span class="sr-only">专业齐全
 技术设备</span></h2>
-                    <p>海南红妆美业，致力于为客户创造一个有别于传统美业的高端美容会所环境， 按照国家卫生标准豪华设计，精致兼具优雅，并设有VIP房及多套温馨典雅的房间，让每一位求美人士体验高标准的星级环境，轻松舒适享美。</p>
+                    <p>
+                         {dede:field.description/}
+                   <!--  海南红妆美业，致力于为客户创造一个有别于传统美业的高端美容会所环境， 按照国家卫生标准豪华设计，精致兼具优雅，并设有VIP房及多套温馨典雅的房间，让每一位求美人士体验高标准的星级环境，轻松舒适享美。 -->
+                </p>
                     <div class="row">
                         <div class="item"><span>专业引导 <br>服务</span>
                         </div>

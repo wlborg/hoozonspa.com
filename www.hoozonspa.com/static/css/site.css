@@ -3434,6 +3434,10 @@ body {
     width: 3.3em;
     height: 3.3em;
 }
+.environmental .g-right img {
+    width: 3.3em;
+    height: 3.3em;
+}
 /***************************environmentalImgs*****************************/
 .environmentalImgs {
     position: absolute;

@@ -479,22 +479,27 @@
                             <div class="special">
                                 <h3>海口</h3>
                                 <ul>
-                                    <li data-id="1"><span>海府1分院</span></li>
-                                    <li data-id="2"><span>国贸2分院</span></li>
+                                      {dede:arclist typeid='11' row='8' orderby='id' orderway='desc' titlelen="120" infolen='30'  channelid='19' limit='0,8'}
+                                    <li data-id="1"><span>[field:title/]</span></li>
+                                    {/dede:arclist}
+                                   <!--  <li data-id="2"><span>国贸2分院</span></li>
                                     <li data-id="3"><span>耀江3分院</span></li>
                                     <li data-id="4"><span>国瑞5分院</span></li>
                                     <li data-id="5"><span>丽晶6分院</span></li>
                                     <li data-id="6"><span>京江7分院</span></li>
                                     <li data-id="7"><span>亚豪8分院</span></li>
-                                    <li data-id="8"><span>海五9分院</span></li>
+                                    <li data-id="8"><span>海五9分院</span></li> -->
                                 </ul>
                                 <ul>
-                                    <li data-id="9"><span>世贸10分院</span></li>
+                                      {dede:arclist typeid='11' row='7' orderby='id' orderway='desc' titlelen="120" infolen='30'  channelid='19' }
+                                    <li data-id="1"><span>[field:title/]</span></li>
+                                    {/dede:arclist}
+                                    <!-- <li data-id="9"><span>世贸10分院</span></li>
                                     <li data-id="10"><span>龙昆南13分院</span></li>
                                     <li data-id="11"><span>红街15分院</span></li>
                                     <li data-id="12"><span>万花坊18分院</span></li>
                                     <li data-id="13"><span>安信19分院</span></li>
-                                    <li data-id="14"><span>塞维阳光20分院</span></li>
+                                    <li data-id="14"><span>塞维阳光20分院</span></li> -->
                                 </ul>
                             </div>
                             <div>
@@ -525,7 +530,7 @@
                     <div class="item item1">
                       <!--   <div class="row"> -->
                           <!--   {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic4' channelid='17' limit='3,1'} -->
-                          {dede:arclist typeid='11' row='1' flag='c' orderby='id' orderway='desc' infolen='30' addfields='b_pic1,b_pic2,b_pic3,b_pic4,b_pic5,b_pic6' channelid='19' idlist="1"}
+                          {dede:arclist typeid='11' row='7' orderby='id' orderway='desc' titlelen="120" infolen='30'  channelid='19' limit='0,1' addfields='b_pic1,b_pic2,b_pic3,b_pic4,b_pic5,b_pic6'}
                             <img src="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]">
                             <img src="[field:b_pic2 function='replaceurl(@me)/]" alt="[field:title/]">
                             <img src="[field:b_pic3 function='replaceurl(@me)/]" alt="[field:title/]">

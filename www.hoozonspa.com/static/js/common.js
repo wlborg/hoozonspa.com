@@ -603,6 +603,32 @@ function setpNull(obj){
     }
 }
 }
+// 设备详情页的设备展示模块
+function equipShow(){
+      var environmentLi=$(".environmentaldisplay .g-left ol li");
+      var environmentLen=$(".environmentaldisplay .g-left ol li").length;
+       var content=[];
+      for(i=0;i<environmentLen;i++){
+           content.push(environmentLi.eq(i).text());
+      }
+      console.log(content);
+      var swiper = new Swiper('.environmentaldisplay .swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.environmentaldisplay ul',
+        clickable: true,
+        renderBullet: function (index, className) {
+             return '<li class="'+className+'"><span>'+ content[index] + '</span></li>';
+      },
+      navigation: {
+        nextEl: '.next',
+        prevEl: '.prev',
+      }
+    }
+   });
+}
 $(function() {
     topbanner();
     lightNav();
@@ -610,4 +636,6 @@ $(function() {
     setTimeout(initSlider, 2000);
     nav();
     setpNull(".process ul li");
+    // 设备详情页的设备展示模块
+    equipShow();
 });

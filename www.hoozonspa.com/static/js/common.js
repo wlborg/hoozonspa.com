@@ -223,6 +223,22 @@ function tabs(tabIndex, tab) {
 
     });
 }
+// 鼠标经过切换
+function tabsHov(tabIndex, tab) {
+    tabIndex.hover(function(e) {
+        var index = $(this).index();
+        if (tab && tab.find('li')) {
+            tab.find('li').removeClass('active');
+        }
+        $(this).addClass('active').siblings().removeClass('active');
+        if (tab) {
+
+            tab.eq(index).addClass('active').siblings().removeClass('active');
+
+        }
+
+    });
+}
 function initSlider() {
     // Hot project
     var sliders1 = $(".hotproject .project-block");
@@ -403,21 +419,21 @@ function initSlider() {
     });
 
     // Environmental display
-    var sliders5 = $(".environmentaldisplay .block");
-    var sliders5arr = [];
-    for (var i5 = 0, len5 = sliders5.length; i5 < len5; i5++) {
-        sliders5arr[i5] = new XZSlide({
-            cover: sliders5.eq(i5).find(".slider-wraper"),
-            container: sliders5.eq(i5).find(".slider-container"),
-            speed: 300,
-            auto: true,
-            resp: true,
-            itemselector: '.slider-item',
-            nextBtn: sliders5.eq(i5).find(".next"),
-            prevBtn: sliders5.eq(i5).find(".prev")
-        });
-    }
-    tabs($('.environmentaldisplay ul').find('li'), $('.environmentaldisplay .block'));
+    // var sliders5 = $(".environmentaldisplay .block");
+    // var sliders5arr = [];
+    // for (var i5 = 0, len5 = sliders5.length; i5 < len5; i5++) {
+    //     sliders5arr[i5] = new XZSlide({
+    //         cover: sliders5.eq(i5).find(".slider-wraper"),
+    //         container: sliders5.eq(i5).find(".slider-container"),
+    //         speed: 300,
+    //         auto: true,
+    //         resp: true,
+    //         itemselector: '.slider-item',
+    //         nextBtn: sliders5.eq(i5).find(".next"),
+    //         prevBtn: sliders5.eq(i5).find(".prev")
+    //     });
+    // }
+    // tabs($('.environmentaldisplay ul').find('li'), $('.environmentaldisplay .block'));
 
     // developmenthistory
     var widthLen = window.fontreset * 34.2;
@@ -467,10 +483,13 @@ function initSlider() {
         }
     }
     projectPageCustom();
-    tabs($('#beautyspa').find('li'), $('#beautyspa ul'));
-    tabs($('#optoelectronic').find('li'), $('#optoelectronic ul'));
-    tabs($('#embroidery').find('li'), $('#embroidery ul'));
-
+    // 面部护理
+    tabsHov($('#beautyspa').find('li'), $('#beautyspa ul'));
+    // tabs($('#beautyspa').find('li'), $('#beautyspa ul'));
+    tabsHov($('#optoelectronic').find('li'), $('#optoelectronic ul'));
+    // tabs($('#optoelectronic').find('li'), $('#optoelectronic ul'));
+    tabsHov($('#embroidery').find('li'), $('#embroidery ul'));
+    // tabs($('#embroidery').find('li'), $('#embroidery ul'));
 }
 function lightNav() {
     var url = window.location.href;
@@ -584,6 +603,31 @@ function setpNull(obj){
     }
 }
 }
+// 设备详情页的设备展示模块
+function equipShow(){
+      var environmentLi=$(".environmentaldisplay .g-left ol li");
+      var environmentLen=$(".environmentaldisplay .g-left ol li").length;
+       var content=[];
+      for(i=0;i<environmentLen;i++){
+           content.push(environmentLi.eq(i).text());
+      }
+      var swiper = new Swiper('.environmentaldisplay .swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.environmentaldisplay ul',
+        clickable: true,
+        renderBullet: function (index, className) {
+             return '<li class="'+className+'"><span>'+ content[index] + '</span></li>';
+        }
+      },
+      navigation: {
+        nextEl: '.environmentaldisplay .swiper-container .next',
+        prevEl: '.environmentaldisplay .swiper-container .prev',
+      }
+   });
+}
 $(function() {
     topbanner();
     lightNav();
@@ -591,4 +635,6 @@ $(function() {
     setTimeout(initSlider, 2000);
     nav();
     setpNull(".process ul li");
+    // 设备详情页的设备展示模块
+    equipShow();
 });

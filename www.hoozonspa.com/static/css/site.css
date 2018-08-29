@@ -483,6 +483,12 @@ body {
 .presscenter .g-left ul li a:hover {
     color: #9855ae;
 }
+.question .g-left ul li a:hover {
+    color: #9855ae;
+}
+.question .g-right ul li a:hover {
+    color: #9855ae;
+}
 .presscenter .g-left ul li a span {
     float: right;
 }
@@ -1564,6 +1570,7 @@ body {
 .brandproject .row .item img {
     display: block;
     width: 100%;
+    height: 100%;
 }
 .brandproject .row .item:first-child {
     margin-left: 0;
@@ -2123,6 +2130,8 @@ body {
     left: 0;
 
     margin: auto;
+
+    background-color: rgba(92, 55, 58, .6);
 }
 .optoelectronic .g-left .block .front h4 {
     margin-top: 5em;
@@ -2793,6 +2802,10 @@ body {
     color: #885e5a;
     border: solid 1px #885e5a;
 }
+.article .box .prev a,
+.article .box .next a {
+    color: #885e5a;
+}
 .article .box .prev {
     top: 90px;
     left: 0;
@@ -2802,6 +2815,9 @@ body {
     top: 90px;
     right: 0;
     /*float: right;*/
+}
+.article .box .next:hover {
+    cursor: pointer;
 }
 .article .box ul {
     width: 600px;
@@ -3418,6 +3434,10 @@ body {
     width: 3.3em;
     height: 3.3em;
 }
+.environmental .g-right img {
+    width: 3.3em;
+    height: 3.3em;
+}
 /***************************environmentalImgs*****************************/
 .environmentalImgs {
     position: absolute;
@@ -3971,7 +3991,9 @@ body {
     margin-top: .6em;
 }
 .environmentaldisplay .g-left li {
+    display: block!important;
     width: 11em;
+    height: 44px!important;
 
     font-size: .22em;
     font-style: normal;
@@ -3983,8 +4005,11 @@ body {
     text-align: right;
     letter-spacing: 0;
 
+    opacity: 1;
     color: #fff;
     border-radius: 22px;
+    outline: medium;
+    background: none!important;
 }
 .environmentaldisplay .g-left li span {
     display: inline-block;
@@ -4056,6 +4081,7 @@ body {
     top: 0;
     bottom: 0;
     left: -1px;
+    z-index: 2;
 
     background: url("//pc.hoozonspa.com/static/images/bg_prev.png") left center no-repeat;
     background-size: 100%;
@@ -4064,6 +4090,7 @@ body {
     top: 0;
     right: 0;
     bottom: 0;
+    z-index: 2;
 
     background: url("//pc.hoozonspa.com/static/images/bg_next.png") right center no-repeat;
     background-size: 100%;
@@ -4557,9 +4584,102 @@ body {
     float: right;
 }
 .beautyspa .g-left .block .front a:hover {
-    color: #9855ae;
-    border: solid 1px #9855ae;
+    color: #fff;
+    background: #9855ae;
+}
+.optoelectronic .g-left .block .front a:hover {
+    color: #fff;
+    background: #9855ae;
+}
+.embroidery .g-left .block .front a:hover {
+    color: #fff;
+    background: #9855ae;
 }
 .zixun span:hover {
     cursor: pointer;
+}
+.newsproject .item:hover {
+    cursor: pointer;
+}
+/* 设备详情页设备展示样式 */
+.environmentaldisplay .g-right .swiper-container {
+    width: 11em;
+    height: 9.4em;
+}
+.environmentaldisplay .swiper-wrapper {
+    height: 9.4em;
+}
+.environmentaldisplay .g-right .swiper-slide {
+    position: relative;
+
+    float: left;
+    width: 11em;
+    height: 9.4em;
+}
+.environmentaldisplay .g-right .swiper-slide .front {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 8.11em;
+    height: 2.1em;
+    margin: auto;
+
+    font-size: 1em;
+
+    background-color: rgba(92, 55, 58, .6);
+}
+.environmentaldisplay .g-right .swiper-slide .front h3 {
+    margin-top: 2em;
+
+    font-size: .3em;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+
+    text-align: center;
+    letter-spacing: 0;
+
+    color: #fff;
+}
+.environmentaldisplay .g-right .swiper-slide .front .line {
+    width: 65px;
+    height: 1px;
+    margin: .4em auto;
+
+    background-color: #fff;
+}
+.environmentaldisplay .g-right .swiper-slide .front p {
+    width: 14em;
+    margin: 0 auto;
+    margin-top: 2em;
+
+    font-size: .2em;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+
+    text-align: center;
+    letter-spacing: 0;
+
+    color: #fff;
+}
+.environmentaldisplay .g-right .swiper-slide .back {
+    width: 100%;
+    height: 9.4em;
+} .swiper-pagination-bullet-active {
+
+    background: #fff;
+}
+.environmentaldisplay  .g-right .swiper-slide .back img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.environmentaldisplay .swiper-pagination-bullet-active span {
+    background: #dfad9d!important;
 }

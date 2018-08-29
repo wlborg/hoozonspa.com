@@ -621,10 +621,10 @@ function equipShow(){
         clickable: true,
         renderBullet: function (index, className) {
              return '<li class="'+className+'"><span>'+ content[index] + '</span></li>';
-      },
+        },
       navigation: {
-        nextEl: '.next',
-        prevEl: '.prev',
+        nextEl: '.environmentaldisplay .swiper-container .next',
+        prevEl: '.environmentaldisplay .swiper-container .prev',
       }
     }
    });

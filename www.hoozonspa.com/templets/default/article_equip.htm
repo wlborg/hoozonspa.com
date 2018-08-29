@@ -33,7 +33,7 @@
                         <div class="item"><span>星级服务<br> 环境</span>
                         </div>
                     </div>
-                    <a class="consult"><span class="sr-only">立即咨询</span></a>
+                    <a class="consult wow" data-wow-iteration="3" data-wow-offset="100"><span class="sr-only">立即咨询</span></a>
                 </div>
             </div>
             <!-- Environmental display -->
@@ -61,7 +61,7 @@
                      <div class="block">
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
-                                 {dede:arclist typeid='7' row='5' flag='c' orderby='id' orderway='desc' infolen='30' channelid='19' addfields='pic2'}
+                                 {dede:arclist typeid='7' row='5' flag='c' orderby='id' orderway='desc' infolen='30' channelid='19' addfields='pic2' addfields='des' }
                                 <div class="swiper-slide">
                                     <div class="front">
                                         <h3>[field:title/]</h3>
@@ -74,8 +74,8 @@
                                 </div>
                                  {/dede:arclist}
                             </div>
-                        <a href="javascript:void(0)" class="btn prev"></a>
-                        <a href="javascript:void(0)" class="btn next"></a>
+                            <a href="javascript:void(0)" class="btn prev"></a>
+                            <a href="javascript:void(0)" class="btn next"></a>
                     </div>
                     </div>
                 </div>
@@ -94,5 +94,7 @@
     <!-- footer -->
     {dede:include filename="footer.htm"/}
 </body>
-
+<script type="text/javascript">
+    new WOW().init();
+</script>
 </html>

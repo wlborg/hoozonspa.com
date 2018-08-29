@@ -41,71 +41,40 @@
                     <div class="wraper">
                         <h2><span class="sr-only">设备展示</span></h2>
                         <ul>
-                            {dede:arclist typeid='7' row='5' flag='c' orderby='id' orderway='desc' infolen='30' channelid='19'}
-                            <li><span>[field:title/]</span></li>
-                           <!--  <li><span>水光注射仪</span></li>
+                            <!-- <li><span></span></li> -->
+                            <!--  <li><span>水光注射仪</span></li>
                             <li><span>无创水光仪</span></li>
                             <li><span>毛孔收缩仪</span></li>
                             <li><span>无创点阵飞梭系统</span></li> -->
-                      {/dede:arclist}
                         </ul>
-
+                           <ol style="display: none">
+                                 {dede:arclist typeid='7' row='5' flag='c' orderby='id' orderway='desc' infolen='30' channelid='19'}
+                             <li>[field:title/]</li>
+                                 {/dede:arclist}
+                            </ol>
                     </div>
                      <!-- <p class="bigtxt">Bedroom</p> -->
                      <p class="bigtxt"><img src="./images/bigtxt_bedroom.png"></p>
                 </div>
                 <div class="g-right">
-                    <div class="block">
-                        <div class="slider-wraper">
-                            <ul class="slider-container">
-                                <li class="slider-item">
+                     <div class="block">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                 {dede:arclist typeid='7' row='5' flag='c' orderby='id' orderway='desc' infolen='30' channelid='19'}
+                                <div class="swiper-slide">
                                     <div class="front">
-                                        <h3>冰点脱毛仪</h3>
-                                        <p>功能介绍功能介绍功能介绍 功能介绍功能介绍
+                                        <h3>[field:title/]</h3>
+                                        <p>[field:des/]
                                         </p>
                                     </div>
                                     <div class="back">
-                                        <img src="img/img30.jpg"></div>
-                                </li>
-                                 <li class="slider-item">
-                                    <div class="front">
-                                        <h3>冰点脱毛仪</h3>
-                                        <p>功能介绍功能介绍功能介绍 功能介绍功能介绍
-                                        </p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="img/img30.jpg"></div>
-                                </li>
-                            </ul>
-                        </div>
+                                        <img src="img/img27.jpg"></div>
+                                </div>
+                                 {/dede:arclist}
+                            </div>
                         <a href="javascript:void(0)" class="btn prev"></a>
                         <a href="javascript:void(0)" class="btn next"></a>
                     </div>
-                     <div class="block">
-                        <div class="slider-wraper">
-                            <ul class="slider-container">
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>冰点脱毛仪</h3>
-                                        <p>功能介绍功能介绍功能介绍 功能介绍功能介绍
-                                        </p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="img/img27.jpg"></div>
-                                </li>
-                                 <li class="slider-item">
-                                    <div class="front">
-                                        <h3>冰点脱毛仪</h3>
-                                        <p>功能介绍功能介绍功能介绍 功能介绍功能介绍
-                                        </p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="img/img27.jpg"></div>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="javascript:void(0)" class="btn prev"></a>
-                        <a href="javascript:void(0)" class="btn next"></a>
                     </div>
                 </div>
             </div>

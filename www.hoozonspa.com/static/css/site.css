@@ -3991,7 +3991,9 @@ body {
     margin-top: .6em;
 }
 .environmentaldisplay .g-left li {
+    display: block!important;
     width: 11em;
+    height: 44px!important;
 
     font-size: .22em;
     font-style: normal;
@@ -4003,8 +4005,10 @@ body {
     text-align: right;
     letter-spacing: 0;
 
+    opacity: 1;
     color: #fff;
     border-radius: 22px;
+    background: none!important;
 }
 .environmentaldisplay .g-left li span {
     display: inline-block;

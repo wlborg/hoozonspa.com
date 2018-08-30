@@ -348,12 +348,13 @@ function initSlider() {
      // 环境分院点击
     $('.environmental .g-left li').click(function(e) {
         $('.environmental .g-left li.active').removeClass('active');
-        var index = $(this).data('id');
+       var index=$(".environmental .g-left").find("li").index($(this))
+        // var index = $(this).data('id');
         $(this).addClass('active');
         $('.environmental .item.active').removeClass('active');
-        $('.environmental .item' + index).addClass('active');
+        $('.environmental .item').eq(index).addClass('active');
         $('.environmentalImgs .block.active').removeClass('active');
-        $('.environmentalImgs .block' + index).addClass('active');
+        $('.environmentalImgs .block').eq(index).addClass('active');
     });
 
     var sliders3 = $(".environmentalImgs .block");

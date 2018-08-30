@@ -479,41 +479,37 @@
                             <div class="special">
                                 <h3>海口</h3>
                                 <ul>
-                                    <li data-id="1"><span>海府1分院</span></li>
-                                    <li data-id="2"><span>国贸2分院</span></li>
-                                    <li data-id="3"><span>耀江3分院</span></li>
-                                    <li data-id="4"><span>国瑞5分院</span></li>
-                                    <li data-id="5"><span>丽晶6分院</span></li>
-                                    <li data-id="6"><span>京江7分院</span></li>
-                                    <li data-id="7"><span>亚豪8分院</span></li>
-                                    <li data-id="8"><span>海五9分院</span></li>
+ {dede:arclist typeid='11' row="8" flag='c' orderby='id' orderway='desc' infolen='30'  channelid='17' limit='0,8'}
+                                    <li><span>[field:title/]</span></li>
+   {/dede:arclist}
+
                                 </ul>
                                 <ul>
-                                    <li data-id="9"><span>世贸10分院</span></li>
-                                    <li data-id="10"><span>龙昆南13分院</span></li>
-                                    <li data-id="11"><span>红街15分院</span></li>
-                                    <li data-id="12"><span>万花坊18分院</span></li>
-                                    <li data-id="13"><span>安信19分院</span></li>
-                                    <li data-id="14"><span>塞维阳光20分院</span></li>
+                                     {dede:arclist typeid='11' row="8" flag='c' orderby='id' orderway='desc' infolen='30'  channelid='17' limit='8,8'}
+                                    <li><span>[field:title/]</span></li>
+                                     {/dede:arclist}
                                 </ul>
                             </div>
                             <div>
                                 <h3>三亚</h3>
                                 <ul>
-                                    <li data-id="15"><span>临春河16分院</span></li>
-                                    <li data-id="16"><span>新风街17分院</span></li>
-                                    <li data-id="17"><span>香榭23分院</span></li>
+                                    {dede:arclist typeid='12' row="8" flag='c' orderby='id' orderway='desc' infolen='30'  channelid='17' limit='0,8'}
+                                    <li><span>[field:title/]</span></li>
+                                     {/dede:arclist}
                                 </ul>
                             </div>
                             <div>
                                 <h3>儋州</h3>
                                 <ul>
-                                    <li data-id="18"><span>那大12分院</span></li>
-                                    <li data-id="19"><span>那大12分院</span></li>
+                                      {dede:arclist typeid='13' row="8" flag='c' orderby='id' orderway='desc' infolen='30'  channelid='17' limit='0,8'}
+                                    <li><span>[field:title/]</span></li>
+                                     {/dede:arclist}
                                 </ul>
                                 <h3>琼海</h3>
                                 <ul>
-                                    <li data-id="20"><span>金海路11分院</span></li>
+                                    {dede:arclist typeid='119' row="8" flag='c' orderby='id' orderway='desc' infolen='30'  channelid='17' limit='0,8'}
+                                    <li><span>[field:title/]</span></li>
+                                     {/dede:arclist}
                                 </ul>
                             </div>
                         </div>
@@ -522,19 +518,16 @@
                     <p class="bigtxt"><img src="{dede:global.cfg_imgpath/}/bigtxt_skincare.png"></p>
                 </div>
                 <div class="g-right">
-                    <div class="item item1">
-                      <!--   <div class="row"> -->
-                          <!--   {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic4' channelid='17' limit='3,1'} -->
-                          {dede:arclist typeid='11' row='1' flag='c' orderby='id' orderway='desc' infolen='30' addfields='b_pic1,b_pic2,b_pic3,b_pic4,b_pic5,b_pic6' channelid='17' idlist="1"}
+                     {dede:arclist typeid='11'  flag='c' orderby='id' orderway='desc' infolen='30' addfields='b_pic1,b_pic2,b_pic3,b_pic4,b_pic5,b_pic6' channelid='17'}
+                    <div class="item">
                             <img src="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]">
                             <img src="[field:b_pic2 function='replaceurl(@me)/]" alt="[field:title/]">
                             <img src="[field:b_pic3 function='replaceurl(@me)/]" alt="[field:title/]">
                             <img src="[field:b_pic4 function='replaceurl(@me)/]" alt="[field:title/]">
                             <img src="[field:b_pic5 function='replaceurl(@me)/]" alt="[field:title/]">
                             <img src="[field:b_pic6 function='replaceurl(@me)/]" alt="[field:title/]">
-                             {/dede:arclist}
-                        <!-- </div> -->
                     </div>
+                      {/dede:arclist}
                     <div class="item item2">
                         <!-- <div class="row"> -->
                             <img src="//pc.hoozonspa.com/static/img/img19.jpg">
@@ -832,11 +825,11 @@
 </div>
       <!-- footer -->
     {dede:include filename="footer.htm"/}
-    <script>
+   <!--  <script>
         $(function(){
 
             console.log($(this).index());
         })
-    </script>
+    </script> -->
 </body>
 </html>

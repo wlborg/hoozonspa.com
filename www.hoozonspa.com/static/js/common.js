@@ -374,7 +374,7 @@ function initSlider() {
     // 环境详情页点击小图
     $('.environmental .item').click(function() {
         var index=$(this).index();
-        $('.fullscreen').hide();
+        // $('.fullscreen').hide();
         $('.fullscreen').eq(index).addClass('show');
         $('.header ').removeClass('fixed');
         $('.fullscreen .close').click(function() {

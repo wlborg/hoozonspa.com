@@ -134,6 +134,12 @@ body {
 .question .g-right .box h3 a {
     color: #6e3c32;
 }
+.question .g-right .box h3 a:hover {
+    color: #9855ae;
+}
+.question .g-right .box p a:hover {
+    color: #9855ae;
+}
 .question .g-right .box p {
     height: 60px;
     padding-top: 30px;

@@ -345,6 +345,7 @@ function initSlider() {
     //Environmental Science
     //
     // tabs($('.environmental .g-left').find('li'), $('.environmental .item'));
+    //
      // 环境分院点击
     $('.environmental .g-left li').click(function(e) {
         $('.environmental .g-left li.active').removeClass('active');
@@ -370,17 +371,17 @@ function initSlider() {
             indicator: sliders3.eq(i3).find(".slider-indicator"),
         });
     }
+    // 环境详情页点击小图
     $('.environmental .item').click(function() {
-        $('.fullscreen').addClass('show');
-
+        var index=$(this).index();
+        $('.fullscreen').hide();
+        $('.fullscreen').eq(index).addClass('show');
         $('.header ').removeClass('fixed');
         $('.fullscreen .close').click(function() {
-
             $('.header ').addClass('fixed');
             $('.fullscreen').removeClass('show');
         })
     });
-
     //casesImgs
     $('.cases .g-left li').click(function(e) {
         $('.cases .g-left li.active').removeClass('active');
@@ -627,6 +628,22 @@ function equipShow(){
       }
    });
 }
+// 设备详情页的设备展示模块
+function chainBShow(){
+      var swiper = new Swiper('.environmentalImgs .swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+}
 $(function() {
     topbanner();
     lightNav();
@@ -636,4 +653,6 @@ $(function() {
     setpNull(".process ul li");
     // 设备详情页的设备展示模块
     equipShow();
+    //环境详情页大图切换效果
+    chainBShow();
 });

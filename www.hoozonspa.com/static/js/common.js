@@ -352,10 +352,8 @@ function initSlider() {
         $(this).addClass('active');
         $('.environmental .item.active').removeClass('active');
         $('.environmental .item' + index).addClass('active');
-
         $('.environmentalImgs .block.active').removeClass('active');
         $('.environmentalImgs .block' + index).addClass('active');
-
     });
 
     var sliders3 = $(".environmentalImgs .block");

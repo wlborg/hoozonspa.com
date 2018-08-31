@@ -388,7 +388,7 @@ function initSlider() {
         $('.fullscreen .close').click(function() {
             $('.header ').addClass('fixed');
             $('.fullscreen').removeClass('show');
-
+            showBody();
         })
     });
     //casesImgs

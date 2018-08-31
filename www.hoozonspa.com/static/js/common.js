@@ -348,6 +348,7 @@ function initSlider() {
     //
      // 环境分院点击
     $('.environmental .g-left li').eq(0).addClass('active');
+     $('.environmental .item').eq(0).addClass('active');
     $('.environmental .g-left li').click(function(e) {
         $('.environmental .g-left li.active').removeClass('active');
        var index=$(".environmental .g-left").find("li").index($(this))
@@ -357,8 +358,14 @@ function initSlider() {
         $('.environmental .item').eq(index).addClass('active');
         $('.environmentalImgs .block.active').removeClass('active');
         $('.environmentalImgs .block').eq(index).addClass('active');
+        hiddBody();
     });
-
+            function hiddBody(){
+              $("body").css("overflow-y","hidden")
+            }
+             function showBody(){
+              $("body").css("overflow-y","visible")
+            }
     var sliders3 = $(".environmentalImgs .block");
     var sliders3arr = [];
     for (var i3 = 0, len3 = sliders3.length; i3 < len3; i3++) {
@@ -381,6 +388,7 @@ function initSlider() {
         $('.fullscreen .close').click(function() {
             $('.header ').addClass('fixed');
             $('.fullscreen').removeClass('show');
+
         })
     });
     //casesImgs
@@ -416,6 +424,7 @@ function initSlider() {
 
             $('.fullscreen').removeClass('show');
             $('.header ').addClass('fixed');
+            showBody();
         })
     });
 

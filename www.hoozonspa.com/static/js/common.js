@@ -347,6 +347,7 @@ function initSlider() {
     // tabs($('.environmental .g-left').find('li'), $('.environmental .item'));
     //
      // 环境分院点击
+    $('.environmental .g-left li').eq(0).addClass('active');
     $('.environmental .g-left li').click(function(e) {
         $('.environmental .g-left li.active').removeClass('active');
        var index=$(".environmental .g-left").find("li").index($(this))
@@ -645,6 +646,17 @@ function chainBShow(){
     });
 }
 $(function() {
+    // 包含快商通链接
+     var tool={
+         // 快商通链接跳转
+                   kst:function(){
+                        $(".j-consult").bind("click",function(){
+                            var href="https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110"
+                            window.open(href,"_blank");
+                        })
+                    }
+                }
+    tool.kst();
     topbanner();
     lightNav();
     fixnav();

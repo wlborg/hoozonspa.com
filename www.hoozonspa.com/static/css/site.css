@@ -3428,10 +3428,13 @@ body {
     top: 0;
     left: 0;
 
+    display: none;
     margin-top: 1.2em;
 }
 .environmental .g-right .item.active {
     z-index: 2;
+
+    display: block;
 }
 .environmental .g-right .item:hover {
     cursor: pointer;
@@ -3598,6 +3601,9 @@ body {
 
     background: url("//pc.hoozonspa.com/static/images/bg_consult.png") center center no-repeat;
     background-size: 100%;
+}
+.environmentalImgs .des .consult:hover {
+    cursor: pointer;
 }
 .environmentalImgs .close {
     position: absolute;

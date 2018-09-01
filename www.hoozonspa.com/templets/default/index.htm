@@ -361,7 +361,7 @@
                                                                   [field:doctor/]</span>
                                     </div>
                                 </div>
-                                  <a class="consult" href="https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110" target="_blank"></a>
+                                  <a class="j-consult" href="https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110" target="_blank"></a>
                             </div>
                         </li>
                     </div>
@@ -383,7 +383,9 @@
         <p>从美学的角度建设卓异的服务<br> 红妆美业持续不断投放资源及引入美容仪器，<br> 达致稳定夯实的发展，务求有效帮助客人变美 <br>，成就美丽蜕变。
         </p>
         <div class="line"></div>
-        <a class="more" href="/equip">查看更多</a>
+         {dede:arclist typeid='7' row='1' flag='c' orderby='id' orderway='desc' infolen='30'  channelid='19'}
+        <a class="more" href="[field:arcurl /]">查看更多</a>
+         {/dede:arclist}
         <!-- <p class="bigtxt">equipment</p> -->
         <p class="bigtxt"><img src="{dede:global.cfg_imgpath/}/bigtxt_equipment.png"></p>
     </div>
@@ -424,7 +426,9 @@
         <div class="slider-wraper">
             <ul>
                  {dede:arclist typeid='6' row='3' flag='c' orderby='id' orderway='desc' infolen='30' addfields='b_pic1' channelid='17' }
-                <li class="slider-item"><img src="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]"></li>
+                 <a href="/shop">
+                  <li class="slider-item"><img src="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]"></li>
+                 </a>
                  {/dede:arclist}
             </ul>
         </div>

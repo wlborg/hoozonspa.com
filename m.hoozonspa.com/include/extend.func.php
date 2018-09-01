@@ -34,6 +34,6 @@ return $newurl;
 
 function replacebodyurl($body)
 {
-    $body=preg_replace('/\"\/uploads\//g', '"https://pc.hoozonspa.com/uploads/', $body);
+    $body=preg_replace('/\/uploads\//g', 'https://pc.hoozonspa.com/uploads/', $body);
     return  $body;
 }

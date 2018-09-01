@@ -345,19 +345,27 @@ function initSlider() {
     //Environmental Science
     //
     // tabs($('.environmental .g-left').find('li'), $('.environmental .item'));
+    //
      // 环境分院点击
+    $('.environmental .g-left li').eq(0).addClass('active');
+     $('.environmental .item').eq(0).addClass('active');
     $('.environmental .g-left li').click(function(e) {
         $('.environmental .g-left li.active').removeClass('active');
-        var index = $(this).data('id');
+       var index=$(".environmental .g-left").find("li").index($(this))
+        // var index = $(this).data('id');
         $(this).addClass('active');
         $('.environmental .item.active').removeClass('active');
-        $('.environmental .item' + index).addClass('active');
-
+        $('.environmental .item').eq(index).addClass('active');
         $('.environmentalImgs .block.active').removeClass('active');
-        $('.environmentalImgs .block' + index).addClass('active');
-
+        $('.environmentalImgs .block').eq(index).addClass('active');
+        hiddBody();
     });
-
+            function hiddBody(){
+              $("body").css("overflow-y","hidden")
+            }
+             function showBody(){
+              $("body").css("overflow-y","visible")
+            }
     var sliders3 = $(".environmentalImgs .block");
     var sliders3arr = [];
     for (var i3 = 0, len3 = sliders3.length; i3 < len3; i3++) {
@@ -371,17 +379,18 @@ function initSlider() {
             indicator: sliders3.eq(i3).find(".slider-indicator"),
         });
     }
+    // 环境详情页点击小图
     $('.environmental .item').click(function() {
-        $('.fullscreen').addClass('show');
-
+        var index=$(this).index();
+        // $('.fullscreen').hide();
+        $('.fullscreen').eq(index).addClass('show');
         $('.header ').removeClass('fixed');
         $('.fullscreen .close').click(function() {
-
             $('.header ').addClass('fixed');
             $('.fullscreen').removeClass('show');
+            showBody();
         })
     });
-
     //casesImgs
     $('.cases .g-left li').click(function(e) {
         $('.cases .g-left li.active').removeClass('active');
@@ -415,6 +424,7 @@ function initSlider() {
 
             $('.fullscreen').removeClass('show');
             $('.header ').addClass('fixed');
+            showBody();
         })
     });
 
@@ -628,7 +638,34 @@ function equipShow(){
       }
    });
 }
+// 设备详情页的设备展示模块
+function chainBShow(){
+      var swiper = new Swiper('.environmentalImgs .swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+}
 $(function() {
+    // 包含快商通链接
+     var tool={
+         // 快商通链接跳转
+                   kst:function(){
+                        $(".j-consult").bind("click",function(){
+                            var href="https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110"
+                            window.open(href,"_blank");
+                        })
+                    }
+                }
+    tool.kst();
     topbanner();
     lightNav();
     fixnav();
@@ -637,4 +674,6 @@ $(function() {
     setpNull(".process ul li");
     // 设备详情页的设备展示模块
     equipShow();
+    //环境详情页大图切换效果
+    chainBShow();
 });

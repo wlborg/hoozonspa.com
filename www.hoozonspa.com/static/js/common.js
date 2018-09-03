@@ -385,6 +385,7 @@ function initSlider() {
         // $('.fullscreen').hide();
         $('.fullscreen').eq(index).addClass('show');
         $('.header ').removeClass('fixed');
+        hiddBody();
         $('.fullscreen .close').click(function() {
             $('.header ').addClass('fixed');
             $('.fullscreen').removeClass('show');

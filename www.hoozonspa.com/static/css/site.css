@@ -910,11 +910,13 @@ body {
     position: relative;
 
     float: right;
+    width: 62%;
     /*width: 14em;*/
     height: 9.38em;
 }
 .classicCase .g-right .slider-wraper {
-    width: 11em;
+    width: 100%;
+    /* width: 11em; */
     height: 7.06em;
     margin-top: 1.1em;
     overflow: hidden;
@@ -1148,7 +1150,8 @@ body {
     position: relative;
 
     float: right;
-    width: 14em;
+    width: 76%;
+    /* width: 14em; */
     height: 9.4em;
     overflow: hidden;
 }
@@ -1156,9 +1159,11 @@ body {
     position: absolute;
     top: 0;
     right: 0;
+
+    width: 100%;
 }
 .hotproject .g-right .project-block .slider-wraper {
-    width: 14em;
+    width: 100%;
     height: 9.4em;
 }
 .hotproject .g-right .project-block .slider-wraper .slider-item {
@@ -1422,7 +1427,7 @@ body {
     background-size: 100%;
 }
 .redup .g-left p {
-    width: 18em;
+    width: 90%;
     margin-top: 3.5em;
 
     font-size: .2em;
@@ -1634,7 +1639,7 @@ body {
     background-size: 100%;
 }
 .cultureconcert .g-left p {
-    width: 25em;
+    width: 90%;
     padding-top: .5em;
 
     font-size: .24em;
@@ -2892,13 +2897,24 @@ body {
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
-.newsproject .row .item {
+.newsproject .row a:first-child {
+    margin-left: 0;
+}
+.newsproject .row a {
     position: relative;
 
     float: left;
     width: 31%;
     height: 350px;
     margin-left: 40px;
+    overflow: hidden;
+}
+.newsproject .row .item {
+    position: relative;
+
+    float: left;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 .newsproject .row .item .front {
@@ -3607,7 +3623,7 @@ body {
 }
 .environmentalImgs .close {
     position: absolute;
-    top: .1em;
+    top: .5em;
     right: 2.4em;
     z-index: 3;
 
@@ -4597,6 +4613,7 @@ body {
 }
 .beautyspa .g-left .block .front a:hover {
     color: #fff;
+    border: none;
     background: #9855ae;
 }
 .optoelectronic .g-left .block .front a:hover {
@@ -4694,4 +4711,60 @@ body {
 }
 .environmentaldisplay .swiper-pagination-bullet-active span {
     background: #dfad9d!important;
+}
+/* 品牌页的荣誉证书模块样式 */
+.swiper-container_award {
+    width: 15.8em;
+    height: 5.9em;
+    margin: .66em auto 0;
+    overflow: hidden;
+}
+.swiper-container_award .swiper-slide {
+    height: 2.88em;
+    margin-bottom: .16em;
+}
+.swiper-container_award .swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+.award .swiper-pagination {
+    position: absolute;
+    right: 0;
+    bottom: .4em;
+    left: 0;
+
+    width: 4em;
+    margin: auto;
+
+    line-height: .12em;
+
+    text-align: center;
+}
+.award .swiper-pagination span {
+    display: inline-block;
+    width: .12em;
+    height: .12em;
+    margin: 0 .3em;
+
+    line-height: .12em;
+
+    border-radius: 100%;
+    outline: medium;
+    background: #ebc7c3;
+}
+.swiper-pagination-bullet-active {
+    background: #fff!important;
+}
+.award .swiper-pagination span.active,
+.award .swiper-pagination span:hover {
+    cursor: pointer!important;
+
+    outline: medium;
+    background: #fff!important;
+}
+.swiper-pagination-bullet {
+    opacity: 1;
+}
+.swiper-container_award .swiper-wrapper {
+    width: 100%!important;
 }

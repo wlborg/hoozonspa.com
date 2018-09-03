@@ -344,7 +344,8 @@
     background: #fff;
 }
 .brandcenter .g-left p {
-    width: 20em;
+    width: 73%;
+    /* width: 20em; */
 }
 .hotproject .g-right .prev {
     top: 0;

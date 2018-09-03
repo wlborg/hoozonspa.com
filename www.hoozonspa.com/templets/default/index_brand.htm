@@ -135,45 +135,23 @@
     <div class="g-container award">
       <div class="wraper">
         <h2><span class="sr-only"></span></h2>
-        <div class="slider-wraper">
-             <ul class="slider-container">
-                 <li class="slider-item">
-                    <div class="row">
-                       <img src="//pc.hoozonspa.com/static/img/img15.jpg" alt="">
-                       <img src="//pc.hoozonspa.com/static/img/img15.jpg" alt="">
-                       <img src="//pc.hoozonspa.com/static/img/img15.jpg" alt="">
-                       <img src="//pc.hoozonspa.com/static/img/img15.jpg" alt="">
-                    </div>
-                    <div class="row">
-                       <img src="//pc.hoozonspa.com/static/img/img15.jpg" alt="">
-                       <img src="//pc.hoozonspa.com/static/img/img15.jpg" alt="">
-                       <img src="//pc.hoozonspa.com/static/img/img15.jpg" alt="">
-                       <img src="//pc.hoozonspa.com/static/img/img15.jpg" alt="">
-                    </div>
-                 </li>
-                 <li class="slider-item">
-                    <div class="row">
-                       <img src="//pc.hoozonspa.com/static/img/img15.jpg" alt="">
-                       <img src="//pc.hoozonspa.com/static/img/img15.jpg" alt="">
-                       <img src="//pc.hoozonspa.com/static/img/img15.jpg" alt="">
-                       <img src="//pc.hoozonspa.com/static/img/img15.jpg" alt="">
-                    </div>
-                    <div class="row">
-                       <img src="//pc.hoozonspa.com/static/img/img15.jpg" alt="">
-                       <img src="//pc.hoozonspa.com/static/img/img15.jpg" alt="">
-                       <img src="//pc.hoozonspa.com/static/img/img15.jpg" alt="">
-                       <img src="//pc.hoozonspa.com/static/img/img15.jpg" alt="">
-                    </div>
-                 </li>
-             </ul>
-
+        <div class="swiper-container_award">
+            <div class="swiper-wrapper">
+   {dede:arclist typeid='2'  flag='c' orderby='id' orderway='desc' infolen='30' addfields='b_honor' channelid='1'}
+                  <div class="swiper-slide">
+                         <img src="[field:b_honor function='replaceurl(@me)/]" alt="[field:title/]" />
+                   </div>
+    {/dede:arclist}
+            </div>
         </div>
-        <ol class="slider-indicator">
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+       <!--  <ol class="slider-indicator">
           <li class="active">&nbsp;</li>
           <li>&nbsp;</li>
           <li>&nbsp;</li>
           <li>&nbsp;</li>
-        </ol>
+        </ol> -->
       </div>
     </div>
     <!-- Public benefit activities -->

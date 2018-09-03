@@ -348,7 +348,7 @@ function initSlider() {
     //
      // 环境分院点击
     $('.environmental .g-left li').eq(0).addClass('active');
-     $('.environmental .item').eq(0).addClass('active');
+    $('.environmental .item').eq(0).addClass('active');
     $('.environmental .g-left li').click(function(e) {
         $('.environmental .g-left li.active').removeClass('active');
        var index=$(".environmental .g-left").find("li").index($(this))
@@ -654,13 +654,28 @@ function chainBShow(){
       },
     });
 }
+function award(){
+      //荣誉证书模块轮播图
+      var swiperMy = new Swiper('.swiper-container_award', {
+                               slidesPerView: 4,
+                               slidesPerColumn: 2,
+                               slidesPerGroup : 4,
+                               spaceBetween:0,
+                               swiperloop: true,
+                               autoplay:true,
+                               pagination: {
+                                el: '.swiper-pagination',
+                                clickable: true,
+                              },
+    });
+}
 $(function() {
     // 包含快商通链接
-     var tool={
+    var tool={
          // 快商通链接跳转
                    kst:function(){
                         $(".j-consult").bind("click",function(){
-                            var href="https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110"
+                            var href="https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110";
                             window.open(href,"_blank");
                         })
                     }
@@ -676,4 +691,6 @@ $(function() {
     equipShow();
     //环境详情页大图切换效果
     chainBShow();
+    // 品牌页面荣誉证书
+    award();
 });

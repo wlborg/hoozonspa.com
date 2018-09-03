@@ -7,14 +7,19 @@
 <title>{dede:field.title/}_{dede:field.typename/}_{dede:global.cfg_webname/}</title>
  {dede:field.ztmeta/}
  <meta property="article:published_time" content="{dede:field.pubdate function=" MyDate( 'Y-m-d',@me) "/}T{dede:field.pubdate function="MyDate( 'H:i:s',@me) "/}+08:00" />
+ <style>
+     .header{
+background-color: rgba(92, 55, 58, .4);
+     }
+ </style>
 </head>
 <body>
 <!-- header -->
 {dede:include filename="nav.htm"/}
 <!-- banner -->
-<div class="g-container top-banner">
+<!-- <div class="g-container top-banner">
        {dede:myad name='topbanner_pc'/}
-</div>
+</div> -->
 {dede:field.body/}
 <!-- footer -->
  {dede:include filename="footer.htm"/}

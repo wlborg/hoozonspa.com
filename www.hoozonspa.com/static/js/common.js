@@ -358,7 +358,7 @@ function initSlider() {
         $('.environmental .item').eq(index).addClass('active');
         $('.environmentalImgs .block.active').removeClass('active');
         $('.environmentalImgs .block').eq(index).addClass('active');
-        hiddBody();
+        // hiddBody();
     });
             function hiddBody(){
               $("body").css("overflow-y","hidden")

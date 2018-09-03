@@ -21,6 +21,12 @@ body {
     background: url("//pc.hoozonspa.com/static/images/bg_question.jpg") center center no-repeat;
     /*background-size: 100% 100%;*/
 }
+a {
+    cursor: pointer;
+}
+.zixun a:hover {
+    opacity: .8;
+}
 .question .g-doc {
     width: 1200px;
     height: 938px;
@@ -4767,4 +4773,118 @@ body {
 }
 .swiper-container_award .swiper-wrapper {
     width: 100%!important;
+}
+/* 项目列表页的美妆护肤列表 */
+
+.swiper-container_beautyskin {
+    width: 100%;
+    height: 7em;
+    margin: .8em auto 0;
+    overflow: hidden;
+}
+.swiper-container_beautyskin .swiper-slide {
+    margin-bottom: .2em;
+}
+.swiper-container_beautyskin .swiper-slide,
+.swiper-container_beautyskin .item {
+    position: relative;
+
+    display: block;
+    float: left;
+    width: 3.3em;
+    height: 3.3em;
+    /*margin-left: .3em;*/
+}
+.swiper-container_beautyskin .item .front {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    visibility: hidden;
+    margin: auto;
+
+    background-color: rgba(92, 55, 58, .4);
+}
+.swiper-container_beautyskin .item .front h3 {
+    margin-top: 2em;
+
+    font-size: .24em;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1em;
+
+    text-align: center;
+    letter-spacing: 0;
+
+    color: #fff;
+}
+.swiper-container_beautyskin .item .front p {
+    padding: 0 1em;
+    margin-top: 1.8em;
+
+    font-size: .18em;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1.8em;
+
+    text-align: justify;
+    letter-spacing: .2px;
+
+    color: #eeeded;
+}
+.swiper-container_beautyskin .item .back {
+    width: 3.3em;
+    height: 3.3em;
+}
+.swiper-container_beautyskin .item .back img {
+    display: block;
+    width: 100%;
+}
+.swiper-container_beautyskin .item:first-child {
+    margin-left: 0;
+}
+.swiper-container_beautyskin .item:hover .front {
+    visibility: visible;
+}
+.swiper-container_beautyskin .item:hover {
+    cursor: pointer;
+}
+.beautyskin .swiper-pagination {
+    position: absolute;
+    right: 0;
+    bottom: .8em;
+    left: 0;
+
+    width: 4em;
+    margin: auto;
+
+    line-height: .12em;
+
+    text-align: center;
+}
+.beautyskin .swiper-pagination .swiper-pagination-bullet {
+    display: inline-block;
+    width: .12em;
+    height: .12em;
+    margin: 0 .12em;
+
+    line-height: .12em;
+
+    border-radius: 100%;
+    outline: mediumaquamarine;
+    background: #ebc7c3;
+}
+.beautyskin .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #fff!important;
+}
+.beautyskin .swiper-pagination .swiper-pagination-bullet.active,
+.beautyskin .swiper-pagination .swiper-pagination-bullet:hover {
+    cursor: pointer;
+
+    background: #fff;
 }

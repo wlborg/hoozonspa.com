@@ -670,6 +670,21 @@ function award(){
                               },
     });
 }
+function beautyskin(){
+      //美妆护肤模块轮播图
+      var swiperMy = new Swiper('.swiper-container_beautyskin', {
+                               slidesPerView: 4,
+                               slidesPerColumn: 2,
+                               slidesPerGroup : 4,
+                               spaceBetween:0,
+                               swiperloop: true,
+                               autoplay:true,
+                               pagination: {
+                                el: '.swiper-pagination',
+                                clickable: true,
+                              },
+      });
+}
 $(function() {
     // 包含快商通链接
     var tool={
@@ -694,4 +709,6 @@ $(function() {
     chainBShow();
     // 品牌页面荣誉证书
     award();
+    // 美妆护肤
+     beautyskin();
 });

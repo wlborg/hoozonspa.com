@@ -647,6 +647,10 @@ function chainBShow(){
               slideToFrom(obj,index,environmentalLen);
          })
     }
+      // 开始暂停循环
+        function autoStop(obj){
+           obj.autoplay.stop();
+        }
      function slideToFrom(caseSix,index_Sw,environmentalLen) {
                 for(var i=0;i<environmentalLen;i++){
                      caseSix[i].slideTo(index_Sw);

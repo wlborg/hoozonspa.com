@@ -641,15 +641,17 @@ function chainBShow(){
 }
  function autoObj(obj){
          $('.environmental .item img').bind("click",function(){
-             autoStop(obj);
+             var environmentalLen=$(".environmental li").length;
+             autoStop(obj,environmentalLen);
              var index=$(this).index();
-              var environmentalLen=$(".environmental li").length;
               slideToFrom(obj,index,environmentalLen);
          })
     }
       // 开始暂停循环
-        function autoStop(obj){
-           obj.autoplay.stop();
+        function autoStop(obj,environmentalLen){
+               for(var i=0;i<environmentalLen;i++){
+                    obj[0].autoplay.stop();
+           }
         }
      function slideToFrom(caseSix,index_Sw,environmentalLen) {
                 for(var i=0;i<environmentalLen;i++){

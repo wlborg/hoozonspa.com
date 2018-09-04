@@ -650,7 +650,7 @@ function chainBShow(){
       // 开始暂停循环
         function autoStop(obj,environmentalLen){
                for(var i=0;i<environmentalLen;i++){
-                    obj[i].autoplay.stop();
+                    obj[0].autoplay.stop();
            }
         }
      function slideToFrom(caseSix,index_Sw,environmentalLen) {

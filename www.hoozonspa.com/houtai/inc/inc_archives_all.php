@@ -8,7 +8,7 @@
  * @license        http://help.dedecms.com/usersguide/license.html
  * @link           http://www.dedecms.com
  */
- 
+
 /**
  * 获得一个附加表单
  *
@@ -393,6 +393,11 @@ function GetFormItemValue($ctag, $fvalue)
         $innertext = "<input type='text' name='$fieldname' value='$fvalue' id='$fieldname' style='width:300'><input name='".$fieldname."_bt' type='button' value='浏览...' onClick=\"SelectImage('form1.$fieldname','big')\">\r\n";
         $formitem = str_replace("~name~",$ctag->GetAtt('itemname'),$formitem);
         $formitem = str_replace("~form~",$innertext,$formitem);
+        //       //增加自定义图片预览功能
+        // $formitem = $formitem."<td>
+        //     <img src='$fvalue' width='150' height='100'>
+        //     </td>";
+        // //增加自定义图片预览功能
         return $formitem;
     }
     else if($ctag->GetAtt("type")=="media")

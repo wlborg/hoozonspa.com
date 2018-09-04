@@ -392,6 +392,7 @@ function initSlider() {
             showBody();
         })
     });
+
     //casesImgs
     $('.cases .g-left li').click(function(e) {
         $('.cases .g-left li.active').removeClass('active');
@@ -636,7 +637,26 @@ function chainBShow(){
         prevEl: '.swiper-button-prev',
       },
     });
+    autoObj(swiper);
 }
+ function autoObj(obj){
+         $('.environmental .item img').bind("click",function(){
+             autoStop(obj);
+             var index=$(this).index();
+              var environmentalLen=$(".environmental li").length;
+              slideToFrom(obj,index,environmentalLen);
+         })
+    }
+      // 开始暂停循环
+        function autoStop(obj){
+           obj.autoplay.stop();
+        }
+     function slideToFrom(caseSix,index_Sw,environmentalLen) {
+                for(var i=0;i<environmentalLen;i++){
+                     caseSix[i].slideTo(index_Sw);
+                }
+      }
+
 function award(){
       //荣誉证书模块轮播图
       var swiperMy = new Swiper('.swiper-container_award', {

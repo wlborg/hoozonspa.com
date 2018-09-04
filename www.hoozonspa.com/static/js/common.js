@@ -643,8 +643,8 @@ function chainBShow(){
          $('.environmental .item img').bind("click",function(){
              var environmentalLen=$(".environmental_full").length;
              autoStop(obj,environmentalLen);
-             var index=$(this).index();
-              slideToFrom(obj,index,environmentalLen);
+             var index=parseInt($(this).index())+1;
+             slideToFrom(obj,index,environmentalLen);
          })
     }
       // 开始暂停循环

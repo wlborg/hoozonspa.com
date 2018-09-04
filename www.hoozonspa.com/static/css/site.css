@@ -4888,3 +4888,12 @@ a {
 
     background: #fff;
 }
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 225px!important;
+}
+.swiper-pagination-bullet {
+    opacity: 1!important;
+    background: #fff!important;
+}

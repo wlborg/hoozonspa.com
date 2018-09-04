@@ -641,7 +641,7 @@ function chainBShow(){
 }
  function autoObj(obj){
          $('.environmental .item img').bind("click",function(){
-             var environmentalLen=$(".environmental li").length;
+             var environmentalLen=$(".environmental_full").length;
              autoStop(obj,environmentalLen);
              var index=$(this).index();
               slideToFrom(obj,index,environmentalLen);

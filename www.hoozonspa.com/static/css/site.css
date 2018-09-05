@@ -3844,8 +3844,8 @@ a {
 }
 .casesImgs .close {
     position: absolute;
-    top: .1em;
-    right: 2.4em;
+    top: .48em;
+    right: 3.4em;
     z-index: 3;
 
     width: .39em;

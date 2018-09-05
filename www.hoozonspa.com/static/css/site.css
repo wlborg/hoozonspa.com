@@ -4895,5 +4895,5 @@ a {
 }
 .swiper-pagination-bullet {
     opacity: 1!important;
-    background: #fff!important;
+    /* background: #fff!important; */
 }

@@ -1,0 +1,446 @@
+@charset "utf-8";.sr-only,
+img {
+    border: 0;
+}.m4 .g-doc .content,
+
+.sr-only {
+    overflow: hidden;
+}a,
+
+body {
+    color: #000;
+}body,
+
+dd,
+dl,
+dt,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+input,
+label,
+li,
+p,
+textarea,
+ul {
+    padding: 0;
+    margin: 0;
+}form {
+
+    display: inline;
+}td {
+
+    word-break: break-all;
+}dd,
+
+dl,
+dt,
+li,
+ul {
+    list-style: none;
+}a {
+
+    text-decoration: none;
+}a:hover {
+
+    color: #428bca;
+}body {
+
+    font: "微软雅黑","Microsoft Yahei",Verdana,Arial,sans-serif;
+
+    background: #e4f4fd;
+}.img-respon {
+
+    display: block;
+    width: 100%;
+    height: auto;
+}.fr {
+
+    float: right;
+}.fl {
+
+    float: left;
+}.sr-only {
+
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    clip: rect(0,0,0,0);
+}.container {
+
+    text-align: center;
+}.container .g-doc {
+
+    width: 1200px;
+    padding: 1px 0;
+    margin: 0 auto;
+}.container .g-doc p {
+
+    text-align: justify;
+}.container .title {
+
+    position: relative;
+
+    padding-bottom: 10px;
+}.container .title h2 {
+
+    margin-top: 45px;
+}.container .title p {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    font-size: 18px;
+
+    text-align: center;
+
+    color: #4d4d4d;
+}.container .content {
+
+    margin-top: 50px;
+}.container .content p {
+
+    font-size: 22px;
+    line-height: 34px;
+
+    color: #666;
+}.container .content .textIndent {
+
+    text-indent: 2em;
+}.container .content .des {
+
+    padding: 0 77px;
+}.container .consult {
+
+    margin-top: 80px;
+    margin-bottom: 100px;
+}.container .consult a {
+
+    display: inline-block;
+    width: 220px;
+    height: 50px;
+
+    font-size: 26px;
+    line-height: 50px;
+
+    color: #3677af;
+    border: 1px solid #3677af;
+    border-radius: 8px;
+}.container .consult a span {
+
+    display: inline-block;
+    width: 27px;
+    height: 50px;
+
+    vertical-align: top;
+
+    background: url(//pc.hoozonspa.com/static/zt/img/bg_consult.png) center center no-repeat;
+}.container .consult a:hover {
+
+    transform: scale(.9,.9);
+}.m2 .title h2,
+
+.m4 .title h2 {
+    margin-top: 100px;
+}.banner {
+
+    height: 700px;
+    min-width: 1200px;
+
+    background: url(//pc.hoozonspa.com/static/zt/img/banner.jpg) center center no-repeat #cef;
+}.m0 .g-doc .content {
+
+    padding: 100px 136px 100px 446px;
+    margin-top: 0;
+
+    background: url(//pc.hoozonspa.com/static/zt/img/logo.jpg) 140px 136px no-repeat;
+}.m0 .g-doc .content p {
+
+    font-size: 20px;
+}.m0 .g-doc .content p span {
+
+    color: #3677af;
+}.m1 .g-doc {
+
+    height: 746px;
+
+    background: url(//pc.hoozonspa.com/static/zt/img/bg1.jpg) center center no-repeat;
+}.m1 .g-doc .title h2 {
+
+    height: 98px;
+
+    background: url(//pc.hoozonspa.com/static/zt/img/bgt1.jpg) center center no-repeat;
+}.m1 .g-doc .content {
+
+    text-align: left;
+}.m1 .g-doc .content div {
+
+    display: inline-block;
+    width: 236px;
+    height: 54px;
+    padding-top: 296px;
+    margin-left: 70px;
+}.m1 .g-doc .content div:first-child {
+
+    margin-left: 20px;
+}.m1 .g-doc .content p {
+
+    font-size: 18px;
+    line-height: 24px;
+
+    text-align: center;
+
+    color: #fff;
+}.m2 .g-doc .title h2 {
+
+    height: 98px;
+
+    background: url(//pc.hoozonspa.com/static/zt/img/bgt2.jpg) center center no-repeat;
+}.m2 .g-doc .content div {
+
+    padding-top: 270px;
+    margin-bottom: 40px;
+    margin-left: 52px;
+}.m2 .g-doc .content div:first-child {
+
+    margin-left: 0;
+}.m2 .g-doc .content p {
+
+    padding: 0 28px;
+
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #404040;
+}.m2 .g-doc .consult {
+
+    margin-top: 0;
+    margin-bottom: 95px;
+}.m3 .g-doc {
+
+    height: 1031px;
+
+    background: url(//pc.hoozonspa.com/static/zt/img/bg3.jpg) center center no-repeat;
+}.m3 .g-doc .title h2 {
+
+    height: 98px;
+
+    background: url(//pc.hoozonspa.com/static/zt/img/bgt3.jpg) center center no-repeat;
+}.m3-2 .g-doc .consult {
+
+    margin-top: 50px;
+}.m4 .g-doc .title h2 {
+
+    height: 99px;
+    margin-top: 0;
+
+    background: url(//pc.hoozonspa.com/static/zt/img/bgt4.jpg) center center no-repeat;
+}.m4 .g-doc .content div {
+
+    float: left;
+    height: 340px;
+    padding-top: 80px;
+    margin-left: 10px;
+}.m4 .g-doc .content div:first-child {
+
+    margin-left: 0;
+}.m4 .g-doc .content h3 {
+
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 60px;
+
+    color: #333;
+}.m4 .g-doc .content p {
+
+    height: 232px;
+    padding: 24px 12px;
+
+    font-size: 18px;
+    line-height: 28px;
+
+    color: #4d4d4d;
+    background: #d0edfd;
+}.m4 .g-doc .consult {
+
+    margin-top: 50px;
+}.m5 .g-doc {
+
+    height: 786px;
+
+    background: url(//pc.hoozonspa.com/static/zt/img/bg5.jpg) center center no-repeat;
+}.m5 .g-doc .title h2 {
+
+    height: 98px;
+
+    background: url(//pc.hoozonspa.com/static/zt/img/bgt5.jpg) center center no-repeat;
+}.m5 .g-doc .content {
+
+    position: relative;
+}.m5 .g-doc .content p {
+
+    position: absolute;
+
+    width: 125px;
+
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #fff;
+}.m5 .g-doc .content .black {
+
+    color: #404040;
+}.m5 .g-doc .content .step1 {
+
+    top: 80px;
+    left: 130px;
+}.m5 .g-doc .content .step2 {
+
+    top: 310px;
+    left: 204px;
+}.m5 .g-doc .content .step3 {
+
+    top: 336px;
+    left: 450px;
+}.m5 .g-doc .content .step4 {
+
+    top: 324px;
+    left: 714px;
+}.m5 .g-doc .content .step5 {
+
+    top: 294px;
+    left: 984px;
+}.m5 .g-doc .content .step6 {
+
+    top: 50px;
+    left: 845px;
+}.m5 .g-doc .content .step7 {
+
+    top: 46px;
+    left: 588px;
+}.m5 .g-doc .content .step8 {
+
+    top: 170px;
+    left: 360px;
+}.m5 .g-doc .consult {
+
+    margin-top: 520px;
+}.m6 .g-doc .title h2 {
+
+    height: 98px;
+    margin-top: 100px;
+
+    background: url(//pc.hoozonspa.com/static/zt/img/bgt6.jpg) center center no-repeat;
+}.m6 .g-doc .content div {
+
+    display: inline-block;
+    width: 205px;
+    height: 185px;
+    padding: 80px 0 0 20px;
+    margin-left: 10px;
+
+    font-size: 34px;
+
+    text-align: left;
+
+    background: url(//pc.hoozonspa.com/static/zt/img/bg6_1.jpg) center center no-repeat;
+}.m6 .g-doc .content div a {
+
+    color: #6facdf;
+}.m6 .g-doc .content div:first-child {
+
+    margin-left: 0;
+}.m6 .g-doc .content .bg6 {
+
+    background: url(//pc.hoozonspa.com/static/zt/img/bg6_2.jpg) center center no-repeat;
+}.m6 .g-doc .content .bg6 a {
+
+    color: #ea81ae;
+}.m7 .g-doc {
+
+    height: 607px;
+
+    background: url(//pc.hoozonspa.com/static/zt/img/bg7_N.jpg) center center no-repeat;
+}.m7 .g-doc .title h2 {
+
+    height: 98px;
+
+    background: url(//pc.hoozonspa.com/static/zt/img/bgt7_N.jpg) center center no-repeat;
+}.bg2,
+
+.bg4 {
+    overflow: hidden;
+
+    background-repeat: no-repeat;
+}.m7 .g-doc .consult {
+
+    margin-top: 340px;
+}.bg2 {
+
+    display: inline-block;
+
+    background-image: url(//pc.hoozonspa.com/static/zt/img/bg2.jpg);
+}.bg2_1 {
+
+    width: 360px;
+    height: 70px;
+
+    background-position: -2px -2px;
+}.bg2_2 {
+
+    width: 359px;
+    height: 70px;
+
+    background-position: -364px -2px;
+}.bg2_3 {
+
+    width: 361px;
+    height: 70px;
+
+    background-position: -725px -2px;
+}.bg2_4,
+
+.bg2_5 {
+    width: 358px;
+    height: 70px;
+}.bg2_4 {
+
+    background-position: -1088px -2px;
+}.bg2_5 {
+
+    background-position: -1448px -2px;
+}.bg4 {
+
+    background-image: url(//pc.hoozonspa.com/static/zt/img/bg4.jpg);
+}.bg4_1 {
+
+    width: 291px;
+
+    background-position: -2px -2px;
+}.bg4_2 {
+
+    width: 293px;
+
+    background-position: -295px -2px;
+}.bg4_3 {
+
+    width: 291px;
+
+    background-position: -590px -2px;
+}.bg4_4 {
+
+    width: 290px;
+
+    background-position: -883px -2px;
+}

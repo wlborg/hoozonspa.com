@@ -348,7 +348,7 @@ function initSlider() {
     //
      // 环境分院点击
     $('.environmental .g-left li').eq(0).addClass('active');
-     $('.environmental .item').eq(0).addClass('active');
+    $('.environmental .item').eq(0).addClass('active');
     $('.environmental .g-left li').click(function(e) {
         $('.environmental .g-left li.active').removeClass('active');
        var index=$(".environmental .g-left").find("li").index($(this))
@@ -358,7 +358,7 @@ function initSlider() {
         $('.environmental .item').eq(index).addClass('active');
         $('.environmentalImgs .block.active').removeClass('active');
         $('.environmentalImgs .block').eq(index).addClass('active');
-        hiddBody();
+        // hiddBody();
     });
             function hiddBody(){
               $("body").css("overflow-y","hidden")
@@ -385,12 +385,14 @@ function initSlider() {
         // $('.fullscreen').hide();
         $('.fullscreen').eq(index).addClass('show');
         $('.header ').removeClass('fixed');
+        hiddBody();
         $('.fullscreen .close').click(function() {
             $('.header ').addClass('fixed');
             $('.fullscreen').removeClass('show');
             showBody();
         })
     });
+
     //casesImgs
     $('.cases .g-left li').click(function(e) {
         $('.cases .g-left li.active').removeClass('active');
@@ -427,24 +429,6 @@ function initSlider() {
             showBody();
         })
     });
-
-    // Environmental display
-    // var sliders5 = $(".environmentaldisplay .block");
-    // var sliders5arr = [];
-    // for (var i5 = 0, len5 = sliders5.length; i5 < len5; i5++) {
-    //     sliders5arr[i5] = new XZSlide({
-    //         cover: sliders5.eq(i5).find(".slider-wraper"),
-    //         container: sliders5.eq(i5).find(".slider-container"),
-    //         speed: 300,
-    //         auto: true,
-    //         resp: true,
-    //         itemselector: '.slider-item',
-    //         nextBtn: sliders5.eq(i5).find(".next"),
-    //         prevBtn: sliders5.eq(i5).find(".prev")
-    //     });
-    // }
-    // tabs($('.environmentaldisplay ul').find('li'), $('.environmentaldisplay .block'));
-
     // developmenthistory
     var widthLen = window.fontreset * 34.2;
     var currLen = 0;
@@ -653,14 +637,65 @@ function chainBShow(){
         prevEl: '.swiper-button-prev',
       },
     });
+    autoObj(swiper);
+}
+ function autoObj(obj){
+         $('.environmental .item img').bind("click",function(){
+             var environmentalLen=$(".environmental_full").length;
+             autoStop(obj,environmentalLen);
+             var index=parseInt($(this).index())+1;
+             slideToFrom(obj,index,environmentalLen);
+         })
+    }
+      // 开始暂停循环
+        function autoStop(obj,environmentalLen){
+               for(var i=0;i<environmentalLen;i++){
+                    obj[0].autoplay.stop();
+           }
+        }
+     function slideToFrom(caseSix,index_Sw,environmentalLen) {
+                for(var i=0;i<environmentalLen;i++){
+                     caseSix[i].slideTo(index_Sw);
+                }
+      }
+
+function award(){
+      //荣誉证书模块轮播图
+      var swiperMy = new Swiper('.swiper-container_award', {
+                               slidesPerView: 4,
+                               slidesPerColumn: 2,
+                               slidesPerGroup : 4,
+                               spaceBetween:0,
+                               swiperloop: true,
+                               autoplay:true,
+                               pagination: {
+                                el: '.swiper-pagination',
+                                clickable: true,
+                              },
+    });
+}
+function beautyskin(){
+      //美妆护肤模块轮播图
+      var swiperMy = new Swiper('.swiper-container_beautyskin', {
+                               slidesPerView: 4,
+                               slidesPerColumn: 2,
+                               slidesPerGroup : 4,
+                               spaceBetween:0,
+                               swiperloop: true,
+                               autoplay:true,
+                               pagination: {
+                                el: '.swiper-pagination',
+                                clickable: true,
+                              },
+      });
 }
 $(function() {
     // 包含快商通链接
-     var tool={
+    var tool={
          // 快商通链接跳转
                    kst:function(){
                         $(".j-consult").bind("click",function(){
-                            var href="https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110"
+                            var href="https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110";
                             window.open(href,"_blank");
                         })
                     }
@@ -676,4 +711,8 @@ $(function() {
     equipShow();
     //环境详情页大图切换效果
     chainBShow();
+    // 品牌页面荣誉证书
+    award();
+    // 美妆护肤
+     beautyskin();
 });

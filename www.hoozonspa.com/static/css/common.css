@@ -465,3 +465,6 @@ body {
 .footer2 .g-doc p span:hover {
     color: #9855ae;
 }
+.article_g_container {
+    width: 14.4em;
+}

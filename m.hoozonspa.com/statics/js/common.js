@@ -399,6 +399,7 @@ function brandhistory() {
 
     marqueeTargetFun();
 }
+
 function caseListNavHightlight() {
     if (!$('.casenav')) return;
     var href = window.location.href;
@@ -414,20 +415,48 @@ function caseListNavHightlight() {
         }
     });
 }
-$(function() {
-    topbanner();
 
-    brandhistory();
-    
-    setTimeout(initSlider, 2000);
-    caseListNavHightlight();
-});
-
-
-
-
-$(function() {
+function headerBtnClick() {
     $('#header .btn').click(function() {
         $('#header').toggleClass('open');
     });
-})
+}
+
+function bindConsultHref() {
+    //专题快商通
+    var consultEs = $('.j-consult');
+    //专题内容区快商通链接总数
+    var linkCount = consultEs.length;
+    if (linkCount > 0) {
+        //给每个咨询元素绑定单击事件
+        consultEs.each(function(index) {
+            $(this).on('click', function() {
+                var href = "https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110&ism=1";
+                window.location.href = href;
+            })
+        });
+    } else {
+        console.log('若专题中需要咨询按钮请给元素添加"j-consult"类以激活');
+    }
+}
+
+function addScript(src) {
+    var bldyE = document.getElementsByTagName("body");
+    var scriptE = document.createElement("script");
+    scriptE.setAttribute("type", "text/javascript");
+    scriptE.setAttribute("src", src);
+    if (bldyE.length) {
+        bldyE[0].appendChild(scriptE);
+    } else {
+        document.documentElement.appendChild(scriptE);
+    }
+}
+$(function() {
+    topbanner();
+    brandhistory();
+    setTimeout(initSlider, 2000);
+    caseListNavHightlight();
+    headerBtnClick();
+    bindConsultHref();
+    addScript("https://hztk5.kuaishang.cn/bs/ks.j?cI=868330&fI=65110&ism=1");
+});

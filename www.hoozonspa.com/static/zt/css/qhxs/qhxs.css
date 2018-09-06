@@ -102,6 +102,14 @@ span {
 
     color: #fff;
 }
+.part1,
+.part2,
+.part3,
+.part4,
+.part5,
+.part6 {
+    overflow: hidden;
+}
 .hover-mask .con .title i {
     font-style: inherit;
     font-weight: bold;

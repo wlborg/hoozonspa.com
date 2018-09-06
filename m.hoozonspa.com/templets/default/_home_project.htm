@@ -4,11 +4,14 @@
         <h2><span class="sr-only">家居产品推荐</span></h2>
     </div>
     <div class="content">
-        {dede:arclist typeid='117' orderyb='rand' row='2' titlelen="120" }
-        <div class="item">
+
+        {dede:likearticle row='2' titlelen='120' mytypeid='8' eregtype=tag|keyword}
+
+           <div class="item">
             <a href="[field:arcurl/]" title="[field:title/] "><img src="[field:picname function='replaceurl(@me)/]"></a>
             <p>[field:title/]</p>
-        </div>
-        {/dede:arclist}
+           </div>
+       {/dede:likearticle}
+
     </div>
 </div>

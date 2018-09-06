@@ -1,0 +1,744 @@
+/*banner样式开始*/
+.banner {
+    width: 100%;
+    height: 800px;
+
+    background: url("//pc.hoozonspa.com/static/zt/img/chestcare/banner.jpg") no-repeat top center;
+    /*background-size: cover;*/
+}
+/*banner样式结束*/
+
+/*part1开始*/
+.part1 {
+    position: relative;
+
+    width: 100%;
+    height: 935px;
+
+    background: url("//pc.hoozonspa.com/static/zt/img/chestcare/part1-bg.jpg") no-repeat top center;
+}
+.part1 .part1-zw {
+    position: absolute;
+    top: -15px;
+    right: 0;
+
+    width: 185px;
+    height: 192px;
+}
+.com-sty {
+    text-align: center;
+}
+.title-0 {
+    height: 116px;
+    padding-top: 100px;
+    /*border: 1px solid red;*/
+}
+.title-0 .main-title {
+    color: #885e5a;
+}
+.title .main-title {
+    font-size: 48px;
+    /*line-height: 30px;*/
+}
+.title .main-title span {
+    font-size: 60px;
+}
+.title-0 .main-title span {
+    color: #fff;
+}
+.title-line {
+    position: relative;
+
+    width: 376px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.title-line-0 {
+    border-top: 1px solid #885e5a;
+}
+.title-line .short-line-0 {
+    border-top: 3px solid #885e5a;
+}
+.title-line .short-line {
+    position: absolute;
+    top: -2px;
+    left: 50%;
+
+    width: 90px;
+    margin-left: -45px;
+}
+.second-title {
+    height: 20px;
+
+    font-size: 20px;
+}
+.second-title-0 {
+    color: #885e5a;
+}
+.part1-content {
+    width: 100%;
+    padding-top: 70px;
+    /*padding-bottom: 71px;*/
+}
+.part1-content .item {
+    position: relative;
+
+    float: left;
+    width: 393px;
+    margin-bottom: 11px;
+}
+.part1-content .item:nth-child(3n-1) {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.item .pic-wrap {
+    width: 100%;
+    height: 279px;
+}
+.item .pic-wrap img {
+    width: 100%;
+    height: auto;
+}
+.pic-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 63px;
+
+    line-height: 63px;
+
+    text-align: center;
+
+    background-color: rgba(136, 94, 90, .7);
+}
+.pic-title-only {
+    height: 0;
+}
+.pic-title h2 {
+    font-size: 36px;
+
+    color: #fff;
+}
+.mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    display: none;
+
+    background-color: rgba(136, 94, 90, .7);
+}
+.pic-exp {
+    width: 243px;
+    margin: 0 auto;
+    margin-top: 71px;
+
+    text-align: center;
+
+    color: #fff;
+}
+.pic-exp .title {
+    margin-bottom: 24px;
+
+    font-size: 30px;
+}
+.pic-exp .content {
+    font-size: 22px;
+    line-height: 30px;
+}
+.mask-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+    width: 266px;
+    height: 115px;
+    margin-top: -52px;
+    margin-left: -133px;
+
+    background-color: rgba(136, 94, 90, .7);
+}
+.mask-1 .text {
+    width: 195px;
+    height: 51px;
+    margin: 32px 38px 32px 32px;
+
+    line-height: 51px;
+
+    text-align: center;
+
+    border: solid 1px rgba(255, 255, 255, .63);
+    background-color: rgba(136, 94, 90, .63);
+    box-shadow: 0 0 8px 0
+    rgba(0, 0, 0, .13);
+}
+.mask-1 .text h2 {
+    font-size: 26px;
+}
+.mask-1 .text h2 a {
+    display: block;
+
+    color: #fff;
+}
+/*part1结束*/
+
+/*part2开始*/
+.part2 {
+    position: relative;
+
+    width: 100%;
+    height: 1703px;
+
+    background: url("//pc.hoozonspa.com/static/zt/img/chestcare/part2-bg.jpg") no-repeat top center;
+}
+.title-1 .main-title {
+    color: #dfad9d;
+}
+.title-1 .main-title span {
+    color: #885e5a;
+}
+.second-title-1 {
+    color: #dfad9d;
+}
+.title-line-1 {
+    border-top: 1px solid #dfad9d;
+}
+.short-line-1 {
+    border-top: 3px solid #dfad9d;
+}
+.title-1 {
+    height: 116px;
+    padding-top: 100px;
+}
+.part2-content {
+    padding-top: 199px;
+}
+.content-top,
+.content-bottom {
+    position: relative;
+
+    height: 540px;
+}
+.content-bottom {
+    margin-top: 136px;
+}
+.content-top .left,
+.content-bottom .right {
+    position: absolute;
+    z-index: 1;
+
+    width: 707px;
+}
+.content-top .left {
+    top: 0;
+    left: 0;
+}
+.pic-dec {
+    position: absolute;
+    top: 50%;
+    right: 48px;
+
+    width: 133px;
+
+    line-height: 15px;
+}
+.item .txt,
+.item .circle-b {
+    float: left;
+}
+.pic-dec .item {
+    height: 22px;
+}
+.pic-dec .item:nth-child(2) {
+    margin-top: 19px;
+    margin-bottom: 31px;
+}
+.pic-dec .item:nth-child(2) .txt {
+    margin-left: 64px;
+}
+.item .txt {
+    font-size: 22px;
+
+    color: #885e5a;
+}
+.item .circle-b {
+    width: 16px;
+    height: 16px;
+    margin-left: 7px;
+
+    border-radius: 16px;
+    background-color: #fff;
+}
+.item .circle-m {
+    width: 8px;
+    height: 8px;
+    margin-top: 4px;
+    margin-left: 4px;
+
+    border-radius: 8px;
+    background-color: #885e5a;
+}
+.content-bottom .right {
+    top: 0;
+    right: 0;
+
+    height: 489px;
+    overflow: hidden;
+}
+.content-top .left img,
+.content-bottom .left img {
+    width: 100%;
+    height: 100%;
+}
+.content-top .right,
+.content-bottom .left {
+    position: absolute;
+
+    width: 519px;
+    height: 100%;
+
+    border: solid 1px #f1d3c9;
+}
+.content-top .right {
+    top: 0;
+    right: 0;
+}
+.content-bottom .left {
+    top: 0;
+    left: 0;
+}
+.content-top .right .text,
+.content-bottom .left .text {
+    width: 410px;
+    height: 204px;
+    margin-top: 160px;
+    margin-left: 67px;
+
+    font-size: 24px;
+    line-height: 36px;
+
+    text-align: left;
+    text-align: justify;
+    text-indent: 2em;
+    word-wrap: break-word;
+    word-break: break-all;
+
+    color: #885e5a;
+}
+.content-bottom .left .text {
+    margin-left: 36px;
+}
+.content-top .right .btn-wrap,
+.content-bottom .left .btn-wrap {
+    position: absolute;
+}
+.content-top .right .btn-wrap {
+    right: 42px;
+    bottom: 55px;
+}
+.content-bottom .left .btn-wrap {
+    bottom: 55px;
+    left: 42px;
+}
+.content-top .right .btn-wrap a,
+.content-bottom .left .btn-wrap a {
+    display: block;
+    width: 177px;
+    height: 54px;
+    padding-left: 45px;
+
+    font-size: 26px;
+    line-height: 54px;
+
+    text-align: left;
+
+    color: #885e5a;
+    border: solid 1px #885e5a;
+    background: url("//pc.hoozonspa.com/static/zt/img/chestcare/btn-icon.png") no-repeat 155px 17px;
+    background-size: 27px 27px;
+}
+.content-bottom .left .btn-wrap a {
+    background: url("//pc.hoozonspa.com/static/zt/img/chestcare/hand-btn-1.png") no-repeat 155px 17px;
+}
+.content-top .right .btn-wrap:hover,
+.content-bottom .left .btn-wrap:hover {
+    bottom: 57px;
+
+    background-color: #885e5a;
+}
+.content-top .right .btn-wrap a:hover,
+.content-bottom .left .btn-wrap a:hover {
+    color: #fff;
+    background: url("//pc.hoozonspa.com/static/zt/img/chestcare/btn-icon-1.png") no-repeat 155px 17px;
+    background-size: 27px 27px;
+    box-shadow: 0 0 8px 0
+    rgba(0, 0, 0, .4);
+}
+.content-bottom .left .btn-wrap a:hover {
+    background: url("//pc.hoozonspa.com/static/zt/img/chestcare/hand-btn.png") no-repeat 155px 17px;
+}
+.panel-wrap .panel-1,
+.panel-wrap .panel-2 {
+    position: absolute;
+
+    width: 298px;
+    height: 185px;
+}
+.panel-wrap .panel-1 {
+    top: -109px;
+    right: 275px;
+    z-index: 2;
+
+    background-color: rgba(69, 43, 41, .49);
+}
+.panel-wrap .panel-2 {
+    top: -122px;
+    right: 289px;
+    z-index: 3;
+
+    background-color: #885e5a;
+}
+.panel .panel-content {
+    margin-top: 45px;
+    margin-left: 66px;
+
+    text-align: left;
+}
+.panel .panel-content .title {
+    font-size: 40px;
+
+    color: #fff;
+}
+.panel .panel-content .line {
+    width: 30px;
+    margin-top: 17px;
+    margin-bottom: 18px;
+
+    border-top: 2px solid #fff;
+}
+.panel .panel-content .e-txt {
+    font-size: 16px;
+
+    color: #fff;
+}
+.panel-wrap .con-bot-panel-1 {
+    left: 290px;
+}
+.panel-wrap .con-bot-panel-2 {
+    left: 279px;
+}
+
+/*修饰物样式开始*/
+.modifier-2 {
+    position: absolute;
+    top: 937px;
+    left: -8px;
+
+    width: 152px;
+    height: 183px;
+
+    background: url("//pc.hoozonspa.com/static/zt/img/chestcare/zw-2.png") no-repeat top center;
+    background-size: cover;
+}
+.modifier-3 {
+    position: absolute;
+    top: -30px;
+    right: 0;
+
+    width: 103px;
+    height: 262px;
+
+    background: url("//pc.hoozonspa.com/static/zt/img/chestcare/zw-1.png") no-repeat top center;
+    background-size: cover;
+}
+/*修饰物样式结束*/
+/*part2结束*/
+
+/*part3开始*/
+.part3 {
+    width: 100%;
+    height: 1302px;
+
+    background: url("//pc.hoozonspa.com/static/zt/img/chestcare/part3-bg.jpg") no-repeat top center;
+}
+.title-2 {
+    position: relative;
+    z-index: 2;
+
+    padding-top: 86px;
+}
+.part3-content {
+    position: relative;
+
+    width: 1222px;
+    height: 958px;
+    margin-top: 47px;
+
+    background-color: #885e5a;
+}
+.part3-con-detail {
+    padding-top: 85px;
+
+    text-align: left;
+}
+.part3-con-detail .item-0 {
+    padding-left: 105px;
+}
+.part3-con-detail .item .icon {
+    display: inline-block;
+    width: 32px;
+    height: 36px;
+    margin-right: 18px;
+
+    font-size: 17px;
+    font-style: italic;
+    line-height: 36px;
+
+    text-align: center;
+
+    color: #fff;
+    background: url("//pc.hoozonspa.com/static/zt/img/chestcare/oval.png") no-repeat top center;
+}
+.part3-con-detail .item .text {
+    font-size: 28px;
+    font-weight: bold;
+
+    color: #fff;
+}
+.part3-con-detail .item .text em {
+    font-style: normal;
+    font-weight: normal;
+}
+.part3-con-detail .item .mid-line {
+    position: relative;
+    left: 32px;
+
+    width: 237px;
+    margin-top: -2px;
+    margin-bottom: 12px;
+}
+.part3-con-detail .item .mid-line .line {
+    display: inline-block;
+    width: 237px;
+
+    border-top: 1px solid #dfad9d;
+}
+.part3-con-detail .item .mid-line .line-1 {
+    position: absolute;
+    top: 13px;
+
+    display: inline-block;
+    width: 59px;
+    margin-left: 74px;
+
+    border-top: 3px solid #dfad9d;
+}
+.part3-con-detail .item .bot {
+    margin-left: 51px;
+
+    font-size: 20px;
+
+    color: #dfad9d;
+}
+.part3-con-detail .item-1 {
+    padding-left: 160px;
+    margin-top: 45px;
+}
+.part3-con-detail .item-2 {
+    padding-left: 181px;
+    margin-top: 45px;
+}
+.part3-con-detail .item-3 {
+    padding-left: 198px;
+    margin-top: 45px;
+}
+.part3-con-detail .item-4 {
+    padding-left: 138px;
+    margin-top: 45px;
+}
+.part3-content .btn-wrap,
+.part5 .btn-wrap {
+    position: absolute;
+    bottom: 80px;
+    left: 333px;
+}
+.part3-content .btn-wrap a,
+.part5 .btn-wrap a {
+    display: block;
+    width: 177px;
+    height: 54px;
+    padding-left: 45px;
+
+    font-size: 26px;
+    line-height: 54px;
+
+    text-align: left;
+
+    color: #fff;
+    border: solid 1px #fff;
+    background: url("//pc.hoozonspa.com/static/zt/img/chestcare/hand-btn.png") no-repeat 154px 13px;
+    background-size: 25px 29px;
+}
+.part3-content .btn-wrap:hover,
+.part5 .btn-wrap:hover {
+    bottom: 82px;
+
+    background: #fff;
+}
+.part3-content .btn-wrap a:hover,
+.part5 .btn-wrap a:hover {
+    color: #885e5a;
+    background: url("//pc.hoozonspa.com/static/zt/img/chestcare/hand-btn-1.png") no-repeat 154px 13px;
+}
+.part3 .part3-pic {
+    position: absolute;
+    top: 0;
+    right: -163px;
+
+    width: 715px;
+    height: auto;
+    overflow: hidden;
+}
+.com-sty-1 {
+    position: relative;
+}
+
+/*part3结束*/
+/*part4开始*/
+.title-3 {
+    padding-top: 74px;
+}
+.title-3 .main-title span {
+    color: #885e5a;
+}
+.title-3 .main-title {
+    color: #dfad9d;
+}
+.content-top .left-1 {
+    width: 798px;
+}
+.content-top .right-1 {
+    top: 56px;
+
+    width: 458px;
+    height: 488px;
+}
+.content-top .right-1 .text {
+    width: 339px;
+    height: 240px;
+    margin-top: 64px;
+    margin-left: 85px;
+}
+.content-top .right .btn-wrap-1 {
+    right: 43px;
+    bottom: 66px;
+}
+.content-top .right-1 .btn-wrap a {
+    background: url("//pc.hoozonspa.com/static/zt/img/chestcare/hand-btn-1.png") no-repeat 155px 17px;
+    background-size: 25px 29px;
+}
+.content-top .right-1 .btn-wrap a:hover {
+    background: url("//pc.hoozonspa.com/static/zt/img/chestcare/hand-btn.png") no-repeat 155px 17px;
+    background-size: 25px 29px;
+}
+.content-top .right .btn-wrap-1:hover {
+    bottom: 68px;
+}
+.part4 .content-top {
+    top: 90px;
+
+    margin-bottom: 152px;
+}
+/*part4结束*/
+/*part5开始*/
+.part5 {
+    width: 100%;
+    height: 666px;
+
+    background: url("//pc.hoozonspa.com/static/zt/img/chestcare/part5-bg_02.jpg") no-repeat top center;
+}
+.part5-com {
+    position: relative;
+}
+.part5 .left {
+    position: absolute;
+    top: 130px;
+    left: 33px;
+
+    width: 345px;
+    height: 459px;
+    padding-left: 69px;
+
+    color: #fff;
+    border: solid 1px rgba(255, 255, 255, .47);
+}
+.part5 .title {
+    margin-top: 80px;
+
+    font-size: 40px;
+}
+.part5 .line {
+    width: 40px;
+    margin-top: 18px;
+    margin-bottom: 22px;
+
+    border: 2px solid #fff;
+}
+.part5 .e-txt {
+    font-size: 16px;
+}
+.part5 .btn-wrap {
+    bottom: 147px;
+    left: 68px;
+
+    text-align: center;
+}
+.part5 .btn-wrap:hover {
+    bottom: 149px;
+}
+.part5 .right {
+    position: absolute;
+    top: 100px;
+    right: 33px;
+
+    width: 750px;
+    height: 458px;
+}
+.part5 .right img {
+    width: 100%;
+    height: 100%;
+}
+.swiper-pagination-custom {
+    left: 50%;
+
+    margin-left: -32px;
+}
+.swiper-btn-wrap .btn-item {
+    float: left;
+    width: 14px;
+    height: 14px;
+
+    cursor: pointer;
+
+    border: solid 1px #e2aa96;
+    border-radius: 14px;
+}
+.swiper-btn-wrap .btn-item:nth-child(2) {
+    margin-right: 11px;
+    margin-left: 11px;
+}
+.swiper-btn-wrap .active {
+    width: 37px;
+    height: 14px;
+
+    border-radius: 14px;
+    background-color: #e2aa96;
+}
+/*part5结束*/

@@ -388,6 +388,7 @@ span {
     font-size: 24px;
     line-height: 50px;
 
+    vertical-align: top;
     letter-spacing: 1px;
 
     color: #fff;
@@ -453,7 +454,7 @@ span {
 }
 .part3 .con-2 {
     position: relative;
-    top: 723px;
+    top: 701px;
 
     width: 100%;
 }
@@ -511,7 +512,7 @@ span {
 }
 .part3 .con-3 {
     position: relative;
-    top: 723px;
+    top: 679px;
     left: -1px;
 
     width: 100%;
@@ -572,7 +573,7 @@ span {
 }
 .btn-1 {
     position: absolute;
-    bottom: 140px;
+    bottom: 133px;
     left: 50%;
 
     margin-left: -127px;
@@ -751,6 +752,8 @@ span {
 /*part5开始*/
 .part5 {
     position: relative;
+
+    height: 1200px;
 }
 .part5 .panel {
     position: absolute;
@@ -879,7 +882,7 @@ span {
 /*part6开始*/
 .part6 {
     position: relative;
-    top: 930px;
+    /* top: 930px; */
 }
 .part6 .title-wrap {
     width: 100%;

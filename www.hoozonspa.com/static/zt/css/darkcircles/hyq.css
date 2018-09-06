@@ -577,6 +577,7 @@ img {
 .part2 .content-middle {
     position: relative;
 
+    width: 100%;
     height: 1131px;
     margin-top: 125px;
     overflow: hidden;
@@ -641,6 +642,7 @@ img {
 .content-middle .pic-con .bottom {
     position: relative;
 
+    width: 100%;
     height: 146px;
     overflow: hidden;
 }
@@ -1054,7 +1056,7 @@ img {
 .part3 .left-con .btn {
     width: 2.67rem;
     height: .64rem;
-    margin-top: .7rem;
+    margin-top: 1.7rem;
 
     line-height: .64rem;
 

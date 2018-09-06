@@ -480,7 +480,7 @@ body {
 .row7 .content {
     margin-top: 84px;
 }
-.row1 {
+.container .row1 {
     background: #9ed5d8;
 }
 .row2 {
@@ -539,4 +539,12 @@ body {
 }
 .act_text_title_6N {
     margin-top: 5px;
+}
+.row1 .content img {
+    display: block;
+}
+.banner a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }

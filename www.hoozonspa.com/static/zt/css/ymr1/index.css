@@ -76,7 +76,7 @@ table {
     content: "";
 }
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 
     background-color: #eaf7ff;
 }
@@ -336,6 +336,7 @@ h3 {
 }
 #tags li {
     float: left;
+    width: 100%;
 }
 #tags li a {
     font-size: 35px;

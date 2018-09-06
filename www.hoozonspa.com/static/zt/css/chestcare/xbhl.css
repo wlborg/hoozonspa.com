@@ -808,3 +808,7 @@ li {
     background-color: #e2aa96;
 }
 /*part5结束*/
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}

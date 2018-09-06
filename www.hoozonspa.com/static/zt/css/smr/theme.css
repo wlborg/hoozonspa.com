@@ -190,7 +190,7 @@ ul {
     width: 236px;
     height: 54px;
     padding-top: 296px;
-    margin-left: 70px;
+    margin-left: 47px;
 }.m1 .g-doc .content div:first-child {
 
     margin-left: 20px;
@@ -443,4 +443,7 @@ ul {
     width: 290px;
 
     background-position: -883px -2px;
+}
+.m1 .consult {
+    margin-top: 0!important;
 }

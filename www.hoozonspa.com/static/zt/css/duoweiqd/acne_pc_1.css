@@ -540,3 +540,6 @@ body {
 .act_text_title_6N {
     margin-top: 5px;
 }
+.row1 .content img {
+    display: block;
+}

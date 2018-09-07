@@ -658,3 +658,6 @@ a {
     padding-top: 77px;
 }
 /*swiper样式修改*/
+.swiper .m {
+    margin: auto;
+}

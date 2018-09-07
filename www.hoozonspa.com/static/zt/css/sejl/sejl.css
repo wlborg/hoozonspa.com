@@ -1,4 +1,7 @@
 /*banner开始*/
+.swiper .w {
+    margin: 0 auto;
+}
 .w {
     width: 12rem;
 }

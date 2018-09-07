@@ -775,8 +775,11 @@ ul {
 }
 .m5-2Img {
     position: absolute;
-    top: 253px;
+    top: 212px;
     left: 188px;
+}
+.m5-2 {
+    height: 961px;
 }
 .m5-2 .row {
     padding: 65px 0 30px;

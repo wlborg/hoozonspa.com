@@ -1,13 +1,48 @@
-a {
-    display: block;
-}
 /*banner开始*/
+.w {
+    width: 12rem;
+}
+a {
+    display: inline-block;
+}
 .banner {
+    position: relative;
+
     width: 100%;
-    padding-top: 1.7rem;
 }
 .banner img {
     width: 100%;
+}
+.btn-wrap-1 {
+    position: absolute;
+    top: 7.5rem;
+    left: 5.12rem;
+    z-index: 100;
+
+    width: 2.3rem;
+    height: 1.37rem;
+
+    background: url("//pc.hoozonspa.com/static/zt/img/sejl/btn-1.png") no-repeat;
+    background-size: 100%;
+}
+.btn-wrap-2 {
+    left: 50%;
+
+    margin-top: 1.6rem;
+    margin-left: -1.15rem;
+}
+.btn-wrap-1 a {
+    display: block;
+    width: 100%;
+    height: 55%;
+}
+#banner .footer-detail {
+    position: relative;
+    top: -2.9rem;
+    left: -3.5rem;
+}
+#banner .shadow {
+    bottom: .23rem;
 }
 /*banner结束*/
 
@@ -15,203 +50,172 @@ a {
 .part1 {
     position: relative;
 
-    overflow: hidden;
-}
-.bg-wrap {
-    width: 100%;
-}
-.bg-wrap img {
-    width: 100%;
-}
-.part1 .content {
-    position: absolute;
-    top: 1.262rem;
-    left: 0;
+    width: 17.7rem;
+    padding-bottom: 2.6rem;
 
-    width: 100%;
-}
-.title-wrap {
-    width: 100%;
-
-    text-align: center;
-}
-.title-wrap .title {
-    font-size: 1rem;
-    line-height: .768rem;
-
-    letter-spacing: .102rem;
-
-    color: #333;
-}
-.title-wrap .title-chl {
-    margin-top: .46rem;
-    margin-left: -.7rem;
-
-    font-size: .384rem;
-    line-height: .768rem;
-
-    color: #666;
-}
-.part1 .con-detail {
-    position: relative;
-    top: 1.1rem;
-
-    padding-left: .98rem;
-    box-sizing: border-box;
-}
-.con-1 {
-    position: relative;
-}
-.con-1 .left-pic {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-
-    width: 7.552rem;
-    height: 6.165rem;
-}
-.con-1 .left-pic img {
-    width: 100%;
-    height: 100%;
-}
-.con-1 .right-txt {
-    position: absolute;
-    top: 1.045rem;
-    right: .3rem;
-    z-index: 1;
-
-    width: 8.171rem;
-    height: 6.101rem;
-
-    font-size: .448rem;
-    line-height: .668rem;
-
-    text-align: justify;
-    letter-spacing: .026rem;
-
-    color: #333;
-    background-color: #fff;
-}
-.con-1 .right-txt .txt {
-    width: 5.888rem;
-    height: 3.584rem;
-    margin-top: 1.259rem;
-    margin-left: 1.664rem;
-}
-.part1 .con-2 {
-    position: relative;
-    top: 8.85rem;
-}
-.part1 .con-2 .pic-item {
-    position: relative;
-
-    float: left;
-    width: 7.168rem;
-    height: 5.973rem;
-    margin-right: .171rem;
-    margin-bottom: .981rem;
-}
-.part1 .con-2 .pic-item:nth-child(2n) {
-    margin-right: 0;
-}
-.part1 .con-2 .pic-item img {
-    width: 100%;
-    height: 100%;
-}
-.part1 .pic-item .mask {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    text-align: center;
-
-    background-color: rgba(106,27,154,.45);
-}
-.part1 .mask .title {
-    margin-top: .896rem;
-
-    font-size: .64rem;
-    line-height: .768rem;
-
-    letter-spacing: .032rem;
-
-    color: #fff;
-}
-.part1 .mask .con-txt {
-    width: 5.33rem;
-    margin: 0 auto;
-
-    font-size: .426rem;
-    line-height: .64rem;
-
-    color: #fff;
-}
-.part1 .mask .line {
-    width: 4.352rem;
-    height: .0426rem;
-    margin: 0 auto;
-    margin-top: .213rem;
-    margin-bottom: .576rem;
-}
-.part1 .mask .line img {
-    width: 100%;
-    width: 100%;
-}
-.part1 .mask .title-1 {
-    margin-top: .65rem;
-}
-.btn-wrap {
-    position: absolute;
-    bottom: 1.899rem;
-    left: 50%;
-
-    width: 5.419rem;
-    height: 1.28rem;
-    margin-left: -2.45rem;
-
-    background: url("//pc.hoozonspa.com/static/zt/img/seji/btn.png") no-repeat;
-    background-size: 99% 100%;
-}
-.btn-wrap a {
-    width: 100%;
-    height: 100%;
-}
-.part1 .bg-e {
-    position: absolute;
-    top: 4.1rem;
-    right: 0;
-
-    width: 5.504rem;
-    height: 1.259rem;
-}
-.part1 .bg-e img {
-    width: 100%;
-    height: 100%;
-}
-/*part1结束*/
-
-/*part2开始*/
-.part2 {
-    position: relative;
-
-    background: #6a1b9a;
+    background: #fff;
 }
 .modifier {
     position: absolute;
-    top: 3rem;
-    right: 0;
-    z-index: 10;
+    top: -8rem;
+    right: -17px;
+    z-index: 100;
 
-    width: 3.499rem;
-    height: 2.944rem;
+    width: 1.99rem;
+    height: 4.66rem;
 }
 .modifier img {
     width: 100%;
     height: 100%;
+}
+.title-wrap {
+    width: 100%;
+    padding-top: 1rem;
+
+    text-align: center;
+}
+.title-wrap .title {
+    margin-bottom: .24rem;
+
+    font-size: .6rem;
+    line-height: .36rem;
+
+    letter-spacing: .06rem;
+
+    color: #333;
+}
+.title-wrap .e-title {
+    font-size: .24rem;
+    line-height: .36rem;
+
+    letter-spacing: 0rem;
+
+    color: #666;
+}
+.part1 .content {
+    margin-top: 1.2rem;
+}
+.part1 .content .left {
+    float: left;
+    width: 5.76rem;
+}
+.part1 .left .left-txt {
+    float: right;
+    width: 4.02rem;
+    margin-top: 1.77rem;
+
+    font-size: .24rem;
+    line-height: .36rem;
+
+    text-align: center;
+
+    color: #333;
+}
+.part1 .content .mid {
+    position: relative;
+
+    float: left;
+    width: 7.39rem;
+}
+.part1 .content .swiper {
+    position: relative;
+}
+.part1 .mid .img-wrap {
+    width: 5.16rem;
+    height: 5.17rem;
+    margin-left: .47rem;
+}
+.part1 .mid .img-wrap img {
+    width: 100%;
+    height: 100%;
+}
+.part1 .btn-gro {
+    position: absolute;
+    top: 1.2rem;
+    right: -4.57rem;
+    left: initial;
+    z-index: 100;
+}
+.part1 .btn-wrap .item {
+    width: 1.85rem;
+    height: .53rem;
+    margin-bottom: .2rem;
+
+    font-size: .28rem;
+    line-height: .53rem;
+
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: .014rem;
+
+    color: #6a1b9a;
+    border: solid 1px #6a1b9a;
+    border-radius: .265rem;
+    background-color: #fff;
+}
+.part1 .btn-wrap .item-1 {
+    margin-left: .29rem;
+}
+.part1 .btn-wrap .item-2 {
+    margin-left: .29rem;
+}
+.part1 .btn-wrap .active {
+    color: #fff;
+    background-color: #6a1b9a;
+}
+.part1 .content .right {
+    float: left;
+    width: 3.7rem;
+}
+.part1 .right .right-txt {
+    float: left;
+    margin-top: 1.77rem;
+
+    font-size: .24rem;
+    line-height: .36rem;
+
+    text-align: center;
+    letter-spacing: 0rem;
+
+    color: #333;
+}
+.part1 .bot {
+    position: relative;
+
+    width: 100%;
+}
+.part1 .bot .bot-pic {
+    width: 100%;
+}
+.part1 .bot-pic img {
+    width: 100%;
+}
+#part2 .btn-1 {
+    bottom: .9rem;
+}
+.shadow {
+    position: absolute;
+    bottom: .13rem;
+    left: 50%;
+
+    width: 1.68rem;
+    height: .32rem;
+    margin-left: -.84rem;
+}
+.shadow img {
+    width: 100%;
+}
+#part1 .btn-1 {
+    bottom: 1.7rem;
+}
+#part1 .shadow {
+    bottom: .9rem;
+}
+/*part1结束*/
+
+/*part2 开始*/
+.part2 {
+    position: relative;
 }
 .part2 .bg-wrap {
     width: 100%;
@@ -220,380 +224,437 @@ a {
     width: 100%;
 }
 .part2 .content {
-    position: relative;
-    z-index: 2;
+    position: absolute;
+    top: 3.76rem;
+    left: 0;
 
-    width: 15.36rem;
-    height: 18.56rem;
-
-    background-color: #fbf6f3;
-}
-.title-wrap .title p:nth-child(1) {
-    margin-bottom: .4rem;
+    width: 100%;
 }
 .title-wrap-1 {
-    padding-top: 1.5rem;
+    padding-top: 1.52rem;
 }
-.title-wrap-1 .title-chl {
-    width: 5.568rem;
-    height: .363rem;
+.part2 .pic-panel {
+    width: 12.96rem;
+    padding-top: .65rem;
     margin: 0 auto;
-    margin-top: .46rem;
 }
-.title-wrap .title-chl img {
-    width: 100%;
-    height: 100%;
-}
-.part2 .pic-con {
-    position: absolute;
-    right: 0;
-
-    height: 8.149rem;
-    margin-top: 1.216rem;
-}
-.part2 .pic-con .mid {
-    margin-right: .128rem;
-    margin-left: .128rem;
-}
-.part2 .pic-con > div {
+.part2 .pic-panel .item {
     float: left;
-    width: 5.013rem;
-    height: 100%;
+    width: 4.22rem;
 }
-.part2 .pic-con .left > div,
-.part2 .pic-con .right > div {
-    width: 100%;
-    height: 4.011rem;
-}
-.part2 .pic-con > div img {
-    width: 100%;
-    height: 100%;
-}
-.part2 .pic-con .left .top,
-.part2 .pic-con .right .top {
-    margin-bottom: .128rem;
-}
-.part2 .pic-con .item {
+.part2 .item .pic-item {
     position: relative;
+
+    width: 4.22rem;
+    height: 3.25rem;
+    margin-bottom: .15rem;
 }
-.part2 .item .bot-bar {
+.part2 .item .pic-active {
+    top: -.02rem;
+
+    background-color: #6a1b9a;
+    box-shadow: 0rem .12rem .21rem 0rem
+    rgba(56, 14, 82, .31);
+}
+.part2 .mid {
+    margin-right: .15rem;
+    margin-left: .15rem;
+}
+.part2 .item .pic-item-1 {
+    position: relative;
+
+    width: 4.22rem;
+    height: 6.65rem;
+}
+.part2 .item .pic-item img,
+.part2 .item .pic-item-1 img {
+    width: 100%;
+    height: 100%;
+}
+.part2 .item .pic-item .txt,
+.part2 .item .pic-item-1 .txt {
     position: absolute;
     bottom: 0;
     left: 0;
 
     width: 100%;
-    height: 1.067rem;
+    height: .6rem;
 
-    font-size: .597rem;
-    line-height: 1.167rem;
+    font-size: .26rem;
+    line-height: .6rem;
 
     text-align: center;
 
     color: #fff;
-    background-color: rgba(106,27,154,.7);
+    background: rgba(106,27,154,.51);
 }
-.btn-wrap-1 {
-    background: url("//pc.hoozonspa.com/static/zt/img/seji/btn-1.png") no-repeat;
-    background-size: 100%;
+.part2 .item .active {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 0;
+
+    text-align: center;
+
+    opacity: 0;
+    background: rgba(106,27,154,.51);
 }
+.part2 .active .title {
+    margin-top: .1rem;
 
-/*part2结束*/
+    font-size: .3rem;
 
-/*part3 开始*/
+    color: #fff;
+}
+.part2 .active .line {
+    width: 2.58rem;
+    height: .02rem;
+    margin: 0 auto;
+    margin-top: .13rem;
+    margin-bottom: .13rem;
+}
+.part2 .pic-item .active {
+    padding-bottom: .5rem;
+}
+.part2 .pic-item-2 .active {
+    padding-bottom: .3rem;
+}
+.part2 .active .detail-txt {
+    width: 3.06rem;
+    margin: 0 auto;
+
+    font-size: .18rem;
+
+    color: #fff;
+}
+.part2 .active .detail-txt p {
+    position: relative;
+    left: -.56rem;
+
+    width: 4.22rem;
+
+    text-align: center;
+}
+/*part2 结束*/
+
+/*part3开始*/
+#part3 .btn-1 {
+    bottom: .8rem;
+}
 .part3 {
     position: relative;
-    z-index: 1;
-
-    margin-top: -1.71rem;
-    overflow: hidden;
 }
-.modifier-1 {
-    position: absolute;
-    bottom: -1.7rem;
-    left: 0;
-    z-index: 10;
-
-    width: 2.219rem;
-    height: 2.965rem;
-}
-.modifier-1 img {
+.part3 .bg-wrap {
     width: 100%;
-    height: 100%;
+}
+.part3 .bg-wrap img {
+    width: 100%;
 }
 .part3 .content {
     position: absolute;
-    top: 1.71rem;
-
-    width: 100%;
-}
-.title-wrap-2 {
-    padding-top: 1.835rem;
-}
-.title-wrap-2 .title-chl {
-    width: 6.443rem;
-    height: .23rem;
-    margin: 0 auto;
-    margin-top: .491rem;
-}
-.part3 .pic-wrap {
-    position: absolute;
-    top: 5.348rem;
+    top: 0;
     right: 0;
 
-    width: 15.36rem;
-    height: 10.603rem;
+    width: 17.39rem;
+    height: 1000px;
+
+    text-align: center;
 }
-.part3 .pic-wrap img {
-    width: 100%;
-    height: 100%;
+.title-wrap-2 {
+    padding-top: 1.2rem;
 }
-.part3 .pic-wrap .pic-content {
+.part3 .content .con-detail,
+.part3 .content-detail-1 {
+    position: relative;
+    top: .9rem;
+    left: 1.77rem;
+
+    width: 14.2rem;
+}
+.part3 .con-detail .left {
     position: absolute;
-    top: 0;
+    top: .53rem;
     left: 0;
+    z-index: 1;
 
-    width: 100%;
-    height: 100%;
+    width: 7.5rem;
+    height: 5.03rem;
 
     text-align: center;
 
-    color: #fff;
-    background-color: rgba(106,27,154,.74);
+    border: solid 1px rgba(106,27,154, .34);
+    background-color: #fff;
 }
-.part3 .pic-content .title {
-    margin-top: 1.28rem;
+/*第二个开始*/
+.part3 .content-detail-1 {
+    top: 7.6rem;
+}
 
-    font-size: .768rem;
-    line-height: .768rem;
-}
-.part3 .pic-content .e-title {
-    margin-top: .32rem;
-    margin-bottom: 1.131rem;
-
-    font-size: .341rem;
-
-    color: #e3e3e3;
-}
-.part3 .pic-content .txt {
-    width: 12.821rem;
-    margin: 0 auto;
-
-    font-size: .512rem;
-    line-height: .768rem;
-}
-.part3 .pic-content .txt span {
-    color: #f855b9;
-}
-.btn-wrap-3 {
-    bottom: 1.4rem;
-
-    margin-left: -3rem;
-
-    background: url("//pc.hoozonspa.com/static/zt/img/seji/btn-2.png") no-repeat;
-    background-size: 100%;
-}
-.bg-wrp {
-    width: 100%;
-}
-.bg-wrp img {
-    width: 100%;
-}
-.part3 .con-detail {
+.part3 .content-detail-1 .left {
     position: absolute;
-    top: 17.1rem;
+    left: 0;
+    z-index: 2;
 
+    width: 7.36rem;
+
+    box-shadow: 0rem .05rem .13rem 0rem
+    rgba(56, 14, 82, .19);
+}
+.part3 .content-detail-1 .left img {
     width: 100%;
+}
+.part3 .content-detail-1 .right {
+    position: absolute;
+    top: -.53rem;
+    right: 0;
+    z-index: 1;
+
+    width: 7.5rem;
+    height: 4.46rem;
 
     text-align: center;
+
+    border: solid 1px rgba(106,27,154, .34);
+    background-color: #fff;
 }
-.part3 .con-detail .title-wrapper {
-    margin-top: .8rem;
+.part3 .right .right-detail {
+    width: 6rem;
+    margin-top: .5rem;
+    margin-left: 1.07rem;
 }
-.part3 .title-wrapper .title,
-.part4 .title-wrapper .title {
-    font-size: .768rem;
-    line-height: .768rem;
+.part3 .right-detail .title {
+    margin-bottom: .08rem;
+
+    font-size: .36rem;
 
     color: #333;
 }
-.part3 .title-wrapper .e-title,
-.part4 .title-wrapper .e-title {
-    font-size: .341rem;
-    line-height: .768rem;
+.part3 .right-detail .e-title {
+    margin-bottom: .5rem;
+
+    font-size: .16rem;
 
     color: #666;
 }
-.part3 .con-1 .right-txt {
-    top: -.981rem;
-    right: 1.13rem;
-
-    font-size: .512rem;
-    line-height: .768rem;
-
-    text-align: center;
+.part3 .right-detail .txt-detail {
+    font-size: .24rem;
+    line-height: .36rem;
 
     color: #333;
 }
-.part3 .con-1 .txt span {
+.part3 .right-detail .txt-detail span {
+    font-size: .3rem;
+
     color: #6a1b9a;
 }
-.part3 .con-1 {
-    top: 2.3rem;
-    left: .98rem;
+/*第二个结束*/
+.part3 .left .left-detail {
+    width: 6rem;
+    margin-top: .5rem;
+    margin-left: .35rem;
 }
-.part3 .con-1 .txt-detail {
-    width: 5rem;
-}
-/*part3 结束*/
+.part3 .left-detail .title {
+    margin-bottom: .08rem;
 
+    font-size: .36rem;
 
-/*part4开始*/
-.part4 {
-    position: relative;
+    color: #333;
+}
+.part3 .left-detail .e-title {
+    margin-bottom: .5rem;
 
-    padding-top: 1.664rem;
-    padding-bottom: 4.331rem;
+    font-size: .16rem;
+
+    color: #666;
 }
-.part4 .title-wrapper {
-    text-align: center;
+.part3 .left-detail .txt-detail {
+    font-size: .24rem;
+    line-height: .36rem;
+
+    color: #333;
 }
-.part4 .con {
-    margin-top: 1.152rem;
+.part3 .left-detail .txt-detail span {
+    color: #6a1b9a;
 }
-.part4 .con .item {
-    float: left;
-    width: 5.653rem;
-    height: 2.923rem;
-    margin-bottom: .106rem;
-    margin-left: -.56rem;
-}
-.part4 .con .item:nth-child(1) {
-    margin-left: .0853rem;
-}
-.part4 .con .item:nth-child(4) {
-    margin-left: .0853rem;
-}
-.part4 .con .item img {
-    width: 100%;
-    height: 100%;
-}
-.btn-wrap-4 {
-    background: url("//pc.hoozonspa.com/static/zt/img/seji/btn-3.jpg") no-repeat;
-    background-size: 99% 100%;
-}
-.modifier-3 {
+.part3 .con-detail .right {
     position: absolute;
+    top: 0;
     right: 0;
-    bottom: -2rem;
-
-    width: 2.091rem;
-    height: 3.989rem;
-}
-.modifier-3 img {
-    width: 100%;
-    height: 100%;
-}
-.modifir-4 {
-    position: absolute;
-    top: -2.7rem;
-    left: 50%;
-    z-index: 10;
-
-    width: 6.421rem;
-    height: 4.032rem;
-    margin-left: -3.215rem;
-}
-.modifir-4 img {
-    width: 100%;
-    height: 100%;
-}
-/*part4结束*/
-
-
-/*part5开始*/
-.part5 {
-    position: relative;
-}
-.part5 .title-wrapper {
-    position: relative;
-    top: 1.493rem;
     z-index: 2;
 
-    text-align: center;
+    width: 7.64rem;
+
+    box-shadow: 0rem .05rem .13rem 0rem
+    rgba(56, 14, 82, .19);
+}
+.part3 .con-detail .right img {
+    width: 100%;
+}
+.btn-wrap-3 {
+    margin-top: -3.87rem;
+}
+.part3 .content-child {
+    position: relative;
+    top: 12.28rem;
+
+    padding-bottom: 1.96rem;
+}
+.part3 .content-child .pic-panel {
+    margin-top: .7rem;
+    margin-left: 1.46rem;
+}
+.part3 .pic-panel .pic-item {
+    float: left;
+    width: 5.12rem;
+    height: 2.64rem;
+    margin-bottom: .1rem;
+    margin-left: -.5rem;
+}
+.part3 .pic-panel .pic-item:nth-child(1),
+.part3 .pic-panel .pic-item:nth-child(4) {
+    margin-left: 0;
+}
+.part3 .pic-panel .pic-item img {
+    width: 100%;
+}
+.btn-wrap-4 {
+    margin-top: -4.5rem;
+}
+.btn-wrap-5 {
+    margin-top: 6.6rem;
+}
+.btn-wrap-6 {
+    margin-top: 1.2rem;
+}
+.btn-wrap-7 {
+    margin-top: 4.2rem;
+
+    background: url("//pc.hoozonspa.com/static/zt/img/sejl/btn-2.png") no-repeat;
+    background-size: 100%;
+}
+/*part3结束
+
+/*part4开始*/
+.part6 {
+    position: relative;
+}
+.part6 .title-wrap {
+    position: relative;
+    z-index: 2;
+}
+.part6 .title-wrap .title {
+    color: #fff;
+}
+.part6 .title-wrap .e-title {
+    font-size: .2rem;
 
     color: #fff;
 }
-.part5 .title-wrapper .title {
-    margin-bottom: .32rem;
-
-    font-size: 1.024rem;
-    line-height: .768rem;
-}
-.part5 .title-wrapper .e-title {
-    font-size: .384rem;
-    line-height: .64rem;
-}
-
-
-/*swiper样式开始*/
-.swiper {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    padding-bottom: 2rem;
-}
-
-.swiper .img-wrap {
-    z-index: -1;
-
+.swiper .bg-wrap {
     width: 100%;
-    height: 15.083rem;
-}
-.swiper .item {
-    position: absolute;
-    top: 4.267rem;
+    height: 13.14rem;
 
-    width: 13.824rem;
-    margin-left: 1.088rem;
-}
-.swiper .item img {
-    width: 100%;
-}
-.bullet {
-    position: absolute;
-    bottom: .4rem;
-
-    width: 100%;
-
-    text-align: center;
-}
-.bullet .bullet-item {
-    display: inline-block;
-    width: .192rem;
-    height: .192rem;
-
-    vertical-align: middle;
-
-    background: url(//pc.hoozonspa.com/static/zt/img/seji/circle.png) no-repeat;
+    background: url("//pc.hoozonspa.com/static/zt/img/sejl/swiper-1.jpg") no-repeat;
     background-size: 100% 100%;
 }
-.bullet .bullet-item:nth-child(2) {
-    margin-right: .2rem;
-    margin-left: .2rem;
+.swiper .bg-wrap-1 {
+    background: url("//pc.hoozonspa.com/static/zt/img/sejl/swiper-2.jpg") no-repeat;
+    background-size: 100% 100%;
 }
-.bullet .active {
-    width: .384rem;
-    height: .384rem;
-
-    background: url(//pc.hoozonspa.com/static/zt/img/seji/circle-active.png) no-repeat;
-    background-size: 100%;
+.swiper .bg-wrap-2 {
+    background: url("//pc.hoozonspa.com/static/zt/img/sejl/swiper-3.jpg") no-repeat;
+    background-size: 100% 100%;
 }
-.swiper-slide {
-    width: 100% !important;
+.swiper-container {
+    z-index: -1;
 }
-/*swiper样式结束*/
+.swiper .bg-wrap .item {
+    position: relative;
+    top: 2.59rem;
+}
+/*.btn-wrap-5 {
+    width: 2.30rem;
+    height: .6rem;
+    position: absolute;
+    left: 50%;
+    z-index: 3;
+    margin-left: -1.15rem;
+    background: url('//pc.hoozonspa.com/static/zt/img/sejl/part4-btn.png') no-repeat;
+    background-size: 100% 100%;
+    bottom: 0.26rem;
+}*/
+/*.btn-wrap-5 a {
+    width: 100%;
+    height: 100%;
+}
+.btn-wrap-5:hover {
+    background: url('//pc.hoozonspa.com/static/zt/img/sejl/part4-btn-active.png') no-repeat;
+    background-size: 100% 100%;
+}*/
+/*part4结束*/
 
 
 
-/*part5结束*/
+/*swiper样式修改*/
+.part6 .bullet-wrap {
+    position: absolute;
+    bottom: 1.28rem;
+    left: 50%;
+    z-index: 100;
+
+    margin-left: -.47rem;
+}
+.part6 .title-wrap {
+    z-index: 2;
+}
+.part6 .bullet-wrap .item {
+    display: inline-block;
+    width: .14rem;
+    height: .14rem;
+    margin-right: .20rem;
+
+    cursor: pointer;
+    vertical-align: middle;
+
+    border: 1px solid #fff;
+    border-radius: .14rem;
+}
+.part6 .bullet-wrap .item:nth-child(3) {
+    margin-right: 0;
+}
+.part6 .bullet-wrap .active {
+    border: .05rem solid rgba(255, 255, 255, .43);
+}
+.part6 .bullet-wrap .active i {
+    display: block;
+    width: .14rem;
+    height: .14rem;
+
+    border-radius: .14rem;
+    background: #fff;
+}
+.swiper-container {
+    z-index: auto;
+
+    overflow: initial;
+}
+.part6 .swiper {
+    height: 12.5rem;
+    margin-top: -1.96rem;
+}
+#swiper-container-1 {
+    height: 5.5rem;
+    overflow: hidden;
+}
+#swiper-container-1 .swiper-pagination-custom {
+    left: initial;
+}
+#part4 .btn-1 {
+    bottom: .2rem;
+}
+#footer {
+    padding-top: 77px;
+}
+/*swiper样式修改*/

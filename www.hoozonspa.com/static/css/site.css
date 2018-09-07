@@ -3282,7 +3282,7 @@ a {
     left: 0;
 
     width: 8.2em;
-    height: 3em;
+    height: 3.3em;
     margin: auto;
 
     font-size: 1em;
@@ -4896,4 +4896,7 @@ a {
 .swiper-pagination-bullet {
     opacity: 1!important;
     /* background: #fff!important; */
+}
+.environmental_full .swiper-pagination-bullet {
+    background: #fff;
 }

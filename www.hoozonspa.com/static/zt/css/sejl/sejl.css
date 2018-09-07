@@ -603,7 +603,7 @@ a {
 /*swiper样式修改*/
 .part6 .bullet-wrap {
     position: absolute;
-    bottom: 1.28rem;
+    bottom: 1.7rem;
     left: 50%;
     z-index: 100;
 
@@ -627,9 +627,10 @@ a {
 .part6 .bullet-wrap .item:nth-child(3) {
     margin-right: 0;
 }
-.part6 .bullet-wrap .active {
+/* .part6 .bullet-wrap .active {
     border: .05rem solid rgba(255, 255, 255, .43);
 }
+ */
 .part6 .bullet-wrap .active i {
     display: block;
     width: .14rem;
@@ -663,4 +664,7 @@ a {
 /*swiper样式修改*/
 .swiper .m {
     margin: auto;
+}
+body {
+    overflow-x: hidden;
 }

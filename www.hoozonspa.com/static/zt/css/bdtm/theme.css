@@ -186,7 +186,7 @@ ul {
 }.banner .row > div {
 
     width: 400px;
-    padding-top: 108px;
+    padding-top: 67px;
     padding-bottom: 20px;
 
     text-align: left;
@@ -772,11 +772,19 @@ ul {
     border-width: 25px 40px;
     border-style: solid;
     border-color: #51abe1 #93b3cf #51abe1 #51abe1;
-}.m5-2 .row {
-
+}
+.m5-2Img {
+    position: absolute;
+    top: 212px;
+    left: 188px;
+}
+.m5-2 {
+    height: 961px;
+}
+.m5-2 .row {
     padding: 65px 0 30px;
 
-    background: url(//pc.hoozonspa.com/static/zt/img/bdtm/bg5_2.jpg) left bottom no-repeat;
+    /* background: url(//pc.hoozonspa.com/static/zt/img/bdtm/bg5_2.jpg) left bottom no-repeat; */
 }.m5-2 .row div.title h2 {
 
     padding-bottom: 120px;

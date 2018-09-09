@@ -405,3 +405,6 @@
 .hotproject .g-right .project-block .swiper-slide a {
     height: 100%;
 }
+.cases-container .swiper-pagination-bullet {
+    background: #dfad9d;
+}

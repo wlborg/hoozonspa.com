@@ -821,8 +821,10 @@ a {
     background: #817173;
 }
 .equipmenttechnology .g-right .item .front p {
+    display: -webkit-box;
     width: 12em;
     margin: 1em auto 0;
+    overflow: hidden;
 
     font-size: .2em;
     font-style: normal;
@@ -832,8 +834,12 @@ a {
 
     text-align: center;
     letter-spacing: .2px;
+    text-overflow: ellipsis;
 
     color: #eeeded;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 16;
 }
 .equipmenttechnology .g-right .item .back img {
     display: block;
@@ -2261,7 +2267,7 @@ a {
 }
 .beautyspa .g-left .item {
     float: left;
-    width: 3.1em;
+    width: 2.7em;
     margin-right: .2em;
     /*opacity: .9;*/
 }
@@ -3282,7 +3288,7 @@ a {
     left: 0;
 
     width: 8.2em;
-    height: 3em;
+    height: 3.3em;
     margin: auto;
 
     font-size: 1em;
@@ -3381,7 +3387,8 @@ a {
     margin-top: .8em;
 }
 .environmental .g-left .row div {
-    display: inline-block;
+    /* display: inline-block; */
+    float: left;
 
     vertical-align: top;
 }
@@ -3838,6 +3845,9 @@ a {
     border-radius: 100%;
     background-color: #fff;
 }
+.casesImgs .swiper-pagination-bullet {
+    background-color: #fff!important;
+}
 .casesImgs .slider-indicator li.active,
 .casesImgs .slider-indicator li:hover {
     background-color: #4e1f66;
@@ -4008,6 +4018,9 @@ a {
     color: #906a66;
 }
 .environmentaldisplay .g-left .wraper {
+    position: relative;
+    z-index: 2;
+
     padding-left: 1.7em;
 }
 .environmentaldisplay .g-left h2 {
@@ -4061,6 +4074,15 @@ a {
 .environmentaldisplay .g-left li.active span,
 .environmentaldisplay .g-left li:hover span {
     background: #dfad9d;
+}
+.environmentaldisplay_Des {
+    display: -webkit-box;
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 14;
 }
 .environmentaldisplay .g-left .more {
     display: block;
@@ -4619,15 +4641,17 @@ a {
 }
 .beautyspa .g-left .block .front a:hover {
     color: #fff;
-    border: none;
+    border: 1px solid #9855ae;
     background: #9855ae;
 }
 .optoelectronic .g-left .block .front a:hover {
     color: #fff;
+    border: 1px solid #9855ae;
     background: #9855ae;
 }
 .embroidery .g-left .block .front a:hover {
     color: #fff;
+    border: 1px solid #9855ae;
     background: #9855ae;
 }
 .zixun span:hover {
@@ -4653,13 +4677,14 @@ a {
 }
 .environmentaldisplay .g-right .swiper-slide .front {
     position: absolute;
-    top: 0;
+    top: 3em;
     right: 0;
-    bottom: 0;
+    /* bottom: 2em; */
     left: 0;
 
     width: 8.11em;
-    height: 2.1em;
+    min-height: 2.1em;
+    /* padding-bottom: .1em; */
     margin: auto;
 
     font-size: 1em;
@@ -4688,9 +4713,10 @@ a {
     background-color: #fff;
 }
 .environmentaldisplay .g-right .swiper-slide .front p {
-    width: 14em;
+    width: 60%;
+    padding-bottom: .9em;
     margin: 0 auto;
-    margin-top: 2em;
+    margin-top: 1em;
 
     font-size: .2em;
     font-style: normal;
@@ -4698,7 +4724,10 @@ a {
     font-stretch: normal;
     line-height: 1.5;
 
+    text-align: justify;
     text-align: center;
+    /* text-align: left; */
+    text-align: justify;
     letter-spacing: 0;
 
     color: #fff;
@@ -4896,4 +4925,13 @@ a {
 .swiper-pagination-bullet {
     opacity: 1!important;
     /* background: #fff!important; */
+}
+.environmental_full .swiper-pagination-bullet {
+    background: #fff;
+}
+.article a:hover {
+    opacity: .8;
+}
+.g-container .article {
+    width: 14.46em!important;
 }

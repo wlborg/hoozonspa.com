@@ -821,8 +821,10 @@ a {
     background: #817173;
 }
 .equipmenttechnology .g-right .item .front p {
+    display: -webkit-box;
     width: 12em;
     margin: 1em auto 0;
+    overflow: hidden;
 
     font-size: .2em;
     font-style: normal;
@@ -832,8 +834,12 @@ a {
 
     text-align: center;
     letter-spacing: .2px;
+    text-overflow: ellipsis;
 
     color: #eeeded;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 16;
 }
 .equipmenttechnology .g-right .item .back img {
     display: block;
@@ -3839,6 +3845,9 @@ a {
     border-radius: 100%;
     background-color: #fff;
 }
+.casesImgs .swiper-pagination-bullet {
+    background-color: #fff!important;
+}
 .casesImgs .slider-indicator li.active,
 .casesImgs .slider-indicator li:hover {
     background-color: #4e1f66;
@@ -4062,6 +4071,15 @@ a {
 .environmentaldisplay .g-left li.active span,
 .environmentaldisplay .g-left li:hover span {
     background: #dfad9d;
+}
+.environmentaldisplay_Des {
+    display: -webkit-box;
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 14;
 }
 .environmentaldisplay .g-left .more {
     display: block;

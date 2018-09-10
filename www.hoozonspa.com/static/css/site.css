@@ -3381,7 +3381,8 @@ a {
     margin-top: .8em;
 }
 .environmental .g-left .row div {
-    display: inline-block;
+    /* display: inline-block; */
+    float: left;
 
     vertical-align: top;
 }
@@ -4628,6 +4629,7 @@ a {
 }
 .embroidery .g-left .block .front a:hover {
     color: #fff;
+    border: 1px solid #9855ae;
     background: #9855ae;
 }
 .zixun span:hover {
@@ -4899,4 +4901,10 @@ a {
 }
 .environmental_full .swiper-pagination-bullet {
     background: #fff;
+}
+.article a:hover {
+    opacity: .8;
+}
+.g-container .article {
+    width: 14.46em!important;
 }

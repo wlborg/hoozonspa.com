@@ -708,6 +708,24 @@
                             <div class="item">
                                 <h3>纹绣（眉）</h3>
                                 <ul>
+                                     {dede:arclist typeid='207' row='15' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30'   channelid="21"}
+                                     <li><span>[field:title/]</span>
+
+                                            <div class="block">
+                                                <div class="front">
+                                                    <h4>[field:title/]</h4>
+                                                    <p>[field:des/]</p>
+                                                    <div class="line"></div>
+                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                </div>
+                                                <div class="back">
+                                                   <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
+                                                </div>
+                                            </div>
+                                    </li>
+                                     {/dede:arclist}
+                                </ul>
+                                <!-- <ul>
                                     <li><span>雾眉</span>
                                         {dede:arclist typeid='154' row='1' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,1'  channelid="21"}
                                             <div class="block">
@@ -799,7 +817,7 @@
                                             {/dede:arclist}
                                     </li>
                                     <li><span>五度空间仿真眉</span></li>
-                                </ul>
+                                </ul> -->
                             </div>
                             <div class="item">
                                 <h3>纹绣（眼）</h3>

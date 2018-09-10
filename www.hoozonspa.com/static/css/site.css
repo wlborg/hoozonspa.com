@@ -4629,6 +4629,7 @@ a {
 }
 .embroidery .g-left .block .front a:hover {
     color: #fff;
+    border: 1px solid #9855ae;
     background: #9855ae;
 }
 .zixun span:hover {

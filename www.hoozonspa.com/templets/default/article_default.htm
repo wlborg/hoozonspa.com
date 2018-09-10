@@ -2,6 +2,96 @@
 <html>
 <head>
 {dede:include filename="_link.htm"/}
+<style>
+.contentCon p {
+    margin: 1em 0;
+
+    line-height: 30px;
+
+    text-align: left;
+    text-indent: 2em;
+
+    color: #727272;
+}
+/*.contentCon h3,*/
+/*.contentCon h4,*/
+/*.contentCon h5,*/
+/*.contentCon h6 {*/
+/*text-align: center;*/
+/*}*/
+.contentCon p img {
+    display: block;
+    /*width: 100%;*/
+    margin: 1em auto;
+
+    text-align: center;
+
+    border-radius: 4px;
+}
+.contentCon div {
+    margin: 1em 0;
+
+    line-height: 30px;
+
+    text-align: left;
+    text-indent: 2em;
+
+    color: #727272;
+}
+.contentCon div img {
+    display: block;
+    /*width: 100%;*/
+    margin: 1em auto;
+
+    text-align: center;
+
+    border-radius: 4px;
+}
+.contentCon br {
+    display: none;
+}
+.contentCon ol li {
+    margin: .5em 0 .5em 1em;
+
+    list-style: decimal;
+}
+.contentCon ul li {
+    margin: .5em 0 .5em 1em;
+
+    list-style: decimal;
+}
+.contentCon p em {
+    display: block;
+    margin: -1em auto -.7em;
+
+    font-size: 14px;
+
+    text-align: center;
+
+    color: #999;
+}
+.contentCon div em {
+    display: block;
+    margin: -1em auto -.7em;
+
+    font-size: 14px;
+
+    text-align: center;
+
+    color: #999;
+}
+.contentCon a {
+    text-decoration: underline;
+
+    color: blue;
+}
+.article .content img {
+    margin-top: 0!important;
+}
+.article .content p {
+   margin-top: 0!important;
+}
+</style>
 </head>
 <body>
 <!-- header -->
@@ -11,20 +101,23 @@
        {dede:myad name='topbanner_pc'/}
 </div>
             <!-- news -->
-            <div class="g-container article">
+            <div class="g-container article article_g_container">
                 <div class="g-doc">
                     <div class="heading">
                         <h1>{dede:field.title/}</h1>
-                        <p>来源 : 红妆医学美容 时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)" /}   点击量：{dede:field.click /} </p>
+                        <p>来源 : 红妆医学美容 时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)" /}&nbsp;   点击量：{dede:field.click /} </p>
                     </div>
                     <div class="content">
-                        <p>{dede:field.body /}
-                        </p>
+                       <!--  <p class="contentCon">{dede:field.body /}
+                        </p> -->
+                        <div class="contentCon">
+                            {dede:field.body /}
+                        </div>
                         <h2></h2>
                         <p></p>
                     </div>
                     <div class="box">
-                        <div class="prev">{dede:prenext get='pre'/}</div>
+                        <div  class="prev">{dede:prenext get='pre'/}</div>
                         <ul>
                             <li><a href="javascript:;" class="j-consult"><span class="icon icon_weibo2"></span></a></li>
                             <li><a href="javascript:;" class="j-consult"><span class="icon icon_teng2"></span></li>
@@ -39,36 +132,20 @@
             <div class="g-container  newsproject">
                 <h2>发现您感兴趣的项目</h2>
                 <div class="row">
+                     {dede:arclist typeid='9'  orderyb='rand' row='3' titlelen="120" limit='0,3' addfields='title2' channelid='21'}
+                      <a href="[field:arcurl/]">
                     <div class="item">
                         <div class="front">
-                             <p>Laser hair removal</p>
-                            <h3>冰点脱毛</h3>
+                             <p>[field:title2/]</p>
+                            <h3>[field:title/]</h3>
                             <div class="line"></div>
                         </div>
                         <div class="back">
-                           <img src="img/img_project.jpg">
+                          <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
                         </div>
                     </div>
-                     <div class="item">
-                        <div class="front">
-                             <p>Laser hair removal</p>
-                            <h3>冰点脱毛</h3>
-                            <div class="line"></div>
-                        </div>
-                        <div class="back">
-                           <img src="img/img_project.jpg">
-                        </div>
-                    </div>
-                     <div class="item">
-                        <div class="front">
-                             <p>Laser hair removal</p>
-                            <h3>冰点脱毛</h3>
-                            <div class="line"></div>
-                        </div>
-                        <div class="back">
-                           <img src="img/img_project.jpg">
-                        </div>
-                    </div>
+                     </a>
+                  {/dede:arclist}
                 </div>
             </div>
             </div>

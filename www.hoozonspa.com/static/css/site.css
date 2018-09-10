@@ -4674,13 +4674,14 @@ a {
 }
 .environmentaldisplay .g-right .swiper-slide .front {
     position: absolute;
-    top: 0;
+    top: 2em;
     right: 0;
-    bottom: 0;
+    /* bottom: 2em; */
     left: 0;
 
     width: 8.11em;
-    height: 2.1em;
+    min-height: 2.1em;
+    padding-bottom: .1em;
     margin: auto;
 
     font-size: 1em;

@@ -4620,11 +4620,12 @@ a {
 }
 .beautyspa .g-left .block .front a:hover {
     color: #fff;
-    border: none;
+    border: 1px solid #9855ae;
     background: #9855ae;
 }
 .optoelectronic .g-left .block .front a:hover {
     color: #fff;
+    border: 1px solid #9855ae;
     background: #9855ae;
 }
 .embroidery .g-left .block .front a:hover {

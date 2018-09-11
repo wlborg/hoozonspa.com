@@ -57,15 +57,17 @@
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
                                  {dede:arclist typeid='7' row='12' flag='c' orderby='id' orderway='desc' infolen='30' channelid='19' addfields='pic2,des'}
-                                <div class="swiper-slide">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <p class="environmentaldisplay_Des">[field:des/]</p>
+                                  <a href="[field:arcurl /]">
+                                    <div class="swiper-slide">
+                                        <div class="front">
+                                            <h3>[field:title/]</h3>
+                                            <p class="environmentaldisplay_Des">[field:des/]</p>
+                                        </div>
+                                        <div class="back">
+                                             <img src="[field:pic2 function='replaceurl(@me)/]" alt="[field:title/]">
+                                        </div>
                                     </div>
-                                    <div class="back">
-                                         <img src="[field:pic2 function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </div>
+                                </a>
                                  {/dede:arclist}
                             </div>
                             <a href="javascript:void(0)" class="btn prev"></a>

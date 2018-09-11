@@ -37,7 +37,7 @@ body {
 .header {
     height: 800px;
 
-    background: url(../images/banner.jpg) no-repeat center;
+    background: url(../../img/KSmallBubble/banner.jpg) no-repeat center;
 }
 .c-part-w1200 {
     width: 1200px;
@@ -494,7 +494,7 @@ a {
 .part_Four {
     height: 1056px;
 
-    background: url(../images/banner4.jpg) no-repeat center;
+    background: url(../../img/KSmallBubble/banner4.jpg) no-repeat center;
 }
 .part_Four_Title {
     /* width: 100%; */

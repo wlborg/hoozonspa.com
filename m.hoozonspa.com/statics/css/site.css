@@ -1,5 +1,5 @@
-/** 
-* demo V1.0.0 
+/**
+* demo V1.0.0
 * By 小珍
 * http://www.baidu.com/
  */
@@ -523,6 +523,12 @@ body {
   line-height: 0.72525597rem;
   letter-spacing: 0.00426621rem;
   color: #f3f3f3;
+      -webkit-line-clamp: 7;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: BLOCK;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
 }
 .equipmenttechnology .content .item .back {
   height: 10.92150171rem;
@@ -1698,7 +1704,7 @@ body {
 }
 .newslist .content .newitem h2 a{
   color: #885e5a;
-  
+
 }
 .newslist .content .newitem p {
   padding-left: 0.21331058rem;
@@ -1836,7 +1842,7 @@ body {
 }
 .newdetail .box .prev a,
 .newdetail .box .next a{
- 
+
   padding: 0 0.85324232rem;
   color: #885e5a;
 }

@@ -2267,7 +2267,7 @@ a {
 }
 .beautyspa .g-left .item {
     float: left;
-    width: 3.1em;
+    width: 2.7em;
     margin-right: .2em;
     /*opacity: .9;*/
 }
@@ -4018,6 +4018,9 @@ a {
     color: #906a66;
 }
 .environmentaldisplay .g-left .wraper {
+    position: relative;
+    z-index: 2;
+
     padding-left: 1.7em;
 }
 .environmentaldisplay .g-left h2 {
@@ -4674,14 +4677,14 @@ a {
 }
 .environmentaldisplay .g-right .swiper-slide .front {
     position: absolute;
-    top: 2em;
+    top: 3em;
     right: 0;
     /* bottom: 2em; */
     left: 0;
 
     width: 8.11em;
     min-height: 2.1em;
-    padding-bottom: .1em;
+    /* padding-bottom: .1em; */
     margin: auto;
 
     font-size: 1em;
@@ -4710,9 +4713,10 @@ a {
     background-color: #fff;
 }
 .environmentaldisplay .g-right .swiper-slide .front p {
-    width: 14em;
+    width: 60%;
+    padding-bottom: .9em;
     margin: 0 auto;
-    margin-top: 2em;
+    margin-top: 1em;
 
     font-size: .2em;
     font-style: normal;
@@ -4720,7 +4724,10 @@ a {
     font-stretch: normal;
     line-height: 1.5;
 
+    text-align: justify;
     text-align: center;
+    /* text-align: left; */
+    text-align: justify;
     letter-spacing: 0;
 
     color: #fff;

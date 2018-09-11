@@ -97,7 +97,7 @@ body {
 .banner {
     height: 1104px;
 
-    background: url(../image/banner.jpg) center top no-repeat;
+    background: url(./image/banner.jpg) center top no-repeat;
 }
 .m0_1 {
     height: 1394px;

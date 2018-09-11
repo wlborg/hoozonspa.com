@@ -80,13 +80,13 @@ h3 {
     margin: 0 20px;
 }
 .part2 .m1 ul li:first-child {
-    background: url(../images/p2_02.png) no-repeat center;
+    background: url(../../img/lwqtss/p2_02.png) no-repeat center;
 }
 .part2 .m1 ul li:nth-child(2) {
-    background: url(../images/p2_03.png) no-repeat center;
+    background: url(../../img/lwqtss/p2_03.png) no-repeat center;
 }
 .part2 .m1 ul li:last-child {
-    background: url(../images/p2_04.png) no-repeat center;
+    background: url(../../img/lwqtss/p2_04.png) no-repeat center;
 }
 .part2 .m1 ul li div {
     width: 359px;
@@ -106,7 +106,7 @@ h3 {
 
     text-align: center;
 
-    background: url(../images/p2_05.png) no-repeat center;
+    background: url(../../img/lwqtss/p2_05.png) no-repeat center;
 }
 .part2 .m1 ul li div p {
     padding-top: 25px;
@@ -139,7 +139,7 @@ h3 {
     height: 338px;
     margin: 0 22px 217px 18px;
 
-    background: url(../images/p3_01.png) no-repeat center;
+    background: url(../../img/lwqtss/p3_01.png) no-repeat center;
 }
 .part3 .m1 .content > div:last-child {
     float: left;
@@ -156,7 +156,7 @@ h3 {
     width: 30px;
     height: 29px;
 
-    background: url(../images/p3_02.png) no-repeat center;
+    background: url(../../img/lwqtss/p3_02.png) no-repeat center;
 }
 .part3 .m1 .content > div:first-child p {
     width: 505px;
@@ -178,7 +178,7 @@ h3 {
     width: 100%;
     height: 1184px;
 
-    background: url(../images/p4_02.jpg) no-repeat center;
+    background: url(../../img/lwqtss/p4_02.jpg) no-repeat center;
 }
 .part4 h3 {
     padding-top: 64px;
@@ -319,7 +319,7 @@ h3 {
     width: 100%;
     height: 1386px;
 
-    background: url(../images/p6_09.png) no-repeat top center;
+    background: url(../../img/lwqtss/p6_09.png) no-repeat top center;
 }
 .part6 h3 {
     padding: 80px 0 50px;
@@ -333,7 +333,7 @@ h3 {
     line-height: 1.818;
 
     color: rgb( 107, 107, 107 );
-    background: url(../images/p6_02.png) no-repeat center;
+    background: url(../../img/lwqtss/p6_02.png) no-repeat center;
 }
 .part6 .m1 .p2_bg p {
     width: 340px;

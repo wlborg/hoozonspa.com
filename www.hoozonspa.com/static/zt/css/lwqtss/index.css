@@ -61,15 +61,15 @@ h3 {
     margin: 0 .11rem;
 }
 .part2 .m1 ul li:first-child {
-    background: url(../images/p2_01.png) no-repeat center;
+    background: url(../../img/lwqtss/p2_01.png) no-repeat center;
     background-size: cover;
 }
 .part2 .m1 ul li:nth-child(2) {
-    background: url(../images/p2_02.png) no-repeat center;
+    background: url(../../img/lwqtss/p2_02.png) no-repeat center;
     background-size: cover;
 }
 .part2 .m1 ul li:last-child {
-    background: url(../images/p2_03.png) no-repeat center;
+    background: url(../../img/lwqtss/p2_03.png) no-repeat center;
     background-size: cover;
 }
 .part2 .m1 ul li div {
@@ -93,7 +93,7 @@ h3 {
 
     text-align: center;
 
-    background: url(../images/p2_05.png) no-repeat center;
+    background: url(../../img/lwqtss/p2_05.png) no-repeat center;
     background-size: cover;
 }
 .part2 .m1 ul li div p {
@@ -120,7 +120,7 @@ h3 {
     height: 5.6rem;
     margin: 0 auto;
 
-    background: url(../images/p3_01.png) no-repeat center;
+    background: url(../../img/lwqtss/p3_01.png) no-repeat center;
     background-size: cover;
 }
 .part3 .m1 .content > div:last-child {
@@ -142,7 +142,7 @@ h3 {
     width: .75rem;
     height: .725rem;
 
-    background: url(../images/p3_02.png) no-repeat center;
+    background: url(../../img/lwqtss/p3_02.png) no-repeat center;
     background-size: cover;
 }
 .part3 .m1 .content > div:first-child p {
@@ -166,7 +166,7 @@ h3 {
 .part4 {
     height: 19.7rem;
 
-    background: url(../images/p4_03.jpg) no-repeat center;
+    background: url(../../img/lwqtss/p4_03.jpg) no-repeat center;
     background-size: cover;
 }
 .part4 h3 img {
@@ -350,7 +350,7 @@ h3 {
     height: 21.25rem;
     margin-bottom: 1.2rem;
 
-    background: url(../images/p6_09.png) no-repeat top center;
+    background: url(../../img/lwqtss/p6_09.png) no-repeat top center;
     background-color: #e1ddeb;
 }
 .part6 h3 img {
@@ -371,7 +371,7 @@ h3 {
     line-height: 1.395;
 
     color: rgb( 107, 107, 107 );
-    background: url(../images/p6_02.png) no-repeat center;
+    background: url(../../img/lwqtss/p6_02.png) no-repeat center;
     background-size: cover;
 }
 .part6 .m1 .p2_bg p {

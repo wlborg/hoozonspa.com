@@ -389,7 +389,7 @@ a {
     margin-top: 1.3rem;
 }
 .part3 .con-1 .right {
-    z-index: 10;
+    /*z-index: 10;*/
 }
 .part3 .con-2 .right {
     z-index: 10;

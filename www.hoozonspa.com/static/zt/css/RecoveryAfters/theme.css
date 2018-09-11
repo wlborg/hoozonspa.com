@@ -97,119 +97,120 @@ body {
 .banner {
     height: 1104px;
 
-    background: url(./image/banner.jpg) center top no-repeat;
+    background: url(../../img/RecoveryAfters/banner.jpg) center top no-repeat;
+
 }
 .m0_1 {
     height: 1394px;
 
-    background: url(../image/bg0_1.jpg) center top no-repeat;
+    background: url(../../img/RecoveryAfters/bg0_1.jpg) center top no-repeat;
     /* margin-top:188px; */
     /* background:#e5f3fd; */
 }
 .m0_1 h2 {
     height: 344px;
 
-    background: url(../image/bgt0_1.jpg) center top no-repeat;
+    background: url(../../img/RecoveryAfters/bgt0_1.jpg) center top no-repeat;
 }
 .m0_1 .consult {
     width: 383px;
-    /* background:url(../images/bg_consult0_1.jpg) center top no-repeat; */
+    /* background:url(../../img/RecoveryAfters/images/bg_consult0_1.jpg) center top no-repeat; */
     height: 102px;
 }
 .m0_2 {
     height: 971px;
 
-    background: url(../image/bg0_2.jpg) center top no-repeat;
+    background: url(../../img/RecoveryAfters/bg0_2.jpg) center top no-repeat;
 }
 .m0_3 {
     height: 1631px;
 
-    background: url(../image/bg0_3.jpg) center top no-repeat;
+    background: url(../../img/RecoveryAfters/bg0_3.jpg) center top no-repeat;
 }
 .m0_3 h2 {
     height: 341px;
 
-    background: url(../image/bgt0_3.jpg) center top no-repeat;
+    background: url(../../img/RecoveryAfters/bgt0_3.jpg) center top no-repeat;
 }
 .m0_3 .consult {
     width: 380px;
     height: 120px;
 
-    background: url(../image/bg_consult0_3.jpg) center top no-repeat;
+    background: url(../../img/RecoveryAfters/bg_consult0_3.jpg) center top no-repeat;
 }
 .m1 {
     height: 748px;
 
-    background: url(../image/bg1.jpg) center bottom no-repeat;
+    background: url(../../img/RecoveryAfters/bg1.jpg) center bottom no-repeat;
 }
 .m1 h2 {
     height: 334px;
     margin-left: 82px;
 
-    background: url(../image/bgt1.jpg)  top no-repeat;
+    background: url(../../img/RecoveryAfters/bgt1.jpg)  top no-repeat;
 }
 .m2 {
     height: 1587px;
 
-    background: url(../image/bg2.jpg) center top no-repeat;
+    background: url(../../img/RecoveryAfters/bg2.jpg) center top no-repeat;
 }
 .m2 h2 {
     height: 373px;
 
-    background: url(../image/bgt2.jpg) center top no-repeat;
+    background: url(../../img/RecoveryAfters/bgt2.jpg) center top no-repeat;
 }
 .m2 .consult {
     width: 377px;
     height: 120px;
 
-    background: url(../image/bg_consult2.jpg) center top no-repeat;
+    background: url(../../img/RecoveryAfters/bg_consult2.jpg) center top no-repeat;
 }
 .m3 {
     height: 1020px;
 
-    background: url(../image/bg3.jpg) center bottom no-repeat;
+    background: url(../../img/RecoveryAfters/bg3.jpg) center bottom no-repeat;
 }
 .m3 h2 {
     height: 331px;
 
-    background: url(../image/bgt3.jpg) center top no-repeat;
+    background: url(../../img/RecoveryAfters/bgt3.jpg) center top no-repeat;
 }
 .m3 .consult {
     width: 378px;
     height: 71px;
 
-    background: url(../image/bg_consult3.jpg) center top no-repeat;
+    background: url(../../img/RecoveryAfters/bg_consult3.jpg) center top no-repeat;
 }
 .m4 {
     height: 1748px;
 
-    background: url(../image/bg4.jpg) center top no-repeat;
+    background: url(../../img/RecoveryAfters/bg4.jpg) center top no-repeat;
 }
 .m4 h2 {
     height: 233px;
-    /* background: url(../images/bgt4.jpg) center top no-repeat; */
+    /* background: url(../../img/RecoveryAfters/images/bgt4.jpg) center top no-repeat; */
 }
 .m4 .consult {
     width: 389px;
     height: 136px;
 
-    background: url(../image/bg_consult4.jpg) center top no-repeat;
+    background: url(../../img/RecoveryAfters/bg_consult4.jpg) center top no-repeat;
 }
 .m5 h2 {
     height: 302px;
 
-    background: url(../image/bgt5.jpg) center top no-repeat;
+    background: url(../../img/RecoveryAfters/bgt5.jpg) center top no-repeat;
 }
 .m5 .content {
     height: 898px;
 
-    background: url(../image/bg5.jpg) center top no-repeat;
+    background: url(../../img/RecoveryAfters/bg5.jpg) center top no-repeat;
 }
 .m5 .consult {
     width: 388px;
     height: 120px;
 
-    background: url(../image/bg_consult5.jpg) center top no-repeat;
+    background: url(../../img/RecoveryAfters/bg_consult5.jpg) center top no-repeat;
 }
 .m6 {
     height: 956px;
@@ -656,7 +657,7 @@ body {
     width: 105px;
     height: 55px;
 
-    background: url(../image/bg6_pop.png) center center no-repeat;
+    background: url(../../img/RecoveryAfters/bg6_pop.png) center center no-repeat;
 }
 .m1H1 {
     height: 109px!important;
@@ -767,3 +768,4 @@ body {
     margin-right: 204px!important;
     margin-left: -28px!important;
 }
+

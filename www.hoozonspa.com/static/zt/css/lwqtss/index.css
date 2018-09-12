@@ -1,0 +1,353 @@
+.banner {
+    display: block;
+}
+a {
+    display: block;
+
+    text-align: center;
+}
+.banner img {
+    width: 100%;
+
+    vertical-align: bottom;
+}
+.m1 {
+    position: relative;
+
+    width: 1200px;
+    margin: 0 auto;
+}
+h3 {
+    text-align: center;
+}
+.part1 .m1 h3 img {
+    padding-top: 109px;
+}
+.part1 .m1 .content {
+    padding-top: 70px;
+}
+.part1 .m1 .content img:first-child {
+    margin-left: 228px;
+}
+.part1 .m1 .content img:nth-child(2) {
+    margin-left: 35px;
+}
+.part1 .m1 .content img:nth-child(3) {
+    position: relative;
+    top: -107px;
+
+    margin-left: 30px;
+}
+.part1 .m1 .content img:nth-child(4) {
+    position: relative;
+    top: -300px;
+
+    margin: 0 25px;
+}
+.part1 .m1 .content img:last-child {
+    position: relative;
+    top: -107px;
+}
+.part1 .m1 a img {
+    position: relative;
+    top: -41px;
+
+    padding-bottom: 40px;
+    margin-top: -154px;
+}
+.part2 {
+    height: 1004px;
+
+    background-color: #e1ddeb;
+}
+.part2 .m1 h3 {
+    padding-top: 97px;
+}
+.part2 .m1 h3 img:last-child {
+    position: relative;
+    top: -60px;
+    left: 837px;
+
+    display: block;
+}
+.part2 .m1 ul {
+    margin-top: -38px;
+}
+.part2 .m1 ul li {
+    float: left;
+    width: 358px;
+    height: 459px;
+    margin: 0 20px;
+}
+.part2 .m1 ul li:first-child {
+    background: url(../../img/lwqtss/p2_02.png) no-repeat center;
+}
+.part2 .m1 ul li:nth-child(2) {
+    background: url(../../img/lwqtss/p2_03.png) no-repeat center;
+}
+.part2 .m1 ul li:last-child {
+    background: url(../../img/lwqtss/p2_04.png) no-repeat center;
+}
+.part2 .m1 ul li div {
+    width: 359px;
+    height: 249px;
+    padding-top: 40px;
+    margin-top: 85px;
+
+    color: #fff;
+    background-color: rgba( 99, 90, 120, .6 );
+}
+.part2 .m1 ul li div h4 {
+    width: 273px;
+    height: 30px;
+    margin: 0 auto;
+
+    font-size: 30px;
+
+    text-align: center;
+
+    background: url(../../img/lwqtss/p2_05.png) no-repeat center;
+}
+.part2 .m1 ul li div p {
+    padding-top: 25px;
+
+    font-size: 20px;
+    line-height: 1.5;
+
+    text-align: center;
+}
+.part2 .m1 a img {
+    padding-top: 80px;
+}
+
+
+#tab div {
+    display: none;
+}
+#tab .fli {
+    display: block;
+}
+
+
+.part3 .m1 h3 {
+    padding-top: 193px;
+    padding-bottom: 109px;
+}
+.part3 .m1 .content > div:first-child {
+    float: left;
+    width: 579px;
+    height: 338px;
+    margin: 0 22px 217px 18px;
+
+    background: url(../../img/lwqtss/p3_01.png) no-repeat center;
+}
+.part3 .m1 .content > div:last-child {
+    float: left;
+    padding: 4px;
+
+    border: 1px solid #c5c3d7;
+}
+.part3 .m1 .content > div:first-child i {
+    position: relative;
+    top: 50px;
+    left: 57px;
+
+    display: block;
+    width: 30px;
+    height: 29px;
+
+    background: url(../../img/lwqtss/p3_02.png) no-repeat center;
+}
+.part3 .m1 .content > div:first-child p {
+    width: 505px;
+    padding-top: 15px;
+    padding-left: 57px;
+
+    font-size: 22px;
+    line-height: 1.984;
+
+    text-align: justify;
+}
+.part3 .m1 .content > div:first-child p span {
+    color: #eb0f5c;
+}
+.part3 .m1 .content > div:first-child a {
+    padding: 20px 0 0 337px;
+}
+.part4 {
+    width: 100%;
+    height: 1184px;
+
+    background: url(../../img/lwqtss/p4_02.jpg) no-repeat center;
+}
+.part4 h3 {
+    padding-top: 64px;
+}
+.part4 .m1 .content {
+    padding-top: 40px;
+}
+.part4 .m1 .content > div {
+    float: left;
+}
+.part4 .m1 .content div h4 {
+    padding-bottom: 10px;
+
+    font-size: 36px;
+
+    text-align: center;
+
+    color: #696592;
+    border-bottom: 1px solid rgba( 140, 136, 176, .302);
+}
+.part4 .m1 .content div p {
+    padding-top: 10px;
+
+    font-size: 20px;
+    line-height: 1.5;
+
+    text-align: center;
+
+    color: rgb( 123, 123, 123 );
+}
+.part4 .m1 .content .left ul li:first-child {
+    position: relative;
+    top: 100px;
+    left: 86px;
+}
+.part4 .m1 .content .left ul li:first-child h4 {
+    position: relative;
+    left: 9px;
+
+    width: 263px;
+}
+.part4 .m1 .content .left ul li:nth-child(2) {
+    position: relative;
+    top: 188px;
+}
+.part4 .m1 .content .left ul li:nth-child(2) h4 {
+    position: relative;
+    left: 28px;
+
+    width: 200px;
+}
+.part4 .m1 .content .left ul li:last-child {
+    position: relative;
+    top: 240px;
+    left: 9px;
+}
+.part4 .m1 .content .left ul li:last-child h4 {
+    position: relative;
+    left: 38px;
+
+    width: 200px;
+}
+.part4 .m1 .content .middle {
+    position: relative;
+    left: 48px;
+
+    margin-left: -85px;
+}
+.part4 .m1 .content .left {
+    width: 265px;
+}
+.part4 .m1 .content .right {
+    width: 265px;
+}
+.part4 .m1 .content .right ul li:first-child {
+    position: relative;
+    top: 99px;
+    left: -80px;
+}
+.part4 .m1 .content .right ul li:first-child h4 {
+    position: relative;
+    left: -3px;
+
+    width: 263px;
+}
+.part4 .m1 .content .right ul li:nth-child(2) {
+    position: relative;
+    top: 158px;
+    left: 15px;
+}
+.part4 .m1 .content .right ul li:nth-child(2) h4 {
+    position: relative;
+    left: 32px;
+
+    width: 185px;
+}
+.part4 .m1 .content .right ul li:last-child {
+    position: relative;
+    top: 210px;
+    left: 10px;
+}
+.part4 .m1 .content .right ul li:last-child h4 {
+    position: relative;
+    left: 19px;
+
+    width: 200px;
+}
+.part4 a img {
+    position: relative;
+    top: 65px;
+}
+.part5 h3 {
+    padding-top: 195px;
+}
+.part5 .m1 ul {
+    padding-top: 110px;
+}
+.part5 .m1 ul li {
+    float: left;
+}
+.part5 .m1 ul li:nth-child(2) {
+    width: 362px;
+    margin: 0 28px;
+}
+.part5 .m1 ul li:nth-child(2) .pad {
+    padding-bottom: 13px;
+}
+.part5 .m1 ul li:nth-child(4) {
+    margin: 18px 0 0 0;
+}
+.part5 .m1 ul li:last-child {
+    margin: 18px 0 0 25px;
+}
+.part5 .m1 a {
+    padding: 80px 0 100px;
+}
+.part6 {
+    width: 100%;
+    height: 1386px;
+
+    background: url(../../img/lwqtss/p6_09.png) no-repeat top center;
+}
+.part6 h3 {
+    padding: 80px 0 50px;
+}
+.part6 .m1 .p2_bg {
+    width: 450px;
+    height: 582px;
+    margin-top: 20px;
+
+    font-size: 22px;
+    line-height: 1.818;
+
+    color: rgb( 107, 107, 107 );
+    background: url(../../img/lwqtss/p6_02.png) no-repeat center;
+}
+.part6 .m1 .p2_bg p {
+    width: 340px;
+    padding: 125px 0 0 88px;
+
+    text-align: justify;
+}
+.part6 .col {
+    color: #eb0f5c;
+}
+.part6 .p6_pa {
+    padding-top: 60px;
+}
+.part6 .m1 a {
+    position: relative;
+    top: 95px;
+}

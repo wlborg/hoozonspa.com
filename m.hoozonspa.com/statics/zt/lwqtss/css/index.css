@@ -1,6 +1,5 @@
 .banner {
     display: block;
-    padding-top: 41px;
 }
 a {
     display: block;
@@ -350,7 +349,7 @@ h3 {
     height: 21.25rem;
     margin-bottom: 1.2rem;
 
-    background: url(../images/p6_09.png) no-repeat top center;
+    background: url(statics/zt/lwqtss/images/p6_09.png) no-repeat top center;
     background-color: #e1ddeb;
 }
 .part6 h3 img {

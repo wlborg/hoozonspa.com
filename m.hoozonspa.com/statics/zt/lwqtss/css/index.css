@@ -146,7 +146,7 @@ h3 {
 }
 .part3 .m1 .content > div:first-child p {
     width: 11.5rem;
-    padding-top: .4rem;
+    padding-top: 1.1rem;
     padding-left: .5rem;
 
     font-size: .5rem;
@@ -347,7 +347,7 @@ h3 {
 .part6 {
     width: 100%;
     height: 21.25rem;
-    margin-bottom: 1.2rem;
+    /*margin-bottom: 1.2rem;*/
 
     background: url(statics/zt/lwqtss/images/p6_09.png) no-repeat top center;
     background-color: #e1ddeb;

@@ -225,7 +225,7 @@ function tabs(tabIndex, tab) {
 }
 // 鼠标经过切换
 function tabsHov(tabIndex, tab) {
-    tabIndex.hover(function(e) {
+    tabIndex.click(function(e) {
         var index = $(this).index();
         if (tab && tab.find('li')) {
             tab.find('li').removeClass('active');

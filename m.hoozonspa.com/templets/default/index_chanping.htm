@@ -35,22 +35,11 @@
                 </div>
                {/dede:arclist} -->
               <!--   {dede:arclist typeid='274' row='1' orderby='weight' orderway='desc' titlelen="120" infolen='30' addfields='pic3' channelid='20' limit='0,1' flag='c'} -->
-              {dede:sql sql='Select content from spa_arctype where id=274'}
+        {dede:sql sql='Select content from dede_arctype where id=274'}
+　　          [field:content function="cn_substr(@me,236)"/]
+        {/dede:sql}
 
-               [field:content /]
 
-           {/dede:sql}
- {dede:sql sql='Select content from dede_arctype where id=274'}
-
-               [field:content /]
-
-           {/dede:sql}
-              {dede:type typeid='274'}
-                <div class="item">
-                    <a href="/chanping/product3/">{dede:field.content/}</a>
-                    <p>奥碧虹爽肤精系列</p>
-                </div>
-                {/dede:type}
                <!-- {/dede:arclist} -->
               <!--   {dede:arclist typeid='275' row='1' orderby='weight' orderway='desc' titlelen="120" infolen='30' addfields='pic3' channelid='20' limit='0,1' flag='c'} -->
                 <div class="item">

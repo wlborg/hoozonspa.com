@@ -174,7 +174,7 @@ textarea {
 }.main1-in ul.borderr li {
 
     border-radius: 40px 0 40px 0;
-}.zixun {
+}.zixunn {
 
     width: 174px;
     height: 46px;
@@ -187,22 +187,22 @@ textarea {
 
     border: 2px solid #91d1fd;
     border-radius: 10px;
-}.zixun a {
+}.zixunn a {
 
     display: block;
     width: 100%;
     height: 100%;
 
     font-size: 26px;
-}.zixun a img {
+}.zixunn a img {
 
     float: left;
-}.zixun a span {
+}.zixunn a span {
 
     float: left;
 
     color: #3f99d6;
-}.zixun a span strong {
+}.zixunn a span strong {
 
     font-weight: 700;
 
@@ -373,7 +373,7 @@ textarea {
 }.yinying {
 
     margin: 0 auto;
-}.zixun2 {
+}.zixunn2 {
 
     margin: 0 auto;
 }.main-three {
@@ -526,7 +526,7 @@ textarea {
 
     width: 1200px;
     margin: 0 auto;
-}.zixun3 {
+}.zixunn3 {
 
     /*margin: 40px auto 130px; 原来*/
     margin: 40px auto 80px;

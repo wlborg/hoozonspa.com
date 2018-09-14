@@ -11,7 +11,6 @@
     <title>{dede:field.title/}_{dede:field.typename/}_{dede:global.cfg_webname/}</title>
     <!-- <link rel="canonical" href="https://www.hoozonspa.com{dede:field.arcurl/}">  -->{dede:include filename="_link.htm"/}
 </head>
-
 <body>
     <div class="wrapper">
         {dede:include filename="_header.htm"/}
@@ -133,7 +132,11 @@
                  {dede:arclist typeid ='276' titlelen='42' row='4' orderby="weight" orderway="desc" addfields='pic4,des1,des2,des3,des4,des5' channelid='20' limit='4,1'}
                 <div class="box box3">
                     <div class="g-left">
-                        <h3>Step4</h3>
+                        <a href="[field:arcurl /]" title="[field:title/]"><img src="[field:pic4 function='replaceurl(@me)/]" alt="[field:title/]"></a>
+
+                    </div>
+                    <div class="g-right">
+                           <h3>Step4</h3>
                         <h4>[field:title/]</h4>
                         <p><span> 规格：</span>[field:des1/]</p>
                         <p><span>产地：</span>[field:des2/]</p>
@@ -141,9 +144,6 @@
                         <p><span>适用肌肤：</span>[field:des4/]</p>
                         <p><span>主要成分：</span>[field:des5/]
                         </p>
-                    </div>
-                    <div class="g-right">
-                        <a href="[field:arcurl /]" title="[field:title/]"><img src="[field:pic4 function='replaceurl(@me)/]" alt="[field:title/]"></a>
                     </div>
                 </div>
                 <div class="box box2">
@@ -180,6 +180,8 @@
                     </div>
                 </div>
                 {/dede:arclist}
+                <span>分割线</span>
+                {dede:FIELD.typeid function='get_list_chanpings(@me)'/}
             </div>
         </div>
         {dede:include filename="_sj_copyright.htm"/} {dede:include filename="_footer.htm"/}

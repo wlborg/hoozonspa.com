@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    {dede:include filename="_meta.htm"/}
-    <meta name="author" content="前端：陈晓珍" />
-    <meta property="og:type" content="article" />
-    <meta property="article:published_time" content="{dede:field.pubdate function=" MyDate( 'Y-m-d',@me) "/}T{dede:field.pubdate function="MyDate( 'H:i:s',@me) "/}+08:00" />
-    <meta name="keywords" content="{dede:field name='keywords'/}" />
-    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
-    <title>{dede:field.title/}_{dede:field.typename/}_{dede:global.cfg_webname/}</title>
-    <!-- <link rel="canonical" href="https://www.hoozonspa.com{dede:field.arcurl/}">  -->{dede:include filename="_link.htm"/}
-</head>
-
-<body>
-    <div class="wrapper">
+  <div class="wrapper">
         {dede:include filename="_header.htm"/}
         <!-- 首页轮播广告 -->
         {dede:myad name='sj_banner'/}
@@ -27,7 +12,7 @@
                 <div class="des">
                     {dede:field.content/} {dede:field.description/}
                 </div>
-             {dede:arclist typeid ='274' titlelen='42' row='4' orderby="weight" orderway="desc" addfields='pic4,des1,des2,des3,des4,des5' channelid='20' limit='0,1'}
+             {dede:arclist typeid ='114' titlelen='42' row='4' orderby="weight" orderway="desc" addfields='pic4,des1,des2,des3,des4,des5' channelid='20' limit='0,1'}
                 <div class="box box1">
                     <div class="g-left">
                         <a href="[field:arcurl /]" title="[field:title/]"><img src="[field:pic4 function='replaceurl(@me)/]" alt="[field:title/]"></a>
@@ -52,7 +37,7 @@
                 </div>
                 {/dede:arclist}
 
-                {dede:arclist  typeid ='274' titlelen='42' row='4' orderby="weight" orderway="desc" addfields='pic4,des1,des2,des3,des4,des5' channelid='20' limit='1,1'}
+                {dede:arclist  typeid ='114' titlelen='42' row='4' orderby="weight" orderway="desc" addfields='pic4,des1,des2,des3,des4,des5' channelid='20' limit='1,1'}
                 <div class="box box3">
                     <div class="g-left">
                         <h3>Step2</h3>
@@ -78,7 +63,7 @@
                 </div>
                 {/dede:arclist}
 
-                {dede:arclist  typeid ='274' titlelen='42' row='4' orderby="weight" orderway="desc" addfields='pic4,des1,des2,des3,des4,des5' channelid='20' limit='2,1'}
+                {dede:arclist  typeid ='114' titlelen='42' row='4' orderby="weight" orderway="desc" addfields='pic4,des1,des2,des3,des4,des5' channelid='20' limit='2,1'}
                 <div class="box box1">
                     <div class="g-left">
                         <a href="[field:arcurl /]" title="[field:title/]"><img src="[field:pic4 function='replaceurl(@me)/]" alt="[field:title/]"></a>
@@ -103,7 +88,7 @@
                     </div>
                 </div>
                 {/dede:arclist}
-                 {dede:arclist typeid ='274' titlelen='42' row='4' orderby="weight" orderway="desc" addfields='pic4,des1,des2,des3,des4,des5' channelid='20' limit='3,1'}
+                 {dede:arclist typeid ='114' titlelen='42' row='4' orderby="weight" orderway="desc" addfields='pic4,des1,des2,des3,des4,des5' channelid='20' limit='3,1'}
                 <div class="box box3">
                     <div class="g-left">
                         <h3>Step4</h3>
@@ -134,6 +119,3 @@
         {dede:include filename="_sj_copyright.htm"/} {dede:include filename="_footer.htm"/}
     </div>
     {dede:include filename="_script.htm"/}
-</body>
-
-</html>

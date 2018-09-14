@@ -62,8 +62,16 @@ function get_list_chanpings($typeid)
     $des3 = $row['des3'];//功效：
     $des4 = $row['des4'];//适用肌肤：
     $des5 = $row['des5'];//主要成分：
-     $index++;
-     if($index%2==0){
+    $code='<div class="box box2">
+                    <div class="g-left"><img src="/statics/img/img33.jpg" alt=""></div>
+                    <div class="g-right">
+                        <p>长按图片 → 保存图片 → 打开微信 →
+                            <br>右上角点击扫一扫 →右上角打开相册图片
+                            <br> → 识别小程序码 → 立即购买</p>
+                    </div>
+                </div>';
+    $index++;
+     if($index%2==1){
               $relateproject.='<div class="box box1">
                     <div class="g-left">
                         <a href="" title="'.$title.'"><img src="'.$pic4.'" alt="'.$title.'"></a>
@@ -77,61 +85,26 @@ function get_list_chanpings($typeid)
                         <p><span>适用肌肤：</span>'.$des4.'</p>
                        <p><span>主要成分：</span>'.$des5.'</p>
                     </div>
-                </div>';
-         }else if($index%2==1){
+                </div>'.$code;
+         }else if($index%2==0){
              $relateproject.='<div class="box box1">
-                    <div class="g-right">
-                        <h3>'.$index.'</h3>
-                       <h4>'.$title.'</h4>
-                        <p><span> 规格：</span>'.$des1.'</p>
-                       <p><span>产地：</span>'.$des2.'</p>
-                        <p><span>功效：</span>'.$des3.'</p>
-                        <p><span>适用肌肤：</span>'.$des4.'</p>
-                       <p><span>主要成分：</span>'.$des5.'</p>
-                    </div>
-                   </div>
-                 <div class="g-left">
-                        <a href="" title="'.$title.'"><img src="'.$pic4.'" alt="'.$title.'"></a>
-                   </div>';
+                      <div class="g-left">
+                            <h3>'.$index.'</h3>
+                         <h4>'.$title.'</h4>
+                          <p><span> 规格：</span>'.$des1.'</p>
+                         <p><span>产地：</span>'.$des2.'</p>
+                          <p><span>功效：</span>'.$des3.'</p>
+                          <p><span>适用肌肤：</span>'.$des4.'</p>
+                         <p><span>主要成分：</span>'.$des5.'</p>
+                     </div>
+                      <div class="g-right">
+                          <a href="" title="'.$title.'"><img src="'.$pic4.'" alt="'.$title.'"></a>
+                      </div>
+                   </div>'.$code;
          }
   }
   if($ns>0){
-    // for循环开始
-    // for($index=1;$index<=$ns;$index++){
 
-    //      if($index%2==0){
-    //           $relateproject.='<div class="box box1">'+
-    //                 '<div class="g-left">'+
-    //                    ' <a href="" title="'.$title.'"><img src="'.$pic4.'" alt="'.$title.'"></a>'+
-    //                '</div>'+
-    //                 '<div class="g-right">'+
-    //                    ' <h3>'.$index.'</h3>'+
-    //                    '<h4>'.$title.'</h4>'+
-    //                     '<p><span> 规格：</span>'.$des1.'</p>'+
-    //                    ' <p><span>产地：</span>'.$des2.'</p>'+
-    //                     '<p><span>功效：</span>'.$des3.'</p>'+
-    //                     '<p><span>适用肌肤：</span>'.$des4.'</p>'+
-    //                    '<p><span>主要成分：</span>'.$des5.'</p>'+
-    //                 '</div>'+
-    //            ' </div>';
-    //      }else if($index%2==1){
-    //          $relateproject.='<div class="box box1">'+
-    //                 '<div class="g-right">'+
-    //                    ' <h3>'.$index.'</h3>'+
-    //                    '<h4>'.$title.'</h4>'+
-    //                     '<p><span> 规格：</span>'.$des1.'</p>'+
-    //                    ' <p><span>产地：</span>'.$des2.'</p>'+
-    //                     '<p><span>功效：</span>'.$des3.'</p>'+
-    //                     '<p><span>适用肌肤：</span>'.$des4.'</p>'+
-    //                    '<p><span>主要成分：</span>'.$des5.'</p>'+
-    //                 '</div>'+
-    //               ' </div>'+
-    //              '<div class="g-left">'+
-    //                    ' <a href="" title="'.$title.'"><img src="'.$pic4.'" alt="'.$title.'"></a>'+
-    //                '</div>';
-    //      }
-    // }
-    // for循环结束
   }
     return $relateproject;
 }

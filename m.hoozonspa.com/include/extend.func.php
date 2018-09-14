@@ -74,7 +74,7 @@ function get_list_chanpings($typeid)
                    '</div>'+
                     '<div class="g-right">'+
                        ' <h3>'.$index.'</h3>'+
-                       '<h4>[field:title/]</h4>'+
+                       '<h4>'.$title.'</h4>'+
                         '<p><span> 规格：</span>'.$des1.'</p>'+
                        ' <p><span>产地：</span>'.$des2.'</p>'+
                         '<p><span>功效：</span>'.$des3.'</p>'+
@@ -86,7 +86,7 @@ function get_list_chanpings($typeid)
              $relateproject.='<div class="box box1">'+
                     '<div class="g-right">'+
                        ' <h3>'.$index.'</h3>'+
-                       '<h4>[field:title/]</h4>'+
+                       '<h4>'.$title.'</h4>'+
                         '<p><span> 规格：</span>'.$des1.'</p>'+
                        ' <p><span>产地：</span>'.$des2.'</p>'+
                         '<p><span>功效：</span>'.$des3.'</p>'+

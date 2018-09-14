@@ -54,13 +54,14 @@ function get_list_chanpings($typeid)
     $id = $row["id"];
     $title = cn_substr($row["title"],80,0);
     $urlarray = GetOneArchive($id);
-    $url = $urlarray['arcurl'];
+    // $url = $urlarray['arcurl'];
     $litpic =replaceurl($row["litpic"]);
     $des1 = replaceurl($row["des1"]);//规格：
     $des2 = replaceurl($row["des2"]);//产地：
     $des3 = replaceurl($row["des3"]);//功效：
     $des4 = replaceurl($row["des4"]);//适用肌肤：
     $des5 = replaceurl($row["des5"]);//主要成分：
+    $pic4 = replaceurl($row["pic4"]);//产品图（详情侧边图)
   }
   if($ns>0){
     // for循环开始
@@ -69,7 +70,7 @@ function get_list_chanpings($typeid)
          if($index%2==0){
               $relateproject.='<div class="box box1">'+
                     '<div class="g-left">'+
-                       ' <a href="'.$url.'" title="[field:title/]"><img src="'.$litpic.'" alt="'.$title.'"></a>'+
+                       ' <a href="" title="'.$title.'"><img src="'.$pic4.'" alt="'.$title.'"></a>'+
                    '</div>'+
                     '<div class="g-right">'+
                        ' <h3>'.$index.'</h3>'+
@@ -94,7 +95,7 @@ function get_list_chanpings($typeid)
                     '</div>'+
                   ' </div>'+
                  '<div class="g-left">'+
-                       ' <a href="'.$url.'" title="[field:title/]"><img src="'.$litpic.'" alt="'.$title.'"></a>'+
+                       ' <a href="" title="'.$title.'"><img src="'.$pic4.'" alt="'.$title.'"></a>'+
                    '</div>';
          }
     }

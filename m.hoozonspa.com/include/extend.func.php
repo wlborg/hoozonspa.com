@@ -64,17 +64,16 @@ function get_list_chanpings($typeid)
     $des5 = replaceurl($row["des5"]);//主要成分：
   }
   if($ns>0){
-
+    // for循环开始
     for($index=1;$index<=$ns;$index++){
-          // $rel=$index%2=0;
-         // $relateproject.=$rel;
+
          if($index%2==0){
               $relateproject.='<div class="box box1">'+
                     '<div class="g-left">'+
                        ' <a href="'.$url.'" title="[field:title/]"><img src="'.$litpic.'" alt="'.$title.'"></a>'+
                    '</div>'+
                     '<div class="g-right">'+
-                       ' <h3>'.$ns.'</h3>'+
+                       ' <h3>'.$index.'</h3>'+
                        '<h4>[field:title/]</h4>'+
                         '<p><span> 规格：</span>'.$des1.'</p>'+
                        ' <p><span>产地：</span>'.$des2.'</p>'+
@@ -86,7 +85,7 @@ function get_list_chanpings($typeid)
          }else if($index%2==1){
              $relateproject.='<div class="box box1">'+
                     '<div class="g-right">'+
-                       ' <h3>'.$ns.'</h3>'+
+                       ' <h3>'.$index.'</h3>'+
                        '<h4>[field:title/]</h4>'+
                         '<p><span> 规格：</span>'.$des1.'</p>'+
                        ' <p><span>产地：</span>'.$des2.'</p>'+
@@ -99,8 +98,8 @@ function get_list_chanpings($typeid)
                        ' <a href="'.$url.'" title="[field:title/]"><img src="'.$litpic.'" alt="'.$title.'"></a>'+
                    '</div>';
          }
-
     }
+    // for循环结束
   }
     return $relateproject;
 }

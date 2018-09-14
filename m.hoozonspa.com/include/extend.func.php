@@ -40,30 +40,30 @@ function replacebodyurl($body)
 //获取对应产品列表
 function get_list_chanpings($typeid)
 {
-global $dsql;
-$relateproject="";
-$imgLeft="";//图片在左
-$imgRight="";//图片在右
-$relatetypeid = 0;
-$index =0;//下标
-$dsql->SetQuery( "SELECT  * FROM #@__archives AS a
-where  a.typeid='$typeid'  and a.arcrank=0 order by id desc limit 20");
-$dsql->Execute();
-$ns = $dsql->GetTotalRow();
-while($row=$dsql->GetArray())
-{
-$id = $row["id"];
-$title = cn_substr($row["title"],80,0);
-$urlarray = GetOneArchive($id);
-$url = $urlarray['arcurl'];
-$litpic =replaceurl($row["litpic"]);
-$des1 = replaceurl($row["des1"]);//规格：
-$des2 = replaceurl($row["des2"]);//产地：
-$des3 = replaceurl($row["des3"]);//功效：
-$des4 = replaceurl($row["des4"]);//适用肌肤：
-$des5 = replaceurl($row["des5"]);//主要成分：
-}
-if($ns>0){
+  global $dsql;
+  $relateproject="";
+  $imgLeft="";//图片在左
+  $imgRight="";//图片在右
+  $relatetypeid = 0;
+  $index =0;//下标
+  $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
+  where  a.typeid='$typeid'  and a.arcrank=0 order by id desc limit 20");
+  $dsql->Execute();
+  $ns = $dsql->GetTotalRow();
+  while($row=$dsql->GetArray())
+  {
+    $id = $row["id"];
+    $title = cn_substr($row["title"],80,0);
+    $urlarray = GetOneArchive($id);
+    $url = $urlarray['arcurl'];
+    $litpic =replaceurl($row["litpic"]);
+    $des1 = replaceurl($row["des1"]);//规格：
+    $des2 = replaceurl($row["des2"]);//产地：
+    $des3 = replaceurl($row["des3"]);//功效：
+    $des4 = replaceurl($row["des4"]);//适用肌肤：
+    $des5 = replaceurl($row["des5"]);//主要成分：
+  }
+  if($ns>0){
 
     for($index=1;$index<=$ns;$index++){
           // $rel=$index%2=0;
@@ -101,6 +101,6 @@ if($ns>0){
          }
 
     }
-}
-return $relateproject;
+  }
+    return $relateproject;
 }

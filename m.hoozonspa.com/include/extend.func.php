@@ -59,8 +59,8 @@ function get_list_chanpings($typeid)
     $pic4 = replaceurl($row['pic4']);//产品图（详情侧边图)
     $des1 = $row['des1'];//规格：
     $des2 = $row['des2'];//产地：
-    $des3 = $row['des3']);//功效：
-    $des4 = $row['des4']);//适用肌肤：
+    $des3 = $row['des3'];//功效：
+    $des4 = $row['des4'];//适用肌肤：
     $des5 = $row['des5'];//主要成分：
   }
   if($ns>0){

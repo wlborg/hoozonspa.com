@@ -63,35 +63,35 @@ function get_list_chanpings($typeid)
     $des4 = $row['des4'];//适用肌肤：
     $des5 = $row['des5'];//主要成分：
      if($index%2==0){
-              $relateproject.='<div class="box box1">'+
-                    '<div class="g-left">'+
-                       ' <a href="" title="'.$title.'"><img src="'.$pic4.'" alt="'.$title.'"></a>'+
-                   '</div>'+
-                    '<div class="g-right">'+
-                       ' <h3>'.$index.'</h3>'+
-                       '<h4>'.$title.'</h4>'+
-                        '<p><span> 规格：</span>'.$des1.'</p>'+
-                       ' <p><span>产地：</span>'.$des2.'</p>'+
-                        '<p><span>功效：</span>'.$des3.'</p>'+
-                        '<p><span>适用肌肤：</span>'.$des4.'</p>'+
-                       '<p><span>主要成分：</span>'.$des5.'</p>'+
-                    '</div>'+
-               ' </div>';
+              $relateproject.='<div class="box box1">
+                    <div class="g-left">
+                        <a href="" title="'.$title.'"><img src="'.$pic4.'" alt="'.$title.'"></a>
+                   </div>
+                    <div class="g-right">
+                        <h3>'.$index.'</h3>
+                       <h4>'.$title.'</h4>
+                        <p><span> 规格：</span>'.$des1.'</p>
+                       <p><span>产地：</span>'.$des2.'</p>
+                        <p><span>功效：</span>'.$des3.'</p>
+                        <p><span>适用肌肤：</span>'.$des4.'</p>
+                       <p><span>主要成分：</span>'.$des5.'</p>
+                    </div>
+                </div>';
          }else if($index%2==1){
-             $relateproject.='<div class="box box1">'+
-                    '<div class="g-right">'+
-                       ' <h3>'.$index.'</h3>'+
-                       '<h4>'.$title.'</h4>'+
-                        '<p><span> 规格：</span>'.$des1.'</p>'+
-                       ' <p><span>产地：</span>'.$des2.'</p>'+
-                        '<p><span>功效：</span>'.$des3.'</p>'+
-                        '<p><span>适用肌肤：</span>'.$des4.'</p>'+
-                       '<p><span>主要成分：</span>'.$des5.'</p>'+
-                    '</div>'+
-                  ' </div>'+
-                 '<div class="g-left">'+
-                       ' <a href="" title="'.$title.'"><img src="'.$pic4.'" alt="'.$title.'"></a>'+
-                   '</div>';
+             $relateproject.='<div class="box box1">
+                    <div class="g-right">
+                        <h3>'.$index.'</h3>
+                       <h4>'.$title.'</h4>
+                        <p><span> 规格：</span>'.$des1.'</p>
+                       <p><span>产地：</span>'.$des2.'</p>
+                        <p><span>功效：</span>'.$des3.'</p>
+                        <p><span>适用肌肤：</span>'.$des4.'</p>
+                       <p><span>主要成分：</span>'.$des5.'</p>
+                    </div>
+                   </div>
+                 <div class="g-left">
+                        <a href="" title="'.$title.'"><img src="'.$pic4.'" alt="'.$title.'"></a>
+                   </div>';
          }
   }
   if($ns>0){

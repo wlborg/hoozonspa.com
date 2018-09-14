@@ -62,6 +62,7 @@ function get_list_chanpings($typeid)
     $des3 = $row['des3'];//功效：
     $des4 = $row['des4'];//适用肌肤：
     $des5 = $row['des5'];//主要成分：
+     $index++;
      if($index%2==0){
               $relateproject.='<div class="box box1">
                     <div class="g-left">

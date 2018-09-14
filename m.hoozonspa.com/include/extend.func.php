@@ -74,7 +74,7 @@ function get_list_chanpings($typeid)
      if($index%2==1){
               $relateproject.='<div class="box box1">
                     <div class="g-left">
-                        <a href="" title="'.$title.'"><img src="'.$pic4.'" alt="'.$title.'"></a>
+                        <a href="'$url'" title="'.$title.'"><img src="'.$pic4.'" alt="'.$title.'"></a>
                    </div>
                     <div class="g-right">
                         <h3>'.$index.'</h3>
@@ -87,7 +87,7 @@ function get_list_chanpings($typeid)
                     </div>
                 </div>'.$code;
          }else if($index%2==0){
-             $relateproject.='<div class="box box1">
+             $relateproject.='<div class="box box2">
                       <div class="g-left">
                             <h3>'.$index.'</h3>
                          <h4>'.$title.'</h4>
@@ -98,7 +98,7 @@ function get_list_chanpings($typeid)
                          <p><span>主要成分：</span>'.$des5.'</p>
                      </div>
                       <div class="g-right">
-                          <a href="" title="'.$title.'"><img src="'.$pic4.'" alt="'.$title.'"></a>
+                          <a href="'$url'" title="'.$title.'"><img src="'.$pic4.'" alt="'.$title.'"></a>
                       </div>
                    </div>'.$code;
          }

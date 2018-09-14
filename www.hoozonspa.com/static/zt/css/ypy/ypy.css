@@ -1,0 +1,560 @@
+/*banner开始*/
+img {
+    display: block;
+}
+a {
+    display: block;
+}
+.banner {
+    width: 100%;
+}
+.banner img {
+    width: 100%;
+}
+
+/*banner结束*/
+
+/*part1开始*/
+.part1 {
+    position: relative;
+}
+.bg-wrap {
+    width: 100%;
+}
+.bg-wrap img {
+    width: 100%;
+    display: block;
+}
+.bg-con1 {
+    position: relative;
+}
+.content {
+    position: absolute;
+    top: .67rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.part1 .title-wrap {
+
+}
+.part1 .title-wrap p:first-child {
+    font-size: 0.6rem;
+    line-height: 0.777rem;
+    letter-spacing: 0.014rem;
+    color: #f3bfac;
+}
+.part1 .title-wrap p:last-child {
+    font-size: 0.45rem;
+    line-height: 0.777rem;
+    letter-spacing: 0.015rem;
+    color: #eeddcc;
+}
+.part1 .panel {
+    width: 13.89rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+.part1 .panel .panel-item {
+    float: left;
+    width: 4.51rem;
+    height: 3.55rem;
+    position: relative;
+    margin-bottom: .18rem;
+}
+.part1 .panel .panel-item:nth-child(3n-1) {
+    margin-right: .18rem;
+    margin-left: .18rem;
+}
+.part1 .panel .panel-item img {
+    width: 100%;
+    height: 100%;
+}
+.part1 .bot-txt {
+    width: 1.18rem;
+    position: absolute;
+    left: 50%;
+    bottom: .18rem;
+    margin-left: -.58rem;
+    font-size: 0.28rem;
+    letter-spacing: 0.014rem;
+    color: #f9e7d3;
+}
+.panel-btn {
+    width: 1.7rem;
+    height: 0.56rem;
+    position: absolute;
+    left: 43%;
+    bottom: 1.46rem;
+    margin-left: -.53rem;
+}
+.panel-btn a {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: .52rem;
+    color: #f9e7d3;
+    font-size: 0.32rem;
+    letter-spacing: 0.016rem;
+    vertical-align: top;
+}
+.part1 .con {
+    width: 100%;
+    position: relative;
+    top: 8.35rem;
+}
+.part1 .con .left {
+    position: absolute;
+    top: .95rem;
+    right: 0;
+    width: 9.4rem;
+}
+.part1 .left-detail {
+    margin-left: 1.36rem;
+    margin-top: 1.08rem;
+}
+.part1 .left-detail .title {
+    color: #695852;
+    text-align: left;
+}
+.part1 .title p:first-child {
+    font-size: 0.6rem;
+    line-height: 0.777rem;
+    letter-spacing: 0.014rem;
+}
+.part1 .title p:nth-child(2) {
+    font-size: 0.45rem;
+    line-height: 0.777rem;
+    letter-spacing: 0.015rem;
+}
+.part1 .title p span {
+   font-size: .45rem;
+}  
+.part1 .title img {
+    width: 2.91rem;
+    height: .32rem;
+} 
+.part1 .con-txt {
+    width: 5.2rem;
+    text-align: justify;
+    font-size: 0.2rem;
+    margin-top: .72rem;
+}
+.part1 .con-txt span:nth-child(2) {
+    line-height: 0.4rem;
+    letter-spacing: 0.01rem;
+    color: #695852;
+    text-align: left;
+}
+.part1 .con-txt span:first-child {
+    color: #997366;
+}
+.part1 .con-txt span:last-child {
+    font-size: 0.16rem;
+    letter-spacing: 0.008rem;
+    color: #8c8880;
+}
+.part1 .left-detail .bot-txt-1 {
+    position: relative;
+    width: 4.9rem;
+    height: .94rem;
+    color: #695751;
+    margin-top: .55rem;
+}
+.part1 .left-detail .bot-txt-1 img {
+    width: 100%;
+    height: 100%;
+}
+.bot-txt-1 .item p:first-child {
+    font-size: 0.229rem;
+    line-height: 0.331rem;
+    letter-spacing: 0.011rem;
+}
+.part1 .bot-txt-1 .item {
+    position: absolute;
+    width: .8rem;
+    top: .25rem;
+    left: .08rem;
+} 
+.part1 .bot-txt-1 .item-1 {
+    left: 1.4rem;
+}
+.part1 .bot-txt-1 .item-2 {
+    left: 2.7rem;
+}
+.part1 .bot-txt-1 .item-3 {
+    left: 4rem;
+}
+.bot-txt-1 .item p:last-child {
+    font-size: 0.172rem;
+    letter-spacing: 0.009rem;
+    color: #695751;
+}
+.left-detail .btn-wrap {
+    width: 2.56rem;
+    height: .71rem;
+    background: url('//pc.hoozonspa.com/static/zt/img/ypy/images/btn.png') no-repeat;
+    background-size: 100%;
+    margin-top: .9rem;
+}
+.left-detail .btn-wrap a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+/*part1结束*/
+
+/*part2开始*/
+.part2 {
+    position: relative;
+    overflow: hidden;
+}
+.part2 .content {
+    top: .82rem;
+}
+.part2 .panel-wrap {
+    width: 13.14rem;
+    margin: 0 auto;
+    margin-top: 1.2rem;
+}
+.part2 .panel-wrap .item {
+    width: 4.22rem;
+    height: 2.75rem;
+    position: relative;
+    float: left;
+    margin-bottom: .25rem;
+}
+.part2 .panel-wrap .item:nth-child(3n-1) {
+    margin-left: .24rem;
+    margin-right: .24rem;
+}
+.part2 .panel-wrap .item img {
+    width: 100%;
+    height: 100%;
+}
+.part2 .txt-wrap {
+    position: absolute;
+    top: .65rem;
+    left: .15rem;
+    width: 100%;
+}
+.part2 .txt-wrap .title {
+    font-size: 0.36rem;
+    letter-spacing: 0.018rem;
+    color: #f3bfac;
+}
+.part2 .txt-wrap .txt {
+    margin-top: .3rem;
+}
+.part2 .txt p:first-child {
+    font-size: 0.2rem;
+    line-height: 0.24rem;
+    letter-spacing: 0.01rem;
+    color: #e7d6c6;
+}
+.part2 .txt p:last-child {
+    font-size: 0.215rem;
+    letter-spacing: 0.011rem;
+    color: #f9e7d3;
+    margin-top: .05rem;
+}
+.btn-wrap-1 {
+    position: absolute;
+    left: 50%;
+    margin-left: -1.28rem;
+    top: 10rem;
+    width: 2.56rem;
+    height: .71rem;
+    background: url('//pc.hoozonspa.com/static/zt/img/ypy/btn.png') no-repeat;
+    background-size: 100%;
+}
+.btn-wrap-1 a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.part2 .con-1 {
+    position: relative;
+    top: 3.7rem;
+    width: 100%;
+    height: 100px;
+    margin-top: 4rem;
+}
+.part2 .con-1 .con-detail {
+
+}
+.part2 .con-detail > div {
+    float: left;
+}
+.part2 .con-detail .left {
+    width: 10.86rem;
+    height: 7.35rem;
+}
+.part2 .con-detail .left img {
+    width: 100%;
+    height: 100%;
+}
+.part2 .con-detail .right {
+    position: relative;
+    width: 6.12rem;
+    height: 7.35rem;
+}
+.part2 .con-detail .right img {
+    width: 100%;
+    height: 100%;
+}
+.part2 .right .right-detail {
+    position: absolute;
+    top: 1.3rem;
+    left: 0;
+    padding-left: 1rem;
+}
+.part2 .right .title-1 {
+    width: 2.85rem;
+    height: .83rem;
+    margin-bottom: .49rem;
+}
+.part2 .right .title-1 img {
+    width: 100%;
+    height: 100%;
+}
+.part2 .txt-item > p {
+    font-size: 0.24rem;
+    line-height: 0.406rem;
+    letter-spacing: 0.012rem;
+    color: #f9e7d3;
+    float: left;
+    text-align: left;
+}
+.part2 .txt-item p span {
+    width: 0.05rem;
+    height: 0.05rem;
+    background-color: #e7d6c6;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: .05rem;
+}
+.part2 .txt-item p:first-child {
+    width: 1.97rem;
+}
+.btn-wrap-2 {
+    width: 2.53rem;
+    height: .63rem;
+    background: url("//pc.hoozonspa.com/static/zt/img/ypy/btn-1.png") no-repeat;
+    background-size: 100%;
+    margin-top: 2.85rem;
+}
+.btn-wrap-2 a {
+    width: 100%;
+    height: 100%;
+}
+.modefier {
+    width: 2.6rem;
+    height: 2.58rem;
+    position: absolute;
+    bottom: -2.58rem;
+    left: 0;
+    z-index: 10;
+}
+.modefier img {
+    width: 100%;
+    height: 100%;
+}
+/*part2结束*/
+
+/*part3开始*/
+.part3 {
+    position: relative;
+}
+.part3 .content {
+    top: 1.55rem;
+}
+.part3 .title-wrap p:last-child {
+    color: #695852;
+}
+.part3 .con-detail {
+    position: relative;
+}
+.part3 .con-detail .left {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.part3 .con-detail .right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.part3 .con-1 {
+    margin-top: 1.3rem;
+}
+.part3 .con-1 .right {
+    /*z-index: 10;*/
+}
+.part3 .con-2 .right {
+    z-index: 10;
+}
+.part3 .con-1 .item {
+    width: 8.12rem;
+    height: 7.06rem;
+}
+.part3 .con-2 {
+    margin-top: 8.74rem;
+}
+.part3 .con-3 {
+    top: 7.38rem;
+}
+.part3 .con-2 .item {
+    width: 11.2rem;
+    height: 6.9rem;
+}
+.part3 .con-3 .item {
+    width: 7.9rem;
+    height: 7.37rem;
+}
+.part3 .con-detail .item img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.part3 .con-1 .item-1 {
+    width: 11.12rem;
+    height: 7.06rem;
+}
+.part3 .con-3 .item-1 {
+    width: 11.3rem;
+    height: 7.37rem;
+}
+.part3 .con-2 .item-1 {
+    width: 7.96rem;
+    height: 6.9rem;
+}
+.part3 .con-detail .item-1 img {
+    width: 100%;
+    height: 100%;
+}
+.part3 .con-detail .detail {
+    position: absolute;
+    top: 0;
+    padding-left: 1.77rem;
+    padding-top: 1.25rem;
+}
+.part3 .detail .title {
+    width: 2.77rem;
+    height: 1.1rem;
+}
+.part3 .detail .title img {
+    width: 100%;
+    height: 100%;
+}
+.part3 .detail .txt {
+    width: 4.6rem;
+    font-size: 0.21rem;
+    line-height: 0.35rem;
+    letter-spacing: 0.008rem;
+    color: #f2e0ce;
+    text-align: justify;
+    margin-top: .9rem;
+    margin-bottom: .69rem;
+}
+.part3 .con-2 .detail .txt {
+    margin-top: .67rem;
+    margin-bottom: .88rem;
+    width: 4.3rem;
+}
+.part3 .con-3 .detail .txt {
+    margin-bottom: .56rem;
+    margin-top: .73rem;
+}
+.part3 .txt .txt-item {
+    float: left;
+    font-size: 0.28rem;
+    line-height: 0.315rem;
+    letter-spacing: 0.014rem;
+    color: #f2e0ce;
+    width: 1.85rem;
+    text-align: left;
+    margin-bottom: .2rem;
+}
+.part3 .txt .txt-item span {
+    display: inline-block;
+    width: 0.05rem;
+    height: 0.05rem;
+    background-color: #f2e0ce;
+    vertical-align: middle;
+    border-radius: .05rem;
+    margin-right: .15rem;
+}
+.part3 .detail .btn {
+    width: 2.55rem;
+    height: .71rem;
+}
+.part3 .detail .btn {
+    box-shadow: -0.012rem 0.016rem 0.05rem 0rem 
+        rgba(91, 61, 67, 0.75);
+}
+.part3 .detail .btn a {
+    width: 100%;
+    height: 100%;
+}
+.part3 .detail .btn img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*swiper样式开始*/
+
+.swiper-container {
+    height: 100%;
+}
+.part3 .right .pic-item {
+    width: 100%;
+    height: 100%;
+}
+.part3 .right .pic-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    width: 1.36rem;
+    height: 1.36rem;
+    background-color: rgba(136, 94, 88, 0.87);
+    border-radius: 1.36rem;
+    background-image: none;
+}
+.swiper-button-prev {
+    left: -.65rem;
+    /*background: url('../images/left-btn.jpg') no-repeat;*/
+}
+.swiper-button-prev span {
+    display: block;
+    width: .3rem;
+    height: .7rem;
+    background-image: url('//pc.hoozonspa.com/static/zt/img/ypy/left-btn.png');
+    background-position: 0px .07rem;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: .32rem;
+    top: .28rem;
+    background-size: 100%;
+}
+.swiper-button-next {
+    right: -.67rem;
+}
+.swiper-button-next span {
+    display: block;
+    width: .3rem;
+    height: .7rem;
+    background-image: url('//pc.hoozonspa.com/static/zt/img/ypy/right-btn.png');
+    position: absolute;
+    left: .26rem;
+    top: .28rem;
+    background-position: 0 .07rem;
+    background-size: 100%;
+}
+/*swiper样式结束*/
+
+
+/*part3结束

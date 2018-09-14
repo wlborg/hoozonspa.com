@@ -46,8 +46,7 @@ function get_list_chanpings($typeid)
   $imgRight="";//图片在右
   $relatetypeid = 0;
   $index =0;//下标
-  $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
-  where  a.typeid='$typeid'  and a.arcrank=0 order by id desc limit 20");
+  $dsql->SetQuery( "SELECT  * FROM #@__archives AS a,#@__addonchanping as b  where a.id =b.aid and  a.typeid='$typeid'  and a.arcrank=0 order by id desc limit 20");
   $dsql->Execute();
   $ns = $dsql->GetTotalRow();
   while($row=$dsql->GetArray())

@@ -53,9 +53,9 @@ function get_list_chanpings($typeid)
   {
     $id = $row["id"];
     $title = cn_substr($row["title"],80,0);
-    // $urlarray = GetOneArchive($id);
-    // $url = $urlarray['arcurl'];
-    // $litpic =replaceurl($row["litpic"]);
+    $urlarray = GetOneArchive($id);
+    $url = $urlarray['arcurl'];
+    $litpic =replaceurl($row["litpic"]);
     $des1 = $row["des1"];//规格：
     $des2 = $row["des2"];//产地：
     $des3 = $row["des3"]);//功效：

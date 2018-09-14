@@ -38,14 +38,16 @@ function replacebodyurl($body)
     return  $body;
 }
 //获取对应产品列表
-function get_list_chanpings($id)
+function get_list_chanpings($typeid)
 {
 global $dsql;
 $relateproject="";
+$imgLeft="";//图片在左
+$imgRight="";//图片在右
 $relatetypeid = 0;
 $index =0;//下标
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
-where  a.typeid='$relatetypeid'  and a.arcrank=0 order by id desc limit 10 ");
+where  a.typeid='$typeid'  and a.arcrank=0 order by id desc limit 20");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -60,8 +62,14 @@ $des2 = replaceurl($row["des2"]);//产地：
 $des3 = replaceurl($row["des3"]);//功效：
 $des4 = replaceurl($row["des4"]);//适用肌肤：
 $des5 = replaceurl($row["des5"]);//主要成分：
-if($ns%2==0){
-         $relateproject.='<div class="box box1">'+
+}
+if($ns>0){
+
+    for($index=1;$index<=$ns;$index++){
+          // $rel=$index%2=0;
+         // $relateproject.=$rel;
+         if($index%2==0){
+              $relateproject.='<div class="box box1">'+
                     '<div class="g-left">'+
                        ' <a href="'.$url.'" title="[field:title/]"><img src="'.$litpic.'" alt="'.$title.'"></a>'+
                    '</div>'+
@@ -75,7 +83,7 @@ if($ns%2==0){
                        '<p><span>主要成分：</span>'.$des5.'</p>'+
                     '</div>'+
                ' </div>';
-}else {
+         }else if($index%2==1){
              $relateproject.='<div class="box box1">'+
                     '<div class="g-right">'+
                        ' <h3>'.$ns.'</h3>'+
@@ -90,11 +98,9 @@ if($ns%2==0){
                  '<div class="g-left">'+
                        ' <a href="'.$url.'" title="[field:title/]"><img src="'.$litpic.'" alt="'.$title.'"></a>'+
                    '</div>';
-}
+         }
 
-}
-if($ns>0){
-$relateproject=$relateproject;
+    }
 }
 return $relateproject;
 }

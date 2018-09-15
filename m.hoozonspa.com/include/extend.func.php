@@ -108,9 +108,3 @@ function get_list_chanpings($typeid)
   }
     return $relateproject;
 }
-//后台上传图片链接处理
-function replaceurl($newurl)
-{
-$newurl=str_replace('/uploads/','https://uploads.hzshuangmei.com/',$newurl);
-return $newurl;
-}

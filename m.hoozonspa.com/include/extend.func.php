@@ -147,7 +147,7 @@ default:
 $relatetypeid=282;
 }
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
-where  a.typeid='$typeid' and a.arcrank=0 order by id desc limit 2");
+where  a.typeid='$relatetypeid' and a.arcrank=0 order by id desc limit 2");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())

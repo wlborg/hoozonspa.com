@@ -117,7 +117,7 @@ return $newurl;
 /**
 *  项目详情页(推荐家居产品2条)
 *  根据当前项目的ID，获取相关最新的推荐
-* @param     $typeid    所在栏目ID
+* $typeid    所在栏目ID
 */
 function getHomeFurnish($typeid)
 {
@@ -148,7 +148,7 @@ default:
 $relatetypeid=282;
 }
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
-where  a.typeid='$relatetypeid' and a.arcrank=0 order by id desc limit 2");
+where a.typeid='$relatetypeid' and a.arcrank=0 order by id desc limit 2");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())

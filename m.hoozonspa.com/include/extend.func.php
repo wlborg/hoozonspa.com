@@ -126,39 +126,28 @@ $relateproject="";
 $relatetypeid = 0;
 switch ($typeid)
 {
-case 78 :
-$relatetypeid= 3;
+case 120 :
+$relatetypeid=282;
 break;
-case 77 :
-$relatetypeid=3 ;
+case 186:
+$relatetypeid=282;
 break;
-case 79:
-$relatetypeid=3;
+case 183:
+$relatetypeid=282;
 break;
-case 80:
-$relatetypeid=3;
+case 256:
+$relatetypeid=274;
 break;
-case 81:
-$relatetypeid=3;
+case 127:
+$relatetypeid=274;
 break;
-case 82 :
-$relatetypeid= 3;
-break;
-case 83 :
-$relatetypeid= 5;
-break;
-case 85 :
-$relatetypeid= 4;
-break;
-case  86 :
-$relatetypeid=7;
-break;
+case 126 :
+$relatetypeid= 279;
 default:
-$relatetypeid=3 ;
-
+$relatetypeid=282;
 }
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
-where  a.typeid='$relatetypeid'  and a.arcrank=0 order by id desc limit 2");
+where  a.typeid='$relatetypeid' and a.arcrank=0 order by id desc limit 2");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -167,9 +156,12 @@ $id = $row["id"];
 $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
-
 $litpic =replaceurl($row["litpic"]);
-$relateproject.='<li class="expert"><a href="https://www.hzshuangmei.com'.$url.'" target="_blank" rel="nofollow"><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$title.'</span></a></li>';
+$pic3 =$row["pic3"];
+$relateproject.='<div class="item">
+            <a href="'.$url.'" title="'.$title.'"><img src="'.$pic3.'"></a>
+            <p>'.$title.'</p>
+           </div>';
 }
 if($ns>0){
 $relateproject=$relateproject;

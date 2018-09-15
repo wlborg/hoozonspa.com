@@ -143,6 +143,7 @@ $relatetypeid=274;
 break;
 case 126 :
 $relatetypeid= 279;
+break;
 default:
 $relatetypeid=282;
 }

@@ -38,63 +38,73 @@ function replacebodyurl($body)
     return  $body;
 }
 //获取对应产品列表
-function get_list_chanpings($id)
+function get_list_chanpings($typeid)
 {
-global $dsql;
-$relateproject="";
-$relatetypeid = 0;
-$index =0;//下标
-$dsql->SetQuery( "SELECT  * FROM #@__archives AS a
-where  a.typeid='$relatetypeid'  and a.arcrank=0 order by id desc limit 10 ");
-$dsql->Execute();
-$ns = $dsql->GetTotalRow();
-while($row=$dsql->GetArray())
-{
-$id = $row["id"];
-$title = cn_substr($row["title"],80,0);
-$urlarray = GetOneArchive($id);
-$url = $urlarray['arcurl'];
-$litpic =replaceurl($row["litpic"]);
-$des1 = replaceurl($row["des1"]);//规格：
-$des2 = replaceurl($row["des2"]);//产地：
-$des3 = replaceurl($row["des3"]);//功效：
-$des4 = replaceurl($row["des4"]);//适用肌肤：
-$des5 = replaceurl($row["des5"]);//主要成分：
-if($ns%2==0){
-         $relateproject.='<div class="box box1">'+
-                    '<div class="g-left">'+
-                       ' <a href="'.$url.'" title="[field:title/]"><img src="'.$litpic.'" alt="'.$title.'"></a>'+
-                   '</div>'+
-                    '<div class="g-right">'+
-                       ' <h3>'.$ns.'</h3>'+
-                       '<h4>[field:title/]</h4>'+
-                        '<p><span> 规格：</span>'.$des1.'</p>'+
-                       ' <p><span>产地：</span>'.$des2.'</p>'+
-                        '<p><span>功效：</span>'.$des3.'</p>'+
-                        '<p><span>适用肌肤：</span>'.$des4.'</p>'+
-                       '<p><span>主要成分：</span>'.$des5.'</p>'+
-                    '</div>'+
-               ' </div>';
-}else {
-             $relateproject.='<div class="box box1">'+
-                    '<div class="g-right">'+
-                       ' <h3>'.$ns.'</h3>'+
-                       '<h4>[field:title/]</h4>'+
-                        '<p><span> 规格：</span>'.$des1.'</p>'+
-                       ' <p><span>产地：</span>'.$des2.'</p>'+
-                        '<p><span>功效：</span>'.$des3.'</p>'+
-                        '<p><span>适用肌肤：</span>'.$des4.'</p>'+
-                       '<p><span>主要成分：</span>'.$des5.'</p>'+
-                    '</div>'+
-                  ' </div>'+
-                 '<div class="g-left">'+
-                       ' <a href="'.$url.'" title="[field:title/]"><img src="'.$litpic.'" alt="'.$title.'"></a>'+
-                   '</div>';
-}
+  global $dsql;
+  $relateproject="";
+  $imgLeft="";//图片在左
+  $imgRight="";//图片在右
+  $relatetypeid = 0;
+  $index =0;//下标
+  $dsql->SetQuery( "SELECT  * FROM #@__archives AS a,#@__addonchanping as b  where a.id =b.aid and  a.typeid='$typeid'  and a.arcrank=0 order by id desc limit 20");
+  $dsql->Execute();
+  $ns = $dsql->GetTotalRow();
+  while($row=$dsql->GetArray())
+  {
+    $id = $row["id"];
+    $title = cn_substr($row["title"],80,0);
+    $urlarray = GetOneArchive($id);
+    $url = $urlarray['arcurl'];
+    $litpic =replaceurl($row['litpic']);
+    $pic4 = replaceurl($row['pic4']);//产品图（详情侧边图)
+    $des1 = $row['des1'];//规格：
+    $des2 = $row['des2'];//产地：
+    $des3 = $row['des3'];//功效：
+    $des4 = $row['des4'];//适用肌肤：
+    $des5 = $row['des5'];//主要成分：
+    $code='<div class="box box2">
+                    <div class="g-left"><img src="/statics/img/img33.jpg" alt=""></div>
+                    <div class="g-right">
+                        <p>长按图片 → 保存图片 → 打开微信 →
+                            <br>右上角点击扫一扫 →右上角打开相册图片
+                            <br> → 识别小程序码 → 立即购买</p>
+                    </div>
+                </div>';
+    $index++;
+     if($index%2==1){
+              $relateproject.='<div class="box box1">
+                    <div class="g-left">
+                        <a href="'.$url.'" title="'.$title.'"><img src="'.$pic4.'" alt="'.$title.'"></a>
+                   </div>
+                    <div class="g-right">
+                        <h3>'.$index.'</h3>
+                       <h4>'.$title.'</h4>
+                        <p><span> 规格：</span>'.$des1.'</p>
+                       <p><span>产地：</span>'.$des2.'</p>
+                        <p><span>功效：</span>'.$des3.'</p>
+                        <p><span>适用肌肤：</span>'.$des4.'</p>
+                       <p><span>主要成分：</span>'.$des5.'</p>
+                    </div>
+                </div>'.$code;
+         }else if($index%2==0){
+             $relateproject.='<div class="box box3">
+                      <div class="g-left">
+                            <h3>'.$index.'</h3>
+                         <h4>'.$title.'</h4>
+                          <p><span> 规格：</span>'.$des1.'</p>
+                         <p><span>产地：</span>'.$des2.'</p>
+                          <p><span>功效：</span>'.$des3.'</p>
+                          <p><span>适用肌肤：</span>'.$des4.'</p>
+                         <p><span>主要成分：</span>'.$des5.'</p>
+                     </div>
+                      <div class="g-right">
+                          <a href="'.$url.'" title="'.$title.'"><img src="'.$pic4.'" alt="'.$title.'"></a>
+                      </div>
+                   </div>'.$code;
+         }
+  }
+  if($ns>0){
 
-}
-if($ns>0){
-$relateproject=$relateproject;
-}
-return $relateproject;
+  }
+    return $relateproject;
 }

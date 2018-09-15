@@ -11,7 +11,6 @@
     <title>{dede:field.title/}_{dede:field.typename/}_{dede:global.cfg_webname/}</title>
     <!-- <link rel="canonical" href="https://www.hoozonspa.com{dede:field.arcurl/}">  -->{dede:include filename="_link.htm"/}
 </head>
-
 <body>
     <div class="wrapper">
         {dede:include filename="_header.htm"/}
@@ -25,110 +24,9 @@
             </div>
             <div class="content">
                 <div class="des">
-                    {dede:field.content/} {dede:field.description/}
+                    {dede:field.content/}
                 </div>
-             {dede:arclist typeid ='114' titlelen='42' row='4' orderby="weight" orderway="desc" addfields='pic4,des1,des2,des3,des4,des5' channelid='20' limit='0,1'}
-                <div class="box box1">
-                    <div class="g-left">
-                        <a href="[field:arcurl /]" title="[field:title/]"><img src="[field:pic4 function='replaceurl(@me)/]" alt="[field:title/]"></a>
-                    </div>
-                    <div class="g-right">
-                        <h3>Step1</h3>
-                        <h4>[field:title/]</h4>
-                        <p><span> 规格：</span>[field:des1/]</p>
-                        <p><span>产地：</span>[field:des2/]</p>
-                        <p><span>功效：</span>[field:des3/]</p>
-                        <p><span>适用肌肤：</span>[field:des4/]</p>
-                        <p><span>主要成分：</span>[field:des5/]</p>
-                    </div>
-                </div>
-                  <div class="box box2">
-                    <div class="g-left"><img src="/statics/img/img33.jpg" alt=""></div>
-                    <div class="g-right">
-                        <p>长按图片 → 保存图片 → 打开微信 →
-                            <br>右上角点击扫一扫 →右上角打开相册图片
-                            <br> → 识别小程序码 → 立即购买</p>
-                    </div>
-                </div>
-                {/dede:arclist}
-
-                {dede:arclist  typeid ='114' titlelen='42' row='4' orderby="weight" orderway="desc" addfields='pic4,des1,des2,des3,des4,des5' channelid='20' limit='1,1'}
-                <div class="box box3">
-                    <div class="g-left">
-                        <h3>Step2</h3>
-                        <h4>[field:title/]</h4>
-                        <p><span> 规格：</span>[field:des1/]</p>
-                        <p><span>产地：</span>[field:des2/]</p>
-                        <p><span>功效：</span>[field:des3/]</p>
-                        <p><span>适用肌肤：</span>[field:des4/]</p>
-                        <p><span>主要成分：</span>[field:des5/]
-                        </p>
-                    </div>
-                    <div class="g-right">
-                        <a href="[field:arcurl /]" title="[field:title/]"><img src="[field:pic4 function='replaceurl(@me)/]" alt="[field:title/]"></a>
-                    </div>
-                </div>
-                 <div class="box box2">
-                    <div class="g-left"><img src="/statics/img/img33.jpg" alt=""></div>
-                    <div class="g-right">
-                        <p>长按图片 → 保存图片 → 打开微信 →
-                            <br>右上角点击扫一扫 →右上角打开相册图片
-                            <br> → 识别小程序码 → 立即购买</p>
-                    </div>
-                </div>
-                {/dede:arclist}
-
-                {dede:arclist  typeid ='114' titlelen='42' row='4' orderby="weight" orderway="desc" addfields='pic4,des1,des2,des3,des4,des5' channelid='20' limit='2,1'}
-                <div class="box box1">
-                    <div class="g-left">
-                        <a href="[field:arcurl /]" title="[field:title/]"><img src="[field:pic4 function='replaceurl(@me)/]" alt="[field:title/]"></a>
-                    </div>
-                    <div class="g-right">
-                        <h3>Step3</h3>
-                        <h4>[field:title/]</h4>
-                        <p><span> 规格：</span>[field:des1/]</p>
-                        <p><span>产地：</span>[field:des2/]</p>
-                        <p><span>功效：</span>[field:des3/]</p>
-                        <p><span>适用肌肤：</span>[field:des4/]</p>
-                        <p><span>主要成分：</span>[field:des5/]
-                        </p>
-                    </div>
-                </div>
-                  <div class="box box2">
-                    <div class="g-left"><img src="/statics/img/img33.jpg" alt=""></div>
-                    <div class="g-right">
-                        <p>长按图片 → 保存图片 → 打开微信 →
-                            <br>右上角点击扫一扫 →右上角打开相册图片
-                            <br> → 识别小程序码 → 立即购买</p>
-                    </div>
-                </div>
-                {/dede:arclist}
-                 {dede:arclist typeid ='114' titlelen='42' row='4' orderby="weight" orderway="desc" addfields='pic4,des1,des2,des3,des4,des5' channelid='20' limit='3,1'}
-                <div class="box box3">
-                    <div class="g-left">
-                        <h3>Step4</h3>
-                        <h4>[field:title/]</h4>
-                        <p><span> 规格：</span>[field:des1/]</p>
-                        <p><span>产地：</span>[field:des2/]</p>
-                        <p><span>功效：</span>[field:des3/]</p>
-                        <p><span>适用肌肤：</span>[field:des4/]</p>
-                        <p><span>主要成分：</span>[field:des5/]
-                        </p>
-                    </div>
-                    <div class="g-right">
-                        <a href="[field:arcurl /]" title="[field:title/]"><img src="[field:pic4 function='replaceurl(@me)/]" alt="[field:title/]"></a>
-                    </div>
-                </div>
-                  <div class="box box2">
-                    <div class="g-left"><img src="/statics/img/img33.jpg" alt=""></div>
-                    <div class="g-right">
-                        <p>长按图片 → 保存图片 → 打开微信 →
-                            <br>右上角点击扫一扫 →右上角打开相册图片
-                            <br> → 识别小程序码 → 立即购买</p>
-                    </div>
-                </div>
-                {/dede:arclist}
-                 {dede:FIELD.typeid function='get_list_chanpings(@me)'/}
+                {dede:FIELD.typeid function='get_list_chanpings(@me)'/}
             </div>
         </div>
         {dede:include filename="_sj_copyright.htm"/} {dede:include filename="_footer.htm"/}

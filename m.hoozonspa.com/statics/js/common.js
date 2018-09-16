@@ -423,7 +423,7 @@ function footerNavHightlight() {
     $('#footer').find("a").each(function() {
         var targetHref = $(this).attr("href");
         if (href.indexOf(targetHref) >= 0) {
-            $(this).addClass("active").sliblings().removeClass('active');
+            $(this).addClass("active").siblings().removeClass('active');
         }
     });
 }

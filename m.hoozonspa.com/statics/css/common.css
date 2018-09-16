@@ -99,9 +99,9 @@ background: #5c373a; padding-top: 0.38395904rem; padding-bottom: 0.38395904rem; 
 #footer .grids-item .grids-icon .icon-project { background: url('../images/icon_project.png') center center no-repeat; background-size: 1.02389078rem 1.02389078rem; }
 #footer .grids-item .grids-icon .icon-hj { background: url('../images/icon_envrioment.png') center center no-repeat; background-size: 1.02389078rem 1.02389078rem; }
 #footer .grids-item .grids-icon .icon-consult { background: url('../images/icon_cunsoult.png') center center no-repeat; background-size: 1.02389078rem 1.02389078rem; }
-#footer .grids-item .grids-icon .icon-home.active { background: url('../images/icon_home2.png') center center no-repeat; background-size: 1.02389078rem 1.02389078rem; }
-#footer .grids-item .grids-icon .icon-brand.active { background: url('../images/icon_brand2.png') center center no-repeat; background-size: 1.02389078rem 1.02389078rem; }
-#footer .grids-item .grids-icon .icon-project.active { background: url('../images/icon_project2.png') center center no-repeat; background-size: 1.02389078rem 1.02389078rem; }
-#footer .grids-item .grids-icon .icon-hj.active { background: url('../images/icon_envrioment2.png') center center no-repeat; background-size: 1.02389078rem 1.02389078rem; }
-#footer .grids-item .grids-icon .icon-consult.active { background: url('../images/icon_cunsoult2.png') center center no-repeat; background-size: 1.02389078rem 1.02389078rem; }
+#footer .grids-item.active .grids-icon .icon-home { background: url('../images/icon_home2.png') center center no-repeat; background-size: 1.02389078rem 1.02389078rem; }
+#footer .grids-item.active .grids-icon .icon-brand { background: url('../images/icon_brand2.png') center center no-repeat; background-size: 1.02389078rem 1.02389078rem; }
+#footer .grids-item.active .grids-icon .icon-project { background: url('../images/icon_project2.png') center center no-repeat; background-size: 1.02389078rem 1.02389078rem; }
+#footer .grids-item.active .grids-icon .icon-hj { background: url('../images/icon_envrioment2.png') center center no-repeat; background-size: 1.02389078rem 1.02389078rem; }
+#footer .grids-item.active .grids-icon .icon-consult { background: url('../images/icon_cunsoult2.png') center center no-repeat; background-size: 1.02389078rem 1.02389078rem; }
 #footer .grids-item .grids-txt { padding-top: 0.2559727rem; font-size: 0.46928328rem; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 0.17064846rem; letter-spacing: 1.1px; color: #898989; text-align: center; }

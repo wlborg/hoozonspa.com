@@ -58,17 +58,6 @@
         </div>
         <div class="g-right">
         <img src="{dede:global.cfg_imgpath/}/img_redup.jpg">
-        </div>
-    </div>
-    <!-- brand project -->
-    <div class="g-container brandproject">
-        <div class="wraper">
-        <h2><span class="sr-only"></span></h2>
-        <div class="row">
-              {dede:arclist typeid='9' flag='c' row='3' titlelen="120" limit='0,3' addfields='title2,b_band' channelid='21'}
-         <div class="item">
-                <div class="front">
-                <a href="[field:arcurl /]" title="[field:title/]">
                     <div class="box">
                         <p>Look at more</p>
                         <p class="more" >了解详情</p>
@@ -140,7 +129,18 @@
             <div class="swiper-wrapper">
    {dede:arclist typeid='2'  flag='c' orderby='id' orderway='desc' infolen='30' addfields='b_honor' channelid='1'}
                   <div class="swiper-slide">
-                         <img src="[field:b_honor function='replaceurl(@me)/]" alt="[field:title/]" />
+                         <img src="[field:b_
+        </div>
+    </div>
+    <!-- brand project -->
+    <div class="g-container brandproject">
+        <div class="wraper">
+        <h2><span class="sr-only"></span></h2>
+        <div class="row">
+              {dede:arclist typeid='9' flag='c' row='3' titlelen="120" limit='0,3' addfields='title2,b_band' channelid='21'}
+         <div class="item">
+                <div class="front">
+                <a href="[field:arcurl /]" title="[field:title/]">honor function='replaceurl(@me)/]" alt="[field:title/]" />
                    </div>
     {/dede:arclist}
             </div>

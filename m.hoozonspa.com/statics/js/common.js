@@ -399,7 +399,7 @@ function brandhistory() {
 
     marqueeTargetFun();
 }
-
+// 案列页导航高亮
 function caseListNavHightlight() {
     if (!$('.casenav')) return;
     var href = window.location.href;
@@ -415,7 +415,18 @@ function caseListNavHightlight() {
         }
     });
 }
+//底部导航高亮
+function footerNavHightlight() {
+    if (!$('#footer')) return;
+    var href = window.location.href;
 
+    $('#footer').find("a").each(function() {
+        var targetHref = $(this).attr("href");
+        if (href.indexOf(targetHref) >= 0) {
+            $(this).addClass("active").siblings().removeClass('active');
+        }
+    });
+}
 function headerBtnClick() {
     $('#header .btn').click(function() {
         $('#header').toggleClass('open');
@@ -456,6 +467,7 @@ $(function() {
     brandhistory();
     setTimeout(initSlider, 2000);
     caseListNavHightlight();
+    footerNavHightlight();
     headerBtnClick();
     bindConsultHref();
     addScript("https://hztk5.kuaishang.cn/bs/ks.j?cI=868330&fI=65110&ism=1");

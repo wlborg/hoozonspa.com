@@ -161,10 +161,13 @@
         <div class="wraper">
             <h2><span class="sr-only">公益活动</span></h2>
             <ul>
-                {dede:arclist typeid='3' row='4' orderby='id' orderway='desc' titlelen="120"  infolen='60' }
-                <li><a href="[field:arcurl /]" title="[field:title/]">[field:title/]</a></li>
-                {/dede:arclist}
+
             </ul>
+             <ol style="display: none">
+                 {dede:arclist typeid='3' row='4' orderby='id' orderway='desc' titlelen="120"  infolen='60' }
+                   <li>[field:title/]&[field:arcurl /]</li>
+                {/dede:arclist}
+            </ol>
             <a class="more" href="/brand/public">查看更多</a>
             <p class="bigtxt"><img src="{dede:global.cfg_imgpath/}/bigtxt_leader.png"></p>
         </div>
@@ -180,6 +183,18 @@
             </div>
             <a href="javascript:void(0)" class="btn prev"></a>
             <a href="javascript:void(0)" class="btn next"></a>
+        </div>
+         <div class="g-right">
+          <!-- Swiper -->
+          <div class="swiper-container benefitactivities-container">
+            <div class="swiper-wrapper">
+                   {dede:arclist typeid='3' row='4' orderby='id' orderway='desc' titlelen="120" infolen='60' addfields='b_homecommon' channelid='1'}
+                   <div class="swiper-slide"><a href="[field:arcurl /]" title="[field:title/]">  <img src="[field:b_homecommon function='replaceurl(@me)/]" alt="[field:title/]" /></a></div>
+                   {/dede:arclist}
+            </div>
+          </div>
+            <a href="javascript:void(0)" class="btn prev swiper-button-prev"></a>
+            <a href="javascript:void(0)" class="btn next swiper-button-next"></a>
         </div>
     </div>
     <!-- footer -->

@@ -465,7 +465,7 @@ a {
     border: solid 1px rgba(133, 89, 81, .5);
 }
 .presscenter .g-left .box .more:hover,
-.question .more :hover,
+.question .g-right .more:hover,
 .benefitactivities .more:hover {
     color: #9855ae;
     border: solid 1px #9855ae;

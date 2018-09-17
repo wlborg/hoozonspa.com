@@ -141,7 +141,7 @@ break;
 default:
 $relatetypeid=282;
 }
-$dsql->SetQuery( "SELECT  * FROM #@__archives AS a,#@__addonarticle as b where a.id =b.aid
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a,#@__addonchanping as b where a.id =b.aid
 and a.typeid='$relatetypeid' and a.arcrank=0 order by id desc limit 2");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();

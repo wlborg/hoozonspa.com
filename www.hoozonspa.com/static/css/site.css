@@ -442,7 +442,9 @@ a {
 
     color: #9855ae;
 }
-.presscenter .g-left .box .more {
+.presscenter .g-left .box .more,
+.question .more,
+.benefitactivities .more {
     display: block;
     width: 6em;
     height: 1.8em;
@@ -462,7 +464,9 @@ a {
     /*border: solid 1px #9855ae;*/
     border: solid 1px rgba(133, 89, 81, .5);
 }
-.presscenter .g-left .box .more:hover {
+.presscenter .g-left .box .more:hover,
+.question .more :hover,
+.benefitactivities .more:hover {
     color: #9855ae;
     border: solid 1px #9855ae;
 }

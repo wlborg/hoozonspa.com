@@ -153,10 +153,10 @@ $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic =replaceurl($row["litpic"]);
 $pic3 =replaceurl($row["pic3"]);
-$relateproject.='<div class="content"><div class="item">
+$relateproject.='<div class="item">
             <a href="'.$url.'" title="'.$title.'"><img src="'.$pic3.'"></a>
             <p>'.$title.'</p>
-           </div></div>';
+           </div>';
 }
 if($ns>0){
 $relateproject=$relateproject;

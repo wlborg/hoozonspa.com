@@ -689,6 +689,38 @@ function beautyskin(){
                               },
       });
 }
+function SUActivityFN(){
+      var benefitactivities=$(".benefitactivities .g-left ol li");//获取li元素
+      var benefitactivitiesLen=benefitactivities.length;//获取li的长度
+      var arr= new Array();//创建一个数组
+      for(i=0;i<benefitactivitiesLen;i++){
+            arr[i] = new Array();//创建多维数组
+            var a1=benefitactivities.eq(i).text().split("&")[0];//分割标题
+            var a2=benefitactivities.eq(i).text().split("&")[1];//分割链接
+            arr[i][0]=a1;
+            arr[i][1]=a2;
+      }
+      var swiper_benefitactivities= new Swiper('.benefitactivities-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.benefitactivities ul',
+        clickable: true,
+        renderBullet: function (index, className) {
+             return '<li class="'+className+'"><a href="'+arr[index][1]+'" target="_blank">'+ arr[index][0] + '<span>【详情】</span></a></li>';
+        }
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+}
 $(function() {
     // 包含快商通链接
     var tool={
@@ -698,6 +730,9 @@ $(function() {
                             var href="https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110";
                             window.open(href,"_blank");
                         })
+                    },
+                    SUActivity:function(){
+                          SUActivityFN();
                     }
                 }
     tool.kst();
@@ -715,4 +750,5 @@ $(function() {
     award();
     // 美妆护肤
      beautyskin();
+     tool.SUActivity();//调用公益活动swiper
 });

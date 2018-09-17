@@ -1853,6 +1853,8 @@ a {
     margin-top: .8em;
 }
 .benefitactivities .g-left ul li {
+    position: relative;
+
     width: 30em;
     height: 2em;
     margin-bottom: 1em;
@@ -1870,6 +1872,10 @@ a {
 }
 .benefitactivities .g-left ul li a {
     color: #885e5a;
+}
+.benefitactivities .g-left ul li span {
+    position: absolute;
+    right: 0;
 }
 .benefitactivities .g-right {
     position: relative;
@@ -4970,4 +4976,39 @@ a {
 .optoelectronic .g-left li span a:hover,
 .embroidery .g-left li span a :hover {
     color: #fff;
+}
+.benefitactivities .g-right .swiper-container {
+    width: 100%;
+    height: 9.4em;
+    overflow: hidden;
+}
+.benefitactivities .g-right .swiper-wrapper {
+    height: 100%;
+}
+.benefitactivities .g-right .swiper-slide {
+    float: left;
+    width: 9.64em;
+    height: 100%;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    outline: mediumblue;
+}
+.benefitactivities .g-left ul li.swiper-pagination-bullet {
+    display: block;
+
+    border-radius: 0!important;
+    outline: mediumblue;
+    background: none;
+}
+.benefitactivities .g-left ul li a:hover {
+    /*color:#855951!important;*/
+    color: #9855ae!important;
+}
+.benefitactivities .g-left ul li.swiper-pagination-bullet-active {
+    color: #9855ae;
+    background: none!important;
+}
+.benefitactivities .g-left ul li.swiper-pagination-bullet-active a {
+    color: #9855ae;
 }

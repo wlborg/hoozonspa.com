@@ -108,3 +108,58 @@ function get_list_chanpings($typeid)
   }
     return $relateproject;
 }
+/**
+*  项目详情页(推荐家居产品2条)
+*  根据当前项目的ID，获取相关最新的推荐
+* $typeid    所在栏目ID
+*/
+function getHomeFurnish($typeid)
+{
+global $dsql;
+$relateproject="";
+$relatetypeid = 0;
+switch ($typeid)
+{
+case 120 :
+$relatetypeid=282;
+break;
+case 186:
+$relatetypeid=282;
+break;
+case 183:
+$relatetypeid=282;
+break;
+case 256:
+$relatetypeid=274;
+break;
+case 127:
+$relatetypeid=274;
+break;
+case 126 :
+$relatetypeid= 279;
+break;
+default:
+$relatetypeid=282;
+}
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a,#@__addonarticle as b where a.id =b.aid
+and a.typeid='$relatetypeid' and a.arcrank=0 order by id desc limit 2");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$litpic =replaceurl($row["litpic"]);
+$pic3 =$row["pic3"];
+$relateproject.='<div class="item">
+            <a href="'.$url.'" title="'.$title.'"><img src="'.$pic3.'"></a>
+            <p>'.$title.'</p>
+           </div>';
+}
+if($ns>0){
+$relateproject=$relateproject;
+}
+return $relateproject;
+}

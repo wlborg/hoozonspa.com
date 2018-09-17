@@ -77,7 +77,7 @@ function get_list_chanpings($typeid)
                         <a href="'.$url.'" title="'.$title.'"><img src="'.$pic4.'" alt="'.$title.'"></a>
                    </div>
                     <div class="g-right">
-                        <h3>'.$index.'</h3>
+                        <h3>Step'.$index.'</h3>
                        <h4>'.$title.'</h4>
                         <p><span> 规格：</span>'.$des1.'</p>
                        <p><span>产地：</span>'.$des2.'</p>
@@ -89,7 +89,7 @@ function get_list_chanpings($typeid)
          }else if($index%2==0){
              $relateproject.='<div class="box box3">
                       <div class="g-left">
-                            <h3>'.$index.'</h3>
+                            <h3>Step'.$index.'</h3>
                          <h4>'.$title.'</h4>
                           <p><span> 规格：</span>'.$des1.'</p>
                          <p><span>产地：</span>'.$des2.'</p>

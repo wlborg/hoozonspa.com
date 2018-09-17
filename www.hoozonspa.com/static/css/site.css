@@ -213,7 +213,7 @@ a {
     letter-spacing: -.3px;
 
     color: #9855ae;
-    border: solid 1px #9855ae;
+    /* border: solid 1px #9855ae; */
 }
 /*A way of keeping good health*/
 .theway {
@@ -2757,6 +2757,10 @@ a {
 }
 .newslist .g-doc .pageindex ul li.active,
 .newslist .g-doc .pageindex ul li:hover {
+    color: #fff;
+    background: #885e5a;
+}
+.newslist .g-doc .pageindex ul li.thisclass {
     color: #fff;
     background: #885e5a;
 }

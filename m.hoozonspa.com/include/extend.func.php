@@ -152,7 +152,7 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic =replaceurl($row["litpic"]);
-$pic3 =$row["pic3"];
+$pic3 =replaceurl($row["pic3"]);
 $relateproject.='<div class="item">
             <a href="'.$url.'" title="'.$title.'"><img src="'.$pic3.'"></a>
             <p>'.$title.'</p>

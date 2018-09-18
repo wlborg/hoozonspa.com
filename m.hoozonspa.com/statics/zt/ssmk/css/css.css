@@ -163,6 +163,8 @@ span {
     margin-top: -.15rem;
 }.tteng {
 
+    clear: both;
+
     font-size: .18rem;
     line-height: .2rem;
 

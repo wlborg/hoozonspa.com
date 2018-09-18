@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+{dede:include filename="_link.htm"/}
+</head>
+<body>
+<!-- header -->
+    {dede:include filename="nav.htm"/}
+ <!-- banner -->
+<!-- banner -->
+<div class="g-container top-banner">
+      {dede:myad name='topbanner_pc'/}
+</div>
+    <!-- news -->
+    <div class="g-container newslist">
+        <div class="g-doc">
+                {dede:list pagesize='4' orderby="id" orderway="desc"  addfields='b_qwactivitiy' channelid='1'}
+            <div class="item">
+                <div class="date">
+                    <p class="day">[field:pubdate function='strftime("%d",@me)'/]</p>
+                    <p class="year">[field:pubdate function='strftime("%Y",@me)'/]/[field:pubdate function='strftime("%m",@me)'/]</p>
+                </div>
+                <div class="thum"> <a href="[field:arcurl/]"> <img src="[field:b_qwactivitiy function='replaceurl(@me)/]" alt="[field:title/]"></a></div>
+                <div class="content">
+                    <h3><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></h3>
+                    <p class="source">来源 : 红妆美容会所 点击量：[field:click/]</p>
+                    <p class="details">
+                        <a href="[field:arcurl/]">[field:description function='cn_substr(@me,200)'/]......<span>【阅读全文】</span></a>
+                    </p>
+                </div>
+            </div>
+ {/dede:list}
+
+
+            <div class="pageindex">
+                <ul>
+                    {dede:pagelist listitem='pre,next,pageno,index,end' listsize='1'/}
+                  <!--   <li class="active">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- question and answer -->
+{dede:include filename="_question.htm"/}
+  <!-- footer -->
+{dede:include filename="footer.htm"/}
+</body>
+
+</html>

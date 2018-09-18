@@ -24,17 +24,17 @@ function replaceurl($newurl)
 {
     if($newurl==''){
 
-       $newurl='https://pc.hoozonspa.com'.'/images/defaultpic.gif';
+       $newurl='https://www.hoozonspa.com'.'/images/defaultpic.gif';
     }else{
 
-       $newurl='https://pc.hoozonspa.com'.$newurl;
+       $newurl='https://www.hoozonspa.com'.$newurl;
     }
 return $newurl;
 }
 
 function replacebodyurl($body)
 {
-    $body=preg_replace('/\/uploads\//g', 'https://pc.hoozonspa.com/uploads/', $body);
+    $body=preg_replace('/\/uploads\//g', 'https://www.hoozonspa.com/uploads/', $body);
     return  $body;
 }
 //获取对应产品列表

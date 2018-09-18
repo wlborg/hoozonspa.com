@@ -69,7 +69,7 @@ li {
     width: 100%;
     height: 800px;
 
-    background: url("/static/zt/img/chestcare/banner.jpg") no-repeat top center;
+    background: url("../../img/chestcare/banner.jpg") no-repeat top center;
     /*background-size: cover;*/
 }
 /*banner样式结束*/
@@ -81,7 +81,7 @@ li {
     width: 100%;
     height: 935px;
 
-    background: url("/static/zt/img/chestcare/part1-bg.jpg") no-repeat top center;
+    background: url("../../img/chestcare/part1-bg.jpg") no-repeat top center;
 }
 .part1 .part1-zw {
     position: absolute;
@@ -262,7 +262,7 @@ li {
     width: 100%;
     height: 1703px;
 
-    background: url("/static/zt/img/chestcare/part2-bg.jpg") no-repeat top center;
+    background: url("../../img/chestcare/part2-bg.jpg") no-repeat top center;
 }
 .title-1 .main-title {
     color: #dfad9d;
@@ -427,11 +427,11 @@ li {
 
     color: #885e5a;
     border: solid 1px #885e5a;
-    background: url("/static/zt/img/chestcare/btn-icon.png") no-repeat 155px 17px;
+    background: url("../../img/chestcare/btn-icon.png") no-repeat 155px 17px;
     background-size: 27px 27px;
 }
 .content-bottom .left .btn-wrap a {
-    background: url("/static/zt/img/chestcare/hand-btn-1.png") no-repeat 155px 17px;
+    background: url("../../img/chestcare/hand-btn-1.png") no-repeat 155px 17px;
 }
 .content-top .right .btn-wrap:hover,
 .content-bottom .left .btn-wrap:hover {
@@ -442,13 +442,13 @@ li {
 .content-top .right .btn-wrap a:hover,
 .content-bottom .left .btn-wrap a:hover {
     color: #fff;
-    background: url("/static/zt/img/chestcare/btn-icon-1.png") no-repeat 155px 17px;
+    background: url("../../img/chestcare/btn-icon-1.png") no-repeat 155px 17px;
     background-size: 27px 27px;
     box-shadow: 0 0 8px 0
     rgba(0, 0, 0, .4);
 }
 .content-bottom .left .btn-wrap a:hover {
-    background: url("/static/zt/img/chestcare/hand-btn.png") no-repeat 155px 17px;
+    background: url("../../img/chestcare/hand-btn.png") no-repeat 155px 17px;
 }
 .panel-wrap .panel-1,
 .panel-wrap .panel-2 {
@@ -510,7 +510,7 @@ li {
     width: 152px;
     height: 183px;
 
-    background: url("/static/zt/img/chestcare/zw-2.png") no-repeat top center;
+    background: url("../../img/chestcare/zw-2.png") no-repeat top center;
     background-size: cover;
 }
 .modifier-3 {
@@ -521,7 +521,7 @@ li {
     width: 103px;
     height: 262px;
 
-    background: url("/static/zt/img/chestcare/zw-1.png") no-repeat top center;
+    background: url("../../img/chestcare/zw-1.png") no-repeat top center;
     background-size: cover;
 }
 /*修饰物样式结束*/
@@ -532,7 +532,7 @@ li {
     width: 100%;
     height: 1302px;
 
-    background: url("/static/zt/img/chestcare/part3-bg.jpg") no-repeat top center;
+    background: url("../../img/chestcare/part3-bg.jpg") no-repeat top center;
 }
 .title-2 {
     position: relative;
@@ -570,7 +570,7 @@ li {
     text-align: center;
 
     color: #fff;
-    background: url("/static/zt/img/chestcare/oval.png") no-repeat top center;
+    background: url("../../img/chestcare/oval.png") no-repeat top center;
 }
 .part3-con-detail .item .text {
     font-size: 28px;
@@ -649,7 +649,7 @@ li {
 
     color: #fff;
     border: solid 1px #fff;
-    background: url("/static/zt/img/chestcare/hand-btn.png") no-repeat 154px 13px;
+    background: url("../../img/chestcare/hand-btn.png") no-repeat 154px 13px;
     background-size: 25px 29px;
 }
 .part3-content .btn-wrap:hover,
@@ -661,7 +661,7 @@ li {
 .part3-content .btn-wrap a:hover,
 .part5 .btn-wrap a:hover {
     color: #885e5a;
-    background: url("/static/zt/img/chestcare/hand-btn-1.png") no-repeat 154px 13px;
+    background: url("../../img/chestcare/hand-btn-1.png") no-repeat 154px 13px;
 }
 .part3 .part3-pic {
     position: absolute;
@@ -707,11 +707,11 @@ li {
     bottom: 66px;
 }
 .content-top .right-1 .btn-wrap a {
-    background: url("/static/zt/img/chestcare/hand-btn-1.png") no-repeat 155px 17px;
+    background: url("../../img/chestcare/hand-btn-1.png") no-repeat 155px 17px;
     background-size: 25px 29px;
 }
 .content-top .right-1 .btn-wrap a:hover {
-    background: url("/static/zt/img/chestcare/hand-btn.png") no-repeat 155px 17px;
+    background: url("../../img/chestcare/hand-btn.png") no-repeat 155px 17px;
     background-size: 25px 29px;
 }
 .content-top .right .btn-wrap-1:hover {
@@ -728,7 +728,7 @@ li {
     width: 100%;
     height: 666px;
 
-    background: url("/static/zt/img/chestcare/part5-bg_02.jpg") no-repeat top center;
+    background: url("../../img/chestcare/part5-bg_02.jpg") no-repeat top center;
 }
 .part5-com {
     position: relative;

@@ -50,7 +50,7 @@ textarea {
     width: 100%;
     height: 712px;
 
-    background: url(//pc.hoozonspa.com/static/zt/img/mls/banner.jpg) no-repeat top center;
+    background: url(/static/zt/img/mls/banner.jpg) no-repeat top center;
 }
 /* main-one */
 .main-one {
@@ -166,7 +166,7 @@ textarea {
     width: 154px;
     height: 64px;
 
-    background: url(//pc.hoozonspa.com/static/zt/img/mls/shoushen.png) no-repeat center center;
+    background: url(/static/zt/img/mls/shoushen.png) no-repeat center center;
 }
 .title02 strong {
     float: left;
@@ -226,7 +226,7 @@ textarea {
     text-indent: 1em;
 
     color: #fff;
-    background: url(//pc.hoozonspa.com/static/zt/img/mls/forbid.png) no-repeat left center;
+    background: url(/static/zt/img/mls/forbid.png) no-repeat left center;
 }
 .main1Arc {
     width: 240px;
@@ -275,7 +275,7 @@ textarea {
     width: 100%;
     height: 701px;
 
-    background: url(//pc.hoozonspa.com/static/zt/img/mls/main2-bg.png) no-repeat top center;
+    background: url(/static/zt/img/mls/main2-bg.png) no-repeat top center;
 }
 .main2-in {
     width: 953px;
@@ -320,7 +320,7 @@ textarea {
 .main2-right ol li {
     margin-bottom: 30px;
 
-    list-style: url(//pc.hoozonspa.com/static/zt/img/mls/disc.png);
+    list-style: url(/static/zt/img/mls/disc.png);
 
     color: #fff;
 }
@@ -380,7 +380,7 @@ textarea {
     width: 820px;
     height: 581px;
 
-    background: url(//pc.hoozonspa.com/static/zt/img/mls/main3-bg.png) no-repeat;
+    background: url(/static/zt/img/mls/main3-bg.png) no-repeat;
 }
 .mian3-left ul {
     width: 761px;

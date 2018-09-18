@@ -93,11 +93,15 @@
                         </div>
                     </div>
                 </div>
+              <!-- home project -->
+                <div class="g-container homeproject">
+                    <div class="title">  <h2><span class="sr-only">家居产品推荐</span></h2>
+                    </div>
+                    <div class="content"></div>
+                    {dede:FIELD.typeid function='getHomeFurnish(@me)'/}
+                </div>
                 <!-- home project -->
 
-                <!-- {dede:include filename="_home_project.htm"/} -->
-
-                <!-- the way -->
                 {dede:include filename="_theway.htm"/}
                 {dede:include filename="_sj_copyright.htm"/}
                 {dede:include filename="_footer.htm"/}

@@ -18,7 +18,7 @@ body {
 .question {
     height: 938px;
 
-    background: url("//pc.hoozonspa.com/static/images/bg_question.jpg") center center no-repeat;
+    background: url("/static/images/bg_question.jpg") center center no-repeat;
     /*background-size: 100% 100%;*/
 }
 a {
@@ -109,14 +109,14 @@ a {
     height: 176px;
     margin-top: 106px;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_question.png") center center no-repeat;
+    background: url("/static/images/bgt_question.png") center center no-repeat;
 }
 .question .g-right .box {
     width: 552px;
     padding-bottom: 36px;
     margin-top: 74px;
 
-    border-bottom: solid 1px #654a47;
+    border-bottom: solid 1px #c7b4b2;
 }
 .question .g-right .box img {
     float: left;
@@ -203,7 +203,7 @@ a {
     right: 0;
 
     display: inline-block;
-    width: 55px;
+    width: 75px;
     height: 30px;
 
     font-size: 15px;
@@ -213,13 +213,13 @@ a {
     letter-spacing: -.3px;
 
     color: #9855ae;
-    border: solid 1px #9855ae;
+    /* border: solid 1px #9855ae; */
 }
 /*A way of keeping good health*/
 .theway {
     height: 620px;
 
-    background: url("//pc.hoozonspa.com/static/images/bg_yangsheng.jpg") center center no-repeat;
+    background: url("/static/images/bg_yangsheng.jpg") center center no-repeat;
     /*background-size: 100% 100%;*/
 }
 .theway .g-doc {
@@ -231,7 +231,7 @@ a {
     height: 134px;
     margin: 110px auto 0;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_theway.png") center center no-repeat;
+    background: url("/static/images/bgt_theway.png") center center no-repeat;
 }
 .theway .g-doc p {
     margin-top: 54px;
@@ -270,7 +270,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_brand.png") left center no-repeat;
+    background: url("/static/images/bgt_brand.png") left center no-repeat;
     background-size: 3.48em 1.76em;
 }
 .brandcenter .g-left p {
@@ -339,7 +339,7 @@ a {
     width: 50%;
     height: 9.38em;
 
-    background: url("//pc.hoozonspa.com/static/images/bg_brandcenter.jpg") top right no-repeat;
+    background: url("/static/images/bg_brandcenter.jpg") top right no-repeat;
     background-size: 100% 100%;
 }
 .brandcenter .g-right .video-wraper {
@@ -349,7 +349,7 @@ a {
     width: 10.36em;
     height: 5.9em;
     margin-top: 1.68em;
-    /* background: url('//pc.hoozonspa.com/static/images/bg_video.jpg') center center no-repeat; */
+    /* background: url('/static/images/bg_video.jpg') center center no-repeat; */
 
     background-size: 100%;
 }
@@ -394,7 +394,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_news.png") left center no-repeat;
+    background: url("/static/images/bgt_news.png") left center no-repeat;
     background-size: 3.48em 1.76em;
 }
 .presscenter .g-left .box {
@@ -442,7 +442,9 @@ a {
 
     color: #9855ae;
 }
-.presscenter .g-left .box .more {
+.presscenter .g-left .box .more,
+.question .more,
+.benefitactivities .more {
     display: block;
     width: 6em;
     height: 1.8em;
@@ -462,7 +464,9 @@ a {
     /*border: solid 1px #9855ae;*/
     border: solid 1px rgba(133, 89, 81, .5);
 }
-.presscenter .g-left .box .more:hover {
+.presscenter .g-left .box .more:hover,
+.question .g-right .more:hover,
+.benefitactivities .more:hover {
     color: #9855ae;
     border: solid 1px #9855ae;
 }
@@ -557,7 +561,7 @@ a {
 .environmentdisplay {
     height: 9.38em;
 
-    background: url("//pc.hoozonspa.com/static/images/bg2.jpg") center center no-repeat;
+    background: url("/static/images/bg2.jpg") center center no-repeat;
     background-size: 100% 100%;
 }
 .environmentdisplay .g-left {
@@ -594,7 +598,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_environment.png") left center no-repeat;
+    background: url("/static/images/bgt_environment.png") left center no-repeat;
     background-size: 4.38em .98em;
 }
 .environmentdisplay .g-left p {
@@ -676,7 +680,7 @@ a {
     bottom: 0;
     left: -1px;
 
-    background: url("//pc.hoozonspa.com/static/images/bg_prev.png") left center no-repeat;
+    background: url("/static/images/bg_prev.png") left center no-repeat;
     background-size: 100%;
 }
 .environmentdisplay .g-right .next {
@@ -684,7 +688,7 @@ a {
     right: 0;
     bottom: 0;
 
-    background: url("//pc.hoozonspa.com/static/images/bg_next.png") right center no-repeat;
+    background: url("/static/images/bg_next.png") right center no-repeat;
     background-size: 100%;
 }
 /*Equipment technology*/
@@ -726,7 +730,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_equipment.png") left center no-repeat;
+    background: url("/static/images/bgt_equipment.png") left center no-repeat;
     background-size: 4.44em 1.76em;
 }
 .equipmenttechnology .g-left p {
@@ -856,7 +860,7 @@ a {
 .classicCase {
     height: 9.38em;
 
-    background: url("//pc.hoozonspa.com/static/images/bg_case.jpg") center center no-repeat;
+    background: url("/static/images/bg_case.jpg") center center no-repeat;
     background-size: 100% 100%;
 }
 .classicCase .g-left {
@@ -873,7 +877,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_case.png") left center no-repeat;
+    background: url("/static/images/bgt_case.png") left center no-repeat;
     background-size: 2.4em .98em;
 }
 .classicCase .g-left p {
@@ -1058,7 +1062,7 @@ a {
     height: 9.4em;
     overflow: hidden;
 
-    background: url("//pc.hoozonspa.com/static/images/bg1.jpg") center center no-repeat;
+    background: url("/static/images/bg1.jpg") center center no-repeat;
     background-size: 100% 100%;
 }
 .hotproject .g-left {
@@ -1094,7 +1098,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_project.png") left center no-repeat;
+    background: url("/static/images/bgt_project.png") left center no-repeat;
     background-size: 2.38em .98em;
 }
 .hotproject .g-left ul {
@@ -1274,7 +1278,7 @@ a {
     bottom: 0;
     left: -1px;
 
-    background: url("//pc.hoozonspa.com/static/images/bg_prev.png") left center no-repeat;
+    background: url("/static/images/bg_prev.png") left center no-repeat;
     background-size: 100%;
 }
 .hotproject .g-right .project-block .next {
@@ -1282,7 +1286,7 @@ a {
     right: 0;
     bottom: 0;
 
-    background: url("//pc.hoozonspa.com/static/images/bg_next.png") right center no-repeat;
+    background: url("/static/images/bg_next.png") right center no-repeat;
     background-size: 100%;
 }
 .hotproject .g-right .project-block.active {
@@ -1355,7 +1359,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_zhang.png") center center no-repeat;
+    background: url("/static/images/bgt_zhang.png") center center no-repeat;
     background-size: 100%;
 }
 .zhangyanhong .g-left h3 {
@@ -1399,7 +1403,7 @@ a {
 .redup {
     height: 9.4em;
 
-    background: url("//pc.hoozonspa.com/static/images/bg2.jpg") center center no-repeat;
+    background: url("/static/images/bg2.jpg") center center no-repeat;
     background-size: auto 100%;
 }
 .redup .g-left {
@@ -1435,7 +1439,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_redup.png") center center no-repeat;
+    background: url("/static/images/bgt_redup.png") center center no-repeat;
     background-size: 100%;
 }
 .redup .g-left p {
@@ -1467,7 +1471,7 @@ a {
 .brandproject {
     height: 6.5em;
 
-    background: url("//pc.hoozonspa.com/static/images/bg_brandproject.jpg") center center no-repeat;
+    background: url("/static/images/bg_brandproject.jpg") center center no-repeat;
     background-size: auto  100%;
 }
 .brandproject .wraper {
@@ -1480,7 +1484,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_brandproject.png") left center no-repeat;
+    background: url("/static/images/bgt_brandproject.png") left center no-repeat;
     background-size: 100%;
 }
 .brandproject .row {
@@ -1611,7 +1615,7 @@ a {
 .cultureconcert {
     height: 9.38em;
 
-    background: url("//pc.hoozonspa.com/static/images/bg2.jpg") center center no-repeat;
+    background: url("/static/images/bg2.jpg") center center no-repeat;
     background-size: auto 100%;
 }
 .cultureconcert .g-left {
@@ -1647,7 +1651,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_culture.png") left center no-repeat;
+    background: url("/static/images/bgt_culture.png") left center no-repeat;
     background-size: 100%;
 }
 .cultureconcert .g-left p {
@@ -1702,7 +1706,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_history.png") left center no-repeat;
+    background: url("/static/images/bgt_history.png") left center no-repeat;
     background-size: 100%;
 }
 .developmenthistory .slider-wraper {
@@ -1726,7 +1730,7 @@ a {
 .award {
     height: 9.7em;
 
-    background: url("//pc.hoozonspa.com/static/images/bg_award.jpg") center center no-repeat;
+    background: url("/static/images/bg_award.jpg") center center no-repeat;
     background-size: 100% 100%;
 }
 .award .wraper {
@@ -1741,7 +1745,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_award.png") left center no-repeat;
+    background: url("/static/images/bgt_award.png") left center no-repeat;
     background-size: 100%;
 }
 .award .slider-wraper {
@@ -1842,13 +1846,15 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_activities.png") left center no-repeat;
+    background: url("/static/images/bgt_activities.png") left center no-repeat;
     background-size: 100%;
 }
 .benefitactivities .g-left ul {
     margin-top: .8em;
 }
 .benefitactivities .g-left ul li {
+    position: relative;
+
     width: 30em;
     height: 2em;
     margin-bottom: 1em;
@@ -1866,6 +1872,10 @@ a {
 }
 .benefitactivities .g-left ul li a {
     color: #885e5a;
+}
+.benefitactivities .g-left ul li span {
+    position: absolute;
+    right: 0;
 }
 .benefitactivities .g-right {
     position: relative;
@@ -1902,7 +1912,7 @@ a {
     bottom: 0;
     left: -1px;
 
-    background: url("//pc.hoozonspa.com/static/images/bg_prev.png") left center no-repeat;
+    background: url("/static/images/bg_prev.png") left center no-repeat;
     background-size: 100%;
 }
 .benefitactivities .g-right .next {
@@ -1910,14 +1920,14 @@ a {
     right: 0;
     bottom: 0;
 
-    background: url("//pc.hoozonspa.com/static/images/bg_next.png") right center no-repeat;
+    background: url("/static/images/bg_next.png") right center no-repeat;
     background-size: 100%;
 }
 /***********************************project*****************************/
 .beautyskin {
     height: 11.38em;
 
-    background: url("//pc.hoozonspa.com/static/images/bg_skincare.jpg") center center no-repeat;
+    background: url("/static/images/bg_skincare.jpg") center center no-repeat;
     background-size: 100% 100%;
 }
 .beautyskin .wraper {
@@ -1934,7 +1944,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_skincare.png") left center no-repeat;
+    background: url("/static/images/bgt_skincare.png") left center no-repeat;
     background-size: 100%;
 }
 .beautyskin .slider-wraper {
@@ -2054,7 +2064,7 @@ a {
     width: 100%;
     height: 9.40em;
 
-    background: url("//pc.hoozonspa.com/static/images/bg_embroidery.jpg") center center no-repeat;
+    background: url("/static/images/bg_embroidery.jpg") center center no-repeat;
     background-size: 100% 100%;
 }
 .optoelectronic .g-left {
@@ -2075,7 +2085,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_skin.png") left center no-repeat;
+    background: url("/static/images/bgt_skin.png") left center no-repeat;
     background-size: 4.48em .98em;
 }
 .optoelectronic .g-left .row {
@@ -2263,7 +2273,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_spa.png") left center no-repeat;
+    background: url("/static/images/bgt_spa.png") left center no-repeat;
     background-size: 3.5em 1.76em;
 }
 .beautyspa .g-left .row {
@@ -2465,7 +2475,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_embroidery.png") left center no-repeat;
+    background: url("/static/images/bgt_embroidery.png") left center no-repeat;
     background-size: 3.5em 1.76em;
 }
 .embroidery .g-left .row {
@@ -2730,8 +2740,8 @@ a {
 }
 .newslist .g-doc .pageindex ul li {
     display: inline-block;
-    width: 38px;
     height: 38px;
+    min-width: 38px;
 
     font-size: 18px;
     line-height: 38px;
@@ -2747,6 +2757,10 @@ a {
 }
 .newslist .g-doc .pageindex ul li.active,
 .newslist .g-doc .pageindex ul li:hover {
+    color: #fff;
+    background: #885e5a;
+}
+.newslist .g-doc .pageindex ul li.thisclass {
     color: #fff;
     background: #885e5a;
 }
@@ -2884,16 +2898,16 @@ a {
     height: 50px;
 }
 .article .box .icon_qq2 {
-    background: url("//pc.hoozonspa.com/static/images/icon_qq2.png") center center no-repeat;
+    background: url("/static/images/icon_qq2.png") center center no-repeat;
 }
 .article .box .icon_teng2 {
-    background: url("//pc.hoozonspa.com/static/images/icon_teng2.png") center center no-repeat;
+    background: url("/static/images/icon_teng2.png") center center no-repeat;
 }
 .article .box .icon_weibo2 {
-    background: url("//pc.hoozonspa.com/static/images/icon_weibo2.png") center center no-repeat;
+    background: url("/static/images/icon_weibo2.png") center center no-repeat;
 }
 .article .box .icon_weixin2 {
-    background: url("//pc.hoozonspa.com/static/images/icon_weixin2.png") center center no-repeat;
+    background: url("/static/images/icon_weixin2.png") center center no-repeat;
 }
 @media screen and (max-width: 1400px) {
     .article {
@@ -3015,7 +3029,7 @@ a {
 .cases {
     height: 9.38em;
 
-    background: url("//pc.hoozonspa.com/static/images/bg_case.jpg") center center no-repeat;
+    background: url("/static/images/bg_case.jpg") center center no-repeat;
     background-size: 100% 100%;
 }
 .cases .g-left {
@@ -3032,7 +3046,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_case.png") left center no-repeat;
+    background: url("/static/images/bgt_case.png") left center no-repeat;
     background-size: 2.4em .98em;
 }
 .cases .g-left .row ul {
@@ -3200,7 +3214,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_shop.png") left center no-repeat;
+    background: url("/static/images/bgt_shop.png") left center no-repeat;
     background-size: 3.5em 1.76em;
 }
 .shops .g-left ul {
@@ -3283,7 +3297,7 @@ a {
     bottom: 0;
     left: -1px;
 
-    background: url("//pc.hoozonspa.com/static/images/bg_prev.png") left center no-repeat;
+    background: url("/static/images/bg_prev.png") left center no-repeat;
     background-size: 100%;
 }
 .shops .g-right .next {
@@ -3291,7 +3305,7 @@ a {
     right: 0;
     bottom: 0;
 
-    background: url("//pc.hoozonspa.com/static/images/bg_next.png") right center no-repeat;
+    background: url("/static/images/bg_next.png") right center no-repeat;
     background-size: 100%;
 }
 .shops .g-right li {
@@ -3366,7 +3380,7 @@ a {
 .environmental {
     height: 9.4em;
 
-    background: url("//pc.hoozonspa.com/static/images/bg2.jpg") center center no-repeat;
+    background: url("/static/images/bg2.jpg") center center no-repeat;
     background-size: auto 100%;
 }
 .environmental .g-left {
@@ -3402,7 +3416,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_science.png") left center no-repeat;
+    background: url("/static/images/bgt_science.png") left center no-repeat;
     background-size: 4.42em .98em;
 }
 .environmental .g-left .row {
@@ -3597,7 +3611,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_envirment.png") center center no-repeat;
+    background: url("/static/images/bgt_envirment.png") center center no-repeat;
     background-size: 100%;
 }
 .environmentalImgs .des p {
@@ -3650,7 +3664,7 @@ a {
 
     font-style: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bg_consult.png") center center no-repeat;
+    background: url("/static/images/bg_consult.png") center center no-repeat;
     background-size: 100%;
 }
 .environmentalImgs .des .consult:hover {
@@ -3665,7 +3679,7 @@ a {
     width: .39em;
     height: .39em;
 
-    background: url("//pc.hoozonspa.com/static/images/icon_close.png") center center no-repeat;
+    background: url("/static/images/icon_close.png") center center no-repeat;
     background-size: contain;
 }
 .environmentalImgs .close:hover {
@@ -3781,7 +3795,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_cases.png") center center no-repeat;
+    background: url("/static/images/bgt_cases.png") center center no-repeat;
     background-size: 100%;
 }
 .casesImgs .slider-container .g-right p {
@@ -3844,7 +3858,7 @@ a {
 
     font-style: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bg_consult.png") center center no-repeat;
+    background: url("/static/images/bg_consult.png") center center no-repeat;
     background-size: 100%;
 }
 .casesImgs .slider-indicator {
@@ -3883,7 +3897,7 @@ a {
     width: .39em;
     height: .39em;
 
-    background: url("//pc.hoozonspa.com/static/images/icon_close.png") center center no-repeat;
+    background: url("/static/images/icon_close.png") center center no-repeat;
     background-size: 100%;
 }
 .casesImgs .close:hover {
@@ -3947,7 +3961,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_shebei.png") center center no-repeat;
+    background: url("/static/images/bgt_shebei.png") center center no-repeat;
     background-size: 100%;
 }
 .shebei .g-right p {
@@ -4007,13 +4021,13 @@ a {
 
     font-style: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bg_consult2.png") center center no-repeat;
+    background: url("/static/images/bg_consult2.png") center center no-repeat;
     background-size: 100%;
 }
 .environmentaldisplay {
     height: 9.4em;
 
-    background: url("//pc.hoozonspa.com/static/images/bg2.jpg") center center no-repeat;
+    background: url("/static/images/bg2.jpg") center center no-repeat;
     background-size: auto 100%;
 }
 .environmentaldisplay .g-left {
@@ -4053,7 +4067,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_display.png") left center no-repeat;
+    background: url("/static/images/bgt_display.png") left center no-repeat;
     background-size: 4.38em 1.76em;
 }
 .environmentaldisplay .g-left ul {
@@ -4161,7 +4175,7 @@ a {
     left: -1px;
     z-index: 2;
 
-    background: url("//pc.hoozonspa.com/static/images/bg_prev.png") left center no-repeat;
+    background: url("/static/images/bg_prev.png") left center no-repeat;
     background-size: 100%;
 }
 .environmentaldisplay .g-right .next {
@@ -4170,7 +4184,7 @@ a {
     bottom: 0;
     z-index: 2;
 
-    background: url("//pc.hoozonspa.com/static/images/bg_next.png") right center no-repeat;
+    background: url("/static/images/bg_next.png") right center no-repeat;
     background-size: 100%;
 }
 .environmentaldisplay .g-right ul {
@@ -4266,7 +4280,7 @@ a {
     height: 1.76em;
     margin-top: 1.7em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_projecttitle.png") .46em center no-repeat;
+    background: url("/static/images/bgt_projecttitle.png") .46em center no-repeat;
     background-size: 3em 1.76em;
 }
 .projectdes .g-left .projectTitle h2 {
@@ -4348,7 +4362,7 @@ a {
     width: 50%;
     height: 9.38em;
 
-    background: url("//pc.hoozonspa.com/static/images/bg_brandcenter.jpg") top right no-repeat;
+    background: url("/static/images/bg_brandcenter.jpg") top right no-repeat;
     background-size: 100% 100%;
 }
 .projectdes .g-right .video-wraper {
@@ -4370,7 +4384,7 @@ a {
     height: 9.4em;
     /*background: url('@{imgpath}bg_effect.jpg') center center no-repeat;*/
 
-    background: url("//pc.hoozonspa.com/static/images/bg1.jpg") center center no-repeat;
+    background: url("/static/images/bg1.jpg") center center no-repeat;
     background-size: auto 100%;
 }
 .effect .g-left {
@@ -4390,7 +4404,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_effect.png") left center no-repeat;
+    background: url("/static/images/bgt_effect.png") left center no-repeat;
     background-size: 100%;
 }
 .effect .g-left p {
@@ -4481,7 +4495,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_adapt.png") left center no-repeat;
+    background: url("/static/images/bgt_adapt.png") left center no-repeat;
     background-size: 100%;
 }
 .adapt .g-left p {
@@ -4553,7 +4567,7 @@ a {
     height: 9.38em;
     /*background: url('@{imgpath}bg_process.jpg') center center no-repeat;*/
 
-    background: url("//pc.hoozonspa.com/static/images/bg2.jpg") center center no-repeat;
+    background: url("/static/images/bg2.jpg") center center no-repeat;
     background-size: auto;
     /* background-size: auto 100%; */
 }
@@ -4574,7 +4588,7 @@ a {
 
     font-size: 1em;
 
-    background: url("//pc.hoozonspa.com/static/images/bgt_process.png") left center no-repeat;
+    background: url("/static/images/bgt_process.png") left center no-repeat;
     background-size: 100%;
 }
 .process .g-left .step {
@@ -4966,4 +4980,39 @@ a {
 .optoelectronic .g-left li span a:hover,
 .embroidery .g-left li span a :hover {
     color: #fff;
+}
+.benefitactivities .g-right .swiper-container {
+    width: 100%;
+    height: 9.4em;
+    overflow: hidden;
+}
+.benefitactivities .g-right .swiper-wrapper {
+    height: 100%;
+}
+.benefitactivities .g-right .swiper-slide {
+    float: left;
+    width: 9.64em;
+    height: 100%;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    outline: mediumblue;
+}
+.benefitactivities .g-left ul li.swiper-pagination-bullet {
+    display: block;
+
+    border-radius: 0!important;
+    outline: mediumblue;
+    background: none;
+}
+.benefitactivities .g-left ul li a:hover {
+    /*color:#855951!important;*/
+    color: #9855ae!important;
+}
+.benefitactivities .g-left ul li.swiper-pagination-bullet-active {
+    color: #9855ae;
+    background: none!important;
+}
+.benefitactivities .g-left ul li.swiper-pagination-bullet-active a {
+    color: #9855ae;
 }

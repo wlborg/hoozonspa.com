@@ -45,12 +45,12 @@
         <div class="wraper">
             <h2><span class="sr-only">红妆美业</span></h2>
             <p>始于一九九六年，是海南美容界的一面旗帜，
-也是数万名海岛女性的信赖选择。<br>
-二十多年来秉承着“用爱心托起美丽”的理
-念，专注“智能美颜、科技瘦身、艺术纹绣、光电美肤、养生SPA”五大核心品项，植根
-海南，辐射全岛，迅速发展成为遍布海口、
+也是数万名海岛女性的选择。<br>
+二十多年来,秉承着“用爱心托起美丽”的理
+念，专注“智能美颜、科技瘦身、艺术纹绣、光电美肤、养生SPA”五大品项，植根
+海南，辐射全岛，发展成为遍布海口、
 琼海、儋州、三亚、陵水等五大城市，拥有
-23家机构的臻雅美业连锁。</p>
+23家机构的美业连锁。</p>
         </div>
         <!-- <p class="bigtxt">redup</p> -->
          <p class="bigtxt"><img src="{dede:global.cfg_imgpath/}/bigtxt_project.png"></p>
@@ -110,13 +110,13 @@
             <p class="special">愿景：铸就健康美业百年企业</p>
             <p>宗旨：一百年只做一件事，使更多的女性拥有健康和美丽</p>
             <p>使命：汇聚平凡力量 挺起美业脊梁</p>
-            <p>定位：海南美业旗舰品牌</p>
+            <p>定位：海南美业品牌</p>
             <p>服务理念：热诚的心，温暖的笑，真挚的爱，深切的情</p>
         </div>
         <p class="bigtxt"><img src="{dede:global.cfg_imgpath/}/bigtxt_bedroom.png"></p>
         </div>
         <div class="g-right">
-            <img src="//pc.hoozonspa.com/static/img/img_culture.jpg">
+            <img src="/static/img/img_culture.jpg">
         </div>
     </div>
     <!-- development history -->
@@ -161,25 +161,32 @@
         <div class="wraper">
             <h2><span class="sr-only">公益活动</span></h2>
             <ul>
-                {dede:arclist typeid='3' row='4' orderby='id' orderway='desc' titlelen="120"  infolen='60' }
-                <li><a href="[field:arcurl /]" title="[field:title/]">[field:title/]</a></li>
-                {/dede:arclist}
+
             </ul>
+              <ol style="display: none">
+                 {dede:arclist typeid='3' row='4' orderby='id' orderway='desc' titlelen="120"  infolen='60' }
+                   <li>[field:title/]&[field:arcurl /]</li>
+                 {/dede:arclist}
+            </ol>
+            <a class="more" href="/brand/public">查看更多</a>
             <p class="bigtxt"><img src="{dede:global.cfg_imgpath/}/bigtxt_leader.png"></p>
         </div>
         </div>
-        <div class="g-right">
-            <div class="slider-wraper">
-                <ul class="slider-container">
-                     {dede:arclist typeid='3' row='4' orderby='id' orderway='desc' titlelen="120" infolen='60' addfields='b_homecommon' channelid='1'}
-                    <li class="slider-item"><a href="[field:arcurl /]" title="[field:title/]">  <img src="[field:b_homecommon function='replaceurl(@me)/]" alt="[field:title/]" /></a></li>
-
-                   {/dede:arclist}
-                </ul>
+        <!-- // -->
+ <div class="g-right">
+          <!-- Swiper -->
+          <div class="swiper-container benefitactivities-container">
+            <div class="swiper-wrapper">
+                  {dede:arclist typeid='3' row='4' orderby='id' orderway='desc' titlelen="120" infolen='60' addfields='b_homecommon' channelid='1'}
+              <div class="swiper-slide"><a href="[field:arcurl /]" title="[field:title/]">  <img src="[field:b_homecommon function='replaceurl(@me)/]" alt="[field:title/]" /></a></div>
+               {/dede:arclist}
             </div>
-            <a href="javascript:void(0)" class="btn prev"></a>
-            <a href="javascript:void(0)" class="btn next"></a>
+          </div>
+
+            <a href="javascript:void(0)" class="btn prev swiper-button-prev"></a>
+            <a href="javascript:void(0)" class="btn next swiper-button-next"></a>
         </div>
+        <!-- // -->
     </div>
     <!-- footer -->
     {dede:include filename="footer.htm"/}

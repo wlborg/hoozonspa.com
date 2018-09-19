@@ -145,7 +145,7 @@ ul {
 
     vertical-align: top;
 
-    background: url(//pc.hoozonspa.com/static/zt/img/smr/bg_consult.png) center center no-repeat;
+    background: url(/static/zt/img/smr/bg_consult.png) center center no-repeat;
 }.container .consult a:hover {
 
     transform: scale(.9,.9);
@@ -158,13 +158,13 @@ ul {
     height: 700px;
     min-width: 1200px;
 
-    background: url(//pc.hoozonspa.com/static/zt/img/smr/banner.jpg) center center no-repeat #cef;
+    background: url(/static/zt/img/smr/banner.jpg) center center no-repeat #cef;
 }.m0 .g-doc .content {
 
     padding: 100px 136px 100px 446px;
     margin-top: 0;
 
-    background: url(//pc.hoozonspa.com/static/zt/img/smr/logo.jpg) 140px 136px no-repeat;
+    background: url(/static/zt/img/smr/logo.jpg) 140px 136px no-repeat;
 }.m0 .g-doc .content p {
 
     font-size: 20px;
@@ -175,12 +175,12 @@ ul {
 
     height: 746px;
 
-    background: url(//pc.hoozonspa.com/static/zt/img/smr/bg1.jpg) center center no-repeat;
+    background: url(/static/zt/img/smr/bg1.jpg) center center no-repeat;
 }.m1 .g-doc .title h2 {
 
     height: 98px;
 
-    background: url(//pc.hoozonspa.com/static/zt/img/smr/bgt1.jpg) center center no-repeat;
+    background: url(/static/zt/img/smr/bgt1.jpg) center center no-repeat;
 }.m1 .g-doc .content {
 
     text-align: left;
@@ -206,7 +206,7 @@ ul {
 
     height: 98px;
 
-    background: url(//pc.hoozonspa.com/static/zt/img/smr/bgt2.jpg) center center no-repeat;
+    background: url(/static/zt/img/smr/bgt2.jpg) center center no-repeat;
 }.m2 .g-doc .content div {
 
     padding-top: 270px;
@@ -231,12 +231,12 @@ ul {
 
     height: 1031px;
 
-    background: url(//pc.hoozonspa.com/static/zt/img/smr/bg3.jpg) center center no-repeat;
+    background: url(/static/zt/img/smr/bg3.jpg) center center no-repeat;
 }.m3 .g-doc .title h2 {
 
     height: 98px;
 
-    background: url(//pc.hoozonspa.com/static/zt/img/smr/bgt3.jpg) center center no-repeat;
+    background: url(/static/zt/img/smr/bgt3.jpg) center center no-repeat;
 }.m3-2 .g-doc .consult {
 
     margin-top: 50px;
@@ -245,7 +245,7 @@ ul {
     height: 99px;
     margin-top: 0;
 
-    background: url(//pc.hoozonspa.com/static/zt/img/smr/bgt4.jpg) center center no-repeat;
+    background: url(/static/zt/img/smr/bgt4.jpg) center center no-repeat;
 }.m4 .g-doc .content div {
 
     float: left;
@@ -279,12 +279,12 @@ ul {
 
     height: 786px;
 
-    background: url(//pc.hoozonspa.com/static/zt/img/smr/bg5.jpg) center center no-repeat;
+    background: url(/static/zt/img/smr/bg5.jpg) center center no-repeat;
 }.m5 .g-doc .title h2 {
 
     height: 98px;
 
-    background: url(//pc.hoozonspa.com/static/zt/img/smr/bgt5.jpg) center center no-repeat;
+    background: url(/static/zt/img/smr/bgt5.jpg) center center no-repeat;
 }.m5 .g-doc .content {
 
     position: relative;
@@ -341,7 +341,7 @@ ul {
     height: 98px;
     margin-top: 100px;
 
-    background: url(//pc.hoozonspa.com/static/zt/img/smr/bgt6.jpg) center center no-repeat;
+    background: url(/static/zt/img/smr/bgt6.jpg) center center no-repeat;
 }.m6 .g-doc .content div {
 
     display: inline-block;
@@ -354,7 +354,7 @@ ul {
 
     text-align: left;
 
-    background: url(//pc.hoozonspa.com/static/zt/img/smr/bg6_1.jpg) center center no-repeat;
+    background: url(/static/zt/img/smr/bg6_1.jpg) center center no-repeat;
 }.m6 .g-doc .content div a {
 
     color: #6facdf;
@@ -363,7 +363,7 @@ ul {
     margin-left: 0;
 }.m6 .g-doc .content .bg6 {
 
-    background: url(//pc.hoozonspa.com/static/zt/img/smr/bg6_2.jpg) center center no-repeat;
+    background: url(/static/zt/img/smr/bg6_2.jpg) center center no-repeat;
 }.m6 .g-doc .content .bg6 a {
 
     color: #ea81ae;
@@ -371,12 +371,12 @@ ul {
 
     height: 607px;
 
-    background: url(//pc.hoozonspa.com/static/zt/img/smr/bg7_N.jpg) center center no-repeat;
+    background: url(/static/zt/img/smr/bg7_N.jpg) center center no-repeat;
 }.m7 .g-doc .title h2 {
 
     height: 98px;
 
-    background: url(//pc.hoozonspa.com/static/zt/img/smr/bgt7_N.jpg) center center no-repeat;
+    background: url(/static/zt/img/smr/bgt7_N.jpg) center center no-repeat;
 }.bg2,
 
 .bg4 {
@@ -390,7 +390,7 @@ ul {
 
     display: inline-block;
 
-    background-image: url(//pc.hoozonspa.com/static/zt/img/smr/bg2.jpg);
+    background-image: url(/static/zt/img/smr/bg2.jpg);
 }.bg2_1 {
 
     width: 360px;
@@ -422,7 +422,7 @@ ul {
     background-position: -1448px -2px;
 }.bg4 {
 
-    background-image: url(//pc.hoozonspa.com/static/zt/img/smr/bg4.jpg);
+    background-image: url(/static/zt/img/smr/bg4.jpg);
 }.bg4_1 {
 
     width: 291px;

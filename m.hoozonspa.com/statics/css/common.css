@@ -327,7 +327,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 4;
+    z-index: 9999;
 
     width: 15.99829352rem;
     height: 2.34641638rem;

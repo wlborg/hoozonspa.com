@@ -29,19 +29,18 @@
                                                     <h4>[field:title/]</h4>
                                                     <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                 <!-- 判断是否有跳转URL，如果有就使用redirecturl，否则直接使用arcurl -->
-                                                    [field.array runphp=yes]
-                                                       if(@me['redirecturl']!='')
-                                                         {
-                                                           @me='<a class="more" href="'.@me['redirecturl'].'" title="[field:title/]">查看更多</a>'
-                                                         }
-                                                     else
-                                                        {
-                                                           @me='<a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>'
+                                                    <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
+                                         <!-- <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a> -->
+                                         <a class="more"
+                                               href="[field:array runphp='yes']
+                                                    if(@me['redirecturl']==''){
+                                                          @me=@me['arcurl'];
                                                         }
-                                                    [/field.array]
-
-                                           <!--  <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a> -->
+                                                    else {
+                                                          @me=@me['redirecturl'];
+                                                       }
+                                                   [/field:array]" title="[field:title/]">查看更多</a>
+                                               <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
                                                 </div>
                                                 <div class="back">
                                                    <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">

@@ -103,17 +103,17 @@ if ( ! function_exists('GetFileNewName'))
     {
         global $cfg_arc_dirname;
         $articlename = GetFileName($aid,$typeid,$timetag,$title,$ismake,$rank,$namerule,$typedir,$money,$filename);
-        
+
         if(preg_match("/\?/", $articlename))
         {
             return $articlename;
         }
-        
+
         if($cfg_arc_dirname=='Y' && preg_match("/\/$/", $articlename))
         {
             $articlename = $articlename."index.html";
         }
-        
+
         $slen = strlen($articlename)-1;
         for($i=$slen;$i>=0;$i--)
         {
@@ -256,7 +256,7 @@ if ( ! function_exists('GetTypeUrl'))
         if( !preg_match("/^http:\/\//",$reurl) ) {
             $reurl = preg_replace("/\/{1,}/i", '/', $reurl);
         }
-        
+
         if($GLOBALS['cfg_multi_site']=='Y')
         {
             if($siteurl=='') {
@@ -397,7 +397,7 @@ function GetSonIds($id,$channel=0,$addthis=true)
     }
     GetSonIdsLogic($id,$cfg_Cs,$channel,$addthis);
     $rquery = join(',',$GLOBALS['idArray']);
-    $rquery = preg_replace("/,$/", '', $rquery); 
+    $rquery = preg_replace("/,$/", '', $rquery);
     return $rquery;
 }
 
@@ -754,7 +754,7 @@ function GetCacheBlock($cacheid)
 {
     global $cfg_puccache_time;
     $cachefile = DEDEDATA.'/cache/'.$cacheid.'.inc';
-    if(!file_exists($cachefile) || filesize($cachefile)==0 || 
+    if(!file_exists($cachefile) || filesize($cachefile)==0 ||
       $cfg_puccache_time==0 || time() - filemtime($cachefile) > $cfg_puccache_time)
     {
         return '';

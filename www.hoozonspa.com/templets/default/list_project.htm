@@ -29,19 +29,18 @@
                                                     <h4>[field:title/]</h4>
                                                     <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                 <!-- 判断是否有跳转URL，如果有就使用redirecturl，否则直接使用arcurl -->
-                                                    [field.array runphp=yes]
-                                                       if(@me['redirecturl']!='')
-                                                         {
-                                                           @me='<a class="more" href="'.@me['redirecturl'].'" title="[field:title/]">查看更多</a>'
-                                                         }
-                                                     else
-                                                        {
-                                                           @me='<a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>'
+                                                    <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
+                                         <!-- <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a> -->
+                                         <a class="more"
+                                               href="[field:array runphp='yes']
+                                                    if(@me['redirecturl']==''){
+                                                          @me=@me['arcurl'];
                                                         }
-                                                    [/field.array]
-
-                                           <!--  <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a> -->
+                                                    else {
+                                                          @me=@me['redirecturl'];
+                                                       }
+                                                   [/field:array]" title="[field:title/]">查看更多</a>
+                                               <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
                                                 </div>
                                                 <div class="back">
                                                    <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
@@ -52,7 +51,7 @@
                                     </ul>
 
                                     <ul>
-                                         {dede:arclist typeid='15' row='9' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='9,9'  channelid="21"}
+                                         {dede:arclist typeid='15' row='9' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special,redirecturl" infolen='30' limit='9,9'  channelid="21"}
                                          <li><span>[field:title/]</span>
 
                                             <div class="block">
@@ -60,7 +59,18 @@
                                                     <h4>[field:title/]</h4>
                                                     <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                       <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
+                                         <!-- <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a> -->
+                                         <a class="more"
+                                               href="[field:array runphp='yes']
+                                                    if(@me['redirecturl']==''){
+                                                          @me=@me['arcurl'];
+                                                        }
+                                                    else {
+                                                          @me=@me['redirecturl'];
+                                                       }
+                                                   [/field:array]" title="[field:title/]">查看更多</a>
+                                               <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
                                                 </div>
                                                 <div class="back">
                                                    <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
@@ -75,7 +85,7 @@
                                 <h3>身体养护</h3>
                                 <div class="row">
                                     <ul>
-                                         {dede:arclist typeid='16' row='9' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,9'  channelid="21"}
+                                         {dede:arclist typeid='16' row='9' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special,redirecturl" infolen='30' limit='0,9'  channelid="21"}
                                          <li><span>[field:title/]</span>
 
                                             <div class="block">
@@ -83,7 +93,18 @@
                                                     <h4>[field:title/]</h4>
                                                     <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                     <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
+                                         <!-- <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a> -->
+                                         <a class="more"
+                                               href="[field:array runphp='yes']
+                                                    if(@me['redirecturl']==''){
+                                                          @me=@me['arcurl'];
+                                                        }
+                                                    else {
+                                                          @me=@me['redirecturl'];
+                                                       }
+                                                   [/field:array]" title="[field:title/]">查看更多</a>
+                                               <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
                                                 </div>
                                                 <div class="back">
                                                    <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
@@ -93,7 +114,7 @@
                                         {/dede:arclist}
                                     </ul>
                                       <ul>
-                                         {dede:arclist typeid='16' row='9' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='9,9'  channelid="21"}
+                                         {dede:arclist typeid='16' row='9' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special,redirecturl" infolen='30' limit='9,9'  channelid="21"}
                                          <li><span>[field:title/]</span>
 
                                             <div class="block">
@@ -101,7 +122,18 @@
                                                     <h4>[field:title/]</h4>
                                                     <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                      <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
+                                         <!-- <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a> -->
+                                         <a class="more"
+                                               href="[field:array runphp='yes']
+                                                    if(@me['redirecturl']==''){
+                                                          @me=@me['arcurl'];
+                                                        }
+                                                    else {
+                                                          @me=@me['redirecturl'];
+                                                       }
+                                                   [/field:array]" title="[field:title/]">查看更多</a>
+                                               <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
                                                 </div>
                                                 <div class="back">
                                                    <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
@@ -116,7 +148,7 @@
                                 <h3>立体线雕</h3>
                                 <div class="row">
                                     <ul>
-                                         {dede:arclist typeid='273' row='9' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,9'  channelid="21"}
+                                         {dede:arclist typeid='273' row='9' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special,redirecturl" infolen='30' limit='0,9'  channelid="21"}
                                          <li><span>[field:title/]</span>
 
                                             <div class="block">
@@ -124,7 +156,18 @@
                                                     <h4>[field:title/]</h4>
                                                     <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
+                                         <!-- <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a> -->
+                                         <a class="more"
+                                               href="[field:array runphp='yes']
+                                                    if(@me['redirecturl']==''){
+                                                          @me=@me['arcurl'];
+                                                        }
+                                                    else {
+                                                          @me=@me['redirecturl'];
+                                                       }
+                                                   [/field:array]" title="[field:title/]">查看更多</a>
+                                               <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
                                                 </div>
                                                 <div class="back">
                                                    <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
@@ -134,7 +177,7 @@
                                         {/dede:arclist}
                                     </ul>
                                       <ul>
-                                         {dede:arclist typeid='273' row='9' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='9,9'  channelid="21"}
+                                         {dede:arclist typeid='273' row='9' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special,redirecturl" infolen='30' limit='9,9'  channelid="21"}
                                          <li><span>[field:title/]</span>
 
                                             <div class="block">
@@ -142,7 +185,18 @@
                                                     <h4>[field:title/]</h4>
                                                     <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                        <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
+                                         <!-- <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a> -->
+                                         <a class="more"
+                                               href="[field:array runphp='yes']
+                                                    if(@me['redirecturl']==''){
+                                                          @me=@me['arcurl'];
+                                                        }
+                                                    else {
+                                                          @me=@me['redirecturl'];
+                                                       }
+                                                   [/field:array]" title="[field:title/]">查看更多</a>
+                                               <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
                                                 </div>
                                                 <div class="back">
                                                    <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
@@ -170,7 +224,7 @@
                             <div class="item">
                                 <h3>激光脱毛</h3>
                                     <ul>
-                                         {dede:arclist typeid='17' row='15' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30'   channelid="21"}
+                                         {dede:arclist typeid='17' row='15' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special,redirecturl" infolen='30'   channelid="21"}
                                          <li><span>[field:title/]</span>
 
                                             <div class="block">
@@ -178,7 +232,18 @@
                                                     <h4>[field:title/]</h4>
                                                     <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                            <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
+                                         <!-- <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a> -->
+                                         <a class="more"
+                                               href="[field:array runphp='yes']
+                                                    if(@me['redirecturl']==''){
+                                                          @me=@me['arcurl'];
+                                                        }
+                                                    else {
+                                                          @me=@me['redirecturl'];
+                                                       }
+                                                   [/field:array]" title="[field:title/]">查看更多</a>
+                                               <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
                                                 </div>
                                                 <div class="back">
                                                    <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
@@ -192,7 +257,7 @@
                             <div class="item">
                                 <h3>激光祛痘</h3>
                                    <ul>
-                                         {dede:arclist typeid='18' row='15' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30'   channelid="21"}
+                                         {dede:arclist typeid='18' row='15' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special,redirecturl" infolen='30'   channelid="21"}
                                          <li><span>[field:title/]</span>
 
                                             <div class="block">
@@ -200,7 +265,18 @@
                                                     <h4>[field:title/]</h4>
                                                     <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                               <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
+                                         <!-- <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a> -->
+                                         <a class="more"
+                                               href="[field:array runphp='yes']
+                                                    if(@me['redirecturl']==''){
+                                                          @me=@me['arcurl'];
+                                                        }
+                                                    else {
+                                                          @me=@me['redirecturl'];
+                                                       }
+                                                   [/field:array]" title="[field:title/]">查看更多</a>
+                                               <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
                                                 </div>
                                                 <div class="back">
                                                    <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
@@ -214,7 +290,7 @@
                             <div class="item">
                                 <h3>激光美肤</h3>
                                    <ul>
-                                         {dede:arclist typeid='19' row='15' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30'   channelid="21"}
+                                         {dede:arclist typeid='19' row='15' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special,redirecturl" infolen='30'   channelid="21"}
                                          <li><span>[field:title/]</span>
 
                                             <div class="block">
@@ -222,7 +298,18 @@
                                                     <h4>[field:title/]</h4>
                                                     <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                          <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
+                                         <!-- <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a> -->
+                                         <a class="more"
+                                               href="[field:array runphp='yes']
+                                                    if(@me['redirecturl']==''){
+                                                          @me=@me['arcurl'];
+                                                        }
+                                                    else {
+                                                          @me=@me['redirecturl'];
+                                                       }
+                                                   [/field:array]" title="[field:title/]">查看更多</a>
+                                               <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
                                                 </div>
                                                 <div class="back">
                                                    <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
@@ -236,7 +323,7 @@
                             <div class="item">
                                 <h3>科技瘦身</h3>
                                    <ul>
-                                         {dede:arclist typeid='20' row='15' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30'   channelid="21"}
+                                         {dede:arclist typeid='20' row='15' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special,redirecturl" infolen='30'   channelid="21"}
                                          <li><span>[field:title/]</span>
 
                                             <div class="block">
@@ -244,7 +331,18 @@
                                                     <h4>[field:title/]</h4>
                                                     <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                               <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
+                                         <!-- <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a> -->
+                                         <a class="more"
+                                               href="[field:array runphp='yes']
+                                                    if(@me['redirecturl']==''){
+                                                          @me=@me['arcurl'];
+                                                        }
+                                                    else {
+                                                          @me=@me['redirecturl'];
+                                                       }
+                                                   [/field:array]" title="[field:title/]">查看更多</a>
+                                               <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
                                                 </div>
                                                 <div class="back">
                                                    <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
@@ -270,7 +368,7 @@
                             <div class="item">
                                 <h3>纹绣（眉）</h3>
                                 <ul>
-                                     {dede:arclist typeid='21' row='15' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30'   channelid="21"}
+                                     {dede:arclist typeid='21' row='15' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special,redirecturl" infolen='30'   channelid="21"}
                                      <li><span>[field:title/]</span>
 
                                             <div class="block">
@@ -278,7 +376,18 @@
                                                     <h4>[field:title/]</h4>
                                                     <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
+                                         <!-- <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a> -->
+                                         <a class="more"
+                                               href="[field:array runphp='yes']
+                                                    if(@me['redirecturl']==''){
+                                                          @me=@me['arcurl'];
+                                                        }
+                                                    else {
+                                                          @me=@me['redirecturl'];
+                                                       }
+                                                   [/field:array]" title="[field:title/]">查看更多</a>
+                                               <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
                                                 </div>
                                                 <div class="back">
                                                    <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
@@ -292,7 +401,7 @@
                             <div class="item">
                                 <h3>纹绣（眼）</h3>
                                   <ul>
-                                     {dede:arclist typeid='22' row='15' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30'   channelid="21"}
+                                     {dede:arclist typeid='22' row='15' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special,redirecturl" infolen='30'   channelid="21"}
                                      <li><span>[field:title/]</span>
 
                                             <div class="block">
@@ -300,7 +409,18 @@
                                                     <h4>[field:title/]</h4>
                                                     <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                      <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
+                                         <!-- <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a> -->
+                                         <a class="more"
+                                               href="[field:array runphp='yes']
+                                                    if(@me['redirecturl']==''){
+                                                          @me=@me['arcurl'];
+                                                        }
+                                                    else {
+                                                          @me=@me['redirecturl'];
+                                                       }
+                                                   [/field:array]" title="[field:title/]">查看更多</a>
+                                               <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
                                                 </div>
                                                 <div class="back">
                                                    <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
@@ -314,7 +434,7 @@
                             <div class="item">
                                 <h3>纹绣（唇）</h3>
                                  <ul>
-                                     {dede:arclist typeid='23' row='15' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30'   channelid="21"}
+                                     {dede:arclist typeid='23' row='15' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special,redirecturl" infolen='30'   channelid="21"}
                                      <li><span>[field:title/]</span>
 
                                             <div class="block">
@@ -322,7 +442,18 @@
                                                     <h4>[field:title/]</h4>
                                                     <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                  <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
+                                         <!-- <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a> -->
+                                         <a class="more"
+                                               href="[field:array runphp='yes']
+                                                    if(@me['redirecturl']==''){
+                                                          @me=@me['arcurl'];
+                                                        }
+                                                    else {
+                                                          @me=@me['redirecturl'];
+                                                       }
+                                                   [/field:array]" title="[field:title/]">查看更多</a>
+                                               <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
                                                 </div>
                                                 <div class="back">
                                                    <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">
@@ -336,7 +467,7 @@
                             <div class="item">
                                 <h3>纹绣（洗）</h3>
                                  <ul>
-                                     {dede:arclist typeid='24' row='15' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' channelid="21"}
+                                     {dede:arclist typeid='24' row='15' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special,redirecturl" infolen='30' channelid="21"}
                                    <li><span>[field:title/]</span>
 
                                             <div class="block">
@@ -344,7 +475,18 @@
                                                     <h4>[field:title/]</h4>
                                                     <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                       <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
+                                         <!-- <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a> -->
+                                         <a class="more"
+                                               href="[field:array runphp='yes']
+                                                    if(@me['redirecturl']==''){
+                                                          @me=@me['arcurl'];
+                                                        }
+                                                    else {
+                                                          @me=@me['redirecturl'];
+                                                       }
+                                                   [/field:array]" title="[field:title/]">查看更多</a>
+                                               <!-- 当链接有跳转链接的时候直接使用redirecturl，否则使用arcurl -->
                                                 </div>
                                                 <div class="back">
                                                    <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">

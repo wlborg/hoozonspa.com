@@ -344,7 +344,7 @@ function topbanner(argument) {
         indicator: $(".top-banner .slider-indicator")
     });
 }
-// developmenthistory  
+// developmenthistory
 function brandhistory() {
     if (!$('.developmenthistory')) return;
     var widthLen = $('.developmenthistory .slider-wraper').width() / 2;

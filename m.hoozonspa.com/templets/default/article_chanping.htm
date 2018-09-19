@@ -22,17 +22,16 @@
         <div class="g-container chanpingdetail">
             <div class="title">
                 <p>Nursing products</p>
-                <h2>媞芙瑞纯美肌精保湿系列</h2>
+                <h2>{dede:field.title /}</h2>
             </div>
             <div class="content">
                 <div class="des">
-                    <img src="/statics/img/img29.jpg">
-                    <p> 任何肌肤可使用，蕴含具有小分子肽等保湿、及营养能 力的高原雪参精，通过离子补水技术，使营养保湿成分源源 不断吸收，滋润，绽现幼滑冰肌。
-                    </p>
+                    <img src="{dede:field.pic2 function='replaceurl(@me)/} ">
+                    <p> {dede:field.description/}</p>
                 </div>
                 <div class="box box1">
                     <div class="g-left">
-                        <img src="{dede:field.pic4 function='replaceurl(@me)/}" alt="{dede:field.title /}">
+                        <img src="{dede:field.pic4 function='replaceurl(@me) /}">
                     </div>
                     <div class="g-right">
                         <h3>Step</h3>
@@ -53,7 +52,6 @@
                             <br> → 识别小程序码 → 立即购买</p>
                     </div>
                 </div>
-
             </div>
         </div>
         {dede:include filename="_sj_copyright.htm"/} {dede:include filename="_footer.htm"/}

@@ -21,7 +21,7 @@
                                 <h3>面部护理</h3>
                                 <div class="row">
                                     <ul class="special">
-                                         {dede:arclist typeid='15' row='9' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special" infolen='30' limit='0,9'  channelid="21"}
+                                         {dede:arclist typeid='15' row='9' orderby='id' orderway='desc' titlelen="120" addfields="des,b_special,redirecturl" infolen='30' limit='0,9'  channelid="21"}
                                          <li><span>[field:title/]</span>
 
                                             <div class="block">
@@ -29,7 +29,17 @@
                                                     <h4>[field:title/]</h4>
                                                     <p>[field:des/]</p>
                                                     <div class="line"></div>
-                                                      <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>
+                                                 <!-- 判断是否有跳转URL，如果有就使用redirecturl，否则直接使用arcurl -->
+                                                    [field.redirecturl runphp="yes"]
+                                                       $fields=@me;
+                                                       if($fields!=''){
+                                                       @me='<a class="more" href="'.$fields.'" title="[field:title/]">查看更多</a>'
+                                                     }else{
+                                                      @me='<a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>'
+                                                   }
+                                                    [/field.redirecturl]
+
+                                           <!--  <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a> -->
                                                 </div>
                                                 <div class="back">
                                                    <img src="[field:b_special function='replaceurl(@me)/]" alt="[field:title/]">

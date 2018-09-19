@@ -30,17 +30,16 @@
                                                     <p>[field:des/]</p>
                                                     <div class="line"></div>
                                                  <!-- 判断是否有跳转URL，如果有就使用redirecturl，否则直接使用arcurl -->
-                                                    [field.redirecturl runphp=yes]
-                                                       $redirectlink=@me;
-                                                       if($fields!='')
+                                                    [field.array runphp=yes]
+                                                       if(@me['redirecturl']!='')
                                                          {
-                                                           @me='<a class="more" href="'.$redirectlink.'" title="[field:title/]">查看更多</a>'
+                                                           @me='<a class="more" href="'.@me['redirecturl'].'" title="[field:title/]">查看更多</a>'
                                                          }
                                                      else
                                                         {
                                                            @me='<a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a>'
                                                         }
-                                                    [/field.redirecturl]
+                                                    [/field.array]
 
                                            <!--  <a class="more" href="[field:arcurl /]" title="[field:title/]">查看更多</a> -->
                                                 </div>

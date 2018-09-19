@@ -128,7 +128,7 @@ span {
     width: 100%;
     height: 1.300053rem;
 
-    background: url(images/hengtiao.png) repeat-x;
+    background: url(../images/hengtiao.png) repeat-x;
     background-color: #6ea1c3;
     background-size: contain;
 }.xtitle {
@@ -189,7 +189,7 @@ span {
     margin-top: 1.2rem;
     /* height: 7.3rem; */
 
-    background: url(images/main1-bg.png) no-repeat bottom center;
+    background: url(../images/main1-bg.png) no-repeat bottom center;
     -webkit-background-size: contain;
             background-size: contain;
 }.main-one section {
@@ -230,7 +230,7 @@ span {
     color: #868686;
 }.main-one .section2 .top {
 
-    background: url(images/girel2.png) no-repeat top left;
+    background: url(../images/girel2.png) no-repeat top left;
     background-size: contain;
 }.main-one .section2 .top h3 {
 
@@ -478,7 +478,7 @@ span {
 
     line-height: 2.3rem;
 
-    background: url(images/TJT.png) no-repeat top center;
+    background: url(../images/TJT.png) no-repeat top center;
     background-size: contain;
     background-size: 100% 100%;
 }.qi img,
@@ -540,7 +540,7 @@ span {
     height: 1.93rem;
     padding-top: .1rem;
 
-    background: url(images/bqian.png)no-repeat top center;
+    background: url(../images/bqian.png)no-repeat top center;
     background-size: contain;
 }.yhsl .top img,
 
@@ -559,7 +559,7 @@ span {
     /* height: .73rem; */
     padding-top: .1rem;
 
-    background: url(images/bqian2.png) no-repeat top center;
+    background: url(../images/bqian2.png) no-repeat top center;
     background-size: contain;
     background-size: 100% 100%;
 }.scqj {

@@ -3,6 +3,7 @@
 <head>
 {dede:include filename="_link_list.htm"/}
  {dede:include filename="_link.htm"/}
+<script type="text/javascript" src="{dede:global.cfg_jspath/}/jquery.lazyload.min.js"></script>
 </head>
 <body>
 <!-- header -->
@@ -36,7 +37,7 @@
                     <div class="block">
                         <div class="slider-wraper">
                             <ul class="slider-container">
-                                {dede:arclist typeid='11' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic1' channelid='17' limit='0,1'}
+                                {dede:arclist typeid='11' row='10' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic1' channelid='17' limit='0,10'}
                                 <li class="slider-item">
                                     <div class="front">
                                         <h3>[field:title/]</h3>
@@ -45,11 +46,11 @@
                                         <p>美丽热线：[field:tel/]</p>
                                     </div>
                                     <div class="back">
-                                        <img src="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]">
+                                        <img data-original="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]" width="720" height="720">
                                     </div>
                                 </li>
                                 {/dede:arclist}
-                                {dede:arclist typeid='11' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic2' channelid='17' limit='1,1'}
+                                <!-- {dede:arclist typeid='11' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic2' channelid='17' limit='1,1'}
                                 <li class="slider-item">
                                     <div class="front">
                                         <h3>[field:title/]</h3>
@@ -113,7 +114,7 @@
                                         <img src="[field:b_pic6 function='replaceurl(@me)/]" alt="[field:title/]">
                                     </div>
                                 </li>
-                                {/dede:arclist}
+                                {/dede:arclist} -->
                             </ul>
                         </div>
                         <a href="javascript:void(0)" class="btn prev"></a>

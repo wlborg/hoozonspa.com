@@ -261,12 +261,14 @@
 .btn-wrap a span {
     padding-left: .7rem;
 
-    vertical-align: middle;
+    vertical-align: top;
 }
 /*part3结束*/
 
 /*part4开始*/
-
+.part4 {
+    overflow: hidden;
+}
 .part4 > div {
     float: left;
     height: 12.928rem;
@@ -277,7 +279,7 @@
 .part4 .right {
     position: relative;
 
-    width: 8.171rem;
+    width: 8rem;
 }
 .part4 > div img {
     width: 100%;

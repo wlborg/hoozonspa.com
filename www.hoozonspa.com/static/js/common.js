@@ -325,7 +325,9 @@ function initSlider() {
     });
 
     //shop
+
     var sliders2 = $(".shops .block");
+
     var sliders2arr = [];
     for (var i2 = 0, len2 = sliders2.length; i2 < len2; i2++) {
         sliders2arr[i2] = new XZSlide({
@@ -341,7 +343,9 @@ function initSlider() {
         });
     }
     tabs($('.shops .g-left').find('li'), $('.shops .block'));
-
+    //默认显示第一个分院
+    sliders2.eq(0).addClass('active').siblings().removeClass('active');
+    $('.shops .g-left').find('li').eq(0).addClass('active').siblings().removeClass('active');
     //Environmental Science
     //
     // tabs($('.environmental .g-left').find('li'), $('.environmental .item'));

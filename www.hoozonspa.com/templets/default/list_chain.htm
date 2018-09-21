@@ -3,6 +3,7 @@
 <head>
 {dede:include filename="_link_list.htm"/}
  {dede:include filename="_link.htm"/}
+
 </head>
 <body>
 <!-- header -->
@@ -36,7 +37,7 @@
                     <div class="block">
                         <div class="slider-wraper">
                             <ul class="slider-container">
-                                {dede:arclist typeid='11' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic1' channelid='17' limit='0,1'}
+                                {dede:arclist typeid='11' row='10' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic1' channelid='17' limit='0,10'}
                                 <li class="slider-item">
                                     <div class="front">
                                         <h3>[field:title/]</h3>
@@ -45,11 +46,11 @@
                                         <p>美丽热线：[field:tel/]</p>
                                     </div>
                                     <div class="back">
-                                        <img src="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]">
+                                        <img data-original="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]" width="720" height="720" class="lazy" />
                                     </div>
                                 </li>
                                 {/dede:arclist}
-                                {dede:arclist typeid='11' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic2' channelid='17' limit='1,1'}
+                                <!-- {dede:arclist typeid='11' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic2' channelid='17' limit='1,1'}
                                 <li class="slider-item">
                                     <div class="front">
                                         <h3>[field:title/]</h3>
@@ -113,7 +114,7 @@
                                         <img src="[field:b_pic6 function='replaceurl(@me)/]" alt="[field:title/]">
                                     </div>
                                 </li>
-                                {/dede:arclist}
+                                {/dede:arclist} -->
                             </ul>
                         </div>
                         <a href="javascript:void(0)" class="btn prev"></a>
@@ -123,7 +124,7 @@
                     <div class="block">
                         <div class="slider-wraper">
                             <ul class="slider-container">
-                                 {dede:arclist typeid='12' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic1' channelid='17' limit='0,1'}
+                                 {dede:arclist typeid='12' row='5' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic1' channelid='17' limit='0,5'}
                                 <li class="slider-item">
                                     <div class="front">
                                         <h3>[field:title/]</h3>
@@ -132,11 +133,11 @@
                                         <p>美丽热线：[field:tel/]</p>
                                     </div>
                                     <div class="back">
-                                        <img src="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]">
+                                        <img data-original="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]" width="720" height="720" class="lazy" />
                                     </div>
                                 </li>
                                 {/dede:arclist}
-                                {dede:arclist typeid='12' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic2' channelid='17' limit='1,1'}
+                             <!--    {dede:arclist typeid='12' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic2' channelid='17' limit='1,1'}
                                 <li class="slider-item">
                                     <div class="front">
                                         <h3>[field:title/]</h3>
@@ -200,7 +201,7 @@
                                         <img src="[field:b_pic6 function='replaceurl(@me)/]" alt="[field:title/]">
                                     </div>
                                 </li>
-                                {/dede:arclist}
+                                {/dede:arclist} -->
                             </ul>
                         </div>
                         <a href="javascript:void(0)" class="btn prev"></a>
@@ -210,7 +211,7 @@
                     <div class="block">
                         <div class="slider-wraper">
                             <ul class="slider-container">
-                                {dede:arclist typeid='14' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic1' channelid='17' limit='0,1'}
+                                {dede:arclist typeid='14' row='5' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic1' channelid='17' limit='0,5'}
                                 <li class="slider-item">
                                     <div class="front">
                                         <h3>[field:title/]</h3>
@@ -219,11 +220,11 @@
                                         <p>美丽热线：[field:tel/]</p>
                                     </div>
                                     <div class="back">
-                                        <img src="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]">
+                                       <img data-original="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]" width="720" height="720" class="lazy" />
                                     </div>
                                 </li>
                                 {/dede:arclist}
-                                {dede:arclist typeid='14' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic2' channelid='17' limit='1,1'}
+                              <!--   {dede:arclist typeid='14' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic2' channelid='17' limit='1,1'}
                                 <li class="slider-item">
                                     <div class="front">
                                         <h3>[field:title/]</h3>
@@ -287,7 +288,7 @@
                                         <img src="[field:b_pic6 function='replaceurl(@me)/]" alt="[field:title/]">
                                     </div>
                                 </li>
-                                {/dede:arclist}
+                                {/dede:arclist} -->
                             </ul>
                         </div>
                         <a href="javascript:void(0)" class="btn prev"></a>
@@ -297,7 +298,7 @@
                     <div class="block">
                         <div class="slider-wraper">
                             <ul class="slider-container">
-                                {dede:arclist typeid='13' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic1' channelid='17' limit='0,1'}
+                                {dede:arclist typeid='13' row='5' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic1' channelid='17' limit='0,5'}
                                 <li class="slider-item">
                                     <div class="front">
                                         <h3>[field:title/]</h3>
@@ -306,168 +307,169 @@
                                         <p>美丽热线：[field:tel/]</p>
                                     </div>
                                     <div class="back">
-                                        <img src="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]">
+                                         <img data-original="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]" width="720" height="720" class="lazy" />
                                     </div>
                                 </li>
                                 {/dede:arclist}
-                                {dede:arclist typeid='13' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic2' channelid='17' limit='1,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址：[field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="[field:b_pic2 function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist}
-                                {dede:arclist typeid='13' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic3' channelid='17' limit='2,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址：[field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="[field:b_pic3 function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist}
-                                {dede:arclist typeid='13' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic4' channelid='17' limit='3,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址：[field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="[field:b_pic4 function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist}
-                                {dede:arclist typeid='13' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic5' channelid='17' limit='4,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址：[field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="[field:b_pic5 function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist}
-                                {dede:arclist typeid='13' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic6' channelid='17' limit='5,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址：[field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="[field:b_pic6 function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist}
-                            </ul>
-                        </div>
-                        <a href="javascript:void(0)" class="btn prev"></a>
-                        <a href="javascript:void(0)" class="btn next"></a>
-                    </div>
-                    <!-- 陵水 -->
-                    <div class="block">
-                        <div class="slider-wraper">
-                            <ul class="slider-container">
-                                  {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic1' channelid='17' limit='0,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址：[field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="/static/img/img21.jpg"></div>
-                                </li>
-                                {/dede:arclist}
+                               <!--  {dede:arclist typeid='13' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic2' channelid='17' limit='1,1'}
+                               <li class="slider-item">
+                                   <div class="front">
+                                       <h3>[field:title/]</h3>
+                                       <div class="line"></div>
+                                       <p>地址：[field:address/]</p>
+                                       <p>美丽热线：[field:tel/]</p>
+                                   </div>
+                                   <div class="back">
+                                       <img src="[field:b_pic2 function='replaceurl(@me)/]" alt="[field:title/]">
+                                   </div>
+                               </li>
+                               {/dede:arclist}
+                               {dede:arclist typeid='13' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic3' channelid='17' limit='2,1'}
+                               <li class="slider-item">
+                                   <div class="front">
+                                       <h3>[field:title/]</h3>
+                                       <div class="line"></div>
+                                       <p>地址：[field:address/]</p>
+                                       <p>美丽热线：[field:tel/]</p>
+                                   </div>
+                                   <div class="back">
+                                       <img src="[field:b_pic3 function='replaceurl(@me)/]" alt="[field:title/]">
+                                   </div>
+                               </li>
+                               {/dede:arclist}
+                               {dede:arclist typeid='13' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic4' channelid='17' limit='3,1'}
+                               <li class="slider-item">
+                                   <div class="front">
+                                       <h3>[field:title/]</h3>
+                                       <div class="line"></div>
+                                       <p>地址：[field:address/]</p>
+                                       <p>美丽热线：[field:tel/]</p>
+                                   </div>
+                                   <div class="back">
+                                       <img src="[field:b_pic4 function='replaceurl(@me)/]" alt="[field:title/]">
+                                   </div>
+                               </li>
+                               {/dede:arclist}
+                               {dede:arclist typeid='13' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic5' channelid='17' limit='4,1'}
+                               <li class="slider-item">
+                                   <div class="front">
+                                       <h3>[field:title/]</h3>
+                                       <div class="line"></div>
+                                       <p>地址：[field:address/]</p>
+                                       <p>美丽热线：[field:tel/]</p>
+                                   </div>
+                                   <div class="back">
+                                       <img src="[field:b_pic5 function='replaceurl(@me)/]" alt="[field:title/]">
+                                   </div>
+                               </li>
+                               {/dede:arclist}
+                               {dede:arclist typeid='13' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic6' channelid='17' limit='5,1'}
+                               <li class="slider-item">
+                                   <div class="front">
+                                       <h3>[field:title/]</h3>
+                                       <div class="line"></div>
+                                       <p>地址：[field:address/]</p>
+                                       <p>美丽热线：[field:tel/]</p>
+                                   </div>
+                                   <div class="back">
+                                       <img src="[field:b_pic6 function='replaceurl(@me)/]" alt="[field:title/]">
+                                   </div>
+                               </li>
+                               {/dede:arclist}
+                                                           </ul>
+                                                       </div>
+                                                       <a href="javascript:void(0)" class="btn prev"></a>
+                                                       <a href="javascript:void(0)" class="btn next"></a>
+                                                   </div>
+                                                   陵水
+                                                   <div class="block">
+                                                       <div class="slider-wraper">
+                                                           <ul class="slider-container">
+                                 {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic1' channelid='17' limit='0,1'}
+                               <li class="slider-item">
+                                   <div class="front">
+                                       <h3>[field:title/]</h3>
+                                       <div class="line"></div>
+                                       <p>地址：[field:address/]</p>
+                                       <p>美丽热线：[field:tel/]</p>
+                                   </div>
+                                   <div class="back">
+                                       <img src="/static/img/img21.jpg"></div>
+                               </li>
+                               {/dede:arclist}
 
-                                  {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic2' channelid='17' limit='1,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址：[field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
+                                 {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic2' channelid='17' limit='1,1'}
+                               <li class="slider-item">
+                                   <div class="front">
+                                       <h3>[field:title/]</h3>
+                                       <div class="line"></div>
+                                       <p>地址：[field:address/]</p>
+                                       <p>美丽热线：[field:tel/]</p>
+                                   </div>
+                                   <div class="back">
+                                        <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
+                                   </div>
+                               </li>
+                               {/dede:arclist}
+
+                                 {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic3' channelid='17' limit='2,1'}
+                               <li class="slider-item">
+                                   <div class="front">
+                                       <h3>[field:title/]</h3>
+                                       <div class="line"></div>
+                                       <p>地址：[field:address/]</p>
+                                       <p>美丽热线：[field:tel/]</p>
+                                   </div>
+                                   <div class="back">
                                          <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist}
-
-                                  {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic3' channelid='17' limit='2,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址：[field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                          <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist}
-                                {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic4' channelid='17' limit='3,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址：[field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                          <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist}
-                                  {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic5' channelid='17' limit='4,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址：[field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                          <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist}
-                                {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic5' channelid='17' limit='5,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址：[field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                          <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist}
+                                   </div>
+                               </li>
+                               {/dede:arclist}
+                               {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic4' channelid='17' limit='3,1'}
+                               <li class="slider-item">
+                                   <div class="front">
+                                       <h3>[field:title/]</h3>
+                                       <div class="line"></div>
+                                       <p>地址：[field:address/]</p>
+                                       <p>美丽热线：[field:tel/]</p>
+                                   </div>
+                                   <div class="back">
+                                         <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
+                                   </div>
+                               </li>
+                               {/dede:arclist}
+                                 {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic5' channelid='17' limit='4,1'}
+                               <li class="slider-item">
+                                   <div class="front">
+                                       <h3>[field:title/]</h3>
+                                       <div class="line"></div>
+                                       <p>地址：[field:address/]</p>
+                                       <p>美丽热线：[field:tel/]</p>
+                                   </div>
+                                   <div class="back">
+                                         <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
+                                   </div>
+                               </li>
+                               {/dede:arclist}
+                               {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic5' channelid='17' limit='5,1'}
+                               <li class="slider-item">
+                                   <div class="front">
+                                       <h3>[field:title/]</h3>
+                                       <div class="line"></div>
+                                       <p>地址：[field:address/]</p>
+                                       <p>美丽热线：[field:tel/]</p>
+                                   </div>
+                                   <div class="back">
+                                         <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
+                                   </div>
+                               </li>
+                               {/dede:arclist} -->
                             </ul>
                         </div>
                         <a href="javascript:void(0)" class="btn prev"></a>
                         <a href="javascript:void(0)" class="btn next"></a>
                     </div>
+
                 </div>
             </div>
             <!-- Environmental Science -->
@@ -748,11 +750,12 @@
 </div>
       <!-- footer -->
     {dede:include filename="footer.htm"/}
-   <!--  <script>
+<script type="text/javascript" src="{dede:global.cfg_jspath/}/jquery.lazyload.min.js"></script>
+    <script>
         $(function(){
 
-            console.log($(this).index());
+           $("img.lazy").lazyload();
         })
-    </script> -->
+    </script>
 </body>
 </html>

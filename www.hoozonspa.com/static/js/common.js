@@ -725,6 +725,28 @@ function SUActivityFN(){
       },
     });
 }
+function  list_case_sw(){
+       // 案例轮播图需要
+       var content=['面部护理','光电美肤','美容SPA','科技瘦身','美妆护肤'];
+       var swiperMy = new Swiper('.swiper-container_pro', {
+             slidesPerView: 3,
+             slidesPerColumn: 2,
+             slidesPerGroup : 3,
+             spaceBetween:0,
+             autoplay:2500,
+             pagination: {
+              el: '.project-pagination',
+              clickable: true,
+              renderBullet: function (index, className) {
+               return '<li class="'+className+'">'+ content[index] + '</li>';
+            }
+            },
+             navigation: {
+             nextEl: '.next',
+             prevEl: '.prev',
+            },
+        });
+}
 $(function() {
     // 包含快商通链接
     var tool={
@@ -737,6 +759,9 @@ $(function() {
                     },
                     SUActivity:function(){
                           SUActivityFN();
+                    },
+                    list_case:function(){
+                         list_case_sw();
                     }
                 }
     tool.kst();

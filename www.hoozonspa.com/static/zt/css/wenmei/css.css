@@ -230,7 +230,7 @@ a {
 
     color: #919191;
 }
-.zixun {
+.zixunGO {
     display: block;
     width: 165px;
     height: 48px;
@@ -244,10 +244,10 @@ a {
     background-image: url(/static/zt/img/wenmei/spritesheet.png);
     background-position: 0 -56px;
 }
-.zixun1 {
+.zixunGO1 {
     margin-left: auto;
 }
-.zixun:hover {
+.zixunGO:hover {
     color: #f0ca67;
 }
 /*main4*/
@@ -441,7 +441,7 @@ a {
     height: 132px;
     margin: 10px 5px 0 0;
 }
-.zixun2 {
+.zixunGO2 {
     margin: 0 auto;
 }
 /*main6*/

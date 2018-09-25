@@ -930,7 +930,8 @@ a {
     /*width: 14em;*/
     height: 9.38em;
 }
-.classicCase .g-right .slider-wraper {
+.classicCase .g-right .slider-wraper,
+.cases_list .g-right .slider-wraper {
     width: 100%;
     /* width: 11em; */
     height: 7.06em;

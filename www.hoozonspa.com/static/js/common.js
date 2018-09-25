@@ -747,6 +747,28 @@ function  list_case_sw(){
             },
         });
 }
+function  list_case_sw(){
+       // 案例轮播图需要
+       var content=['面部护理','纹绣(眉，唇)'];
+       var swiperMy = new Swiper('.case_list_swiper', {
+             slidesPerView: 3,
+             slidesPerColumn: 2,
+             slidesPerGroup : 3,
+             spaceBetween:30,
+             autoplay:2500,
+             pagination: {
+             el: '.cases_list ul',
+             clickable: true,
+              renderBullet: function (index, className) {
+               return '<li class="'+className+'"><span>'+ content[index] + '</span></li>';
+            }
+            },
+             navigation: {
+             nextEl: '.next',
+             prevEl: '.prev',
+            },
+        });
+}
 $(function() {
     // 包含快商通链接
     var tool={
@@ -780,4 +802,5 @@ $(function() {
     // 美妆护肤
      beautyskin();
      tool.SUActivity();//调用公益活动swiper
+     tool.list_case();//调用案例列表页案例轮播图
 });

@@ -27,7 +27,8 @@
     -webkit-justify-content: center;
             justify-content: center;
 }
-.slider-wraper .swiper-slide .front {
+.slider-wraper .swiper-slide .front,
+.case_list_swiper .swiper-wrapper .swiper-slide .front {
     position: absolute;
     top: 0;
     right: 0;
@@ -40,7 +41,8 @@
 
     background-color: rgba(92, 55, 58, .8);
 }
-.swiper-containerMy .swiper-slide {
+.swiper-containerMy .swiper-slide,
+.case_list_swiper .swiper-slide {
     position: relative;
 
     float: left;
@@ -48,12 +50,14 @@
     height: 3.3em;
     /*margin-left: .4em;*/
 }
-.slider-wraper .swiper-slide .back img {
+.slider-wraper .swiper-slide .back img,
+.case_list_swiper .swiper-slide .back img {
     display: block;
     width: 100%;
     height: 100%;
 }
-.swiper-containerMy .front p {
+.swiper-containerMy .front p,
+.case_list_swiper .front p {
     margin-top: .5em;
 
     font-size: .18em;
@@ -67,10 +71,12 @@
 
     color: #efefef;
 }
-.swiper-containerMy .front p a {
+.swiper-containerMy .front p a,
+.case_list_swiper .front p a {
     color: #efefef;
 }
-.swiper-containerMy .front h3 {
+.swiper-containerMy .front h3,
+.case_list_swiper .front h3 {
     margin-top: 1em;
 
     font-size: .25em;
@@ -84,11 +90,13 @@
 
     color: #fff;
 }
-.swiper-containerMy  .back {
+.swiper-containerMy  .back,
+.case_list_swiper .back {
     width: 100%;
     height: 100%;
 }
-.swiper-containerMy .front img {
+.swiper-containerMy .front img,
+.case_list_swiper .front img {
     display: block;
     width: 1.47em;
     height: 1.47em;
@@ -99,7 +107,8 @@
 .classicCase .g-right {
     float: left!important;
 }
-.classicCase .g-right .slider-wraper {
+.classicCase .g-right .slider-wraper,
+.case_list_swiper .slider-wraper {
     width: 10.6em;
 }
 .swiper-pagination-bullets .swiper-pagination-bullet {

@@ -13,9 +13,30 @@
 <meta name="baidu-site-verification" content="99J7V1k1Vz" />
 <meta name="google-site-verification" content="Odmo8X4zeUG1WPcCrCAueZz-dyBPFBs4Zqlb9FBT5z4" />
 <meta http-equiv="Access-Control-Allow-Origin" content="*" />
-<script type="text/javascript" src="js/fontreset.js"></script>
 <link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/common.css">
 <link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/site.css">
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/index_swiper.css">
+<style>
+    .cases_list .swiper-pagination-bullet{
+    display: block;
+    width: auto;
+    height: auto;
+    text-align: center;
+    opacity: 1;
+    border-radius: 1em;
+}
+.cases_list .swiper-pagination-bullet{
+  background: none;
+}
+.swiper-pagination-bullet-active{
+    background: #dfad9d!important;
+}
+.cases_list .g-left .row ul li {
+
+    margin-bottom: 0.3em;
+}
+</style>
 </head>
 <body>
 <!-- header -->
@@ -37,7 +58,7 @@
     </div>
 </div>
                 <!-- cases -->
-                <div class="g-container cases">
+                <div class="g-container cases cases_list">
                     <div class="g-left">
                         <div class="wraper">
                             <h2><span class="sr-only">经典案例</span></h2>
@@ -53,7 +74,7 @@
 
                           <div class="swiper-container case_list_swiper">
                                <div class="swiper-wrapper">
-                                        {dede:arclist typeid='26' row='6' flag='c' orderby='id' orderway='desc' infolen='30' addfields='title2' channelid='18'}
+                                        {dede:arclist typeid='26' row='6' flag='c' orderby='id' orderway='desc' infolen='30' addfields='pic_before,pic_after1,project1,doctor' channelid='18'}
                                       <div class="swiper-slide">
                                         <div class="front">
                                              <img src="[field:pic_before function='replaceurl(@me)/]" alt="[field:title/]">
@@ -70,7 +91,7 @@
                                         </div>
                                        </div>
                                      {/dede:arclist}
-                                       {dede:arclist typeid='32,34' row='6' flag='c' orderby='id' orderway='desc' infolen='30' addfields='title2' channelid='18'}
+                                        {dede:arclist typeid='32,34' row='6' flag='c' orderby='id' orderway='desc' infolen='30' addfields='pic_before,pic_after1,project1,doctor' channelid='18'}
                                       <div class="swiper-slide">
                                         <div class="front">
                                              <img src="[field:pic_before function='replaceurl(@me)/]" alt="[field:title/]">
@@ -91,6 +112,7 @@
 
                     </div>
                 </div>
+                 </div>
                 <div class="fullscreen">
                     <div class="g-container casesImgs">
                         <div class="wraper">
@@ -267,7 +289,7 @@
                     </div>
                 </div>
                 <!-- question and answer -->
-                  {dede:include filename="_question.htm"/}
+                 {dede:include filename="_question.htm"/}
                 <!-- footer -->
                  {dede:include filename="footer.htm"/}
 </body>

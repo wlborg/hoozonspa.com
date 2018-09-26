@@ -50,15 +50,15 @@
           var mapHref=window.location.href.split("#")[1];
           if(mapHref=="shed"){
             // 光电美肤
-            var shedTop=$(".project-full").eq(2).offset().top;
+            var shedTop=$(".item-box").eq(2).offset().top;
              sTop(shedTop);
           }else if(mapHref=="embroidery"){
               // 艺术纹绣
-               var embroideryTop=$(".project-full").eq(6).offset().top;
+               var embroideryTop=$(".item-box").eq(6).offset().top;
              sTop(embroideryTop);
           }else if(mapHref=="skin"){
                 // 美妆护肤
-              var skinTop=$(".project-full").eq(6).height();
+              var skinTop=$(".item-box").eq(6).height();
               sTop(skinTop);
           }
           function sTop(objTop){

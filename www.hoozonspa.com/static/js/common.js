@@ -769,6 +769,13 @@ function  list_case_sw(){
             },
         });
 }
+function swiper_slide_hover(obj){
+     $(obj).hover(function() {
+             $(this).find(".front").fadeIn();
+        }, function() {
+            $(this).find(".front").fadeOut();
+     });
+}
 $(function() {
     // 包含快商通链接
     var tool={
@@ -803,4 +810,5 @@ $(function() {
      beautyskin();
      tool.SUActivity();//调用公益活动swiper
      tool.list_case();//调用案例列表页案例轮播图
+     swiper_slide_hover(".cases_list .g-right .swiper-slide");
 });

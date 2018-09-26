@@ -768,6 +768,92 @@ function  list_case_sw(){
              prevEl: '.prev',
             },
         });
+        case_list_full(".cases_list .g-right .swiper-slide");
+        function case_list_full(clickObj){
+        // 案例列表页点击案例切换大图
+        $(clickObj).click(function() {
+            // 案例轮播停止
+            autoStop(swiperMy);
+            var index_Sw = parseInt($(this).index());
+            if (index_Sw >= 0 && index_Sw <= 5) {
+                fullReShow('fullscreen');
+                $('.fullscreen').eq(0).addClass('show');
+                slideToFrom(case_list_full_sw1,index_Sw);
+            } else if (index_Sw >= 6 && index_Sw <= 11) {
+                fullReShow('fullscreen');
+                $('.fullscreen').eq(1).addClass('show');
+                index_Sw=index_Sw%6;
+                slideToFrom(case_list_full_sw2,index_Sw);
+            } else if (index_Sw >= 12 && index_Sw <= 17) {
+                fullReShow('fullscreen');
+                $('.fullscreen').eq(2).addClass('show');
+                 index_Sw=index_Sw%6;
+                slideToFrom(swiper_caseSix3,index_Sw);
+            } else if (index_Sw >= 18 && index_Sw <= 23) {
+                fullReShow('fullscreen');
+                $('.fullscreen').eq(3).addClass('show');
+                 index_Sw=index_Sw%6;
+                slideToFrom(swiper_caseSix4,index_Sw);
+            }
+            $('.header').removeClass('fixed');
+            function slideToFrom(caseSix,index_Sw) {
+                caseSix.slideTo(index_Sw);
+            }
+            function fullReShow(obj){
+               $(obj).removeClass('show');
+               hiddBody();
+            }
+
+              function hiddBody(){
+              $("body").css("overflow-y","hidden")
+            }
+             function showBody(){
+              $("body").css("overflow-y","visible")
+            }
+        });
+         // 案例列表页点击显示的面部护理大图
+        var case_list_full_sw1= new Swiper('.case_list_full_sw1', {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+         // 案例列表页点击显示的纹绣(眉，唇)大图
+        var case_list_full_sw2= new Swiper('.case_list_full_sw2', {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+}
+ // 开始循环
+        function autoStart(obj){
+           obj.autoplay.start();
+        }
+         // 开始暂停循环
+        function autoStop(obj){
+           obj.autoplay.stop();
+        }
 }
 function swiper_slide_hover(obj){
      $(obj).hover(function() {
@@ -776,6 +862,7 @@ function swiper_slide_hover(obj){
             $(this).find(".front").fadeOut();
      });
 }
+
 $(function() {
     // 包含快商通链接
     var tool={

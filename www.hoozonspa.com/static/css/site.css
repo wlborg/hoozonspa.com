@@ -5017,3 +5017,8 @@ a {
 .benefitactivities .g-left ul li.swiper-pagination-bullet-active a {
     color: #9855ae;
 }
+.cases_list .swiper-container {
+    width: 10.6em;
+    margin: 1.1em AUTO 0;
+    margin-top: 1.1em;
+}

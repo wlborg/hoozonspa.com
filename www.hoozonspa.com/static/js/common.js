@@ -325,7 +325,9 @@ function initSlider() {
     });
 
     //shop
+
     var sliders2 = $(".shops .block");
+
     var sliders2arr = [];
     for (var i2 = 0, len2 = sliders2.length; i2 < len2; i2++) {
         sliders2arr[i2] = new XZSlide({
@@ -341,7 +343,9 @@ function initSlider() {
         });
     }
     tabs($('.shops .g-left').find('li'), $('.shops .block'));
-
+    //默认显示第一个分院
+    sliders2.eq(0).addClass('active').siblings().removeClass('active');
+    $('.shops .g-left').find('li').eq(0).addClass('active').siblings().removeClass('active');
     //Environmental Science
     //
     // tabs($('.environmental .g-left').find('li'), $('.environmental .item'));
@@ -721,6 +725,57 @@ function SUActivityFN(){
       },
     });
 }
+function  list_case_sw(){
+       // 案例轮播图需要
+       var content=['面部护理','光电美肤','美容SPA','科技瘦身','美妆护肤'];
+       var swiperMy = new Swiper('.swiper-container_pro', {
+             slidesPerView: 3,
+             slidesPerColumn: 2,
+             slidesPerGroup : 3,
+             spaceBetween:0,
+             autoplay:2500,
+             pagination: {
+              el: '.project-pagination',
+              clickable: true,
+              renderBullet: function (index, className) {
+               return '<li class="'+className+'">'+ content[index] + '</li>';
+            }
+            },
+             navigation: {
+             nextEl: '.next',
+             prevEl: '.prev',
+            },
+        });
+}
+function  list_case_sw(){
+       // 案例轮播图需要
+       var content=['面部护理','纹绣(眉，唇)'];
+       var swiperMy = new Swiper('.case_list_swiper', {
+             slidesPerView: 3,
+             slidesPerColumn: 2,
+             slidesPerGroup : 3,
+             spaceBetween:30,
+             autoplay:2500,
+             pagination: {
+             el: '.cases_list ul',
+             clickable: true,
+              renderBullet: function (index, className) {
+               return '<li class="'+className+'"><span>'+ content[index] + '</span></li>';
+            }
+            },
+             navigation: {
+             nextEl: '.next',
+             prevEl: '.prev',
+            },
+        });
+}
+function swiper_slide_hover(obj){
+     $(obj).hover(function() {
+             $(this).find(".front").fadeIn();
+        }, function() {
+            $(this).find(".front").fadeOut();
+     });
+}
 $(function() {
     // 包含快商通链接
     var tool={
@@ -733,6 +788,9 @@ $(function() {
                     },
                     SUActivity:function(){
                           SUActivityFN();
+                    },
+                    list_case:function(){
+                         list_case_sw();
                     }
                 }
     tool.kst();
@@ -751,4 +809,6 @@ $(function() {
     // 美妆护肤
      beautyskin();
      tool.SUActivity();//调用公益活动swiper
+     tool.list_case();//调用案例列表页案例轮播图
+     swiper_slide_hover(".cases_list .g-right .swiper-slide");
 });

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>案例列表页</title>
+{dede:include filename="_link_list.htm"/}
 <meta charset="UTF-8">
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <meta name="renderer" content="webkit"/>
@@ -13,9 +13,30 @@
 <meta name="baidu-site-verification" content="99J7V1k1Vz" />
 <meta name="google-site-verification" content="Odmo8X4zeUG1WPcCrCAueZz-dyBPFBs4Zqlb9FBT5z4" />
 <meta http-equiv="Access-Control-Allow-Origin" content="*" />
-<script type="text/javascript" src="js/fontreset.js"></script>
 <link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/common.css">
 <link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/site.css">
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/index_swiper.css">
+<style>
+    .cases_list .swiper-pagination-bullet{
+    display: block;
+    width: auto;
+    height: auto;
+    text-align: center;
+    opacity: 1;
+    border-radius: 1em;
+}
+.cases_list .swiper-pagination-bullet{
+  background: none;
+}
+.swiper-pagination-bullet-active{
+    background: #dfad9d!important;
+}
+.cases_list .g-left .row ul li {
+
+    margin-bottom: 0.3em;
+}
+</style>
 </head>
 <body>
 <!-- header -->
@@ -37,224 +58,61 @@
     </div>
 </div>
                 <!-- cases -->
-                <div class="g-container cases">
+                <div class="g-container cases cases_list">
                     <div class="g-left">
                         <div class="wraper">
                             <h2><span class="sr-only">经典案例</span></h2>
                             <div class="row">
                                 <ul>
-                                    <li data-id="1"><span>祛痘</span></li>
-                                    <li data-id="2"><span>美白</span></li>
-                                    <li><span>水光</span></li>
-                                    <li><span>收毛孔</span></li>
-                                    <li><span>祛黑头</span></li>
-                                    <li><span>小V脸</span></li>
-                                    <li><span>黑眼圈</span></li>
+
                                 </ul>
-                                <ul>
-                                    <li><span>纹眉</span></li>
-                                    <li><span>纹唇</span></li>
-                                    <li><span>纹眼线</span></li>
-                                    <li><span>瘦身</span></li>
-                                </ul>
+
                             </div>
                         </div>
                     </div>
-                    <div class="g-right">
-                        <div class="block block1">
-                            <div class="row">
-                                <div class="item">
-                                    <div class="front">
-                                        <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                        <h3>徐丹 </h3>
-                                        <p>项目：
-                                            <a href="">水光注射</a>、
-                                            <a href="">面部护理</a>
-                                        </p>
-                                        <p>塑美技师：陈晓月
-                                        </p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="front">
-                                        <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                        <h3>徐丹 </h3>
-                                        <p>项目：
-                                            <a href="">水光注射</a>、
-                                            <a href="">面部护理</a>
-                                        </p>
-                                        <p>塑美技师：陈晓月
-                                        </p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="front">
-                                        <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                        <h3>徐丹 </h3>
-                                        <p>项目：
-                                            <a href="">水光注射</a>、
-                                            <a href="">面部护理</a>
-                                        </p>
-                                        <p>塑美技师：陈晓月
-                                        </p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="item">
-                                    <div class="front">
-                                        <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                        <h3>徐丹 </h3>
-                                        <p>项目：
-                                            <a href="">水光注射</a>、
-                                            <a href="">面部护理</a>
-                                        </p>
-                                        <p>塑美技师：陈晓月
-                                        </p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="front">
-                                        <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                        <h3>徐丹 </h3>
-                                        <p>项目：
-                                            <a href="">水光注射</a>、
-                                            <a href="">面部护理</a>
-                                        </p>
-                                        <p>塑美技师：陈晓月
-                                        </p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="front">
-                                        <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                        <h3>徐丹 </h3>
-                                        <p>项目：
-                                            <a href="">水光注射</a>、
-                                            <a href="">面部护理</a>
-                                        </p>
-                                        <p>塑美技师：陈晓月
-                                        </p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block block2">
-                            <div class="row">
-                                <div class="item">
-                                    <div class="front">
-                                        <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                        <h3>徐丹 </h3>
-                                        <p>项目：
-                                            <a href="">水光注射</a>、
-                                            <a href="">面部护理</a>
-                                        </p>
-                                        <p>塑美技师：陈晓月
-                                        </p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="//pc.hoozonspa.com/static/img/img9.jpg">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="front">
-                                        <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                        <h3>徐丹 </h3>
-                                        <p>项目：
-                                            <a href="">水光注射</a>、
-                                            <a href="">面部护理</a>
-                                        </p>
-                                        <p>塑美技师：陈晓月
-                                        </p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="front">
-                                        <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                        <h3>徐丹 </h3>
-                                        <p>项目：
-                                            <a href="">水光注射</a>、
-                                            <a href="">面部护理</a>
-                                        </p>
-                                        <p>塑美技师：陈晓月
-                                        </p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="item">
-                                    <div class="front">
-                                        <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                        <h3>徐丹 </h3>
-                                        <p>项目：
-                                            <a href="">水光注射</a>、
-                                            <a href="">面部护理</a>
-                                        </p>
-                                        <p>塑美技师：陈晓月
-                                        </p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="front">
-                                        <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                        <h3>徐丹 </h3>
-                                        <p>项目：
-                                            <a href="">水光注射</a>、
-                                            <a href="">面部护理</a>
-                                        </p>
-                                        <p>塑美技师：陈晓月
-                                        </p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="front">
-                                        <img src="//pc.hoozonspa.com/static/img/img8.jpg">
-                                        <h3>徐丹 </h3>
-                                        <p>项目：
-                                            <a href="">水光注射</a>、
-                                            <a href="">面部护理</a>
-                                        </p>
-                                        <p>塑美技师：陈晓月
-                                        </p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="//pc.hoozonspa.com/static/img/img7.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                     <div class="g-right">
+
+                          <div class="swiper-container case_list_swiper">
+                               <div class="swiper-wrapper">
+                                        {dede:arclist typeid='26' row='6' flag='c' orderby='id' orderway='desc' infolen='30' addfields='pic_before,pic_after1,project1,doctor' channelid='18'}
+                                      <div class="swiper-slide">
+                                        <div class="front">
+                                             <img src="[field:pic_before function='replaceurl(@me)/]" alt="[field:title/]">
+                                             <h3>[field:title/]</h3>
+                                            <p>项目：
+                                                <a href="javascript:;">[field:project1/]</a>、
+                                                <a href="javascript:;">[field:project2/]</a>
+                                            </p>
+                                            <p>塑美技师：[field:doctor/]
+                                            </p>
+                                        </div>
+                                        <div class="back">
+                                            <img src="[field:pic_after1 function='replaceurl(@me)/]" alt="[field:title/]">
+                                        </div>
+                                       </div>
+                                     {/dede:arclist}
+                                        {dede:arclist typeid='32,34' row='6' flag='c' orderby='id' orderway='desc' infolen='30' addfields='pic_before,pic_after1,project1,doctor' channelid='18'}
+                                      <div class="swiper-slide">
+                                        <div class="front">
+                                             <img src="[field:pic_before function='replaceurl(@me)/]" alt="[field:title/]">
+                                             <h3>[field:title/]</h3>
+                                            <p>项目：
+                                                <a href="javascript:;">[field:project1/]</a>、
+                                                <a href="javascript:;">[field:project2/]</a>
+                                            </p>
+                                            <p>塑美技师：[field:doctor/]
+                                            </p>
+                                        </div>
+                                        <div class="back">
+                                            <img src="[field:pic_after1 function='replaceurl(@me)/]" alt="[field:title/]">
+                                        </div>
+                                       </div>
+                                     {/dede:arclist}
+                             </div>
+
                     </div>
                 </div>
+                 </div>
                 <div class="fullscreen">
                     <div class="g-container casesImgs">
                         <div class="wraper">
@@ -264,10 +122,10 @@
                                         <li class="slider-item">
                                             <div class="g-left">
                                                 <div class="front">
-                                                    <img src="//pc.hoozonspa.com/static/img/img29.jpg" alt="">
+                                                    <img src="/static/img/img29.jpg" alt="">
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/img28.jpg">
+                                                    <img src="/static/img/img28.jpg">
                                                 </div>
                                             </div>
                                             <div class="g-right">
@@ -293,10 +151,10 @@
                                          <li class="slider-item">
                                             <div class="g-left">
                                                 <div class="front">
-                                                    <img src="//pc.hoozonspa.com/static/img/img29.jpg" alt="">
+                                                    <img src="/static/img/img29.jpg" alt="">
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/img28.jpg">
+                                                    <img src="/static/img/img28.jpg">
                                                 </div>
                                             </div>
                                             <div class="g-right">
@@ -333,10 +191,10 @@
                                         <li class="slider-item">
                                             <div class="g-left">
                                                 <div class="front">
-                                                    <img src="//pc.hoozonspa.com/static/img/img29.jpg" alt="">
+                                                    <img src="/static/img/img29.jpg" alt="">
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/img28.jpg">
+                                                    <img src="/static/img/img28.jpg">
                                                 </div>
                                             </div>
                                             <div class="g-right">
@@ -362,10 +220,10 @@
                                         <li class="slider-item">
                                             <div class="g-left">
                                                 <div class="front">
-                                                    <img src="//pc.hoozonspa.com/static/img/img29.jpg" alt="">
+                                                    <img src="/static/img/img29.jpg" alt="">
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/img28.jpg">
+                                                    <img src="/static/img/img28.jpg">
                                                 </div>
                                             </div>
                                             <div class="g-right">
@@ -391,10 +249,10 @@
                                         <li class="slider-item">
                                             <div class="g-left">
                                                 <div class="front">
-                                                    <img src="//pc.hoozonspa.com/static/img/img29.jpg" alt="">
+                                                    <img src="/static/img/img29.jpg" alt="">
                                                 </div>
                                                 <div class="back">
-                                                    <img src="//pc.hoozonspa.com/static/img/img28.jpg">
+                                                    <img src="/static/img/img28.jpg">
                                                 </div>
                                             </div>
                                             <div class="g-right">
@@ -431,35 +289,9 @@
                     </div>
                 </div>
                 <!-- question and answer -->
-<div class="g-container question">
-    <div class="g-doc">
-        <div class="g-left">
-            <img src="//pc.hoozonspa.com/static/img/img11.jpg">
-            <p class="p1">红妆美业咨询平台</p>
-            <div class="line"></div>
-            <p class="p2">咨询热线</p>
-            <p class="tel">400-018-2622</p>
-            <a class="consult">咨询客服</a>
-        </div>
-        <div class="g-right">
-            <h2><span class="sr-only">美丽问答</span></h2>
-            <div class="box">
-                <img src="//pc.hoozonspa.com/static/img/img13.jpg" alt="">
-                <h3><a href="article.html">水光注射的全方位普及</a></h3>
-                <p><a href="article.html">随着年龄的增长，生活节奏的加快，现代 都市女性皮肤正在遭受着严峻的考验...<span>【详情】</span></a>
-                </p>
-            </div>
-            <ul>
-                <li><a href="article.html">冰点脱毛一般多少钱?  冰点脱毛99元/次包干..........................<span>详情</span></a></li>
-                <li><a href="article.html">冰点脱毛一般多少钱?  冰点脱毛99元/次包干..........................<span>详情</span></a></li>
-                <li><a href="article.html">冰点脱毛一般多少钱?  冰点脱毛99元/次包干..........................<span>详情</span></a></li>
-                <li><a href="article.html">冰点脱毛一般多少钱?  冰点脱毛99元/次包干..........................<span>详情</span></a></li>
-            </ul>
-        </div>
-    </div>
-</div>
+                 {dede:include filename="_question.htm"/}
                 <!-- footer -->
-    {dede:include filename="footer.htm"/}
+                 {dede:include filename="footer.htm"/}
 </body>
 
 </html>

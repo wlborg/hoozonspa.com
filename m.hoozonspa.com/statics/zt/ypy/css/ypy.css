@@ -1,303 +1,353 @@
 /*banner开始*/
 .banner {
-	width: 100%;
-	padding-top: 1.7rem;
+    width: 100%;
+    /* padding-top: 1.7rem; */
 }
 .banner img {
-	width: 100%;
+    width: 100%;
 }
 .banner a {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 /*banner结束*/
 
 /*part1开始*/
 .part1 {
-	position: relative;
+    position: relative;
 }
 .bg-wrap {
-	width: 100%;
+    width: 100%;
 }
 .bg-wrap img {
-	width: 100%;
+    display: block;
+    width: 100%;
 }
 .content {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
 }
 .title {
-	margin-top: 1.451rem;
+    margin-top: 1.451rem;
 }
 .title p:first-child {
-	font-size: 1.28rem;
-	line-height: 1rem;
-	letter-spacing: 0.03rem;
-	color: #f3bfac;
+    font-size: 1.28rem;
+    line-height: 1rem;
+
+    letter-spacing: .03rem;
+
+    color: #f3bfac;
 }
 .title p:nth-child(2) {
-	font-size: 0.896rem;
-	line-height: 1.658rem;
-	letter-spacing: 0.019rem;
-	color: #eeddcc;
+    font-size: .896rem;
+    line-height: 1.658rem;
+
+    letter-spacing: .019rem;
+
+    color: #edc;
 }
 .tile-pic {
-	width: 5.803rem;
-	height: 0.661rem;
-	margin: 0 auto;
+    width: 5.803rem;
+    height: .661rem;
+    margin: 0 auto;
 }
 .tile-pic img {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
-.part1 .con {
 
-}
 .part1 .con .panel {
-	margin-left: .192rem;
-	margin-top: 1.685rem;
+    margin-top: 1.685rem;
+    margin-left: .192rem;
 }
 .part1 .con .pic-item {
-	float: left;
-	position: relative;
-	width: 5.12rem;
-	height: 5.077rem;
-	margin-bottom: .171rem;
+    position: relative;
+
+    float: left;
+    width: 5.12rem;
+    height: 5.077rem;
+    margin-bottom: .171rem;
 }
 .part1 .con .pic-item:nth-child(3n-1) {
-	margin-left: .149rem;
-	margin-right: .149rem;
+    margin-right: .149rem;
+    margin-left: .149rem;
 }
 .part1 .con .pic-item img {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 .part1 .pic-item .txt {
-	position: absolute;
+    position: absolute;
     bottom: .2rem;
-    width: 2.3rem;
-    height: 0.448rem;
-    font-size: 0.448rem;
-    letter-spacing: 0.023rem;
-    color: #f9e7d3;
     left: 50%;
+
+    width: 2.3rem;
+    height: .448rem;
     /* border: 1px solid red; */
     margin-left: -1.06rem;
 
+    font-size: .448rem;
+
+    letter-spacing: .023rem;
+
+    color: #f9e7d3;
 }
 .part1 .pic-item .btn-txt {
-	position: absolute;
-    left: 50%;
-    margin-left: -1.17rem;
+    position: absolute;
     bottom: 2.02rem;
+    left: 50%;
+
     width: 2.411rem;
-    height: 0.789rem;
+    height: .789rem;
+    margin-left: -1.17rem;
 }
 .part1 .pic-item .btn-txt a {
-	width: 100%;
-	height: 100%;
-	font-size: 0.448rem;
-	line-height: 1.023rem;
-	letter-spacing: 0.023rem;
-	color: #f9e7d3;
-	text-align: center;
-	line-height: .788rem;
+    width: 100%;
+    height: 100%;
+
+    font-size: .448rem;
+    line-height: 1.023rem;
+    line-height: .788rem;
+
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: .023rem;
+
+    color: #f9e7d3;
 }
 /*part1结束*/
 
 /*part2开始*/
 .part2 {
-	position: relative;
+    position: relative;
 }
 .part2 .title p:first-child {
-	color: #695852;
-} 
+    color: #695852;
+}
 .part2 .title p:nth-child(2) {
-	color: #695852;
+    color: #695852;
 }
 .part2 .title p:nth-child(2) span {
-	font-size: .8rem;
+    font-size: .8rem;
 }
 .part2 .title {
-	margin-bottom: .981rem;
+    margin-bottom: .981rem;
 }
 .part2 .txt {
-	width: 14.208rem;
-	font-size: 0.427rem;
-	letter-spacing: 0.021rem;
-	color: #736f68;
-	line-height: 0.64rem;
-	margin: 0 auto;
-	text-align: justify;
+    width: 14.208rem;
+    margin: 0 auto;
+
+    font-size: .427rem;
+    line-height: .64rem;
+
+    text-align: justify;
+    letter-spacing: .021rem;
+
+    color: #736f68;
 }
 .part2 .ciecle-txt {
-	position: relative;
+    position: relative;
 }
 .part2 .ciecle-txt .txt-item {
-	position: absolute;
+    position: absolute;
     top: .8rem;
     left: 2.2rem;
+
     width: 1.429rem;
-    height: 0.96rem;
+    height: .96rem;
 }
 .part2 .txt-item p {
-	text-align: center;
-	font-size: 0.469rem;
-	line-height: 0.61rem;
-	letter-spacing: 0.023rem;
-	color: #695751;
+    font-size: .469rem;
+    line-height: .61rem;
+
+    text-align: center;
+    letter-spacing: .023rem;
+
+    color: #695751;
 }
 /*part2结束*/
 
 /*part3开始*/
 .part3 {
-	position: relative;
+    position: relative;
 }
 .part3 .title p:first-child {
-	color: #f3bfac;
-	letter-spacing: 0.03rem;
-} 
+    letter-spacing: .03rem;
+
+    color: #f3bfac;
+}
 .part3 .title p:nth-child(2) {
-	color: #eeddcc;
+    color: #edc;
 }
 .part3 .pic-show {
-	width: 15.16rem;
+    width: 15.16rem;
     margin: 0 auto;
 }
 .part3 .pic-show .item {
-	float: left;
-	position: relative;
-	width: 4.757rem;
-	height: 5.483rem;
-	text-align: center;
-	margin-bottom: .421rem;
+    position: relative;
+
+    float: left;
+    width: 4.757rem;
+    height: 5.483rem;
+    margin-bottom: .421rem;
+
+    text-align: center;
 }
 .part3 .pic-show .item:nth-child(3n-1) {
-	margin-left: .427rem;
-	margin-right: .427rem;
+    margin-right: .427rem;
+    margin-left: .427rem;
 }
 .part3 .pic-show .detail {
-	position: absolute;
-	top: 0;
-	width: 4.139rem;
-	left:50%;
-	margin-left: -2.0519rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 4.139rem;
+    margin-left: -2.0519rem;
 }
 .part3 .pic-show .item img {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 .part3 .pic-show .title-1 {
-	margin-top: 1.65rem;
+    margin-top: 1.65rem;
     margin-bottom: .725rem;
-	font-size: 0.64rem;
-	line-height: 0.576rem;
-	letter-spacing: 0.032rem;
-	color: #f3bfac;
+
+    font-size: .64rem;
+    line-height: .576rem;
+
+    letter-spacing: .032rem;
+
+    color: #f3bfac;
 }
 .part3 .pic-show .item-txt {
-	font-size: 0.427rem;
-	line-height: 0.64rem;
-	letter-spacing: 0.021rem;
-	color: #e7d6c6;
+    font-size: .427rem;
+    line-height: .64rem;
+
+    letter-spacing: .021rem;
+
+    color: #e7d6c6;
 }
 .btn-wrap {
-	position: absolute;
-	width: 4.587rem;
-	height: 1.28rem;
-	left: 50%;
-	margin-left: -2.293rem;
-	bottom: 1.771rem;
-	background: url('../images/btn.jpg') no-repeat;
-	background-size: 100%;
-	box-shadow: 0.021rem 0.036rem 0.107rem 0rem 
-		rgba(80, 63, 57, 0.23);
+    position: absolute;
+    bottom: 1.771rem;
+    left: 50%;
+
+    width: 4.587rem;
+    height: 1.28rem;
+    margin-left: -2.293rem;
+
+    background: url("../images/btn.jpg") no-repeat;
+    background-size: 100%;
+    box-shadow: .021rem .036rem .107rem 0rem
+    rgba(80, 63, 57, .23);
 }
 .btn-wrap a {
-	width: 100%;
-	height: 100%;
-	line-height: 1.4rem;
-	font-size: 0.597rem;
-	color: #f9e7d3;
-	letter-spacing: 0.03rem;
+    width: 100%;
+    height: 100%;
+
+    font-size: .597rem;
+    line-height: 1.4rem;
+
+    letter-spacing: .03rem;
+
+    color: #f9e7d3;
 }
-.btn-wrap a span{
-	vertical-align: middle;
-	padding-left: .7rem;
+.btn-wrap a span {
+    padding-left: .7rem;
+
+    vertical-align: top;
 }
 /*part3结束*/
 
 /*part4开始*/
 .part4 {
-
+    overflow: hidden;
 }
 .part4 > div {
-	float: left;
-	height: 12.928rem;
+    float: left;
+    height: 12.928rem;
 }
 .part4 .left {
-	width: 7.829rem;
+    width: 7.829rem;
 }
 .part4 .right {
-	position: relative;
-	width: 8.171rem;
+    position: relative;
+
+    width: 8rem;
 }
 .part4 > div img {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 .part4 .detail {
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding-left: 1.579rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding-left: 1.579rem;
 }
 .part4 .detail .title {
-	width: 3.371rem;
-	height: 1.472rem;
+    width: 3.371rem;
+    height: 1.472rem;
 }
 .part4 .detail .txt {
-	font-size: 0.469rem;
-	line-height: 0.704rem;
-	letter-spacing: 0.023rem;
-	color: #e7d6c6;
-	width: 5.49rem;
-	text-align: justify;
+    width: 5.49rem;
+
+    font-size: .469rem;
+    line-height: .704rem;
+
+    text-align: justify;
+    letter-spacing: .023rem;
+
+    color: #e7d6c6;
 }
 .part4 .btn-wrap {
-	bottom: -2.92rem;
-	margin-left: -2rem;
+    bottom: -2.92rem;
+
+    margin-left: -2rem;
 }
 /*part4结束*/
 
 
 /*part5开始*/
 .part5 {
-	position: relative;
-	margin-bottom: 2.05rem;
+    position: relative;
+
+    /* margin-bottom: 2.05rem; */
 }
 .part5 .title p {
-	margin-bottom: .46rem;
+    margin-bottom: .46rem;
 }
 .part5 .pic {
-	position: relative;
-	width: 100%;
-	top: 1rem;
+    position: relative;
+    top: 1rem;
+
+    width: 100%;
 }
 .part5 .pic img {
-	width: 100%;
+    width: 100%;
 }
 .part5 .pic .txt {
-	position: absolute;
-	right: 1.109rem;
-	top: 2.283rem;
-	width: 6.4rem;
-	font-size: 0.469rem;
-	line-height: 0.704rem;
-	letter-spacing: 0.023rem;
-	color: #f2e0ce;
+    position: absolute;
+    top: 2.283rem;
+    right: 1.109rem;
+
+    width: 6.4rem;
+
+    font-size: .469rem;
+    line-height: .704rem;
+
+    letter-spacing: .023rem;
+
+    color: #f2e0ce;
 }
 /*part5结束*/
+.banner img {
+    display: block;
+}

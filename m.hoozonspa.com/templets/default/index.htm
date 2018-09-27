@@ -247,13 +247,15 @@
           // if(isiOS){
 
           // }
-          // if($("#div7").length>0){
-          //   $("#_ks_ol_inviteWin").html("测试");
-          // }
+          if($("#div7").length>0){
+            if($("#div7").attr("style").indexOf("width")!=-1){
+              $("#_ks_ol_inviteWin").html("测试");
+             }
 
-                  setTimeout(function(){
-                        $("#_ks_ol_inviteWin").html("测试");
-                  },8000)
+          }
+                  // setTimeout(function(){
+                  //       $("#_ks_ol_inviteWin").html("测试");
+                  // },8000)
 
 
     })

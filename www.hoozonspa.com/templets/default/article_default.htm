@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+{dede:include filename="_link_article.htm"/}
 {dede:include filename="_link.htm"/}
 <style>
 .contentCon p {
@@ -105,7 +106,7 @@
                 <div class="g-doc">
                     <div class="heading">
                         <h1>{dede:field.title/}</h1>
-                        <p>来源 : 红妆医学美容 时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)" /}&nbsp;   点击量：{dede:field.click /} </p>
+                        <p>来源 : 红妆美容 时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)" /}&nbsp;   点击量：{dede:field.click /} </p>
                     </div>
                     <div class="content">
                        <!--  <p class="contentCon">{dede:field.body /}

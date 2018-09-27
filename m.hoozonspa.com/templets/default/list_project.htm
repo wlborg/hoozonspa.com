@@ -28,8 +28,8 @@
                 </div>
                 <div>
                     {dede:channelartlist typeid='9'}
-                    <div class="item-box">
-                        <h3>{dede:field name='typename'/}</h3>
+                    <div class="item-box" id="{dede:field name='id'/}">
+                        <h3  >{dede:field name='typename'/}</h3>
                         <div>
                             {dede:arclist titlelen='42' row='10' }
                             <a href="[field:arcurl /]" title="[field:title/]">[field:title/]</a> {/dede:arclist}

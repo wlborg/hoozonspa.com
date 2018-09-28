@@ -768,6 +768,12 @@ function  list_case_sw(){
              prevEl: '.prev',
             },
         });
+        $('.fullscreen .close').click(function() {
+            showBody();
+            autoStart(swiperMy);
+            $('.fullscreen').removeClass('show');
+            $('.header').addClass('fixed');
+        });
         case_list_full(".cases_list .g-right .swiper-slide");
         function case_list_full(clickObj){
         // 案例列表页点击案例切换大图
@@ -846,6 +852,7 @@ function  list_case_sw(){
           },
         });
 }
+
  // 开始循环
         function autoStart(obj){
            obj.autoplay.start();

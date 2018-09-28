@@ -28,8 +28,8 @@
                 </div>
                 <div>
                     {dede:channelartlist typeid='9'}
-                    <div class="item-box">
-                        <h3>{dede:field name='typename'/}</h3>
+                    <div class="item-box" id="{dede:field name='id'/}">
+                        <h3  >{dede:field name='typename'/}</h3>
                         <div>
                             {dede:arclist titlelen='42' row='10' }
                             <a href="[field:arcurl /]" title="[field:title/]">[field:title/]</a> {/dede:arclist}
@@ -45,27 +45,6 @@
         <!-- /footer -->
     </div>
     {dede:include filename="_script.htm"/}
-    <script>
-       $(function(){
-          var mapHref=window.location.href.split("#")[1];
-          if(mapHref=="shed"){
-            // 光电美肤
-            var shedTop=$(".item-box").eq(2).offset().top;
-             sTop(shedTop);
-          }else if(mapHref=="embroidery"){
-              // 艺术纹绣
-               var embroideryTop=$(".item-box").eq(6).offset().top;
-             sTop(embroideryTop);
-          }else if(mapHref=="skin"){
-                // 美妆护肤
-              var skinTop=$(".item-box").eq(6).height();
-              sTop(skinTop);
-          }
-          function sTop(objTop){
-               $("html,body").scrollTop(objTop);
-          }
-       })
-    </script>
 </body>
 
 </html>

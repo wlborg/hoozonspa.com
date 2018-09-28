@@ -225,7 +225,7 @@ img {
     height: .71rem;
     margin-top: .9rem;
 
-    background: url("//pc.hoozonspa.com/static/zt/img/ypy/images/btn.png") no-repeat;
+    background: url("/static/zt/img/ypy/btn.png") no-repeat;
     background-size: 100%;
 }
 .left-detail .btn-wrap a {
@@ -308,7 +308,7 @@ img {
     height: .71rem;
     margin-left: -1.28rem;
 
-    background: url("//pc.hoozonspa.com/static/zt/img/ypy/btn.png") no-repeat;
+    background: url("/static/zt/img/ypy/btn.png") no-repeat;
     background-size: 100%;
 }
 .btn-wrap-1 a {
@@ -391,7 +391,7 @@ img {
     height: .63rem;
     margin-top: 2.85rem;
 
-    background: url("//pc.hoozonspa.com/static/zt/img/ypy/btn-1.png") no-repeat;
+    background: url("/static/zt/img/ypy/btn-1.png") no-repeat;
     background-size: 100%;
 }
 .btn-wrap-2 a {
@@ -600,7 +600,7 @@ img {
     width: .3rem;
     height: .7rem;
 
-    background-image: url("//pc.hoozonspa.com/static/zt/img/ypy/left-btn.png");
+    background-image: url("/static/zt/img/ypy/left-btn.png");
     background-repeat: no-repeat;
     background-position: 0 .07rem;
     background-size: 100%;
@@ -617,7 +617,7 @@ img {
     width: .3rem;
     height: .7rem;
 
-    background-image: url("//pc.hoozonspa.com/static/zt/img/ypy/right-btn.png");
+    background-image: url("/static/zt/img/ypy/right-btn.png");
     background-position: 0 .07rem;
     background-size: 100%;
 }

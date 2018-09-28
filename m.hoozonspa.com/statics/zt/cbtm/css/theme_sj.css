@@ -103,7 +103,7 @@ a:hover {
 .m1 {
     height: 22.57066667rem;
 
-    background: url(/statics/zt/cbtm/images/bg1.jpg) center center no-repeat;
+    background: url("/statics/zt/cbtm/images/bg1.jpg") center center no-repeat;
     background-size: cover;
 }
 
@@ -200,7 +200,7 @@ a:hover {
 .m2 {
     padding-bottom: 1.62133333rem;
 
-    background: url(/statics/zt/cbtm/images/bg2.jpg) top center no-repeat #d5c2b5;
+    background: url("/statics/zt/cbtm/images/bg2.jpg") top center no-repeat #d5c2b5;
     background-size: 100% auto;
 }
 
@@ -526,7 +526,7 @@ a:hover {
 .m4 {
     padding-bottom: 1.49333333rem;
 
-    background: url(/statics/zt/cbtm/images/bg2.jpg) top center no-repeat #d5c2b5;
+    background: url("/statics/zt/cbtm/images/bg2.jpg") top center no-repeat #d5c2b5;
     background-size: 100% auto;
 }
 
@@ -725,7 +725,7 @@ a:hover {
 .m6 .zt-content .content2 {
     padding-top: .85333333rem;
 
-    background: url(/statics/zt/cbtm/images/bg6_2.jpg) top center no-repeat #d5c2b5;
+    background: url("/statics/zt/cbtm/images/bg6_2.jpg") top center no-repeat #d5c2b5;
     background-size: 100% auto;
 }
 
@@ -745,7 +745,7 @@ a:hover {
 .m6 .zt-content .content3 {
     padding-top: .64rem;
 
-    background: url(/statics/zt/cbtm/images/bg6_3.jpg) top center no-repeat #d5c2b5;
+    background: url("/statics/zt/cbtm/images/bg6_3.jpg") top center no-repeat #d5c2b5;
     background-size: 100% auto;
 }
 

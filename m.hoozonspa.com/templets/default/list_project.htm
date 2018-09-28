@@ -8,6 +8,11 @@
     <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
     <title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
     {dede:include filename="_link.htm"/}
+    <style>
+        html,body{
+            height: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -40,6 +45,27 @@
         <!-- /footer -->
     </div>
     {dede:include filename="_script.htm"/}
+    <script>
+       $(function(){
+          var mapHref=window.location.href.split("#")[1];
+          if(mapHref=="shed"){
+            // 光电美肤
+            var shedTop=$(".item-box").eq(2).offset().top;
+             sTop(shedTop);
+          }else if(mapHref=="embroidery"){
+              // 艺术纹绣
+               var embroideryTop=$(".item-box").eq(6).offset().top;
+             sTop(embroideryTop);
+          }else if(mapHref=="skin"){
+                // 美妆护肤
+              var skinTop=$(".item-box").eq(6).height();
+              sTop(skinTop);
+          }
+          function sTop(objTop){
+               $("html,body").scrollTop(objTop);
+          }
+       })
+    </script>
 </body>
 
 </html>

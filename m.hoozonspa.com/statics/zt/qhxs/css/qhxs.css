@@ -423,6 +423,9 @@
 .part3 .con-3 {
     position: relative;
 }
+.part3 .con-3 img {
+    width: 100%;
+}
 .part3 .con-3 .title {
     top: .1rem;
 }

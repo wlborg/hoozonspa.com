@@ -369,14 +369,14 @@ span {
     height: 57px;
     margin-left: -148px;
 
-    background: url("//pc.hoozonspa.com/static/zt/img/qhxs/btn-1.png") no-repeat;
+    background: url("/static/zt/img/qhxs/btn-1.png") no-repeat;
     background-size: cover;
 }
 .btn-wrap a {
     width: 100%;
     height: 100%;
 
-    background: url("//pc.hoozonspa.com/static/zt/img/qhxs/jian.png") no-repeat 209px 17px;
+    background: url("/static/zt/img/qhxs/jian.png") no-repeat 209px 17px;
     background-size: 22px 21px;
 }
 .btn-wrap a:hover {
@@ -616,11 +616,11 @@ span {
     margin-left: -44px;
 }
 .btn-1 .done-btn {
-    background: url("//pc.hoozonspa.com/static/zt/img/qhxs/jian-1.png") no-repeat 195px 33px;
+    background: url("/static/zt/img/qhxs/jian-1.png") no-repeat 195px 33px;
     background-size: 47px 46px;
 }
 .btn-1 .done-btn:hover {
-    background: url("//pc.hoozonspa.com/static/zt/img/qhxs/jian-active.png") no-repeat 195px 33px;
+    background: url("/static/zt/img/qhxs/jian-active.png") no-repeat 195px 33px;
     background-size: 34px 33px;
     box-shadow: 0 0 8px 0 rgba(24, 56, 79, .11);
 }
@@ -736,11 +736,11 @@ span {
     height: 104px;
     margin-left: -168px;
 
-    background: url("//pc.hoozonspa.com/static/zt/img/qhxs/btn-2.jpg") no-repeat;
+    background: url("/static/zt/img/qhxs/btn-2.jpg") no-repeat;
     background-size: 100%;
 }
 .btn-wrap-1:hover {
-    background: url("//pc.hoozonspa.com/static/zt/img/qhxs/btn-2-active.jpg") no-repeat;
+    background: url("/static/zt/img/qhxs/btn-2-active.jpg") no-repeat;
     background-size: 100%;
 }
 .btn-wrap-1 a {
@@ -894,15 +894,15 @@ span {
     width: 100%;
     height: 1108px;
 
-    background: url("//pc.hoozonspa.com/static/zt/img/qhxs/part6-pic-1.jpg") no-repeat;
+    background: url("/static/zt/img/qhxs/part6-pic-1.jpg") no-repeat;
     background-size: 100% 100%;
 }
 .swiper .bg-wrap-1 {
-    background: url("//pc.hoozonspa.com/static/zt/img/qhxs/part6-pic-2.jpg") no-repeat;
+    background: url("/static/zt/img/qhxs/part6-pic-2.jpg") no-repeat;
     background-size: 100% 100%;
 }
 .swiper .bg-wrap-2 {
-    background: url("//pc.hoozonspa.com/static/zt/img/qhxs/part6-pic-3.jpg") no-repeat;
+    background: url("/static/zt/img/qhxs/part6-pic-3.jpg") no-repeat;
     background-size: 100% 100%;
 }
 .swiper-container {

@@ -983,3 +983,28 @@ span {
 }
 /*swiper样式修改*/
 /*part5结束*/
+/*1px 4边框*/
+.scale-1px-4{
+    position: relative;
+    border:none;
+}
+.scale-1px-4:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid rgba(120,184,230, .31);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 200%;
+    height: 200%;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+}
+
+.part1 .con .item-bottom {
+    width: 9.173rem;
+    height: 6.72rem;
+}

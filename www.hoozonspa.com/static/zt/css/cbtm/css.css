@@ -11,6 +11,7 @@
     position: absolute;
 }
 .banner {
+    display: block;
     width: 100%;
 }
 .banner img {
@@ -138,10 +139,15 @@
     background: url("/static/zt/img/cbtm/btn.png") no-repeat;
     background-size: 100%;
 }
+img {
+    display: block;
+}
 .btn-wrap a {
     display: inline-block;
     width: 100%;
     height: 100%;
+
+    vertical-align: top;
 }
 .btn-wrap a span {
     display: block;

@@ -74,7 +74,24 @@
 
                           <div class="swiper-container case_list_swiper">
                                <div class="swiper-wrapper">
-                                        {dede:arclist typeid='26' row='6' flag='c' orderby='id' orderway='desc' infolen='30' addfields='pic_before,pic_after1,project1,doctor' channelid='18'}
+                                        {dede:arclist typeid='26' row='4' flag='c' orderby='id' orderway='desc' infolen='30' addfields='pic_before,pic_after1,project1,doctor' channelid='18'}
+                                      <div class="swiper-slide">
+                                        <div class="front">
+                                             <img src="[field:pic_before function='replaceurl(@me)/]" alt="[field:title/]">
+                                             <h3>[field:title/]</h3>
+                                            <p>项目：
+                                                <a href="javascript:;">[field:project1/]</a>、
+                                                <a href="javascript:;">[field:project2/]</a>
+                                            </p>
+                                            <p>塑美技师：[field:doctor/]
+                                            </p>
+                                        </div>
+                                        <div class="back">
+                                            <img src="[field:pic_after1 function='replaceurl(@me)/]" alt="[field:title/]">
+                                        </div>
+                                       </div>
+                                     {/dede:arclist}
+                                     {dede:arclist typeid='32,34' row='2' flag='c' orderby='id' orderway='desc' infolen='30' addfields='pic_before,pic_after1,project1,doctor' channelid='18'}
                                       <div class="swiper-slide">
                                         <div class="front">
                                              <img src="[field:pic_before function='replaceurl(@me)/]" alt="[field:title/]">

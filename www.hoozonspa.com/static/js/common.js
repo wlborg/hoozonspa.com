@@ -794,7 +794,7 @@ function  list_case_sw(){
 function  list_case_sw(){
        // 案例轮播图需要
        var content=['面部护理','纹绣(眉，唇)'];
-       var swiperMy = new Swiper('.case_list_swiper', {
+       var swiperMy_List = new Swiper('.case_list_swiper', {
              slidesPerView: 3,
              slidesPerColumn: 2,
              slidesPerGroup : 3,
@@ -812,9 +812,9 @@ function  list_case_sw(){
              prevEl: '.prev',
             },
         });
-        $('.fullscreen .close').click(function() {
+        $('.fullscreen_list .close').click(function() {
             showBody();
-            autoStart(swiperMy);
+            autoStart(swiperMy_List);
             $('.fullscreen').removeClass('show');
             $('.header').addClass('fixed');
         });
@@ -823,7 +823,7 @@ function  list_case_sw(){
         // 案例列表页点击案例切换大图
         $(clickObj).click(function() {
             // 案例轮播停止
-            autoStop(swiperMy);
+            autoStop(swiperMy_List);
             var index_Sw = parseInt($(this).index());
             if (index_Sw >= 0 && index_Sw <= 5) {
                 fullReShow('fullscreen');

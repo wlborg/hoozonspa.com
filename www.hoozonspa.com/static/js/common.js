@@ -975,5 +975,5 @@ $(function() {
      tool.SUActivity();//调用公益活动swiper
      tool.list_case();//调用案例列表页案例轮播图
      swiper_slide_hover(".cases_list .g-right .swiper-slide");
-     tool.checkProHref();//调用判断如果在列表页，不重复跳转
+     // tool.checkProHref();//调用判断如果在列表页，不重复跳转
 });

@@ -122,7 +122,8 @@ body {
     position: relative;
 
     width: 15.99829352rem;
-    padding-top: 2.09044369rem;
+    padding-top: 81px;
+    /* padding-top: 2.09044369rem; */
     padding-bottom: 2.34641638rem;
     margin: 0 auto;
 }
@@ -130,12 +131,17 @@ body {
     width: 15.99829352rem;
     margin: 0 auto;
 }
+
+/*顶部电话框占高度40px*/
+body {
+    padding-top: 40px;
+}
 #header {
     /*position: absolute;
       top:0;
       left: 0;*/
     position: fixed;
-    top: 0;
+    top: 40px;
     right: 0;
     left: 0;
     z-index: 9999;

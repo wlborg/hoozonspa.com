@@ -239,6 +239,12 @@ function tabsHov(tabIndex, tab) {
 
     });
 }
+   function hiddBody(){
+              $("body").css("overflow-y","hidden")
+             }
+             function showBody(){
+              $("body").css("overflow-y","visible")
+            }
 function initSlider() {
     // Hot project
     var sliders1 = $(".hotproject .project-block");

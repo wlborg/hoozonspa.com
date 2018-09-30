@@ -932,10 +932,11 @@ function checkProHrefM(){
 
         })
 }
-function sTop(objTop){
+  function sTop(objTop,obj){
+       obj.attr("href","javascript:;")
         $("html,body").scrollTop(objTop);
-        return false;
-}
+         return false;
+    }
 $(function() {
     // 包含快商通链接
     var tool={

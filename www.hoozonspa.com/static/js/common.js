@@ -932,9 +932,16 @@ function checkProHrefM(){
 
         })
 }
-  function sTop(objTop,obj){
+ function sTop(objTop,obj){
+       var hrefCon=["project.html/#beautyspa","project.html/#optoelectronic","project.html/#embroidery","project.html/#beautyskin"];
+       for(var i=0;i<4;i++){
+        var res=i+3;
+         $(".header .nav li").eq(res).find("a").prop("href",hrefCon[i]);
+       }
        obj.attr("href","javascript:;")
+        // alert("ss");
         $("html,body").scrollTop(objTop);
+
          return false;
     }
 $(function() {
@@ -975,5 +982,5 @@ $(function() {
      tool.SUActivity();//调用公益活动swiper
      tool.list_case();//调用案例列表页案例轮播图
      swiper_slide_hover(".cases_list .g-right .swiper-slide");
-     // tool.checkProHref();//调用判断如果在列表页，不重复跳转
+     tool.checkProHref();//调用判断如果在列表页，不重复跳转
 });

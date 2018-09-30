@@ -869,7 +869,37 @@ function swiper_slide_hover(obj){
             $(this).find(".front").fadeOut();
      });
 }
+// 检查是否已经跳转到项目列表页
+function checkProHrefM(){
+       $("body").bind("click",".header li",function(){
+           var currHref=window.location.href;
+           var ELval=currHref.split("#")[1];
+        // if(currHref.indexOf("/project")>0){
+            if(ELval=="beautyspa"){
+                // 美容SPA
+                     var beautyspaTopVal=$('#beautyspa').offset().top;
+                     sTop(beautyspaTopVal);
+            }else if(ELval=="optoelectronic"){
+               //光电美肤
+                      var optoelectronicTopVal=$('#optoelectronic').offset().top;
+                      sTop(optoelectronicTopVal)
+            }else if(ELval=="embroidery"){
+                //艺术纹绣
+                         var embroideryTopVal=$('#embroidery').offset().top;
+                         sTop(embroideryTopVal);
+            }else if(ELval=="beautyskin"){
+                     //美妆护肤
+                         var beautyskinTopVal=$('#beautyskin').offset().top;
+                         sTop(beautyskinTopVal);
 
+            }
+
+       })
+}
+function sTop(objTop){
+        $("html,body").scrollTop(objTop);
+        return false;
+}
 $(function() {
     // 包含快商通链接
     var tool={
@@ -885,6 +915,9 @@ $(function() {
                     },
                     list_case:function(){
                          list_case_sw();
+                    },
+                    checkProHref:function(){
+                       checkProHrefM();
                     }
                 }
     tool.kst();

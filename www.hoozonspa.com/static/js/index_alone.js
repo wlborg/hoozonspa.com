@@ -172,4 +172,4 @@
         })
       }
       startStopVideo("video");
-    })
+    });

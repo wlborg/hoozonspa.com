@@ -239,6 +239,12 @@ function tabsHov(tabIndex, tab) {
 
     });
 }
+   function hiddBody(){
+              $("body").css("overflow-y","hidden")
+             }
+             function showBody(){
+              $("body").css("overflow-y","visible")
+            }
 function initSlider() {
     // Hot project
     var sliders1 = $(".hotproject .project-block");
@@ -433,6 +439,12 @@ function initSlider() {
             showBody();
         })
     });
+    function hiddBody(){
+              $("body").css("overflow-y","hidden")
+             }
+             function showBody(){
+              $("body").css("overflow-y","visible")
+    }
     // developmenthistory
     var widthLen = window.fontreset * 34.2;
     var currLen = 0;
@@ -757,32 +769,32 @@ function SUActivityFN(){
       },
     });
 }
-function  list_case_sw(){
-       // 案例轮播图需要
-       var content=['面部护理','光电美肤','美容SPA','科技瘦身','美妆护肤'];
-       var swiperMy = new Swiper('.swiper-container_pro', {
-             slidesPerView: 3,
-             slidesPerColumn: 2,
-             slidesPerGroup : 3,
-             spaceBetween:0,
-             autoplay:2500,
-             pagination: {
-              el: '.project-pagination',
-              clickable: true,
-              renderBullet: function (index, className) {
-               return '<li class="'+className+'">'+ content[index] + '</li>';
-            }
-            },
-             navigation: {
-             nextEl: '.next',
-             prevEl: '.prev',
-            },
-        });
-}
+//function  list_case_sw(){
+//       // 案例轮播图需要
+//       var content=['面部护理','光电美肤','美容SPA','科技瘦身','美妆护肤'];
+//       var swiperMy = new Swiper('.swiper-container_pro', {
+//             slidesPerView: 3,
+//             slidesPerColumn: 2,
+//             slidesPerGroup : 3,
+//             spaceBetween:0,
+//             autoplay:2500,
+//             pagination: {
+//              el: '.project-pagination',
+//              clickable: true,
+//              renderBullet: function (index, className) {
+//               return '<li class="'+className+'">'+ content[index] + '</li>';
+//            }
+//            },
+//             navigation: {
+//             nextEl: '.next',
+//             prevEl: '.prev',
+//            },
+//        });
+//}
 function  list_case_sw(){
        // 案例轮播图需要
        var content=['面部护理','纹绣(眉，唇)'];
-       var swiperMy = new Swiper('.case_list_swiper', {
+       var swiperMy_List = new Swiper('.case_list_swiper', {
              slidesPerView: 3,
              slidesPerColumn: 2,
              slidesPerGroup : 3,
@@ -800,9 +812,9 @@ function  list_case_sw(){
              prevEl: '.prev',
             },
         });
-        $('.fullscreen .close').click(function() {
+        $('.fullscreen_list .close').click(function() {
             showBody();
-            autoStart(swiperMy);
+            autoStart(swiperMy_List);
             $('.fullscreen').removeClass('show');
             $('.header').addClass('fixed');
         });
@@ -811,7 +823,7 @@ function  list_case_sw(){
         // 案例列表页点击案例切换大图
         $(clickObj).click(function() {
             // 案例轮播停止
-            autoStop(swiperMy);
+            autoStop(swiperMy_List);
             var index_Sw = parseInt($(this).index());
             if (index_Sw >= 0 && index_Sw <= 5) {
                 fullReShow('fullscreen');
@@ -844,7 +856,7 @@ function  list_case_sw(){
 
               function hiddBody(){
               $("body").css("overflow-y","hidden")
-            }
+             }
              function showBody(){
               $("body").css("overflow-y","visible")
             }
@@ -932,9 +944,16 @@ function checkProHrefM(){
 
         })
 }
-  function sTop(objTop,obj){
+ function sTop(objTop,obj){
+       var hrefCon=["project.html/#beautyspa","project.html/#optoelectronic","project.html/#embroidery","project.html/#beautyskin"];
+       for(var i=0;i<4;i++){
+        var res=i+3;
+         $(".header .nav li").eq(res).find("a").prop("href",hrefCon[i]);
+       }
        obj.attr("href","javascript:;")
+        // alert("ss");
         $("html,body").scrollTop(objTop);
+
          return false;
     }
 $(function() {
@@ -975,5 +994,5 @@ $(function() {
      tool.SUActivity();//调用公益活动swiper
      tool.list_case();//调用案例列表页案例轮播图
      swiper_slide_hover(".cases_list .g-right .swiper-slide");
-     // tool.checkProHref();//调用判断如果在列表页，不重复跳转
+     tool.checkProHref();//调用判断如果在列表页，不重复跳转
 });

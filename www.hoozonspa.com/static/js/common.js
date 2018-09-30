@@ -433,6 +433,12 @@ function initSlider() {
             showBody();
         })
     });
+    function hiddBody(){
+              $("body").css("overflow-y","hidden")
+             }
+             function showBody(){
+              $("body").css("overflow-y","visible")
+    }
     // developmenthistory
     var widthLen = window.fontreset * 34.2;
     var currLen = 0;
@@ -844,7 +850,7 @@ function  list_case_sw(){
 
               function hiddBody(){
               $("body").css("overflow-y","hidden")
-            }
+             }
              function showBody(){
               $("body").css("overflow-y","visible")
             }

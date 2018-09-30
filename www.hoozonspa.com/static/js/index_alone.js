@@ -152,6 +152,12 @@
             $('.fullscreen').removeClass('show');
             $('.header').addClass('fixed');
         });
+           function hiddBody(){
+              $("body").css("overflow-y","hidden")
+            }
+             function showBody(){
+              $("body").css("overflow-y","visible")
+            }
         // 开始循环
         function autoStart(obj){
            obj.autoplay.start();

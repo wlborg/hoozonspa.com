@@ -520,6 +520,38 @@ function lightNavCustom() {
     targetNav.click(function() {
         $(this).addClass("active").siblings().removeClass("active");
     });
+    // 检查是否已经跳转到项目列表页
+        // checkProHrefM();
+        // function checkProHrefM(){
+        //        // $("body").bind("click",".header li",function(){
+        //            var currHref=window.location.href;
+        //            var ELval=currHref.split("#")[1];
+        //         // if(currHref.indexOf("/project")>0){
+        //             if(ELval=="beautyspa"){
+        //                 // 美容SPA
+        //                      var beautyspaTopVal=$('#beautyspa').offset().top;
+        //                      sTop(beautyspaTopVal);
+        //             }else if(ELval=="optoelectronic"){
+        //                //光电美肤
+        //                       var optoelectronicTopVal=$('#optoelectronic').offset().top;
+        //                       sTop(optoelectronicTopVal)
+        //             }else if(ELval=="embroidery"){
+        //                 //艺术纹绣
+        //                          var embroideryTopVal=$('#embroidery').offset().top;
+        //                          sTop(embroideryTopVal);
+        //             }else if(ELval=="beautyskin"){
+        //                      //美妆护肤
+        //                          var beautyskinTopVal=$('#beautyskin').offset().top;
+        //                          sTop(beautyskinTopVal);
+
+        //             }
+
+        //        // })
+        // }
+        // function sTop(objTop){
+        //         $("html,body").scrollTop(objTop);
+        //         return false;
+        // }
 }
 
 function addScrollToDo() {
@@ -871,35 +903,40 @@ function swiper_slide_hover(obj){
 }
 // 检查是否已经跳转到项目列表页
 function checkProHrefM(){
-       $("body").bind("click",".header li",function(){
-           var currHref=window.location.href;
-           var ELval=currHref.split("#")[1];
-        // if(currHref.indexOf("/project")>0){
-            if(ELval=="beautyspa"){
-                // 美容SPA
-                     var beautyspaTopVal=$('#beautyspa').offset().top;
-                     sTop(beautyspaTopVal);
-            }else if(ELval=="optoelectronic"){
-               //光电美肤
-                      var optoelectronicTopVal=$('#optoelectronic').offset().top;
-                      sTop(optoelectronicTopVal)
-            }else if(ELval=="embroidery"){
-                //艺术纹绣
-                         var embroideryTopVal=$('#embroidery').offset().top;
-                         sTop(embroideryTopVal);
-            }else if(ELval=="beautyskin"){
-                     //美妆护肤
-                         var beautyskinTopVal=$('#beautyskin').offset().top;
-                         sTop(beautyskinTopVal);
+       $(".header .nav a").click(function(){
+            var ELval=window.location.href.split("#")[1];
+               var obj=$(this);
+                 if(ELval=="beautyspa"||ELval=="optoelectronic"||ELval=="embroidery"||ELval=="beautyskin"){
 
-            }
+                   var hrefMap=obj.prop("href").split("#")[1];
+                     // if(currHref.indexOf("/project")>0){
+                    if(hrefMap=="beautyspa"){
+                        // 美容SPA
+                             var beautyspaTopVal=$('#beautyspa').offset().top;
+                             sTop(beautyspaTopVal,obj);
+                    }else if(hrefMap=="optoelectronic"){
+                       //光电美肤
+                              var optoelectronicTopVal=$('#optoelectronic').offset().top;
+                              sTop(optoelectronicTopVal,obj)
+                    }else if(hrefMap=="embroidery"){
+                        //艺术纹绣
+                                 var embroideryTopVal=$('#embroidery').offset().top;
+                                 sTop(embroideryTopVal,obj);
+                    }else if(hrefMap=="beautyskin"){
+                             //美妆护肤
+                                 var beautyskinTopVal=$('#beautyskin').offset().top;
+                                 sTop(beautyskinTopVal,obj);
 
-       })
+                    }
+                }
+
+        })
 }
-function sTop(objTop){
+  function sTop(objTop,obj){
+       obj.attr("href","javascript:;")
         $("html,body").scrollTop(objTop);
-        return false;
-}
+         return false;
+    }
 $(function() {
     // 包含快商通链接
     var tool={
@@ -938,5 +975,5 @@ $(function() {
      tool.SUActivity();//调用公益活动swiper
      tool.list_case();//调用案例列表页案例轮播图
      swiper_slide_hover(".cases_list .g-right .swiper-slide");
-     tool.checkProHref();//调用判断如果在列表页，不重复跳转
+     // tool.checkProHref();//调用判断如果在列表页，不重复跳转
 });

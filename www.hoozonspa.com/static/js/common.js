@@ -189,7 +189,7 @@ ScrollToDo.prototype.init = function() {
     var self = this;
     this.scrollH = $(document).scrollTop();
     $(window).scroll(function() { debounce(self.do(self), 200) });
-}
+};
 ScrollToDo.prototype.do = function(self) {
     var scrollH = self.scrollH = $(document).scrollTop();
     var targets = self.targets;
@@ -241,10 +241,10 @@ function tabsHov(tabIndex, tab) {
 }
    function hiddBody(){
               $("body").css("overflow-y","hidden")
-             }
-             function showBody(){
+   }
+   function showBody(){
               $("body").css("overflow-y","visible")
-            }
+   }
 function initSlider() {
     // Hot project
     var sliders1 = $(".hotproject .project-block");
@@ -526,14 +526,12 @@ function lightNav() {
     });
 
 }
-
 function lightNavCustom() {
     var targetNav = $('.header li');
     targetNav.click(function() {
         $(this).addClass("active").siblings().removeClass("active");
     });
 }
-
 function addScrollToDo() {
     var targetNav = $('.header li');
     var scrolldo = new ScrollToDo();
@@ -543,13 +541,13 @@ function addScrollToDo() {
 
     });
     scrolldo.add("#optoelectronic", function() {
-        targetNav.eq(4).addClass("active").siblings().removeClass("active")
+        targetNav.eq(4).addClass("active").siblings().removeClass("active");
     });
     scrolldo.add("#embroidery", function() {
-        targetNav.eq(5).addClass("active").siblings().removeClass("active")
+        targetNav.eq(5).addClass("active").siblings().removeClass("active");
     });
     scrolldo.add("#beautyskin", function() {
-        targetNav.eq(6).addClass("active").siblings().removeClass("active")
+        targetNav.eq(6).addClass("active").siblings().removeClass("active");
     });
 }
 //all page
@@ -658,18 +656,18 @@ function chainBShow(){
  function autoObj(obj){
          $('.environmental .item img').bind("click",function(){
              var environmentalLen=$(".environmental_full").length;
-             autoStop(obj,environmentalLen);
+             autoStopEN(obj,environmentalLen);
              var index=parseInt($(this).index())+1;
              slideToFrom(obj,index,environmentalLen);
          })
-    }
+}
       // 开始暂停循环
-        function autoStop(obj,environmentalLen){
+        function autoStopEN(obj,environmentalLen){
                for(var i=0;i<environmentalLen;i++){
                     obj[0].autoplay.stop();
            }
         }
-     function slideToFrom(caseSix,index_Sw,environmentalLen) {
+        function slideToFrom(caseSix,index_Sw,environmentalLen) {
                 for(var i=0;i<environmentalLen;i++){
                      caseSix[i].slideTo(index_Sw);
                 }
@@ -738,6 +736,14 @@ function SUActivityFN(){
     });
 }
 function  list_case_sw(){
+      // 开始循环
+            function autoStart(obj){
+               obj.autoplay.start();
+            }
+             // 开始暂停循环
+            function autoStop(obj){
+               obj.autoplay.stop();
+            }
        // 案例轮播图需要
        var content=['面部护理','纹绣(眉，唇)'];
        var swiperMy_List = new Swiper('.case_list_swiper', {
@@ -745,7 +751,7 @@ function  list_case_sw(){
              slidesPerColumn: 2,
              slidesPerGroup : 3,
              spaceBetween:30,
-             autoplay:2500,
+             autoplay:true,
              pagination: {
              el: '.cases_list ul',
              clickable: true,
@@ -766,98 +772,82 @@ function  list_case_sw(){
         });
         case_list_full(".cases_list .g-right .swiper-slide");
         function case_list_full(clickObj){
-        // 案例列表页点击案例切换大图
-        $(clickObj).click(function() {
-            // 案例轮播停止
-            autoStop(swiperMy_List);
-            // 开始循环
-            function autoStart(obj){
-               obj.autoplay.start();
-            }
-             // 开始暂停循环
-            function autoStop(obj){
-               obj.autoplay.stop();
-            }
-            var index_Sw = parseInt($(this).index());
-            if (index_Sw >= 0 && index_Sw <= 5) {
-                fullReShow('fullscreen');
-                $('.fullscreen').eq(0).addClass('show');
-                slideToFrom(case_list_full_sw1,index_Sw);
-            } else if (index_Sw >= 6 && index_Sw <= 11) {
-                fullReShow('fullscreen');
-                $('.fullscreen').eq(1).addClass('show');
-                index_Sw=index_Sw%6;
-                slideToFrom(case_list_full_sw2,index_Sw);
-            } else if (index_Sw >= 12 && index_Sw <= 17) {
-                fullReShow('fullscreen');
-                $('.fullscreen').eq(2).addClass('show');
-                 index_Sw=index_Sw%6;
-                slideToFrom(swiper_caseSix3,index_Sw);
-            } else if (index_Sw >= 18 && index_Sw <= 23) {
-                fullReShow('fullscreen');
-                $('.fullscreen').eq(3).addClass('show');
-                 index_Sw=index_Sw%6;
-                slideToFrom(swiper_caseSix4,index_Sw);
-            }
-            $('.header').removeClass('fixed');
-            function slideToFrom(caseSix,index_Sw) {
-                caseSix.slideTo(index_Sw);
-            }
-            function fullReShow(obj){
-               $(obj).removeClass('show');
-               hiddBody();
-            }
+            // 案例列表页点击案例切换大图
+            $(clickObj).click(function() {
+                // 案例轮播停止
+                autoStop(swiperMy_List);
 
-              function hiddBody(){
-              $("body").css("overflow-y","hidden")
-             }
-             function showBody(){
-              $("body").css("overflow-y","visible")
-            }
-        });
-         // 案例列表页点击显示的面部护理大图
-        var case_list_full_sw1= new Swiper('.case_list_full_sw1', {
-          spaceBetween: 30,
-          centeredSlides: true,
-          autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-        });
-         // 案例列表页点击显示的纹绣(眉，唇)大图
-        var case_list_full_sw2= new Swiper('.case_list_full_sw2', {
-          spaceBetween: 30,
-          centeredSlides: true,
-          autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-        });
-}
+                var index_Sw = parseInt($(this).index());
+                if (index_Sw >= 0 && index_Sw <= 5) {
+                    fullReShow('fullscreen');
+                    $('.fullscreen').eq(0).addClass('show');
+                    slideToFrom(case_list_full_sw1,index_Sw);
+                } else if (index_Sw >= 6 && index_Sw <= 11) {
+                    fullReShow('fullscreen');
+                    $('.fullscreen').eq(1).addClass('show');
+                    index_Sw=index_Sw%6;
+                    slideToFrom(case_list_full_sw2,index_Sw);
+                } else if (index_Sw >= 12 && index_Sw <= 17) {
+                    fullReShow('fullscreen');
+                    $('.fullscreen').eq(2).addClass('show');
+                     index_Sw=index_Sw%6;
+                    slideToFrom(swiper_caseSix3,index_Sw);
+                } else if (index_Sw >= 18 && index_Sw <= 23) {
+                    fullReShow('fullscreen');
+                    $('.fullscreen').eq(3).addClass('show');
+                     index_Sw=index_Sw%6;
+                    slideToFrom(swiper_caseSix4,index_Sw);
+                }
+                $('.header').removeClass('fixed');
+                function slideToFrom(caseSix,index_Sw) {
+                    caseSix.slideTo(index_Sw);
+                }
+                function fullReShow(obj){
+                   $(obj).removeClass('show');
+                   hiddBody();
+                }
 
- // 开始循环
-        function autoStart(obj){
-           obj.autoplay.start();
-        }
-         // 开始暂停循环
-        function autoStop(obj){
-           obj.autoplay.stop();
+                  function hiddBody(){
+                  $("body").css("overflow-y","hidden")
+                 }
+                 function showBody(){
+                  $("body").css("overflow-y","visible")
+                }
+            });
+             // 案例列表页点击显示的面部护理大图
+            var case_list_full_sw1= new Swiper('.case_list_full_sw1', {
+              spaceBetween: 30,
+              centeredSlides: true,
+              autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            });
+             // 案例列表页点击显示的纹绣(眉，唇)大图
+            var case_list_full_sw2= new Swiper('.case_list_full_sw2', {
+              spaceBetween: 30,
+              centeredSlides: true,
+              autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            });
         }
 }
 function swiper_slide_hover(obj){

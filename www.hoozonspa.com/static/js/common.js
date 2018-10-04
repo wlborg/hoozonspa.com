@@ -532,38 +532,6 @@ function lightNavCustom() {
     targetNav.click(function() {
         $(this).addClass("active").siblings().removeClass("active");
     });
-    // 检查是否已经跳转到项目列表页
-        // checkProHrefM();
-        // function checkProHrefM(){
-        //        // $("body").bind("click",".header li",function(){
-        //            var currHref=window.location.href;
-        //            var ELval=currHref.split("#")[1];
-        //         // if(currHref.indexOf("/project")>0){
-        //             if(ELval=="beautyspa"){
-        //                 // 美容SPA
-        //                      var beautyspaTopVal=$('#beautyspa').offset().top;
-        //                      sTop(beautyspaTopVal);
-        //             }else if(ELval=="optoelectronic"){
-        //                //光电美肤
-        //                       var optoelectronicTopVal=$('#optoelectronic').offset().top;
-        //                       sTop(optoelectronicTopVal)
-        //             }else if(ELval=="embroidery"){
-        //                 //艺术纹绣
-        //                          var embroideryTopVal=$('#embroidery').offset().top;
-        //                          sTop(embroideryTopVal);
-        //             }else if(ELval=="beautyskin"){
-        //                      //美妆护肤
-        //                          var beautyskinTopVal=$('#beautyskin').offset().top;
-        //                          sTop(beautyskinTopVal);
-
-        //             }
-
-        //        // })
-        // }
-        // function sTop(objTop){
-        //         $("html,body").scrollTop(objTop);
-        //         return false;
-        // }
 }
 
 function addScrollToDo() {
@@ -769,28 +737,6 @@ function SUActivityFN(){
       },
     });
 }
-//function  list_case_sw(){
-//       // 案例轮播图需要
-//       var content=['面部护理','光电美肤','美容SPA','科技瘦身','美妆护肤'];
-//       var swiperMy = new Swiper('.swiper-container_pro', {
-//             slidesPerView: 3,
-//             slidesPerColumn: 2,
-//             slidesPerGroup : 3,
-//             spaceBetween:0,
-//             autoplay:2500,
-//             pagination: {
-//              el: '.project-pagination',
-//              clickable: true,
-//              renderBullet: function (index, className) {
-//               return '<li class="'+className+'">'+ content[index] + '</li>';
-//            }
-//            },
-//             navigation: {
-//             nextEl: '.next',
-//             prevEl: '.prev',
-//            },
-//        });
-//}
 function  list_case_sw(){
        // 案例轮播图需要
        var content=['面部护理','纹绣(眉，唇)'];
@@ -824,6 +770,14 @@ function  list_case_sw(){
         $(clickObj).click(function() {
             // 案例轮播停止
             autoStop(swiperMy_List);
+            // 开始循环
+            function autoStart(obj){
+               obj.autoplay.start();
+            }
+             // 开始暂停循环
+            function autoStop(obj){
+               obj.autoplay.stop();
+            }
             var index_Sw = parseInt($(this).index());
             if (index_Sw >= 0 && index_Sw <= 5) {
                 fullReShow('fullscreen');

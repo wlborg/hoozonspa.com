@@ -509,3 +509,16 @@ body {
 .article_g_container {
     width: 14.4em;
 }
+.top-banner .bannerswiper-wrapper {
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+
+    width: 1920px;
+    height: 810px;
+    margin-left: -960px;
+    overflow: hidden;
+}
+.top-banner .swiper-container .swiper-slide {
+    height: 100%!important;
+}

@@ -905,10 +905,11 @@ function topBannerFn(){
           on: {
             slideChangeTransitionStart: function(){
               // alert(this.activeIndex);
-              animateBanner(this.activeIndex);
+              //animateBanner(this.activeIndex);
             },
           },
          });
+    console.log(swiper_banner);
 // 留联
         function animateBanner(num){
             $('.banner_swiper-wrapper .swiper-slide').find(".textimgFont").fadeOut();

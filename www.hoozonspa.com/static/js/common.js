@@ -888,6 +888,76 @@ function checkProHrefM(){
 
         })
 }
+function topBannerFn(){
+     var swiper = new Swiper('.banner_swiper-wrapper', {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          autoplay:5000,
+          loop: true,
+          pagination: {
+            el: '.slider-indicator',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          on: {
+            slideChangeTransitionStart: function(){
+              // alert(this.activeIndex);
+              animateBanner(this.activeIndex);
+            },
+          },
+         });
+// 留联
+        function animateBanner(num){
+            $('.banner_swiper-wrapper .swiper-slide').find(".textimgFont").fadeOut();
+            $('.banner_swiper-wrapper .swiper-slide').find(".textimgFont img").fadeOut();
+            $('.banner_swiper-wrapper .swiper-slide').find(".textimgFont p").fadeOut();
+            $('.banner_swiper-wrapper .swiper-slide').find(".textimgFont a").fadeOut();
+            $('.banner_swiper-wrapper .swiper-slide').find(".textimgFont span").fadeOut();
+            $('.banner_swiper-wrapper .swiper-slide').find(".textimg").css({"opacity":"0","right":"-400px"});
+            setTimeout(function(){
+                  t(num);
+               },100)
+
+          }
+         function t(num){
+                     $('.banner_swiper-wrapper .swiper-slide').eq(num).find(".textimg").css({"opacity":"1","right":"-400px"});
+                     $('.banner_swiper-wrapper .swiper-slide').eq(num).find(".textimg").animate(
+                        {
+                           right:"0",
+                           // opacity :1,
+                        },
+                        {
+                          duration: 1000,
+                          easing: "easeInCirc",
+                          complete:function(){
+                             console.log('2');
+                               // $(".textimgFont").eq(num).fadeOut();
+                                setTimeout(function(){
+                                   $('.banner_swiper-wrapper .swiper-slide').eq(num).find(".textimgFont").fadeIn(700);
+                                   $('.banner_swiper-wrapper .swiper-slide').eq(num).find(".textimgFont img").fadeIn(700);
+                                   $('.banner_swiper-wrapper .swiper-slide').eq(num).find(".textimgFont span").fadeIn(700);
+                                   $('.banner_swiper-wrapper .swiper-slide').eq(num).find(".textimgFont p").fadeIn(700);
+
+                                   for(var i=0;i<$('.banner_swiper-wrapper .swiper-slide').length;i++){
+                                          if(i!=num){
+                                                 $('.banner_swiper-wrapper .swiper-slide').eq(i).find(".textimgFont").fadeOut();
+                                                 $('.banner_swiper-wrapper .swiper-slide').eq(i).find(".textimgFont img").fadeOut();
+                                                 $('.banner_swiper-wrapper .swiper-slide').eq(i).find(".textimgFont span").fadeOut();
+                                                 $('.banner_swiper-wrapper.swiper-slide').eq(i).find(".textimgFont p").fadeOut();
+                                          }
+                                   }
+
+                               },900)
+                         }
+                        }
+
+                  )
+        }
+
+}
  function sTop(objTop,obj){
        var hrefCon=["project.html/#beautyspa","project.html/#optoelectronic","project.html/#embroidery","project.html/#beautyskin"];
        for(var i=0;i<4;i++){
@@ -918,10 +988,14 @@ $(function() {
                     },
                     checkProHref:function(){
                        checkProHrefM();
+                    },
+                    topBanner:function(){
+                        // 顶部banner轮播
+                        topBannerFn();
                     }
                 }
     tool.kst();
-    topbanner();
+    // topbanner();
     lightNav();
     fixnav();
     setTimeout(initSlider, 2000);
@@ -939,4 +1013,5 @@ $(function() {
      tool.list_case();//调用案例列表页案例轮播图
      swiper_slide_hover(".cases_list .g-right .swiper-slide");
      tool.checkProHref();//调用判断如果在列表页，不重复跳转
+     tool.topBanner();//顶部banner轮播
 });

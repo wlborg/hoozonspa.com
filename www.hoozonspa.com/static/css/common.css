@@ -257,7 +257,42 @@ body {
 
     text-align: center;
 }
-.top-banner .slider-indicator li {
+.top-banner .banner_swiper-wrapper .textimg,
+.top-banner .banner_swiper-wrapper .textimgFont {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    transition: all .5s .5s ease;
+    /*display: none;*/
+
+
+    /*transform:  scale(.5,.5) ;*/
+}
+.top-banner .banner_swiper-wrapper .textimg {
+    right: -400px;
+
+    opacity: 0;
+}
+.top-banner .banner_swiper-wrapper .textimgFont,
+.top-banner .banner_swiper-wrapper .textimgFont img,
+.top-banner .banner_swiper-wrapper .textimgFont span,
+.top-banner .banner_swiper-wrapper .textimgFont a,
+.top-banner .banner_swiper-wrapper .textimgFont p,
+.top-banner .banner_swiper-wrapper .textimgFont li {
+    display: none;
+}
+/*.top-banner .banner_swiper-wrapper .textimgFont img{
+  display: none;
+}*/
+.top-banner .banner_swiper-wrapper .swiper-slide.active .textimg,
+.top-banner .banner_swiper-wrapper:hover .textimg {
+    opacity: 1;
+    /*display: block;*/
+    /*transition: scale(1,1);*/
+}
+.top-banner .slider-indicator span,
+.top-banner .slider-indicator li, {
     display: inline-block;
     width: 12px;
     height: 12px;
@@ -267,7 +302,11 @@ body {
     background: #fff;
 }
 .top-banner .slider-indicator li.active,
-.top-banner .slider-indicator li:hover {
+.top-banner .slider-indicator span.active,
+.top-banner .slider-indicator li:hover,
+.top-banner .slider-indicator span:hover, {
+    display: block;
+
     cursor: pointer;
 
     background: #9855ae;

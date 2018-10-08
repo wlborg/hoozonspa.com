@@ -989,7 +989,7 @@ $(function() {
                     checkProHref:function(){
                        checkProHrefM();
                     },
-                    topBanner:function(){
+                    topBannerObj:function(){
                         // 顶部banner轮播
                         topBannerFn();
                     }
@@ -1013,5 +1013,5 @@ $(function() {
      tool.list_case();//调用案例列表页案例轮播图
      swiper_slide_hover(".cases_list .g-right .swiper-slide");
      tool.checkProHref();//调用判断如果在列表页，不重复跳转
-     tool.topBanner();//顶部banner轮播
+     tool.topBannerObj();//顶部banner轮播
 });

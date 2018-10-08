@@ -522,3 +522,7 @@ body {
 .top-banner .swiper-container .swiper-slide {
     height: 100%!important;
 }
+.bannerswiper-wrapper .swiper-slide a > img {
+    display: block;
+    height: 100%;
+}

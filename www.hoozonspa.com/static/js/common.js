@@ -912,19 +912,19 @@ function topBannerFn(){
     console.log(swiper_banner);
 // 留联
         function animateBanner(num){
-            $('.banner_swiper-wrapper .swiper-slide').find(".textimgFont").fadeOut();
-            $('.banner_swiper-wrapper .swiper-slide').find(".textimgFont img").fadeOut();
-            $('.banner_swiper-wrapper .swiper-slide').find(".textimgFont p").fadeOut();
-            $('.banner_swiper-wrapper .swiper-slide').find(".textimgFont a").fadeOut();
-            $('.banner_swiper-wrapper .swiper-slide').find(".textimgFont span").fadeOut();
-            $('.banner_swiper-wrapper .swiper-slide').find(".textimg").css({"opacity":"0","right":"-400px"});
+            $('.bannerswiper-wrapper .swiper-slide').find(".textimgFont").fadeOut();
+            $('.bannerswiper-wrapper .swiper-slide').find(".textimgFont img").fadeOut();
+            $('.bannerswiper-wrapper .swiper-slide').find(".textimgFont p").fadeOut();
+            $('.bannerswiper-wrapper .swiper-slide').find(".textimgFont a").fadeOut();
+            $('.bannerswiper-wrapper .swiper-slide').find(".textimgFont span").fadeOut();
+            $('.bannerswiper-wrapper .swiper-slide').find(".textimg").css({"opacity":"0","right":"-400px"});
             setTimeout(function(){
                   t(num);
                },100)
             }
          function t(num){
-                     $('.banner_swiper-wrapper .swiper-slide').eq(num).find(".textimg").css({"opacity":"1","right":"-400px"});
-                     $('.banner_swiper-wrapper .swiper-slide').eq(num).find(".textimg").animate(
+                     $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimg").css({"opacity":"1","right":"-400px"});
+                     $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimg").animate(
                         {
                            right:"0",
                            // opacity :1,
@@ -936,17 +936,17 @@ function topBannerFn(){
                              console.log('2');
                                // $(".textimgFont").eq(num).fadeOut();
                                 setTimeout(function(){
-                                   $('.banner_swiper-wrapper .swiper-slide').eq(num).find(".textimgFont").fadeIn(700);
-                                   $('.banner_swiper-wrapper .swiper-slide').eq(num).find(".textimgFont img").fadeIn(700);
-                                   $('.banner_swiper-wrapper .swiper-slide').eq(num).find(".textimgFont span").fadeIn(700);
-                                   $('.banner_swiper-wrapper .swiper-slide').eq(num).find(".textimgFont p").fadeIn(700);
+                                   $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimgFont").fadeIn(700);
+                                   $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimgFont img").fadeIn(700);
+                                   $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimgFont span").fadeIn(700);
+                                   $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimgFont p").fadeIn(700);
 
-                                   for(var i=0;i<$('.banner_swiper-wrapper .swiper-slide').length;i++){
+                                   for(var i=0;i<$('.bannerswiper-wrapper .swiper-slide').length;i++){
                                           if(i!=num){
-                                                 $('.banner_swiper-wrapper .swiper-slide').eq(i).find(".textimgFont").fadeOut();
-                                                 $('.banner_swiper-wrapper .swiper-slide').eq(i).find(".textimgFont img").fadeOut();
-                                                 $('.banner_swiper-wrapper .swiper-slide').eq(i).find(".textimgFont span").fadeOut();
-                                                 $('.banner_swiper-wrapper.swiper-slide').eq(i).find(".textimgFont p").fadeOut();
+                                                 $('.bannerswiper-wrapper .swiper-slide').eq(i).find(".textimgFont").fadeOut();
+                                                 $('.bannerswiper-wrapper .swiper-slide').eq(i).find(".textimgFont img").fadeOut();
+                                                 $('.bannerswiper-wrapper .swiper-slide').eq(i).find(".textimgFont span").fadeOut();
+                                                 $('.bannerswiper-wrapper.swiper-slide').eq(i).find(".textimgFont p").fadeOut();
                                           }
                                    }
 

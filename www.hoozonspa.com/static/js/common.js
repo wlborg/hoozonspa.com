@@ -889,7 +889,7 @@ function checkProHrefM(){
         })
 }
 function topBannerFn(){
-     var swiper_banner = new Swiper('.top-banner .slider-wraper .banner_swiper-wrapper', {
+     var swiper_banner = new Swiper('.top-banner .bannerswiper-wrapper', {
           slidesPerView: 1,
           spaceBetween: 30,
           autoplay:5000,

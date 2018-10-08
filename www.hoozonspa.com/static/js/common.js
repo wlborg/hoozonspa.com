@@ -889,7 +889,7 @@ function checkProHrefM(){
         })
 }
 function topBannerFn(){
-     var swiper = new Swiper('.banner_swiper-wrapper', {
+     var swiper_banner = new Swiper('.top-banner .slider-wraper .banner_swiper-wrapper', {
           slidesPerView: 1,
           spaceBetween: 30,
           autoplay:5000,
@@ -920,8 +920,7 @@ function topBannerFn(){
             setTimeout(function(){
                   t(num);
                },100)
-
-          }
+            }
          function t(num){
                      $('.banner_swiper-wrapper .swiper-slide').eq(num).find(".textimg").css({"opacity":"1","right":"-400px"});
                      $('.banner_swiper-wrapper .swiper-slide').eq(num).find(".textimg").animate(

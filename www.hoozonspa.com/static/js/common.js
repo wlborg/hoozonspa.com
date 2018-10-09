@@ -919,44 +919,42 @@ function topBannerFn(){
             $('.bannerswiper-wrapper .swiper-slide').find(".textimgFont a").fadeOut();
             $('.bannerswiper-wrapper .swiper-slide').find(".textimgFont span").fadeOut();
             $('.bannerswiper-wrapper .swiper-slide').find(".textimg").css({"opacity":"0","right":"-400px"});
-            setTimeout(function(){
+                setTimeout(function(){
                   t(num);
                },100)
             }
-         function t(num){
-                     $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimg").css({"opacity":"1","right":"-400px"});
-                     $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimg").animate(
-                        {
-                           right:"0",
-                           // opacity :1,
-                        },
-                        {
-                          duration: 1000,
-                          easing: "easeInCirc",
-                          complete:function(){
-                             console.log('2');
-                               // $(".textimgFont").eq(num).fadeOut();
-                                setTimeout(function(){
-                                   $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimgFont").fadeIn(700);
-                                   $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimgFont img").fadeIn(700);
-                                   $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimgFont span").fadeIn(700);
-                                   $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimgFont p").fadeIn(700);
+               function t(num){
+                         $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimg").css({"opacity":"1","right":"-400px"});
+                         $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimg").animate(
+                            {
+                               right:"0"
+                               // opacity :1,
+                            },
+                            {
+                              duration: 1000,
+                              easing: "easeInCirc",
+                              complete:function(){
+                                   // $(".textimgFont").eq(num).fadeOut();
+                                    setTimeout(function(){
+                                       $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimgFont").fadeIn(700);
+                                       $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimgFont img").fadeIn(700);
+                                       $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimgFont span").fadeIn(700);
+                                       $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimgFont p").fadeIn(700);
 
-                                   for(var i=1;i<$('.bannerswiper-wrapper .swiper-slide').length-2;i++){
-                                          if(i!=num){
-                                                 $('.bannerswiper-wrapper .swiper-slide').eq(i).find(".textimgFont").fadeOut();
-                                                 $('.bannerswiper-wrapper .swiper-slide').eq(i).find(".textimgFont img").fadeOut();
-                                                 $('.bannerswiper-wrapper .swiper-slide').eq(i).find(".textimgFont span").fadeOut();
-                                                 $('.bannerswiper-wrapper.swiper-slide').eq(i).find(".textimgFont p").fadeOut();
-                                          }
-                                   }
+                                       for(var i=1;i<$('.bannerswiper-wrapper .swiper-slide').length-2;i++){
+                                              if(i!=num){
+                                                     $('.bannerswiper-wrapper .swiper-slide').eq(i).find(".textimgFont").fadeOut();
+                                                     $('.bannerswiper-wrapper .swiper-slide').eq(i).find(".textimgFont img").fadeOut();
+                                                     $('.bannerswiper-wrapper .swiper-slide').eq(i).find(".textimgFont span").fadeOut();
+                                                     $('.bannerswiper-wrapper.swiper-slide').eq(i).find(".textimgFont p").fadeOut();
+                                              }
+                                       }
 
-                               },900)
-                         }
-                        }
-
-                  )
-        }
+                                   },900)
+                             }
+                            }
+                       )
+               }
 
 }
  function sTop(objTop,obj){

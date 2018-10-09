@@ -905,7 +905,8 @@ function topBannerFn(){
           on: {
             slideChangeTransitionStart: function(){
               // alert(this.activeIndex);
-              animateBanner(this.activeIndex);
+              var num=(this.realIndex)+1;
+              animateBanner(num);
             },
           },
          });

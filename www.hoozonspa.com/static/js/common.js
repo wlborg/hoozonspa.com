@@ -905,7 +905,8 @@ function topBannerFn(){
           on: {
             slideChangeTransitionStart: function(){
               // alert(this.activeIndex);
-              animateBanner(this.activeIndex);
+              var num=(this.realIndex)+1;
+              animateBanner(num);
             },
           },
          });
@@ -941,7 +942,7 @@ function topBannerFn(){
                                    $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimgFont span").fadeIn(700);
                                    $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimgFont p").fadeIn(700);
 
-                                   for(var i=0;i<$('.bannerswiper-wrapper .swiper-slide').length;i++){
+                                   for(var i=1;i<$('.bannerswiper-wrapper .swiper-slide').length-2;i++){
                                           if(i!=num){
                                                  $('.bannerswiper-wrapper .swiper-slide').eq(i).find(".textimgFont").fadeOut();
                                                  $('.bannerswiper-wrapper .swiper-slide').eq(i).find(".textimgFont img").fadeOut();

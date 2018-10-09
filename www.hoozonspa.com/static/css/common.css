@@ -319,10 +319,16 @@ body {
     display: inline-block;
     width: 12px;
     height: 12px;
-    margin: 0 15px;
+    margin: 0 15px!important;
 
     border-radius: 100%;
     background: #fff;
+}
+.top-banner .slider-indicator span.swiper-pagination-bullet-active {
+    /* display: block; */
+    cursor: pointer;
+
+    background: #9855ae;
 }
 .top-banner .slider-indicator li.active,
 .top-banner .slider-indicator span.active,
@@ -333,7 +339,7 @@ body {
 
     background: #9855ae;
 }
-.top-banner .slider-indicator {
+#top .slider-indicator {
     bottom: 70px!important;
 }
 .footer {

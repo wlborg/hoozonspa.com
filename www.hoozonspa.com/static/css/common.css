@@ -124,7 +124,7 @@ body {
     z-index: 9999;
 
     width: 100%;
-    margin-bottom: -120px;
+    /* margin-bottom: -120px; */
 
     -webkit-transform: all .5s linear;
             transform: all .5s linear;
@@ -197,7 +197,7 @@ body {
 
     width: 100%;
     height: 810px;
-    padding-top: 120px;
+    padding-top: 90px;
 }
 .top-banner .slider-wraper {
     position: absolute;
@@ -297,7 +297,7 @@ body {
 }
 .textGo2 {
     position: absolute;
-    bottom: 248px;
+    bottom: 235px;
     left: 33px;
     z-index: 2;
 
@@ -313,6 +313,9 @@ body {
 
     color: #fff;
     border: 1px solid #fff;
+}
+.textGo2:hover {
+    transform: scale(.9,.9);
 }
 .top-banner .slider-indicator span,
 .top-banner .slider-indicator li {

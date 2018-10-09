@@ -324,11 +324,11 @@ body {
     border-radius: 100%;
     background: #fff;
 }
-.top-banner .slider-indicator span.swiper-pagination-bullet-active {
+#topBanner .slider-indicator span.swiper-pagination-bullet-active {
     /* display: block; */
     cursor: pointer;
 
-    background: #9855ae;
+    background: #9855ae!important;
 }
 .top-banner .slider-indicator li.active,
 .top-banner .slider-indicator span.active,

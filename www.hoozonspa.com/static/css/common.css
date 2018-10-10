@@ -327,7 +327,7 @@ body {
     border-radius: 100%;
     background: #fff;
 }
-#topBanner .indicator {
+#topBanner .slider-indicator {
     bottom: 132px!important;
 }
 #topBanner .slider-indicator span.swiper-pagination-bullet-active {

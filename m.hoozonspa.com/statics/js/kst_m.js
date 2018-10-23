@@ -5,7 +5,7 @@ $(function(){
   if(isiOS){
       if(typeof KS!=='undefined'){
         var timer = null;
-            //  检查dom是否执行完成
+        //  检查dom是否执行完成
         function check() {
             var dom = document.getElementById('div7');
             if(dom) {

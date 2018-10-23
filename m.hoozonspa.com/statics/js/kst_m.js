@@ -1,13 +1,13 @@
-
+$(function(){
   var u = navigator.userAgent;
   var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
   var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
   if(isiOS){
       if(typeof KS!=='undefined'){
-        var timer = null
+        var timer = null;
             //  检查dom是否执行完成
         function check() {
-            let dom = document.getElementById('div7')
+            let dom = document.getElementById('div7');
             if(dom) {
                  //  执行dom加载完成后的操作,重写快商通
                       var re_kst="<div id='_ks_ol_inviteWin' class='ks_ol_comm_div' style='display: block; width: auto; z-index: 2147483647; left: 50%; top: 50%; margin-top: -5.781rem; visibility: visible; margin-left: -6.4rem; position: fixed !important;'>"+
@@ -20,15 +20,17 @@
 $('body').append(re_kst);
                 //  清除定时器
                 if(!timer) {
-                    clearTimeout(timer)
+                    clearTimeout(timer);
                 }
             } else {
                 //  自我调用
-                timer = setTimeout(check, 0)
+                timer = setTimeout(check, 0);
             }
         }
         //  首次执行
         check();
       }
 }
+
+})
 

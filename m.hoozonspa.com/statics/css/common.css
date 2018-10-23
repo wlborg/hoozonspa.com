@@ -122,7 +122,7 @@ body {
     position: relative;
 
     width: 15.99829352rem;
-    padding-top: 81px;
+    padding-top: 4.1rem;
     /* padding-top: 2.09044369rem; */
     padding-bottom: 2.34641638rem;
     margin: 0 auto;
@@ -141,7 +141,7 @@ body {
       top:0;
       left: 0;*/
     position: fixed;
-    top: 40px;
+    top: 2.05rem;
     right: 0;
     left: 0;
     z-index: 9999;

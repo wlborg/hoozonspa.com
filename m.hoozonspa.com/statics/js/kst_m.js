@@ -1,10 +1,6 @@
 $(function(){
-  var u = navigator.userAgent;
-  var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
-  var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-  if(isiOS){
-
-        var timer = null;
+window.kstReStyle = (function(win, doc) {
+        vartimer = null;
         //  检查dom是否执行完成
         function check() {
             var dom = document.getElementById('div7');
@@ -17,7 +13,7 @@ $(function(){
 "<div id='div6' style='HEIGHT: 94px; WIDTH: 242px; POSITION: absolute; LEFT: 0px; TOP: 24px' name='链接' orig_x='0' orig_y='24' orig_index=''><a href='https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&amp;fi=65110'  target='_blank' style='width:100%;height:100%;display:block;'></a></div>"+
 "<div id='div7' style='height: 35px; width: 110px; position: absolute; left: 20px; top: 225px; cursor: pointer; line-height: 0px;' name='稍后了解' orig_x='20' orig_y='225' orig_index=''></div></div></div>";
 $('#_ks_ol_inviteWin').html(re_kst);
-$('#_ks_ol_inviteWin').css({"margin-top":"5.781rem","margin-left":"-6.4rem"})
+$('#_ks_ol_inviteWin').css({"margin-top":"-5.781rem","margin-left":"-6.4rem"});
                 //  清除定时器
                 if(!timer) {
                     clearTimeout(timer);
@@ -27,8 +23,13 @@ $('#_ks_ol_inviteWin').css({"margin-top":"5.781rem","margin-left":"-6.4rem"})
                 timer = setTimeout(check, 0);
             }
         }
-        //  首次执行
-        check();
-      }
+
+         win.addEventListener('resize', function() {
+                     //  首次执行
+                     check();
+         }, false);
+
+})
+
 });
 

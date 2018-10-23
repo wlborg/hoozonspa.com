@@ -3,7 +3,7 @@ $(function(){
   var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
   var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
   if(isiOS){
-      if(typeof KS!=='undefined'){
+      //if(typeof KS!=='undefined'){
         var timer = null;
         //  检查dom是否执行完成
         function check() {
@@ -29,7 +29,7 @@ $('#_ks_ol_inviteWin').html("1");
         //  首次执行
         check();
       }
-}
+//}
 
-})
+});
 

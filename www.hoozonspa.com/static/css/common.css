@@ -563,3 +563,9 @@ body {
     display: block;
     height: 100%;
 }
+/* 快商通样式重写 */
+#div37 > textarea {
+    font-size: 14px!important;
+
+    color: rgb(189,189,189);
+}

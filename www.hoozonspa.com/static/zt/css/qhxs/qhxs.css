@@ -983,10 +983,11 @@ span {
 }
 /*swiper样式修改*/
 /*part5结束*/
+
 /*1px 4边框*/
 .scale-1px-4{
     position: relative;
-    border:none;
+    border: none;
 }
 .scale-1px-4:after{
     content: '';

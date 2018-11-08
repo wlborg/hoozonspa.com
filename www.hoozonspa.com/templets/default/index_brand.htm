@@ -19,9 +19,9 @@
         <div class="g-left">
         <div class="wraper">
             <h2><span class="sr-only">张艳红</span></h2>
-            <h3>香港红瑞集团董事长</h3>
+            <h3>红瑞集团董事长</h3>
             <ul>
-                <li>香港红瑞集团（原红妆时尚美业连锁机构）创始人</li>
+                <li>红瑞集团（原红妆时尚美业连锁机构）创始人</li>
                 <li>荷兰马斯特理赫特学院MBA工商管理硕士</li>
                 <li>海南省“五一劳动奖章”获得者</li>
                 <li>推动海南品牌建设60位功勋人物</li>
@@ -165,7 +165,7 @@
 
             </ul>
               <ol style="display: none">
-                 {dede:arclist typeid='3' row='4' orderby='id' orderway='desc' titlelen="120"  infolen='60' }
+                 {dede:arclist typeid='3' row='4' flag='c' orderby='id' orderway='desc' titlelen="120"  infolen='60' }
                    <li>[field:title/]&[field:arcurl /]</li>
                  {/dede:arclist}
             </ol>
@@ -178,7 +178,7 @@
           <!-- Swiper -->
           <div class="swiper-container benefitactivities-container">
             <div class="swiper-wrapper">
-                  {dede:arclist typeid='3' row='4' orderby='id' orderway='desc' titlelen="120" infolen='60' addfields='b_homecommon' channelid='1'}
+                  {dede:arclist typeid='3' row='4' flag='c' orderby='id' orderway='desc' titlelen="120" infolen='60' addfields='b_homecommon' channelid='1'}
               <div class="swiper-slide"><a href="[field:arcurl /]" title="[field:title/]">  <img src="[field:b_homecommon function='replaceurl(@me)/]" alt="[field:title/]" /></a></div>
                {/dede:arclist}
             </div>

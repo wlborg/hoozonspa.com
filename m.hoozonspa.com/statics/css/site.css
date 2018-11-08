@@ -779,6 +779,8 @@ body {
 }
 .presscenter .content .box h3 a,
 .list_question .content .box h3 a {
+    line-height: 1.1em;
+
     color: #6e3c32;
 }
 .presscenter .content .box p,

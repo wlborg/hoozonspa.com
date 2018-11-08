@@ -364,9 +364,9 @@
     background: url(../images/bg_prev.png) left center no-repeat;
     background-size: 100%;
 }
-.hotproject .g-right  .btn {
+.hotproject .g-right .btn {
     position: absolute;
-    z-index: 1;
+    z-index: 55;
 
     display: block;
     width: .62em;

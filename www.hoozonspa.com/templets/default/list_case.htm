@@ -74,7 +74,24 @@
 
                           <div class="swiper-container case_list_swiper">
                                <div class="swiper-wrapper">
-                                        {dede:arclist typeid='26' row='6' flag='c' orderby='id' orderway='desc' infolen='30' addfields='pic_before,pic_after1,project1,doctor' channelid='18'}
+                                        {dede:arclist typeid='26' row='4' flag='c' orderby='id' orderway='desc' infolen='30' addfields='pic_before,pic_after1,project1,doctor' channelid='18'}
+                                      <div class="swiper-slide">
+                                        <div class="front">
+                                             <img src="[field:pic_before function='replaceurl(@me)/]" alt="[field:title/]">
+                                             <h3>[field:title/]</h3>
+                                            <p>项目：
+                                                <a href="javascript:;">[field:project1/]</a>、
+                                                <a href="javascript:;">[field:project2/]</a>
+                                            </p>
+                                            <p>塑美技师：[field:doctor/]
+                                            </p>
+                                        </div>
+                                        <div class="back">
+                                            <img src="[field:pic_after1 function='replaceurl(@me)/]" alt="[field:title/]">
+                                        </div>
+                                       </div>
+                                     {/dede:arclist}
+                                     {dede:arclist typeid='32,34' row='2' flag='c' orderby='id' orderway='desc' infolen='30' addfields='pic_before,pic_after1,project1,doctor' channelid='18'}
                                       <div class="swiper-slide">
                                         <div class="front">
                                              <img src="[field:pic_before function='replaceurl(@me)/]" alt="[field:title/]">
@@ -114,7 +131,7 @@
                 </div>
                  </div>
                <!-- fullscreen -->
-<div class="fullscreen full1">
+<div class="fullscreen full1 fullscreen_list">
                     <div class="g-container casesImgs">
                       <div class="wraper">
                           <div class="swiper-container case_list_full_sw1">
@@ -148,7 +165,37 @@
                                                   </li>
                                                  </div>
                                           {/dede:arclist}
+                                            {dede:arclist typeid='32,34' row='2' flag='c' orderby='id' orderway='desc' infolen='30' addfields='pic_before,pic_after2,des,doctor,project1,project2' channelid='18'}
+                    <div class="swiper-slide slider-container">
+                        <li>
+                            <div class="g-left">
+                                <div class="front">
+                                    <img src="[field:pic_before function='replaceurl(@me)/]" alt="[field:title/]">
+                                </div>
+                                <div class="back">
+                                    <img src="[field:pic_after2 function='replaceurl(@me)/]" alt="[field:title/]">
+                                </div>
+                            </div>
+                            <div class="g-right">
+                                <h2><span class="sr-only">尊贵典雅院内环境</span></h2>
+                                 <div class="caseSix_des">[field:des/]</div>
+                                <div class="row">
+                                    <div class="item"><span>[field:project1/]<br></span>
+                                    </div>
+                                    <div class="item"><span>[field:project2/]</span>
+                                        <br>
+                                    </div>
+                                    <div class="item"><span>服务技师<br>
+                                                                  [field:doctor/]</span>
+                                    </div>
+                                </div>
+                                 <a class="consult" href="https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110" target="_blank"></a>
+                            </div>
+                        </li>
+                    </div>
+                    {/dede:arclist}
                                         </div>
+
                                         <!-- Add Pagination -->
                                          <div class="swiper-pagination"></div>
                           </div>
@@ -157,12 +204,12 @@
                     </div>
 </div>
 <!-- full 2 -->
-<div class="fullscreen full2">
+<div class="fullscreen full2 fullscreen_list">
     <div class="g-container casesImgs">
         <div class="wraper">
             <div class="swiper-container case_list_full_sw2">
                 <div class="swiper-wrapper">
-                    {dede:arclist typeid='32,34' row='6' flag='c' orderby='id' orderway='desc' infolen='30' addfields='pic_before,pic_after2,des,doctor,project1,project2' channelid='18' limit='6,6'}
+                    {dede:arclist typeid='32,34' row='6' flag='c' orderby='id' orderway='desc' infolen='30' addfields='pic_before,pic_after2,des,doctor,project1,project2' channelid='18'}
                     <div class="swiper-slide slider-container">
                         <li>
                             <div class="g-left">

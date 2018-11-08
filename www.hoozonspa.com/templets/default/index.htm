@@ -4,13 +4,12 @@
 <title>{dede:global.cfg_webname/}</title>
 {dede:include filename="_link.htm"/}
 <link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/index_swiper.css">
-<link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/swiper.min.css">
 </head>
 <body>
 <!-- header -->
     {dede:include filename="nav.htm"/}
 <!-- banner -->
-<div class="g-container top-banner">
+<div class="g-container top-banner" id="topBanner">
     {dede:myad name='topbanner_pc'/}
 </div>
 <!-- brand   -->
@@ -480,8 +479,11 @@
 </div>
 <!-- question and answer -->
 {dede:include filename="_question.htm"/}
+<script type="text/javascript" src="{dede:global.cfg_jspath/}/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_jspath/}/jquery.easing.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_jspath/}/index_alone.js"></script>
 <!-- footer -->
 {dede:include filename="footer.htm"/}
-<script type="text/javascript" src="{dede:global.cfg_jspath/}/index_alone.js"></script>
+
 </body>
 </html>

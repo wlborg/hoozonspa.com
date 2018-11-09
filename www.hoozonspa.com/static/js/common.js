@@ -352,19 +352,6 @@ function initSlider() {
     //默认显示第一个分院
     sliders2.eq(0).addClass('active').siblings().removeClass('active');
     $('.shops .g-left').find('li').eq(0).addClass('active').siblings().removeClass('active');
-    // tabs($('.environmental .g-left').find('li'), $('.environmental .item'));
-     // 环境分院点击
-    //$('.environmental .g-left li').eq(0).addClass('active');
-    //$('.environmental .item').eq(0).addClass('active');
-    //$('.environmental .g-left li').click(function(e) {
-    //    $('.environmental .g-left li.active').removeClass('active');
-    //    var index=$(".environmental .g-left").find("li").index($(this));
-    //    $(this).addClass('active');
-    //    $('.environmental .item.active').removeClass('active');
-    //    $('.environmental .item').eq(index).addClass('active');
-    //    $('.environmentalImgs .block.active').removeClass('active');
-    //    $('.environmentalImgs .block').eq(index).addClass('active');
-    //});
             function hiddBody(){
               $("body").css("overflow-y","hidden")
             }
@@ -384,20 +371,6 @@ function initSlider() {
             indicator: sliders3.eq(i3).find(".slider-indicator"),
         });
     }
-    // 环境详情页点击小图
-    $('.environmental .item').click(function() {
-        var index=$(this).index();
-        // $('.fullscreen').hide();
-        $('.fullscreen').eq(index).addClass('show');
-        $('.header ').removeClass('fixed');
-        hiddBody();
-        $('.fullscreen .close').click(function() {
-            $('.header ').addClass('fixed');
-            $('.fullscreen').removeClass('show');
-            showBody();
-        })
-    });
-
     //casesImgs
     $('.cases .g-left li').click(function(e) {
         $('.cases .g-left li.active').removeClass('active');
@@ -552,7 +525,7 @@ function fixnav() {
     scrolldo.add(910, function() {
         targetNav.addClass('fixed');
         targetNav.fadeIn('slow');
-    })
+    });
 
     scrolldo.add(810, function() {
         targetNav.removeClass('fixed');
@@ -984,7 +957,24 @@ function Senvironmental(){
 
          return false;
     }
+
 $(function() {
+    function BigSenvironmental(){
+        // 环境详情页点击小图出现大图
+        $('.environmental .item').click(function() {
+            var index=$(this).index();
+            // $('.fullscreen').hide();
+            $('.fullscreen').eq(index).addClass('show');
+            $('.header ').removeClass('fixed');
+            hiddBody();
+            tool.showEach("environmental_full",index);
+            $('.fullscreen .close').click(function() {
+                $('.header ').addClass('fixed');
+                $('.fullscreen').removeClass('show');
+                showBody();
+            })
+        });
+    }
     // 包含快商通链接
     var tool={
          // 快商通链接跳转
@@ -1010,6 +1000,16 @@ $(function() {
                     showEnvironmental:function(){
                         //分院环境click事件
                         Senvironmental();
+                    },
+                    showRightEnvironmental:function(){
+                        //分院环境click事件出现大图
+                        BigSenvironmental();
+                    },
+                    showEach:function(obj,index){
+                        //对应下标遍历下标对应添加src
+                        $("."+obj+":eq("+index+") img").each(function(index,value){
+                            $(value).attr('src',$(value).data("src"));
+                        });
                     }
                 };
     tool.kst();
@@ -1033,4 +1033,5 @@ $(function() {
      tool.checkProHref();//调用判断如果在列表页，不重复跳转
      tool.topBannerObj();//顶部banner轮播
     tool.showEnvironmental();//环境分院展示
+    tool.showRightEnvironmental();//环境分院click出现大图
 });

@@ -223,22 +223,6 @@ function tabs(tabIndex, tab) {
 
     });
 }
-// 鼠标经过切换
-function tabsHov(tabIndex, tab) {
-    tabIndex.click(function(e) {
-        var index = $(this).index();
-        if (tab && tab.find('li')) {
-            tab.find('li').removeClass('active');
-        }
-        $(this).addClass('active').siblings().removeClass('active');
-        if (tab) {
-
-            tab.eq(index).addClass('active').siblings().removeClass('active');
-
-        }
-
-    });
-}
    function hiddBody(){
               $("body").css("overflow-y","hidden")
    }
@@ -348,6 +332,7 @@ function initSlider() {
             prevBtn: sliders2.eq(i2).find(".prev")
         });
     }
+    //美容分院部分
     tabs($('.shops .g-left').find('li'), $('.shops .block'));
     //默认显示第一个分院
     sliders2.eq(0).addClass('active').siblings().removeClass('active');
@@ -461,13 +446,7 @@ function initSlider() {
         }
     }
     projectPageCustom();
-    // 面部护理
-    tabsHov($('#beautyspa').find('li'), $('#beautyspa ul'));
-    // tabs($('#beautyspa').find('li'), $('#beautyspa ul'));
-    tabsHov($('#optoelectronic').find('li'), $('#optoelectronic ul'));
-    // tabs($('#optoelectronic').find('li'), $('#optoelectronic ul'));
-    tabsHov($('#embroidery').find('li'), $('#embroidery ul'));
-    // tabs($('#embroidery').find('li'), $('#embroidery ul'));
+
 }
 function lightNav() {
     var url = window.location.href;
@@ -967,13 +946,38 @@ $(function() {
             $('.fullscreen').eq(index).addClass('show');
             $('.header ').removeClass('fixed');
             hiddBody();
-            tool.showEach("environmental_full",index);
+            tool.showEach(".environmental_full",index);
             $('.fullscreen .close').click(function() {
                 $('.header ').addClass('fixed');
                 $('.fullscreen').removeClass('show');
                 showBody();
             })
         });
+    }
+    function showEmbroideryLS(){
+        // 鼠标经过切换
+        function tabsHov(tabIndex, tab) {
+            $('#beautyspa').find('li').eq(0).addClass('active');
+            tool.showThis($('#beautyspa').find('li').eq(0),"img");
+            $('#beautyspa').find('li').eq(0).addClass('active');
+            tool.showThis($('#optoelectronic').find('li').eq(0),"img");
+            $('#embroidery').find('li').eq(0).addClass('active');
+            tool.showThis($('#embroidery').find('li').eq(0),"img");
+            tabIndex.click(function(e) {
+                var index = $(this).index();
+                if (tab && tab.find('li')) {
+                    tab.find('li').removeClass('active');
+                }
+                $(this).addClass('active').siblings().removeClass('active');
+                if (tab) {
+                    tab.eq(index).addClass('active').siblings().removeClass('active');
+                }
+                tool.showThis($(this),"img");
+            });
+        }
+        tabsHov($('#beautyspa').find('li'), $('#beautyspa ul'));
+        tabsHov($('#optoelectronic').find('li'), $('#optoelectronic ul'));
+        tabsHov($('#embroidery').find('li'), $('#embroidery ul'));
     }
     // 包含快商通链接
     var tool={
@@ -1007,9 +1011,17 @@ $(function() {
                     },
                     showEach:function(obj,index){
                         //对应下标遍历下标对应添加src
-                        $("."+obj+":eq("+index+") img").each(function(index,value){
+                        $(obj+":eq("+index+") img").each(function(index,value){
                             $(value).attr('src',$(value).data("src"));
                         });
+                    },
+                    showThis:function(obj,dom){
+                        obj.find(dom).each(function(index,value){
+                            $(value).attr('src',$(value).data("src"));
+                        });
+                    },
+                    showEmbroideryL:function(){
+                        showEmbroideryLS();
                     }
                 };
     tool.kst();
@@ -1032,6 +1044,7 @@ $(function() {
      swiper_slide_hover(".cases_list .g-right .swiper-slide");
      tool.checkProHref();//调用判断如果在列表页，不重复跳转
      tool.topBannerObj();//顶部banner轮播
-    tool.showEnvironmental();//环境分院展示
-    tool.showRightEnvironmental();//环境分院click出现大图
+     tool.showEnvironmental();//环境分院展示
+     tool.showRightEnvironmental();//环境分院click出现大图
+    tool.showEmbroideryL();//项目列表页click显示对应图片
 });

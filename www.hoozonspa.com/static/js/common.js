@@ -1032,4 +1032,5 @@ $(function() {
      swiper_slide_hover(".cases_list .g-right .swiper-slide");
      tool.checkProHref();//调用判断如果在列表页，不重复跳转
      tool.topBannerObj();//顶部banner轮播
+    tool.showEnvironmental();//环境分院展示
 });

@@ -352,24 +352,19 @@ function initSlider() {
     //默认显示第一个分院
     sliders2.eq(0).addClass('active').siblings().removeClass('active');
     $('.shops .g-left').find('li').eq(0).addClass('active').siblings().removeClass('active');
-    //Environmental Science
-    //
     // tabs($('.environmental .g-left').find('li'), $('.environmental .item'));
-    //
      // 环境分院点击
-    $('.environmental .g-left li').eq(0).addClass('active');
-    $('.environmental .item').eq(0).addClass('active');
-    $('.environmental .g-left li').click(function(e) {
-        $('.environmental .g-left li.active').removeClass('active');
-       var index=$(".environmental .g-left").find("li").index($(this))
-        // var index = $(this).data('id');
-        $(this).addClass('active');
-        $('.environmental .item.active').removeClass('active');
-        $('.environmental .item').eq(index).addClass('active');
-        $('.environmentalImgs .block.active').removeClass('active');
-        $('.environmentalImgs .block').eq(index).addClass('active');
-        // hiddBody();
-    });
+    //$('.environmental .g-left li').eq(0).addClass('active');
+    //$('.environmental .item').eq(0).addClass('active');
+    //$('.environmental .g-left li').click(function(e) {
+    //    $('.environmental .g-left li.active').removeClass('active');
+    //    var index=$(".environmental .g-left").find("li").index($(this));
+    //    $(this).addClass('active');
+    //    $('.environmental .item.active').removeClass('active');
+    //    $('.environmental .item').eq(index).addClass('active');
+    //    $('.environmentalImgs .block.active').removeClass('active');
+    //    $('.environmentalImgs .block').eq(index).addClass('active');
+    //});
             function hiddBody(){
               $("body").css("overflow-y","hidden")
             }
@@ -957,13 +952,33 @@ function topBannerFn(){
                }
 
 }
+function Senvironmental(){
+    $('.environmental .g-left li').eq(0).addClass('active');
+    $('.environmental .item').eq(0).addClass('active');
+    var k=0;
+    $(".item:eq("+k+")>img").each(function(index,value){
+        $(value).attr('src',$(value).data("src"));
+    });
+    $('.environmental .g-left li').click(function(e) {
+        $('.environmental .g-left li.active').removeClass('active');
+        var index=$(".environmental .g-left").find("li").index($(this));
+        $(this).addClass('active');
+        $('.environmental .item.active').removeClass('active');
+        $('.environmental .item').eq(index).addClass('active');
+        $('.environmentalImgs .block.active').removeClass('active');
+        $('.environmentalImgs .block').eq(index).addClass('active');
+        $(".item:eq("+index+")>img").each(function(index,value){
+            $(value).attr('src',$(value).data("src"));
+        });
+    });
+}
  function sTop(objTop,obj){
        var hrefCon=["project.html/#beautyspa","project.html/#optoelectronic","project.html/#embroidery","project.html/#beautyskin"];
        for(var i=0;i<4;i++){
         var res=i+3;
          $(".header .nav li").eq(res).find("a").prop("href",hrefCon[i]);
        }
-       obj.attr("href","javascript:;")
+       obj.attr("href","javascript:;");
         // alert("ss");
         $("html,body").scrollTop(objTop);
 
@@ -991,8 +1006,12 @@ $(function() {
                     topBannerObj:function(){
                         // 顶部banner轮播
                         topBannerFn();
+                    },
+                    showEnvironmental:function(){
+                        //分院环境click事件
+                        Senvironmental();
                     }
-                }
+                };
     tool.kst();
     // topbanner();
     lightNav();

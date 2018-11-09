@@ -959,7 +959,7 @@ $(function() {
         function tabsHov(tabIndex, tab) {
             $('#beautyspa').find('li').eq(0).addClass('active');
             tool.showThis($('#beautyspa').find('li').eq(0),"img");
-            $('#beautyspa').find('li').eq(0).addClass('active');
+            $('#optoelectronic').find('li').eq(0).addClass('active');
             tool.showThis($('#optoelectronic').find('li').eq(0),"img");
             $('#embroidery').find('li').eq(0).addClass('active');
             tool.showThis($('#embroidery').find('li').eq(0),"img");

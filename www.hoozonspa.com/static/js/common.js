@@ -979,6 +979,53 @@ $(function() {
         tabsHov($('#optoelectronic').find('li'), $('#optoelectronic ul'));
         tabsHov($('#embroidery').find('li'), $('#embroidery ul'));
     }
+    //进入到项目列表页，懒加载第一张图片
+    function showEmMore(){
+        var lazyLoad = (function(){
+            var clock;
+            function init(){
+                $(window).on("scroll", function(){
+                    if (clock) {
+                        clearTimeout(clock);
+                    }
+                    clock = setTimeout(function(){
+                        checkShow();
+                    }, 200);
+                });
+                checkShow();
+            }
+            function checkShow(){
+                var eachObj="$(#optoelectronic li).eq(0).find(img)";
+                    eachObj.each(function(){
+                    var $cur =$(this);
+                    if($cur.attr('isLoaded')){
+                        return;
+                    }
+                    if(shouldShow($cur)){
+                        showImg($cur);
+                    }
+                })
+            }
+            function shouldShow($node){
+                var scrollH = $(window).scrollTop(),
+                    winH = $(window).height(),
+                    top = $node.offset().top;
+                if(top < winH + scrollH){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+            function showImg($node){
+                $node.attr('src', $node.attr('data-img'));
+                $node.attr('isLoaded', true);
+            }
+            return {
+                init: init
+            }
+        })();
+        lazyLoad.init();
+    }
     // 包含快商通链接
     var tool={
          // 快商通链接跳转
@@ -1022,7 +1069,10 @@ $(function() {
                     },
                     showEmbroideryL:function(){
                         showEmbroideryLS();
-                    }
+                    },
+                   showEm:function(){
+                       showEmMore();
+                   }
                 };
     tool.kst();
     // topbanner();
@@ -1046,5 +1096,6 @@ $(function() {
      tool.topBannerObj();//顶部banner轮播
      tool.showEnvironmental();//环境分院展示
      tool.showRightEnvironmental();//环境分院click出现大图
-    tool.showEmbroideryL();//项目列表页click显示对应图片
+     tool.showEmbroideryL();//项目列表页click显示对应图片
+     //tool.showEm();//项目列表页进入视图
 });

@@ -403,7 +403,7 @@ function initSlider() {
     var currLen = 0;
     var stop = false;
     var timer = null;
-    // var margueeTarget = $('.developmenthistory .slider-wraper');
+    var margueeTarget = $('.developmenthistory .slider-wraper');
     var marqueeTargetFun = function() {
         currLen++;
         if (currLen > widthLen) {
@@ -435,7 +435,7 @@ function initSlider() {
             setInterval(marqueeTargetFun, 20)
         }
     });
-     // marqueeTargetFun();
+    marqueeTargetFun();
 
     //project.html
     function projectPageCustom() {

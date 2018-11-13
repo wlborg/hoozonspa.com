@@ -223,22 +223,6 @@ function tabs(tabIndex, tab) {
 
     });
 }
-// 鼠标经过切换
-function tabsHov(tabIndex, tab) {
-    tabIndex.click(function(e) {
-        var index = $(this).index();
-        if (tab && tab.find('li')) {
-            tab.find('li').removeClass('active');
-        }
-        $(this).addClass('active').siblings().removeClass('active');
-        if (tab) {
-
-            tab.eq(index).addClass('active').siblings().removeClass('active');
-
-        }
-
-    });
-}
    function hiddBody(){
               $("body").css("overflow-y","hidden")
    }
@@ -348,28 +332,11 @@ function initSlider() {
             prevBtn: sliders2.eq(i2).find(".prev")
         });
     }
+    //美容分院部分
     tabs($('.shops .g-left').find('li'), $('.shops .block'));
     //默认显示第一个分院
     sliders2.eq(0).addClass('active').siblings().removeClass('active');
     $('.shops .g-left').find('li').eq(0).addClass('active').siblings().removeClass('active');
-    //Environmental Science
-    //
-    // tabs($('.environmental .g-left').find('li'), $('.environmental .item'));
-    //
-     // 环境分院点击
-    $('.environmental .g-left li').eq(0).addClass('active');
-    $('.environmental .item').eq(0).addClass('active');
-    $('.environmental .g-left li').click(function(e) {
-        $('.environmental .g-left li.active').removeClass('active');
-       var index=$(".environmental .g-left").find("li").index($(this))
-        // var index = $(this).data('id');
-        $(this).addClass('active');
-        $('.environmental .item.active').removeClass('active');
-        $('.environmental .item').eq(index).addClass('active');
-        $('.environmentalImgs .block.active').removeClass('active');
-        $('.environmentalImgs .block').eq(index).addClass('active');
-        // hiddBody();
-    });
             function hiddBody(){
               $("body").css("overflow-y","hidden")
             }
@@ -389,20 +356,6 @@ function initSlider() {
             indicator: sliders3.eq(i3).find(".slider-indicator"),
         });
     }
-    // 环境详情页点击小图
-    $('.environmental .item').click(function() {
-        var index=$(this).index();
-        // $('.fullscreen').hide();
-        $('.fullscreen').eq(index).addClass('show');
-        $('.header ').removeClass('fixed');
-        hiddBody();
-        $('.fullscreen .close').click(function() {
-            $('.header ').addClass('fixed');
-            $('.fullscreen').removeClass('show');
-            showBody();
-        })
-    });
-
     //casesImgs
     $('.cases .g-left li').click(function(e) {
         $('.cases .g-left li.active').removeClass('active');
@@ -493,13 +446,7 @@ function initSlider() {
         }
     }
     projectPageCustom();
-    // 面部护理
-    tabsHov($('#beautyspa').find('li'), $('#beautyspa ul'));
-    // tabs($('#beautyspa').find('li'), $('#beautyspa ul'));
-    tabsHov($('#optoelectronic').find('li'), $('#optoelectronic ul'));
-    // tabs($('#optoelectronic').find('li'), $('#optoelectronic ul'));
-    tabsHov($('#embroidery').find('li'), $('#embroidery ul'));
-    // tabs($('#embroidery').find('li'), $('#embroidery ul'));
+
 }
 function lightNav() {
     var url = window.location.href;
@@ -557,7 +504,7 @@ function fixnav() {
     scrolldo.add(910, function() {
         targetNav.addClass('fixed');
         targetNav.fadeIn('slow');
-    })
+    });
 
     scrolldo.add(810, function() {
         targetNav.removeClass('fixed');
@@ -957,19 +904,128 @@ function topBannerFn(){
                }
 
 }
+function Senvironmental(){
+    $('.environmental .g-left li').eq(0).addClass('active');
+    $('.environmental .item').eq(0).addClass('active');
+    var k=0;
+    $(".item:eq("+k+")>img").each(function(index,value){
+        $(value).attr('src',$(value).data("src"));
+    });
+    $('.environmental .g-left li').click(function(e) {
+        $('.environmental .g-left li.active').removeClass('active');
+        var index=$(".environmental .g-left").find("li").index($(this));
+        $(this).addClass('active');
+        $('.environmental .item.active').removeClass('active');
+        $('.environmental .item').eq(index).addClass('active');
+        $('.environmentalImgs .block.active').removeClass('active');
+        $('.environmentalImgs .block').eq(index).addClass('active');
+        $(".item:eq("+index+")>img").each(function(index,value){
+            $(value).attr('src',$(value).data("src"));
+        });
+    });
+}
  function sTop(objTop,obj){
        var hrefCon=["project.html/#beautyspa","project.html/#optoelectronic","project.html/#embroidery","project.html/#beautyskin"];
        for(var i=0;i<4;i++){
         var res=i+3;
          $(".header .nav li").eq(res).find("a").prop("href",hrefCon[i]);
        }
-       obj.attr("href","javascript:;")
+       obj.attr("href","javascript:;");
         // alert("ss");
         $("html,body").scrollTop(objTop);
 
          return false;
     }
+
 $(function() {
+    function BigSenvironmental(){
+        // 环境详情页点击小图出现大图
+        $('.environmental .item').click(function() {
+            var index=$(this).index();
+            // $('.fullscreen').hide();
+            $('.fullscreen').eq(index).addClass('show');
+            $('.header ').removeClass('fixed');
+            hiddBody();
+            tool.showEach(".environmental_full",index);
+            $('.fullscreen .close').click(function() {
+                $('.header ').addClass('fixed');
+                $('.fullscreen').removeClass('show');
+                showBody();
+            })
+        });
+    }
+    function showEmbroideryLS(){
+        // 鼠标经过切换
+        function tabsHov(tabIndex, tab) {
+            $('#beautyspa').find('li').eq(0).addClass('active');
+            tool.showThis($('#beautyspa').find('li').eq(0),"img");
+            $('#optoelectronic').find('li').eq(0).addClass('active');
+            tool.showThis($('#optoelectronic').find('li').eq(0),"img");
+            $('#embroidery').find('li').eq(0).addClass('active');
+            tool.showThis($('#embroidery').find('li').eq(0),"img");
+            tabIndex.click(function(e) {
+                var index = $(this).index();
+                if (tab && tab.find('li')) {
+                    tab.find('li').removeClass('active');
+                }
+                $(this).addClass('active').siblings().removeClass('active');
+                if (tab) {
+                    tab.eq(index).addClass('active').siblings().removeClass('active');
+                }
+                tool.showThis($(this),"img");
+            });
+        }
+        tabsHov($('#beautyspa').find('li'), $('#beautyspa ul'));
+        tabsHov($('#optoelectronic').find('li'), $('#optoelectronic ul'));
+        tabsHov($('#embroidery').find('li'), $('#embroidery ul'));
+    }
+    //进入到项目列表页，懒加载第一张图片
+    function showEmMore(){
+        var lazyLoad = (function(){
+            var clock;
+            function init(){
+                $(window).on("scroll", function(){
+                    if (clock) {
+                        clearTimeout(clock);
+                    }
+                    clock = setTimeout(function(){
+                        checkShow();
+                    }, 200);
+                });
+                checkShow();
+            }
+            function checkShow(){
+                var eachObj="$(#optoelectronic li).eq(0).find(img)";
+                    eachObj.each(function(){
+                    var $cur =$(this);
+                    if($cur.attr('isLoaded')){
+                        return;
+                    }
+                    if(shouldShow($cur)){
+                        showImg($cur);
+                    }
+                })
+            }
+            function shouldShow($node){
+                var scrollH = $(window).scrollTop(),
+                    winH = $(window).height(),
+                    top = $node.offset().top;
+                if(top < winH + scrollH){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+            function showImg($node){
+                $node.attr('src', $node.attr('data-img'));
+                $node.attr('isLoaded', true);
+            }
+            return {
+                init: init
+            }
+        })();
+        lazyLoad.init();
+    }
     // 包含快商通链接
     var tool={
          // 快商通链接跳转
@@ -991,8 +1047,33 @@ $(function() {
                     topBannerObj:function(){
                         // 顶部banner轮播
                         topBannerFn();
-                    }
-                }
+                    },
+                    showEnvironmental:function(){
+                        //分院环境click事件
+                        Senvironmental();
+                    },
+                    showRightEnvironmental:function(){
+                        //分院环境click事件出现大图
+                        BigSenvironmental();
+                    },
+                    showEach:function(obj,index){
+                        //对应下标遍历下标对应添加src
+                        $(obj+":eq("+index+") img").each(function(index,value){
+                            $(value).attr('src',$(value).data("src"));
+                        });
+                    },
+                    showThis:function(obj,dom){
+                        obj.find(dom).each(function(index,value){
+                            $(value).attr('src',$(value).data("src"));
+                        });
+                    },
+                    showEmbroideryL:function(){
+                        showEmbroideryLS();
+                    },
+                   showEm:function(){
+                       showEmMore();
+                   }
+                };
     tool.kst();
     // topbanner();
     lightNav();
@@ -1013,4 +1094,8 @@ $(function() {
      swiper_slide_hover(".cases_list .g-right .swiper-slide");
      tool.checkProHref();//调用判断如果在列表页，不重复跳转
      tool.topBannerObj();//顶部banner轮播
+     tool.showEnvironmental();//环境分院展示
+     tool.showRightEnvironmental();//环境分院click出现大图
+     tool.showEmbroideryL();//项目列表页click显示对应图片
+     //tool.showEm();//项目列表页进入视图
 });

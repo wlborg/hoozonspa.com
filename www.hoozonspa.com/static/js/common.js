@@ -435,7 +435,7 @@ function initSlider() {
             setInterval(marqueeTargetFun, 20)
         }
     });
-    marqueeTargetFun();
+    // marqueeTargetFun();
 
     //project.html
     function projectPageCustom() {
@@ -1086,7 +1086,7 @@ $(function() {
     //环境详情页大图切换效果
     chainBShow();
     // 品牌页面荣誉证书
-    // award();
+     award();
     // 美妆护肤
      beautyskin();
      tool.SUActivity();//调用公益活动swiper

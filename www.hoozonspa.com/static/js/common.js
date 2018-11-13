@@ -399,11 +399,11 @@ function initSlider() {
               $("body").css("overflow-y","visible")
     }
     // developmenthistory
-    var widthLen = window.fontreset * 34.2;
+    var widthLen = window.fontreset * 42.46;
     var currLen = 0;
     var stop = false;
     var timer = null;
-    // var margueeTarget = $('.developmenthistory .slider-wraper');
+    var margueeTarget = $('.developmenthistory .slider-wraper');
     var marqueeTargetFun = function() {
         currLen++;
         if (currLen > widthLen) {
@@ -435,7 +435,7 @@ function initSlider() {
             setInterval(marqueeTargetFun, 20)
         }
     });
-    // marqueeTargetFun();
+    marqueeTargetFun();
 
     //project.html
     function projectPageCustom() {

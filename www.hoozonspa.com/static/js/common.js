@@ -399,7 +399,7 @@ function initSlider() {
               $("body").css("overflow-y","visible")
     }
     // developmenthistory
-    var widthLen = window.fontreset * 34.2;
+    var widthLen = window.fontreset * 42.46;
     var currLen = 0;
     var stop = false;
     var timer = null;
@@ -1086,7 +1086,7 @@ $(function() {
     //环境详情页大图切换效果
     chainBShow();
     // 品牌页面荣誉证书
-    award();
+     award();
     // 美妆护肤
      beautyskin();
      tool.SUActivity();//调用公益活动swiper

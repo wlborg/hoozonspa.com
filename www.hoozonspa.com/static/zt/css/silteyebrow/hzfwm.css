@@ -67,7 +67,7 @@
     width: 100%;
     height: 100%;
 
-    background: url("//img.hzshuangmei.com/pc/silteyebrow/part1-pic-2.jpg") no-repeat;
+    background: url("/static/zt/img/silteyebrow/part1-pic-2.jpg") no-repeat;
     background-size: 100%;
 }
 .part1 .txt-wrap .title {
@@ -89,7 +89,7 @@
     width: 299px;
     height: 234px;
 
-    background: url("//img.hzshuangmei.com/pc/silteyebrow/part1-pic-1-acive.png") no-repeat;
+    background: url("/static/zt/img/silteyebrow/part1-pic-1-acive.png") no-repeat;
     background-size: 100%;
 }
 .part1 .pic-item .active-1 {
@@ -98,7 +98,7 @@
     width: 299px;
     height: 234px;
 
-    background: url("//img.hzshuangmei.com/pc/silteyebrow/part1-pic-2-active.png") no-repeat;
+    background: url("/static/zt/img/silteyebrow/part1-pic-2-active.png") no-repeat;
 }
 .part1 .pic-item .active-1 .txt-wrap {
     top: 82px;
@@ -118,7 +118,7 @@
     height: 82px;
     margin-left: -155px;
 
-    background: url("//img.hzshuangmei.com/pc/silteyebrow/btn-pic.png");
+    background: url("/static/zt/img/silteyebrow/btn-pic.png");
     background-size: 100%;
 }
 .part1 .btn-wrap a,
@@ -464,7 +464,7 @@
     height: 89px;
     margin-left: -155px;
 
-    background: url("//img.hzshuangmei.com/pc/silteyebrow/part5-btn.png") no-repeat;
+    background: url("/static/zt/img/silteyebrow/part5-btn.png") no-repeat;
     background-size: 100%;
 }
 .part5 .btn-wrap a {
@@ -487,15 +487,15 @@
     width: 100%;
     height: 1108px;
 
-    background: url("//img.hzshuangmei.com/pc/silteyebrow/part6-pic-1.jpg") no-repeat;
+    background: url("/static/zt/img/silteyebrow/part6-pic-1.jpg") no-repeat;
     background-size: 100% 100%;
 }
 .swiper .bg-wrap-1 {
-    background: url("//img.hzshuangmei.com/pc/silteyebrow/part6-pic-2.jpg") no-repeat;
+    background: url("/static/zt/img/silteyebrow/part6-pic-2.jpg") no-repeat;
     background-size: 100% 100%;
 }
 .swiper .bg-wrap-2 {
-    background: url("//img.hzshuangmei.com/pc/silteyebrow/part6-pic-3.jpg") no-repeat;
+    background: url("/static/zt/img/silteyebrow/part6-pic-3.jpg") no-repeat;
     background-size: 100% 100%;
 }
 .swiper-container {
@@ -564,7 +564,7 @@
     height: 86px;
     margin-left: -126px;
 
-    background: url("//img.hzshuangmei.com/pc/silteyebrow/btn-pic-1.png") top center;
+    background: url("/static/zt/img/silteyebrow/btn-pic-1.png") top center;
     background-size: 100% 100%;
 }
 .part6 .btn-wrap a {

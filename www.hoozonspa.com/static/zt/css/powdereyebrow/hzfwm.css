@@ -11,7 +11,7 @@ body {
 /*banner结束*/
 
 /*header公共样式开始*/
-.header {
+.header-1 {
     position: relative;
 
     text-align: center;
@@ -19,14 +19,14 @@ body {
 .header-bg img {
     width: 100%;
 }
-.header .txt-wrap {
+.header-1 .txt-wrap {
     position: absolute;
     top: .7rem;
     left: 50%;
 
     margin-left: -1.75rem;
 }
-.header .txt-wrap .txt {
+.header-1 .txt-wrap .txt {
     font-size: .53rem;
     line-height: .85rem;
 
@@ -139,7 +139,7 @@ body {
     margin: 0 auto;
     margin-top: .12rem;
 
-    background: url("//img.hzshuangmei.com/pc/powdereyebrow/btn-icon.png") no-repeat;
+    background: url("/static/zt/img/powdereyebrow/btn-icon.png") no-repeat;
     background-size: 100%;
 }
 /*part1结束
@@ -193,7 +193,7 @@ body {
     height: .53rem;
     margin-left: -2.145rem;
 
-    background: url("//img.hzshuangmei.com/pc/powdereyebrow/btn-pic.png") no-repeat;
+    background: url("/static/zt/img/powdereyebrow/btn-pic.png") no-repeat;
     background-size: 100%;
 }
 .part2 .btn a,

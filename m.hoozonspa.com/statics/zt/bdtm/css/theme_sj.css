@@ -1,12 +1,12 @@
 @charset "utf-8";
 .sr-only,
 img {
-    border: 0
+    border: 0;
 }
 
 a,
 body {
-    color: #000
+    color: #000;
 }
 
 body,
@@ -27,16 +27,16 @@ li,
 p,
 textarea,
 ul {
+    padding: 0;
     margin: 0;
-    padding: 0
 }
 
 form {
-    display: inline
+    display: inline;
 }
 
 td {
-    word-break: break-all
+    word-break: break-all;
 }
 
 dd,
@@ -44,60 +44,64 @@ dl,
 dt,
 li,
 ul {
-    list-style: none
+    list-style: none;
 }
 
 a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 a:hover {
-    color: #428bca
+    color: #428bca;
 }
 
 body {
-    font: '微软雅黑', 'Microsoft Yahei', Verdana, Arial, sans-serif;
+    font: "微软雅黑", "Microsoft Yahei", Verdana, Arial, sans-serif;
+
     background: #d9e8f5;
-    padding-top: 40px
+    /* padding-top: 40px */
 }
 
-.m4 .row div.details>div h3,
+.m4 .row div.details > div h3,
 .m5-1 .row {
-    font-family: "微軟正黑體", "黑体"
+    font-family: "微軟正黑體", "黑体";
 }
 
 .img-respon {
     display: block;
     width: 100%;
-    height: auto
+    height: auto;
 }
 
 .container {
-    text-align: center;
     width: 100%;
-    margin: 0 auto
+    margin: 0 auto;
+
+    text-align: center;
 }
 
 .container .row {
-    margin: 0 auto;
     width: 16rem;
-    overflow: hidden
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .sr-only {
     position: absolute;
+
     width: 1px;
     height: 1px;
     padding: 0;
     margin: -.025rem;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0)
+    clip: rect(0, 0, 0, 0);
 }
 
 .banner {
-    background: url(../images/banner.jpg) center center no-repeat #8bd9f6;
     height: 11.025rem;
-    background-size: auto 100%
+
+    background: url(../images/banner.jpg) center center no-repeat #8bd9f6;
+    background-size: auto 100%;
 }
 
 .banner a.consult,
@@ -105,590 +109,672 @@ body {
 .m2-3 .row div.details div.col2 a.consult,
 .m4 .row div.details div.col3 a.consult {
     display: block;
-    padding-left: .55rem;
     width: 2.75rem;
     height: .85rem;
+    padding-left: .55rem;
+
+    font-size: .475rem;
     line-height: .85rem;
+
+    text-align: left;
+
+    color: #51abe1;
     border-radius: .3rem;
     background: #fff;
     box-shadow: 0 .15rem .15rem #5b8a9c;
-    color: #51abe1;
-    font-size: .475rem;
-    text-align: left
 }
 
 .banner a.consult span,
 .m1 .row a.consult span,
 .m2-3 .row div.details div.col2 a.consult span,
 .m4 .row div.details div.col3 a.consult span {
-    margin-left: .2rem;
     display: inline-block;
-    vertical-align: middle;
     width: 0;
     height: 0;
+    margin-left: .2rem;
+
+    vertical-align: middle;
+
     border-width: .1rem .2rem;
     border-style: solid;
-    border-color: #fff #fff #fff #51abe1
+    border-color: #fff #fff #fff #51abe1;
 }
 
 .m1 {
+    color: #228aa4;
     background: #d9e8f5;
-    color: #228aa4
 }
 
 .m1 .row {
-    padding: .4rem 0 .35rem
+    padding: .4rem 0 .35rem;
 }
 
 .m1 .row h2 {
-    margin: 0 auto;
     width: 4.5rem;
+    margin: 0 auto;
+
     font-size: .625rem;
     font-weight: 400;
-    border-bottom: solid 1px #228aa4
+
+    border-bottom: solid 1px #228aa4;
 }
 
 .m1 .row p {
     margin-bottom: .6rem;
-    font-size: .625rem
+
+    font-size: .625rem;
 }
 
 .m1 .row img.img1 {
-    width: 100%
+    width: 100%;
 }
 
 .m1 .row a.consult {
-    margin: 0 auto;
     position: relative;
-    top: -.5rem
+    top: -.5rem;
+
+    margin: 0 auto;
 }
 
 .m1 .row a.consult:hover {
-    color: #f88d24
+    color: #f88d24;
 }
 
 .m1 .row a.consult:hover span {
+    animation: goto .5s infinite;
+
     border-color: #fff #fff #fff #f88d24;
-    animation: goto .5s infinite
 }
 
 @keyframes goto {
     0% {
         transform: rotateZ(0);
-        transform-origin: 25% 50%
+        transform-origin: 25% 50%;
     }
     100% {
         transform: rotateZ(360deg);
-        transform-origin: 25% 50%
+        transform-origin: 25% 50%;
     }
 }
 
 .m2-1 {
+    text-align: left;
+
     background: #51abe1;
     background-size: auto 100%;
-    text-align: left
 }
 
 .m2-1 .row {
+    position: relative;
+
     color: #fefefe;
-    position: relative
 }
 
-.m2-1 .row>div {
-    width: 66.25%
+.m2-1 .row > div {
+    width: 66.25%;
 }
 
-.m2-1 .row>div h2 {
+.m2-1 .row > div h2 {
+    display: inline-block;
+    width: 9.25rem;
     height: 2.075rem;
     padding-top: .275rem;
     padding-left: .5rem;
-    display: inline-block;
-    width: 9.25rem;
+
     font-size: .7rem;
     font-weight: 400;
-    text-align: center
+
+    text-align: center;
 }
 
 .m2-1 .row p {
-    padding-left: 5.625%;
-    height: 2.35rem;
-    line-height: 2.35rem;
-    background: #93b3cf;
-    width: 28.125%;
-    font-size: 1.1rem;
     position: absolute;
     top: 0;
-    right: 0
+    right: 0;
+
+    width: 28.125%;
+    height: 2.35rem;
+    padding-left: 5.625%;
+
+    font-size: 1.1rem;
+    line-height: 2.35rem;
+
+    background: #93b3cf;
 }
 
 .m2-1 .row p span {
     position: absolute;
     left: -1rem;
-    margin-top: .825rem;
+
     display: block;
     width: 0;
     height: 0;
+    margin-top: .825rem;
+
     border-width: .35rem .5rem;
     border-style: solid;
-    border-color: #51abe1 #93b3cf #51abe1 #51abe1
+    border-color: #51abe1 #93b3cf #51abe1 #51abe1;
 }
 
 .m2-2 {
-    background: #8bd9f6
+    background: #8bd9f6;
 }
 
 .m2-2 .row {
-    padding: .65rem .35rem;
     width: 95.625%;
     max-width: 15.3rem;
-    text-align: left
+    padding: .65rem .35rem;
+
+    text-align: left;
 }
 
 .m2-2 .row div.title {
-    padding-left: 1.9rem;
     padding-bottom: 1.25rem;
+    padding-left: 1.9rem;
+
     background: url(../images/icon2_1.jpg) left top no-repeat;
-    background-size: auto 100%
+    background-size: auto 100%;
 }
 
 .m2-2 .row div.title h3 {
     width: 7.825rem;
-    background: url(../images/t2_1.jpg) left center no-repeat;
     padding-bottom: 1.425rem;
-    background-size: 100%
+
+    background: url(../images/t2_1.jpg) left center no-repeat;
+    background-size: 100%;
 }
 
-.m2-2 .row div.details>div {
-    margin-top: .6rem;
+.m2-2 .row div.details > div {
     display: inline-block;
-    vertical-align: top;
-    color: #033947;
-    width: 100%
-}
-
-.m2-2 .row div.details>div>div {
-    width: 4.1rem;
-    display: inline-block;
-    vertical-align: middle
-}
-
-.m2-2 .row div.details>div>div img {
-    display: block;
-    width: 100%
-}
-
-.m2-2 .row div.details>div>div span {
-    display: block;
-    font-size: .6rem;
-    color: #51abe1;
     width: 100%;
-    text-align: center
+    margin-top: .6rem;
+
+    vertical-align: top;
+
+    color: #033947;
 }
 
-.m2-2 .row div.details>div p {
-    margin-top: .35rem;
-    padding: .8rem .6rem;
-    width: 9.5rem;
-    float: right;
-    font-size: .7rem;
-    border: 1px solid #7f898d;
+.m2-2 .row div.details > div > div {
+    display: inline-block;
+    width: 4.1rem;
+
+    vertical-align: middle;
+}
+
+.m2-2 .row div.details > div > div img {
+    display: block;
+    width: 100%;
+}
+
+.m2-2 .row div.details > div > div span {
+    display: block;
+    width: 100%;
+
+    font-size: .6rem;
+
+    text-align: center;
+
+    color: #51abe1;
+}
+
+.m2-2 .row div.details > div p {
     position: relative;
-    text-align: justify
+
+    float: right;
+    width: 9.5rem;
+    padding: .8rem .6rem;
+    margin-top: .35rem;
+
+    font-size: .7rem;
+
+    text-align: justify;
+
+    border: 1px solid #7f898d;
 }
 
-.m2-2 .row div.details>div p.p2 {
-    font-size: .65rem
+.m2-2 .row div.details > div p.p2 {
+    font-size: .65rem;
 }
 
-.m2-2 .row div.details>div p.p3 {
-    padding: 1.75rem .6rem
+.m2-2 .row div.details > div p.p3 {
+    padding: 1.75rem .6rem;
 }
 
 .m2-3 {
-    background: #d9e8f5
+    background: #d9e8f5;
 }
 
 .m2-3 .row {
-    padding: .875rem .6rem 2.25rem;
     width: 92.5%;
     max-width: 14.8rem;
-    text-align: left
+    padding: .875rem .6rem 2.25rem;
+
+    text-align: left;
 }
 
 .m2-3 .row div.title {
     width: 8.5rem;
-    padding-left: 4.8rem;
     padding-right: 1.9rem;
     padding-bottom: 1.4rem;
+    padding-left: 4.8rem;
+
     background: url(../images/icon2_2.jpg) right top no-repeat;
-    background-size: auto 100%
+    background-size: auto 100%;
 }
 
 .m2-3 .row div.title h3 {
-    background: url(../images/t2_2.jpg) left center no-repeat;
     padding-bottom: 1.4rem;
-    background-size: 100%
+
+    background: url(../images/t2_2.jpg) left center no-repeat;
+    background-size: 100%;
 }
 
-.m2-3 .row div.details>div {
+.m2-3 .row div.details > div {
     width: 12.5rem;
-    margin-left: 1rem
+    margin-left: 1rem;
 }
 
-.m2-3 .row div.details>div img {
-    width: 100%
+.m2-3 .row div.details > div img {
+    width: 100%;
 }
 
 .m2-3 .row div.details div.col1,
 .m2-3 .row div.details div.col3 {
     font-size: .625rem;
-    color: #523a12
+
+    color: #523a12;
 }
 
 .m2-3 .row div.details div.col1 p,
 .m2-3 .row div.details div.col3 p {
     padding-top: .2rem;
-    padding-left: 1.425rem
+    padding-left: 1.425rem;
 }
 
 .m2-3 .row div.details div.col2 {
-    padding: 1.5rem 0 2.25rem
+    padding: 1.5rem 0 2.25rem;
 }
 
 .m2-3 .row div.details div.col2 a.consult {
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 .m2-3 .row div.details div.col2 a.consult:hover {
-    color: #f88d24
+    color: #f88d24;
 }
 
 .m2-3 .row div.details div.col2 a.consult:hover span {
+    animation: goto .5s infinite;
+
     border-color: #fff #fff #fff #f88d24;
-    animation: goto .5s infinite
 }
 
 .m3 {
     background: #93b3cf;
-    background-size: auto 100%
+    background-size: auto 100%;
 }
 
 .m3 .row {
-    background: url(../images/bg3.jpg) left center no-repeat;
-    background-size: auto 100%;
-    padding-left: 8rem;
     width: 8rem;
     height: 7.9rem;
+    padding-left: 8rem;
+
+    text-align: left;
+
     color: #fefdfd;
-    text-align: left
+    background: url(../images/bg3.jpg) left center no-repeat;
+    background-size: auto 100%;
 }
 
 .m3 .row div ul li span,
 .m4 .row div.title span {
-    height: 0;
     display: inline-block;
-    border-style: solid
+    height: 0;
+
+    border-style: solid;
 }
 
 .m3 .row div ul {
-    padding: 1.875rem 0 .25rem
+    padding: 1.875rem 0 .25rem;
 }
 
 .m3 .row div ul li {
-    font-size: .6rem
+    font-size: .6rem;
 }
 
 .m3 .row div ul li span {
-    vertical-align: middle;
     width: 0;
+
+    vertical-align: middle;
+
     border-width: .225rem .45rem;
-    border-color: #93b3cf #93b3cf #93b3cf #fcfcfd
+    border-color: #93b3cf #93b3cf #93b3cf #fcfcfd;
 }
 
 .m3 .row p {
+    width: 8rem;
+
     font-size: .4rem;
+
     text-align: justify;
-    width: 8rem
 }
 
 .m4 {
-    background: #8bd9f6
+    background: #8bd9f6;
 }
 
 .m4 .row {
-    padding: 1rem 0 .4rem
+    padding: 1rem 0 .4rem;
 }
 
 .m4 .row div.title h2 {
+    padding-bottom: 1.325rem;
+
     background: url(../images/t4_1.jpg) center center no-repeat;
     background-size: auto 100%;
-    padding-bottom: 1.325rem
 }
 
 .m4 .row div.title span {
+    width: 0;
     margin-top: .1rem;
     margin-bottom: -.1rem;
-    width: 0;
+
     border-width: .35rem .15rem;
-    border-color: #51abe1 #8bd9f6 #8bd9f6
+    border-color: #51abe1 #8bd9f6 #8bd9f6;
 }
 
 .m4 .row div.details div.col1,
 .m4 .row div.details div.col2 {
     width: 6rem;
-    padding-top: .55rem
+    padding-top: .55rem;
 }
 
-.m4 .row div.details>div {
+.m4 .row div.details > div {
     display: inline-block;
-    vertical-align: top;
+
     font-size: .45rem;
-    text-align: justify
+
+    text-align: justify;
+    vertical-align: top;
 }
 
-.m4 .row div.details>div h3 {
-    color: #51abe1;
+.m4 .row div.details > div h3 {
+    position: relative;
+
     font-size: .75rem;
     font-weight: 400;
-    position: relative
+
+    color: #51abe1;
 }
 
-.m4 .row div.details>div p {
+.m4 .row div.details > div p {
     height: 3.75rem;
+
     font-size: .425rem;
-    color: #81511c
+
+    color: #81511c;
 }
 
-.m4 .row div.details>div .row2 {
-    margin-top: 4.25rem
+.m4 .row div.details > div .row2 {
+    margin-top: 4.25rem;
 }
 
-.m4 .row div.details div.col1>div {
+.m4 .row div.details div.col1 > div {
     padding-left: 1.25rem;
+
     background: url(../images/icon4_1.jpg) top left no-repeat;
-    background-size: 17.5%
+    background-size: 17.5%;
 }
 
 .m4 .row div.details div.col1 .row2 {
-    background-image: url(../images/icon4_3.jpg)
+    background-image: url(../images/icon4_3.jpg);
 }
 
-.m4 .row div.details div.col2>div {
+.m4 .row div.details div.col2 > div {
     padding-right: 1.25rem;
+
     background: url(../images/icon4_2.jpg) top right no-repeat;
-    background-size: 17.5%
+    background-size: 17.5%;
 }
 
 .m4 .row div.details div.col2 .row2 {
-    background-image: url(../images/icon4_4.jpg)
+    background-image: url(../images/icon4_4.jpg);
 }
 
 .m4 .row div.details div.col3 {
-    margin-left: -.875rem;
+    width: 3.1rem;
     padding-top: 3.5rem;
-    width: 3.1rem
+    margin-left: -.875rem;
 }
 
 .m4 .row div.details div.col3 img {
-    width: 100%
+    width: 100%;
 }
 
 .m4 .row div.details div.col3 p {
-    height: auto;
+    position: relative;
+    top: -.75rem;
+
     width: 2.75rem;
+    height: auto;
     padding: .1rem .25rem;
+
     font-size: .3rem;
+
     text-align: justify;
+
     color: #81521e;
     background: #51abe1;
-    position: relative;
-    top: -.75rem
 }
 
 .m4 .row div.details div.col3 p span {
     position: absolute;
     top: -.15rem;
     left: 1.5rem;
+
     display: block;
     width: 0;
     height: 0;
-    border-style: solid;
+
     border-width: 0 .1rem .15rem;
-    border-color: transparent transparent #51abe1
+    border-style: solid;
+    border-color: transparent transparent #51abe1;
 }
 
 .m4 .row div.details div.col3 a.consult {
-    margin: 3rem auto .3rem
+    margin: 3rem auto .3rem;
 }
 
 .m4 .row div.details div.col3 a.consult:hover {
-    color: #f88d24
+    color: #f88d24;
 }
 
 .m4 .row div.details div.col3 a.consult:hover span {
+    animation: goto .5s infinite;
+
     border-color: #fff #fff #fff #f88d24;
-    animation: goto .5s infinite
 }
 
 .m5-1 {
-    background: #51abe1
+    background: #51abe1;
 }
 
 .m5-1 .row {
-    color: #fff;
+    position: relative;
+
     text-align: left;
-    position: relative
+
+    color: #fff;
 }
 
-.m5-1 .row>div {
+.m5-1 .row > div {
     width: auto;
     padding: .75rem 0;
-    overflow: hidden
+    overflow: hidden;
 }
 
-.m5-1 .row>div h2 {
+.m5-1 .row > div h2 {
     float: left;
-    font-size: 1.025rem
+
+    font-size: 1.025rem;
 }
 
-.m5-1 .row>div p {
+.m5-1 .row > div p {
     float: left;
-    padding-left: .2rem;
     width: 5rem;
-    font-size: .45rem
+    padding-left: .2rem;
+
+    font-size: .45rem;
 }
 
-.m5-1 .row>p {
+.m5-1 .row > p {
     position: absolute;
     top: 0;
     right: 0;
-    padding-left: .5rem;
+
     padding-right: .45rem;
-    line-height: 2.9rem;
-    font-size: .75rem;
+    padding-left: .5rem;
+
     font-family: "黑体";
-    background: #93b3cf
+    font-size: .75rem;
+    line-height: 2.9rem;
+
+    background: #93b3cf;
 }
 
-.m5-1 .row>p span {
+.m5-1 .row > p span {
     position: absolute;
     top: 1rem;
     left: -1.05rem;
+
     display: block;
     width: 0;
     height: 0;
-    border-style: solid;
+
     border-width: .425rem .55rem;
-    border-color: #51abe1 #93b3cf #51abe1 #51abe1
+    border-style: solid;
+    border-color: #51abe1 #93b3cf #51abe1 #51abe1;
 }
-.m5-2{
-	background: #d9e8f5;
+.m5-2 {
+    background: #d9e8f5;
 }
 .m5-2 .row {
+    padding: .9rem 0 1rem;
+
     background: url(../images/bg5.jpg) left bottom no-repeat;
     background-size: 41.875%;
-    padding: .9rem 0 1rem
 }
 
 .m5-2 .row div.title h2 {
+    padding-bottom: 2.275rem;
+    margin-bottom: .55rem;
+
     background: url(../images/t5.jpg) center center no-repeat;
     background-size: auto 100%;
-    padding-bottom: 2.275rem;
-    margin-bottom: .55rem
 }
 
 .m5-2 .row div.title span {
     display: inline-block;
-    margin-top: .5rem;
-    margin-bottom: 1.85rem;
     width: 0;
     height: 0;
-    border-style: solid;
+    margin-top: .5rem;
+    margin-bottom: 1.85rem;
+
     border-width: .7rem .375rem;
-    border-color: #51abe1 #d9e8f5 #d9e8f5
+    border-style: solid;
+    border-color: #51abe1 #d9e8f5 #d9e8f5;
 }
 
 .m5-2 .row div.details {
-    padding-left: 7.5rem;
     width: 8rem;
+    padding-left: 7.5rem;
+
+    text-align: left;
+
     color: #51abe1;
-    text-align: left
 }
 
 .m5-2 .row div.details h3 {
     font-size: .45rem;
-    border-bottom: solid 1px #51abe1
+
+    border-bottom: solid 1px #51abe1;
 }
 
 .m5-2 .row div.details h3 span {
-    font-size: .75rem
+    font-size: .75rem;
 }
 
 .m5-2 .row div.details p {
     padding: .5rem 0 1.3rem;
-    font-size: .45rem
+
+    font-size: .45rem;
 }
 
 .m5-2 .row div.details div.wrap {
-    overflow: hidden;
     width: 6.75rem;
     height: 4.75rem;
-    margin: 0 auto
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .m5-2 .row div.details div.wrap ul {
     width: 20.25rem;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .m5-2 .row div.details div.wrap ul li {
     float: left;
-    width: 6.75rem
+    width: 6.75rem;
 }
 
 .m5-2 .row div.details div.wrap ul li div {
+    display: inline-block;
     width: 2.7rem;
-    display: inline-block
 }
 
 .holdplace,
 .m5-2 .row div.details div.wrap ul li div img {
-    width: 100%
+    width: 100%;
 }
 
 .m5-2 .row div.details div.wrap ul li div p {
     padding: .3rem 0;
+
     font-size: .3rem;
     line-height: .3rem;
-    text-align: center
+
+    text-align: center;
 }
 
 .m5-2 .row div.details div.wrap ul li div.fr {
-    float: right
+    float: right;
 }
 
 .m5-2 .row div.details div.wrap ul li div.fl {
-    float: left
+    float: left;
 }
 
 .m5-2 .row div.details div.wrap:hover {
-    cursor: pointer
+    cursor: pointer;
 }
 
 .placeholder {
     width: 90%;
-    margin-top: -10px
+    margin-top: -10px;
 }
 
 .footer {
-    margin: 0 auto;
-    border: 1px solid #e1e1e1;
-    width: 100%;
-    font-size: 16px;
     position: fixed;
+    right: 0;
     bottom: 0;
     left: 0;
-    right: 0;
+    z-index: 9999;
+
+    width: 100%;
+    margin: 0 auto;
+
+    font-size: 16px;
+
+    border: 1px solid #e1e1e1;
     background-color: #fafafa;
-    z-index: 9999
 }

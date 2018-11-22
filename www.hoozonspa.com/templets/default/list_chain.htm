@@ -3,14 +3,12 @@
 <head>
 {dede:include filename="_link_list.htm"/}
  {dede:include filename="_link.htm"/}
-
 </head>
 <body>
 <!-- header -->
     {dede:include filename="nav.htm"/}
-
 <!-- banner -->
-<div class="g-container top-banner">
+<div class="g-container top-banner" id="topBanner">
        {dede:myad name='topbanner_pc'/}
 </div>
             <!-- Beauty shop -->
@@ -50,71 +48,6 @@
                                     </div>
                                 </li>
                                 {/dede:arclist}
-                                <!-- {dede:arclist typeid='11' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic2' channelid='17' limit='1,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址： [field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="[field:b_pic2 function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist}
-                                {dede:arclist typeid='11' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic3' channelid='17' limit='2,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址： [field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="[field:b_pic3 function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist}
-                                {dede:arclist typeid='11' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic4' channelid='17' limit='3,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址： [field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="[field:b_pic4 function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist}
-                                {dede:arclist typeid='11' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic5' channelid='17' limit='4,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址： [field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="[field:b_pic5 function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist}
-                                {dede:arclist typeid='11' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic6' channelid='17' limit='5,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址： [field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="[field:b_pic6 function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist} -->
                             </ul>
                         </div>
                         <a href="javascript:void(0)" class="btn prev"></a>
@@ -137,71 +70,6 @@
                                     </div>
                                 </li>
                                 {/dede:arclist}
-                             <!--    {dede:arclist typeid='12' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic2' channelid='17' limit='1,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址：[field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="[field:b_pic2 function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist}
-                                {dede:arclist typeid='12' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic3' channelid='17' limit='2,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址：[field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="[field:b_pic3 function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist}
-                                {dede:arclist typeid='12' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic4' channelid='17' limit='3,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址：[field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="[field:b_pic4 function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist}
-                                {dede:arclist typeid='12' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic5' channelid='17' limit='4,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址：[field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="[field:b_pic5 function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist}
-                                {dede:arclist typeid='12' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic6' channelid='17' limit='5,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址：[field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="[field:b_pic6 function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist} -->
                             </ul>
                         </div>
                         <a href="javascript:void(0)" class="btn prev"></a>
@@ -224,71 +92,7 @@
                                     </div>
                                 </li>
                                 {/dede:arclist}
-                              <!--   {dede:arclist typeid='14' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic2' channelid='17' limit='1,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址：[field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="[field:b_pic2 function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist}
-                                {dede:arclist typeid='14' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic3' channelid='17' limit='2,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址：[field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="[field:b_pic3 function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist}
-                                {dede:arclist typeid='14' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic4' channelid='17' limit='3,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址：[field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="[field:b_pic4 function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist}
-                                {dede:arclist typeid='14' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic5' channelid='17' limit='4,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址：[field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="[field:b_pic5 function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist}
-                                {dede:arclist typeid='14' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic6' channelid='17' limit='5,1'}
-                                <li class="slider-item">
-                                    <div class="front">
-                                        <h3>[field:title/]</h3>
-                                        <div class="line"></div>
-                                        <p>地址：[field:address/]</p>
-                                        <p>美丽热线：[field:tel/]</p>
-                                    </div>
-                                    <div class="back">
-                                        <img src="[field:b_pic6 function='replaceurl(@me)/]" alt="[field:title/]">
-                                    </div>
-                                </li>
-                                {/dede:arclist} -->
+
                             </ul>
                         </div>
                         <a href="javascript:void(0)" class="btn prev"></a>
@@ -311,159 +115,6 @@
                                     </div>
                                 </li>
                                 {/dede:arclist}
-                               <!--  {dede:arclist typeid='13' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic2' channelid='17' limit='1,1'}
-                               <li class="slider-item">
-                                   <div class="front">
-                                       <h3>[field:title/]</h3>
-                                       <div class="line"></div>
-                                       <p>地址：[field:address/]</p>
-                                       <p>美丽热线：[field:tel/]</p>
-                                   </div>
-                                   <div class="back">
-                                       <img src="[field:b_pic2 function='replaceurl(@me)/]" alt="[field:title/]">
-                                   </div>
-                               </li>
-                               {/dede:arclist}
-                               {dede:arclist typeid='13' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic3' channelid='17' limit='2,1'}
-                               <li class="slider-item">
-                                   <div class="front">
-                                       <h3>[field:title/]</h3>
-                                       <div class="line"></div>
-                                       <p>地址：[field:address/]</p>
-                                       <p>美丽热线：[field:tel/]</p>
-                                   </div>
-                                   <div class="back">
-                                       <img src="[field:b_pic3 function='replaceurl(@me)/]" alt="[field:title/]">
-                                   </div>
-                               </li>
-                               {/dede:arclist}
-                               {dede:arclist typeid='13' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic4' channelid='17' limit='3,1'}
-                               <li class="slider-item">
-                                   <div class="front">
-                                       <h3>[field:title/]</h3>
-                                       <div class="line"></div>
-                                       <p>地址：[field:address/]</p>
-                                       <p>美丽热线：[field:tel/]</p>
-                                   </div>
-                                   <div class="back">
-                                       <img src="[field:b_pic4 function='replaceurl(@me)/]" alt="[field:title/]">
-                                   </div>
-                               </li>
-                               {/dede:arclist}
-                               {dede:arclist typeid='13' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic5' channelid='17' limit='4,1'}
-                               <li class="slider-item">
-                                   <div class="front">
-                                       <h3>[field:title/]</h3>
-                                       <div class="line"></div>
-                                       <p>地址：[field:address/]</p>
-                                       <p>美丽热线：[field:tel/]</p>
-                                   </div>
-                                   <div class="back">
-                                       <img src="[field:b_pic5 function='replaceurl(@me)/]" alt="[field:title/]">
-                                   </div>
-                               </li>
-                               {/dede:arclist}
-                               {dede:arclist typeid='13' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic6' channelid='17' limit='5,1'}
-                               <li class="slider-item">
-                                   <div class="front">
-                                       <h3>[field:title/]</h3>
-                                       <div class="line"></div>
-                                       <p>地址：[field:address/]</p>
-                                       <p>美丽热线：[field:tel/]</p>
-                                   </div>
-                                   <div class="back">
-                                       <img src="[field:b_pic6 function='replaceurl(@me)/]" alt="[field:title/]">
-                                   </div>
-                               </li>
-                               {/dede:arclist}
-                                                           </ul>
-                                                       </div>
-                                                       <a href="javascript:void(0)" class="btn prev"></a>
-                                                       <a href="javascript:void(0)" class="btn next"></a>
-                                                   </div>
-                                                   陵水
-                                                   <div class="block">
-                                                       <div class="slider-wraper">
-                                                           <ul class="slider-container">
-                                 {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic1' channelid='17' limit='0,1'}
-                               <li class="slider-item">
-                                   <div class="front">
-                                       <h3>[field:title/]</h3>
-                                       <div class="line"></div>
-                                       <p>地址：[field:address/]</p>
-                                       <p>美丽热线：[field:tel/]</p>
-                                   </div>
-                                   <div class="back">
-                                       <img src="/static/img/img21.jpg"></div>
-                               </li>
-                               {/dede:arclist}
-
-                                 {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic2' channelid='17' limit='1,1'}
-                               <li class="slider-item">
-                                   <div class="front">
-                                       <h3>[field:title/]</h3>
-                                       <div class="line"></div>
-                                       <p>地址：[field:address/]</p>
-                                       <p>美丽热线：[field:tel/]</p>
-                                   </div>
-                                   <div class="back">
-                                        <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
-                                   </div>
-                               </li>
-                               {/dede:arclist}
-
-                                 {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic3' channelid='17' limit='2,1'}
-                               <li class="slider-item">
-                                   <div class="front">
-                                       <h3>[field:title/]</h3>
-                                       <div class="line"></div>
-                                       <p>地址：[field:address/]</p>
-                                       <p>美丽热线：[field:tel/]</p>
-                                   </div>
-                                   <div class="back">
-                                         <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
-                                   </div>
-                               </li>
-                               {/dede:arclist}
-                               {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic4' channelid='17' limit='3,1'}
-                               <li class="slider-item">
-                                   <div class="front">
-                                       <h3>[field:title/]</h3>
-                                       <div class="line"></div>
-                                       <p>地址：[field:address/]</p>
-                                       <p>美丽热线：[field:tel/]</p>
-                                   </div>
-                                   <div class="back">
-                                         <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
-                                   </div>
-                               </li>
-                               {/dede:arclist}
-                                 {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic5' channelid='17' limit='4,1'}
-                               <li class="slider-item">
-                                   <div class="front">
-                                       <h3>[field:title/]</h3>
-                                       <div class="line"></div>
-                                       <p>地址：[field:address/]</p>
-                                       <p>美丽热线：[field:tel/]</p>
-                                   </div>
-                                   <div class="back">
-                                         <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
-                                   </div>
-                               </li>
-                               {/dede:arclist}
-                               {dede:arclist typeid='119' row='1' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='address,tel,b_pic5' channelid='17' limit='5,1'}
-                               <li class="slider-item">
-                                   <div class="front">
-                                       <h3>[field:title/]</h3>
-                                       <div class="line"></div>
-                                       <p>地址：[field:address/]</p>
-                                       <p>美丽热线：[field:tel/]</p>
-                                   </div>
-                                   <div class="back">
-                                         <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
-                                   </div>
-                               </li>
-                               {/dede:arclist} -->
                             </ul>
                         </div>
                         <a href="javascript:void(0)" class="btn prev"></a>
@@ -520,44 +171,45 @@
                     <p class="bigtxt"><img src="{dede:global.cfg_imgpath/}/bigtxt_skincare.png"></p>
                 </div>
                 <div class="g-right">
+                     <!--海口部分-->
                      {dede:arclist typeid='11'  flag='c' orderby='id' orderway='desc' infolen='30' addfields='b_pic1,b_pic2,b_pic3,b_pic4,b_pic5,b_pic6' channelid='17'}
                     <div class="item">
-                            <img src="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
-                            <img src="[field:b_pic2 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
-                            <img src="[field:b_pic3 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
-                            <img src="[field:b_pic4 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
-                            <img src="[field:b_pic5 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
-                            <img src="[field:b_pic6 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
+                            <img src="" alt="[field:title/]"  class="lazy" data-src="[field:b_pic1 function='replaceurl(@me)/]"/>
+                            <img src="" alt="[field:title/]"  class="lazy" data-src="[field:b_pic2 function='replaceurl(@me)/]"/>
+                            <img src="" alt="[field:title/]"  class="lazy" data-src="[field:b_pic3 function='replaceurl(@me)/]"/>
+                            <img src="" alt="[field:title/]"  class="lazy" data-src="[field:b_pic4 function='replaceurl(@me)/]"/>
+                            <img src="" alt="[field:title/]"  class="lazy" data-src="[field:b_pic5 function='replaceurl(@me)/]"/>
+                            <img src="" alt="[field:title/]"  class="lazy" data-src="[field:b_pic6 function='replaceurl(@me)/]"/>
                     </div>
                       {/dede:arclist}
                        {dede:arclist typeid='12'  flag='c' orderby='id' orderway='desc' infolen='30' addfields='b_pic1,b_pic2,b_pic3,b_pic4,b_pic5,b_pic6' channelid='17'}
                     <div class="item">
-                            <img src="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
-                            <img src="[field:b_pic2 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
-                            <img src="[field:b_pic3 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
-                            <img src="[field:b_pic4 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
-                            <img src="[field:b_pic5 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
-                            <img src="[field:b_pic6 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
+                        <img src="" alt="[field:title/]"  class="lazy" data-src="[field:b_pic1 function='replaceurl(@me)/]"/>
+                        <img src="" alt="[field:title/]"  class="lazy" data-src="[field:b_pic2 function='replaceurl(@me)/]"/>
+                        <img src="" alt="[field:title/]"  class="lazy" data-src="[field:b_pic3 function='replaceurl(@me)/]"/>
+                        <img src="" alt="[field:title/]"  class="lazy" data-src="[field:b_pic4 function='replaceurl(@me)/]"/>
+                        <img src="" alt="[field:title/]"  class="lazy" data-src="[field:b_pic5 function='replaceurl(@me)/]"/>
+                        <img src="" alt="[field:title/]"  class="lazy" data-src="[field:b_pic6 function='replaceurl(@me)/]"/>
                     </div>
                       {/dede:arclist}
                       {dede:arclist typeid='13'  flag='c' orderby='id' orderway='desc' infolen='30' addfields='b_pic1,b_pic2,b_pic3,b_pic4,b_pic5,b_pic6' channelid='17'}
                     <div class="item">
-                            <img src="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
-                            <img src="[field:b_pic2 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
-                            <img src="[field:b_pic3 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
-                            <img src="[field:b_pic4 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
-                            <img src="[field:b_pic5 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
-                            <img src="[field:b_pic6 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
+                        <img src="" alt="[field:title/]"  class="lazy" data-src="[field:b_pic1 function='replaceurl(@me)/]"/>
+                        <img src="" alt="[field:title/]"  class="lazy" data-src="[field:b_pic2 function='replaceurl(@me)/]"/>
+                        <img src="" alt="[field:title/]"  class="lazy" data-src="[field:b_pic3 function='replaceurl(@me)/]"/>
+                        <img src="" alt="[field:title/]"  class="lazy" data-src="[field:b_pic4 function='replaceurl(@me)/]"/>
+                        <img src="" alt="[field:title/]"  class="lazy" data-src="[field:b_pic5 function='replaceurl(@me)/]"/>
+                        <img src="" alt="[field:title/]"  class="lazy" data-src="[field:b_pic6 function='replaceurl(@me)/]"/>
                     </div>
                       {/dede:arclist}
                        {dede:arclist typeid='14'  flag='c' orderby='id' orderway='desc' infolen='30' addfields='b_pic1,b_pic2,b_pic3,b_pic4,b_pic5,b_pic6' channelid='17'}
                     <div class="item">
-                             <img src="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
-                            <img src="[field:b_pic2 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
-                            <img src="[field:b_pic3 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
-                            <img src="[field:b_pic4 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
-                            <img src="[field:b_pic5 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
-                            <img src="[field:b_pic6 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
+                        <img src="" alt="[field:title/]"  class="lazy" data-src="[field:b_pic1 function='replaceurl(@me)/]"/>
+                        <img src="" alt="[field:title/]"  class="lazy" data-src="[field:b_pic2 function='replaceurl(@me)/]"/>
+                        <img src="" alt="[field:title/]"  class="lazy" data-src="[field:b_pic3 function='replaceurl(@me)/]"/>
+                        <img src="" alt="[field:title/]"  class="lazy" data-src="[field:b_pic4 function='replaceurl(@me)/]"/>
+                        <img src="" alt="[field:title/]"  class="lazy" data-src="[field:b_pic5 function='replaceurl(@me)/]"/>
+                        <img src="" alt="[field:title/]"  class="lazy" data-src="[field:b_pic6 function='replaceurl(@me)/]"/>
                     </div>
                       {/dede:arclist}
                 </div>
@@ -571,17 +223,17 @@
                           <div class="swiper-container">
                                 <div class="swiper-wrapper">
                                      <div class="swiper-slide">
-                                          <img src="[field:b_picdetails function='replaceurl(@me)/]" alt="[field:title/]" src class="lazy" />
+                                          <img src="" data-src="[field:b_picdetails function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
                                      </div>
                                      <div class="swiper-slide">
-                                       <img src="[field:b_picdetail2 function='replaceurl(@me)/]" alt="[field:title/]" src class="lazy" />
+                                       <img src="" data-src="[field:b_picdetails2 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
                                   </div>
                                      <div class="swiper-slide">
-                                       <img src="[field:b_picdetail3 function='replaceurl(@me)/]" alt="[field:title/]" src class="lazy" />
+                                       <img src="" data-src="[field:b_picdetails3 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
                                   </div>
-                                     <div class="swiper-slide">  <img src="[field:b_picdetails4 function='replaceurl(@me)/]" alt="[field:title/]"></div>
-                                     <div class="swiper-slide"> <img src="[field:b_picdetails5 function='replaceurl(@me)/]" alt="[field:title/]"></div>
-                                     <div class="swiper-slide"> <img src="[field:b_picdetails6 function='replaceurl(@me)/]" alt="[field:title/]"></div>
+                                     <div class="swiper-slide">  <img src="" data-src="[field:b_picdetails4 function='replaceurl(@me)/]" alt="[field:title/]"></div>
+                                     <div class="swiper-slide"> <img src="" data-src="[field:b_picdetails5 function='replaceurl(@me)/]" alt="[field:title/]"></div>
+                                     <div class="swiper-slide"> <img src="" data-src="[field:b_picdetails6 function='replaceurl(@me)/]" alt="[field:title/]"></div>
                                 </div>
                                  <!-- Add Pagination -->
                                 <div class="swiper-pagination"></div>
@@ -617,15 +269,18 @@
                     <div class="block">
                           <div class="swiper-container">
                                 <div class="swiper-wrapper">
-                                     <div class="swiper-slide">
-                                          <img src="[field:b_picdetails function='replaceurl(@me)/]" alt="[field:title/]">
-
-                                     </div>
-                                     <div class="swiper-slide">  <img src="[field:b_picdetails2 function='replaceurl(@me)/]" alt="[field:title/]"></div>
-                                     <div class="swiper-slide"> <img src="[field:b_picdetails3 function='replaceurl(@me)/]" alt="[field:title/]"></div>
-                                     <div class="swiper-slide">  <img src="[field:b_picdetails4 function='replaceurl(@me)/]" alt="[field:title/]"></div>
-                                     <div class="swiper-slide"> <img src="[field:b_picdetails5 function='replaceurl(@me)/]" alt="[field:title/]"></div>
-                                     <div class="swiper-slide"> <img src="[field:b_picdetails6 function='replaceurl(@me)/]" alt="[field:title/]"></div>
+                                    <div class="swiper-slide">
+                                        <img src="" data-src="[field:b_picdetails function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="" data-src="[field:b_picdetails2 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="" data-src="[field:b_picdetails3 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
+                                    </div>
+                                    <div class="swiper-slide">  <img src="" data-src="[field:b_picdetails4 function='replaceurl(@me)/]" alt="[field:title/]"></div>
+                                    <div class="swiper-slide"> <img src="" data-src="[field:b_picdetails5 function='replaceurl(@me)/]" alt="[field:title/]"></div>
+                                    <div class="swiper-slide"> <img src="" data-src="[field:b_picdetails6 function='replaceurl(@me)/]" alt="[field:title/]"></div>
                                 </div>
                                  <!-- Add Pagination -->
                                 <div class="swiper-pagination"></div>
@@ -660,15 +315,18 @@
                     <div class="block">
                           <div class="swiper-container">
                                 <div class="swiper-wrapper">
-                                     <div class="swiper-slide">
-                                          <img src="[field:b_picdetails function='replaceurl(@me)/]" alt="[field:title/]">
-
-                                     </div>
-                                     <div class="swiper-slide">  <img src="[field:b_picdetails2 function='replaceurl(@me)/]" alt="[field:title/]"></div>
-                                     <div class="swiper-slide"> <img src="[field:b_picdetails3 function='replaceurl(@me)/]" alt="[field:title/]"></div>
-                                     <div class="swiper-slide">  <img src="[field:b_picdetails4 function='replaceurl(@me)/]" alt="[field:title/]"></div>
-                                     <div class="swiper-slide"> <img src="[field:b_picdetails5 function='replaceurl(@me)/]" alt="[field:title/]"></div>
-                                     <div class="swiper-slide"> <img src="[field:b_picdetails6 function='replaceurl(@me)/]" alt="[field:title/]"></div>
+                                    <div class="swiper-slide">
+                                        <img src="" data-src="[field:b_picdetails function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="" data-src="[field:b_picdetails2 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="" data-src="[field:b_picdetails3 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
+                                    </div>
+                                    <div class="swiper-slide">  <img src="" data-src="[field:b_picdetails4 function='replaceurl(@me)/]" alt="[field:title/]"></div>
+                                    <div class="swiper-slide"> <img src="" data-src="[field:b_picdetails5 function='replaceurl(@me)/]" alt="[field:title/]"></div>
+                                    <div class="swiper-slide"> <img src="" data-src="[field:b_picdetails6 function='replaceurl(@me)/]" alt="[field:title/]"></div>
                                 </div>
                                  <!-- Add Pagination -->
                                 <div class="swiper-pagination"></div>
@@ -703,15 +361,18 @@
                     <div class="block">
                           <div class="swiper-container">
                                 <div class="swiper-wrapper">
-                                     <div class="swiper-slide">
-                                          <img src="[field:b_picdetails function='replaceurl(@me)/]" alt="[field:title/]">
-
-                                     </div>
-                                     <div class="swiper-slide">  <img src="[field:b_picdetails2 function='replaceurl(@me)/]" alt="[field:title/]"></div>
-                                     <div class="swiper-slide"> <img src="[field:b_picdetails3 function='replaceurl(@me)/]" alt="[field:title/]"></div>
-                                     <div class="swiper-slide">  <img src="[field:b_picdetails4 function='replaceurl(@me)/]" alt="[field:title/]"></div>
-                                     <div class="swiper-slide"> <img src="[field:b_picdetails5 function='replaceurl(@me)/]" alt="[field:title/]"></div>
-                                     <div class="swiper-slide"> <img src="[field:b_picdetails6 function='replaceurl(@me)/]" alt="[field:title/]"></div>
+                                    <div class="swiper-slide">
+                                        <img src="" data-src="[field:b_picdetails function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="" data-src="[field:b_picdetails2 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="" data-src="[field:b_picdetails3 function='replaceurl(@me)/]" alt="[field:title/]"  class="lazy" />
+                                    </div>
+                                    <div class="swiper-slide">  <img src="" data-src="[field:b_picdetails4 function='replaceurl(@me)/]" alt="[field:title/]"></div>
+                                    <div class="swiper-slide"> <img src="" data-src="[field:b_picdetails5 function='replaceurl(@me)/]" alt="[field:title/]"></div>
+                                    <div class="swiper-slide"> <img src="" data-src="[field:b_picdetails6 function='replaceurl(@me)/]" alt="[field:title/]"></div>
                                 </div>
                                  <!-- Add Pagination -->
                                 <div class="swiper-pagination"></div>

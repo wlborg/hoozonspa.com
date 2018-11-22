@@ -1715,7 +1715,8 @@ a {
     top: 3.2em;
     left: 0;
 
-    width: 68.4em;
+    /*width: 68.4em;*/
+    width: 102.31em;
     /*margin-top: .7em;*/
     height: 5.8em;
 }

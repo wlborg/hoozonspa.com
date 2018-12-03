@@ -875,9 +875,9 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     height: 1rem!important;
 }
 #div19 {
-    top: 9.7rem;
-    left: 7.5rem;
+    top: 9.7rem!important;
+    left: 7.5rem!important;
 
-    width: 4rem;
-    height: 1.2rem;
+    width: 4rem!important;
+    height: 1.2rem!important;
 }

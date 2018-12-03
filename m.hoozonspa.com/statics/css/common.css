@@ -862,3 +862,8 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     width: 100%!important;
     height: 7rem!important;
 }
+/* 快商通侧边栏 */
+#ks_ol_floatWin_img {
+    width: 1.26rem!important;
+    height: 4.12rem!important;
+}

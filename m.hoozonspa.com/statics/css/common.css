@@ -882,7 +882,10 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     height: 1.2rem!important;
 }
 .zx {
-    width: 40%;
+    width: 40%!important;
 
     background: #9e746d;
+}
+#footer .grids-item.zx .grids-txt{
+    color: #fff;
 }

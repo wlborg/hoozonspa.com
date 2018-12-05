@@ -881,3 +881,8 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     width: 4rem!important;
     height: 1.2rem!important;
 }
+.zx {
+    width: 40%;
+
+    background: #9e746d;
+}

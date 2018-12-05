@@ -895,11 +895,11 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     height: 100%;
 }
 #footer .m-grids-5 .zx .icon-consult{
-     -webkit-animation: scaleAC 1.5s linear .3s infinite;
-     -moz-animation: scaleAC 1.5s linear .3s infinite;
-     -ms-animation: scaleAC 1.5s linear .3s infinite;
-     -o-animation: scaleAC 1.5s linear .3s infinite;
-     animation: scaleAC 1.5s linear .3s infinite;
+     -webkit-animation: scaleAC 1.5s ease .3s infinite;
+     -moz-animation: scaleAC 1.5s ease .3s infinite;
+     -ms-animation: scaleAC 1.5s ease .3s infinite;
+     -o-animation: scaleAC 1.5s ease .3s infinite;
+     animation: scaleAC 1.5s ease .3s infinite;
  }
 @-webkit-keyframes scaleAC {
     0%,

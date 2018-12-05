@@ -344,6 +344,7 @@ body {
 #footer .grids-item {
     float: left;
     width: 20%;
+    height: 100%;
 }
 #footer .grids-item .grids-icon {
     width: 1.02389078rem;
@@ -888,4 +889,7 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
 }
 #footer .grids-item.zx .grids-txt{
     color: #fff;
+}
+#footer .m-grids-5{
+    overflow: hidden;
 }

@@ -97,8 +97,9 @@ body {
 .banner {
     height: 1104px;
 
-    background: url(../../img/RecoveryAfters/banner.jpg) center top no-repeat;
+    cursor: pointer;
 
+    background: url(../../img/RecoveryAfters/banner.jpg) center top no-repeat;
 }
 .m0_1 {
     height: 1394px;
@@ -768,4 +769,3 @@ body {
     margin-right: 204px!important;
     margin-left: -28px!important;
 }
-

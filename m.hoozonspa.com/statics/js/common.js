@@ -468,7 +468,7 @@ function div19Add(){
         function check() {
             var dom = document.getElementById('div19')
             if(dom) {
-                  $("#div19").addClass('div19')
+                  $("#div19").addClass('div19');
                   // 点击稍后咨询按钮隐藏，12秒后出现
                  $(document).on("click",".div19",function(){
                     var href = "https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110&ism=1";

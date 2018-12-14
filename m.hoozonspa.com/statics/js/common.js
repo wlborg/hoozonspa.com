@@ -462,6 +462,32 @@ function addScript(src) {
         document.documentElement.appendChild(scriptE);
     }
 }
+function div19Add(){
+     var timer = null
+            //  检查dom是否执行完成
+        function check() {
+            var dom = document.getElementById('div19')
+            if(dom) {
+                  $("#dom").addClass('div19')
+                  // 点击稍后咨询按钮隐藏，12秒后出现
+                 $(document).on("click",".div19",function(){
+                    var href = "https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110&ism=1";
+                    window.location.href = href;
+                     // TwShow();
+                 });
+                //  清除定时器
+                if(!timer) {
+                    clearTimeout(timer);
+
+                }
+            } else {
+                //  自我调用
+                timer = setTimeout(check, 0)
+            }
+        }
+        //  首次执行
+        check();
+}
 $(function() {
     topbanner();
     brandhistory();
@@ -471,4 +497,5 @@ $(function() {
     headerBtnClick();
     bindConsultHref();
     addScript("https://hztk5.kuaishang.cn/bs/ks.j?cI=868330&fI=65110&ism=1");
+    div19Add();//给立即咨询框加自定义事件
 });

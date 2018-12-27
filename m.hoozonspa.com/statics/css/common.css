@@ -344,6 +344,7 @@ body {
 #footer .grids-item {
     float: left;
     width: 20%;
+    height: 100%;
 }
 #footer .grids-item .grids-icon {
     width: 1.02389078rem;
@@ -846,7 +847,7 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
 #div1 {
     position: absolute!important;
     top: 9.6rem!important;
-    left: 7.3rem!important;
+    left: 1.3rem!important;
 
     width: 4.5rem!important;
     height: 1.5rem!important;
@@ -861,4 +862,94 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
 
     width: 100%!important;
     height: 7rem!important;
+}
+/* 快商通侧边栏 */
+#ks_ol_floatWin_img {
+    width: 1.26rem!important;
+    height: 4.12rem!important;
+}
+#div23 {
+    top: .3rem!important;
+    left: 11.5rem!important;
+
+    width: 1rem!important;
+    height: 1rem!important;
+}
+#div19 {
+    top: 9.7rem!important;
+    left: 7.5rem!important;
+
+    width: 4rem!important;
+    height: 1.2rem!important;
+}
+.zx {
+    width: 40%!important;
+
+    background: #9e746d;
+}
+#footer .grids-item.zx .grids-txt{
+    color: #fff;
+}
+#footer .m-grids-5{
+    overflow: hidden;
+    height: 100%;
+}
+#footer .m-grids-5 .zx .icon-consult{
+     -webkit-animation: scaleAC 1.5s ease .3s infinite;
+     -moz-animation: scaleAC 1.5s ease .3s infinite;
+     -ms-animation: scaleAC 1.5s ease .3s infinite;
+     -o-animation: scaleAC 1.5s ease .3s infinite;
+     animation: scaleAC 1.5s ease .3s infinite;
+ }
+@-webkit-keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(1.5);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+@-moz-keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(1.5);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+@-o-keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(1.5);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+@keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(1.5);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
 }

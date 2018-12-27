@@ -1,0 +1,405 @@
+/*公共样式开始*/
+body {
+	overflow-x: hidden;
+}
+a {
+	display: inline-block;
+}
+img {
+	display: block;
+}
+.w {
+	width: 12rem;
+}
+.po {
+	position: relative;
+}
+.po-a {
+	position: absolute;
+	left: 50%;
+	margin-left: -6rem;
+	/*top: 0;*/
+}
+/*公共样式结束*/
+
+/*banner 开始*/
+.banner {
+	width: 100%;
+}
+.banner a {
+	width: 100%;
+}
+.banner img {
+	width: 100%;
+}
+/*banner 结束*/
+
+/*part1 开始*/
+.bg-wrap {
+	width: 100%;
+}
+.bg-wrap img {
+	width: 100%;
+}
+.part1 .title {
+	width: 9.63rem;
+	margin: 0 auto;
+	margin-top: 1.1rem;
+}
+.part1 .title img {
+	width: 100%;
+}
+.part1 .content {
+	top: 0;
+}
+.part1 .pic-content {
+	margin-top: .64rem;
+}
+.part1 .pic-content .item {
+	float: left;
+}
+.part1 .pic-content .item:nth-child(2) {
+	margin-left: .66rem;
+}
+.part1 .pic-content .item img {
+	width: 100%;
+}
+.part1 .pic-content .item:nth-child(1) {
+	width: 7.78rem;
+}
+.part1 .item-pic-1 {
+	width: 2.48rem;
+	margin-top: .8rem;
+}
+.part1 .item-pic-2 {
+	width: 3.26rem;
+	margin-top: .32rem;
+}
+.part1 .item-pic-2 a {
+	width: 100%;
+}
+/*part1 结束*/
+
+/*part2 开始*/
+.part2 {
+
+}
+.part2 .person {
+	position: absolute;
+	top: -.53rem;
+	left: 50%;
+	margin-left: -2.12rem;
+	width: 4.24rem;
+}
+.part2 .person img {
+	width: 100%;
+}
+.part2 .circle-item {
+	position: absolute;
+    width: 2.87rem;
+}
+.part2 .circle-item:nth-child(1) {
+	left: 3.6rem;
+    top: .75rem;
+}
+.part2 .circle-item:nth-child(2) {
+	left: 3.88rem;
+    top: 3.96rem;
+}
+.part2 .circle-item:nth-child(3) {
+	left: 12.2rem;
+    top: .43rem;
+}
+.part2 .circle-item img {
+	width: 100%;
+}
+.title-banner {
+	position: relative;
+	width: 100%;
+}
+.title-banner img {
+	width: 100%;
+}
+.title-person {
+	width: 3.49rem;
+	position: absolute;
+	right: 4.99rem;
+	top: -0.89rem;
+}
+.title-person img {
+	width: 100%;
+}
+/*part2 结束*/
+
+/*part3 开始*/
+.part3 {
+	height: 10.48rem;
+}
+.part3 .left-pic {
+	position: absolute;
+	top: 1.32rem;
+	left: .84rem;
+	width: 4.84rem;
+}
+.part3 .left-pic img {
+	width: 100%;
+}
+.part3 .right-pic {
+	position: absolute;
+	top: 1.52rem;
+	right: .71rem;
+}
+.part3 .right-pic img {
+	width: 100%;
+}
+.part3 .pic-group {
+	width: 4.87rem;
+	padding-top: .72rem;
+}
+.part3 .title-pic {
+	width: 4.38rem;
+}
+.part3 .pic-item {
+	float: left;
+	width: 2.25rem;
+	margin-bottom: .4rem;
+}
+.part3 .pic-item:nth-child(2n) {
+	margin-left: .36rem;
+}
+.part3-btn {
+	width: 4.39rem;
+    margin-top: .3rem;
+    margin-left: .25rem;
+}
+.part3-btn a {
+	width: 100%;
+}
+.part3-btn a img {
+	width: 100%;
+}
+.plus {
+	width: .6rem;
+    position: absolute;
+    top: 4rem;
+    left: 2.1rem;
+}
+/*part3 结束*/
+
+/*part4 开始*/
+.part4 {
+	
+}
+.part4 .title {
+	width: 7.17rem;
+	margin: 0 auto;
+	margin-top: 3rem;
+}
+.part4 .title img {
+	width: 100%;
+}
+.part4 .po-a {
+	top: 0;
+}
+.part4-group .left-icon {
+	width: 2.28rem;
+	display: inline-block;
+	vertical-align: middle;
+}
+.part4-group .txt-item:nth-child(1) {
+	margin-top: .4rem;
+    margin-left: .7rem;
+}
+.part4-group .txt-item:nth-child(2) {
+	margin-top: 1.08rem;
+    margin-left: .7rem;
+}
+.part4-group .txt-item:nth-child(3) {
+	margin-top: 1rem;
+    margin-left: .7rem;
+
+}
+.part4-group .txt-item:nth-child(4) {
+	margin-top: 1rem;
+    margin-left: .7rem;
+
+}
+.part4-group .left-icon img {
+	width: 100%;
+}
+.part4-group .txt-detail {
+	display: inline-block;
+    width: 7rem;
+    font-size: 0.4rem;
+    line-height: 0.6rem;
+    color: #9288a9;
+    vertical-align: middle;
+    margin-left: .5rem;
+    text-align: justify;
+}
+.part4-group .txt-item:nth-child(4) .txt-detail {
+	width: 6rem;
+}
+.part4-btn {
+	position: absolute;
+	bottom: -1.11rem;
+	width: 2.15rem;
+	left: 50%;
+	margin-left: -1.052rem;
+}
+.part4-btn a {
+	width: 100%;
+}
+.part4-btn img {
+	width: 100%;
+}
+/*part4 结束*/
+
+/*part5 开始*/
+.part5 {
+	height: 11.18rem;
+}
+.part5 .left-person, .part5 .right-person {
+	display: inline-block;
+}
+.part5 .left-person {
+	width: 6.09rem;
+}
+.part5 .right-person {
+	width: 5.57rem;
+	margin-left: -.34rem;
+}
+.part5 .top-pic {
+	width: 11.66rem;
+	margin: 0 auto;
+	margin-top: 1.22rem;
+}
+.part5 .top-pic img {
+	width: 100%;
+}
+.bot-pic .pic {
+	display: inline-block;
+}
+.bot-pic .pic:nth-child(1) {
+	width: 5rem;
+	margin-right: .6rem;
+}
+.bot-pic .pic:nth-child(2) {
+	width: 4.93rem;
+}
+.bot-pic .pic img {
+	width: 100%;
+}
+.bot-pic {
+	width: 10.93rem;
+	margin: 0 auto;
+	margin-top: .6rem;
+}
+/*part5 结束*/
+
+/*part6 开始*/
+
+.part6 .title {
+	width: 5.09rem;
+	margin: 0 auto;
+	margin-top: 1.22rem;
+}
+.part6 .po-a {
+	top: 0;
+}
+.part6 .title img {
+	width: 100%;
+}
+.part6-pic {
+	width: 12.7rem;
+	margin: 0 auto;
+	margin-top: .7rem;
+}
+.part6 .part6-pic .item {
+	display: inline-block;
+	width: 5.85rem;
+}
+.part6 .part6-pic .item:nth-child(1) {
+	margin-right: .15rem;
+}
+.part6-pic img {
+	width: 100%;
+}
+.part6-btn {
+	position: absolute;
+	bottom: 1rem;
+	left: 50%;
+	width: 3.26rem;
+	margin-left: -1.63rem;
+}
+.part6-btn a {
+	width: 100%;
+}
+.part6-btn img {
+	width: 100%;
+}
+/*part6 结束*/
+
+
+/*part7 开始*/
+.part7 {
+	height: 6.45rem;
+}
+.part7 .title {
+	width: 6.3rem;
+	margin: 0 auto;
+	margin-top: 1.05rem;
+}
+.part7 .title img {
+	width: 100%;
+}
+.link-bg {
+	width: 11.26rem;
+	margin: 0 auto;
+	margin-top: .8rem;
+}
+.link-item {
+	width: 100%;
+	margin-top: .1rem;
+}
+.link-item a {
+	position: relative;
+	width: 100%;
+	border-bottom: 1px dashed #7581a3;
+	color: #7581a3;
+	height: .22rem;
+}
+.link-item a:hover {
+	color: #f1a89b;
+	border-bottom:  1px dashed #f1a89b;
+}
+.link-item a span:nth-child(1) {
+	font-size: 0.24rem;
+	position: absolute;
+	display: inline-block;
+	background: #fff;
+	left: 0;
+	width: 3rem;
+}
+.link-item a span:nth-child(2) {
+	font-size: 0.222rem;
+	position: absolute;
+	display: inline-block;
+	background: #fff;
+	right: 0;
+	width: 1.27rem;
+    text-align: right;
+}
+.link-item-2 a span:nth-child(1) {
+	width: 3.7rem;
+}
+.link-item-3 a span:nth-child(1) {
+	width: 2.75rem;
+}
+.link-item-4 a span:nth-child(1) {
+	width: 3.23rem;
+}
+.link-item-5 a span:nth-child(1) {
+	width: 3rem;
+}
+/*part7 结束*/

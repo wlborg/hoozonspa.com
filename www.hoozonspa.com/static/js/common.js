@@ -1099,3 +1099,16 @@ $(function() {
      tool.showEmbroideryL();//项目列表页click显示对应图片
      //tool.showEm();//项目列表页进入视图
 });
+
+// 增加PC端公告
+
+$(document).ready( function(){
+    $( '#howdy' ).howdyDo({
+        action      : 'hover',
+        effect      : 'slide',
+        easing      : 'easeInOutExpo',
+        duration    : 600,
+        openAnchor  : '<img src="/static/images/down-arr-16x16.png" border=0 />',
+        closeAnchor : '<img src="/static/images/close-16x16.png" border=0 />'
+    });
+});

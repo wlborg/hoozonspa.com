@@ -471,3 +471,6 @@ span {
 
 }
 /*part8 結束*/
+.part8 .item a span{
+	float: left;
+}

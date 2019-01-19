@@ -384,6 +384,7 @@ span {
 	width: 1312px;
 	margin: 0 auto;
 	margin-top: 84px;
+	overflow: hidden;
 }
 .part7 .example .item {
 	float: left;

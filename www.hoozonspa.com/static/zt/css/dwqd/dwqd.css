@@ -2,9 +2,6 @@
 body {
     overflow-x: hidden;
 }
-a {
-    display: inline-block;
-}
 img {
     display: block;
 }
@@ -101,7 +98,7 @@ span {
 }
 .part1-btn {
     position: absolute;
-    bottom: 54px;
+    bottom: 36px;
     left: 0;
 
     width: 237px;
@@ -115,7 +112,7 @@ span {
 .part2 {
     position: relative;
 
-    height: 595px;
+    height: 608px;
 
     background-color: #f3e2d5;
 }

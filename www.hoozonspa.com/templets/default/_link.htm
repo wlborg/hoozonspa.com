@@ -19,4 +19,9 @@
 <link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/site.css">
 <link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/animate.min.css">
 <link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/lrtk.css">
-
+<script>
+    //注册 serviceworker
+  if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/serviceworker.js');
+     }
+</script>

@@ -1031,7 +1031,8 @@ $(function() {
          // 快商通链接跳转
                    kst:function(){
                         $(".j-consult").bind("click",function(){
-                            var href="https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110";
+                            // var href="https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110";
+                             var href="https://www.hoozonspa.com/kst.html";
                             window.open(href,"_blank");
                         })
                     },

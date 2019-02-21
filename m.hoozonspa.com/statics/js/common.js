@@ -442,8 +442,10 @@ function bindConsultHref() {
         //给每个咨询元素绑定单击事件
         consultEs.each(function(index) {
             $(this).on('click', function() {
-                var href = "https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110&ism=1";
-                window.location.href = href;
+                // var href = "https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110&ism=1";
+                 var href = "https://m.hoozonspa.com/kst.html";
+                // window.location.href = href;
+                window.open(href,"_blank");
             })
         });
     } else {

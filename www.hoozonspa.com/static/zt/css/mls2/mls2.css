@@ -29,7 +29,7 @@ body {
 }
 .part1_title_info {
     position: absolute;
-    top: 30px;
+    top: 12px;
     left: 278px;
 
     width: 777px;
@@ -52,26 +52,26 @@ body {
 @font-face {
     font-family: "HYXiaoBoMeiYanTiW";
 
+    src: url("../HYXiaoBoMeiYanTiW.eot");
     src: url("../HYXiaoBoMeiYanTiW.woff") format("woff"),
     url("../HYXiaoBoMeiYanTiW.ttf") format("truetype"),
     url("../HYXiaoBoMeiYanTiW.svg") format("svg");
-    src: url("../HYXiaoBoMeiYanTiW.eot");
 }
 @font-face {
     font-family: "SourceHanSansCN-Regular";
 
+    src: url("../SourceHanSansCN-Regular.eot");
     src: url("../SourceHanSansCN-Regular.woff") format("woff"),
     url("../SourceHanSansCN-Regular.ttf") format("truetype"),
     url("../SourceHanSansCN-Regular.svg") format("svg");
-    src: url("../SourceHanSansCN-Regular.eot");
 }
 @font-face {
     font-family: "SourceHanSansCN-Bold";
 
+    src: url("../SourceHanSansCN-Bold.eot");
     src: url("../SourceHanSansCN-Bold.woff") format("woff"),
     url("../SourceHanSansCN-Bold.ttf") format("truetype"),
     url("../SourceHanSansCN-Bold.svg") format("svg");
-    src: url("../SourceHanSansCN-Bold.eot");
 }
 .part1_title_info {
     font-family: "HYXiaoBoMeiYanTiW";

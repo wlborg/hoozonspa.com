@@ -442,8 +442,10 @@ function bindConsultHref() {
         //给每个咨询元素绑定单击事件
         consultEs.each(function(index) {
             $(this).on('click', function() {
-                var href = "https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110&ism=1";
-                window.location.href = href;
+                // var href = "https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110&ism=1";
+                 var href = "https://m.hoozonspa.com/kst.html";
+                // window.location.href = href;
+                window.open(href,"_blank");
             })
         });
     } else {
@@ -462,6 +464,38 @@ function addScript(src) {
         document.documentElement.appendChild(scriptE);
     }
 }
+function div19Add(){
+     var timer = null;
+            //  检查dom是否执行完成
+        function check() {
+            var dom = document.getElementById('div19');
+            if(dom) {
+                 $(document).on("click","#div19",function(){
+                    var href = "https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110&ism=1";
+                    window.location.href = href;
+                     // TwShow();
+                 });
+                   $("#div19").on("click",function(){
+                    var href = "https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110&ism=1";
+                    window.location.href = href;
+                     // TwShow();
+                 });
+                 $("#div19").addClass('j-consult');
+                  // 点击稍后咨询按钮隐藏，12秒后出现
+                 bindConsultHref();
+                 return;
+                //  清除定时器
+                if(!timer) {
+                    clearTimeout(timer);
+                }
+            } else {
+                //  自我调用
+                timer = setTimeout(check, 0);
+            }
+        }
+        //  首次执行
+        check();
+}
 $(function() {
     topbanner();
     brandhistory();
@@ -471,4 +505,13 @@ $(function() {
     headerBtnClick();
     bindConsultHref();
     addScript("https://hztk5.kuaishang.cn/bs/ks.j?cI=868330&fI=65110&ism=1");
+    div19Add();//给立即咨询框加自定义事件
+});
+
+//google quicklink
+//https://github.com/GoogleChromeLabs/quicklink
+!function(e,n){"object"==typeof exports&&"undefined"!=typeof module?module.exports=n():"function"==typeof define&&define.amd?define(n):e.quicklink=n()}(this,function(){var e={};function n(e){return new Promise(function(n,t){var r=new XMLHttpRequest;r.open("GET",e,r.withCredentials=!0),r.onload=function(){200===r.status?n():t()},r.send()})}var t,r,i=(t="prefetch",((r=document.createElement("link")).relList||{}).supports&&r.relList.supports(t)?function(e){return new Promise(function(n,t){var r=document.createElement("link");r.rel="prefetch",r.href=e,r.onload=n,r.onerror=t,document.head.appendChild(r)})}:n);function o(t,r,o){if(!(e[t]||(o=navigator.connection)&&((o.effectiveType||"").includes("2g")||o.saveData)))return(r?function(e){return null==self.fetch?n(e):fetch(e,{credentials:"include"})}:i)(t).then(function(){e[t]=!0})}var u=u||function(e){var n=Date.now();return setTimeout(function(){e({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-n))}})},1)},c=new Set,f=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting){var n=e.target.href;c.has(n)&&a(n)}})});function a(e){c.delete(e),o(new URL(e,location.href).toString(),f.priority)}return function(e){e=Object.assign({timeout:2e3,priority:!1,timeoutFn:u,el:document},e),f.priority=e.priority;var n=e.origins||[location.hostname],t=e.ignores||[];e.timeoutFn(function(){e.urls?e.urls.forEach(a):Array.from(e.el.querySelectorAll("a"),function(e){f.observe(e),n.length&&!n.includes(e.hostname)||function e(n,t){return Array.isArray(t)?t.some(function(t){return e(n,t)}):(t.test||t).call(t,n.href,n)}(e,t)||c.add(e.href)})},{timeout:e.timeout})}});
+
+window.addEventListener('load', () =>{
+   quicklink();
 });

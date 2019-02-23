@@ -1,0 +1,501 @@
+body {
+    overflow-x: hidden;
+}
+._comm_abs {
+    position: absolute;
+}
+.bannerImg {
+    width: 100%;
+
+    cursor: pointer;
+}
+.part1 {
+    width: 100%;
+    height: 865px;
+    overflow: hidden;
+
+    background: #fff;
+}
+.w1200 {
+    position: relative;
+
+    width: 1200px;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+.part1_title {
+    display: block;
+    margin: 92px auto 0;
+}
+.part1_title_info {
+    position: absolute;
+    top: 12px;
+    left: 278px;
+
+    width: 777px;
+    height: 45px;
+
+    line-height: 45px;
+}
+.part1_title_info > span {
+    font-family: "HYXiaoBoMeiYanTiW";
+    font-size: 56px;
+
+    color: rgb(112,67,48);
+}
+.part1_title_info > span:nth-of-type(1) {
+    color: rgb(112,67,48);
+}
+.part1_title_info > span:nth-of-type(2) {
+    color: rgb(232,94,83);
+}
+@font-face {
+    font-family: "HYXiaoBoMeiYanTiW";
+
+    src: url("../HYXiaoBoMeiYanTiW.woff") format("woff"),
+    url("../HYXiaoBoMeiYanTiW.ttf") format("truetype"),
+    url("../HYXiaoBoMeiYanTiW.svg") format("svg");
+    src: url("../HYXiaoBoMeiYanTiW.eot");
+}
+@font-face {
+    font-family: "SourceHanSansCN-Regular";
+
+    src: url("../SourceHanSansCN-Regular.woff") format("woff"),
+    url("../SourceHanSansCN-Regular.ttf") format("truetype"),
+    url("../SourceHanSansCN-Regular.svg") format("svg");
+    src: url("../SourceHanSansCN-Regular.eot");
+}
+@font-face {
+    font-family: "SourceHanSansCN-Bold";
+
+    src: url("../SourceHanSansCN-Bold.woff") format("woff"),
+    url("../SourceHanSansCN-Bold.ttf") format("truetype"),
+    url("../SourceHanSansCN-Bold.svg") format("svg");
+    src: url("../SourceHanSansCN-Bold.eot");
+}
+.part1_title_info {
+    font-family: "HYXiaoBoMeiYanTiW";
+}
+.part1_con {
+    display: block;
+    margin: 61px auto 0;
+}
+._comm_part1 {
+    /* top: 0px; */
+    height: 28px;
+
+    font-family: "SourceHanSansCN-Regular";
+    font-size: 28px;
+    line-height: 28px;
+
+    color: rgb(112,67,48);
+}
+._comm_part2 {
+    height: 28px;
+
+    font-family: "SourceHanSansCN-Regular";
+    font-size: 28px;
+    line-height: 28px;
+
+    color: rgb(232,94,83);
+}
+
+.part1_span1 {
+    top: 239px;
+    left: 152px;
+}
+.part1_span2 {
+    top: 275px;
+    left: 150px;
+}
+.part1_span3 {
+    top: 215px;
+    /* top: 307px; */
+    right: 245px;
+}
+.part1_span4 {
+    /* top: 0; */
+    top: 341px;
+    top: 249px;
+    right: 245px;
+}
+.part1_span5 {
+    top: 397px;
+    left: 210px;
+}
+.part1_span6 {
+    top: 433px;
+    left: 210px;
+}
+.part1_span7 {
+    top: 348px;
+    right: 150px;
+}
+.part1_span8 {
+    top: 382px;
+    right: 150px;
+}
+.part1_span9 {
+    top: 499px;
+    right: 180px;
+}
+.part1_span10 {
+    top: 534px;
+    right: 180px;
+}
+.part1_more {
+    top: 559px;
+    left: 138px;
+
+    cursor: pointer;
+}
+.part2 {
+    width: 100%;
+    height: 374px;
+}
+.part2_banner {
+    top: 0;
+    left: -360px;
+
+    display: block;
+}
+.part2_span1 {
+    position: absolute;
+    top: 43px;
+    left: 100px;
+
+    width: 210px;
+    height: 42px;
+
+    font-family: "SourceHanSansCN-Regular";
+    font-size: 42px;
+    line-height: 42px;
+
+    color: rgb(232,94,83);
+}
+.part2_span2 {
+    top: 91px;
+    left: 101px;
+
+    height: 42px;
+
+    font-family: "SourceHanSansCN-Bold";
+    font-size: 42px;
+    line-height: 42px;
+
+    color: rgb(134,96,81);
+}
+.part2_span3 {
+    top: 140px;
+    left: 101px;
+
+    height: 42px;
+    /* font-weight: bold; */
+
+    font-family: "SourceHanSansCN-Bold";
+    font-size: 42px;
+    line-height: 42px;
+
+    color: rgb(134,96,81);
+}
+.part2_span4 {
+    top: 272px;
+    left: 476px;
+
+    width: 168px;
+
+    font-family: "SourceHanSansCN-Regular";
+    font-size: 24px;
+    line-height: 28px;
+
+    color: rgb(112,67,48);
+}
+.part2_span5 {
+    top: 272px;
+    left: 737px;
+
+    width: 168px;
+
+    font-family: "SourceHanSansCN-Regular";
+    font-size: 24px;
+    line-height: 28px;
+
+    color: rgb(112,67,48);
+}
+.part2_span6 {
+    top: 272px;
+    left: 1000px;
+
+    width: 168px;
+
+    font-family: "SourceHanSansCN-Regular";
+    font-size: 24px;
+    line-height: 28px;
+
+    color: rgb(112,67,48);
+}
+.part2  .w1200 {
+    height: 100%;
+}
+.part2_more {
+    bottom: 57px;
+    left: 53px;
+}
+.part3 {
+    width: 100%;
+    height: 1183px;
+}
+.part3 .w1200,
+.part4 .w1200,
+.part5 .w1200,
+.part6 .w1200,
+.part7 .w1200 {
+    height: 100%;
+}
+.part3_title {
+    display: block;
+    margin: 92px auto 0;
+}
+.part3_span1 > span {
+    font-family: "HYXiaoBoMeiYanTiW";
+    font-size: 56px;
+
+    color: rgb(112,67,48);
+}
+.part3_span1 {
+    top: -16px;
+    left: 291px;
+}
+.part3_span2_Two {
+    color: rgb(233,108,97)!important;
+}
+.part3_span2 {
+    /* text-align: center; */
+    width: 1180px;
+    margin: 85px auto 0;
+
+    font-family: "SourceHanSansCN-Regular";
+    font-size: 24px;
+    line-height: 33px;
+
+    color: rgb(112,67,48);
+}
+.part3_con {
+    margin-top: 25px;
+}
+.part4_span,
+.part5_span,
+.part6_span {
+    font-size: 22px;
+    line-height: 33px;
+
+    color: rgb(134,96,81);
+}
+.part4_span {
+    top: 309px;
+    left: 436px;
+
+    width: 421px;
+}
+.part5_span_zz {
+    top: 515px;
+    top: 102px;
+    left: 459px;
+    left: 378px;
+
+    width: 662px;
+
+    font-size: 56px;
+
+    color: rgb(112,67,48);
+}
+.part5_span_zz > span {
+    font-family: "HYXiaoBoMeiYanTiW";
+}
+.part5_span {
+    top: 424px;
+    left: 467px;
+
+    width: 660px;
+}
+.part6_span {
+    top: 578px;
+    left: 425px;
+
+    width: 421px;
+}
+.part3_more {
+    top: 625px;
+    right: 44px;
+}
+.part4 {
+    height: 1010px;
+}
+.part4_banner {
+    top: 0;
+    left: -360px;
+}
+.part4_title {
+    top: 90px;
+    left: 30px;
+}
+.part4_more {
+    top: 780px;
+    right: 124px;
+
+    cursor: pointer;
+}
+.part5 {
+    height: 828px;
+}
+.part5_banner {
+    top: 0;
+    left: -360px;
+}
+.part5_title {
+    top: 91px;
+    left: 50%;
+
+    margin-left: -323.5px;
+}
+.part5_span_zz > span {
+    font-family: "HYXiaoBoMeiYanTiW";
+}
+.part5_span_two {
+    color: rgb(233,108,97);
+}
+.part5_bz > p:nth-of-type(1) {
+    height: 30px;
+
+    font-family: "SourceHanSansCN-Bold";
+    font-size: 30px;
+    line-height: 30px;
+
+    text-align: center;
+
+    color: rgb(134,96,81);
+}
+.part5_bz > p:nth-of-type(2) {
+    width: 221px;
+    margin-top: 14.5px;
+
+    font-family: "SourceHanSansCN-Regular";
+    font-size: 22px;
+    line-height: 33px;
+
+    color: rgb(134,96,81);
+}
+.part5_bz,
+.part5_bz2,
+.part5_bz3,
+.part5_bz4 {
+    top: 265px;
+}
+.part5_bz1 {
+    left: 29px;
+}.part5_bz2 {
+
+    left: 338px;
+}.part5_bz3 {
+
+    left: 644px;
+}.part5_bz4 {
+
+    left: 952px;
+}
+.part5_p_t {
+    width: 224px!important;
+}
+.part5_p_f {
+    width: 224px!important;
+}
+.part5_more {
+    bottom: 86px;
+    left: 50%;
+
+    margin-left: -168px;
+
+    cursor: pointer;
+}
+.part6 {
+    height: 995px;
+}
+.part6_title {
+    display: block;
+    margin: 93px auto 0;
+
+    font-family: "HYXiaoBoMeiYanTiW";
+    font-size: 56px;
+}
+.part6_span_zz > span {
+    font-family: "HYXiaoBoMeiYanTiW";
+    font-size: 56px;
+
+    color: rgb(112,67,48);
+}
+.part6_span_zz > span:nth-of-type(2) {
+    color: rgb(231,94,84);
+}
+.part6_con {
+    display: block;
+    margin: 57px auto 0;
+}
+.part6_more {
+    bottom: 77px;
+    left: 50%;
+
+    display: block;
+    margin-left: -122px;
+
+    cursor: pointer;
+}
+.part8_banner {
+    left: -360px;
+}
+.part7 {
+    height: 642px;
+}
+.part7_title {
+    top: 113px;
+    left: 50%;
+
+    display: block;
+    margin-left: -324px;
+
+    cursor: pointer;
+    /* margin: 113px auto 0px; */
+    text-align: center;
+}
+.part7 ul {
+    top: 265px;
+
+    font-family: "SourceHanSansCN-Regular";
+    font-size: 30px;
+    line-height: 60px;
+
+    color: rgb(134,96,81);
+}
+.part7 ul li {
+    font-family: "SourceHanSansCN-Regular";
+
+    cursor: pointer;
+}
+.part7_m1 {
+    top: 280px;
+    right: 0;
+}
+.part7_m2 {
+    top: 340px;
+    right: 0;
+}
+.part7_m3 {
+    top: 399px;
+    right: 0;
+}
+.part7_m4 {
+    top: 459px;
+    right: 0;
+}
+.part7_m {
+    cursor: pointer;
+}

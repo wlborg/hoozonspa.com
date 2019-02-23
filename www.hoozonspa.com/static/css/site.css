@@ -1715,7 +1715,8 @@ a {
     top: 3.2em;
     left: 0;
 
-    width: 68.4em;
+    /*width: 68.4em;*/
+    width: 102.31em;
     /*margin-top: .7em;*/
     height: 5.8em;
 }
@@ -4331,6 +4332,9 @@ a {
     background: #e7dfde;
 }
 .projectdes .g-left .more {
+    position: relative;
+    z-index: 1;
+
     display: block;
     width: 6em;
     height: 1.8em;
@@ -4431,6 +4435,9 @@ a {
     background: #977472;
 }
 .effect .g-left .more {
+    position: RELATIVE;
+    z-index: 22;
+
     display: block;
     width: 6em;
     height: 1.8em;

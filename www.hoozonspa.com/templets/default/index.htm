@@ -4,13 +4,12 @@
 <title>{dede:global.cfg_webname/}</title>
 {dede:include filename="_link.htm"/}
 <link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/index_swiper.css">
-<link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/swiper.min.css">
 </head>
 <body>
 <!-- header -->
     {dede:include filename="nav.htm"/}
 <!-- banner -->
-<div class="g-container top-banner">
+<div class="g-container top-banner" id="topBanner">
     {dede:myad name='topbanner_pc'/}
 </div>
 <!-- brand   -->
@@ -22,7 +21,7 @@
                 海口红妆美容管理有限公司，“一百年只做一件事，
                 使更多的女性拥有健康与美丽。”这是红妆人以专注
                 的企业精神实现中国美业民族品牌的理想
-                与使命，也是红妆人以22年的匠心技术与温馨服务实
+                与使命，也是红妆人以23年的匠心技术与温馨服务实
                 现对每一位红妆客户的承诺。
             </p>
             <div class="line"></div>
@@ -425,7 +424,7 @@
     <div class="g-right">
         <div class="slider-wraper">
             <ul>
-                 {dede:arclist typeid='6' row='3' flag='c' orderby='id' orderway='desc' infolen='30' addfields='b_pic1' channelid='17' }
+                 {dede:arclist typeid='6' row='6' flag='c' orderby='id' orderway='desc' infolen='30' addfields='b_pic1' channelid='17' }
                  <a href="/shop">
                   <li class="slider-item"><img src="[field:b_pic1 function='replaceurl(@me)/]" alt="[field:title/]"></li>
                  </a>
@@ -480,8 +479,11 @@
 </div>
 <!-- question and answer -->
 {dede:include filename="_question.htm"/}
+<script type="text/javascript" src="{dede:global.cfg_jspath/}/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_jspath/}/jquery.easing.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_jspath/}/index_alone.js"></script>
 <!-- footer -->
 {dede:include filename="footer.htm"/}
-<script type="text/javascript" src="{dede:global.cfg_jspath/}/index_alone.js"></script>
+
 </body>
 </html>

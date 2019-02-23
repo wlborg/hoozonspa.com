@@ -7,7 +7,7 @@
              slidesPerColumn: 2,
              slidesPerGroup : 3,
              spaceBetween:0,
-             autoplay:2500,
+             autoplay:true,
              pagination: {
               el: '.project-pagination',
               clickable: true,
@@ -172,4 +172,4 @@
         })
       }
       startStopVideo("video");
-    })
+    });

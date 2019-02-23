@@ -189,7 +189,7 @@ ScrollToDo.prototype.init = function() {
     var self = this;
     this.scrollH = $(document).scrollTop();
     $(window).scroll(function() { debounce(self.do(self), 200) });
-}
+};
 ScrollToDo.prototype.do = function(self) {
     var scrollH = self.scrollH = $(document).scrollTop();
     var targets = self.targets;
@@ -223,22 +223,12 @@ function tabs(tabIndex, tab) {
 
     });
 }
-// 鼠标经过切换
-function tabsHov(tabIndex, tab) {
-    tabIndex.click(function(e) {
-        var index = $(this).index();
-        if (tab && tab.find('li')) {
-            tab.find('li').removeClass('active');
-        }
-        $(this).addClass('active').siblings().removeClass('active');
-        if (tab) {
-
-            tab.eq(index).addClass('active').siblings().removeClass('active');
-
-        }
-
-    });
-}
+   function hiddBody(){
+              $("body").css("overflow-y","hidden")
+   }
+   function showBody(){
+              $("body").css("overflow-y","visible")
+   }
 function initSlider() {
     // Hot project
     var sliders1 = $(".hotproject .project-block");
@@ -342,28 +332,11 @@ function initSlider() {
             prevBtn: sliders2.eq(i2).find(".prev")
         });
     }
+    //美容分院部分
     tabs($('.shops .g-left').find('li'), $('.shops .block'));
     //默认显示第一个分院
     sliders2.eq(0).addClass('active').siblings().removeClass('active');
     $('.shops .g-left').find('li').eq(0).addClass('active').siblings().removeClass('active');
-    //Environmental Science
-    //
-    // tabs($('.environmental .g-left').find('li'), $('.environmental .item'));
-    //
-     // 环境分院点击
-    $('.environmental .g-left li').eq(0).addClass('active');
-    $('.environmental .item').eq(0).addClass('active');
-    $('.environmental .g-left li').click(function(e) {
-        $('.environmental .g-left li.active').removeClass('active');
-       var index=$(".environmental .g-left").find("li").index($(this))
-        // var index = $(this).data('id');
-        $(this).addClass('active');
-        $('.environmental .item.active').removeClass('active');
-        $('.environmental .item').eq(index).addClass('active');
-        $('.environmentalImgs .block.active').removeClass('active');
-        $('.environmentalImgs .block').eq(index).addClass('active');
-        // hiddBody();
-    });
             function hiddBody(){
               $("body").css("overflow-y","hidden")
             }
@@ -383,20 +356,6 @@ function initSlider() {
             indicator: sliders3.eq(i3).find(".slider-indicator"),
         });
     }
-    // 环境详情页点击小图
-    $('.environmental .item').click(function() {
-        var index=$(this).index();
-        // $('.fullscreen').hide();
-        $('.fullscreen').eq(index).addClass('show');
-        $('.header ').removeClass('fixed');
-        hiddBody();
-        $('.fullscreen .close').click(function() {
-            $('.header ').addClass('fixed');
-            $('.fullscreen').removeClass('show');
-            showBody();
-        })
-    });
-
     //casesImgs
     $('.cases .g-left li').click(function(e) {
         $('.cases .g-left li.active').removeClass('active');
@@ -433,8 +392,14 @@ function initSlider() {
             showBody();
         })
     });
+    function hiddBody(){
+              $("body").css("overflow-y","hidden")
+             }
+             function showBody(){
+              $("body").css("overflow-y","visible")
+    }
     // developmenthistory
-    var widthLen = window.fontreset * 34.2;
+    var widthLen = window.fontreset * 42.46;
     var currLen = 0;
     var stop = false;
     var timer = null;
@@ -481,13 +446,7 @@ function initSlider() {
         }
     }
     projectPageCustom();
-    // 面部护理
-    tabsHov($('#beautyspa').find('li'), $('#beautyspa ul'));
-    // tabs($('#beautyspa').find('li'), $('#beautyspa ul'));
-    tabsHov($('#optoelectronic').find('li'), $('#optoelectronic ul'));
-    // tabs($('#optoelectronic').find('li'), $('#optoelectronic ul'));
-    tabsHov($('#embroidery').find('li'), $('#embroidery ul'));
-    // tabs($('#embroidery').find('li'), $('#embroidery ul'));
+
 }
 function lightNav() {
     var url = window.location.href;
@@ -514,14 +473,12 @@ function lightNav() {
     });
 
 }
-
 function lightNavCustom() {
     var targetNav = $('.header li');
     targetNav.click(function() {
         $(this).addClass("active").siblings().removeClass("active");
     });
 }
-
 function addScrollToDo() {
     var targetNav = $('.header li');
     var scrolldo = new ScrollToDo();
@@ -531,13 +488,13 @@ function addScrollToDo() {
 
     });
     scrolldo.add("#optoelectronic", function() {
-        targetNav.eq(4).addClass("active").siblings().removeClass("active")
+        targetNav.eq(4).addClass("active").siblings().removeClass("active");
     });
     scrolldo.add("#embroidery", function() {
-        targetNav.eq(5).addClass("active").siblings().removeClass("active")
+        targetNav.eq(5).addClass("active").siblings().removeClass("active");
     });
     scrolldo.add("#beautyskin", function() {
-        targetNav.eq(6).addClass("active").siblings().removeClass("active")
+        targetNav.eq(6).addClass("active").siblings().removeClass("active");
     });
 }
 //all page
@@ -547,7 +504,7 @@ function fixnav() {
     scrolldo.add(910, function() {
         targetNav.addClass('fixed');
         targetNav.fadeIn('slow');
-    })
+    });
 
     scrolldo.add(810, function() {
         targetNav.removeClass('fixed');
@@ -646,18 +603,18 @@ function chainBShow(){
  function autoObj(obj){
          $('.environmental .item img').bind("click",function(){
              var environmentalLen=$(".environmental_full").length;
-             autoStop(obj,environmentalLen);
+             autoStopEN(obj,environmentalLen);
              var index=parseInt($(this).index())+1;
              slideToFrom(obj,index,environmentalLen);
          })
-    }
+}
       // 开始暂停循环
-        function autoStop(obj,environmentalLen){
+        function autoStopEN(obj,environmentalLen){
                for(var i=0;i<environmentalLen;i++){
                     obj[0].autoplay.stop();
            }
         }
-     function slideToFrom(caseSix,index_Sw,environmentalLen) {
+        function slideToFrom(caseSix,index_Sw,environmentalLen) {
                 for(var i=0;i<environmentalLen;i++){
                      caseSix[i].slideTo(index_Sw);
                 }
@@ -726,36 +683,22 @@ function SUActivityFN(){
     });
 }
 function  list_case_sw(){
-       // 案例轮播图需要
-       var content=['面部护理','光电美肤','美容SPA','科技瘦身','美妆护肤'];
-       var swiperMy = new Swiper('.swiper-container_pro', {
-             slidesPerView: 3,
-             slidesPerColumn: 2,
-             slidesPerGroup : 3,
-             spaceBetween:0,
-             autoplay:2500,
-             pagination: {
-              el: '.project-pagination',
-              clickable: true,
-              renderBullet: function (index, className) {
-               return '<li class="'+className+'">'+ content[index] + '</li>';
+      // 开始循环
+            function autoStart(obj){
+               obj.autoplay.start();
             }
-            },
-             navigation: {
-             nextEl: '.next',
-             prevEl: '.prev',
-            },
-        });
-}
-function  list_case_sw(){
+             // 开始暂停循环
+            function autoStop(obj){
+               obj.autoplay.stop();
+            }
        // 案例轮播图需要
        var content=['面部护理','纹绣(眉，唇)'];
-       var swiperMy = new Swiper('.case_list_swiper', {
+       var swiperMy_List = new Swiper('.case_list_swiper', {
              slidesPerView: 3,
              slidesPerColumn: 2,
              slidesPerGroup : 3,
              spaceBetween:30,
-             autoplay:2500,
+             autoplay:true,
              pagination: {
              el: '.cases_list ul',
              clickable: true,
@@ -768,91 +711,90 @@ function  list_case_sw(){
              prevEl: '.prev',
             },
         });
+        $('.fullscreen_list .close').click(function() {
+            showBody();
+            autoStart(swiperMy_List);
+            $('.fullscreen').removeClass('show');
+            $('.header').addClass('fixed');
+        });
         case_list_full(".cases_list .g-right .swiper-slide");
         function case_list_full(clickObj){
-        // 案例列表页点击案例切换大图
-        $(clickObj).click(function() {
-            // 案例轮播停止
-            autoStop(swiperMy);
-            var index_Sw = parseInt($(this).index());
-            if (index_Sw >= 0 && index_Sw <= 5) {
-                fullReShow('fullscreen');
-                $('.fullscreen').eq(0).addClass('show');
-                slideToFrom(case_list_full_sw1,index_Sw);
-            } else if (index_Sw >= 6 && index_Sw <= 11) {
-                fullReShow('fullscreen');
-                $('.fullscreen').eq(1).addClass('show');
-                index_Sw=index_Sw%6;
-                slideToFrom(case_list_full_sw2,index_Sw);
-            } else if (index_Sw >= 12 && index_Sw <= 17) {
-                fullReShow('fullscreen');
-                $('.fullscreen').eq(2).addClass('show');
-                 index_Sw=index_Sw%6;
-                slideToFrom(swiper_caseSix3,index_Sw);
-            } else if (index_Sw >= 18 && index_Sw <= 23) {
-                fullReShow('fullscreen');
-                $('.fullscreen').eq(3).addClass('show');
-                 index_Sw=index_Sw%6;
-                slideToFrom(swiper_caseSix4,index_Sw);
-            }
-            $('.header').removeClass('fixed');
-            function slideToFrom(caseSix,index_Sw) {
-                caseSix.slideTo(index_Sw);
-            }
-            function fullReShow(obj){
-               $(obj).removeClass('show');
-               hiddBody();
-            }
+            // 案例列表页点击案例切换大图
+            $(clickObj).click(function() {
+                // 案例轮播停止
+                autoStop(swiperMy_List);
 
-              function hiddBody(){
-              $("body").css("overflow-y","hidden")
-            }
-             function showBody(){
-              $("body").css("overflow-y","visible")
-            }
-        });
-         // 案例列表页点击显示的面部护理大图
-        var case_list_full_sw1= new Swiper('.case_list_full_sw1', {
-          spaceBetween: 30,
-          centeredSlides: true,
-          autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-        });
-         // 案例列表页点击显示的纹绣(眉，唇)大图
-        var case_list_full_sw2= new Swiper('.case_list_full_sw2', {
-          spaceBetween: 30,
-          centeredSlides: true,
-          autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-        });
-}
- // 开始循环
-        function autoStart(obj){
-           obj.autoplay.start();
-        }
-         // 开始暂停循环
-        function autoStop(obj){
-           obj.autoplay.stop();
+                var index_Sw = parseInt($(this).index());
+                if (index_Sw >= 0 && index_Sw <= 5) {
+                    fullReShow('fullscreen');
+                    $('.fullscreen').eq(0).addClass('show');
+                    slideToFrom(case_list_full_sw1,index_Sw);
+                } else if (index_Sw >= 6 && index_Sw <= 11) {
+                    fullReShow('fullscreen');
+                    $('.fullscreen').eq(1).addClass('show');
+                    index_Sw=index_Sw%6;
+                    slideToFrom(case_list_full_sw2,index_Sw);
+                } else if (index_Sw >= 12 && index_Sw <= 17) {
+                    fullReShow('fullscreen');
+                    $('.fullscreen').eq(2).addClass('show');
+                     index_Sw=index_Sw%6;
+                    slideToFrom(swiper_caseSix3,index_Sw);
+                } else if (index_Sw >= 18 && index_Sw <= 23) {
+                    fullReShow('fullscreen');
+                    $('.fullscreen').eq(3).addClass('show');
+                     index_Sw=index_Sw%6;
+                    slideToFrom(swiper_caseSix4,index_Sw);
+                }
+                $('.header').removeClass('fixed');
+                function slideToFrom(caseSix,index_Sw) {
+                    caseSix.slideTo(index_Sw);
+                }
+                function fullReShow(obj){
+                   $(obj).removeClass('show');
+                   hiddBody();
+                }
+
+                  function hiddBody(){
+                  $("body").css("overflow-y","hidden")
+                 }
+                 function showBody(){
+                  $("body").css("overflow-y","visible")
+                }
+            });
+             // 案例列表页点击显示的面部护理大图
+            var case_list_full_sw1= new Swiper('.case_list_full_sw1', {
+              spaceBetween: 30,
+              centeredSlides: true,
+              autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            });
+             // 案例列表页点击显示的纹绣(眉，唇)大图
+            var case_list_full_sw2= new Swiper('.case_list_full_sw2', {
+              spaceBetween: 30,
+              centeredSlides: true,
+              autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            });
         }
 }
 function swiper_slide_hover(obj){
@@ -862,14 +804,235 @@ function swiper_slide_hover(obj){
             $(this).find(".front").fadeOut();
      });
 }
+// 检查是否已经跳转到项目列表页
+function checkProHrefM(){
+       $(".header .nav a").click(function(){
+            var ELval=window.location.href.split("#")[1];
+               var obj=$(this);
+                 if(ELval=="beautyspa"||ELval=="optoelectronic"||ELval=="embroidery"||ELval=="beautyskin"){
+
+                   var hrefMap=obj.prop("href").split("#")[1];
+                     // if(currHref.indexOf("/project")>0){
+                    if(hrefMap=="beautyspa"){
+                        // 美容SPA
+                             var beautyspaTopVal=$('#beautyspa').offset().top;
+                             sTop(beautyspaTopVal,obj);
+                    }else if(hrefMap=="optoelectronic"){
+                       //光电美肤
+                              var optoelectronicTopVal=$('#optoelectronic').offset().top;
+                              sTop(optoelectronicTopVal,obj)
+                    }else if(hrefMap=="embroidery"){
+                        //艺术纹绣
+                                 var embroideryTopVal=$('#embroidery').offset().top;
+                                 sTop(embroideryTopVal,obj);
+                    }else if(hrefMap=="beautyskin"){
+                             //美妆护肤
+                                 var beautyskinTopVal=$('#beautyskin').offset().top;
+                                 sTop(beautyskinTopVal,obj);
+
+                    }
+                }
+
+        })
+}
+function topBannerFn(){
+     var swiper_banner = new Swiper('.top-banner .bannerswiper-wrapper', {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          autoplay:true,
+          loop: true,
+          pagination: {
+            el: '.slider-indicator',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          on: {
+            slideChangeTransitionStart: function(){
+              // alert(this.activeIndex);
+              var num=(this.realIndex)+1;
+              animateBanner(num);
+            },
+          },
+         });
+    console.log(swiper_banner);
+// 留联
+        function animateBanner(num){
+            $('.bannerswiper-wrapper .swiper-slide').find(".textimgFont").fadeOut();
+            $('.bannerswiper-wrapper .swiper-slide').find(".textimgFont img").fadeOut();
+            $('.bannerswiper-wrapper .swiper-slide').find(".textimgFont p").fadeOut();
+            $('.bannerswiper-wrapper .swiper-slide').find(".textimgFont a").fadeOut();
+            $('.bannerswiper-wrapper .swiper-slide').find(".textimgFont span").fadeOut();
+            $('.bannerswiper-wrapper .swiper-slide').find(".textimg").css({"opacity":"0","right":"-400px"});
+                setTimeout(function(){
+                  t(num);
+               },100)
+            }
+               function t(num){
+                         $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimg").css({"opacity":"1","right":"-400px"});
+                         $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimg").animate(
+                            {
+                               right:"0"
+                               // opacity :1,
+                            },
+                            {
+                              duration: 1000,
+                              easing: "easeInCirc",
+                              complete:function(){
+                                   // $(".textimgFont").eq(num).fadeOut();
+                                    setTimeout(function(){
+                                       $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimgFont").fadeIn(700);
+                                       $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimgFont img").fadeIn(700);
+                                       $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimgFont span").fadeIn(700);
+                                       $('.bannerswiper-wrapper .swiper-slide').eq(num).find(".textimgFont p").fadeIn(700);
+
+                                       for(var i=1;i<$('.bannerswiper-wrapper .swiper-slide').length-2;i++){
+                                              if(i!=num){
+                                                     $('.bannerswiper-wrapper .swiper-slide').eq(i).find(".textimgFont").fadeOut();
+                                                     $('.bannerswiper-wrapper .swiper-slide').eq(i).find(".textimgFont img").fadeOut();
+                                                     $('.bannerswiper-wrapper .swiper-slide').eq(i).find(".textimgFont span").fadeOut();
+                                                     $('.bannerswiper-wrapper.swiper-slide').eq(i).find(".textimgFont p").fadeOut();
+                                              }
+                                       }
+
+                                   },900)
+                             }
+                            }
+                       )
+               }
+
+}
+function Senvironmental(){
+    $('.environmental .g-left li').eq(0).addClass('active');
+    $('.environmental .item').eq(0).addClass('active');
+    var k=0;
+    $(".item:eq("+k+")>img").each(function(index,value){
+        $(value).attr('src',$(value).data("src"));
+    });
+    $('.environmental .g-left li').click(function(e) {
+        $('.environmental .g-left li.active').removeClass('active');
+        var index=$(".environmental .g-left").find("li").index($(this));
+        $(this).addClass('active');
+        $('.environmental .item.active').removeClass('active');
+        $('.environmental .item').eq(index).addClass('active');
+        $('.environmentalImgs .block.active').removeClass('active');
+        $('.environmentalImgs .block').eq(index).addClass('active');
+        $(".item:eq("+index+")>img").each(function(index,value){
+            $(value).attr('src',$(value).data("src"));
+        });
+    });
+}
+ function sTop(objTop,obj){
+       var hrefCon=["project.html/#beautyspa","project.html/#optoelectronic","project.html/#embroidery","project.html/#beautyskin"];
+       for(var i=0;i<4;i++){
+        var res=i+3;
+         $(".header .nav li").eq(res).find("a").prop("href",hrefCon[i]);
+       }
+       obj.attr("href","javascript:;");
+        // alert("ss");
+        $("html,body").scrollTop(objTop);
+
+         return false;
+    }
 
 $(function() {
+    function BigSenvironmental(){
+        // 环境详情页点击小图出现大图
+        $('.environmental .item').click(function() {
+            var index=$(this).index();
+            // $('.fullscreen').hide();
+            $('.fullscreen').eq(index).addClass('show');
+            $('.header ').removeClass('fixed');
+            hiddBody();
+            tool.showEach(".environmental_full",index);
+            $('.fullscreen .close').click(function() {
+                $('.header ').addClass('fixed');
+                $('.fullscreen').removeClass('show');
+                showBody();
+            })
+        });
+    }
+    function showEmbroideryLS(){
+        // 鼠标经过切换
+        function tabsHov(tabIndex, tab) {
+            $('#beautyspa').find('li').eq(0).addClass('active');
+            tool.showThis($('#beautyspa').find('li').eq(0),"img");
+            $('#optoelectronic').find('li').eq(0).addClass('active');
+            tool.showThis($('#optoelectronic').find('li').eq(0),"img");
+            $('#embroidery').find('li').eq(0).addClass('active');
+            tool.showThis($('#embroidery').find('li').eq(0),"img");
+            tabIndex.click(function(e) {
+                var index = $(this).index();
+                if (tab && tab.find('li')) {
+                    tab.find('li').removeClass('active');
+                }
+                $(this).addClass('active').siblings().removeClass('active');
+                if (tab) {
+                    tab.eq(index).addClass('active').siblings().removeClass('active');
+                }
+                tool.showThis($(this),"img");
+            });
+        }
+        tabsHov($('#beautyspa').find('li'), $('#beautyspa ul'));
+        tabsHov($('#optoelectronic').find('li'), $('#optoelectronic ul'));
+        tabsHov($('#embroidery').find('li'), $('#embroidery ul'));
+    }
+    //进入到项目列表页，懒加载第一张图片
+    function showEmMore(){
+        var lazyLoad = (function(){
+            var clock;
+            function init(){
+                $(window).on("scroll", function(){
+                    if (clock) {
+                        clearTimeout(clock);
+                    }
+                    clock = setTimeout(function(){
+                        checkShow();
+                    }, 200);
+                });
+                checkShow();
+            }
+            function checkShow(){
+                var eachObj="$(#optoelectronic li).eq(0).find(img)";
+                    eachObj.each(function(){
+                    var $cur =$(this);
+                    if($cur.attr('isLoaded')){
+                        return;
+                    }
+                    if(shouldShow($cur)){
+                        showImg($cur);
+                    }
+                })
+            }
+            function shouldShow($node){
+                var scrollH = $(window).scrollTop(),
+                    winH = $(window).height(),
+                    top = $node.offset().top;
+                if(top < winH + scrollH){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+            function showImg($node){
+                $node.attr('src', $node.attr('data-img'));
+                $node.attr('isLoaded', true);
+            }
+            return {
+                init: init
+            }
+        })();
+        lazyLoad.init();
+    }
     // 包含快商通链接
     var tool={
          // 快商通链接跳转
                    kst:function(){
                         $(".j-consult").bind("click",function(){
-                            var href="https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110";
+                            // var href="https://hztk5.kuaishang.cn/bs/im.htm?cas=56596___868330&fi=65110";
+                             var href="https://www.hoozonspa.com/kst.html";
                             window.open(href,"_blank");
                         })
                     },
@@ -878,10 +1041,42 @@ $(function() {
                     },
                     list_case:function(){
                          list_case_sw();
-                    }
-                }
+                    },
+                    checkProHref:function(){
+                       checkProHrefM();
+                    },
+                    topBannerObj:function(){
+                        // 顶部banner轮播
+                        topBannerFn();
+                    },
+                    showEnvironmental:function(){
+                        //分院环境click事件
+                        Senvironmental();
+                    },
+                    showRightEnvironmental:function(){
+                        //分院环境click事件出现大图
+                        BigSenvironmental();
+                    },
+                    showEach:function(obj,index){
+                        //对应下标遍历下标对应添加src
+                        $(obj+":eq("+index+") img").each(function(index,value){
+                            $(value).attr('src',$(value).data("src"));
+                        });
+                    },
+                    showThis:function(obj,dom){
+                        obj.find(dom).each(function(index,value){
+                            $(value).attr('src',$(value).data("src"));
+                        });
+                    },
+                    showEmbroideryL:function(){
+                        showEmbroideryLS();
+                    },
+                   showEm:function(){
+                       showEmMore();
+                   }
+                };
     tool.kst();
-    topbanner();
+    // topbanner();
     lightNav();
     fixnav();
     setTimeout(initSlider, 2000);
@@ -892,10 +1087,38 @@ $(function() {
     //环境详情页大图切换效果
     chainBShow();
     // 品牌页面荣誉证书
-    award();
+     award();
     // 美妆护肤
      beautyskin();
      tool.SUActivity();//调用公益活动swiper
      tool.list_case();//调用案例列表页案例轮播图
      swiper_slide_hover(".cases_list .g-right .swiper-slide");
+     tool.checkProHref();//调用判断如果在列表页，不重复跳转
+     tool.topBannerObj();//顶部banner轮播
+     tool.showEnvironmental();//环境分院展示
+     tool.showRightEnvironmental();//环境分院click出现大图
+     tool.showEmbroideryL();//项目列表页click显示对应图片
+     //tool.showEm();//项目列表页进入视图
+});
+
+// 增加PC端公告
+
+$(document).ready( function(){
+    $( '#howdy' ).howdyDo({
+        action      : 'hover',
+        effect      : 'slide',
+        easing      : 'easeInOutExpo',
+        duration    : 600,
+        openAnchor  : '<img src="/static/images/down-arr-16x16.png" border=0 />',
+        closeAnchor : '<img src="/static/images/close-16x16.png" border=0 />'
+    });
+});
+
+
+//google quicklink
+//https://github.com/GoogleChromeLabs/quicklink
+!function(e,n){"object"==typeof exports&&"undefined"!=typeof module?module.exports=n():"function"==typeof define&&define.amd?define(n):e.quicklink=n()}(this,function(){var e={};function n(e){return new Promise(function(n,t){var r=new XMLHttpRequest;r.open("GET",e,r.withCredentials=!0),r.onload=function(){200===r.status?n():t()},r.send()})}var t,r,i=(t="prefetch",((r=document.createElement("link")).relList||{}).supports&&r.relList.supports(t)?function(e){return new Promise(function(n,t){var r=document.createElement("link");r.rel="prefetch",r.href=e,r.onload=n,r.onerror=t,document.head.appendChild(r)})}:n);function o(t,r,o){if(!(e[t]||(o=navigator.connection)&&((o.effectiveType||"").includes("2g")||o.saveData)))return(r?function(e){return null==self.fetch?n(e):fetch(e,{credentials:"include"})}:i)(t).then(function(){e[t]=!0})}var u=u||function(e){var n=Date.now();return setTimeout(function(){e({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-n))}})},1)},c=new Set,f=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting){var n=e.target.href;c.has(n)&&a(n)}})});function a(e){c.delete(e),o(new URL(e,location.href).toString(),f.priority)}return function(e){e=Object.assign({timeout:2e3,priority:!1,timeoutFn:u,el:document},e),f.priority=e.priority;var n=e.origins||[location.hostname],t=e.ignores||[];e.timeoutFn(function(){e.urls?e.urls.forEach(a):Array.from(e.el.querySelectorAll("a"),function(e){f.observe(e),n.length&&!n.includes(e.hostname)||function e(n,t){return Array.isArray(t)?t.some(function(t){return e(n,t)}):(t.test||t).call(t,n.href,n)}(e,t)||c.add(e.href)})},{timeout:e.timeout})}});
+
+window.addEventListener('load', () =>{
+   quicklink();
 });

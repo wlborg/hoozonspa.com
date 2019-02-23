@@ -1,0 +1,722 @@
+<!--小超商务通，盗版请留言-->
+
+<!--红妆
+
+ <script language="javascript" src="http://prt.zoosnet.net/JS/LsJS.aspx?siteid=PRT69395285&float=1" type="text/javascript"></script>-->
+
+<link href="{dede:global.cfg_csspath/}/swt.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+
+    /*$(function(){
+
+        if(document.getElementById('swt-right-index')){
+
+        $("#swt-right-index ul li").hover(function(){
+
+            $(this).children("a").addClass("swt-hover");
+
+            $(this).stop().animate({right:"84px"},200);
+
+        },function(){
+
+            $(this).animate({right:"0px"},200,function(){
+
+                $(this).stop().children("a").removeClass("swt-hover");
+
+            });
+
+        });
+
+    }
+
+    })*/
+
+    $(document).ready(function() {
+
+        $("#back-to-top").hide();
+
+        $(function() {
+
+            $(window).scroll(function() {
+
+                if ($(window).scrollTop() > 200) {
+
+                    $("#back-to-top").fadeIn(300);
+
+                } else
+
+                {
+
+                    $("#back-to-top").fadeOut(300);
+
+                }
+
+            });
+
+            $("#back-to-top").click(function() {
+
+                $('body,html').animate({
+
+                    scrollTop: 0
+
+                }, 300);
+
+                return false;
+
+            });
+
+            /*$("#back-to-top a").hover(function(){
+
+                $(this).addClass("swt-hover")},
+
+                function(){
+
+                    $(this).removeClass("swt-hover");
+
+                })*/
+
+        });
+
+        $(".swt-right-index5 a, .telDialog").click(function() {
+
+            $(".telBox").show(300);
+
+            $(".lock").css("display", "block");
+
+        })
+
+        $(".closeTelBox").click(function() {
+
+            $(".telBox").hide(300);
+
+            $(".lock").css("display", "none");
+
+        })
+
+        $("#telInput").focus(function() {
+
+            $(this).css({
+
+                "font-weight": "bold",
+
+                "color": "#5b416f",
+
+                "font-size": "18px"
+
+            });
+
+            if (this.value == "请输入您的电话号码") {
+
+                this.value = "";
+
+            }
+
+        });
+
+        $("#telInput").blur(function() {
+
+            $(this).css({
+
+                "font-weight": "normal",
+
+                "color": "#999",
+
+                "font-size": "12px"
+
+            });
+
+            if (this.value == "") {
+
+                this.value = "请输入您的电话号码";
+
+            }
+
+        });
+
+        $("#telInput2").focus(function() {
+
+            $(this).css({
+
+                "font-weight": "bold",
+
+                "color": "#5b416f",
+
+                "font-size": "14px"
+
+            });
+
+            if (this.value == "输入您的电话号码") {
+
+                this.value = "";
+
+            }
+
+        });
+
+        $("#telInput2").blur(function() {
+
+            $(this).css({
+
+                "font-weight": "normal",
+
+                "color": "#999",
+
+                "font-size": "12px"
+
+            });
+
+            if (this.value == "") {
+
+                this.value = "输入您的电话号码";
+
+            }
+
+        });
+
+        // setTimeout(function() {
+
+        //     $('.swtCenter').fadeIn(300)
+
+        // }, 5000);
+
+        // $(".closeSwtBtn,.closeSwt").click(function() {
+
+        //     $(".swtCenter").animate({
+
+        //         left: "130%"
+
+        //     }, 400);
+
+        //     $(function() {
+
+        //         function show() {
+
+        //             $(".swtCenter").animate({
+
+        //                 left: "50%"
+
+        //             }, 400).show(300);
+
+        //         }
+
+        //         setTimeout(show, 20000);
+
+        //     });
+
+        // });
+
+    });
+
+    /*function scroll_news(){
+
+    var firstNode = $('#scroll-container li');
+
+    firstNode.eq(0).fadeOut('slow',function(){
+
+    $(this).clone().appendTo($(this).parent()).show('slow');
+
+    $(this).remove();
+
+    });
+
+    }
+
+    setInterval('scroll_news()',4000);
+
+    setInterval('scroll_swt()',4000);*/
+
+    $(function() {
+
+        $("a.close-swt-left").click(function() {
+
+            $(".swt-left").animate({
+
+                left: '-186px'
+
+            });
+
+            setTimeout(function() {
+
+                $(".swt-small").animate({
+
+                    left: '0'
+
+                })
+
+            }, 500);
+
+        });
+
+        $(".swt-small").click(function() {
+
+            $(this).animate({
+
+                left: '-44px'
+
+            });
+
+            setTimeout(function() {
+
+                $(".swt-left").animate({
+
+                    left: '0'
+
+                })
+
+            }, 500);
+
+        });
+
+    });
+
+    $(function() {
+
+        $("#swtLeft").kinMaxShow({
+
+            height: 258,
+
+            button: {
+
+                showIndex: false,
+
+                normal: {
+
+                    display: 'none'
+
+                }
+
+            },
+
+            callback: function(index, action) {
+
+                switch (index) {
+
+                    case 0:
+
+                        if (action == 'fadeIn') {
+
+                            $(this).find('.swtzj_1_1').animate({
+
+                                left: '0'
+
+                            }, 600)
+
+                            $(this).find('.swtzj_1_2').animate({
+
+                                right: '0'
+
+                            }, 600)
+
+                        } else {
+
+                            $(this).find('.swtzj_1_1').animate({
+
+                                left: '-180px'
+
+                            }, 600)
+
+                            $(this).find('.swtzj_1_2').animate({
+
+                                right: '-180px'
+
+                            }, 600)
+
+                        };
+
+                        break;
+
+                        /*case 1 :
+
+                                if(action=='fadeIn'){
+
+                                    $(this).find('.swtzj_3_1').animate({left:'10px'},600)
+
+                                    $(this).find('.swtzj_3_2').animate({right:'10px'},600)
+
+                                }else{
+
+                                    $(this).find('.swtzj_3_1').animate({left:'-134px'},600)
+
+                                    $(this).find('.swtzj_3_2').animate({right:'-135px'},600)
+
+                                };
+
+                                break;
+
+                        case 2 :
+
+                                if(action=='fadeIn'){
+
+                                    $(this).find('.swtzj_3_1').animate({left:'10px'},600)
+
+                                    $(this).find('.swtzj_3_2').animate({right:'10px'},600)
+
+                                }else{
+
+                                    $(this).find('.swtzj_3_1').animate({left:'-134px'},600)
+
+                                    $(this).find('.swtzj_3_2').animate({right:'-135px'},600)
+
+                                };
+
+                                break;*/
+
+                    case 1:
+
+                        if (action == 'fadeIn') {
+
+                            $(this).find('.swtzj_1_1').animate({
+
+                                left: '0'
+
+                            }, 600)
+
+                            $(this).find('.swtzj_1_2').animate({
+
+                                right: '0'
+
+                            }, 600)
+
+                        } else {
+
+                            $(this).find('.swtzj_1_1').animate({
+
+                                left: '-180px'
+
+                            }, 600)
+
+                            $(this).find('.swtzj_1_2').animate({
+
+                                right: '-180px'
+
+                            }, 600)
+
+                        };
+
+                        break;
+
+                    case 2:
+
+                        if (action == 'fadeIn') {
+
+                            $(this).find('.swtzj_1_1').animate({
+
+                                left: '0'
+
+                            }, 600)
+
+                            $(this).find('.swtzj_1_2').animate({
+
+                                right: '0'
+
+                            }, 600)
+
+                        } else {
+
+                            $(this).find('.swtzj_1_1').animate({
+
+                                left: '-180px'
+
+                            }, 600)
+
+                            $(this).find('.swtzj_1_2').animate({
+
+                                right: '-180px'
+
+                            }, 600)
+
+                        };
+
+                        break;
+
+                    case 3:
+
+                        if (action == 'fadeIn') {
+
+                            $(this).find('.swtzj_1_1').animate({
+
+                                left: '0'
+
+                            }, 600)
+
+                            $(this).find('.swtzj_1_2').animate({
+
+                                right: '0'
+
+                            }, 600)
+
+                        } else {
+
+                            $(this).find('.swtzj_1_1').animate({
+
+                                left: '-180px'
+
+                            }, 600)
+
+                            $(this).find('.swtzj_1_2').animate({
+
+                                right: '-180px'
+
+                            }, 600)
+
+                        };
+
+                        break;
+
+                    case 4:
+
+                        if (action == 'fadeIn') {
+
+                            $(this).find('.swtzj_1_1').animate({
+
+                                left: '0'
+
+                            }, 600)
+
+                            $(this).find('.swtzj_1_2').animate({
+
+                                right: '0'
+
+                            }, 600)
+
+                        } else {
+
+                            $(this).find('.swtzj_1_1').animate({
+
+                                left: '-180px'
+
+                            }, 600)
+
+                            $(this).find('.swtzj_1_2').animate({
+
+                                right: '-180px'
+
+                            }, 600)
+
+                        };
+
+                        break;
+
+                }
+
+            }
+
+        });
+
+    });
+
+</script>
+
+<!--此段代码从离线宝后台获取开始-->
+
+<script>
+
+    document.write('<script type="text/javascript"  data-lxb-uid="11133016" data-lxb-gid="220147" src="http://lxbjs.baidu.com/api/asset/api.js?t=' + new Date().getTime() + '" charset="utf-8"></scr' + 'ipt>');
+
+</script>
+
+<!--此段代码从离线宝后台获取结束-->
+<!-- 10月4号注释 -->
+<!-- <div class="swt-right-index">
+
+    <ul>
+
+        <li class="swt-right-index1">
+
+            <a href="javascript:openZoosUrl();" target="_blank"></a>
+
+        </li>
+
+        <li class="swt-right-index2">
+
+            <a href="javascript:openZoosUrl();" target="_blank"></a>
+
+        </li>
+
+        <li class="swt-right-index3">
+
+            <a href="javascript:openZoosUrl();" target="_blank"></a>
+
+        </li>
+
+        <li class="swt-right-index6">
+
+            <a onClick="Dialog({id:'mapDisplay', lock:true});" href="javascript:void(0);"></a>
+
+        </li>
+
+    </ul>
+
+</div> -->
+
+<div class="telBox">
+
+    <div class="telCon">
+
+        <input type="text" class="telTxt telTxtBlur" id="telInput" value="请输入您的电话号码" />
+
+        <input type="button" class="telBtn" id="callBtn" value=" " />
+
+        <!--小超开始-->
+
+        <script>
+
+            document.getElementById("callBtn").onclick = function() {
+
+                lxb.call(document.getElementById("telInput"));
+
+            };
+
+            document.getElementById("callBtn2").onclick = function() {
+
+                lxb.call(document.getElementById("telInput2"));
+
+            };
+
+        </script>
+
+        <a href="javascript:void(0);" class="closeTelBox"></a>
+
+    </div>
+
+</div>
+
+<div class="lock"></div>
+
+<div id="mapDisplay" style="display:none">
+
+    <div class="title">
+
+        <h2>乘车路线</h2><a href="#" class="D_close">关闭</a></div>
+
+    <iframe width="530" height="574" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://j.map.baidu.com/Y_8K5"></iframe>
+
+</div>
+
+<!-- <div id="swtCenter" class="swtCenter">
+
+    <div class="swtTop">
+
+        <a href="javascript:void(0);" class="closeSwt"></a>
+
+        <a href="javascript:openZoosUrl();" target=""><img src="https://www.hoozonspa.com/images/swt.jpg" alt="" /></a>
+
+    </div>
+
+    <div class="swtFoot">
+
+        <ul>
+
+            <li>
+
+                <input type="text" class="telTxt telTxtBlur" id="telInput2" value="输入您的电话号码" />
+
+                <input type="button" class="telBtn" id="callBtn2" value=" " />
+
+            </li>
+
+
+
+            <script>
+
+                document.getElementById("callBtn").onclick = function() {
+
+                    lxb.call(document.getElementById("telInput"));
+
+                };
+
+                document.getElementById("callBtn2").onclick = function() {
+
+                    lxb.call(document.getElementById("telInput2"));
+
+                };
+
+            </script>
+
+            <li>
+
+                <a href="javascript:openZoosUrl();" class="swtChat" target="_blnak"></a>
+
+            </li>
+
+            <li>
+
+                <a href="javascript:void(0);" class="closeSwtBtn"></a>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</div> -->
+
+<script>
+
+    $(function() {
+
+        $(window).scroll(function() {
+
+            var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+
+            if ($(window).scrollTop() >= 749) {
+
+                $(".zx").addClass("zx-topnone");
+
+                $(".foot01").css("margin-bottom", "30px")
+
+            } else
+
+            {
+
+                $(".zx").removeClass("zx-topnone");
+
+                $(".foot01").css("margin-bottom", "0")
+
+            }
+
+        })
+
+    })
+
+    $(function() {
+
+        var height;
+
+        $('.zj-pic-content').css('height', 'auto');
+
+        height = $('.zj-pic-content').height();
+
+        $('.zj-pic-content').css('height', '33px');
+
+        $(".picList li").hover(function() {
+
+                $(this).contents(".zj-pic-content").animate({
+
+                    height: height
+
+                })
+
+            }
+
+            ,
+
+            function() {
+
+                $(this).contents(".zj-pic-content").animate({
+
+                    height: '33px'
+
+                });
+
+            })
+
+    })
+
+</script>
+
+<script type="text/javascript" src="https://hztk5.kuaishang.cn/bs/ks.j?cI=868330&fI=65110" charset="utf-8"></script>
+
+<script type="text/javascript" src="{dede:global.cfg_jspath/}/kst_pc.js" charset="utf-8"></script>
+

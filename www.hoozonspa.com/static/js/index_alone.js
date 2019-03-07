@@ -8,6 +8,7 @@
              slidesPerGroup : 3,
              spaceBetween:0,
              autoplay:false,
+             noSwiping : true,
              pagination: {
               el: '.project-pagination',
               clickable: true,
@@ -20,6 +21,7 @@
              prevEl: '.prev',
         },
          });
+       swiperMy.slideTo(2);
         //案例显示 24条数据
        var swiperMy = new Swiper('.swiper-containerMy', {
            slidesPerView: 3,

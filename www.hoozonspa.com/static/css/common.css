@@ -151,6 +151,7 @@ body {
 .header .nav {
     float: right;
     padding: 27px 0;
+    margin-right: 605px;
 }
 .header .nav li {
     float: left;

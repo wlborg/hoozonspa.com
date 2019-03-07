@@ -515,14 +515,11 @@ $(function() {
 window.addEventListener('load', () =>{
    quicklink({
        priority:true,
-       ignores:[
-
-          uri => uri.includes('baidu'),
-          uri => uri.includes('kuaishang'),
-          uri => uri.includes('360')
+        ignores:[
+             /baidu/,
+             /kuaishang/,
+              uri => uri.includes('.php'),
        ]
-
-
     });
 });
 

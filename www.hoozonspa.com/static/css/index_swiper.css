@@ -104,6 +104,12 @@
 
     border-radius: 100%;
 }
+.classicCase {
+    display: none;
+}
+.equipmenttechnology {
+    display: none;
+}
 .classicCase .g-right {
     float: left!important;
 }
@@ -416,4 +422,9 @@
 }
 .cases-container .swiper-pagination-bullet {
     background: #dfad9d;
+}
+.hotproject .g-left ul li:nth-of-type(1),
+.hotproject .g-left ul li:nth-of-type(2),
+.hotproject .g-left ul li:nth-of-type(4) {
+    display: none;
 }

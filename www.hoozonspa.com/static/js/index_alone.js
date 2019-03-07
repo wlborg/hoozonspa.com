@@ -7,7 +7,7 @@
              slidesPerColumn: 2,
              slidesPerGroup : 3,
              spaceBetween:0,
-             autoplay:true,
+             autoplay:false,
              pagination: {
               el: '.project-pagination',
               clickable: true,

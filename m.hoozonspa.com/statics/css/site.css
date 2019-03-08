@@ -372,6 +372,7 @@ body {
 }
 /*classiccase*/
 .classiccase {
+    display: none;
     height: 19.28327645rem;
 
     background: url("../images/bg_classiccase.jpg") top center no-repeat;
@@ -510,6 +511,7 @@ body {
     color: #fff;
 }
 .equipmenttechnology {
+    display: none;
     height: 20.05119454rem;
 
     background: url("../images/bg_technical.jpg") top center no-repeat;

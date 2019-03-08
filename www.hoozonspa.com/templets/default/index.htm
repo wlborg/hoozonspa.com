@@ -55,6 +55,25 @@
         <div class='project-block'>
             <div class="swiper-container swiper-container_pro">
                 <div class="swiper-wrapper">
+                     {dede:arclist typeid='15,16' row='6' flag='c' orderby='id' orderway='desc' infolen='30' addfields='title2' channelid='21'}
+                    <div class="swiper-slide slider-item swiper-no-swiping">
+                          <a href="[field:arcurl/]">
+                            <div class="item">
+                                <div class="front">
+                                    <p>[field:title2/]</p>
+                                    <h3>[field:title/]</h3>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="back">
+                                     <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
+                                </div>
+                            </div>
+                          </a>
+                     </div>
+                    {/dede:arclist}
+
+
+
                      <!-- {dede:FIELD.typeid function='getLinetHeBrows4(@me)'/} -->
                    {dede:arclist typeid='21,22,23' row='6' flag='c' orderby='id' orderway='desc' infolen='30' addfields='title2' channelid='21'}
                     <div class="swiper-slide slider-item swiper-no-swiping">
@@ -89,22 +108,7 @@
                           </a>
                      </div>
                     {/dede:arclist}
-  {dede:arclist typeid='15,16' row='6' flag='c' orderby='id' orderway='desc' infolen='30' addfields='title2' channelid='21'}
-                    <div class="swiper-slide slider-item swiper-no-swiping">
-                          <a href="[field:arcurl/]">
-                            <div class="item">
-                                <div class="front">
-                                    <p>[field:title2/]</p>
-                                    <h3>[field:title/]</h3>
-                                    <div class="line"></div>
-                                </div>
-                                <div class="back">
-                                     <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
-                                </div>
-                            </div>
-                          </a>
-                     </div>
-                    {/dede:arclist}
+
 
 {dede:arclist typeid='20' row='6' flag='c' orderby='id' orderway='desc' infolen='30' addfields='title2' channelid='21'}
                     <div class="swiper-slide slider-item swiper-no-swiping">
@@ -143,8 +147,8 @@
                 </div>
             </div>
              <!-- <div class="swiper-pagination project-pagination"></div> -->
-            <a href="javascript:void(0);" class="btn prev"></a>
-            <a href="javascript:void(0);" class="btn next"></a>
+            <!-- <a href="javascript:void(0);" class="btn prev"></a> -->
+            <!-- <a href="javascript:void(0);" class="btn next"></a> -->
         </div>
     </div>
 </div>

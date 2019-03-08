@@ -11,7 +11,7 @@
              noSwiping : true,
              pagination: {
               el: '.project-pagination',
-              clickable: true,
+              clickable: false,
               renderBullet: function (index, className) {
                return '<li class="'+className+'">'+ content[index] + '</li>';
             }

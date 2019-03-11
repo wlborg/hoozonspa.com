@@ -7,10 +7,11 @@
              slidesPerColumn: 2,
              slidesPerGroup : 3,
              spaceBetween:0,
-             autoplay:true,
+             autoplay:false,
+             noSwiping : true,
              pagination: {
               el: '.project-pagination',
-              clickable: true,
+              clickable: false,
               renderBullet: function (index, className) {
                return '<li class="'+className+'">'+ content[index] + '</li>';
             }
@@ -20,6 +21,7 @@
              prevEl: '.prev',
         },
          });
+       swiperMy.slideTo(2);
         //案例显示 24条数据
        var swiperMy = new Swiper('.swiper-containerMy', {
            slidesPerView: 3,

@@ -3,6 +3,7 @@ uploads/
 *.tar
 *.7z
 *.html
+!www.hoozonspa.com/503/503.html
 data/session_*/
 mysqli_error_trace.inc
 data/cache/

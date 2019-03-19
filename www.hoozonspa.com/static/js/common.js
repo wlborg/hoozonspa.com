@@ -516,9 +516,12 @@ function topbanner(argument) {
     var slide1 = new XZSlide({
         cover: $(".top-banner .slider-wraper"),
         container: $(".top-banner .slider-container"),
-        speed: 500,
+        speed: 500000,
         itemWidth:1920,
-        auto: true,
+         autoplay: {
+                delay: 500000,
+                disableOnInteraction: false,
+              },
         itemselector: '.slider-item',
         indicator: $(".top-banner .slider-indicator")
     });

@@ -842,7 +842,7 @@ function topBannerFn(){
      var swiper_banner = new Swiper('.top-banner .bannerswiper-wrapper', {
           slidesPerView: 1,
           spaceBetween: 30,
-          autoplay:true,
+          autoplay:5000,
           loop: true,
           pagination: {
             el: '.slider-indicator',

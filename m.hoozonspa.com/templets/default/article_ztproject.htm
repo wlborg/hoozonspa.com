@@ -11,6 +11,21 @@
     <!-- <link rel="canonical" href="https://www.hoozonspa.com{dede:field.arcurl/}"> -->
     {dede:include filename="_link.htm"/}
      {dede:field.ztmeta_sj/}
+       <script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://m.hoozonspa.com{dede:field.arcurl/}",
+        "title": "{dede:field.title/}",
+        "images": [
+            "https://m.hoozonspa.com{dede:field.litpic/}"
+        ],
+        "pubDate": "{dede:field.pubdate function="
+        MyDate('Y-m-d', @me)
+        "/}T{dede:field.pubdate function="
+        MyDate('H:i:s', @me)
+        "/}"
+    }
+    </script>
 </head>
 
 <body>

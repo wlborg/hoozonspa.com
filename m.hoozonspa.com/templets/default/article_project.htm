@@ -9,6 +9,21 @@
     <meta name="keywords" content="{dede:field name='keywords'/}" />
     <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
     <!-- <link rel="canonical" href="https://www.hoozonspa.com{dede:field.arcurl/}"> --> {dede:include filename="_link.htm"/}
+      <script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://m.hoozonspa.com{dede:field.arcurl/}",
+        "title": "{dede:field.title/}",
+        "images": [
+            "https://m.hoozonspa.com{dede:field.litpic/}"
+        ],
+        "pubDate": "{dede:field.pubdate function="
+        MyDate('Y-m-d', @me)
+        "/}T{dede:field.pubdate function="
+        MyDate('H:i:s', @me)
+        "/}"
+    }
+    </script>
 </head>
 
 <body>

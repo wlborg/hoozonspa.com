@@ -184,5 +184,15 @@
         $(".hotproject .g-right .project-block .swiper-slide").find(".front").css("display","none");
         $(".hotproject .g-right .project-block .swiper-slide").eq(index).find(".front").css("visibility","visible");
         $(".hotproject .g-right .project-block .swiper-slide").eq(index).find(".front").css("display","block");
+        $(".hotproject .g-right .project-block .swiper-slide .item").hover(function(){
+                      $(".hotproject .g-right .project-block .swiper-slide").find(".front").css("visibility","hidden");
+                      $(".hotproject .g-right .project-block .swiper-slide").find(".front").css("display","none");
+                       var index_r=$(this).index();
+                       $(".hotproject .g-right .project-block .swiper-slide").eq(index_r).find(".front").css("visibility","visible");
+                     $(".hotproject .g-right .project-block .swiper-slide").eq(index_r).find(".front").css("display","block");
+        },function(){
+                      $(".hotproject .g-right .project-block .swiper-slide").find(".front").css("visibility","hidden");
+                      $(".hotproject .g-right .project-block .swiper-slide").find(".front").css("display","none");
+        })
       })
     });

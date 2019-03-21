@@ -440,5 +440,8 @@
     cursor: pointer;
 }
 .hotproject .g-right .project-block .swiper-slide .item .front h3 > span {
-    font-size: .3rem;
+    display: block;
+    padding-top: .8em;
+
+    font-size: .8em;
 }

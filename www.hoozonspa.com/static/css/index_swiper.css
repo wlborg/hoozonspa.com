@@ -435,5 +435,7 @@
 .spaSon > li {
     display: block!important;
 
+    font-size: .18rem;
+
     cursor: pointer;
 }

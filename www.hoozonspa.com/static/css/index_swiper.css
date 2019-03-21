@@ -429,10 +429,10 @@
     display: none;
 }
 /* 为了审核加的样式 */
-.spaSon > ul {
+.spaSon {
     width: 2rem!important;
 }
-.spaSon > ul > li {
+.spaSon > li {
     display: block!important;
 
     cursor: pointer;

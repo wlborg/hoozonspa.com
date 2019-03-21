@@ -428,3 +428,12 @@
 .hotproject .g-left ul li:nth-of-type(4) {
     display: none;
 }
+/* 为了审核加的样式 */
+.spaSon > ul {
+    width: 2rem!important;
+}
+.spaSon > ul > li {
+    display: block!important;
+
+    cursor: pointer;
+}

@@ -13,7 +13,7 @@
               el: '.project-pagination',
               clickable: false,
               renderBullet: function (index, className) {
-               return '<li class="'+className+'">'+ content[index] + '</li>';
+               return '<li class="'+className+' index_proIn">'+ content[index] + '</li>';
             }
             },
              navigation: {
@@ -174,4 +174,12 @@
         })
       }
       startStopVideo("video");
+      // 为美容spa添加六个分类
+      var html='<ul class="spaSon"><li>补水嫩肤</li><li>胸部护理</li><li>面部护理</li><li>护肤调养</li><li>美容spa</li><li>人气岩盘浴</li></ul>';
+      $(".index_proIn").eq(2).append('Some text');
+      $("spaSon>li").on("click",function(){
+        var index=$(this).index;
+        $(".hotproject .g-right .project-block .swiper-slide").find(".front").css("visibility","hidden");
+        $(".hotproject .g-right .project-block .swiper-slide").eq(index).find(".front").css("visibility","visible");
+      })
     });

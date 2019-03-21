@@ -180,7 +180,7 @@
       $(".spaSon>li").on("click",function(){
         var index=$(this).index();
         console.log(index);
-        $(".hotproject .g-right .project-block .swiper-slide").find(".front").css("visibility","hidden","display":"block");
+        $(".hotproject .g-right .project-block .swiper-slide").find(".front").css("visibility","hidden");
         $(".hotproject .g-right .project-block .swiper-slide").find(".front").css("display","none");
         $(".hotproject .g-right .project-block .swiper-slide").eq(index).find(".front").css("visibility","visible");
         $(".hotproject .g-right .project-block .swiper-slide").eq(index).find(".front").css("display","block");

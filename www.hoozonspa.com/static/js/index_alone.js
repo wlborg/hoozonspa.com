@@ -176,7 +176,7 @@
       startStopVideo("video");
       // 为美容spa添加六个分类
       var html='<ul class="spaSon"><li>补水嫩肤</li><li>胸部护理</li><li>面部护理</li><li>护肤调养</li><li>美容spa</li><li>人气岩盘浴</li></ul>';
-      $(".index_proIn").eq(2).append('Some text');
+      $(".index_proIn").eq(2).append(html);
       $("spaSon>li").on("click",function(){
         var index=$(this).index;
         $(".hotproject .g-right .project-block .swiper-slide").find(".front").css("visibility","hidden");

@@ -175,12 +175,12 @@
       }
       startStopVideo("video");
       // 为美容spa添加六个分类
-      var html='<ul class="spaSon"><li>补水嫩肤</li><li>胸部护理</li><li>面部护理</li><li>护肤调养</li><li>美容spa</li><li>人气岩盘浴</li></ul>';
+      var html='<ul class="spaSon"><li>补水嫩肤</li><li>胸部护理</li><li>面部美白</li><li>护肤调养</li><li>美容spa</li><li>人气岩盘浴</li></ul>';
       $(".index_proIn").eq(2).append(html);
       $(".spaSon>li").on("click",function(){
         var index=$(this).index();
         console.log(index);
-        $(".hotproject .g-right .project-block .swiper-slide").find(".front").css("visibility","hidden");
-        $(".hotproject .g-right .project-block .swiper-slide").eq(index).find(".front").css("visibility","visible");
+        $(".hotproject .g-right .project-block .swiper-slide").find(".front").css("visibility":"hidden","display":"block");
+        $(".hotproject .g-right .project-block .swiper-slide").eq(index).find(".front").css("visibility","visible","display":"block");
       })
     });

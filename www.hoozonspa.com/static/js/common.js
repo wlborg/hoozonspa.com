@@ -1099,6 +1099,8 @@ $(function() {
      tool.showRightEnvironmental();//环境分院click出现大图
      tool.showEmbroideryL();//项目列表页click显示对应图片
      //tool.showEm();//项目列表页进入视图
+     //全站跳转维护页面
+        widows.location.href="https://www.hoozonspa.com/";
 });
 
 // 增加PC端公告

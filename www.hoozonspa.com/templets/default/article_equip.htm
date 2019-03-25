@@ -4,6 +4,21 @@
   {dede:include filename="_link_article.htm"/}
   {dede:include filename="_link.htm"/}
   <link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/swiper.min.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://www.hoozonspa.com{dede:field.arcurl/}",
+        "title": "{dede:field.title/}",
+        "images": [
+            "https://www.hoozonspa.com{dede:field.litpic/}"
+        ],
+        "pubDate": "{dede:field.pubdate function="
+        MyDate('Y-m-d', @me)
+        "/}T{dede:field.pubdate function="
+        MyDate('H:i:s', @me)
+        "/}"
+    }
+    </script>
 </head>
 <body>
 <!-- header -->

@@ -428,3 +428,20 @@
 .hotproject .g-left ul li:nth-of-type(4) {
     display: none;
 }
+/* 为了审核加的样式 */
+.spaSon {
+    width: 2rem!important;
+}
+.spaSon > li {
+    display: block!important;
+
+    font-size: .18rem!important;
+
+    cursor: pointer;
+}
+.hotproject .g-right .project-block .swiper-slide .item .front h3 > span {
+    display: block;
+    padding-top: .8em;
+
+    font-size: .8em;
+}

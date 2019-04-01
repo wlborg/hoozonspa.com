@@ -3,7 +3,7 @@
 <head>
 <title>{dede:global.cfg_webname/}</title>
 {dede:include filename="_link.htm"/}
-<link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/index_swiper.css">
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_csspath/}/index_swiper.css?v=20190330">
 </head>
 <body>
 <!-- header -->
@@ -38,7 +38,7 @@
     </div>
 </div>
 <!-- hot project -->
-<div class="g-container hotproject">
+<div class="g-container hotproject" id="hotproject">
     <div class="g-left">
     <div class="wraper">
         <h2><span class="sr-only">热门项目</span></h2>
@@ -60,8 +60,10 @@
                           <a href="[field:arcurl/]">
                             <div class="item">
                                 <div class="front">
-                                    <p>[field:title2/]</p>
-                                    <h3>[field:title/]</h3>
+
+                                    <p>&nbsp;</p>
+                                    <h3>[field:title/]<br/><span>了解详情</span></h3>
+                                      <!-- <p>了解详情</p> -->
                                     <div class="line"></div>
                                 </div>
                                 <div class="back">
@@ -80,8 +82,9 @@
                           <a href="[field:arcurl/]">
                             <div class="item">
                                 <div class="front">
-                                    <p>[field:title2/]</p>
-                                    <h3>[field:title/]</h3>
+
+                                    <p>&nbsp;</p>
+                                     <h3>[field:title/]<br/><span>了解详情</span></h3>
                                     <div class="line"></div>
                                 </div>
                                 <div class="back">
@@ -97,8 +100,9 @@
                           <a href="[field:arcurl/]">
                             <div class="item">
                                 <div class="front">
-                                    <p>[field:title2/]</p>
-                                    <h3>[field:title/]</h3>
+
+                                    <p>&nbsp;</p>
+                                      <h3>[field:title/]<br/><span>了解详情</span></h3>
                                     <div class="line"></div>
                                 </div>
                                 <div class="back">
@@ -115,8 +119,8 @@
                           <a href="[field:arcurl/]">
                             <div class="item">
                                 <div class="front">
-                                    <p>[field:title2/]</p>
-                                    <h3>[field:title/]</h3>
+                                    <p>&nbsp;</p>
+                                     <h3>[field:title/]<br/><span>了解详情</span></h3>
                                     <div class="line"></div>
                                 </div>
                                 <div class="back">
@@ -132,8 +136,9 @@
                           <a href="[field:arcurl/]">
                             <div class="item">
                                 <div class="front">
-                                    <p>[field:title2/]</p>
-                                    <h3>[field:title/]</h3>
+
+                                   <p>&nbsp;</p>
+                                     <h3>[field:title/]<br/><span>了解详情</span></h3>
                                     <div class="line"></div>
                                 </div>
                                 <div class="back">
@@ -484,9 +489,9 @@
 </div>
 <!-- question and answer -->
 {dede:include filename="_question.htm"/}
-<script type="text/javascript" src="{dede:global.cfg_jspath/}/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="{dede:global.cfg_jspath/}/jquery.easing.min.js"></script>
-<script type="text/javascript" src="{dede:global.cfg_jspath/}/index_alone.js?v=0.1"></script>
+<script type="text/javascript" src="{dede:global.cfg_jspath/}/jquery-2.1.4.min.js?v=20190330"></script>
+<script type="text/javascript" src="{dede:global.cfg_jspath/}/jquery.easing.min.js?v=20190330"></script>
+<script type="text/javascript" src="{dede:global.cfg_jspath/}/index_alone.js?v=20190330"></script>
 <!-- footer -->
 {dede:include filename="footer.htm"/}
 

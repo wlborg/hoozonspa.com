@@ -1,4 +1,5 @@
 
+
 /* ***reset*** */
 a, body { color: #000; }
 body, dd, dl, dt, form, h1, h2, h3, h4, h5, h6, html, input, label, li, p, textarea, ul { margin: 0; padding: 0; }
@@ -17,7 +18,7 @@ body { background: #fff; font-family: "微软雅黑", sans-serif, Verdana, Arial
 .f-cb:after { display: block; visibility: hidden; height: 0; overflow: hidden; clear: both; content: "."; }
 .f-cb { zoom: 1; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
-@font-face { font-family: 'specialfont'; src: url('/statics/font/汉仪晓波折纸体简.ttf') format('truetype'); }
+@font-face { font-family: 'specialfont'; src: url('/statics/font/HYXiaoBoZheZhiTiJ.ttf') format('truetype'); }
 .consult:hover { transform: scale(0.9, 0.9); }
 .j-consult { cursor: pointer; }
 .g-container { min-width: 15.99829352rem; }
@@ -35,16 +36,16 @@ body { background: #fff; font-family: "微软雅黑", sans-serif, Verdana, Arial
 .m1 .g-doc .g-title h2 .o { position: relative; padding: 0 0.51194539rem; }
 .m1 .g-doc .g-content h3 { font-size: 0.76791809rem; font-weight: normal; font-stretch: normal; line-height: 1.17320819rem; letter-spacing: 0rem; color: #f79181; margin-left: 0.21331058rem; }
 .m1 .g-doc .g-content p { margin-left: 0.21331058rem; margin-top: 0.21331058rem; width: 15.14505119rem; font-size: 0.59726962rem; font-weight: normal; letter-spacing: 0rem; color: #805443; text-align: justify; letter-spacing: -0.04266212rem; }
-.m1 .g-doc .g-content img { margin: 0.63993174rem 0 1.27986348rem; display: block; width: 100%; }
+.m1 .g-doc .g-content img { margin: 0.63993174rem 0 2.1331058rem; display: block; width: 100%; }
 .m1 .m1_2 { background: url('/statics/zt/mksx/images/bg1.jpg') center top no-repeat; height: 19.45392491rem; background-size: auto 100%; }
 .m1 .m1_2 .g-doc { position: relative; }
 .m1 .m1_2 .g-doc .g-content { height: 16.63822526rem; text-align: center; }
-.m1 .m1_2 .g-doc .g-content h3 { padding-top: 0.42662116rem; }
+.m1 .m1_2 .g-doc .g-content h3 { padding-top: 0.42662116rem; margin-top: 0; }
 .m1 .m1_2 .g-doc .g-content p { margin-top: 0.42662116rem; text-align: center; }
 .m1 .m1_2 .g-doc .consult { margin: 0 auto; display: block; background: url('/statics/zt/mksx/images/bg_consult1.png') center top no-repeat; height: 1.62116041rem; width: 5.75938567rem; background-size: auto 100%; }
 .m2 .g-doc .g-title { margin-left: 0.42662116rem; background: url('/statics/zt/mksx/images/bgt2.jpg') left center no-repeat; height: 1.49317406rem; background-size: auto 100%; }
 .m2 .g-doc .g-content { margin-top: 0.85324232rem; background: url('/statics/zt/mksx/images/bg2.jpg') center top no-repeat; height: 17.53412969rem; background-size: auto 100%; }
-.m2 .g-doc .g-content .item { padding-top: 6.39931741rem; width: 6.18600683rem; height: 1.91979522rem; display: inline-block; margin-bottom: 0.42662116rem; }
+.m2 .g-doc .g-content .item { padding-top: 6.39931741rem; width: 6.18600683rem; height: 1.91979522rem;  /*display: inline-block; */ float: left; margin-bottom: 0.42662116rem; }
 .m2 .g-doc .g-content .item p { font-size: 0.55460751rem; font-weight: normal; font-stretch: normal; line-height: 0.8105802rem; letter-spacing: 0rem; color: #805443; text-align: center; }
 .m2 .g-doc .g-content .item1 { margin-left: 1.0665529rem; }
 .m2 .g-doc .g-content .item2 { margin-left: 1.49317406rem; }

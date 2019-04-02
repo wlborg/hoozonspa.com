@@ -890,17 +890,17 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
 #footer .grids-item.zx .grids-txt{
     color: #fff;
 }
-#footer .m-grids-5{
-    overflow: hidden;
+#footer .m-grids-5 {
     height: 100%;
+    overflow: hidden;
 }
-#footer .m-grids-5 .zx .icon-consult{
-     -webkit-animation: scaleAC 1.5s ease .3s infinite;
-     -moz-animation: scaleAC 1.5s ease .3s infinite;
-     -ms-animation: scaleAC 1.5s ease .3s infinite;
-     -o-animation: scaleAC 1.5s ease .3s infinite;
-     animation: scaleAC 1.5s ease .3s infinite;
- }
+#footer .m-grids-5 .zx .icon-consult {
+    -webkit-animation: scaleAC 1.5s ease .3s infinite;
+       -moz-animation: scaleAC 1.5s ease .3s infinite;
+        -ms-animation: scaleAC 1.5s ease .3s infinite;
+         -o-animation: scaleAC 1.5s ease .3s infinite;
+            animation: scaleAC 1.5s ease .3s infinite;
+}
 @-webkit-keyframes scaleAC {
     0%,
     100% {
@@ -952,4 +952,7 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
 
         opacity: 1;
     }
+}
+.copyright-info p a {
+    color: #fff;
 }

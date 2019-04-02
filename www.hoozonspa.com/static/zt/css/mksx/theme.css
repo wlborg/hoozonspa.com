@@ -23,7 +23,13 @@ body { background: #fff; font-family: "微软雅黑", sans-serif, Verdana, Arial
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
 
 /*@imgp: '/static/zt/img/mksx/'; */
-@font-face { font-family: 'specialfont'; src: url('/static/font/HYXiaoBoZheZhiTiJ.ttf') format('truetype'); }
+@font-face { font-family: 'specialfont'; 
+  src: url('/static/font/HYXiaoBoZheZhiTiJ.eot') ;
+  src:
+    url('/static/font/HYXiaoBoZheZhiTiJ?#font-spider') format('embedded-opentype'),
+    url('/static/font/HYXiaoBoZheZhiTiJ.woff') format('woff'),
+    url('/static/font/HYXiaoBoZheZhiTiJ.ttf') format('truetype'),
+    url('/static/font/HYXiaoBoZheZhiTiJ.svg') format('svg'); }
 .consult:hover { transform: scale(0.9, 0.9); }
 .j-consult { cursor: pointer; }
 .g-container { min-width: 1400px; }

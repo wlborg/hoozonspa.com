@@ -564,6 +564,9 @@ body {
     display: block;
     height: 100%;
 }
+.footer .g-doc .row2 .block2 p a {
+    color: #fff;
+}
 /* 快商通样式重写 */
 #div37 > textarea {
     font-size: 14px!important;

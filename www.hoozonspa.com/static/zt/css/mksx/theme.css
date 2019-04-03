@@ -23,13 +23,7 @@ body { background: #fff; font-family: "微软雅黑", sans-serif, Verdana, Arial
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
 
 /*@imgp: '/static/zt/img/mksx/'; */
-@font-face { font-family: 'specialfont'; 
-  src: url('/static/font/HYXiaoBoZheZhiTiJ.eot') ;
-  src:
-    url('/static/font/HYXiaoBoZheZhiTiJ?#font-spider') format('embedded-opentype'),
-    url('/static/font/HYXiaoBoZheZhiTiJ.woff') format('woff'),
-    url('/static/font/HYXiaoBoZheZhiTiJ.ttf') format('truetype'),
-    url('/static/font/HYXiaoBoZheZhiTiJ.svg') format('svg'); }
+@font-face { font-family: 'specialfont'; src: url('/static/font/HYXiaoBoZheZhiTiJ.ttf') format('truetype'); }
 .consult:hover { transform: scale(0.9, 0.9); }
 .j-consult { cursor: pointer; }
 .g-container { min-width: 1400px; }
@@ -40,7 +34,7 @@ body { background: #fff; font-family: "微软雅黑", sans-serif, Verdana, Arial
 .g-container .g-doc .g-content { margin-top: 62px; }
 .g-container .g-doc .consult { cursor: pointer; }
 .banner { background: url('/static/zt/img/mksx/banner.jpg') center top no-repeat; height: 788px; }
-.m1 .g-doc .g-title { background: url('/static/zt/img/mksx/bgt1.png') left center no-repeat; height: 120px; }
+.m1 .g-doc .g-title { background: url('/static/zt/img/mksx/bgt1.jpg') left center no-repeat; height: 120px; }
 .m1 .g-doc .g-title h2 b { position: absolute; }
 .m1 .g-doc .g-title h2 .leftq { top: 54px; left: 140px; }
 .m1 .g-doc .g-title h2 .rightq { top: 54px; left: 240px; }
@@ -54,15 +48,15 @@ body { background: #fff; font-family: "微软雅黑", sans-serif, Verdana, Arial
 .m1 .m1_2 .g-doc .g-content { margin-top: 0; }
 .m1 .m1_2 .g-doc .g-content h3 { padding-top: 20px; }
 .m1 .m1_2 .g-doc .g-content p { margin-top: 10px; }
-.m1 .m1_2 .g-doc .consult { position: absolute; top: 510px; left: 970px; display: block; background: url('/static/zt/img/mksx/bg_consult1.png') center top no-repeat; height: 68px; width: 178px; }
-.m2 .g-doc .g-title { margin-left: 20px; background: url('/static/zt/img/mksx/bgt2.png') left center no-repeat; height: 120px; }
+.m1 .m1_2 .g-doc .consult { position: absolute; top: 510px; left: 970px; display: block; background: url('/static/zt/img/mksx/bg_consult1.png') center top no-repeat; height: 54px; width: 184px; }
+.m2 .g-doc .g-title { margin-left: 20px; background: url('/static/zt/img/mksx/bgt2.jpg') left center no-repeat; height: 120px; }
 .m2 .g-doc .g-content { background: url('/static/zt/img/mksx/img2.jpg') center top no-repeat; height: 324px; }
-.m2 .g-doc .g-content .item { padding-top: 240px; width: 234px; height: 234px;  /*display: inline-block;*/ float: left; }
+.m2 .g-doc .g-content .item { padding-top: 240px; width: 234px; height: 234px;  /*display: inline-block;*/ float: left;  /*outline:solid 1px #000;*/ }
 .m2 .g-doc .g-content .item p { font-size: 26px; font-weight: normal; font-stretch: normal; line-height: 38px; letter-spacing: 0px; color: #805443; text-align: center; }
-.m2 .g-doc .g-content .item1 { margin-left: 150px; }
-.m2 .g-doc .g-content .item2 { margin-left: 44px; }
+.m2 .g-doc .g-content .item1 { margin-left: 146px; }
+.m2 .g-doc .g-content .item2 { margin-left: 51px; }
 .m2 .g-doc .g-content .item3 { margin-left: 50px; }
-.m2 .g-doc .g-content .item4 { margin-left: 50px; }
+.m2 .g-doc .g-content .item4 { margin-left: 56px; }
 .m2 .g-doc .consult { margin: 46px auto; display: block; background: url('/static/zt/img/mksx/bg_consult2.png') center top no-repeat; height: 72px; width: 272px; }
 .m3 { background: url('/static/zt/img/mksx/bg3.jpg') center top no-repeat; height: 990px; }
 .m3 .g-doc { padding-top: 60px; }
@@ -78,7 +72,7 @@ body { background: #fff; font-family: "微软雅黑", sans-serif, Verdana, Arial
 .m4 .g-doc .g-title { margin-top: 0; background: url('/static/zt/img/mksx/bgt4.png') left center no-repeat; height: 120px; }
 .m4 .g-doc .g-content { height: 420px; }
 .m4 .g-doc .consult { margin: 0 auto; display: block; background: url('/static/zt/img/mksx/bg_consult4.png') center top no-repeat; height: 120px; width: 120px; }
-.m5 .g-doc .g-title { margin-top: 60px; background: url('/static/zt/img/mksx/bgt5.png') left center no-repeat; height: 120px; }
+.m5 .g-doc .g-title { margin-top: 60px; background: url('/static/zt/img/mksx/bgt5.jpg') left center no-repeat; height: 120px; }
 .m5 .g-doc .g-content img { display: block; margin: 0 auto; }
 .m5 .g-doc .consult { margin: 40px auto; display: block; background: url('/static/zt/img/mksx/bg_consult5.png') center top no-repeat; height: 82px; width: 278px; }
 .consult { position: relative; }

@@ -1,19 +1,4 @@
-/** 
-* demo V1.0.0 
-* By 小珍
-* http://www.baidu.com/
- */
-@charset "utf-8";
 
-/** 
-* demo V1.0.0 
-* By 小珍
-* http://www.baidu.com/
- */
-
-/* @imgp: '/statics/zt/mksx/images/'; */
-
-/* @imgp: '/statics/zt/mksx/images/'; */
 
 /* ***reset*** */
 a, body { color: #000; }
@@ -33,7 +18,7 @@ body { background: #fff; font-family: "微软雅黑", sans-serif, Verdana, Arial
 .f-cb:after { display: block; visibility: hidden; height: 0; overflow: hidden; clear: both; content: "."; }
 .f-cb { zoom: 1; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
-@font-face { font-family: 'specialfont'; src: url('汉仪晓波折纸体简.ttf') format('truetype'); }
+@font-face { font-family: 'specialfont'; src: url('/statics/font/汉仪晓波折纸体简.ttf') format('truetype'); }
 .consult:hover { transform: scale(0.9, 0.9); }
 .j-consult { cursor: pointer; }
 .g-container { min-width: 15.99829352rem; }
@@ -51,7 +36,7 @@ body { background: #fff; font-family: "微软雅黑", sans-serif, Verdana, Arial
 .m1 .g-doc .g-title h2 .o { position: relative; padding: 0 0.51194539rem; }
 .m1 .g-doc .g-content { height: 16.2116041rem; }
 .m1 .g-doc .g-content h3 { font-size: 0.76791809rem; font-weight: normal; font-stretch: normal; line-height: 1.17320819rem; letter-spacing: 0rem; color: #f79181; margin-left: 0.38395904rem; }
-.m1 .g-doc .g-content p { margin: 0.21331058rem auto 0; width: 15.14505119rem; font-size: 0.59726962rem; font-weight: normal; letter-spacing: 0rem; color: #805443; text-align: justify; letter-spacing: -0.04266212rem; }
+.m1 .g-doc .g-content p { margin: 0.21331058rem auto 0; width: 15.14505119rem; font-size: 0.59726962rem; font-weight: normal; letter-spacing: 0rem; color: #805443; text-align: justify; letter-spacing: 0; }
 .m1 .g-doc .g-content img { margin: 0.63993174rem 0 2.1331058rem; display: block; width: 100%; }
 .m1 .m1_2 { background: url('/statics/zt/mksx/images/bg1.jpg') center top no-repeat; height: 19.45392491rem; background-size: auto 100%; }
 .m1 .m1_2 .g-doc { position: relative; }
@@ -62,7 +47,7 @@ body { background: #fff; font-family: "微软雅黑", sans-serif, Verdana, Arial
 .m2 .g-doc .g-title { background: url('/statics/zt/mksx/images/bgt2.jpg') left center no-repeat; height: 1.27986348rem; background-size: auto 100%; }
 .m2 .g-doc .g-content { margin-top: 0.85324232rem; background: url('/statics/zt/mksx/images/bg2.jpg') center top no-repeat; height: 17.53412969rem; background-size: auto 100%; }
 .m2 .g-doc .g-content .item { padding-top: 6.39931741rem; width: 6.18600683rem; height: 1.91979522rem;  /*display: inline-block; */ float: left; margin-bottom: 0.42662116rem; }
-.m2 .g-doc .g-content .item p { font-size: 0.55460751rem; font-weight: normal; font-stretch: normal; line-height: 0.8105802rem; letter-spacing: 0rem; color: #805443; text-align: center; }
+.m2 .g-doc .g-content .item p { text-shadow: 0.08532423rem 0.08532423rem 0.10665529rem rgba(75, 19, 3, 0.17); font-size: 0.55460751rem; font-weight: normal; font-stretch: normal; line-height: 0.8105802rem; letter-spacing: -0.02133106rem; color: #805443; text-align: center; }
 .m2 .g-doc .g-content .item1 { margin-left: 1.0665529rem; }
 .m2 .g-doc .g-content .item2 { margin-left: 1.49317406rem; }
 .m2 .g-doc .g-content .item3 { margin-left: 1.0665529rem; }

@@ -515,11 +515,11 @@ $(function() {
 window.addEventListener('load', () =>{
    quicklink({
        priority:true,
-        ignores:[
-             /baidu/,
-             /kuaishang/,
-              uri => uri.includes('.php'),
-       ]
+        origins:[
+            'www.hoozonspa.com',
+            'm.hoozonspa.com',
+            '3gimg.qq.com'
+        ]
     });
 });
 

@@ -133,14 +133,22 @@
                         <p></p>
                     </div>
                     <div class="box">
-                        <div  class="prev">{dede:prenext get='pre'/}</div>
+                        <div  class="prev">
+                            {dede:likearticle orderby='ids' row='1'}
+                               <a href="[field:arcurl/]"  title="[field:fulltitle/]" target="_blank">[field:title/]</a>
+                            {/dede:likearticle}
+                        </div>
                         <ul>
                             <li><a href="javascript:;" class="j-consult"><span class="icon icon_weibo2"></span></a></li>
                             <li><a href="javascript:;" class="j-consult"><span class="icon icon_teng2"></span></li>
                             <li><a href="javascript:;" class="j-consult"><span class="icon icon_weixin2"></span></a></li>
                             <li><a href="javascript:;" class="j-consult"><span class="icon icon_qq2"></span></a></li>
                         </ul>
-                        <div class="next">{dede:prenext get='next'/}</div>
+                        <div class="next">
+                            {dede:likearticle orderby='id' row='1'}
+                               <a href="[field:arcurl/]"  title="[field:fulltitle/]" target="_blank">[field:title/]</a>
+                            {/dede:likearticle}
+                       </div>
                     </div>
                 </div>
             </div>

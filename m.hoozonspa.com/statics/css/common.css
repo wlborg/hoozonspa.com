@@ -819,50 +819,50 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     width: 96%;
 }
 /* 快商通样式重写 */
-#_ks_ol_inviteWin {
-    margin-top: -5.781rem!important;
-    margin-left: -6.4rem!important;
-}
-#divbg {
-    width: 12.8rem!important;
-    height: 11.562rem!important;
+/*#_ks_ol_inviteWin {*/
+    /*margin-top: -5.781rem!important;*/
+    /*margin-left: -6.4rem!important;*/
+/*}*/
+/*#divbg {*/
+    /*width: 12.8rem!important;*/
+    /*height: 11.562rem!important;*/
 
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-#div2 {
-    top: .1rem!important;
-    left: 11.6rem!important;
+    /*background-repeat: no-repeat;*/
+    /*background-size: 100% 100%;*/
+/*}*/
+/*#div2 {*/
+    /*top: .1rem!important;*/
+    /*left: 11.6rem!important;*/
 
-    width: 1rem!important;
-    height: 1rem!important;
-}
-#div7 {
-    top: 9.6rem!important;
-    left: 1rem!important;
+    /*width: 1rem!important;*/
+    /*height: 1rem!important;*/
+/*}*/
+/*#div7 {*/
+    /*top: 9.6rem!important;*/
+    /*left: 1rem!important;*/
 
-    width: 4.5rem!important;
-    height: 1.5rem!important;
-}
-#div1 {
-    position: absolute!important;
-    top: 9.6rem!important;
-    left: 1.3rem!important;
+    /*width: 4.5rem!important;*/
+    /*height: 1.5rem!important;*/
+/*}*/
+/*#div1 {*/
+    /*position: absolute!important;*/
+    /*top: 9.6rem!important;*/
+    /*left: 1.3rem!important;*/
 
-    width: 4.5rem!important;
-    height: 1.5rem!important;
+    /*width: 4.5rem!important;*/
+    /*height: 1.5rem!important;*/
 
-    line-height: 0!important;
+    /*line-height: 0!important;*/
 
-    cursor: pointer!important;
-}
-#div6 {
-    top: 1.6rem!important;
-    left: 0!important;
+    /*cursor: pointer!important;*/
+/*}*/
+/*#div6 {*/
+    /*top: 1.6rem!important;*/
+    /*left: 0!important;*/
 
-    width: 100%!important;
-    height: 7rem!important;
-}
+    /*width: 100%!important;*/
+    /*height: 7rem!important;*/
+/*}*/
 /* 快商通侧边栏 */
 #ks_ol_floatWin_img {
     width: 1.26rem!important;

@@ -64,7 +64,7 @@
                                     {dede:arclist typeid='9' flag='c' row='3' titlelen="120" limit='0,3' addfields='title2' channelid='21' }
                                     <div class="item">
                                         <div class="front">
-                                            <a href="[field:arcurl/]" title="[field:title/] ">
+                                            <a href="/kst.html" title="[field:title/] ">
                                                 <p>[field:title2/]</p>
                                                 <h3>[field:title/]</h3>
                                                 <div class="line"></div>
@@ -113,7 +113,7 @@
                 </div>
             </div>
             <div class="consult-wraper">
-                <a href="/brand/" class="consult">查看更多</a>
+                <a href="/kst.html" class="consult">查看更多</a>
             </div>
         </div>
         <!-- classic case -->
@@ -162,7 +162,7 @@
                     {/dede:arclist}
                 </div>
             </div>
-            <div class="consult-wraper"><a href="/case/" class="consult">查看更多</a></div>
+            <div class="consult-wraper"><a href="/kst.html" class="consult">查看更多</a></div>
         </div>
         <!--equipmenttechnology-->
         <div class="g-container equipmenttechnology">
@@ -196,7 +196,7 @@
                 </div>
                 {/dede:arclist}
             </div>
-            <div class="consult-wraper"><a href="/equip/" class="consult">查看更多</a></div>
+            <div class="consult-wraper"><a href="/kst.html" class="consult">查看更多</a></div>
         </div>
         <!-- environmentdisplay -->
         <div class="g-container environmentdisplay">
@@ -207,36 +207,36 @@
                 <div class="slider-wraper">
                     <ul class="slider-container">
                         {dede:arclist typeid='6' row='4' flag='c' orderby='id' orderway='desc' infolen='30' addfields='s_pic6' channelid='17' }
-                        <li class="slider-item"><a href="[field:arcurl /]" title="[field:title/]"><img src="[field:s_pic6 function='replaceurl(@me)/]" alt="[field:title/]"></a></li>
+                        <li class="slider-item"><a href="/kst.html" title="[field:title/]"><img src="[field:s_pic6 function='replaceurl(@me)/]" alt="[field:title/]"></a></li>
                         {/dede:arclist}
                     </ul>
                 </div>
                 <a href="javascript:void(0)" class="btn prev"></a>
                 <a href="javascript:void(0)" class="btn next"></a>
             </div>
-            <div class="consult-wraper"><a href="/shop/" class="consult">查看更多</a></div>
+            <div class="consult-wraper"><a href="/kst.html" class="consult">查看更多</a></div>
         </div>
         <!--presscenter  -->
-        <div class="g-container presscenter">
+<!--         <div class="g-container presscenter">
             <div class="title">
                 <h2><span class="sr-only">新闻中心</span></h2>
             </div>
             <div class="content">
                 {dede:arclist typeid='4' row='4' orderby='id' orderway='desc' titlelen="120" infolen='30' addfields='pic3' channelid='22'}
                 <div class="box">
-                    <a href="[field:arcurl /]" title="[field:title/]"><img src="[field:pic3 function='replaceurl(@me)/]" alt="[field:title/]"></a>
-                    <h3><a href="[field:arcurl /]" title="[field:title/]">[field:title/]</a></h3>
-                    <p><a href="[field:arcurl /]" title="[field:title/]">[field:description/]</a>
+                    <a href="/kst.html" title="[field:title/]"><img src="[field:pic3 function='replaceurl(@me)/]" alt="[field:title/]"></a>
+                    <h3><a href="/kst.html" title="[field:title/]">[field:title/]</a></h3>
+                    <p><a href="/kst.html" title="[field:title/]">[field:description/]</a>
                     </p>
                 </div>
                 {/dede:arclist}
             </div>
-            <div class="consult-wraper"><a href="/news/" class="consult">查看更多</a></div>
-        </div>
+            <div class="consult-wraper"><a href="/kst.html" class="consult">查看更多</a></div>
+        </div> -->
         <!-- question -->
-        {dede:include filename="_question.htm"/} {dede:include filename="_sj_copyright.htm"/} {dede:include filename="_footer.htm"/}
+        <!-- {dede:include filename="_question.htm"/} -->
+         {dede:include filename="_sj_copyright.htm"/} {dede:include filename="_footer.htm"/}
     </div>
-
 </body>
     {dede:include filename="_script.htm"/}
 </html>

@@ -147,13 +147,13 @@ body {
     z-index: 9999;
 
     margin: 0 auto;
-
+    overflow: hidden;
     background: rgba(92, 55, 58, .9);
 }
 #header .heading {
     position: relative;
 
-    height: 2.09044369rem;
+    height: 2.19044369rem;
 
     background-color: #5c373a;
 }

@@ -874,8 +874,8 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
 }
  */
 #_ks_ol_inviteWin {
-    margin-top: -5.781333rem;
-    margin-left: -6.4rem;
+    margin-top: -5.781333rem!important;
+    margin-left: -6.4rem!important;
 }
 #_ks_ol_inviteWin_fl {
     width: 12.8rem;
@@ -883,6 +883,8 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
 }
 #divbg {
     background-size: 100%;
+    width: 12.8rem!important;
+    height: 11.562667rem!important;
 }
 #div3 {
     top: .3rem!important;

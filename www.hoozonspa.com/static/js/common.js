@@ -1109,6 +1109,8 @@ $(function() {
 // 增加PC端公告
 
 $(document).ready( function(){
+    // 隐藏专题案例，加类名 zt_case
+    $(".zt_case").hide();
     $( '#howdy' ).howdyDo({
         action      : 'hover',
         effect      : 'slide',

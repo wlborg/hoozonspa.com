@@ -567,6 +567,9 @@ body {
 .footer .g-doc .row2 .block2 p a {
     color: #fff;
 }
+.zt_case {
+    display: none;
+}
 /* 快商通样式重写 */
 #div37 > textarea {
     font-size: 14px!important;

@@ -497,6 +497,8 @@ function div19Add(){
         check();
 }
 $(function() {
+     // 隐藏专题案例，加类名 zt_case
+        $(".zt_case").hide();
     topbanner();
     brandhistory();
     setTimeout(initSlider, 2000);

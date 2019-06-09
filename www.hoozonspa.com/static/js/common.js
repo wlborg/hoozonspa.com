@@ -229,6 +229,7 @@ function tabs(tabIndex, tab) {
    function showBody(){
               $("body").css("overflow-y","visible")
    }
+
 function initSlider() {
     // Hot project
     var sliders1 = $(".hotproject .project-block");
@@ -621,7 +622,7 @@ function chainBShow(){
                 for(var i=0;i<environmentalLen;i++){
                      caseSix[i].slideTo(index_Sw);
                 }
-      }
+        }
 
 function award(){
       //荣誉证书模块轮播图

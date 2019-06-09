@@ -16,7 +16,7 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 100%;
     font-weight: normal
 }
-.zixun {
+.main-one .zixun, .main-two .zixun,.main-three .zixun,.main-four .zixun{
     width: 174px;
     height: 46px;
     padding-left: 16px;
@@ -26,22 +26,23 @@ h1,h2,h3,h4,h5,h6 {
     border: 2px solid #91d1fd;
     border-radius: 10px;
 }
-.zixun a span strong {
+.main-one .zixun a span strong, .main-two .zixun a span strong,.main-three .zixun a span strong,.main-four .zixun a span strong{
     font-weight: 700;
     color: #3f99d6;
 }
-.zixun a span {
+.main-one  .zixun a span,.main-two  .zixun a span,.main-three  .zixun a span,.main-four  .zixun a span {
     float: left;
     color: #3f99d6;
 }
-.zixun a img {
+.main-one .zixun a img ,.main-two .zixun a img,.main-three .zixun a img ,.main-four .zixun a img{
     float: left;
 }
-.zixun a span {
+.main-one .zixun a span,.main-two .zixun a span,.main-three .zixun a span,.main-four .zixun a span {
     float: left;
     color: #3f99d6;
     display: inline-block;
-}.zixun a {
+}
+.main-one .zixun a,.main-two .zixun a ,.main-three a .zixun a,.main-four .zixun a{
      display: block;
      width: 100%;
      height: 100%;

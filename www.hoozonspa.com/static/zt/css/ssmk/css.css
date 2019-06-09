@@ -3,14 +3,12 @@
     margin: 0;
 }body {
 
+    min-width: 1260px;
+    /* overflow: hidden; */
+
     font-family: "微软雅黑";
 
     background-color: #fff;
-}body,
-
-#top-bk,
-.hs {
-    min-width: 1200px;
 }h1,
 
 h2,
@@ -52,16 +50,19 @@ textarea {
     zoom: 1;
 }.banner {
 
+    display: block;
     width: 100%;
     height: 704px;
+    min-width: 1260px;
 
-    background: url(../../img/ssmk/banner.jpg) no-repeat top center;
+    background: url(/static/zt/img/ssmk/banner.jpg) no-repeat top center;
 }.banner-b {
 
     width: 100%;
     height: 70px;
+    min-width: 1260px;
 
-    background: url(../../img/ssmk/hengtiao.png) repeat-x;
+    background: url(/static/zt/img/ssmk/hengtiao.png) repeat-x;
     background-color: #6ea1c3;
 }.main-one {
 
@@ -174,7 +175,7 @@ textarea {
 }.main1-in ul.borderr li {
 
     border-radius: 40px 0 40px 0;
-}.zixunn {
+}.zixun {
 
     width: 174px;
     height: 46px;
@@ -187,22 +188,22 @@ textarea {
 
     border: 2px solid #91d1fd;
     border-radius: 10px;
-}.zixunn a {
+}.zixun a {
 
     display: block;
     width: 100%;
     height: 100%;
 
     font-size: 26px;
-}.zixunn a img {
+}.zixun a img {
 
     float: left;
-}.zixunn a span {
+}.zixun a span {
 
     float: left;
 
     color: #3f99d6;
-}.zixunn a span strong {
+}.zixun a span strong {
 
     font-weight: 700;
 
@@ -219,6 +220,7 @@ textarea {
 
     width: 100%;
     height: 1590px;
+    min-width: 1260px;
 
     background-color: #d7edf9;
 }.main2-in {
@@ -373,7 +375,7 @@ textarea {
 }.yinying {
 
     margin: 0 auto;
-}.zixunn2 {
+}.zixun2 {
 
     margin: 0 auto;
 }.main-three {
@@ -392,7 +394,7 @@ textarea {
     width: 100%;
     height: 820px;
 
-    background: url(../../img/ssmk/main3-bg.png) no-repeat top center;
+    background: url(/static/zt/img/ssmk/main3-bg.png) no-repeat top center;
 }.section {
 
     position: absolute;
@@ -409,7 +411,7 @@ textarea {
     text-align: center;
     text-indent: .5em;
 
-    background: url(../../img/ssmk/bqian.png) no-repeat top center;
+    background: url(/static/zt/img/ssmk/bqian.png) no-repeat top center;
 }.section h3 {
 
     width: 273px;
@@ -445,7 +447,7 @@ textarea {
 .section4 h3 {
     text-indent: 1em;
 
-    background: url(../../img/ssmk/bqian2.png) no-repeat top center;
+    background: url(/static/zt/img/ssmk/bqian2.png) no-repeat top center;
 }.section4 {
 
     top: 532px;
@@ -453,8 +455,8 @@ textarea {
 }.main-four {
 
     width: 100%;
-    /* height: 1650px; 原来的*/
-    height: 1325px;
+    height: 891px;
+    min-width: 1260px;
     padding-top: 75px;
 
     background-color: #d7edf9;
@@ -526,14 +528,16 @@ textarea {
 
     width: 1200px;
     margin: 0 auto;
-}.zixunn3 {
+}.zixun3 {
 
-    /*margin: 40px auto 130px; 原来*/
-    margin: 40px auto 80px;
+    margin: 40px auto 130px;
 }.main-four .title-t h3 {
 
     font-weight: 700;
 }.anlitu {
+
+    position: relative;
+    top: -28px;
 
     width: 1087px;
     height: 349px;
@@ -565,4 +569,13 @@ textarea {
 }.shuhou {
 
     margin: 0 94px 0 67px;
+}.foot {
+
+    min-width: 1260px;
+}.head {
+
+    min-width: 1260px;
+}.head .Tbody {
+
+    min-width: 1260px;
 }

@@ -118,6 +118,9 @@ body {
 /* .location-v-center */
 
 /*header*/
+.zt_case {
+    display: none;
+}
 .wrapper {
     position: relative;
 
@@ -882,9 +885,10 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     height: 11.562667rem;
 }
 #divbg {
-    background-size: 100%;
     width: 12.8rem!important;
     height: 11.562667rem!important;
+
+    background-size: 100%;
 }
 #div3 {
     top: .3rem!important;

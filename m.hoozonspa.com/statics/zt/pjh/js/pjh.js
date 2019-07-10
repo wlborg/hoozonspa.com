@@ -13,7 +13,7 @@ $(document).ready(function() {
             el: '.pagination2',
         },
     })
-    var mySwiper1 = new Swiper('.box4_swiper', {
+    var mySwiper = new Swiper('.box4_swiper', {
         direction: 'horizontal',
         autoplay: {
             delay: 5000,

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var mySwiper1 = new Swiper('.box3_swiper', {
+     var mySwiper1 = new Swiper('.box3_swiper', {
         direction: 'horizontal',
         autoplay: {
             delay: 5000,
@@ -7,10 +7,11 @@ $(document).ready(function() {
         },
         loop:true,
         navigation: {
-            nextEl: '.swiper-button-next',
+            nextEl: '.box3_min .swiper-button-next',
+            prevEl: '.box3_min .swiper-button-prev',
         },
         pagination: {
-            el: '.pagination2',
+            el: '.box3_swiper .pagination2',
         },
     })
     var mySwiper = new Swiper('.box4_swiper', {
@@ -22,7 +23,7 @@ $(document).ready(function() {
 
         loop:true,
         pagination: {
-            el: '.pagination4',
+            el: '.box4_swiper .pagination4',
         },
     })
 

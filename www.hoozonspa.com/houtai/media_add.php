@@ -76,6 +76,10 @@ if($dopost=="upload")
                 ShowMsg("你指定的文件名被系统禁止！",'java script:;');
                 exit();
             }
+            if(preg_match('#\.(php|pl|cgi|asp|aspx|jsp|php5|php4|php3|shtm|shtml)[^a-zA-Z0-9]+$#i', trim($filename)))
+            {
+                ShowMsg("你指定的文件名被系统禁止！",'java script:;'); exit();
+            }
             $fullfilename = $cfg_basedir.$filename;
             if($mediatype==1)
             {

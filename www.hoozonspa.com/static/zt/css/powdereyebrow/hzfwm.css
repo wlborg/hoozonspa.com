@@ -11,7 +11,7 @@ body {
 /*banner结束*/
 
 /*header公共样式开始*/
-.header-1 {
+.header {
     position: relative;
 
     text-align: center;
@@ -19,20 +19,20 @@ body {
 .header-bg img {
     width: 100%;
 }
-.header-1 .txt-wrap {
+.header .txt-wrap {
     position: absolute;
     top: .7rem;
     left: 50%;
 
     margin-left: -1.75rem;
 }
-.header-1 .txt-wrap .txt {
+.header .txt-wrap .txt {
     font-size: .53rem;
     line-height: .85rem;
 
     color: #461a1a;
 }
-.header-1 .txt-wrap .txt span {
+.header .txt-wrap .txt span {
     color: #9a3939;
 }
 /*header公共样式结束*/

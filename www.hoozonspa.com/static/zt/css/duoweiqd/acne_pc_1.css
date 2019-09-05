@@ -1,550 +1,353 @@
 @charset "utf-8";
-a,
-body {
-    color: #666;
+a,body {
+	color:#666
 }
-body,
-dd,
-dl,
-dt,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-html,
-input,
-label,
-li,
-p,
-textarea,
-ul,
-ol {
-    padding: 0;
-    margin: 0;
+body,dd,dl,dt,form,h1,h2,h3,h4,h5,h6,html,input,label,li,p,textarea,ul {
+	margin:0;
+	padding:0
 }
 form {
-    display: inline;
+	display:inline
 }
 img {
-    border: 0;
+	border:0
 }
 td {
-    word-break: break-all;
+	word-break:break-all
 }
-dd,
-dl,
-dt,
-li,
-ul {
-    list-style: none;
+dd,dl,dt,li,ul {
+	list-style:none
 }
 a {
-    text-decoration: none;
+	text-decoration:none
 }
 a:hover {
-    color: #6e4a8a;
+	color:#6E4A8A
 }
 .clearfix:after {
-    display: block;
-    visibility: hidden;
-    height: 0;
-    overflow: hidden;
-    clear: both;
-
-    content: ".";
+	clear:both;
+	content:".";
+	display:block;
+	height:0;
+	overflow:hidden;
+	visibility:hidden
 }
 .none {
-    display: none;
+	display:none
 }
 .right {
-    float: right;
+	float:right
 }
-/*head*/
-a {
-    text-decoration: none;
-}
-#top-bk {
-    height: 100px;
-
-    background: #4eced1;
-}
-#top {
-    width: 1100px;
-    height: 100px;
-    margin: 0 auto;
-}
-#top .logo {
-    float: left;
-    width: 216px;
-    margin-right: 14px;
-}
-#top ul {
-    color: #fff;
-    background: #229fca;
-}
-#top ul li {
-    display: block;
-    float: left;
-    width: 98px;
-    height: 100px;
-
-    font-size: 15px;
-
-    text-align: center;
-    vertical-align: middle;
-}
-#top .list {
-    overflow: hidden;
-}
-#top .list ul li a {
-    display: block;
-    width: 98px;
-    height: 100px;
-
-    line-height: 100px;
-
-    text-decoration: none;
-
-    color: #fffdff;
-}
-#top .list ul li a.on {
-    color: #fff;
-    background: #9ed5d8;
-}
-#top .list ul li a:hover {
-    color: #fff;
-    background: #9ed5d8;
-}
-/*head*/
-/* footer */
-li {
-    list-style: none;
-}
-.hs {
-    height: 180px;
-
-    background: #424242;
-}
-.ls_title {
-    position: relative;
-    top: 40px;
-
-    height: 80px;
-
-    border-bottom: 1px dashed #53b3c1;
-}
-.sjh {
-    float: left;
-    width: 12px;
-    height: 14px;
-    margin-top: 30px;
-    margin-right: 10px;
-    margin-left: 10px;
-
-    background: url(/static/zt/img/duoweiqd/foot_06.png) no-repeat;
-}
-.hs_01 {
-    width: 1200px;
-    height: 130px;
-    padding-top: 50px;
-    margin: 0 auto;
-}
-.hsft {
-    float: left;
-    width: 820px;
-    height: 60px;
-}
-.hsft p {
-    font-size: 12px;
-}
-.hsrt {
-    float: right;
-    width: 344px;
-    height: 160px;
-    margin-top: -36px;
-}
-.hs_01 p {
-    line-height: 2em;
-
-    color: #fff;
-}
-/* footer */
 body {
-    font: 12px/1.5 "Microsoft Yahei",Verdana,Arial,sans-serif;
+	font:12px/1.5 'Microsoft Yahei',Verdana,Arial,sans-serif;
 }
 .banner {
-    width: 100%;
-    height: 699px;
-
-    background: url(/static/zt/img/duoweiqd/banner.jpg) center center no-repeat;
+	display:block;
+	width:100%;
+	height:699px;
+	background:url(/static/zt/img/duoweiqd/banner.jpg) center center no-repeat
 }
 .container {
-    width: 100%;
+	width:100%;
+	text-align:center;
 
-    text-align: center;
+	background-color:#fff;
 }
 .container .row {
-    width: 1200px;
-    margin: 0 auto;
+	width:1200px;
+	margin:0 auto
 }
 .rowtitle {
-    padding-top: 132px;
-
-    background: url(/static/zt/img/duoweiqd/bg_title.png) center 84px no-repeat;
+	padding-top:132px;
+	background:url(/static/zt/img/duoweiqd/bg_title.png) center 84px no-repeat
 }
-.row3 .rowtitle,
-.row5 .rowtitle,
-.row7 .rowtitle {
-    background: url(/static/zt/img/duoweiqd/bg_title_2.png) center 84px no-repeat;
+.row3 .rowtitle,.row5 .rowtitle,.row7 .rowtitle {
+	background:url(/static/zt/img/duoweiqd/bg_title_2.png) center 84px no-repeat
 }
 .rowtitle h4 {
-    margin-top: 15px;
-    margin-bottom: 82px;
-
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 60px;
-
-    color: #bff8fb;
-    background: url(/static/zt/img/duoweiqd/bg_title_sub.png) center 9px no-repeat;
+	margin-top:22px;
+	margin-bottom:82px;
+	font-size:24px;
+	line-height:60px;
+	font-weight:400;
+	color:#bff8fb;
+	background:url(/static/zt/img/duoweiqd/bg_title_sub.png) center 9px no-repeat
 }
 .antiacnetype {
-    width: 100%;
-    height: 230px;
-    padding: 28px 12px 20px;
-    overflow: hidden;
+	width:100%;
+	height:230px;
+	padding:28px 12px 20px;
+	overflow:hidden
 }
 .antiacnetype .type {
-    float: left;
-    width: 156px;
-    height: 240px;
-    padding: 0 20px;
+	padding:0 20px;
+	width:156px;
+	height:240px;
+	float:left
 }
 .antiacnetype .type h5 {
-    padding-bottom: 24px;
-
-    font-size: 34px;
-
-    color: #6fbdc1;
+	padding-bottom:24px;
+	font-size:34px;
+	color:#6fbdc1
 }
 .antiacnetype .type p {
-    font-size: 16px;
-
-    text-align: justify;
+	font-size:16px;
+	text-align:justify
 }
 .stagerow {
-    padding-left: 24px;
-    overflow: hidden;
+	padding-left:24px;
+	overflow:hidden
 }
 .stagerow .stage {
-    float: left;
-    width: 520px;
-    padding: 12px 48px 12px 18px;
-    overflow: hidden;
-
-    background: url(/static/zt/img/duoweiqd/bg_acne_3_top.png) 18px 80px no-repeat;
+	padding:12px 48px 12px 18px;
+	width:520px;
+	overflow:hidden;
+	float:left;
+	background:url(/static/zt/img/duoweiqd/bg_acne_3_top.png) 18px 80px no-repeat
 }
-.stagerow .stage3,
-.stagerow .stage4 {
-    margin-top: 20px;
+.stagerow .stage3,.stagerow .stage4 {
+	margin-top:20px
 }
 .stagerow .stage .stagetitle {
-    height: 78px;
+	height:78px
 }
 .stagerow .stage .stagetitle .attracttitle {
-    float: left;
-
-    font-size: 50px;
-    line-height: 58px;
-
-    color: #fd707f;
+	font-size:50px;
+	line-height:58px;
+	color:#fd707f;
+	float:left
 }
 .stagerow .stage .stagetitle .detailtitle {
-    padding-left: 132px;
-
-    text-align: left;
-
-    background: url(/static/zt/img/duoweiqd/bg_title_sprit.png) 100px -10px no-repeat;
+	padding-left:132px;
+	text-align:left;
+	background:url(/static/zt/img/duoweiqd/bg_title_sprit.png) 100px -10px no-repeat
 }
 .stagerow .stage4 .stagetitle .detailtitle {
-    padding-left: 182px;
-
-    text-align: left;
-
-    background: url(/static/zt/img/duoweiqd/bg_title_sprit.png) 150px -10px no-repeat;
+	padding-left:182px;
+	text-align:left;
+	background:url(/static/zt/img/duoweiqd/bg_title_sprit.png) 150px -10px no-repeat
 }
 .stagerow .stage .stagetitle .detailtitle h5 {
-    font-size: 26px;
-    font-weight: 400;
+	font-size:26px;
+	font-weight:400
 }
 .stagerow .stage .stagetitle .detailtitle p {
-    margin-right: -28px;
-
-    font-size: 17px;
+	font-size:17px;
+	margin-right:-28px
 }
 .stagerow .stage .stagecontent {
-    width: 534px;
-    height: 390px;
-    overflow: hidden;
-
-    background: url(/static/zt/img/duoweiqd/bg_acne_3_bottom.png) bottom center no-repeat;
+	width:534px;
+	height:390px;
+	overflow:hidden;
+	background:url(/static/zt/img/duoweiqd/bg_acne_3_bottom.png) bottom center no-repeat
 }
 .stagerow .stage .stagecontent .left {
-    background: url(/static/zt/img/duoweiqd/bg_acne_3_left.png) no-repeat;
+	background:url(/static/zt/img/duoweiqd/bg_acne_3_left.png) no-repeat
 }
 .stagerow .stage .stagecontent .right {
-    width: 266px;
-
-    background: url(/static/zt/img/duoweiqd/bg_acne_3_left.png) 263px 0 no-repeat;
+	width:266px;
+	background:url(/static/zt/img/duoweiqd/bg_acne_3_left.png) 263px 0 no-repeat
 }
 .stagerow .stage .stagecontent div {
-    float: left;
-    width: 265px;
-    padding: 12px 0 10px;
+	padding:12px 0 10px;
+	width:265px;
+	float:left
 }
 .stagerow .stage .stagecontent div img {
-    height: 217px;
-    margin-bottom: 16px;
+	height:217px;
+	margin-bottom:16px
 }
 .stagerow .stage .stagecontent .left img {
-    margin-right: 2px;
-    margin-left: 8px;
+	margin-left:8px;
+	margin-right:2px
 }
 .stagerow .stage .stagecontent .right img {
-    margin-right: 8px;
-    margin-left: 2px;
+	margin-left:2px;
+	margin-right:8px
 }
 .stagerow .stage .stagecontent div h6 {
-    font-size: 26px;
-    font-weight: 400;
-
-    color: #fff;
-    background: #6fbdc1;
+	font-size:26px;
+	font-weight:400;
+	color:#fff;
+	background:#6fbdc1
 }
 .stagerow .stage .stagecontent .left h6 {
-    margin-left: 2px;
+	margin-left:2px
 }
 .stagerow .stage .stagecontent div p {
-    padding: 12px 28px;
-
-    font-size: 16px;
-
-    text-align: justify;
-
-    color: #35a1a7;
+	padding:12px 28px;
+	font-size:16px;
+	color:#35a1a7;
+	text-align:justify
 }
 .row4 .content {
-    position: relative;
-
-    padding-bottom: 50px;
+	position:relative;
+	padding-bottom:50px
 }
 .row4 .content p {
-    position: absolute;
-
-    width: 254px;
-
-    font-size: 16px;
-
-    text-align: justify;
+	width:254px;
+	font-size:16px;
+	text-align:justify;
+	position:absolute
 }
-.row5 .content,
-.row5 .content p {
-    position: relative;
+.row5 .content,.row5 .content p {
+	position:relative
 }
 .row4 .content #step1 {
-    top: 95px;
-    left: 55px;
+	left:55px;
+	top:95px
 }
 .row4 .content #step2 {
-    top: 375px;
-    left: 55px;
+	left:55px;
+	top:375px
 }
 .row4 .content #step3 {
-    top: 635px;
-    left: 305px;
-
-    width: 600px;
+	width:600px;
+	left:305px;
+	top:635px
 }
 .row4 .content #step4 {
-    top: 375px;
-    left: 930px;
+	left:930px;
+	top:375px
 }
 .row4 .content #step5 {
-    top: 95px;
-    left: 930px;
+	left:930px;
+	top:95px
 }
 .row5 .rowtitle h4 {
-    margin-bottom: 24px;
+	margin-bottom:24px
 }
 .row5 .content p {
-    width: 710px;
-    margin: 0 auto 208px;
-
-    font-size: 18px;
+	width:710px;
+	font-size:18px;
+	margin:0 auto 208px
 }
 .row5 .content .person {
-    height: 656px;
-    padding: 0 55px;
-    overflow: hidden;
+	height:656px;
+	padding:0 55px;
+	overflow:hidden;
 }
 .row5 .content .person .before {
-    float: left;
-    width: 348px;
+	float:left
 }
 .row5 .content .person .after {
-    float: right;
-    width: 359px;
+	float:right
 }
 .row5 .content .person span {
-    display: block;
-    width: 143px;
-    margin: 0 auto;
-
-    font-size: 26px;
-
-    color: #fff;
-    background: url(/static/zt/img/duoweiqd/bg_icon_h.png) no-repeat;
+	display:block;
+	margin:0 auto;
+	width:143px;
+	font-size:26px;
+	color:#fff;
+	background:url(/static/zt/img/duoweiqd/bg_icon_h.png) no-repeat
 }
 .row5 .content .cure {
-    position: absolute;
-    top: 180px;
-    left: 400px;
+	position:absolute;
+	left:400px;
+	top:180px
 }
 .row5 .content .cure dl {
-    margin-bottom: 44px;
-
-    text-align: left;
+	margin-bottom:44px;
+	text-align:left
 }
 .row5 .content .cure dt {
-    padding-left: 60px;
-
-    font-size: 36px;
-
-    color: #3fa5aa;
-    background: url(/static/zt/img/duoweiqd/icon_point.png) left center no-repeat;
+	padding-left:60px;
+	font-size:36px;
+	color:#3fa5aa;
+	background:url(/static/zt/img/duoweiqd/icon_point.png) left center no-repeat
 }
 .row5 .content .cure .even {
-    margin-left: 80px;
+	margin-left:80px
 }
 .row5 .content .cure dd {
-    width: 302px;
-    margin-left: 60px;
-
-    font-size: 18px;
-
-    color: #000;
+	margin-left:60px;
+	width:302px;
+	font-size:18px;
+	color:#000
 }
 .row5 .content .cure .havebottomborder {
-    border-bottom: dotted 1px black;
+	border-bottom: dotted 1px black;
 }
 .row5 .content .cure .havespace {
-    width: 252px;
-    padding-left: 52px;
-
-    border-bottom: dotted 1px #000;
+	padding-left:52px;
+	width:252px;
+	border-bottom:dotted 1px #000
 }
 .row6 .content .record {
-    height: 250px;
-    padding-top: 10px;
-    margin-bottom: 10px;
-    overflow: hidden;
+	height:250px;
+	overflow: hidden;
+	padding-top: 10px;
+	margin-bottom: 10px;
 }
 .row6 .content .record div {
-    float: left;
-    padding: 0 6px;
+	float:left;
+	padding:0 6px;
 }
 .row6 .content .record .recordtitle {
-    width: 49px;
-    height: 220px;
-    margin-top: -10px;
+	width:49px;
+	height:220px;
+	margin-top:-10px
 }
 .row6 .content .record .recorddetail {
-    width: 355px;
-
-    background: url(/static/zt/img/duoweiqd/bg_white_line.png) 10px 214px repeat-x;
+	background:url(/static/zt/img/duoweiqd/bg_white_line.png) 10px 214px repeat-x
 }
 .row6 .content .record .recorddetail p {
-    width: 102px;
-    height: 34px;
-    padding-top: 16px;
-    margin: 0 auto;
-
-    font-size: 20px;
-    line-height: 34px;
-
-    background: url(/static/zt/img/duoweiqd/bg_icon_arrow.png) center 19px no-repeat;
+	margin:0 auto;
+	padding-top:16px;
+	width:102px;
+	height:34px;
+	font-size:20px;
+	line-height:34px;
+	background:url(/static/zt/img/duoweiqd/bg_icon_arrow.png) center 19px no-repeat
 }
 .row7 .content {
-    margin-top: 84px;
+	margin-top:84px
 }
-.container .row1 {
-    background: #9ed5d8;
+.row1 {
+	background:#9ed5d8
 }
 .row2 {
-    background: url(/static/zt/img/duoweiqd/bg_acne_1_bottom.png) center 625px no-repeat;
+	background:url(/static/zt/img/duoweiqd/bg_acne_1_bottom.png) center 625px no-repeat
 }
 .row2 .bg_wrap2 {
-    background: url(/static/zt/img/duoweiqd/bg_acne_1_left.png) left -70px repeat-x;
+	background:url(/static/zt/img/duoweiqd/bg_acne_1_left.png) left -70px repeat-x
 }
 .row3 {
-    padding-bottom: 150px;
-
-    background: url(/static/zt/img/duoweiqd/bg_acne_4_top.png) 0 bottom no-repeat;
+	padding-bottom:150px;
+	background:url(/static/zt/img/duoweiqd/bg_acne_4_top.png) 0 bottom no-repeat
 }
 .row4 .rowtitle {
-    padding-top: 68px;
-
-    background-position: center 20px;
+	padding-top:68px;
+	background-position:center 20px
 }
 .row4 {
-    padding-bottom: 100px;
-
-    background: #9ed5d8;
+	padding-bottom:100px;
+	background:#9ed5d8
 }
 .row5 {
-    background: url(/static/zt/img/duoweiqd/bg_acne_4_bottom.png) center 0 no-repeat;
+	background:url(/static/zt/img/duoweiqd/bg_acne_4_bottom.png) center 0 no-repeat
 }
 .row5 .rowtitle {
-    padding-top: 82px;
-
-    background-position: center 34px;
+	padding-top:82px;
+	background-position:center 34px
 }
 .row5 .bg_wrap5 {
-    padding-bottom: 80px;
-
-    background: url(/static/zt/img/duoweiqd/bg_acne_6_top.png) center bottom no-repeat;
+	padding-bottom:80px;
+	background:url(/static/zt/img/duoweiqd/bg_acne_6_top.png) center bottom no-repeat
 }
 .row6 .rowtitle {
-    padding-top: 82px;
-
-    background-position: center 34px;
+	padding-top:82px;
+	background-position:center 34px
 }
 .row6 {
-    padding-bottom: 30px;
-
-    background: #9ed5d8;
+	padding-bottom:30px;
+	background:#9ed5d8
 }
 .row7 {
-    padding-bottom: 130px;
-
-    background: url(/static/zt/img/duoweiqd/bg_acne_6_bottom.png) center top no-repeat;
+	padding-bottom:130px;
+	background:url(/static/zt/img/duoweiqd/bg_acne_6_bottom.png) center top no-repeat
 }
 .row7 .rowtitle {
-    padding-top: 202px;
-
-    background-position: center 154px;
-}
-.act_text_title_6N {
-    margin-top: 5px;
-}
-.row1 .content img {
-    display: block;
-}
-.banner a {
-    display: block;
-    width: 100%;
-    height: 100%;
+	padding-top:202px;
+	background-position:center 154px
 }

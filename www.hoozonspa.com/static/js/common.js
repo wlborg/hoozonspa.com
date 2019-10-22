@@ -1112,14 +1112,14 @@ $(function() {
 $(document).ready( function(){
     // 隐藏专题案例，加类名 zt_case
     $(".zt_case").hide();
-    $( '#howdy' ).howdyDo({
-        action      : 'hover',
-        effect      : 'slide',
-        easing      : 'easeInOutExpo',
-        duration    : 600,
-        openAnchor  : '<img src="/static/images/down-arr-16x16.png" border=0 />',
-        closeAnchor : '<img src="/static/images/close-16x16.png" border=0 />'
-    });
+    //$( '#howdy' ).howdyDo({
+    //    action      : 'hover',
+    //    effect      : 'slide',
+    //    easing      : 'easeInOutExpo',
+    //    duration    : 600,
+    //    openAnchor  : '<img src="/static/images/down-arr-16x16.png" border=0 />',
+    //    closeAnchor : '<img src="/static/images/close-16x16.png" border=0 />'
+    //});
 });
 
 

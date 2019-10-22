@@ -576,3 +576,6 @@ body {
 
     color: rgb(189,189,189);
 }
+#k_s_ol_floatWin_fl{
+    display: none!important;
+}
